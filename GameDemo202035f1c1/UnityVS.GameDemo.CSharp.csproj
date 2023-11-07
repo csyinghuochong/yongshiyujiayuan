@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A77D87B0-EDB0-20C3-A6C8-D8D9A748B7B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.1.2f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_1_2;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_1_2;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets\GameSpript\Data\System.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityVS.GameDemo.CSharp.Plugins.csproj">
+      <Project>{15A1C49D-E114-2402-B6CE-4BFB75DE6207}</Project>
+      <Name>UnityVS.GameDemo.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\ArtResource\Effects\Scripts\ActorEffect.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\AnimationEventListener.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\AreaHelper.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\DeactiveSelf.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\EffectNode.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\EffectScale.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\GrassArea.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\GrassAreaManager.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\GrassAreaPoint.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\MapEdge.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\MissShaderHelper.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\MovePathConner.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\MovePathManager.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\PSStartRotation.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\SkillAreaHelper.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\VirtualLine.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\WildArea.cs" />
+    <Compile Include="Assets\ArtResource\Effects\Scripts\WildManager.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Examples\Scripts\ActRotatorExample.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Examples\Scripts\ActTesterGui.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Examples\Scripts\ObscuredPerformanceTests.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\Common\Constants.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\Detectors\ActDetectorBase.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\Detectors\InjectionDetector.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\Detectors\ObscuredCheatingDetector.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\Detectors\SpeedHackDetector.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\Detectors\WallHackDetector.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredBool.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredByte.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredChar.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredDecimal.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredDouble.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredFloat.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredInt.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredLong.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredPrefs.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredQuaternion.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredSByte.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredShort.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredString.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredUInt.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredULong.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredUShort.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredVector2.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredVector3.cs" />
+    <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\Utils\xxHash.cs" />
+    <Compile Include="Assets\GameSpript\AI\AIPet.cs" />
+    <Compile Include="Assets\GameSpript\AI\AI_1.cs" />
+    <Compile Include="Assets\GameSpript\AI\AI_NPC.cs" />
+    <Compile Include="Assets\GameSpript\AI\AI_NormalAct.cs" />
+    <Compile Include="Assets\GameSpript\AI\AI_NpcStoryBack.cs" />
+    <Compile Include="Assets\GameSpript\AI\AI_Property.cs" />
+    <Compile Include="Assets\GameSpript\AI\AI_Status.cs" />
+    <Compile Include="Assets\GameSpript\AI\CreateBossFuBen.cs" />
+    <Compile Include="Assets\GameSpript\Data\Function_DataSet.cs" />
+    <Compile Include="Assets\GameSpript\Data\Game_AllValue.cs" />
+    <Compile Include="Assets\GameSpript\Data\Game_PositionVar.cs" />
+    <Compile Include="Assets\GameSpript\Data\Game_PublicClassVar.cs" />
+    <Compile Include="Assets\GameSpript\Data\WWWSet.cs" />
+    <Compile Include="Assets\GameSpript\Data\XMLScript.cs" />
+    <Compile Include="Assets\GameSpript\Effect\HuDunEffect.cs" />
+    <Compile Include="Assets\GameSpript\Effect\YanChiEffect.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_AI.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_Building.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_Country.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_MonsterSkill.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_Rose.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_Skill.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_Task.cs" />
+    <Compile Include="Assets\GameSpript\Function\Function_UI.cs" />
+    <Compile Include="Assets\GameSpript\GameEffect\Effect_Size.cs" />
+    <Compile Include="Assets\GameSpript\GameEffect\SkillEffectPosition.cs" />
+    <Compile Include="Assets\GameSpript\MaoXianDao2\AutoRotary.cs" />
+    <Compile Include="Assets\GameSpript\MaoXianDao2\Rulemovement.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_AddBuff_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_ChongZhuang_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_Create_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_Create_2.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_DeleteMonster_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_FireWall.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_FireWallOnce.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_FireWall_2.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_Jiaxue_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_ModelSize_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_TargetMove_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_TargetMove_2.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_TriggerSkill_1.cs" />
+    <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_ZhongJi_1.cs" />
+    <Compile Include="Assets\GameSpript\Other\Btn_GanXieMingDan.cs" />
+    <Compile Include="Assets\GameSpript\Other\CameraAI.cs" />
+    <Compile Include="Assets\GameSpript\Other\CameraModel.cs" />
+    <Compile Include="Assets\GameSpript\Other\DoorWay.cs" />
+    <Compile Include="Assets\GameSpript\Other\Fight_Formula.cs" />
+    <Compile Include="Assets\GameSpript\Other\GameSourceObj.cs" />
+    <Compile Include="Assets\GameSpript\Other\GameStartJianTouDong.cs" />
+    <Compile Include="Assets\GameSpript\Other\GameWaGuaJianCe.cs" />
+    <Compile Include="Assets\GameSpript\Other\MapCameraAI.cs" />
+    <Compile Include="Assets\GameSpript\Other\Rose_SelectTarget.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseBuff\Buff_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseBuff\Buff_2.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseBuff\Buff_3.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseBuff\Buff_4.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\PetSkill_ZhongJi_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_ChaoFeng_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_ChaoFeng_2.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_ChaoFeng_3.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_FanGun_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_Jiaxue_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_SelfAddBuff_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_Sing_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\RoseSkill_ZhongJi_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\SkillObjBase.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\Skill_FireWall.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\Skill_Move1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\Skill_TargetMove_1.cs" />
+    <Compile Include="Assets\GameSpript\Rose\RoseSkill\Skill_TargetMove_2.cs" />
+    <Compile Include="Assets\GameSpript\Rose\Rose_Bone.cs" />
+    <Compile Include="Assets\GameSpript\Rose\Rose_CreateModel.cs" />
+    <Compile Include="Assets\GameSpript\Rose\Rose_Proprety.cs" />
+    <Compile Include="Assets\GameSpript\Rose\Rose_Status.cs" />
+    <Compile Include="Assets\GameSpript\UI\DamgeFont.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_AIHp.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Bag\ItemTipsUse.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Bag\UI_Bag.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Bag\UI_BagSpace.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Bag\UI_StoreHouse.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Bag\UI_StoreHouseSpace.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_BossHp.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\BuildingMainUI.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\BuildingModel.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\BuildingSet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UIBuilding.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UITerritory.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UI_ActTextSet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UI_BuildingName.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UI_EmenyActSet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UI_Fortress.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UI_FortressBuildReward.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UI_RewardGird.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Building\Old\UI_TrainCamp.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_ChapterSonSet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Close.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_CloseTips.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_CreateRose.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_CunMinDeXin.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_CunMinDeXinBtn.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_ChouKa.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_ChouKaItemObj.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_DayPracticeReward.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_DayTask.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_DayTaskList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_DuiHuanDaTing.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_DuiHuanItemObj.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_DuiHuanTitleObj.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_FuBenDropItemObj.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_FubenList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_GuoWangDaTing.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_ShiLianZhiTaObj.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_ShouJiDaTing.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_ShouJiItemObj.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_ShouJiTitleObj.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_DropName.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_EnterGame.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_EnterGameDataUpdata.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_EnterPVE.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_EnterPVESet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_ErrorLog.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_FenXiang\UI_GameFenXiang.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_FightBtn.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_FunctionOpen.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_GameGirdHint.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_GameGirdHintSingle.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_GameHint.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_GameSetting.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_GameSource.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_GetherItem.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_HuoDongDaTing.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_HuoDongDaTingDengLu.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_HuoDongDaTingMeiRi.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Item\UI_HeZi.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Item\UI_YiJianShuShou.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_ItemTips.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Loading.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_MainUIRoseExp.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_MainUITask.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_MainUITaskShow.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Map.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_MapName.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_MonsterDeathTime.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Move.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_MoveItemIcon.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_NPCName.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_NpcStore\UI_NpcStoreShow.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_NpcStore\UI_SellStoreList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_NpcStore\UI_StoreList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_OffGameResource.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_OpenCreateRose.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Other\UI_BeiFenData.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Other\UI_CommonHint.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Other\UI_CommonHuoBiSet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pay\UI_RmbStore.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pet\PetSkillIcon.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pet\UI_Pet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pet\UI_PetHeCheng.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pet\UI_PetHeChengList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pet\UI_PetHeChengXuanZe.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pet\UI_PetHeChengXuanZeList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Pet\UI_PetList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_ReturnBuilding.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseDeath.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\MakeEquipNeedItem.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_EquipGemHoleSet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_EquipMake.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_EquipTips.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_EquipXiLian.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_OrnamentChoice.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_RoseEquip.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_RoseEquipShow.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseGetItemHint.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseHp.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\MainUI_SkillGrid.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\Rose_SelectRange.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\UI_RoseSkill.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\UI_RoseSkillIconShow.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\UI_RoseSkillList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\UI_SkillTips.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\UI_TianFu.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\UI_TianFuIcon.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\Rose_TaskList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\Rose_TaskList_Show.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\Rose_TaskList_TaskShow.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\Rose_TaskList_row_UIPoint.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\UI_NpcGetTask.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\UI_NpcTask.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\UI_NpcTaskList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_RoseTask\UI_TaskTrophyList.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_SelectMoveType.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_Set.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_StartGame.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_StoreTextBack.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_StorySpeakSet.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_SuitNeedEquipName.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_ThrowItemChoice.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_YaoGan.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_ZhangJie.cs" />
+    <Compile Include="Assets\GameSpript\UI3DEffect.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\Effect_BeiYong\Effects_01\Prefebs\DestroyForTime.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\Effect_BeiYong\Effects_01\Prefebs\FollowTarget.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\Effect_BeiYong\Effects_02\AnimationSpeed.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\Effect_BeiYong\Effects_02\ScrollUV.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\GameEffect\All\IceEffect\Scripts\Demo.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\GameEffect\All\IceEffect\Scripts\ParticleAutoDestruction.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\GameEffect\All\RFX_Resources\Scripts\Destroy.cs" />
+    <Compile Include="Assets\Resources\Effect\Old\GameEffect\All\RFX_Resources\Scripts\ParticleScaler.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Antialiasing.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Bloom.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\BloomAndFlares.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\BloomOptimized.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Blur.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\BlurOptimized.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\CameraMotionBlur.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ContrastEnhance.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ContrastStretch.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\CreaseShading.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\DepthOfField.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Fisheye.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\GlobalFog.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Grayscale.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ImageEffects.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\MotionBlur.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\NoiseAndGrain.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\NoiseAndScratches.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ScreenOverlay.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\SepiaTone.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\SunShafts.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\TiltShift.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Twirl.cs" />
+    <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Resources\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
+    <Compile Include="Assets\T4M\Scripts\T4MBillBObjSC.cs" />
+    <Compile Include="Assets\T4M\Scripts\T4MLodObjSC.cs" />
+    <Compile Include="Assets\T4M\Scripts\T4MObjSC.cs" />
+    <Compile Include="Assets\T4M\Scripts\T4MPartSC.cs" />
+    <Compile Include="Assets\T4M\Scripts\T4MPlantObjSC.cs" />
+    <Compile Include="Assets\T4M\Tutorial\Scripts\FlyCam.cs" />
+    <Compile Include="Assets\T4M\Tutorial\Scripts\WaypointCam.cs" />
+    <Compile Include="Assets\TimeLimited.cs" />
+    <Compile Include="Assets\aaaa.cs" />
+    <Compile Include="Assets\test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ArtResource\Shaders\AlphaTest-Diffuse-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\AlphaTest-Diffuse-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Line.shader" />
+    <None Include="Assets\ArtResource\Shaders\MADFINGER-Unlit-Scroll2Layers-Mul-skybox.shader" />
+    <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Add-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Add-DetachAlpha.shader" />
+    <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Add-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Alpha-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Alpha-DetachAlpha.shader" />
+    <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Alpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Multiply-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-Add-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-Add-DetachAlpha.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-Add-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-AddSmooth-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-Alpha-Blend-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-Alpha-Blend-DetachAlpha.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-Alpha-Blend-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Particle-Premultiply-Blend-DetachAlpha-Top.shader" />
+    <None Include="Assets\ArtResource\Shaders\Projector-Light.shader" />
+    <None Include="Assets\ArtResource\Shaders\SkillArea.shader" />
+    <None Include="Assets\ArtResource\Shaders\Toony-Basic.shader" />
+    <None Include="Assets\ArtResource\Shaders\butterfly.shader" />
+    <None Include="Assets\CodeStage\AntiCheatToolkit\API.txt" />
+    <None Include="Assets\CodeStage\AntiCheatToolkit\Changelog.txt" />
+    <None Include="Assets\CodeStage\AntiCheatToolkit\Integration\readme.txt" />
+    <None Include="Assets\GameSpript\UI\UI_RoseSkill\RoseData.xml" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_platform_cell_back.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_progressbar.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_oks_strings.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_strings.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_instapaper_strings.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_color_drawables.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_strings.xml" />
+    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_strings.xml" />
+    <None Include="Assets\Plugins\Android\res\layout\activity_main.xml" />
+    <None Include="Assets\Plugins\Android\res\menu\main.xml" />
+    <None Include="Assets\Plugins\Android\res\values-v11\styles.xml" />
+    <None Include="Assets\Plugins\Android\res\values-v14\styles.xml" />
+    <None Include="Assets\Plugins\Android\res\values-w820dp\dimens.xml" />
+    <None Include="Assets\Plugins\Android\res\values\dimens.xml" />
+    <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+    <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+    <None Include="Assets\Resources\3DModel\MonsterModel\Old\Wolf_Animation.txt" />
+    <None Include="Assets\Resources\3DModel\RoseModel\ZhanShi\Swordman_Animation.txt" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\IceEffect\Effects\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-Additive-Diffuse.shader" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\IceEffect\Effects\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-AlphaBlend-Diffuse-Z.shader" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\IceEffect\Effects\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-AlphaBlend-Diffuse.shader" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\IceEffect\Readme.txt" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\RFX_Resources\Prefabs\Fx\V2\V2_Change.txt" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\RFX_Resources\Scripts\HowtoPlay.txt" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\ShurikenMagic\Shaders\SM_2sided_transparent.shader" />
+    <None Include="Assets\Resources\Effect\Old\GameEffect\All\ShurikenMagic\Shaders\SM_TransparentRim.shader" />
+    <None Include="Assets\Resources\Effect\Old\UI_Effect\Sharde\UI-Default-No-Alpha.shader" />
+    <None Include="Assets\Resources\Effect\Old\UI_Effect\Sharde\UI_Hui.shader" />
+    <None Include="Assets\Resources\Effect\Old\UI_Effect\Sharde\UI_Hui_2.shader" />
+    <None Include="Assets\Resources\EffectsSharde\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\BlendModesOverlay.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ContrastComposite.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\CreaseApply.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\FisheyeShader.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\GlobalFog.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\GrayscaleEffect.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\MotionBlurClear.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\NoiseAndGrain.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\RadialBlur.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\SSAOShader.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\SepiaToneEffect.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\Tonemapper.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\TwirlEffect.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\VignettingShader.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\Resources\EffectsSharde\Projectors\Guidelines.txt" />
+    <None Include="Assets\Resources\EffectsSharde\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\Resources\EffectsSharde\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\Resources\EffectsSharde\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Resources\EffectsSharde\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ToonShading\Shaders\ToonBasic.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ToonShading\Shaders\ToonBasicOutline.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ToonShading\Shaders\ToonLit.shader" />
+    <None Include="Assets\Resources\EffectsSharde\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\Resources\Projectors\Guidelines.txt" />
+    <None Include="Assets\Resources\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\Resources\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\Resources\Shaders\Alpha-Bumped.shader" />
+    <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha 1.shader" />
+    <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha-Top 1.shader" />
+    <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha-Top.shader" />
+    <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha.shader" />
+    <None Include="Assets\Resources\Shaders\Alpha-Diffuse-Lowest.shader" />
+    <None Include="Assets\Resources\Shaders\Alpha-Diffuse-Top.shader" />
+    <None Include="Assets\Resources\Shaders\AlphaTest-Diffuse-DetachAlpha-Top.shader" />
+    <None Include="Assets\Resources\Shaders\AlphaTest-Diffuse-DetachAlpha.shader" />
+    <None Include="Assets\Resources\Shaders\AlphaTest-Diffuse-Top.shader" />
+    <None Include="Assets\Resources\Shaders\MaskShader.shader" />
+    <None Include="Assets\Resources\Shaders\Toony-Basic.shader" />
+    <None Include="Assets\Resources\Shaders\Toony-BasicOutline.shader" />
+    <None Include="Assets\Resources\Shaders\Transparent_Outline.shader" />
+    <None Include="Assets\Resources\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Building_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\ChapterSon_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Chapter_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Country_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Drop_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\EquipMake_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\EquipSuitProperty_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\EquipSuit_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Equip_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\GameMainValue.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\GameStory_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\HonorStore_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Item_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Monster_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Npc_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Occupation_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Pet_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\RoseExp_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SceneItem_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SceneTransfer_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Scene_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\ShouJiItemPro_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\ShouJiItem_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SkillBuff_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Skill_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SpecialEvent_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\TakeCard_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Talent_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\TaskCountry_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\TaskMovePosition_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Task_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\GameConfig.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseBag.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseBuilding.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseConfig.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseData.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseDayReward.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseEquip.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseEquipHideProperty.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseStoreHouse.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\GameConfig.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseBag.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseBuilding.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseConfig.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseData.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseDayReward.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseEquip.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseEquipHideProperty.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RosePet.xml" />
+    <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseStoreHouse.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Building_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\ChapterSon_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Chapter_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Country_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Drop_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\EquipMake_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\EquipSuitProperty_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\EquipSuit_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Equip_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\GameMainValue.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\GameStory_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\HonorStore_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Item_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Monster_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Npc_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Occupation_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\RoseExp_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SceneItem_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SceneTransfer_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Scene_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SkillBuff_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Skill_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SpecialEvent_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\TakeCard_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\TaskCountry_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\TaskMovePosition_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Task_Template.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseBag.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseBuilding.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseConfig.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseData.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseDayReward.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseEquip.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseEquipHideProperty.xml" />
+    <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseStoreHouse.xml" />
+    <None Include="Assets\T4M\READMEFIRST.txt" />
+    <None Include="Assets\T4M\Shaders\BrushPreview.shader" />
+    <None Include="Assets\T4M\Shaders\PlantPreview.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel1\T4M 2 Textures Auto BeastLM 2DrawCall.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel1\T4M 2 Textures ManualAdd BeastLM_1DC.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel1\T4M 2 Textures ManualAdd CustoLM 1DC.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 2 TexturesBumped Mobile.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 2 TexturesBumped.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 3 TexturesBumped Mobile.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 3 TexturesBumped.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 4 TexturesBumped.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\BumpSpec\T4M 2 TexturesBumpSpec Mobile.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\BumpSpec\T4M 2 TexturesBumpSpec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\BumpSpec\T4M 3 TexturesBumpSpec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 2 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 3 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 4 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 5 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 6 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M World Projection Shader.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\DirectionLM\T4M 2 TexturesBumped DLM mobile.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\DirectionLM\T4M 2 TexturesBumped DLM.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\DirectionLM\T4M 3 TexturesBumped DLM.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Specular\T4M 2 Textures Spec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Specular\T4M 3 Textures Spec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Specular\T4M 4 Textures Spec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Toon\T4M 2 Textures Toon.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Toon\T4M 3 Textures Toon.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Toon\T4M 4 Textures Toon.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unified\T4M 2 TexturesUnified.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unified\T4M 3 TexturesUnified.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unified\T4M 4 TexturesUnified.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\2TexturesUnlit.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\3TexturesUnlit.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\4TexturesUnlit.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\5TexturesUnlit.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\6TexturesUnlit.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\6TexturesUnlitNoLM.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\T4M World Projection Shader Unlit+LM.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Bump\T4M 2 TexturesBump.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Bump\T4M 3 TexturesBump.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Bump\T4M 4 TexturesBump.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\BumpSpec\T4M 2 TexturesBumpSpec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\BumpSpec\T4M 3 TexturesBumpSpec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\BumpSpec\T4M 4 TexturesBumpSpec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 2 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 3 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 4 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 5 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 6 Textures.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Specular\T4M 2 TexturesSpec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Specular\T4M 3 TexturesSpec.shader" />
+    <None Include="Assets\T4M\Shaders\ShaderModel3\Specular\T4M 4 TexturesSpec.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>

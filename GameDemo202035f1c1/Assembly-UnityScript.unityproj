@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{1C58E07C-863A-AC9E-72BD-8C31189478DA}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_2;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>E:/EnglishFiles/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>E:/EnglishFiles/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\RFX_Resources\Scripts\Rotate.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\RFX_Resources\Scripts\Spawn.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_TransRimShaderFader.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_TransRimShaderInOut.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_TransRimShaderIrisator.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_UVScroller.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_destroyThisTimed.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_effectCaster.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_materialColorRandomizer.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_moveThis.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_prefabGenerator.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_randomRotation.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_randomScale.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_rotateThis.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_stohasticArrowMovement.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Scripts\SM_trailFade.js" />
+     <Compile Include="Assets\Editor Default Resources\Effect\Old\GameEffect\DeadTime.js" />
+     <Compile Include="Assets\Editor Default Resources\MaoXianDao2\Cloth.js" />
+     <Compile Include="Assets\Editor Default Resources\MaoXianDao2\Scroll_UV.js" />
+     <Compile Include="Assets\T4M\Tutorial\Scripts\FPSCounter.js" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\EquipSuitProperty_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\TaskCountry_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseBag.xml" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+     <None Include="Assets\Plugins\CodeStage\AntiCheatToolkit\Runtime\Shaders\WallHackTexture.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Alpha-Top.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\DirectionLM\T4M 3 TexturesBumped DLM.shader" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+     <None Include="Assets\Resources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Specular\T4M 3 TexturesSpec.shader" />
+     <None Include="Assets\Plugins\Android\res\values-v14\styles.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\HintProList_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\EquipSuit_Template.xml" />
+     <None Include="Assets\Resources\Shaders\AlphaTest-Diffuse-DetachAlpha-Top.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unified\T4M 3 TexturesUnified.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\ChapterSon_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SpecialEvent_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\GameMainValue.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Building_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseData.xml" />
+     <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha-Top 1.shader" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\RFX_Resources\Scripts\HowtoPlay.txt" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseBag.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Item_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Monster_Template.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 4 Textures.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_country_arrays.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel1\T4M 2 Textures ManualAdd BeastLM_1DC.shader" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\RFX_Resources\Prefabs\Fx\V2\V2_Change.txt" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 3 Textures.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseEquipHideProperty.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\GameCreate.xml" />
+     <None Include="Assets\Editor Default Resources\3D Items - Mega Pack\Read Me.txt" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseDayReward.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\BumpSpec\T4M 2 TexturesBumpSpec.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\GameMainValue.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\4TexturesUnlit.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Editor Default Resources\CritterPack\Shaders\EnAn_2sided_transparent_cutout.shader" />
+     <None Include="Assets\Plugins\Android\res\menu\main.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\EquipMake_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_strings.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RosePet.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Country_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\HonorStore_Template.xml" />
+     <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Add-DetachAlpha.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Task_Template.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 2 TexturesBumped Mobile.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\Resources\Shaders\AlphaTest-Diffuse-Top.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseEquipHideProperty.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\ShouJiItem_Template.xml" />
+     <None Include="Assets\ArtResource\Shaders\AlphaTest-Diffuse-DetachAlpha-Top.shader" />
+     <None Include="Assets\Resources\Effect\UI_Effect\Sharde\UI-Default-No-Alpha.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Resources\Projectors\Guidelines.txt" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 3 TexturesBumped.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\AndroidManifest.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseEquip.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\BumpSpec\T4M 2 TexturesBumpSpec Mobile.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_progressbar.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Skill_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\EquipSuitProperty_Template.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\6TexturesUnlitNoLM.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseConfig.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 3 Textures.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\BumpSpec\T4M 4 TexturesBumpSpec.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Specular\T4M 2 TexturesSpec.shader" />
+     <None Include="Assets\T4M\Shaders\BrushPreview.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Bump\T4M 4 TexturesBump.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\DirectionLM\T4M 2 TexturesBumped DLM.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 6 Textures.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_platform_cell_back.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Building_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RosePet123.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\EquipSuit_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Occupation_Template.xml" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_country_arrays.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseStoreHouse.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseBuilding.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SceneTanSuo_Template.xml" />
+     <None Include="Assets\ArtResource\Shaders\SkillArea.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 4 Textures.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\Projectors\Guidelines.txt" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Specular\T4M 4 Textures Spec.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 4 TexturesBumped.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ToonShading\Shaders\ToonBasicOutlineRose.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 2 Textures.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SceneTransfer_Template.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Specular\T4M 4 TexturesSpec.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseConfig.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Scene_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SceneItem_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Resources\Shaders\Transparent_Outline.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\GameStory_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseEquipHideProperty.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Monster_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseBuilding.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseEquip.xml" />
+     <None Include="Assets\Plugins\Android\res\values\dimens.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseStoreHouse.xml" />
+     <None Include="Assets\Resources\Shaders\MaskShader.shader" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\IceEffect\Effects\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-AlphaBlend-Diffuse.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 2 Textures.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_instapaper_strings.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Toon\T4M 3 Textures Toon.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\GameConfig.xml" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\CharaMain.cginc" />
+     <None Include="Assets\ArtResource\Shaders\Particle-Add-DetachAlpha.shader" />
+     <None Include="Assets\Plugins\iOS\ShareSDK\Editor\SDK\ShareSDK\Support\PlatformSDK\WeChatSDK\README.txt" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseData.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\TaskMovePosition_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseDayReward.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 5 Textures.shader" />
+     <None Include="Assets\ArtResource\Shaders\Particle-Alpha-Blend-DetachAlpha-Top.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Toon\T4M 2 Textures Toon.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\activity_main.xml" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SceneItem_Template.xml" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\CharaSkin.cginc" />
+     <None Include="Assets\Resources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\SkillBuff_Template.xml" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseDayReward.xml" />
+     <None Include="Assets\Editor Default Resources\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\HonorStore_Template.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\3TexturesUnlit.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Npc_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseBag.xml" />
+     <None Include="Assets\ArtResource\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha-Top.shader" />
+     <None Include="Assets\Editor Default Resources\RPG Monster Pack 1\Shaders\Illumin-DiffuseAndAlphaTest.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Equip_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Set_Xml\10001\RoseEquip.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Specular\T4M 3 Textures Spec.shader" />
+     <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseData.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\T4M World Projection Shader Unlit+LM.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Specular\T4M 2 Textures Spec.shader" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Alpha-DetachAlpha-Top.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_weibo_retry_btn_selector.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Bump\T4M 3 TexturesBump.shader" />
+     <None Include="Assets\Resources\Shaders\Alpha-Diffuse-DetachAlpha 1.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_color_drawables.xml" />
+     <None Include="Assets\Editor Default Resources\CritterPack\Shaders\EnAn_2sided_transparent.shader" />
+     <None Include="Assets\Plugins\iOS\ShareSDK\Editor\SDK\ShareSDK\Support\Optional\ShareSDKConfigFile.bundle\ShareContent.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\ArtResource\Shaders\Particle-Alpha-Blend-Top.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_oks_strings.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\ArtResource\Shaders\Projector-Light.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\TaskMovePosition_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SkillBuff_Template.xml" />
+     <None Include="Assets\ArtResource\Shaders\Particle-Add-DetachAlpha-Top.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Pet_Template.xml" />
+     <None Include="Assets\ArtResource\Shaders\Particle-Premultiply-Blend-DetachAlpha-Top.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\EquipMake_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseOtherData.xml" />
+     <None Include="Assets\Plugins\Android\res\values-v11\styles.xml" />
+     <None Include="Assets\Resources\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Editor Default Resources\BattleDragon\readme.txt" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unified\T4M 4 TexturesUnified.shader" />
+     <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Add-DetachAlpha-Top.shader" />
+     <None Include="Assets\ArtResource\Shaders\Particle-Alpha-Blend-DetachAlpha.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Editor Default Resources\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel1\T4M 2 Textures ManualAdd CustoLM 1DC.shader" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 2 TexturesBumped.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Task_Template.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unified\T4M 2 TexturesUnified.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Plugins\iOS\ShareSDK\Editor\SDK\ShareSDK\Support\Optional\ShareSDKConfigFile.bundle\ShareSDK.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\EquipQiangHua_Template.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\6TexturesUnlit.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\GameConfig.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\RoseExp_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Resources\Effect\UI_Effect\Sharde\UI_Hui_2.shader" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\IceEffect\Readme.txt" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Alpha-DetachAlpha.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SceneTransfer_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Npc_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\BumpSpec\T4M 3 TexturesBumpSpec.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Multiply-DetachAlpha-Top.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 6 Textures.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RoseConfig.xml" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_strings.xml" />
+     <None Include="Assets\Resources\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\CharaOutline.cginc" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ToonShading\Shaders\ToonBasicOutlineImgTou.shader" />
+     <None Include="Assets\GameSpript\UI\UI_RoseSkill\RoseData.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Item_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\GameStory_Template.xml" />
+     <None Include="Assets\ArtResource\Shaders\Particle-AddSmooth-DetachAlpha-Top.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Skill_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseBuilding.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\readme.txt" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\SpecialEvent_Template.xml" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10001\RosePet.xml" />
+     <None Include="Assets\Resources\Shaders\Alpha-Diffuse-Lowest.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 3 TexturesBumped Mobile.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\5TexturesUnlit.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\ChapterSon_Template.xml" />
+     <None Include="Assets\Plugins\Android\res\values-w820dp\dimens.xml" />
+     <None Include="Assets\Resources\3DModel\RoseModel\Occ_ZhanShi\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\ShouJiItemPro_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\TakeCard_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Chapter_Template.xml" />
+     <None Include="Assets\Resources\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Plugins\CodeStage\AntiCheatToolkit\Integration\readme.txt" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\TakeCard_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Drop_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\ArtResource\Shaders\Line.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Chapter_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_weibo_retry_btn_default.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Resources\Shaders\Alpha-Diffuse-Top.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_strings.xml" />
+     <None Include="Assets\ArtResource\Shaders\AlphaTest-Diffuse-Top.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\RoseExp_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel1\T4M 2 Textures Auto BeastLM 2DrawCall.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\Bump\T4M 2 TexturesBump.shader" />
+     <None Include="Assets\Plugins\Android\youmeng\AndroidManifest.xml" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Activity_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\ArtResource\Shaders\Particle-Add-Top.shader" />
+     <None Include="Assets\T4M\Shaders\PlantPreview.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Talent_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Occupation_Template.xml" />
+     <None Include="Assets\Resources\Effect\UI_Effect\Sharde\UI_Hui.shader" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Shaders\SM_2sided_transparent.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_weibo_retry_btn_press.xml" />
+     <None Include="Assets\Editor Default Resources\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\IceEffect\Effects\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-Additive-Diffuse.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Set_Xml\10002\RoseStoreHouse.xml" />
+     <None Include="Assets\ArtResource\Shaders\butterfly.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Toon\T4M 4 Textures Toon.shader" />
+     <None Include="Assets\Editor Default Resources\Monster\Old\Wolf_Animation.txt" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\2TexturesUnlit.shader" />
+     <None Include="Assets\Resources\Shaders\Alpha-Bumped.shader" />
+     <None Include="Assets\ArtResource\Shaders\Mobile-Particle-Add-Top.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Resources\Shaders\AlphaTest-Diffuse-DetachAlpha.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Drop_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\ArtResource\Shaders\MADFINGER-Unlit-Scroll2Layers-Mul-skybox.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M World Projection Shader.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel3\BumpSpec\T4M 3 TexturesBumpSpec.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\DirectionLM\T4M 2 TexturesBumped DLM mobile.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Equip_Template.xml" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\IceEffect\Effects\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-AlphaBlend-Diffuse-Z.shader" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\Diffuse\T4M 5 Textures.shader" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Country_Template.xml" />
+     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\TaskCountry_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\Scene_Template.xml" />
+     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Editor Default Resources\Effect\Old\GameEffect\All\ShurikenMagic\Shaders\SM_TransparentRim.shader" />
+     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+     <None Include="Assets\T4M\Shaders\ShaderModel2\BumpSpec\T4M 2 TexturesBumpSpec.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/EnglishFiles/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>E:/EnglishFiles/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>E:/EnglishFiles/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>J:/WeiJingGame_2/GameDemo/Assets/GameSpript/Data/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>E:/EnglishFiles/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
