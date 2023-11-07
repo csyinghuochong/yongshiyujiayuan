@@ -1,0 +1,974 @@
+﻿1#1#1@
+下级部位属性提升#下级部位属性提升#Next Position@
+当前部位属性提升#当前部位属性提升#Aktuell Position@
+强化成功概率#强化成功概率#Probability@
+战士#战士#Warrior@
+魔法师#魔法师#Magician@
+携带宠物数量#携带宠物数量#test1@
+剩余点数#剩余点数#test1@
+主宠#宠物栏位#PetPosition@
+副宠#宠物栏位#PetPosition@
+出 战#出 战#Fight@
+休 息#休 息#Rest@
+经验#经验#Exp@
+金币#金币#Gold@
+主线任务#主线任务#Main Task@
+支线任务#支线任务#Branch Task@
+每日任务#每日任务#Daily Task@
+第#第#No.@
+环#环#@
+级#级#Lv@
+(已完成)#(已完成)#(Completed)@
+击杀#击杀#Kill@
+获得#获得#Get@
+等级到达#等级到达#Level to@
+击杀任意怪物#击杀任意怪物#Kill Any Monster@
+击杀BOSS级别怪物#击杀BOSS级别怪物#Kill Any Boss@
+抓获#抓获#Catch@
+宠物#宠物#Pet@
+找到符合要求的装备#找到符合要求的装备#Find Target Equip@
+寻找#寻找#Find@
+点击放置合成宠物#点击放置合成宠物#Click Put@
+技能点数#技能点数#SP@
+未学习#未学习#Unlearned@
+级学习#级学习#level@
+技能等级#技能等级#Skill Level@
+消耗#消耗#Cost@
+技能点数#技能点数#SP@
+点#点#@
+当前技能点数#当前技能点数#SP@
+制造等级：无限制#制造等级：无限制#Need Lv : 1@
+需要等级#需要等级#Need Lv@
+制造数量#制造数量#Number@
+成功概率#成功概率#Probability@
+制造难度#制造难度#Difficulty@
+消耗金币#消耗金币#Cost@
+个#个#@
+星#星#@
+需要熟练度#需要熟练度#Need Proficiency@
+金币不足#金币不足#Not Enough Gold@
+打造熟练度#打造熟练度#Make Proficiency@
+炼金熟练度#炼金熟练度#Alchemy Proficiency@
+宝石熟练度#宝石熟练度#Gem Proficiency@
+提升打造极品的概率#提升打造极品的概率#Increase the probability of creating the best quality@
+炼金暴击!有概率获得双倍收益#炼金暴击!有概率获得双倍收益#Alchemy Crit！;There is a probability of double income@
+成就首页#成就首页#Home@
+成就列表#成就列表#List@
+战斗成就#战斗成就#Fight@
+探索成就#探索成就#Explore@
+收集成就#收集成就#Collect@
+通 用#通 用#General@
+第一章#第一章#chap. 1@
+第二章#第二章#chap. 2@
+第三章#第三章#chap. 3@
+第四章#第四章#chap. 4@
+第五章#第五章#chap. 5@
+野兽#野兽#Beast@
+人类#人类#Human@
+恶魔#恶魔#Demon@
+正在向服务器请求首杀数据#正在向服务器请求首杀数据#Requesting first kill data from server@
+已击杀#已击杀#Kill Success@
+已刷新#已刷新#Appear@
+普通模式#普通模式#Normal@
+击杀时间#击杀时间#Kill Time@
+未击杀#未击杀#Not Killed@
+困难模式#困难模式#Challenge@
+地狱模式#地狱模式#Hell@
+普通难度首胜奖励#普通难度首胜奖励#Normal Reward@
+挑战难度首胜奖励#挑战难度首胜奖励#Challenge Reward@
+地狱难度首胜奖励#地狱难度首胜奖励#Hell  Reward@
+我的等级#我的等级#My Level@
+我的实力值#我的实力值#My Strength@
+需要等级达到#需要等级达到#Need Level to@
+需要战力达到#需要战力达到#Need Strength to@
+最新版本#最新版本#New Version@
+当前版本为最新版本#当前版本为最新版本#Latest Version@
+未连接服务器获取最新版本#未连接服务器获取最新版本#Server not connected@
+游戏战区#游戏战区#Server Name@
+当前自身的实力值#当前自身的实力值#Self Strength@
+点#点#@
+第1名#第1名#No.1@
+第2名#第2名#No.2@
+第3名#第3名#No.3@
+第4-10名#第4-10名#No.4-10@
+第11-20名#第11-20名#No.11-20@
+第21-30名#第21-30名#No.21-30@
+第31-50名#第31-50名#No.31-50@
+第51-100名#第51-100名#No.51-100@
+第101-200名#第101-200名#No.101-200@
+第201-500名#第201-500名#No.201-500@
+我的排名#我的排名#MyRank@
+材料#材料#Material@
+宠物#宠物#Pet@
+宝石#宝石#Gem@
+低级技能#低级技能#Low Skill@
+高级技能#高级技能#Advanced@
+红色插槽#红色插槽#Red@
+紫色插槽#紫色插槽#Purple@
+蓝色插槽#蓝色插槽#Blue@
+绿色插槽#绿色插槽#Green@
+白色插槽#白色插槽#White@
+抗性宝石#抗性宝石#Resistance@
+价格浮动#价格浮动#Price@
+上涨价格#上涨价格#Up@
+下降价格#下降价格#Down@
+通用#通用#General@
+已上架#已上架#Sell Time : @
+小时#小时#Hours@
+分钟#分钟#Min@
+点活跃度奖励#点活跃度奖励#Activity Award@
+概率获得神兽碎片#概率获得神兽碎片#Probability Get Mythical Animals Debris@
+当前技能点数#当前技能点数#Now SP:@
+进度值#进度值#Progress@
+活跃度#活跃度#Active@
+周卡剩余领取次数#周卡剩余领取次数#Remains Number@
+开启周卡需消耗#开启周卡需消耗#Open Week Pass Cost@
+钻石#钻石#Diamond@
+级冒险家#级冒险家#Level Adventurer@
+点击领取作者回馈礼包#点击领取作者回馈礼包#Click Claim@
+冒险家积分不足#冒险家积分不足#Adventurer Point Insufficient@
+赞助#赞助#Recharge@
+元可直接开启礼包#元可直接开启礼包#Can Open Week Pass@
+你今日已赞助#你今日已赞助#Recharged@
+元#元#@
+此额度每日0点清空#此额度每日0点清空#Every Day Clearn@
+熟练度达到#熟练度达到#Proficiency need@
+英勇洗炼#英勇洗炼#Heroic Polish@
+海神洗炼#海神洗炼#Poseidon Polish@
+漠灵洗炼#漠灵洗炼#Desert Undead Polish@
+光辉洗炼#光辉洗炼#Brilliant Polish@
+圣光洗炼#圣光洗炼#Holy Polish@
+当前#当前#Now@
+熟练度#熟练度#Proficiency@
+秒后免费领取#秒后免费领取#s Get for free@
+当前可免费领取#当前可免费领取#Get for free@
+第一章探宝#第一章探宝#Par.1@
+第二章探宝#第二章探宝#Par.2@
+第三章探宝#第三章探宝#Par.3@
+第四章探宝#第四章探宝#Par.4@
+第五章探宝#第五章探宝#Par.5@
+探索寻找物品中#探索寻找物品中#Find Loading@
+攻击下限#攻击下限# Min Dmg@
+攻击上限#攻击上限#Max DMG@
+法术下限#法术下限#MIN SDMG@
+法术上限#法术上限#MAX SDMG@
+防御下限#防御下限#MIN DEF@
+防御上限#防御上限#MAN DEF@
+魔防下限#魔防下限#MIN RES@
+魔防上限#魔防上限#MAX RES@
+移动速度提升#移动速度提升#Movement Speed@
+暴击等级#暴击等级#Critical LV@
+韧性等级#韧性等级#CRIT Resist LV@
+命中等级#命中等级#Attack Rating LV@
+闪避等级#闪避等级#Dodge  LV@
+暴击率#暴击率#Critical Chance@
+命中率#命中率#Attack Rating @
+闪避率#闪避率#Dodge  chance@
+格挡值#格挡值#Block Value@
+重击概率#重击概率#Heavy Hit@
+重击附加伤害#重击附加伤害#Extra HH Damage@
+攻击附加伤害#攻击附加伤害#Extra Fixed Damage@
+忽视目标防御值#忽视目标防御值#Ignore P-def @
+忽视目标魔防值#忽视目标魔防值#Ignore M- def@
+忽视目标防御值#忽视目标防御值# Armor Penetration@
+忽视目标魔防值#忽视目标魔防值#Spell Penetration@
+吸血#吸血#health steal @
+物理免伤提升#物理免伤提升#Armor Damage reduction@
+魔法免伤提升#魔法免伤提升#Spell Damage reduction@
+韧性#韧性#CRIT Resist@
+法术反击#法术反击#Spell Attacker Takes Damage@
+攻击反击#攻击反击#Attacker Takes Damage@
+回血值#回血值#Replenish Life  X@
+回血百分比#回血百分比#Replenish  %@
+战斗回血百分比#战斗回血百分比#Combat regeneration %@
+光抗性#光抗性#Holy Resistance@
+暗抗性#暗抗性#shadow  Resistance@
+火抗性#火抗性#Frost Resistance@
+水抗性#水抗性#Fire Resistance@
+电抗性#电抗性#Lightning Resistance@
+野兽攻击抗性#野兽攻击抗性#beast  Resistance@
+人形攻击抗性#人形攻击抗性#Humanoid  Resistance@
+恶魔攻击抗性#恶魔攻击抗性# Demons  Resistance@
+野兽攻击伤害#野兽攻击伤害#Damage To beas % @
+人形攻击伤害#人形攻击伤害#Damage To Humanoid % @
+恶魔攻击伤害#恶魔攻击伤害#Damage To Demons % @
+BOSS伤害加成#BOSS伤害加成#Armor Dmg To Boss % @
+Boss技能攻击加成#Boss技能攻击加成#Magic Dmg To Boss % @
+受到Boss普通攻击减免#受到Boss普通攻击减免#Armor Dmg Reduced By Boss@
+受到Boss技能攻击减免#受到Boss技能攻击减免#Magic Dmg Reduced By boss@
+宠物攻击加成#宠物攻击加成#PET Enhanced Damage@
+宠物受伤减免#宠物受伤减免#PET Damage reduction@
+技能冷却时间缩减#技能冷却时间缩减#Cooldown Reduction  （cdr）@
+自身buff效果延长#自身buff效果延长#BUFF Length+ X SEC@
+Debuff时间缩短#Debuff时间缩短#DEBUFF Length- X SEC@
+闪避恢复血量#闪避恢复血量#Replenish @
+经验加成#经验加成#Extra EXP@
+金币加成#金币加成#Extra Gold @
+洗炼极品掉落#洗炼极品掉落#Good Drop@
+装备隐藏属性出现概率#装备隐藏属性出现概率#CHANCE Hidden Properties@
+装备上的宝石槽位出现概率#装备上的宝石槽位出现概率#CHANCE Extra Hole@
+药剂熟练度增加#药剂熟练度增加#Alchemy LV/point@
+锻造熟练度增加#锻造熟练度增加#Blacksmithing LV/point@
+地图剩余时间#地图剩余时间#Map remaining time@
+秒#秒#s@
+寻找到真实宝箱#寻找到真实宝箱#Find the real treasure chest@
+正在退出地图#正在退出地图#Exiting the map@
+秘境值#秘境值#Mystic value@
+血量#血量#Hp@
+攻击#攻击#Atk@
+防御#防御#Def@
+魔防#魔防#Res@
+暴击#暴击#Cri@
+命中#命中#Hit@
+闪避#闪避#Dog@
+技能闪避#技能闪避#SkillDog@
+伤害加成#伤害加成#ED@
+伤害减免#伤害减免#DR@
+移动速度#移动速度#MS@
+幸运值#幸运值#Luck@
+法术强度#技能伤害#Sp@
+强化 装备属性提升#强化 装备属性提升#Intensify Proprety@
+武器#武器#Weapon@
+衣服#衣服#Clothes@
+护符#护符#Talismans@
+灵石#灵石#Ring@
+饰品#饰品#Magic@
+鞋子#鞋子#shoes@
+裤子#裤子#Pants@
+腰带#腰带#Belts@
+手套#手套#Gloves@
+头盔#头盔#Helmet@
+项链#项链#Necklace@
+件套#件套#-pc-set@
+部位#部位#Position@
+等级#等级#Level@
+等级不足#等级不足#Insufficient Level@
+需要#需要#Need@
+达到#达到#to@
+攻击力不足#攻击力不足#Insufficient ATK @
+红色插槽#红色插槽#Red Hole@
+紫色插槽#紫色插槽#Violet Hole@
+蓝色插槽#蓝色插槽#Blue Hole@
+绿色插槽#绿色插槽#Green Hole@
+白色插槽#白色插槽#White Hole@
+多彩插槽#多彩插槽#Colourful Hole@
+隐藏属性#隐藏属性#Hide@
+格挡值额外提高#格挡值额外提高#Block Value Up @
+重击概率额外提高#重击概率额外提高#Heavy Hit Up @
+重击附加伤害额外提高#重击附加伤害额外提高#Extra HH Damage Up @
+固定伤害额外提高#固定伤害额外提高#Fixed Damage Up @
+忽视目标防御值额外提高#忽视目标防御值额外提高#Ignore P-def  Up @
+忽视目标魔防值额外提高#忽视目标魔防值额外提高#Ignore M- def Up @
+攻击穿透额外提高#攻击穿透额外提高# Armor Penetration Up @
+魔法穿透额外提高#魔法穿透额外提高#Spell Penetration Up @
+吸血率额外提高#吸血率额外提高#health steal  Up @
+法术反弹额外提高#法术反弹额外提高#Spell Takes Damage Of  Up @
+攻击反弹额外提高#攻击反弹额外提高#Attacker Takes Damage Of  Up @
+韧性概率额外提高#韧性额外提高#CRIT Resist Up @
+回血百分比额外提高#回血百分比额外提高#Replenish Up @
+回血固定值额外提高#回血固定值额外提高#Replenish Life Up @
+战斗回血比例额外提高#战斗回血比例额外提高#Combat regeneration Up @
+暴击等级额外提高#暴击等级额外提高#Critical LV Up @
+韧性等级额外提高#韧性等级额外提高#CRIT Resist LV Up @
+命中等级额外提高#命中等级额外提高#Attack Rating LV Up @
+闪避等级额外提高#闪避等级额外提高#Dodge LV Up @
+神圣抗性额外提高#神圣抗性额外提高#Holy Resistance Up @
+暗影抗性额外提高#暗影抗性额外提高#shadow  Resistance Up @
+冰霜抗性额外提高#冰霜抗性额外提高#Frost Resistance Up @
+火焰抗性额外提高#火焰抗性额外提高#Fire Resistance Up @
+闪电抗性额外提高#闪电抗性额外提高#Lightning Resistance Up @
+野兽攻击抗性额外提高#野兽攻击抗性额外提高#beast  Resistance Up @
+人物攻击抗性额外提高#人物攻击抗性额外提高#Humanoid  Resistance Up @
+恶魔攻击抗性额外提高#恶魔攻击抗性额外提高# Demons  Resistance Up @
+攻击野兽伤害额外提高#攻击野兽伤害额外提高#Damage To beas Up @
+攻击人物伤害额外提高#攻击人物伤害额外提高#Damage To Humanoid Up @
+攻击恶魔伤害额外提高#攻击恶魔伤害额外提高#Damage To Demons  Up @
+经验收益额外提高#经验收益额外提高#Extra EXP Up @
+金币收益额外提高#金币收益额外提高#Extra Gold  Up @
+极品值额外提高#极品值额外提高#@
+祝福值额外提高#祝福值额外提高#@
+运气值额外提高#运气值额外提高#@
+经验收益额外提高#经验收益额外提高#Add EXP Up @
+金币收益额外提高#金币收益额外提高#ADD GOLD Up @
+药剂类熟练度额外提高#药剂类熟练度额外提高#Alchemy point Up @
+锻造类熟练度额外提高#锻造类熟练度额外提高#Blacksmithing point Up @
+复活几率额外提高#复活几率额外提高#Reborn Chance Up @
+无视防御额外提高#无视防御额外提高#Ignore Target Defense  Up @
+神农值额外提高#神农值额外提高#@
+财富值额外提高#财富值额外提高#Extra Gold Up @
+伪装值额外提高#伪装值额外提高#Reduced Up @
+灾难值额外提高#灾难值额外提高#Increase Vulnerable  Up @
+嗜血几率额外提高#嗜血几率额外提高#Increased Defense per Hit Up @
+怪物脱战距离额外提高#怪物脱战距离额外提高#@
+专注额外提高#专注额外提高#@
+必中额外提高#必中额外提高#Increased Hit Up @
+生产药剂暴击概率额外提高#生产药剂暴击概率额外提高#Extra Elixir From Alchemy  Up @
+宠物攻击加成额外提高#宠物攻击加成额外提高#@
+宠物受伤减免额外提高#宠物受伤减免额外提高#@
+技能冷却时间缩减额外提高#技能冷却时间缩减额外提高#Cooldown Reduction Up @
+首领攻击加成额外提高#首领攻击加成额外提高#Armor Dmg To Boss Up @
+首领技能加成额外提高#首领技能加成额外提高#Magic Dmg To Boss Up @
+受到首领攻击减免额外提高#受到首领攻击减免额外提高#Armor Dmg Reduced By Boss Up @
+受到首领技能减免额外提高#受到首领技能减免额外提高#Magic Dmg Reduced By boss Up @
+消耗品#消耗品#Material@
+材料#材料#Consumable@
+装备#装备#Equip@
+宝石#宝石#Gem@
+技能#技能#Skill@
+类型#类型#Type@
+红色#红色#Red @
+紫色#紫色#Violet @
+蓝色#蓝色#Blue @
+绿色#绿色#Green @
+白色#白色#White @
+多彩#多彩#Colourful @
+任意颜色的#任意颜色的#Any Color@
+可镶嵌在#可镶嵌在#Inlaid in@
+孔位#孔位#Hole@
+挖宝位置#挖宝位置#Treasure location@
+使用等级#使用等级#Use Level@
+镶 嵌#镶 嵌#Inlay@
+普普通通#普普通通#Drop Rate Lv.1@
+小赚一笔#小赚一笔#Drop Rate Lv.2@
+幸运玩家#幸运玩家#Drop Rate Lv.3@
+百里挑一#百里挑一#Drop Rate Lv.4@
+千载难逢#千载难逢#Drop Rate Lv.5@
+万众瞩目#万众瞩目#Drop Rate Lv.6@
+绝世耀眼#绝世耀眼#Drop Rate Lv.7@
+谁与争锋#谁与争锋#Drop Rate Lv.8@
+当前爆率#当前爆率#drop rate@
+倍爆率#倍爆率#times drop rate@
+今日累计次数#今日累计次数#Accumulated times today@
+折#折#percent off@
+今日挑战次数#今日挑战次数#Number of fight today@
+的队伍#的队伍#Team@
+拥有者#拥有者#Master@
+此宠物已经在你的战队中#此宠物已经在你的战队中#This pet is already in your team@
+点击放入上阵宠物#点击放入上阵宠物#Click to put the pet in the battle@
+攻击修炼#攻击修炼#ACT Practice@
+血量修炼#血量修炼#HP Practice@
+防御修炼#防御修炼#DEF Practice@
+伤害修炼#伤害修炼#Damge Practice@
+万#万#0 thousand@
+秒后开启#秒后开启#second Open@
+活力#活力#Ener@
+体力#体力#STA@
+已完成#已完成#Completed@
+对话#对话#Speak@
+击杀BOSS#击杀BOSS#Kill Boss@
+捕捉宠物#捕捉宠物#Catch Pet@
+级#级#level@
+提升至#提升至#Up to@
+击杀任意怪物#击杀任意怪物#Kill any monster@
+击杀任意BOSS#击杀任意BOSS#Kill any boss@
+攻击大于#攻击大于#ATK greater than@
+物防大于#物防大于#DEF greater than@
+魔防大于#魔防大于#ADF greater than@
+等级大于#等级大于#Level greater than@
+点的装备#点的装备#equipment@
+白色品质的装备#白色品质的装备#White quality equipment@
+绿色品质的装备#绿色品质的装备#Green quality equipment@
+蓝色品质的装备#蓝色品质的装备#Blue quality equipment@
+紫色品质的装备#紫色品质的装备#Purple quality equipment@
+橙色品质的装备#橙色品质的装备#Orange quality equipment@
+的武器#的武器#Weapon@
+的衣服#的衣服#Clothes@
+的护符#的护符#Talismans@
+的戒指#的戒指#Ring@
+的饰品#的饰品#Magic@
+的鞋子#的鞋子#shoes@
+的裤子#的裤子#Pants@
+的腰带#的腰带#Belts@
+的手套#的手套#Gloves@
+的头盔#的头盔#Helmet@
+的项链#的项链#Necklace@
+无消耗#无消耗#Pass@
+消耗体力#消耗体力#Need STA@
+修炼成功概率#修炼成功概率#Success rate@
+穿戴身上激活成就#穿戴身上激活成就#Wear activation@
+进度#进度#Need@
+主动精灵#主动精灵#Active@
+被动精灵#被动精灵#Passive@
+下一等级#下一等级#Next level@
+前置激活条件#前置激活条件#Activation requirements@
+使用天赋点数#使用天赋点数#Use talent points@
+天赋达到#天赋达到#Talent points to@
+级#级#Level@
+到达等级免费领取#到达等级免费领取#Free at level@
+级开启购买#级开启购买#Level open purchase@
+系统提示#系统提示#Tips@
+确 定#确 定#Yes@
+取 消#取 消#NO@
+4级开启#4级开启#4 lv open@
+8级开启#8级开启#8 lv open@
+10级开启#10级开启#10 lv open@
+20级开启#20级开启#20 lv open@
+装备制造#装备制造#Make@
+宠物系统#宠物系统#Pet@
+天赋系统#天赋系统#Talent@
+宠物合成#宠物合成#Pet Mix@
+探宝次数达到#探宝次数达到#Times to@
+今日抽卡次数#今日抽卡次数#Times today@
+离线宝箱奖励#离线宝箱奖励#Offline chest reward@
+以下道具随机获得一种#以下道具随机获得一种#Get one of the following items at random@
+当前离线点数#当前离线点数#Current offline points@
+剩余储备经验#剩余储备经验#Residual reserve experience@
+肝帝#肝帝#Level King@
+第一个升级至20级的为肝帝#第一个升级至20级的为肝帝#The first one upgraded to level 20 is the Level king@
+可以获得经验加成#可以获得经验加成#Experience bonus@
+当前的等级#当前的等级#Current Level@
+当前的经验百分比#当前的经验百分比#Current experience percentage@
+虚弱的#虚弱的#Frail@
+强壮的#强壮的#Strong@
+头领#头领#Leader@
+挑战#挑战#Challenge@
+地狱#地狱#Hell@
+传送#传送#Go@
+前往#前往#Go@
+护盾开启#护盾开启#Shield@
+闪避#闪避#DOG@
+暴击#暴击#CRI@
+吸血#吸血#LL@
+抵消伤害#抵消伤害#Counteract@
+闪避 血量#闪避 血量#DOG HP@
+光明抗性#神圣抗性#HR@
+黑暗抗性#黑暗抗性#SR@
+火焰抗性#火焰抗性#FR@
+冰霜抗性#冰霜抗性#CR@
+闪电抗性#闪电抗性#LR@
+重击#重击#HH@
+反击伤害#反击伤害#APR@
+已达成#已达成#Completed@
+成就#成就#Achievement@
+品质#品质#Quality@
+魔法天赋#魔法天赋#Magic@
+召唤天赋#召唤天赋#Summon@
+
+hint_1#背包已满,请预留至少1个位置！#Full backpack, please reserve at least 1 space!@
+hint_2#该技能已经装备#This skill is already equipped@
+hint_3#此技能为被动技能,无法拖动!#Passive skill ,cannot be dragged@
+hint_4#该技能未学习#This skill has not been learned@
+hint_5#宠物位置已满！#There is no spare pet slot@
+hint_6#恭喜你获得传说神兽!!!#Congratulations: Get a legendary pet!@
+hint_7#神兽碎片不足!#Insufficient pieces of legendary pet@
+hint_8#恭喜你触发完美挖宝!获得2次奖励机会,每次各自随机!#Perfect treasure: Double treasure chances@
+hint_9#此地图不能使用技能！#You cannot use any skill in this map@
+hint_10#技能施法状态中断！#Skill casting is interrupted@
+hint_11#你需要选择攻击目标#Please select the target@
+hint_12#你需要离的更近一点#You need to get closer@
+hint_13#当前制造技能你已经学习！#You have learned this manufacturing skill!@
+hint_14#角色等级不足！#Insufficient role level!@
+hint_15#学习需要的金币不足!#Insufficient gold coins to learn!@
+hint_16#当前没有任何宠物！#No pet here!@
+hint_17#技能触发专注!#The skill triggers Tactician!@
+hint_18#恭喜你!学会制作道具:#Congratulations! Learn to make prop:@
+hint_19#出战等级不足#Insufficient level to combat@
+hint_20#请等待冷却时间结束再次召唤宠物！#Pet summon is in CD@
+hint_21#宠物召唤冷却#Pet summon is in CD@
+hint_22#当前出战位已满！#The combat table is full!@
+hint_23#战斗时不能撤回宠物#Pet cannot be withdrawn in combat@
+hint_24#名称不能为空#Name cannot be empty@
+hint_25#名称长度不能大于7个字符#Name cannot be longer than 7 characters@
+hint_26#出战中不能放生宠物！#Pet cannot be released during the combat@
+hint_27#无法领取!未达到黄金令牌#Unable to claim! Golden token not reached@
+hint_28#无法领取!未达到钻石令牌#Unable to claim! Diamond token not reached@
+hint_29#领取奖励需要预留1个道具位置#You need to reserve 1 prop space to receive the reward@
+hint_30#支付开启中,请稍等……！#Payment is being opened ...@
+hint_31#支付繁忙,请稍后支付,如长时间无反应请重启游戏应用！#Payment is busy, please pay later. If there is no response for a long time, please restart the game!@
+hint_32#支付转接中,请不要关闭界面……#During payment transfer, please do not close the interface ...@
+hint_33#当前奖励已领取!#This reward has been received!@
+hint_34#未连接支付服务器,请确认本地网络或加游戏群联系管理员！#Not connected to the Payment Server,please check the local network or enter the game gruop to contact the admin!@
+hint_35#提示:你已充值,请耐心等待支付返回结果,不要关闭此界面和退出游戏！#Tip: You have recharged, please wait patiently for the return result of payment, do not close this interface or exit the game!@
+hint_36#今天已经进入副本一次了,请明天再来！#No more chance to enter the copy, please try it tomorrow!@
+hint_37#副本暂未开启!敬请期待~#The copy has not been opened yet! @
+hint_38#今天已经进入副本一次了,请明天再来！#No more chance to enter the copy, please try it tomorrow!@
+hint_39#你已领取通关大秘境第#You have received the Grand Mystery reward of Tier @
+hint_40#层奖励！#@
+hint_41#你还未通关大秘境第1层,无法领取奖励！#You haven't cleared  Tier 1 of Grand Mystery and can't claim the reward!@
+hint_42#此地图不能使用恢复类道具！#This map cannot use recovery props!@
+hint_43#开始失败!请背包内至少预留5个位置!#Start failed! Please reserve at least 5 places in the backpack!@
+hint_44#功能暂未开启!#The function is not turned on yet!@
+hint_45#当前制造物品已经学习!请勿重复学习#You have learned the manufacturing prop! Do not repeat the learning@
+hint_46#当前宠物栏位已满！宠物栏位每15、25、35、45、55级均会新增一个宠物栏位！#The pet fields are currently full! Get a pet field for every 15, 25, 35, 45, 55 level of the role!@
+hint_47#运气爆表！恭喜你获得变异宠物!!!#Congratulations! You get a mutant pet@
+hint_48#恭喜你获得宠物!#Congratulations! You get a pet@
+hint_49#请先将玩家等级提升至8级开启宠物功能！#Please raise the role level to LV 8 to enable the pet function!@
+hint_50#当前无出战宠物,无法使用！#There is currently no combat pet, so it cannot be used!@
+hint_51#最高只能加价至100%#The maximum price can only be increased to 100%.@
+hint_52#最高只能1折出售#The minimum price can only be decreased to 10%.@
+hint_53#此技能为宠物治疗！当前暂无宠物出战！#The skill is pet treating, but there is no combat pet!@
+hint_54#技能冷却中…#The skill is in CD ...@
+hint_55#宠物等级太低,无法使用！#Pet level is too low to use!@
+hint_56#你的宠物等级高于自身角色5级,不可使用!#Your pet level is 5 higher than your role level and cannot be used!@
+hint_57#出售数量与实际不匹配#The quantity sold does not match the actual@
+hint_58#请检查服务器是否正常连接#Please check that the server is connected properly@
+hint_59#你当前出战的宠物获得了#Your combat pet has gained @
+hint_60#点经验值#experience.@
+hint_61#背包道具数量不足,请整理背包！#There are not enough backpack props. Please check your backpack!@
+hint_62#当前无出战宠物,无法使用！#There is currently no combat pet, so it cannot be used!@
+hint_63#宠物等级太高,不能使用！#Pet level is too high to use!@
+hint_64#你的宠物等级高于自身角色5级,不可使用!#Your pet level is 5 higher than your role level and cannot be used!@
+hint_65#请移动到地图:#Please move to the map:@
+hint_66#请移动到#Please move to @
+hint_67#地图开启#to open it@
+hint_68#您已经开始挖宝了!#Start digging!@
+hint_69#请先将玩家等级提升至8级开启捕捉宠物功能！#Please raise the role level to LV 8 to capture pets!@
+hint_70#探索中无法捕捉！#Unable to capture while exploring!@
+hint_71#请先选择要捕捉的目标！#Please select the target you want to capture first!@
+hint_72#首领BOSS无法捕捉！#BOSS cannot be captured!@
+hint_73#目标已经死亡,无法捕捉！#The target is dead and cannot be captured!@
+hint_74#当前捕捉冷却时间请#The capture skill is in CD, please try again after @
+hint_75#秒再试…#s...@
+hint_76#体力不足#Insufficient energy to capture!@
+hint_77#点无法捕捉！或可以使用道具：# You can use props @
+hint_78#代替!# to continue@
+hint_79#消耗捕捉宠物道具#Consume @
+hint_80#1个# pet prop@
+hint_81#界面已打开,请选择对应颜色的槽位进行宝石镶嵌#The interface is open, please select the hole of the corresponding color for gem setting@
+hint_82#仓库已满#The warehouse is full@
+hint_83#仓库未打开！#The warehouse is not open@
+hint_84#背包已满！#The backpack is full@
+hint_85#8级以下无法抽取奖励！#No draw below level 8!@
+hint_86#钻石不足！#Insufficient diamonds!@
+hint_87#背包已满,请预留至少10个位置！#Gull backpack, please reserve at least 10 places!@
+hint_88#不能在城镇地图保存坐标！#Cannot save coordinates in town map!@
+hint_89#恭喜你!捕捉宠物成功#Congratulations! Success in capturing pet@
+hint_90#拾取道具时,不能进行探索！#You cannot explore while picking up props!@
+hint_91#半小时内只能使用一次! 冷却时间剩余:#It can only be used once in half an hour!  @
+hint_92#分钟#min CD remaining@
+hint_93#请先保存需要传送的坐标点！#Please save the coordinate points to be transferred first!@
+hint_94#刚刚已经搜索过了,休息一下在探索要不会累的鸭！#Exploring is in CD, please try later@
+hint_95#此地已经搜索过了,请换个地方再次搜索！#You have explored this area, please move to another one!@
+hint_96#活力不足,无法搜索！活力值会随着在线时间而增长！#Insufficient vitality to explore! Vitality will increase with online time!@
+hint_97#叮咣叮咣,好像发现了什么！但是你的背包好像已经装不下了!#You seem to have found something! But your backpack doesn't fit anymore!@
+hint_98#你意外找到散落在外面的道具:#You accidentally find the props scattered outside:@
+hint_99#搜索完毕！这附近好像并没有什么东西！#Exploring is complete! Nothing seems to be around here!@
+hint_100#召唤冷却中！#Summon is in CD!@
+hint_101#你要下载的账号#You have downloaded the account@
+hint_102#,请创建一个#, please create a @
+hint_103#角色在下载此数据# role to download this data@
+hint_104#未连接服务器！#Server is not connected!@
+hint_105#世界等级已经完全放开,无法兑换!#The world level has been completely released, so it cannot be redeemed!@
+hint_106#未连接服务器！#Server is not connected!@
+hint_107#世界等级已经完全放开,无法兑换!#The world level has been completely released, so it cannot be redeemed!@
+hint_108#经验不足,无法兑换！#Insufficient experience to redeem!@
+hint_109#未达到世界等级！#Not reach the world level!@
+hint_110#世界等级已经完全放开,无法兑换!#The world level has been completely released, so it cannot be redeemed!@
+hint_111#关闭自动挂机！#Auto-hang is off!@
+hint_112#开启自动挂机！#Auto-hang is on!@
+hint_113#8级以下无法免费抽取！#No draw for free below level 8!@
+hint_114#你关闭了联网功能！请在游戏设置内开启才能使用此功能!#You have turned off networking! This function is only available when you turn on it in the game settings!@
+hint_115#9级可以开启战区活动功能!#You can turn on the theater activity function when you get LV 9!@
+hint_116#你消耗了#You consume @
+hint_117#点经验兑换了# experience to exchange @
+hint_118#金币# gold coins@
+hint_119#经验不足,无法兑换！#Insufficient experience to redeem!@
+hint_120#未达到世界等级！#Not reach the world level!@
+hint_121#当前物品无法在拍卖行出售!#The prop cannot be sold at the auction house!@
+hint_122#取消技能释法#Cancel skill casting@
+hint_123#你的宝箱已经先手被别人抢走了！ T.T#Your treasure chest has been snatched by others!@
+hint_124#等级未达到章节要求,无法切换到此章节！#Your level does not meet the chapter requirements, and you cannot switch to this chapter!@
+hint_125#你碰到了一个被腐蚀的宝箱,似乎对你产生了不好的作用!#You have opened a corroded treasure chest and it seems to have a bad effect on you!@
+hint_126#你碰到了一个被腐蚀的宝箱,似乎对你产生了不好的作用!#You have opened a corroded treasure chest and it seems to have a bad effect on you!@
+hint_127#请不要输入中文字符！#Please do not enter Chinese characters!@
+hint_128#账号不能为空！#Account cannot be empty@
+hint_129#请不要输入中文字符！#Please do not enter Chinese characters!@
+hint_130#请检查！两次确认密码不一致！#Please check the password! The two passwords are inconsistent@
+hint_131#体力不足#Insufficient energy @
+hint_132#点,体力每5分钟恢复1点！# , it recovers 1 every 5 minutes@
+hint_133#密码不能为空！#Password cannot be empty@
+hint_134#账号不能为空！#Account cannot be empty@
+hint_135#提示：请将角色等级提升至#Tip: Please improve your role level to LV @
+hint_136#级后可继续升级下一级建筑# to continue to next level of the building@
+hint_137#获得繁荣度：#Get prosperity:@
+hint_138#金币不足！#Insufficient gold coins!@
+hint_139#请等待倒计时结束后领取！#Please wait for the countdown to finish!@
+hint_140#今日已达领取次数已达上限,请明天再来领取！#You have run out of rewards today, please come back tomorrow!@
+hint_141#请等待倒计时结束后领取！#Please wait for the countdown to finish!@
+hint_142#今日已达领取次数已达上限,请明天再来领取！#You have run out of rewards today, please come back tomorrow!@
+hint_143#需要冒险家等级提升至3级开启此仓库栏位！#This warehouse field will open after the adventurer level reach to level 3!@
+hint_144#需要冒险家等级提升至6级开启此仓库栏位！#This warehouse field will open after the adventurer level reach to level 6!@
+hint_145#需要冒险家等级提升至8级开启此仓库栏位！#This warehouse field will open after the adventurer level reach to level 8!@
+hint_146#正在整理,请稍后再试！#Sorting out, please try again later!@
+hint_147#收回召唤宠物成功！#Retrieve combat pet successfully!@
+hint_148#宠物合成成功!请到宠物列表中进行查看#Successful synthesis! Please check it in the pet list@
+hint_149#需要达到20级后开启!#The role level doesn't reach LV 20@
+hint_150#你有新的邮件！请赶快前往圣光成的邮件处领取哦~#You have a new mail! Please go to the mail office of Halo Central City to pick it up@
+hint_151#请点击右下角 [开始冒险] 进入冒险地图完成任务!#Please click [Start Adventure] in the bottom right corner to enter the adventure map to complete the mission!@
+hint_152#背包剩余格子数量不足!请预留至少#Insufficient backpack space! Please reserve at least @
+hint_153#个位置# places@
+hint_154#奖励已领取,请勿重新领取！#The reward has been received, please do not repeat it!@
+hint_155#购买单组数量最大为#The maximum number of single purchase groups is @
+hint_156#背包空间不足！请预留至少#Insufficient backpack space! Please reserve at least @
+hint_157#个位置领取奖励# places@
+hint_158#天降幸运！恭喜你完成活跃任务时获得了神兽碎片！#Good luck! Congratulations on getting one piece of legendary pet after you complete the active mission!@
+hint_159#出售道具的数量不能为0#The number of props sold cannot be 0@
+hint_160#未连接至服务器#Server is not connected!@
+hint_161#最多只能上架8个道具#Only 8 props can be listed@
+hint_162#出售宠物技能书类的道具需要角色等级>=20级#Selling pet skill book props requires the role level reach LV 20@
+hint_163#请先选择要出售的道具#Please select the props to sell first@
+hint_164#兑换钻石数量不能为0#The number of redeemed diamonds cannot be 0@
+hint_165#您可能未连接至服务器！兑换金币数量不能为0#You may not be connected to the server! The number of gold coins exchanged cannot be 0@
+hint_166#兑换成功！你兑换了#Successful redemption! You exchanged @
+hint_167#金币# gold coins@
+hint_168#激活精灵属性成功!#Successful activation of sprite attributes!@
+hint_169#被动精灵无法激活!#Passive sprite cannot be activated!@
+hint_170#此精灵暂未拥有!#The sprite has not been activated yet!@
+hint_171#恭喜你,支付成功!钻石已成功到账,请查收#The payment is successful! The diamonds has been successfully credited, please check@
+hint_172#无法合成！合成宠物中存在出战宠物#No synthesize! Combat pet is in the synthetic pets@
+hint_173#神兽无法合成！#The legendary pet cannot be synthesized!@
+hint_174#增加#Get @
+hint_175#点#@
+hint_176#熟练度!# proficiency points@
+hint_177#当前宠物栏位已满！宠物栏位每15、25、35、45、55级均会新增一个宠物栏位！#The pet fields are currently full! Get a pet field for every 15, 25, 35, 45, 55 level of the role!@
+hint_178#恭喜你!激活了新的#Congratulations! A new trial level has been activated!@
+hint_179#试炼等级！#@
+hint_180#该目标无法捕捉,捕捉无效！#The target cannot be captured, the capture is invalid!@
+hint_181#你的捕捉动作太大,导致目标发现你藏起来了#Your movement range is too big and the target gets away@
+hint_182#你需要达到#You need to reach LV 10(级数) to capture!@
+hint_183#级才可以捕捉！#@
+hint_184#当前宠物栏位已满！#The pet field is currently full!@
+hint_185#你的捕捉动作太大,导致目标发现你藏起来了#Your movement range is too big and the target gets away@
+hint_186#捕捉失败！#Capture failed!@
+hint_187#该目标无法捕捉,捕捉无效！#The target cannot be captured, the capture is invalid!@
+hint_188#你需要达到#You need to reach LV @
+hint_189#级才可以捕捉！# to capture!@
+hint_190#战斗中不能释放此技能！#This skill cannot be released in combat!@
+hint_191#繁荣度提升增加:#Get prosperity:@
+hint_192#出战等级不足#Insufficient level to combat@
+hint_193#宠物召唤冷却#Pet summon is in CD@
+hint_194#当前出战位已满！#The combat table is full!@
+hint_195#BOSS出现！！！#BOSD appears!@
+hint_196#恭喜你!挑战#Congratulations! Success in Tier @
+hint_197#层秘境成功#@
+hint_198#你已经击杀BOSS！你现在可以返回地图挑战下一层秘境！#You have killed BOSS! Now you can return to the map to challenge the next tier of mystery!@
+hint_199#荣誉值增加:#Get honor:@
+hint_200#请升级繁荣等级开启此道具奖励！#Please upgrade the prosperity level to open the prop reward!@
+hint_201#背包已满,请预留至少1个位置！#Full backpack, please reserve at least 1 space!@
+hint_202#荣誉不足！#Insufficient honor!@
+hint_203#恭喜你击杀副本BOSS成功!#Congratulations on your success in killing BOSS of the copy!@
+hint_204#秒后刷新下一只BOSS,请做好准备！#90 seconds refresh the next BOSS , please be prepared!@
+hint_205#正在处理上次回收数据!请稍后…#Processing last recycled data! Please wait ...@
+hint_206#请放入要回收的装备!#Please put in the equipment to be recycled!@
+hint_207#你的背包需要剩余最少#Your backpack must be reserved at least @
+hint_208#个位置!# places@
+hint_209#回收物品超过自身等级15级,无法回收!#No recycle, the recycled props exceed 15 of the role level!@
+hint_210#此Boss无首杀奖励！#This Boss don't have first-kill reward!@
+hint_211#接取任务成功!#Successfully picked up the mission!@
+hint_212#放入装备不符合要求#The equipment put in does not meet the requirements@
+hint_213#今日副本次数已满!#The number of copy entered today is full!@
+hint_214#王国繁荣等级不足！请提升至：#Insufficient levels of kingdom prosperity! Please upgrade to: LV @
+hint_215#级#@
+hint_216#角色等级不足！请提升至：#Insufficient levels of the role! Please upgrade to: LV @
+hint_217#请先将前面关卡通关才可挑战此关卡！#Please pass the previous level before challenging this level!@
+hint_218#10级开启天赋系统#Talent system will open after LV 10@
+hint_219#战士排行榜已刷新！#Warrior Ranking has been refreshed!@
+hint_220#你已经召唤此怪物！#You have summoned this monster!@
+hint_221#小地图移动开启！#Fast movement in small map is on!@
+hint_222#道具不足!#Insufficient props!@
+hint_223#你的技能发挥了作用！#Your skill is working!@
+hint_224#你的宠物已经有了相同的技能！#Your pet already has the same skill!@
+hint_225#洗炼变异宠物请使用更强大的道具！#The mutant pets need more powerful props to refine!@
+hint_226#你的宠物被一股强大的能力赋予了！#Your pet is given a powerful ability!@
+hint_227#一股神秘的力量让你的宠物资质提高了！#A mysterious power improves your pet's qualifications!@
+hint_228#一股神秘的力量让你的宠物成长提高了！#A mysterious power improves your pet's growth!@
+hint_229#不能给野生宠物使用此道具！#This prop cannot be used for wild pets!@
+hint_230#重置失败,点数不符！#Reset failed, insufficient attribute points!@
+hint_231#一股神秘的力量让你的宠物属性点数重置了！#A mysterious power reset your pet attribute points!@
+hint_232#等级不足,无法购买#Insufficient levels to purchase@
+hint_233#背包格子不足！#Insufficient backpack places!@
+hint_234#货币不足,无法购买！#Insufficient currencies to purchase@
+hint_235#背包格子不足！#Insufficient backpack places!@
+hint_236#你已经购买此礼包,请明日再来！#You have already purchased this package, please come back tomorrow!@
+hint_237#货币不足,无法购买！#Insufficient currencies to purchase@
+hint_238#请升级繁荣等级开启此道具奖励！#Please upgrade the prosperity level to open the prop reward!@
+hint_239#背包已满,请预留至少1个位置！#Full backpack, please reserve at least 1 space!@
+hint_240#荣誉不足！#Insufficient honor!@
+hint_241#复活成功！#Successful reborn!@
+hint_242#15级可以进入藏宝洞窟！#You can enter Treasure Cave after LV 15!@
+hint_243#今天已经进入藏宝洞窟一次了,请明天再来！#You have entered Treasure Cave once today, please come back tomorrow!@
+hint_244#需要材料不足#Insufficient materials!@
+hint_245#今日已经领取,请明日再来！#You have rceived today, please come back tomorrow!@
+hint_246#到当天指定天数才可查看奖励喔!#The reward can only be viewed on the specified number of days!@
+hint_247#今日签到奖励已领取,请明日再来!#You have received the sign-in reward for today, please come back tomorrow!@
+hint_248#请按顺领取签到奖励!#Please receive the sign-in rewards in order!@
+hint_249#背包剩余空间不足!#Insufficient backpack places!@
+hint_250#签到奖励已经领取!#You have already received the sign-in reward@
+hint_251#今日赞助签到奖励已领取,请明日再来!#Today's sponsorship sign-in reward has been received, please come back tomorrow!@
+hint_252#领取失败,每天赞助任意金额即可领取此奖励!#Failed! You can receive this reward by sponsoring any amount today!@
+hint_253#背包剩余空间不足!#Insufficient backpack places!@
+hint_254#签到奖励已经领取!#You have already received the sign-in reward@
+hint_255#已关闭挂机状态#Hang status is off@
+hint_256#技能施法状态中断！#Skill casting is interrupted!@
+hint_257#您的背包已满,本次试炼奖励领取失败!#Full backpack, and the trial reward has failed to receive!@
+hint_258#技能施法状态中断！#Skill casting is interrupted!@
+hint_259#进入战斗#Enter combat@
+hint_260#退出战斗#Quit combat@
+hint_261#怪物已脱离,无法攻击#The monster is out of combat and cannot be attacked@
+hint_262#领取失败!成就点数不足!#Receive failed! Insufficient achievement points!@
+hint_263#当前没有任何宠物！#No pet here！@
+hint_264#此成就奖励已经领取#This achievement reward has been received@
+hint_265#出战等级不足！此宠物出战需要角色达到#Insufficient level to combat! Your role must reach LV @
+hint_266#级# to summon this pet@
+hint_267#请等待冷却时间结束再次召唤宠物！#Pet summon is in CD@
+hint_268#宠物召唤冷却#Pet summon is in CD@
+hint_269#当前出战位已满！#The combat table is full!@
+hint_270#战斗时不能撤回宠物#Pet cannot be withdrawn in combat@
+hint_271#野生宠物:野外随处可见的宠物,宠物属性点数天生就比宝宝少40点,只能临时用用！#Wild pets: Pets that can be seen everywhere in the wild, the pet attributes are inherently 40 points less than babies, and can only be used temporarily!@
+hint_272#宠物宝宝:野外比较少的宠物,你可以自由分配他的宠物点数,达到收益最大化！#Pet baby: There are relatively few pets in the wild, you can freely allocate his attribute points to maximize revenue!@
+hint_273#变异宝宝:非常稀有的一种宠物,它的资质有可能超过上限！#Mutant baby: a very rare pet whose qualification may exceed the upper limit!@
+hint_274#神兽宠物:全世界中最珍贵的宠物,没有之一！# Legendary pets: the most precious pets in the game!@
+hint_275#名称不能为空#Name cannot be empty@
+hint_276#名称长度不能大于7个字符#Name cannot be longer than 7 characters@
+hint_277#修改失败!存在特殊字符#Modify failed! Special characters exist@
+hint_278#出战中不能放生宠物！#Pets cannot be released during the combat!@
+hint_279#SP值不足#Insufficient SP(skill points)@
+hint_280#需要总激活天赋点数达到:# Require activated talent points reach: @
+hint_281#点#@
+hint_282#学习等级不足#Insufficient level to learn the skill@
+hint_283#SP当前天赋已达上限#The current talent has reached the upper limit@
+hint_284#关联天赋未激活,请先激活关联天赋#Relevant talent is not activated, please activate the relevant talent first@
+hint_285#当前插槽已有宝石,请将宝石卸下后方可重新镶嵌#There is a gem in the current hole, please remove the gem first@
+hint_286#镶嵌失败,请确定宝石的颜色是否与孔位一致！#Inlay failed, please make sure the color of the gem is consistent with the hole position!@
+hint_287#镶嵌位置错误！#Wrong hole position!@
+hint_288#背包已满,请清理背包#Full backpack, please clean it first@
+hint_289#强化已达满级!#Reinforcement has reached the full level!@
+hint_290#需要等级达到#Require LV @
+hint_291#级开启本次强化！# to enable this reinforcement!@
+hint_292#强化所需金币不足！#Insufficient gold coins to reinforce@
+hint_293#强化所需道具不足！#Insufficient props to reinforce@
+hint_294#强化失败！你的运气可能不太好#Reinforce failed! Terrible luck@
+hint_295#复活币不足,无法复活#Insufficient reborn coins to reborn@
+hint_296#你需要选择攻击目标#Please select an attack target first@
+hint_297#恭喜你！制造产生了暴击获得双倍物品！#Congratulations! Produce the crit double props!@
+hint_298#当前没有宠物！#No pet here!@
+hint_299#你有新的邮件！请赶快前往圣光主城的邮件处领取哦~#You have a new mail! Please go to the mail office of Halo Central City to pick it up@
+hint_300#当前没有可分配的点数#No points are currently allocated@
+hint_301#背包已满,请保持背包内有足够的空位！#Full backpack, please keep enough space in the backpack!@
+hint_302#运气爆炸!洗炼装备时竟然额外钻探出一个宝石孔位#Luck is bursting! An extra gem hole was drilled when refining the equipment@
+hint_303#删除指定数量不足！#Insufficient quality to delete@
+hint_304#当前宠物已经出战#The pet is in combat@
+hint_305#召唤宠物成功!激活15秒无敌时间!1分钟内只能激活一次!#Successful pet summon! Activate 15 seconds of invincible time! Activate only once in 1 minute!@
+hint_306#添加称号成功！请到设置界面查看称号列表并使用#Get the title! Please go to the setting interface to view the list of titles and use@
+hint_307#恭喜你!激活精灵:#Congratulations! Activate the sprite:@
+hint_308#升级技能需要玩家等级达到#Upgrading this skill requires the role level up to @
+hint_309#级#@
+hint_310#SP值不足,每升一级获得1点SP值!#Insufficient SP, get 1 SP for each level!@
+hint_311#切换普通模式成功!#Switch to Easy mode successfully!@
+hint_312#切换挑战模式成功！Boss属性增强,更有大概率掉落道具！#Switch Challenge mode successfully! Boss has been stronger to drop props with greater probability!@
+hint_313#等级提升至10级后开启挑战模式！#Challenge mode will be open after LV 10!@
+hint_314#切换地狱模式成功！Boss属性大大增强,更有超大概率掉落道具！#Switch Hell mode successfully! Boss has been stronger to drop props with large probability!@
+hint_315#等级提升至15级后开启地狱模式！#Hell mode will be open after LV 15!@
+hint_316#技能重置成功!#Successfully reset skills!@
+hint_317#击杀场景怪物提升至#Enter the scene after leveling up to LV @
+hint_318#级后进入！#!@
+hint_319#道具发挥了效果,所有BOSS已刷新!#The props worked, BOSS have been refreshed!@
+hint_320#使用此道具请移动到主城场景中使用！#This prop can only be used in Halo Central City!@
+hint_321#当前体力已满！#Full energy!@
+hint_322#请进入关卡地图在使用此道具#Please enter the chapter map to use this prop@
+hint_323#当前活力已满！#Full vitality!@
+hint_324#已超过使用等级!#Exceed the limited level@
+hint_325#背包已满,请先清空背包在提交任务！#Full backpack, please reserve enough place to submit the mission!@
+hint_326#请放入将要给予的装备#Please put in the submitted equipment@
+hint_327#宠物获得#The pet will get @
+hint_328#点经验# experience@
+hint_329#背包已满,请先清空背包在提交任务！#Full backpack, please reserve enough place to submit the mission!@
+hint_330#此任务不可以自动寻路！#This mission cannot offer auto-wayfinding!@
+hint_331#请先前往地图：#Please go to the map:@
+hint_332#,如需提交任务,请找到#Please find @
+hint_333#可提交任务# to submit the mission@
+hint_334#购买失败!请检查一下自己的钱袋子,嘿嘿！#Purchase failed! Please check your money first@
+hint_335#倒计时结束！#The countdown is over!@
+hint_336#洗练装备时禁止移动道具操作！#Don't drag the equipment while refining!@
+hint_337#当前没有选择需要镶嵌的宝石#Please select the gem to be set@
+hint_338#请放入将要洗练的装备#Please put in the equipment to be refined @
+hint_339#级开启此功能# Level Open the function@
+hint_340#洗练装备时禁止整理背包！#Don't arrange your backpack while refining equipment!@
+hint_341#洗练装备时禁止整理仓库！#Don't arrange your warehouse while refining equipment!@
+hint_342#激活收藏道具成功!#Activate the collected equipment successfully!@
+hint_343#请等待冷却时间结束#Please wait for CD to the end@
+hint_343_1#请放入装备#Please put in the equipment@
+hint_344#请将实力提升至对应值后领取#Please raise your strength to the corresponding value to receive it@
+hint_344_1#需要转移的装备品质必须为紫色品质以上#Equipment quality to be transferred must be above purple@
+hint_345#当前领取人数已满#The current number of recipients is full@
+hint_345_1#属性转移部位不同#Position different@
+hint_346#服务器未连接!#The server isn't connected@
+hint_346_1#属性转移成功#Property transfer succeeded@
+hint_347#请查看制造等级,角色不在此制造等级范围内无法制造#Please check the manufacturing level, the role cannot manufacture outside this manufacturing level@
+hint_348#制造道具背包至少预留2个位置…#At least 2 seats reserved in backpack for manufacturing prop@
+hint_349#制造需要的材料不足!#Insufficient materials required for manufacturing!@
+hint_350#制造需要的金币不足!#Insufficient gold coins required for manufacturing!@
+hint_351#制造需要的熟练度不足!#Insufficient proficiency required for manufacturing!@
+hint_352#制造成功！获得装备：#Manufacturing success! Get the equipment:@
+hint_353#制造失败,下次制造概率提升！#Manufacturing failure, the manufacturing probability will increase next time!@
+hint_354#制造材料不足#Insufficient manufacturing materials@
+hint_355#请将等级提升至指定等级后领取!#Please raise the level to the specified level to receive it!@
+hint_356#当前领取人数已满!#The current number of recipients is full@
+hint_357#传承成功！获得装备：#Success in inheritance! Get the equipment:@
+hint_358#制造失败,下次制造概率提升！#Manufacturing failure, the manufacturing probability will increase next time!@
+hint_359#奖励已领取#Award received@
+hint_360#请将等级提升至12级后领取!#Please raise the level to level 12 to receive it!@
+hint_361#赞助额度不足请稍后再试!#Insufficient sponsorship, please try again later!@
+hint_362#奖励已领取#Award received@
+hint_363#请将等级提升至12级后领取!#Please raise the level to level 12 to receive it!@
+hint_364#赞助额度不足请稍后再试!#Insufficient sponsorship, please try again later!@
+hint_365#需要#Require @
+hint_366#个#@
+hint_367#,才能开启#to open@
+hint_368#被动技能不能被拖拽#Passive skill cannot be dragged@
+hint_369#技能升级成功#Successful skill upgrade@
+hint_370#今日已经领取#It has been received today@
+hint_371#今天未击杀BOSS不能领取！#You cannot get it without killing the boss today@
+hint_372#摇杆操作已关闭#Joystick operation is off@
+hint_373#摇杆操作已开启#Joystick operation is on@
+hint_374#点击移动模式开启#Click-to-move mode is on@
+hint_375#摇杆(移动)操作已开启#Fixed joystick operation is off@
+hint_376#摇杆(固定)操作已开启#Move joystick operation is off@
+hint_377#你的昵称已修改为：#Your nickname has been changed to:@
+hint_378#请进入城镇使用更改游戏难度#Please enter the town to change the difficulty of the game@
+hint_379#使用道具间隔时间太短!请稍后再使用次道具#The interval between using props is too short! Please use it later@
+hint_380#请将等级提升至15级后领取!#Please raise the level to level 15 to receive it!@
+hint_381#请按照登陆奖励依次领取!#Please follow the login rewards in order!@
+hint_382#今日登陆奖励已领取!#Today's login reward has been received!@
+hint_383#赎回#redeem@
+hint_384#领取奖励条件不足#Insufficient conditions for receiving rewards@
+hint_385#请进入关卡地图在使用此道具#Please enter the level map before using this prop@
+hint_386#道具不足#Insufficient props@
+hint_387#免费开启,获得经验：#Open for free, get experience:@
+hint_388#免费开启,获得金币：#Open for free, get gold coins:@
+hint_389#已达到当前最高等级,无法使用此道具!#Reached the current highest level, cannot use this prop!@
+hint_390#触发经验暴击！获得大量经验：#Trigger a experience crit! Gain a lot of experience:@
+hint_391#钻石开启！获得大量经验：#Open by diamonds! Gain a lot of experience:@
+hint_392#触发金币暴击！获得大量金币：#Trigger a gold coin crit! Get a lot of gold coins:@
+hint_393#钻石开启！获得大量金币：#Open by diamonds! Gain a lot of gold coins:@
+hint_394#数量#Quantity@
+hint_395#这是作者的感谢宝箱,赞助任意额度支持作者后可即可开启！#This is the author's thanks box, which can be opened after sponsoring any amount of support for the author!@
+hint_396#触发重生！！！#Trigger a rebirth!@
+hint_397#当前没有符合要求的装备放入!#No matching equipment is currently placed!@
+hint_398#短时间内洗炼次数太多！请稍后再试#Too many times in a short time! Please try again later@
+hint_399#钻石不足#Insufficient diamonds@
+hint_400#好像并没有发生什么变化！#It seems nothing happend!@
+hint_401#装备洗练成功！#Equipment refining success!@
+hint_402#技能CD中,不能移动技能#Skill cannot be moved while it is in CD@
+hint_403#短时间内洗炼次数太多！请稍后再试#Too many times in a short time! Please try again later@
+hint_404#请点击左侧装备放入要洗炼的装备!#Please click the equipment on the left to put in the equipment to be refined!@
+hint_405#未放入需要洗炼的装备!#No equipment to be refined!@
+hint_406#洗炼石不足#Insufficient refining stone@
+hint_407#钻石不足,请点击商城充值！#Insufficient diamonds, please click the store to recharge!@
+hint_408#好像并没有发生什么变化！#It seems nothing happend!@
+hint_409#当前道具不可以回收#Current props cannot be recycled@
+hint_410#不能使用,此道具不能卸载此槽位的宝石#Cannot be used, this prop cannot unload gems in this slot@
+hint_411#开启周卡成功!#Open the weekly card successfully!@
+hint_412#今日周卡已经领取#Today's weekly card has been received.@
+hint_413#请输入序列号!#Please enter CD-KEY!@
+hint_414#序列号已被领取!#CD-KEY has been used@
+hint_415#领取组织福利成功,奖励已发往背包,请点击查看！#The organization benefits have been successfully received, and the reward has been sent to the backpack, please click to view!@
+hint_416#序列号不正确!#CD-KEY is incorrect!@
+hint_417#序列号密匙不正确!#CD-KEY is incorrect!@
+hint_418#序列号不正确,请检查后在进行输入!#CD-KEY is incorrect, please check before entering!@
+hint_419#感谢你为作者做出的赞助,已经够多了,作者在此感谢你！#Thank you for your sponsorship for the author, it's enough!@
+hint_420#赞助金额不足!#The amount of sponsorship is insufficient!@
+hint_421#你获得#You get@
+hint_422#金币#gold coins@
+hint_423#钻石#diamonds@
+hint_424#你获得#You get@
+hint_425#新的章节开启成功!!! #New chapter successfully opened!@
+hint_426#关卡快捷传送激活成功!!! #Level fast transfer activated successfully!@
+hint_427#个#@
+hint_428#召唤宠物成功！#Summon pets successfully!@
+hint_429#制作书要求角色等级不足！#The role level is insufficient, cannot use the manufacture book!@
+hint_430#需要#Require@
+hint_431#个#@
+hint_432#才能开启#to open@
+hint_433#你触发了#You triggered @
+hint_434#爆率效果#drop effect@
+hint_435#恭喜你!刷新爆率成功#Refresh success!@
+hint_436#刷新爆率失败#Refresh failed!@
+hint_437#抽卡次数不足#Insufficient times@
+hint_438#恭喜你！获得钻石#congratulations! Get diamonds@
+hint_439#修改宠物队伍配置成功#Modification of pet team configuration succeeded@
+hint_440#天梯今日挑战次数已满#TIANTI fight times are full today@
+hint_441#请配置自己的宠物出战队伍#Please configure your own pet team@
+hint_442#请选择类型为宝宝的宠物！野生宠物无法加入战队#Please select a pet of baby type! Wild pets can't join the team@
+hint_443#无法查看入侵者的宠物信息#Unable to view intruder's pet information@
+hint_444#当前宠物修炼等级已达上限#The current pet cultivation level has reached the maximum@
+hint_445#很遗憾!修炼失败#I'm sorry that I failed@
+hint_446#消耗资源不足,无法修炼#Insufficient consumption of resources, unable to Practice@
+hint_447#恭喜你!修炼成功#Congratulations! Success in Practice@
+hint_448#恭喜你,成功激活爆率#Congratulations, activate the drop rate@
+hint_449#请放入需要洗炼的宠物#Please put in the pet@
+hint_450#由于你频繁上下架道具,你暂时无法出售道具,请明天再来！#You can't sell the props for the time being because you often get on and off the shelves. Please come back tomorrow!@
+hint_451#加载游戏数据中#Loading game data@
+hint_452#兑换离线点数不足#Insufficient points to redeem offline@
+hint_453#IOS未初始化,请稍后点击#IOS is not initialized, please click later@
+hint_454#请将等级提升至12级后开启!#Please raise the level to level 12 to open it!@
+hint_455#日0:00点发送排行奖励,邮件查收!#-00:00 Send Reward@
+hint_456#月#-@
+hint_457#请提升等级至55级后进入此副本#Please upgrade to level 55 before entering@
+hint_458#魔法值不足!#Insufficient Mana!@
+hint_459#家园资金#Home fund@
+hint_460#击败比自己等级低15级的BOSS不触发难度爆率加成#Kill boss level 15 lower than your own level does not trigger the difficulty burst rate bonus@
+
+comhint_1#是否进入副本？\n提示:每天只有一次进入机会！#Whether to enter the copy?\n Tip: Only one chance to enter every day!@
+comhint_2#是否消耗100神兽碎片兑换神兽？#Whether to exchange 100 pieces for a legendary pet?@
+comhint_3#是否放生此宠物？#Whether to release this pet?@
+comhint_4#是否进入副本？\n提示:每天只有一次进入机会！#Whether to enter the copy?\n Tip: Only one chance to enter every day!@
+comhint_5#1.玩家需要在限定的时间内击杀小怪收集秘境值,当秘境值达到500点后即可召唤秘境领主BOSS.\n2.击杀秘境BOSS后则挑战当前秘境层级成功,并激活下一层级大秘境,怪物实力随着秘境层级越高！\n3.大秘境内均会掉落秘境碎片可以在隔壁的同学处兑换奖励！\n4.大秘境成功退出地图后可以连续挑战,如果挑战失败只能等明日再来！#1. The player needs to kill the monsters to collect the secret value within a limited time. When the secret value reaches 500 points, BOSS will be summoned.\n2. After killing the BOSS,  you can enter the next tier. The higher tier of the mystery, the more difficult it is.\n3.The mystery shards will be dropped in the Grand Mystery. You can redeem rewards at the mystery businessman!\nAfter  you kill BOSS in Grand Mystery, you can continue to challenge next tier. If you failed, you can only wait for tomorrow!@
+comhint_6#是否领取通关大秘境第#Whether to receive the Tier @
+comhint_7#层奖励？# reward of Grand Mystery?@
+comhint_8#是否前往兑换金币界面？#Whether to enter the interface of the gold coins exchange?@
+comhint_9#是否花费600钻石重置SP值？#Whether to spend 600 diamonds to reset SP?@
+comhint_10#是否分解此宠物？\n分解野生宠物可以获得1-3个宠物分解石,分解宝宝宠物可以获得5-15个分解石#Whether to factor this pet?\n Decompose wild pets to get 1-3 pet decomposition stones, decompose baby pets to get 5-15 decomposition stones@
+comhint_11#是否前往充值界面？#Whether to enter the recharge interface?@
+comhint_12#是否前往兑换金币界面？#Whether to enter the interface of the gold coins exchange?@
+comhint_13#宠物栏位每15、25、35、45、55级均会新增一个宠物栏位！#Get a pet field for every 15, 25, 35, 45, 55 level of the role!@
+comhint_14#是否消耗600钻石重置当前天赋！#Whether to spend 600 diamonds to reset talent?@
+comhint_15#是否确认回收这些装备！\n(提示:当前装备上附带宝石或回收的装备为橙色级别以上装备!)#Are you sure to recycle these equipment？\n (Tip: There are some gems on the current equipment ,or the recycled equipment is at least orange quality!)@
+comhint_16#是否进入藏宝洞窟？\n提示:每天只有一次进入机会！#Whether to enter Treasure Cave?\n Tip: Only one chance to enter every day!@
+comhint_17#在此装备上发现了隐藏技能:#Hidden skill found on the equipment:@
+comhint_18#！\n提示:如果再次洗炼隐藏技能有可能消失！#!\nTip: the hidden skill would disappear if you continue to refine!@
+comhint_19#是否消耗20%经验兑换:#Whether exchange 20% experience to: @
+comhint_20#金币# gold coins@
+comhint_21#是否消耗材料兑换一个高级藏宝图？\n消耗道具:#Whether to exchange the materials for an advanced treasure map?\n Props needed:@
+comhint_22#1.地图随机刷新出真假宝箱,触碰到真的宝箱可以获得真正的奖励,地图内会出现6个真正的藏宝箱\n2.地图只有5分钟时间提供给玩家寻找宝箱,超过时间会自动传送出地图！\n3.地图内不能使用任何技能和道具#1. The map will randomly refresh the real and fake treasure chests. You can get real rewards when you touch the real treasure chests. There are only 6 real treasure chests  in the map.\n2. There are only  5 minutes for you to find the treasure chest, then you will be sent out!\n3. No skills or props can be used in the map@
+comhint_23#恭喜你!今天你寻找到了#Congratulations! Today you have found @
+comhint_24#个真实宝箱！\n寻找1-3个宝箱获得1张藏宝图 \n寻找4-5个宝箱获得2张藏宝图 \n寻找6个宝箱获得3张藏宝图# real treasure chests!\n 1-3 treasure chests to get 1 more treasure map\n 4-5 treasure chests to get 2 more treasure maps\n 6 treasure chests to get 3 more treasure maps@
+comhint_25#"是否删除此账号"#"Whether to delete the account"@
+comhint_26#是否出售道具:#Whether to sell the prop:@
+comhint_27#是否出售装备:#Whether to sell the equipment:@
+comhint_28#\n(提示:当前装备上附带宝石!)#\n (Tip: Some gems are inlaid in the current equipment!)@
+comhint_29#\n(提示:在主城回收商人处回收可以获得经验和装备碎片!)#\n (Tip: Recycling at the equipment recycle businessman can gain experience and equipment debris!)@
+comhint_30#\n(提示:在主城回收商人处回收可以获得经验和装备碎片!)\n本次出售可以获得金币:#\n (Tip: Recycling at the equipment recycle businessman can gain experience and equipment debris!)\n You can get gold coins:@
+comhint_31#请点击保存需要传送的坐标！#Click to save the coordinates to be transferred!@
+comhint_32#你当前定位的地区为：#Your current location is: @
+comhint_33#\n 坐标点：#\n Coordinate points: @
+comhint_34#是否消耗300钻石清空所有次数#Whether to consume 300 diamonds to empty all times@
+comhint_35#恭喜你!赢得了今天天梯对战的胜利\n获胜奖励：金币*30000#Congratulations on winning the battle of TIANTI today\n Winning reward: gold coin * 30000@
+comhint_36#很抱歉,你没有击败对方宠物战队\n失败奖励：金币*10000#I'm sorry you didn't beat the pet team\n Failure reward: gold coin * 10000@
+comhint_37#是否消耗30000金币刷新当前随机排名#Whether to consume 30000 gold coins to refresh the current random ranking@
+comhint_38#请让你的宠物重新出战,才可以让当前出战宠物的技能和属性生效#Please ask your pet to fight again before the current skills and attributes of the pet will take effect@
+comhint_39#游戏内支持开启单机模式,开启后游戏内的所有弱联网功能将自动屏蔽!\n(点击头像打开设置界面勾选单机模式即可)#In the game, it supports to turn on the stand-alone mode. After turning on, all the weak networking functions in the game will be automatically blocked! \n (click the avatar to open the setting interface and check the stand-alone mode)@
+comhint_40#我知道了!#I got it!@
+comhint_41#出售家园道具将获得建设资金:#Selling home props will get construction funds:@
+
+comhintText_1#天赋重置#Talent resetting@
+comhintText_2#重置#Confirm@
+comhintText_3#取消#Cancel@
+comhintText_4#回收确认#Recycling confirmation@
+comhintText_5#回收#Confirm@
+comhintText_6#取消#Cancel@
+comhintText_7#兑换确认#Redemption confirmation@
+comhintText_8#兑换#Confirm@
+comhintText_9#取消#Cancel@
+comhintText_10#领取奖励#Receive reward@
+comhintText_11#领取#Confirm@
+comhintText_12#取消#Cancel@
+comhintText_13#出售确认#Sale confirmation@
+comhintText_14#出售#Confirm@
+comhintText_15#取消#Cancel@
+comhintText_16#道具使用功能#Instructions for using the prop@
+comhintText_17#前往#Send to@
+comhintText_18#定位#Location@
+comhintText_19#游戏公告#Game announcement@
+comhintText_20#提示:一个月只能下载一次账号数据\n下载后拍卖行和家园仓库数据将清空!\n下载后,请勿使用2个设备登录同一个角色,会导致角色锁死.\n新区7天内不开放下载服务#Tip: you can only download account data once a month \n The items sold by the auction house will be emptied!@
+

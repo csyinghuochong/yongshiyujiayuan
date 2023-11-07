@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 20c24bb6c6e023e45b838185ea729d9b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Obj_Player: {instanceID: 0}
+  - aiStatus: {instanceID: 0}
+  - ai_NavMesh: {instanceID: 0}
+  - Obj_PetUI: {instanceID: 0}
+  - Obj_PetNameUI: {fileID: 1580445905344950, guid: 0b46c797095759542b64f3a738e5686d,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="1000101" HintStr="房子里" HintStr_EN="In the house" RewardItemID="10031013" RewardItemNum="1" />
+	<date ID="1000102" HintStr="大树上" HintStr_EN="On the big tree" RewardItemID="10021001" RewardItemNum="20" />
+	<date ID="1000103" HintStr="太意外了！你发现了上一个探险者遗留下的" HintStr_EN="What a surprise! You found what the last explorer left behind" RewardItemID="10010083" RewardItemNum="1" />
+	<date ID="1000104" HintStr="在怪物的巢穴内的箱子里发现" HintStr_EN="Found in a box inside the monster's lair" RewardItemID="10000001" RewardItemNum="10" />
+	<date ID="1000105" HintStr="在石阶上无意发现了" HintStr_EN="Unintentionally found on the stone steps" RewardItemID="10021015" RewardItemNum="5" />
+	<date ID="1000106" HintStr="天呐！作者服气！你在这个角落里竟然找到了" HintStr_EN="God! Author convinced! You found it in this corner" RewardItemID="10031038" RewardItemNum="1" />
+	<date ID="1000107" HintStr="树王好像来过这里,发现了" HintStr_EN="The King of Trees seems to have been here and found" RewardItemID="10021012" RewardItemNum="1" />
+	<date ID="1000108" HintStr="在雕像的后面找到了" HintStr_EN="Found behind the statue" RewardItemID="10000006" RewardItemNum="1" />
+	<date ID="1000201" HintStr="在沉船里找到" HintStr_EN="Found in a shipwreck" RewardItemID="10040203" RewardItemNum="1" />
+	<date ID="1000202" HintStr="不可思议！你竟然在这里发现了" HintStr_EN="Incredible! You found it here" RewardItemID="10032008" RewardItemNum="1" />
+	<date ID="1000203" HintStr="在这个隐密的地方你竟然发现了	" HintStr_EN="You found it in this secret place" RewardItemID="10010083" RewardItemNum="1" />
+	<date ID="1000204" HintStr="在沉船附近,你发现了" HintStr_EN="You found it near the wreck" RewardItemID="10040603" RewardItemNum="1" />
+	<date ID="1000205" HintStr="在珊瑚从中发现了" HintStr_EN="Found in corals" RewardItemID="10015002" RewardItemNum="1" />
+	<date ID="1000206" HintStr="在雕像附近你发现了" HintStr_EN="You found it near the statue" RewardItemID="10022011" RewardItemNum="5" />
+	<date ID="1000207" HintStr="在海底走廊尽头你发现了" HintStr_EN="You found it at the end of the undersea corridor" RewardItemID="10000007" RewardItemNum="1" />
+	<date ID="1000208" HintStr="在海底走廊尽头你发现了" HintStr_EN="You found it at the end of the corridor" RewardItemID="10022013" RewardItemNum="1" />
+	<date ID="1000209" HintStr="在海底最深处的平台上发现了" HintStr_EN="Found on the deepest platform on the ocean floor" RewardItemID="10022017" RewardItemNum="1" />
+	<date ID="1000301" HintStr="在风化的树木内发现了" HintStr_EN="Found in weathered trees" RewardItemID="10000003" RewardItemNum="5" />
+	<date ID="1000302" HintStr="在仙人掌废墟上发现了" HintStr_EN="Found in the cactus ruins" RewardItemID="10050001" RewardItemNum="1" />
+	<date ID="1000303" HintStr="在洞穴门口" HintStr_EN="At the entrance of the cave" RewardItemID="10000008" RewardItemNum="1" />
+	<date ID="1000304" HintStr="在补给箱子内翻出" HintStr_EN="Inside the supply box" RewardItemID="10015002" RewardItemNum="1" />
+	<date ID="1000305" HintStr="在砂罐里发现" HintStr_EN="Found in a sand pot" RewardItemID="10023012" RewardItemNum="5" />
+	<date ID="1000306" HintStr="在坟墓附近发现了" HintStr_EN="Found near the grave" RewardItemID="10022017" RewardItemNum="1" />
+	<date ID="1000307" HintStr="在柴火附近发现" HintStr_EN="Found near firewood" RewardItemID="10023013" RewardItemNum="1" />
+	<date ID="1000308" HintStr="在骨架附加发现" HintStr_EN="Found near the skeleton" RewardItemID="10010083" RewardItemNum="1" />
+	<date ID="1000401" HintStr="在残壁附近找到了" HintStr_EN="Found near the remnant wall" RewardItemID="10000004" RewardItemNum="5" />
+	<date ID="1000402" HintStr="在下水道附近找到了" HintStr_EN="Found it near the sewer" RewardItemID="10043607" RewardItemNum="1" />
+	<date ID="1000403" HintStr="在废墟附近找到了" HintStr_EN="Found it near the ruins" RewardItemID="10000009" RewardItemNum="1" />
+	<date ID="1000404" HintStr="在角落里找到了" HintStr_EN="Found it in the corner" RewardItemID="10010083" RewardItemNum="1" />
+	<date ID="1000405" HintStr="在蘑菇堆里找到了" HintStr_EN="Found it in the mushroom pile" RewardItemID="10015002" RewardItemNum="1" />
+	<date ID="1000406" HintStr="在草丛附近找到了" HintStr_EN="Found it near the grass" RewardItemID="10060410" RewardItemNum="1" />
+	<date ID="1000407" HintStr="在废墟堆里找到了" HintStr_EN="Found it in the ruins" RewardItemID="10022017" RewardItemNum="1" />
+	<date ID="1000408" HintStr="在废墟堆里找到了" HintStr_EN="Found it in the ruins" RewardItemID="10024013" RewardItemNum="1" />
+	<date ID="1000409" HintStr="在废墟堆里找到了" HintStr_EN="Found it in the ruins" RewardItemID="10040605" RewardItemNum="1" />
+	<date ID="1000501" HintStr="在熔岩墙壁的夹缝处找到了" HintStr_EN="Found it in the crack in the lava wall" RewardItemID="10035027" RewardItemNum="1" />
+	<date ID="1000502" HintStr="在熔岩里找到怪物遗留的" HintStr_EN="Find the remains of monsters in the lava" RewardItemID="10000005" RewardItemNum="5" />
+	<date ID="1000503" HintStr="在熔岩里找到怪物遗留的" HintStr_EN="Find the remains of monsters in the lava" RewardItemID="10060502" RewardItemNum="1" />
+	<date ID="1000504" HintStr="在时光天坑里找到了" HintStr_EN="Found it in the time sinkhole" RewardItemID="10010083" RewardItemNum="1" />
+	<date ID="1000505" HintStr="在废旧的箱子里找到了" HintStr_EN="Found it in the old box" RewardItemID="10025007" RewardItemNum="1" />
+	<date ID="1000506" HintStr="在废旧的管道上找到了" HintStr_EN="Found it on the old pipe" RewardItemID="10025017" RewardItemNum="1" />
+	<date ID="1000507" HintStr="在中层的时光天坑里找到了" HintStr_EN="Found in the middle time sky hole." RewardItemID="10051009" RewardItemNum="1" />
+	<date ID="1000508" HintStr="在上层的时光天坑里找到了" HintStr_EN="Found in the upper time sky hole." RewardItemID="10025012" RewardItemNum="1" />
+	<date ID="1000509" HintStr="在圣光水晶出找到了" HintStr_EN="Found in the crystal of light" RewardItemID="10000010" RewardItemNum="1" />
+</DateArea>

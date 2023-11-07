@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OPS.Rsa</name>
+    </assembly>
+    <members>
+        <member name="M:OPS.Rsa.Extension.ArrayExtension.Split``1(``0[],System.Int32)">
+            <summary>
+            Splits an array into several smaller arrays.
+            </summary>
+            <typeparam name="T">The type of the array.</typeparam>
+            <param name="array">The array to split.</param>
+            <param name="size">The size of the smaller arrays.</param>
+            <returns>An array containing smaller arrays.</returns>
+        </member>
+        <member name="M:OPS.Rsa.Process.GenerateNewKeys(System.String,System.String,OPS.Rsa.ERsaStrength)">
+            <summary>
+            Only in Editor: Relative to .../MyGame/Assets/ + _RelativePrivateKeyDirectory + /PrivateKey.xml
+            and .../MyGame/Assets/ + _RelativePublicKeyDirectory + /PublicKey.xml.
+            </summary>
+            <param name="_RelativePrivateKeyDirectory"></param>
+            <param name="_RelativePublicKeyDirectory"></param>
+            <param name="_RsaStrength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Rsa.Process.LoadPrivateKey(System.String)">
+            <summary>
+            Only in Editor: Relative to .../MyGame/Assets/ + _RelativePrivateKeyDirectory + /PrivateKey.xml.
+            </summary>
+            <param name="_RelativePrivateKeyDirectory"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Rsa.Process.LoadPublicKey(System.String)">
+            <summary>
+            In Editor: Relative to .../MyGame/Assets/ + _RelativePublicKeyDirectory + /PublicKey.xml.
+            In Game: Relative to .../Resources/ + _RelativePublicKeyDirectory + /PublicKey.
+            </summary>
+            <param name="_RelativePublicKeyDirectory"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Rsa.Process.Encrypt(System.String,OPS.Rsa.ERsaStrength,System.Byte[])">
+            <summary>
+            Encrypt a bunch of bytes using the private key.
+            </summary>
+        </member>
+        <member name="M:OPS.Rsa.Process.Decrypt(System.String,OPS.Rsa.ERsaStrength,System.Byte[])">
+            <summary>
+            Decrypt a bunch of bytes using the public key. 
+            </summary>
+        </member>
+        <member name="T:OPS.Rsa.Security.RSAx">
+            <summary>
+            The main RSAx Class
+            </summary>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.#ctor(OPS.Rsa.Security.RSAxParameters)">
+            <summary>
+            Initialize the RSA class.
+            </summary>
+            <param name="rsaParams">Preallocated RSAxParameters containing the required keys.</param>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.#ctor(System.String,System.Int32)">
+            <summary>
+            Initialize the RSA class from a XML KeyInfo string.
+            </summary>
+            <param name="keyInfo">XML Containing Key Information</param>
+            <param name="ModulusSize">Length of RSA Modulus in bits.</param>
+        </member>
+        <member name="P:OPS.Rsa.Security.RSAx.UseCRTForPublicDecryption">
+            <summary>
+            If True, and if the parameters are available, uses CRT for private key decryption. (Much Faster)
+            </summary>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.Dispose">
+            <summary>
+            Releases all the resources.
+            </summary>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.RSAProcess(System.Byte[],System.Boolean)">
+            <summary>
+            Low level RSA Process function for use with private key.
+            Should never be used; Because without padding RSA is vulnerable to attacks.  Use with caution.
+            </summary>
+            <param name="PlainText">Data to encrypt. Length must be less than Modulus size in octets.</param>
+            <param name="usePrivate">True to use Private key, else Public.</param>
+            <returns>Encrypted Data</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.RSADecryptPrivateCRT(System.Byte[])">
+            <summary>
+            Low level RSA Decryption function for use with private key. Uses CRT and is Much faster.
+            Should never be used; Because without padding RSA is vulnerable to attacks. Use with caution.
+            </summary>
+            <param name="Data">Data to encrypt. Length must be less than Modulus size in octets.</param>
+            <returns>Encrypted Data</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.MGF(System.Byte[],System.Int32)">
+            <summary>
+            Mask Generation Function
+            </summary>
+            <param name="Z">Initial pseudorandom Seed.</param>
+            <param name="l">Length of output required.</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.Encrypt(System.Byte[],System.Byte[],System.Boolean)">
+            <summary>
+            Encrypts the given message with RSA, performs OAEP Encoding.
+            </summary>
+            <param name="Message">Message to Encrypt. Maximum message length is (ModulusLengthInOctets - 2 * HashLengthInOctets - 2)</param>
+            <param name="OAEP_Params">Optional OAEP parameters. Normally Empty. But, must match the parameters while decryption.</param>
+            <param name="usePrivate">True to use Private key for encryption. False to use Public key.</param>
+            <returns>Encrypted message.</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.Encrypt(System.Byte[],System.Boolean,System.Boolean)">
+            <summary>
+            Encrypts the given message with RSA.
+            </summary>
+            <param name="Message">Message to Encrypt. Maximum message length is For OAEP [ModulusLengthInOctets - (2 * HashLengthInOctets) - 2] and for PKCS [ModulusLengthInOctets - 11]</param>
+            <param name="usePrivate">True to use Private key for encryption. False to use Public key.</param>
+            <param name="fOAEP">True to use OAEP encoding (Recommended), False to use PKCS v1.5 Padding.</param>
+            <returns>Encrypted message.</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.Encrypt(System.Byte[],System.Boolean)">
+            <summary>
+            Encrypts the given message using RSA Public Key.
+            </summary>
+            <param name="Message">Message to Encrypt. Maximum message length is For OAEP [ModulusLengthInOctets - (2 * HashLengthInOctets) - 2] and for PKCS [ModulusLengthInOctets - 11]</param>
+            <param name="fOAEP">True to use OAEP encoding (Recommended), False to use PKCS v1.5 Padding.</param>
+            <returns>Encrypted message.</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.Decrypt(System.Byte[],System.Boolean,System.Boolean)">
+            <summary>
+            Decrypts the given RSA encrypted message.
+            </summary>
+            <param name="Message">The encrypted message.</param>
+            <param name="usePrivate">True to use Private key for decryption. False to use Public key.</param>
+            <param name="fOAEP">True to use OAEP.</param>
+            <returns>Encrypted byte array.</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.Decrypt(System.Byte[],System.Byte[],System.Boolean)">
+            <summary>
+            Decrypts the given RSA encrypted message.
+            </summary>
+            <param name="Message">The encrypted message.</param>
+            <param name="OAEP_Params">Parameters to the OAEP algorithm (Must match the parameter while Encryption).</param>
+            <param name="usePrivate">True to use Private key for decryption. False to use Public key.</param>
+            <returns>Encrypted byte array.</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAx.Decrypt(System.Byte[],System.Boolean)">
+            <summary>
+            Decrypts the given RSA encrypted message using Private key.
+            </summary>
+            <param name="Message">The encrypted message.</param>
+            <param name="fOAEP">True to use OAEP.</param>
+            <returns>Encrypted byte array.</returns>
+        </member>
+        <member name="T:OPS.Rsa.Security.RSAxParameters">
+            <summary>
+            Class to keep the basic RSA parameters like Keys, and other information.
+            </summary>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxParameters.ComputeHash(System.Byte[])">
+            <summary>
+            Computes the hash from the given data.
+            </summary>
+            <param name="data">The data to hash.</param>
+            <returns>Hash of the data.</returns>
+        </member>
+        <member name="P:OPS.Rsa.Security.RSAxParameters.HasCRTInfo">
+            <summary>
+            Gets and sets the HashAlgorithm for RSA-OAEP padding.
+            </summary>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxParameters.#ctor(System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            Initialize the RSA class. Only the public parameters.
+            </summary>
+            <param name="Modulus">Modulus of the RSA key.</param>
+            <param name="Exponent">Exponent of the RSA key</param>
+            <param name="ModulusSize">Modulus size in number of bits. Ex: 512, 1024, 2048, 4096 etc.</param>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxParameters.#ctor(System.Byte[],System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            Initialize the RSA class.
+            </summary>
+            <param name="Modulus">Modulus of the RSA key.</param>
+            <param name="Exponent">Exponent of the RSA key</param>
+            /// <param name="D">Exponent of the RSA key</param>
+            <param name="ModulusSize">Modulus size in number of bits. Ex: 512, 1024, 2048, 4096 etc.</param>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxParameters.#ctor(System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            Initialize the RSA class. For CRT.
+            </summary>
+            <param name="Modulus">Modulus of the RSA key.</param>
+            <param name="Exponent">Exponent of the RSA key</param>
+            /// <param name="D">Exponent of the RSA key</param>
+            <param name="P">P paramater of RSA Algorithm.</param>
+            <param name="Q">Q paramater of RSA Algorithm.</param>
+            <param name="DP">DP paramater of RSA Algorithm.</param>
+            <param name="DQ">DQ paramater of RSA Algorithm.</param>
+            <param name="InverseQ">InverseQ paramater of RSA Algorithm.</param>
+            <param name="ModulusSize">Modulus size in number of bits. Ex: 512, 1024, 2048, 4096 etc.</param>
+        </member>
+        <member name="T:OPS.Rsa.Security.RSAxUtils">
+            <summary>
+            Utility class for RSAx
+            </summary>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxUtils.GetRSAxParameters(System.String,System.Int32)">
+            <summary>
+            Creates a RSAxParameters class from a given XMLKeyInfo string.
+            </summary>
+            <param name="XMLKeyInfo">Key Data.</param>
+            <param name="ModulusSize">RSA Modulus Size</param>
+            <returns>RSAxParameters class</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxUtils.I2OSP(OPS.Rsa.Number.BigInteger,System.Int32,System.Boolean)">
+            <summary>
+            Converts a non-negative integer to an octet string of a specified length.
+            </summary>
+            <param name="x">The integer to convert.</param>
+            <param name="xLen">Length of output octets.</param>
+            <param name="makeLittleEndian">If True little-endian converntion is followed, big-endian otherwise.</param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxUtils.OS2IP(System.Byte[],System.Boolean)">
+            <summary>
+            Converts a byte array to a non-negative integer.
+            </summary>
+            <param name="data">The number in the form of a byte array.</param>
+            <param name="isLittleEndian">Endianness of the byte array.</param>
+            <returns>An non-negative integer from the byte array of the specified endianness.</returns>
+        </member>
+        <member name="M:OPS.Rsa.Security.RSAxUtils.XOR(System.Byte[],System.Byte[])">
+            <summary>
+            Performs Bitwise Ex-OR operation to two given byte arrays.
+            </summary>
+            <param name="A">The first byte array.</param>
+            <param name="B">The second byte array.</param>
+            <returns>The bitwise Ex-OR result.</returns>
+        </member>
+    </members>
+</doc>

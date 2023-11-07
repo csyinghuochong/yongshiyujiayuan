@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+  
+  <date ID="10001" BuildingGold = "0" Farm="0" Food="0" Wood="0" Stone="0" Iron = "0" MinuteBuildingGold = "100" MinuteFarm="100" MinuteFood="100" MinuteWood="100" MinuteStone="100" MinuteIron = "100" MinuteRoseExp = "100" GovernmentLvID = "1001" ResidentHouseID = "2001" FarmlandID = "3001" LoggingFieldID = "4001" StonePitID = "5001" SmeltingPlantID = "6001" CollegeID = "7001" FortressID = "8001" TrainCampID = "9001" GovernmentWorker = "1" ResidentHouseWorker = "1" FarmlandWorker = "1" LoggingFieldWorker = "1" StonePitWorker = "1" SmeltingPlantWorker = "1" CollegeWorker = "1" FarmerNum="100" FarmerNumMax="100" WorkerNum ="10" SoldierNum="15" EnemyNum="30" EnemyTime ="200"/>
+  
+</DateArea>

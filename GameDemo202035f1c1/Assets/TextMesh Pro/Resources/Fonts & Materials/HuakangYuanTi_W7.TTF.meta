@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8905f3fb35c80bf43a18bb5f2ec4d26b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - DFPYuanW7-GB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a2e373262168cd944a683f6302f80c6d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

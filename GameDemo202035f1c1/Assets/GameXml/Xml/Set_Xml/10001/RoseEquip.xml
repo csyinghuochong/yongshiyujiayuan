@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DateArea>
+	<date ID="1" EquipItemID="0" EquipQuality="4" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10100" YanZhengFileStr="" />
+	<date ID="2" EquipItemID="0" EquipQuality="4" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10200"/>
+	<date ID="3" EquipItemID="0" EquipQuality="4" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10300"/>
+	<date ID="4" EquipItemID="0" EquipQuality="3" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10400"/>
+	<date ID="5" EquipItemID="0" EquipQuality="2" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10500"/>
+	<date ID="6" EquipItemID="0" EquipQuality="1" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10600"/>
+	<date ID="7" EquipItemID="0" EquipQuality="3" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10700"/>
+	<date ID="8" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10800"/>
+	<date ID="9" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "10900"/>
+	<date ID="10" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "11000"/>
+	<date ID="11" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "11100"/>
+	<date ID="12" EquipItemID="0" EquipQuality="2" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "11200"/>
+	<date ID="13" EquipItemID="0" EquipQuality="3" EquipIcon="10002" HideID = "0" GemHole = "0" GemID = "0" QiangHuaID = "11300"/>
+</DateArea>

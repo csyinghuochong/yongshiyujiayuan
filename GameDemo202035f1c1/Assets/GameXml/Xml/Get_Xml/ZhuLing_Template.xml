@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="10001" Name="勇士·注灵" Iamge="10001" AddProperty="361,0.025" NeedLv="10" CostItemID_1="1" CostItemNum_1="100000" CostItemID_2="10021011" CostItemNum_2="10" Des="角色普通攻击造成伤害提升2.5%" />
+	<date ID="10002" Name="英勇·注灵" Iamge="10002" AddProperty="361,0.025" NeedLv="10" CostItemID_1="1" CostItemNum_1="200000" CostItemID_2="10021015" CostItemNum_2="50" Des="角色普通攻击造成伤害提升2.5%" />
+	<date ID="10003" Name="巴弗灭·注灵" Iamge="10003" AddProperty="361,0.025" NeedLv="10" CostItemID_1="10021001" CostItemNum_1="500" CostItemID_2="10021014" CostItemNum_2="10" Des="角色普通攻击造成伤害提升2.5%" />
+	<date ID="10004" Name="深海·注灵" Iamge="10004" AddProperty="361,0.03" NeedLv="20" CostItemID_1="1" CostItemNum_1="500000" CostItemID_2="10022012" CostItemNum_2="15" Des="角色普通攻击造成伤害提升3%" />
+	<date ID="10005" Name="海神·注灵" Iamge="10005" AddProperty="361,0.03" NeedLv="20" CostItemID_1="1" CostItemNum_1="1000000" CostItemID_2="10022016" CostItemNum_2="50" Des="角色普通攻击造成伤害提升3%" />
+	<date ID="10006" Name="海度丝·注灵" Iamge="10006" AddProperty="361,0.03" NeedLv="20" CostItemID_1="10022001" CostItemNum_1="1000" CostItemID_2="10022015" CostItemNum_2="15" Des="角色普通攻击造成伤害提升3%" />
+	<date ID="10007" Name="沙漠·注灵" Iamge="10007" AddProperty="361,0.035" NeedLv="30" CostItemID_1="1" CostItemNum_1="2000000" CostItemID_2="10023012" CostItemNum_2="20" Des="角色普通攻击造成伤害提升3.5%" />
+	<date ID="10008" Name="漠灵·注灵" Iamge="10008" AddProperty="361,0.035" NeedLv="30" CostItemID_1="1" CostItemNum_1="3000000" CostItemID_2="10023016" CostItemNum_2="50" Des="角色普通攻击造成伤害提升3.5%" />
+	<date ID="10009" Name="瓦尔·注灵" Iamge="10009" AddProperty="361,0.035" NeedLv="30" CostItemID_1="10023001" CostItemNum_1="1500" CostItemID_2="10023015" CostItemNum_2="20" Des="角色普通攻击造成伤害提升3.5%" />
+	<date ID="10010" Name="幽暗·注灵" Iamge="10010" AddProperty="361,0.04" NeedLv="40" CostItemID_1="1" CostItemNum_1="5000000" CostItemID_2="10024012" CostItemNum_2="25" Des="角色普通攻击造成伤害提升4%" />
+	<date ID="10011" Name="光辉·注灵" Iamge="10011" AddProperty="361,0.04" NeedLv="40" CostItemID_1="1" CostItemNum_1="5000000" CostItemID_2="10024016" CostItemNum_2="50" Des="角色普通攻击造成伤害提升4%" />
+	<date ID="10012" Name="塔卢斯·注灵" Iamge="10012" AddProperty="361,0.04" NeedLv="40" CostItemID_1="10024001" CostItemNum_1="2000" CostItemID_2="10024015" CostItemNum_2="25" Des="角色普通攻击造成伤害提升4%" />
+	<date ID="10013" Name="灼热·注灵" Iamge="10013" AddProperty="361,0.045" NeedLv="50" CostItemID_1="1" CostItemNum_1="10000000" CostItemID_2="10025012" CostItemNum_2="30" Des="角色普通攻击造成伤害提升4.5%" />
+	<date ID="10014" Name="神圣·注灵" Iamge="10014" AddProperty="361,0.045" NeedLv="50" CostItemID_1="1" CostItemNum_1="10000000" CostItemID_2="10025016" CostItemNum_2="50" Des="角色普通攻击造成伤害提升4.5%" />
+	<date ID="10015" Name="库尔塔兹·注灵" Iamge="10015" AddProperty="361,0.045" NeedLv="50" CostItemID_1="10025001" CostItemNum_1="3000" CostItemID_2="10025015" CostItemNum_2="30" Des="角色普通攻击造成伤害提升4.5%" />
+	<date ID="10016" Name="加隆·注灵" Iamge="10016" AddProperty="361,0.05" NeedLv="50" CostItemID_1="10000027" CostItemNum_1="100" CostItemID_2="10000028" CostItemNum_2="20" Des="角色普通攻击造成伤害提升5%" />
+	<date ID="10017" Name="纳罗斯·注灵" Iamge="10017" AddProperty="361,0.05" NeedLv="50" CostItemID_1="10000027" CostItemNum_1="100" CostItemID_2="10000029" CostItemNum_2="20" Des="角色普通攻击造成伤害提升5%" />
+	<date ID="10018" Name="地狱咆哮·注灵" Iamge="10018" AddProperty="361,0.05" NeedLv="50" CostItemID_1="10000027" CostItemNum_1="100" CostItemID_2="10000030" CostItemNum_2="20" Des="角色普通攻击造成伤害提升5%" />
+	<date ID="10019" Name="胜利者·注灵" Iamge="10019" AddProperty="361,0.05" NeedLv="50" CostItemID_1="10000065" CostItemNum_1="100" CostItemID_2="10000062" CostItemNum_2="20" Des="角色普通攻击造成伤害提升5%" />
+	<date ID="10020" Name="保护者·注灵" Iamge="10020" AddProperty="361,0.05" NeedLv="50" CostItemID_1="10000065" CostItemNum_1="100" CostItemID_2="10000063" CostItemNum_2="20" Des="角色普通攻击造成伤害提升5%" />
+	<date ID="10021" Name="征服者·注灵" Iamge="10021" AddProperty="361,0.05" NeedLv="50" CostItemID_1="10000065" CostItemNum_1="100" CostItemID_2="10000064" CostItemNum_2="20" Des="角色普通攻击造成伤害提升5%" />
+	<date ID="10022" Name="阵营·注灵" Iamge="10022" AddProperty="361,0.075" NeedLv="50" CostItemID_1="1" CostItemNum_1="20000000" CostItemID_2="10000057" CostItemNum_2="1000" Des="角色普通攻击造成伤害提升7.5%" />
+	<date ID="10023" Name="觉醒·注灵" Iamge="10023" AddProperty="361,0.075" NeedLv="50" CostItemID_1="1" CostItemNum_1="20000000" CostItemID_2="10000032" CostItemNum_2="300" Des="角色普通攻击造成伤害提升7.5%" />
+	<date ID="10024" Name="钥匙·注灵" Iamge="10024" AddProperty="361,0.075" NeedLv="50" CostItemID_1="1" CostItemNum_1="20000000" CostItemID_2="10010033" CostItemNum_2="300" Des="角色普通攻击造成伤害提升7.5%" />
+</DateArea>

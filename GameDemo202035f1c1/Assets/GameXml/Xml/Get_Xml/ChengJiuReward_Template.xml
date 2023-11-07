@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="10001" Name="300成就奖励" Name_EN="300 Reward" Icon="10001" ChengJiuNeedNum="300" Reward="3,300;4,10;12001004,10" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到300点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 300" />
+	<date ID="10002" Name="500成就奖励" Name_EN="500 Reward" Icon="10001" ChengJiuNeedNum="500" Reward="3,500;4,20;12001004,10" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到500点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 500" />
+	<date ID="10003" Name="750成就奖励" Name_EN="750 Reward" Icon="10001" ChengJiuNeedNum="750" Reward="3,500;4,30;10000017,1;12001004,20" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到750点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 750" />
+	<date ID="10004" Name="1000成就奖励" Name_EN="1000 Reward" Icon="10002" ChengJiuNeedNum="1000" Reward="3,1000;4,50;10010044,1;12001004,20" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到1000点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 1000" />
+	<date ID="10005" Name="1200成就奖励" Name_EN="1200 Reward" Icon="10002" ChengJiuNeedNum="1200" Reward="3,1500;4,70;10010045,1;10000101,1" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到1200点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 1200" />
+	<date ID="10006" Name="1400成就奖励" Name_EN="1400 Reward" Icon="10002" ChengJiuNeedNum="1400" Reward="3,2000;4,100;10010044,2;12001004,20" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到1400点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 1400" />
+	<date ID="10007" Name="1600成就奖励" Name_EN="1600 Reward" Icon="10003" ChengJiuNeedNum="1600" Reward="3,3000;4,150;10010045,2;10000102,1" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到1600点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 1600" />
+	<date ID="10008" Name="1800成就奖励" Name_EN="1800 Reward" Icon="10003" ChengJiuNeedNum="1800" Reward="3,3000;4,200;10010044,5;12001004,20" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到1800点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 1800" />
+	<date ID="10009" Name="2060成就奖励" Name_EN="2060 Reward" Icon="10003" ChengJiuNeedNum="2060" Reward="3,3000;4,300;10010045,5;10000103,1" Des="成就点数的累计是你游戏中实力的体现，标示着你在游戏里的里程碑路程!成就点数达到2060点可领取成就奖励" Des_EN="Achievement rewards can be obtained when achievement points reach 2060" />
+</DateArea>

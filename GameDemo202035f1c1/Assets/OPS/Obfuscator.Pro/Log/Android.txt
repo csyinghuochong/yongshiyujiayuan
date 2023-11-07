@@ -1,0 +1,20 @@
+[Info][Process] Start obfuscate Assemblies
+[Info][Process] Lock Assemblies
+[Error][Process] System.OutOfMemoryException: Out of memory
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_ves_icall_array_new_specific(intptr,int)
+  at Microsoft.Cci.Pdb.MsfDirectory..ctor (Microsoft.Cci.Pdb.PdbReader reader, Microsoft.Cci.Pdb.PdbFileHeader head, Microsoft.Cci.Pdb.BitAccess bits) [0x000a1] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\symbols\pdb\Microsoft.Cci.Pdb\MsfDirectory.cs:40 
+  at Microsoft.Cci.Pdb.PdbFile.LoadFunctions (System.IO.Stream read, System.Collections.Generic.Dictionary`2[System.UInt32,Microsoft.Cci.Pdb.PdbTokenLine]& tokenToSourceMapping, System.String& sourceServerData, System.Int32& age, System.Guid& guid) [0x00027] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\symbols\pdb\Microsoft.Cci.Pdb\PdbFile.cs:345 
+  at OPS.Mono.Cecil.Pdb.PdbReader.PopulateFunctions () [0x00007] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\symbols\pdb\Mono.Cecil.Pdb\PdbReader.cs:76 
+  at OPS.Mono.Cecil.Pdb.PdbReader.ProcessDebugHeader (OPS.Mono.Cecil.Cil.ImageDebugDirectory directory, System.Byte[] header) [0x00046] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\symbols\pdb\Mono.Cecil.Pdb\PdbReader.cs:57 
+  at OPS.Mono.Cecil.ModuleDefinition.ProcessDebugHeader () [0x00012] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\Mono.Cecil\ModuleDefinition.cs:827 
+  at OPS.Mono.Cecil.ModuleDefinition.ReadSymbols (OPS.Mono.Cecil.Cil.ISymbolReader reader) [0x00015] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\Mono.Cecil\ModuleDefinition.cs:900 
+  at OPS.Mono.Cecil.ModuleReader.ReadSymbols (OPS.Mono.Cecil.ModuleDefinition module, OPS.Mono.Cecil.ReaderParameters parameters) [0x00047] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\Mono.Cecil\AssemblyReader.cs:93 
+  at OPS.Mono.Cecil.ModuleReader.CreateModuleFrom (OPS.Mono.Cecil.PE.Image image, OPS.Mono.Cecil.ReaderParameters parameters) [0x00040] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\Mono.Cecil\AssemblyReader.cs:74 
+  at OPS.Mono.Cecil.ModuleDefinition.ReadModule (System.IO.Stream stream, OPS.Mono.Cecil.ReaderParameters parameters) [0x00022] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\Mono.Cecil\ModuleDefinition.cs:933 
+  at OPS.Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, OPS.Mono.Cecil.ReaderParameters parameters) [0x0000a] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\Mono.Cecil\ModuleDefinition.cs:916 
+  at OPS.Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, OPS.Mono.Cecil.ReaderParameters parameters) [0x00000] in D:\Downloads\cecil-0.9.6\cecil-0.9.6\Mono.Cecil\AssemblyDefinition.cs:122 
+  at OPS.Obfuscator.Assembly.AssemblyInfo.LoadAssembly () [0x00053] in <fc67a1aec144471eb16e0bc681aeaad6>:0 
+  at OPS.Obfuscator.Other.Project.LoadAssemblies () [0x00027] in <fc67a1aec144471eb16e0bc681aeaad6>:0 
+  at OPS.Obfuscator.Obfuscator.Obfuscate (UnityEditor.BuildTarget _BuildTarget, System.Collections.Generic.List`1[T] _DependencyDirectories) [0x000d3] in <fc67a1aec144471eb16e0bc681aeaad6>:0 
+[Info][Process] Unlock Assemblies
+[Info][Process] Finished obfuscate Assemblies

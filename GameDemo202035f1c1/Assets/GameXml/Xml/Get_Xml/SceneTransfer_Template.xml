@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="101" TransferName="20级副本" TransferName_EN="" MapID="1001" MapTransferName="RosePosition_1" MapTransfer_X="152" MapTransfer_Y="34.3" MapTransfer_Z="-67.64" EnterLv="1" />
+	<date ID="1001" TransferName="南镇郊外" TransferName_EN="South Town Suburb" MapID="10001" MapTransferName="RosePosition_1" MapTransfer_X="-30.2" MapTransfer_Y="31" MapTransfer_Z="9" EnterLv="1" />
+	<date ID="1002" TransferName="郊外深处" TransferName_EN="Deep in The Suburb" MapID="10002" MapTransferName="RosePosition_1" MapTransfer_X="42.34" MapTransfer_Y="2.2" MapTransfer_Z="50.5" EnterLv="1" />
+	<date ID="1003" TransferName="郊外密林" TransferName_EN="Suburban Dense Forest" MapID="10003" MapTransferName="RosePosition_1" MapTransfer_X="47.85" MapTransfer_Y="-7.99" MapTransfer_Z="-91.97" EnterLv="1" />
+	<date ID="1004" TransferName="风之谷下层" TransferName_EN="Lower Wind Valley" MapID="10004" MapTransferName="RosePosition_1" MapTransfer_X="193.23" MapTransfer_Y="28.48" MapTransfer_Z="-80.57" EnterLv="1" />
+	<date ID="1005" TransferName="风之谷上层" TransferName_EN="Upper Wind Valley" MapID="10005" MapTransferName="RosePosition_1" MapTransfer_X="146.85" MapTransfer_Y="33.29" MapTransfer_Z="-66.69" EnterLv="1" />
+	<date ID="1006" TransferName="风之谷" TransferName_EN="Wind Valley" MapID="10006" MapTransferName="RosePosition_1" MapTransfer_X="240.91" MapTransfer_Y="29.7" MapTransfer_Z="-180.11" EnterLv="1" />
+	<date ID="1010" TransferName="南镇郊外" TransferName_EN="South Town Suburb" MapID="10001" MapTransferName="RosePosition_2" MapTransfer_X="115.05" MapTransfer_Y="33.6" MapTransfer_Z="-21.24" EnterLv="1" />
+	<date ID="1011" TransferName="南镇郊外" TransferName_EN="South Town Suburb" MapID="10001" MapTransferName="RosePosition_2" MapTransfer_X="129.99" MapTransfer_Y="31.39" MapTransfer_Z="152.41" EnterLv="1" />
+	<date ID="1012" TransferName="郊外深处" TransferName_EN="Deep in The Suburb" MapID="10002" MapTransferName="RosePosition_2" MapTransfer_X="94.44" MapTransfer_Y="1.99" MapTransfer_Z="-92.54" EnterLv="1" />
+	<date ID="1013" TransferName="风之谷下层" TransferName_EN="Lower Wind Valley" MapID="10004" MapTransferName="RosePosition_2" MapTransfer_X="335.33" MapTransfer_Y="32" MapTransfer_Z="26.85" EnterLv="1" />
+	<date ID="1014" TransferName="风之谷上层" TransferName_EN="Upper Wind Valley" MapID="10005" MapTransferName="RosePosition_2" MapTransfer_X="324.98" MapTransfer_Y="31.33" MapTransfer_Z="30.67" EnterLv="1" />
+	<date ID="2001" TransferName="沉船海滩" TransferName_EN="Sunken Ship" MapID="20001" MapTransferName="RosePosition_1" MapTransfer_X="158.06" MapTransfer_Y="3.38" MapTransfer_Z="225.97" EnterLv="1" />
+	<date ID="2002" TransferName="水下地宫一层" TransferName_EN="Lower Underwater Palace" MapID="20002" MapTransferName="RosePosition_1" MapTransfer_X="193.16" MapTransfer_Y="47.73" MapTransfer_Z="-126.99" EnterLv="1" />
+	<date ID="2003" TransferName="水下地宫二层" TransferName_EN="Upper Underwater Palace" MapID="20003" MapTransferName="RosePosition_1" MapTransfer_X="45.55" MapTransfer_Y="31.8" MapTransfer_Z="-46.68" EnterLv="1" />
+	<date ID="2004" TransferName="水下大厅" TransferName_EN="Underwater Hall" MapID="20004" MapTransferName="RosePosition_1" MapTransfer_X="-181.27" MapTransfer_Y="-14.55" MapTransfer_Z="-61.48" EnterLv="1" />
+	<date ID="2005" TransferName="海巫密道" TransferName_EN="Nage Gallery" MapID="20005" MapTransferName="RosePosition_1" MapTransfer_X="337.44" MapTransfer_Y="12.8" MapTransfer_Z="-31.54" EnterLv="1" />
+	<date ID="2006" TransferName="海巫宫殿" TransferName_EN="Nage Palace" MapID="20006" MapTransferName="RosePosition_1" MapTransfer_X="57.29" MapTransfer_Y="25.08" MapTransfer_Z="-113.01" EnterLv="1" />
+	<date ID="2011" TransferName="沉船海滩" TransferName_EN="Sunken Ship" MapID="20001" MapTransferName="RosePosition_2" MapTransfer_X="82.95" MapTransfer_Y="2.74" MapTransfer_Z="137.52" EnterLv="1" />
+	<date ID="2012" TransferName="水下地宫一层" TransferName_EN="Lower Underwater Palace" MapID="20002" MapTransferName="RosePosition_2" MapTransfer_X="138.5" MapTransfer_Y="51.93" MapTransfer_Z="-56.53" EnterLv="1" />
+	<date ID="2013" TransferName="水下地宫二层" TransferName_EN="Upper Underwater Palace" MapID="20003" MapTransferName="RosePosition_3" MapTransfer_X="150.87" MapTransfer_Y="36.57" MapTransfer_Z="-34.75" EnterLv="1" />
+	<date ID="2014" TransferName="水下大厅" TransferName_EN="Underwater Hall" MapID="20004" MapTransferName="RosePosition_2" MapTransfer_X="-17.96" MapTransfer_Y="-14.55" MapTransfer_Z="-79.41" EnterLv="1" />
+	<date ID="2015" TransferName="海巫密道" TransferName_EN="Nage Gallery" MapID="20005" MapTransferName="RosePosition_2" MapTransfer_X="90.78" MapTransfer_Y="16.99" MapTransfer_Z="22.08" EnterLv="1" />
+	<date ID="3001" TransferName="荒漠沙洲" TransferName_EN="Desert Sandbar" MapID="30001" MapTransferName="RosePosition_1" MapTransfer_X="246.37" MapTransfer_Y="30.76" MapTransfer_Z="-238.44" EnterLv="1" />
+	<date ID="3002" TransferName="荒漠之地" TransferName_EN="Desert Land" MapID="30002" MapTransferName="RosePosition_1" MapTransfer_X="146.93" MapTransfer_Y="44.84" MapTransfer_Z="66.48" EnterLv="1" />
+	<date ID="3003" TransferName="无痕谷" TransferName_EN="Enternal Valley" MapID="30003" MapTransferName="RosePosition_1" MapTransfer_X="327.7" MapTransfer_Y="33.12" MapTransfer_Z="30.68" EnterLv="1" />
+	<date ID="3004" TransferName="地渊之路" TransferName_EN="Chasm Road" MapID="30004" MapTransferName="RosePosition_1" MapTransfer_X="203.47" MapTransfer_Y="43.7" MapTransfer_Z="-100.8" EnterLv="1" />
+	<date ID="3005" TransferName="地渊大厅一层" TransferName_EN="Lower Underground Ruin" MapID="30005" MapTransferName="RosePosition_1" MapTransfer_X="261.51" MapTransfer_Y="37.57" MapTransfer_Z="-76.5" EnterLv="1" />
+	<date ID="3006" TransferName="地渊大厅二层" TransferName_EN="Upper Underground Ruin" MapID="30006" MapTransferName="RosePosition_1" MapTransfer_X="228.53" MapTransfer_Y="31.9" MapTransfer_Z="59.86" EnterLv="1" />
+	<date ID="3011" TransferName="荒漠沙洲" TransferName_EN="Desert Sandbar" MapID="30001" MapTransferName="RosePosition_3" MapTransfer_X="272" MapTransfer_Y="30.76" MapTransfer_Z="-178.89" EnterLv="1" />
+	<date ID="3012" TransferName="荒漠沙洲" TransferName_EN="Desert Sandbar" MapID="30001" MapTransferName="RosePosition_3" MapTransfer_X="227.26" MapTransfer_Y="31.1" MapTransfer_Z="-161.15" EnterLv="1" />
+	<date ID="3013" TransferName="荒漠之地" TransferName_EN="Desert Land" MapID="30002" MapTransferName="RosePosition_2" MapTransfer_X="190.25" MapTransfer_Y="43.3" MapTransfer_Z="-33.89" EnterLv="1" />
+	<date ID="3014" TransferName="地渊之路" TransferName_EN="Chasm Road" MapID="30004" MapTransferName="RosePosition_2" MapTransfer_X="224" MapTransfer_Y="45.45" MapTransfer_Z="-38.21" EnterLv="1" />
+	<date ID="3015" TransferName="地渊大厅一层" TransferName_EN="Lower Underground Ruin" MapID="30005" MapTransferName="RosePosition_2" MapTransfer_X="271.85" MapTransfer_Y="37.57" MapTransfer_Z="32.08" EnterLv="1" />
+	<date ID="4001" TransferName="圣歌营地" TransferName_EN="Chant Camp" MapID="40001" MapTransferName="RosePosition_1" MapTransfer_X="177.63" MapTransfer_Y="33.29" MapTransfer_Z="92.63" EnterLv="1" />
+	<date ID="4002" TransferName="圣歌平原" TransferName_EN="Chant Plain" MapID="40002" MapTransferName="RosePosition_1" MapTransfer_X="182.97" MapTransfer_Y="34.11" MapTransfer_Z="94.46" EnterLv="1" />
+	<date ID="4003" TransferName="圣歌之路" TransferName_EN="Chant Road" MapID="40003" MapTransferName="RosePosition_1" MapTransfer_X="287.19" MapTransfer_Y="43.23" MapTransfer_Z="-266.63" EnterLv="1" />
+	<date ID="4004" TransferName="蘑菇森林" TransferName_EN="Mushroom Forest" MapID="40004" MapTransferName="RosePosition_1" MapTransfer_X="214.5" MapTransfer_Y="43.97" MapTransfer_Z="-229.2" EnterLv="1" />
+	<date ID="4005" TransferName="蘑菇沼泽" TransferName_EN="Mushroom Swamp" MapID="40005" MapTransferName="RosePosition_1" MapTransfer_X="144.13" MapTransfer_Y="45.41" MapTransfer_Z="-331.86" EnterLv="1" />
+	<date ID="4006" TransferName="圣歌废墟" TransferName_EN="Chant Ruin" MapID="40006" MapTransferName="RosePosition_1" MapTransfer_X="269.19" MapTransfer_Y="31.64" MapTransfer_Z="-210.27" EnterLv="1" />
+	<date ID="4011" TransferName="圣歌营地" TransferName_EN="Chant Camp" MapID="40001" MapTransferName="RosePosition_2" MapTransfer_X="247.28" MapTransfer_Y="32.2" MapTransfer_Z="147.47" EnterLv="1" />
+	<date ID="4012" TransferName="圣歌营地" TransferName_EN="Chant Camp" MapID="40001" MapTransferName="RosePosition_3" MapTransfer_X="161.63" MapTransfer_Y="32.2" MapTransfer_Z="173.48" EnterLv="1" />
+	<date ID="4013" TransferName="圣歌平原" TransferName_EN="Chant Plain" MapID="40002" MapTransferName="RosePosition_2" MapTransfer_X="171.15" MapTransfer_Y="32.82" MapTransfer_Z="183.13" EnterLv="1" />
+	<date ID="4014" TransferName="蘑菇森林" TransferName_EN="Mushroom Forest" MapID="40004" MapTransferName="RosePosition_3" MapTransfer_X="154.67" MapTransfer_Y="42.76" MapTransfer_Z="-336.07" EnterLv="1" />
+	<date ID="4015" TransferName="圣歌平原" TransferName_EN="Chant Plain" MapID="40002" MapTransferName="RosePosition_3" MapTransfer_X="231.75" MapTransfer_Y="32.82" MapTransfer_Z="102.3" EnterLv="1" />
+	<date ID="5001" TransferName="熔岩之地" TransferName_EN="Lava Land" MapID="50001" MapTransferName="RosePosition_1" MapTransfer_X="77.81" MapTransfer_Y="43.72" MapTransfer_Z="-237.55" EnterLv="1" />
+	<date ID="5002" TransferName="熔岩裂谷" TransferName_EN="Lava Rift" MapID="50002" MapTransferName="RosePosition_1" MapTransfer_X="-129.64" MapTransfer_Y="15.62" MapTransfer_Z="58.19" EnterLv="1" />
+	<date ID="5003" TransferName="暗灵宫殿一层" TransferName_EN="Lower Darkcore Palace" MapID="50003" MapTransferName="RosePosition_1" MapTransfer_X="267.07" MapTransfer_Y="41.47" MapTransfer_Z="107.88" EnterLv="1" />
+	<date ID="5004" TransferName="暗灵宫殿二层" TransferName_EN="Middle Darkcore Palace" MapID="50004" MapTransferName="RosePosition_1" MapTransfer_X="133.81" MapTransfer_Y="52.05" MapTransfer_Z="-61.79" EnterLv="1" />
+	<date ID="5005" TransferName="暗灵宫殿三层" TransferName_EN="Upper Darkcore Palace" MapID="50005" MapTransferName="RosePosition_1" MapTransfer_X="-145.34" MapTransfer_Y="45.26" MapTransfer_Z="91.45" EnterLv="1" />
+	<date ID="5006" TransferName="暗灵封地" TransferName_EN="Darkcore Fief" MapID="50006" MapTransferName="RosePosition_1" MapTransfer_X="150.47" MapTransfer_Y="45.4" MapTransfer_Z="23.19" EnterLv="1" />
+	<date ID="5011" TransferName="熔岩之地" TransferName_EN="Lava Land" MapID="50001" MapTransferName="RosePosition_2" MapTransfer_X="-48.03" MapTransfer_Y="44.62" MapTransfer_Z="-363.9" EnterLv="1" />
+	<date ID="5012" TransferName="熔岩裂谷" TransferName_EN="Lava Rift" MapID="50002" MapTransferName="RosePosition_2" MapTransfer_X="-205.92" MapTransfer_Y="14.1" MapTransfer_Z="-15.9" EnterLv="1" />
+	<date ID="5013" TransferName="暗灵宫殿一层" TransferName_EN="Lower Darkcore Palace" MapID="50003" MapTransferName="RosePosition_2" MapTransfer_X="150.81" MapTransfer_Y="39.76" MapTransfer_Z="-55.97" EnterLv="1" />
+	<date ID="5014" TransferName="暗灵宫殿二层" TransferName_EN="Middle Darkcore Palace" MapID="50004" MapTransferName="RosePosition_2" MapTransfer_X="162" MapTransfer_Y="55.03" MapTransfer_Z="19.95" EnterLv="1" />
+	<date ID="5015" TransferName="暗灵宫殿三层" TransferName_EN="Upper Darkcore Palace" MapID="50005" MapTransferName="RosePosition_2" MapTransfer_X="34.29" MapTransfer_Y="45.22" MapTransfer_Z="131.63" EnterLv="1" />
+	<date ID="6001" TransferName="禁地郊外" TransferName_EN="Deep in The Suburb" MapID="60001" MapTransferName="RosePosition_2" MapTransfer_X="111.57" MapTransfer_Y="2.2" MapTransfer_Z="-84.97" EnterLv="1" />
+	<date ID="6002" TransferName="禁地深处" TransferName_EN="Deep in The Suburb" MapID="60002" MapTransferName="RosePosition_2" MapTransfer_X="78.22" MapTransfer_Y="2.2" MapTransfer_Z="-84.31" EnterLv="1" />
+	<date ID="6003" TransferName="禁地大厅" TransferName_EN="Deep in The Suburb" MapID="60003" MapTransferName="RosePosition_1" MapTransfer_X="73.88" MapTransfer_Y="8" MapTransfer_Z="-34.25" EnterLv="1" />
+	<date ID="6004" TransferName="禁地魔穴" TransferName_EN="Deep in The Suburb" MapID="60004" MapTransferName="RosePosition_1" MapTransfer_X="98.59" MapTransfer_Y="29.58" MapTransfer_Z="-79.62" EnterLv="1" />
+	<date ID="6011" TransferName="禁地郊外" TransferName_EN="Deep in The Suburb" MapID="60001" MapTransferName="RosePosition_1" MapTransfer_X="43.16" MapTransfer_Y="2.2" MapTransfer_Z="43.28" EnterLv="1" />
+	<date ID="6012" TransferName="禁地深处" TransferName_EN="Deep in The Suburb" MapID="60002" MapTransferName="RosePosition_1" MapTransfer_X="97.5" MapTransfer_Y="2.2" MapTransfer_Z="34.73" EnterLv="1" />
+	<date ID="100001" TransferName="藏宝洞穴" TransferName_EN="Treasure Cave" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="143.76" MapTransfer_Y="33.29" MapTransfer_Z="-44.45" EnterLv="1" />
+	<date ID="100002" TransferName="大秘境" TransferName_EN="Big Secret Area" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="143.76" MapTransfer_Y="33.29" MapTransfer_Z="-44.45" EnterLv="1" />
+	<date ID="100003" TransferName="生存大作战" TransferName_EN="Treasure Cave" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="143.76" MapTransfer_Y="33.29" MapTransfer_Z="-44.45" EnterLv="1" />
+	<date ID="100004" TransferName="防守副本" TransferName_EN="Treasure Cave" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="143.76" MapTransfer_Y="33.29" MapTransfer_Z="-44.45" EnterLv="1" />
+	<date ID="100005" TransferName="伤害副本" TransferName_EN="Treasure Cave" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="196.43" MapTransfer_Y="33.29" MapTransfer_Z="-53.74" EnterLv="1" />
+	<date ID="100006" TransferName="通天魔塔" TransferName_EN="Treasure Cave" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="196.43" MapTransfer_Y="33.29" MapTransfer_Z="-53.74" EnterLv="1" />
+	<date ID="100007" TransferName="封印之塔" TransferName_EN="Treasure Cave" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="196.43" MapTransfer_Y="33.29" MapTransfer_Z="-53.74" EnterLv="1" />
+	<date ID="100008" TransferName="传承之地" TransferName_EN="" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="181.98" MapTransfer_Y="25" MapTransfer_Z="-49.56" EnterLv="1" />
+	<date ID="100011" TransferName="深海神殿" TransferName_EN="Big Secret Area" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="192.88" MapTransfer_Y="12.8" MapTransfer_Z="159.34" EnterLv="1" />
+	<date ID="100021" TransferName="我的家园" TransferName_EN="My Home" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="-8" MapTransfer_Y="2" MapTransfer_Z="-12" EnterLv="1" />
+	<date ID="100098" TransferName="宠物天梯" TransferName_EN="Big Secret Area" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="145.85" MapTransfer_Y="30.46" MapTransfer_Z="-46.5" EnterLv="1" />
+	<date ID="100099" TransferName="主城" TransferName_EN="City" MapID="EnterGame" MapTransferName="RosePosition_1" MapTransfer_X="3" MapTransfer_Y="2" MapTransfer_Z="0" EnterLv="1" />
+	<date ID="900001" TransferName="测试地图" TransferName_EN="Test Map" MapID="10001" MapTransferName="RosePosition_1" MapTransfer_X="-10.21" MapTransfer_Y="31" MapTransfer_Z="-10.38" EnterLv="1" />
+</DateArea>

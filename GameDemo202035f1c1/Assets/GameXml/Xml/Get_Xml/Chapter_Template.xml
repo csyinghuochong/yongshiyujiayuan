@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="1" ChapterName="绿郊冒险" ChapterName_EN="Green rural adventure" ChapterNameOut="第一章" ChapterNameOut_EN="Chap.1" SceneIDSet="1001;1002;1003;1004;1005" />
+	<date ID="2" ChapterName="海底探险" ChapterName_EN="Seabed exploration" ChapterNameOut="第二章" ChapterNameOut_EN="Chap.2" SceneIDSet="2001;2002;2003;2004;2005" />
+	<date ID="3" ChapterName="荒漠世界" ChapterName_EN="Desert world" ChapterNameOut="第三章" ChapterNameOut_EN="Chap.3" SceneIDSet="3001;3002;3003;3004;3005" />
+	<date ID="4" ChapterName="蘑菇沼泽" ChapterName_EN="Mushroom marsh" ChapterNameOut="第四章" ChapterNameOut_EN="Chap.4" SceneIDSet="4001;4002;4003;4004;4005" />
+	<date ID="5" ChapterName="世界和平" ChapterName_EN="World peace" ChapterNameOut="第五章" ChapterNameOut_EN="Chap.5" SceneIDSet="5001;5002;5003;5004;5005" />
+	<date ID="6" ChapterName="勇往直前" ChapterName_EN="World peace" ChapterNameOut="第六章" ChapterNameOut_EN="Chap.6" SceneIDSet="6001;6002;6003;6004" />
+</DateArea>

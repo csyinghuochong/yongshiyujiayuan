@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="10001" ShowType="1" QianDaoDay="1" ShowText="第1天" ShowText_EN="Day 1" QianDao_Com="10010034,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10002" ShowType="1" QianDaoDay="2" ShowText="第2天" ShowText_EN="Day 2" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10003" ShowType="1" QianDaoDay="3" ShowText="第3天" ShowText_EN="Day 3" QianDao_Com="10010085,10" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10004" ShowType="2" QianDaoDay="4" ShowText="第4天" ShowText_EN="Day 4" QianDao_Com="10000016,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10005" ShowType="1" QianDaoDay="5" ShowText="第5天" ShowText_EN="Day 5" QianDao_Com="10010034,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10006" ShowType="1" QianDaoDay="6" ShowText="第6天" ShowText_EN="Day 6" QianDao_Com="10010035,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10007" ShowType="3" QianDaoDay="7" ShowText="第7天" ShowText_EN="Day 7" QianDao_Com="10010033,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10008" ShowType="1" QianDaoDay="8" ShowText="第8天" ShowText_EN="Day 8" QianDao_Com="10010034,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10009" ShowType="1" QianDaoDay="9" ShowText="第9天" ShowText_EN="Day 9" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10010" ShowType="2" QianDaoDay="10" ShowText="第10天" ShowText_EN="Day 10" QianDao_Com="10000016,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10011" ShowType="1" QianDaoDay="11" ShowText="第11天" ShowText_EN="Day 11" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10012" ShowType="1" QianDaoDay="12" ShowText="第12天" ShowText_EN="Day 12" QianDao_Com="10010027,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10013" ShowType="1" QianDaoDay="13" ShowText="第13天" ShowText_EN="Day 13" QianDao_Com="10010085,5" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10014" ShowType="3" QianDaoDay="14" ShowText="第14天" ShowText_EN="Day 14" QianDao_Com="10010083,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10015" ShowType="1" QianDaoDay="15" ShowText="第15天" ShowText_EN="Day 15" QianDao_Com="1,50000" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10016" ShowType="1" QianDaoDay="16" ShowText="第16天" ShowText_EN="Day 16" QianDao_Com="10010034,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10017" ShowType="2" QianDaoDay="17" ShowText="第17天" ShowText_EN="Day 17" QianDao_Com="10000016,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10018" ShowType="1" QianDaoDay="18" ShowText="第18天" ShowText_EN="Day 18" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10019" ShowType="1" QianDaoDay="19" ShowText="第19天" ShowText_EN="Day 19" QianDao_Com="10010035,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10020" ShowType="2" QianDaoDay="20" ShowText="第20天" ShowText_EN="Day 20" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10021" ShowType="1" QianDaoDay="21" ShowText="第21天" ShowText_EN="Day 21" QianDao_Com="10010085,5" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10022" ShowType="1" QianDaoDay="22" ShowText="第22天" ShowText_EN="Day 22" QianDao_Com="10010034,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10023" ShowType="3" QianDaoDay="23" ShowText="第23天" ShowText_EN="Day 23" QianDao_Com="10010028,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10024" ShowType="1" QianDaoDay="24" ShowText="第24天" ShowText_EN="Day 24" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10025" ShowType="2" QianDaoDay="25" ShowText="第25天" ShowText_EN="Day 25" QianDao_Com="1,50000" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10026" ShowType="1" QianDaoDay="26" ShowText="第26天" ShowText_EN="Day 26" QianDao_Com="10010085,5" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10027" ShowType="2" QianDaoDay="27" ShowText="第27天" ShowText_EN="Day 27" QianDao_Com="10000016,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10028" ShowType="1" QianDaoDay="28" ShowText="第28天" ShowText_EN="Day 28" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10029" ShowType="1" QianDaoDay="29" ShowText="第29天" ShowText_EN="Day 29" QianDao_Com="10010042,2" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+	<date ID="10030" ShowType="4" QianDaoDay="30" ShowText="第30天" ShowText_EN="Day 30" QianDao_Com="10000017,1" QianDao_Pay="10000024,1;10010041,5;10000025,1" />
+</DateArea>

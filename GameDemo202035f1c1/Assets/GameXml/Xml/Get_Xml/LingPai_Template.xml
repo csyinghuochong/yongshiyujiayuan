@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="10001" Lv="5" ShowText="" Reward_Com="10010011,20" Reward_Gold="10060511,1" Reward_ZuanShi="10000106,1" />
+	<date ID="10002" Lv="7" ShowText="" Reward_Com="10021001,20" Reward_Gold="10010026,1" Reward_ZuanShi="12000007,1" />
+	<date ID="10003" Lv="9" ShowText="" Reward_Com="10021002,10" Reward_Gold="10031046,1" Reward_ZuanShi="10015001,1" />
+	<date ID="10004" Lv="11" ShowText="" Reward_Com="1,1000" Reward_Gold="10010083,1" Reward_ZuanShi="10000017,1" />
+	<date ID="10005" Lv="13" ShowText="" Reward_Com="10021005,10" Reward_Gold="10021015,30" Reward_ZuanShi="10021012,1" />
+	<date ID="10006" Lv="15" ShowText="" Reward_Com="10000024,1" Reward_Gold="10000016,2" Reward_ZuanShi="10021015,30" />
+	<date ID="10007" Lv="17" ShowText="" Reward_Com="10021012,1" Reward_Gold="10010033,1" Reward_ZuanShi="10010026,1" />
+	<date ID="10008" Lv="19" ShowText="" Reward_Com="10022001,20" Reward_Gold="10010083,1" Reward_ZuanShi="10000012,1" />
+	<date ID="10009" Lv="21" ShowText="" Reward_Com="1,5000" Reward_Gold="10022016,30" Reward_ZuanShi="10010083,1" />
+	<date ID="10010" Lv="23" ShowText="" Reward_Com="10010083,1" Reward_Gold="10010028,1" Reward_ZuanShi="10010029,1" />
+	<date ID="10011" Lv="25" ShowText="" Reward_Com="10022011,10" Reward_Gold="10022016,30" Reward_ZuanShi="10022015,1" />
+	<date ID="10012" Lv="27" ShowText="" Reward_Com="10010042,3" Reward_Gold="10000017,1" Reward_ZuanShi="10010033,1" />
+	<date ID="10013" Lv="29" ShowText="" Reward_Com="10022013,1" Reward_Gold="10010029,1" Reward_ZuanShi="10010044,1" />
+	<date ID="10014" Lv="31" ShowText="" Reward_Com="10023001,20" Reward_Gold="10000008,5" Reward_ZuanShi="10000014,1" />
+	<date ID="10015" Lv="33" ShowText="" Reward_Com="10000018,1" Reward_Gold="10000013,1" Reward_ZuanShi="10023015,1" />
+	<date ID="10016" Lv="35" ShowText="" Reward_Com="10023011,10" Reward_Gold="10023016,30" Reward_ZuanShi="10000008,1" />
+	<date ID="10017" Lv="37" ShowText="" Reward_Com="1,10000" Reward_Gold="10010026,1" Reward_ZuanShi="10010084,1" />
+	<date ID="10018" Lv="39" ShowText="" Reward_Com="10000016,1" Reward_Gold="10023016,30" Reward_ZuanShi="1,50000" />
+	<date ID="10019" Lv="41" ShowText="" Reward_Com="10000019,1" Reward_Gold="10010094,1" Reward_ZuanShi="10010033,1" />
+	<date ID="10020" Lv="43" ShowText="" Reward_Com="10024001,20" Reward_Gold="10024016,30" Reward_ZuanShi="10024015,1" />
+	<date ID="10021" Lv="45" ShowText="" Reward_Com="10024007,10" Reward_Gold="10010033,1" Reward_ZuanShi="10000017,1" />
+	<date ID="10022" Lv="47" ShowText="" Reward_Com="10024016,10" Reward_Gold="1,50000" Reward_ZuanShi="10010083,1" />
+	<date ID="10023" Lv="49" ShowText="" Reward_Com="10000020,1" Reward_Gold="10050007,1" Reward_ZuanShi="10024016,30" />
+	<date ID="10024" Lv="51" ShowText="" Reward_Com="10025001,20" Reward_Gold="10010095,1" Reward_ZuanShi="10015005,1" />
+	<date ID="10025" Lv="53" ShowText="" Reward_Com="10025011,10" Reward_Gold="10025016,30" Reward_ZuanShi="10000010,1" />
+	<date ID="10026" Lv="55" ShowText="" Reward_Com="10000010,1" Reward_Gold="10025013,1" Reward_ZuanShi="10000017,1" />
+	<date ID="10027" Lv="57" ShowText="" Reward_Com="10000016,1" Reward_Gold="10000015,1" Reward_ZuanShi="1,100000" />
+	<date ID="10028" Lv="59" ShowText="" Reward_Com="10025016,10" Reward_Gold="10025016,30" Reward_ZuanShi="10000010,1" />
+	<date ID="10029" Lv="61" ShowText="" Reward_Com="10010095,1" Reward_Gold="10000010,10" Reward_ZuanShi="10025015,1" />
+	<date ID="10030" Lv="63" ShowText="" Reward_Com="10010044,1" Reward_Gold="10025016,30" Reward_ZuanShi="10051003,1" />
+	<date ID="10031" Lv="65" ShowText="" Reward_Com="10010045,1" Reward_Gold="10041808,1" Reward_ZuanShi="10040608,1" />
+</DateArea>

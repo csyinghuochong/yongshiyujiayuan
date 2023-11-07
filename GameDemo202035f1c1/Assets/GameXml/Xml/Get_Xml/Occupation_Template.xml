@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="1" OccupationName="战士" BaseHp="450" BaseMinAct="50" BaseMaxAct="100" BaseMinMagAct="0" BaseMaxMagAct="0" BaseMinDef="30" BaseMaxDef="40" BaseMinAdf="30" BaseMaxAdf="40" BaseMoveSpeed="4" BaseCri="0.05" BaseHit="0.05" BaseDodge="0" BaseDefAdd="0.1" BaseAdfAdd="0.1" DamgeAdd="0" LvUpHp="75" LvUpMinAct="4" LvUpMaxAct="8" LvUpMinMagAct="0" LvUpMaxMagAct="0" LvUpMinDef="3" LvUpMaxDef="5" LvUpMinAdf="3" LvUpMaxAdf="5" />
+	<date ID="2" OccupationName="法师" BaseHp="250" BaseMinAct="75" BaseMaxAct="130" BaseMinMagAct="0" BaseMaxMagAct="0" BaseMinDef="15" BaseMaxDef="25" BaseMinAdf="15" BaseMaxAdf="25" BaseMoveSpeed="4" BaseCri="0.05" BaseHit="0.05" BaseDodge="0" BaseDefAdd="0" BaseAdfAdd="0" DamgeAdd="0" LvUpHp="15" LvUpMinAct="4" LvUpMaxAct="13" LvUpMinMagAct="0" LvUpMaxMagAct="0" LvUpMinDef="1" LvUpMaxDef="2" LvUpMinAdf="1" LvUpMaxAdf="2" />
+	<date ID="3" OccupationName="猎人" BaseHp="350" BaseMinAct="60" BaseMaxAct="115" BaseMinMagAct="0" BaseMaxMagAct="0" BaseMinDef="15" BaseMaxDef="25" BaseMinAdf="15" BaseMaxAdf="25" BaseMoveSpeed="4" BaseCri="0.05" BaseHit="0.05" BaseDodge="0" BaseDefAdd="0" BaseAdfAdd="0" DamgeAdd="0" LvUpHp="20" LvUpMinAct="5" LvUpMaxAct="10" LvUpMinMagAct="0" LvUpMaxMagAct="0" LvUpMinDef="1" LvUpMaxDef="2" LvUpMinAdf="1" LvUpMaxAdf="2" />
+</DateArea>
