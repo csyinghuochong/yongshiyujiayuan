@@ -1,0 +1,1565 @@
+fileFormatVersion: 2
+guid: 603db1476e0321d4f805d06706ce2822
+timeCreated: 1450715124
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bone01
+    100002: Bone02
+    100004: Bone03
+    100006: Bone05
+    100008: Bone06
+    100010: Bone07
+    100012: Bone09
+    100014: Bone10
+    100016: Bone11
+    100018: Bone12
+    100020: Bone14
+    100022: Bone15
+    100024: Bone16
+    100026: Bone18
+    100028: Bone19
+    100030: Bone20
+    100032: Bone22
+    100034: //RootNode
+    100036: burrower
+    100038: burrower.001
+    100040: Dummy01
+    100042: Dummy02
+    100044: Dummy03
+    100046: Dummy04
+    100048: Dummy05
+    100050: Dummy06
+    100052: Dummy07
+    100054: Dummy08
+    100056: Dummy09
+    100058: Dummy10
+    100060: root
+    400000: Bone01
+    400002: Bone02
+    400004: Bone03
+    400006: Bone05
+    400008: Bone06
+    400010: Bone07
+    400012: Bone09
+    400014: Bone10
+    400016: Bone11
+    400018: Bone12
+    400020: Bone14
+    400022: Bone15
+    400024: Bone16
+    400026: Bone18
+    400028: Bone19
+    400030: Bone20
+    400032: Bone22
+    400034: //RootNode
+    400036: burrower
+    400038: burrower.001
+    400040: Dummy01
+    400042: Dummy02
+    400044: Dummy03
+    400046: Dummy04
+    400048: Dummy05
+    400050: Dummy06
+    400052: Dummy07
+    400054: Dummy08
+    400056: Dummy09
+    400058: Dummy10
+    400060: root
+    4300000: burrower.001
+    7400000: Attack1
+    7400002: Attack2
+    7400004: Attack3
+    7400006: Death_Flight
+    7400008: Death_Land
+    7400010: Despawn
+    7400012: Die
+    7400014: Hit
+    7400016: Idle
+    7400018: Run
+    7400020: Spawn
+    7400022: Special_Dig
+    7400024: Special_Shield
+    7400026: Special_Spit
+    7400028: Stunned
+    7400030: Walk
+    9500000: //RootNode
+    13700000: burrower.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Attack1
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .660035014
+        functionName: AIAct
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Attack2
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack3
+      takeName: Attack3
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death_Flight
+      takeName: Death_Flight
+      firstFrame: 0
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death_Land
+      takeName: Death_Land
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Despawn
+      takeName: Despawn
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Die
+      takeName: Die
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit
+      takeName: Hit
+      firstFrame: 0
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Spawn
+      takeName: Spawn
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Dig
+      takeName: Special_Dig
+      firstFrame: 0
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Shield
+      takeName: Special_Shield
+      firstFrame: 0
+      lastFrame: 114
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Spit
+      takeName: Special_Spit
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Stunned
+      takeName: Stunned
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: burrower
+        weight: 1
+      - path: burrower/burrower.001
+        weight: 1
+      - path: burrower/root
+        weight: 1
+      - path: burrower/root/Dummy05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy04
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy08
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone01/Bone02/Bone03
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone05/Bone06/Bone07
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone10/Bone18/Bone19/Bone20
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone11
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone12/Bone22
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15
+        weight: 1
+      - path: burrower/root/Dummy05/Dummy10/Bone09/Bone14/Bone15/Bone16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

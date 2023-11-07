@@ -1,0 +1,2075 @@
+fileFormatVersion: 2
+guid: 5ef9c5c9ce5d6ab488064ab85180e261
+timeCreated: 1450978274
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bip01_Head
+    100002: Bip05
+    100004: Bip05_L_Calf
+    100006: Bip05_L_Clavicle
+    100008: Bip05_L_Finger0
+    100010: Bip05_L_Finger01
+    100012: Bip05_L_Finger1
+    100014: Bip05_L_Finger11
+    100016: Bip05_L_Finger2
+    100018: Bip05_L_Finger21
+    100020: Bip05_L_Finger3
+    100022: Bip05_L_Finger31
+    100024: Bip05_L_Foot
+    100026: Bip05_L_Forearm
+    100028: Bip05_L_Hand
+    100030: Bip05_L_Thigh
+    100032: Bip05_L_Toe0
+    100034: Bip05_L_UpperArm
+    100036: Bip05_Neck
+    100038: Bip05_Pelvis
+    100040: Bip05_R_Calf
+    100042: Bip05_R_Clavicle
+    100044: Bip05_R_Finger0
+    100046: Bip05_R_Finger01
+    100048: Bip05_R_Finger1
+    100050: Bip05_R_Finger11
+    100052: Bip05_R_Finger2
+    100054: Bip05_R_Finger21
+    100056: Bip05_R_Finger3
+    100058: Bip05_R_Finger31
+    100060: Bip05_R_Foot
+    100062: Bip05_R_Forearm
+    100064: Bip05_R_Hand
+    100066: Bip05_R_Thigh
+    100068: Bip05_R_Toe0
+    100070: Bip05_R_UpperArm
+    100072: Bip05_Spine
+    100074: Bip05_Spine1
+    100076: Bip05_Spine2
+    100078: EzM_zombie_mat
+    100080: //RootNode
+    100082: ezro_zombie
+    100084: root
+    100086: tag_leftarm
+    100088: tag_lefthand
+    100090: tag_righthand
+    400000: Bip01_Head
+    400002: Bip05
+    400004: Bip05_L_Calf
+    400006: Bip05_L_Clavicle
+    400008: Bip05_L_Finger0
+    400010: Bip05_L_Finger01
+    400012: Bip05_L_Finger1
+    400014: Bip05_L_Finger11
+    400016: Bip05_L_Finger2
+    400018: Bip05_L_Finger21
+    400020: Bip05_L_Finger3
+    400022: Bip05_L_Finger31
+    400024: Bip05_L_Foot
+    400026: Bip05_L_Forearm
+    400028: Bip05_L_Hand
+    400030: Bip05_L_Thigh
+    400032: Bip05_L_Toe0
+    400034: Bip05_L_UpperArm
+    400036: Bip05_Neck
+    400038: Bip05_Pelvis
+    400040: Bip05_R_Calf
+    400042: Bip05_R_Clavicle
+    400044: Bip05_R_Finger0
+    400046: Bip05_R_Finger01
+    400048: Bip05_R_Finger1
+    400050: Bip05_R_Finger11
+    400052: Bip05_R_Finger2
+    400054: Bip05_R_Finger21
+    400056: Bip05_R_Finger3
+    400058: Bip05_R_Finger31
+    400060: Bip05_R_Foot
+    400062: Bip05_R_Forearm
+    400064: Bip05_R_Hand
+    400066: Bip05_R_Thigh
+    400068: Bip05_R_Toe0
+    400070: Bip05_R_UpperArm
+    400072: Bip05_Spine
+    400074: Bip05_Spine1
+    400076: Bip05_Spine2
+    400078: EzM_zombie_mat
+    400080: //RootNode
+    400082: ezro_zombie
+    400084: root
+    400086: tag_leftarm
+    400088: tag_lefthand
+    400090: tag_righthand
+    4300000: EzM_zombie_mat
+    7400000: attack1
+    7400002: attack2
+    7400004: attack3
+    7400006: death_flight
+    7400008: death_land
+    7400010: die1
+    7400012: die2
+    7400014: die3
+    7400016: hit
+    7400018: idle
+    7400020: jump_down
+    7400022: jump_land
+    7400024: run
+    7400026: special_drain_loop
+    7400028: special_drain_start
+    7400030: walk
+    9500000: //RootNode
+    13700000: EzM_zombie_mat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: attack1
+      takeName: attack1
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .385892749
+        functionName: AIAct
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: attack2
+      takeName: attack2
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: attack3
+      takeName: attack3
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: death_flight
+      takeName: death_flight
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: death_land
+      takeName: death_land
+      firstFrame: 0
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: die1
+      takeName: die1
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: die2
+      takeName: die2
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: die3
+      takeName: die3
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hit
+      takeName: hit
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: idle
+      firstFrame: 0
+      lastFrame: 83
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump_down
+      takeName: jump_down
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump_land
+      takeName: jump_land
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run
+      takeName: run
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: special_drain_loop
+      takeName: special_drain_loop
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: special_drain_start
+      takeName: special_drain_start
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: walk
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ezro_zombie
+        weight: 1
+      - path: ezro_zombie/EzM_zombie_mat
+        weight: 1
+      - path: ezro_zombie/root
+        weight: 1
+      - path: ezro_zombie/root/Bip05
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_L_Thigh/Bip05_L_Calf/Bip05_L_Foot/Bip05_L_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_R_Thigh/Bip05_R_Calf/Bip05_R_Foot/Bip05_R_Toe0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip01_Head
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger0/Bip05_L_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger1/Bip05_L_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger2/Bip05_L_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/Bip05_L_Finger3/Bip05_L_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/Bip05_L_Hand/tag_lefthand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_L_Clavicle/Bip05_L_UpperArm/Bip05_L_Forearm/tag_leftarm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger0/Bip05_R_Finger01
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger1/Bip05_R_Finger11
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger2/Bip05_R_Finger21
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/Bip05_R_Finger3/Bip05_R_Finger31
+        weight: 1
+      - path: ezro_zombie/root/Bip05/Bip05_Pelvis/Bip05_Spine/Bip05_Spine1/Bip05_Spine2/Bip05_Neck/Bip05_R_Clavicle/Bip05_R_UpperArm/Bip05_R_Forearm/Bip05_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

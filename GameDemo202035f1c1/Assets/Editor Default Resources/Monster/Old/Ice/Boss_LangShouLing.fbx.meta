@@ -1,0 +1,2389 @@
+fileFormatVersion: 2
+guid: 5931cbadc89e5d54ca341ced0329eb08
+timeCreated: 1450972107
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bip04
+    100002: Bip04_Back_Cloth
+    100004: Bip04_Front_Cloth
+    100006: Bip04_Head
+    100008: Bip04_Jaw
+    100010: Bip04_L_Calf
+    100012: Bip04_L_Clavicle
+    100014: Bip04_L_Finger0
+    100016: Bip04_L_Finger01
+    100018: Bip04_L_Finger1
+    100020: Bip04_L_Finger11
+    100022: Bip04_L_Finger2
+    100024: Bip04_L_Finger21
+    100026: Bip04_L_Finger3
+    100028: Bip04_L_Finger31
+    100030: Bip04_L_Foot
+    100032: Bip04_L_Forearm
+    100034: Bip04_L_Hand
+    100036: Bip04_L_Thigh
+    100038: Bip04_L_Toe0
+    100040: Bip04_L_UpperArm
+    100042: Bip04_Neck
+    100044: Bip04_Pelvis
+    100046: Bip04_R_Calf
+    100048: Bip04_R_Clavicle
+    100050: Bip04_R_Finger0
+    100052: Bip04_R_Finger01
+    100054: Bip04_R_Finger1
+    100056: Bip04_R_Finger11
+    100058: Bip04_R_Finger2
+    100060: Bip04_R_Finger21
+    100062: Bip04_R_Finger3
+    100064: Bip04_R_Finger31
+    100066: Bip04_R_Foot
+    100068: Bip04_R_Forearm
+    100070: Bip04_R_Hand
+    100072: Bip04_R_Thigh
+    100074: Bip04_R_Toe0
+    100076: Bip04_R_UpperArm
+    100078: Bip04_Spine
+    100080: Bip04_Spine1
+    100082: //RootNode
+    100084: mirka
+    100086: Mirka__Mirka_Base_Mat
+    100088: root
+    100090: tag_leftarm
+    100092: tag_lefthand
+    100094: tag_righthand
+    400000: Bip04
+    400002: Bip04_Back_Cloth
+    400004: Bip04_Front_Cloth
+    400006: Bip04_Head
+    400008: Bip04_Jaw
+    400010: Bip04_L_Calf
+    400012: Bip04_L_Clavicle
+    400014: Bip04_L_Finger0
+    400016: Bip04_L_Finger01
+    400018: Bip04_L_Finger1
+    400020: Bip04_L_Finger11
+    400022: Bip04_L_Finger2
+    400024: Bip04_L_Finger21
+    400026: Bip04_L_Finger3
+    400028: Bip04_L_Finger31
+    400030: Bip04_L_Foot
+    400032: Bip04_L_Forearm
+    400034: Bip04_L_Hand
+    400036: Bip04_L_Thigh
+    400038: Bip04_L_Toe0
+    400040: Bip04_L_UpperArm
+    400042: Bip04_Neck
+    400044: Bip04_Pelvis
+    400046: Bip04_R_Calf
+    400048: Bip04_R_Clavicle
+    400050: Bip04_R_Finger0
+    400052: Bip04_R_Finger01
+    400054: Bip04_R_Finger1
+    400056: Bip04_R_Finger11
+    400058: Bip04_R_Finger2
+    400060: Bip04_R_Finger21
+    400062: Bip04_R_Finger3
+    400064: Bip04_R_Finger31
+    400066: Bip04_R_Foot
+    400068: Bip04_R_Forearm
+    400070: Bip04_R_Hand
+    400072: Bip04_R_Thigh
+    400074: Bip04_R_Toe0
+    400076: Bip04_R_UpperArm
+    400078: Bip04_Spine
+    400080: Bip04_Spine1
+    400082: //RootNode
+    400084: mirka
+    400086: Mirka__Mirka_Base_Mat
+    400088: root
+    400090: tag_leftarm
+    400092: tag_lefthand
+    400094: tag_righthand
+    4300000: Mirka__Mirka_Base_Mat
+    7400000: Attack1
+    7400002: Attack2
+    7400004: Attack3
+    7400006: Attack4
+    7400008: Die1
+    7400010: Die2
+    7400012: Die3
+    7400014: Hit1
+    7400016: Hit2
+    7400018: Hit3
+    7400020: Idle
+    7400022: Run
+    7400024: Special_Breath
+    7400026: Special_Dash
+    7400028: Special_Roar
+    7400030: Special_Slash
+    7400032: Special_Stab
+    7400034: Walk
+    9500000: //RootNode
+    13700000: Mirka__Mirka_Base_Mat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Attack1
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .700117409
+        functionName: AIAct
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Attack2
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack3
+      takeName: Attack3
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack4
+      takeName: Attack4
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Die1
+      takeName: Die1
+      firstFrame: 0
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Die2
+      takeName: Die2
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Die3
+      takeName: Die3
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit1
+      takeName: Hit1
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit2
+      takeName: Hit2
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit3
+      takeName: Hit3
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 83
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Breath
+      takeName: Special_Breath
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Dash
+      takeName: Special_Dash
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Roar
+      takeName: Special_Roar
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Slash
+      takeName: Special_Slash
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Special_Stab
+      takeName: Special_Stab
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mirka
+        weight: 1
+      - path: mirka/Mirka__Mirka_Base_Mat
+        weight: 1
+      - path: mirka/root
+        weight: 1
+      - path: mirka/root/Bip04
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Back_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Front_Cloth
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_L_Thigh/Bip04_L_Calf/Bip04_L_Foot/Bip04_L_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_R_Thigh/Bip04_R_Calf/Bip04_R_Foot/Bip04_R_Toe0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_Head/Bip04_Jaw
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger0/Bip04_L_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger1/Bip04_L_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger2/Bip04_L_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/Bip04_L_Finger3/Bip04_L_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/Bip04_L_Hand/tag_lefthand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_L_Clavicle/Bip04_L_UpperArm/Bip04_L_Forearm/tag_leftarm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger0/Bip04_R_Finger01
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger1/Bip04_R_Finger11
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger2/Bip04_R_Finger21
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/Bip04_R_Finger3/Bip04_R_Finger31
+        weight: 1
+      - path: mirka/root/Bip04/Bip04_Pelvis/Bip04_Spine/Bip04_Spine1/Bip04_Neck/Bip04_R_Clavicle/Bip04_R_UpperArm/Bip04_R_Forearm/Bip04_R_Hand/tag_righthand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
