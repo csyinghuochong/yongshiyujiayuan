@@ -96,13 +96,23 @@ public class UI_HuoDongDaTing : MonoBehaviour {
 	public GameObject Obj_Btn_ZhanQuRewardLv;
 	public GameObject Obj_Btn_ZhanQuRewardShiLi;
 
-    public GameObject Btn_ChongZhi;
-
+    public GameObject Obj_Btn_ChongZhi;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
-        //界面适配
+#if UNITY_ANDROID
+        Obj_Btn_ChongZhi.SetActive(false);
+        // 在Android平台上执行的代码
+#elif UNITY_IOS
+         Obj_Btn_ChongZhi.SetActive(true);
+        // 在iOS平台上执行的代码
+#else
+        Obj_Btn_ChongZhi.SetActive(false);
+        // 在其他平台上执行的代码
+#endif  //界面适配
+
         Game_PublicClassVar.Get_function_UI.UIFitResolutionRatio(this.gameObject);
 
         if (IfInitZhiChiStatus) {
