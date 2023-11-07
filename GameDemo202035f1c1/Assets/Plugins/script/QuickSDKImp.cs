@@ -432,6 +432,7 @@ namespace quicksdk
 		{
 			#if UNITY_IOS && !UNITY_EDITOR
 			//return (quicksdk_nativeEnterCustomerCenter() == -100?0:1);
+			return 0;
 			#elif UNITY_ANDROID && !UNITY_EDITOR
 			return 0;
 			#else
@@ -443,6 +444,7 @@ namespace quicksdk
 		{
 			#if UNITY_IOS && !UNITY_EDITOR
 			//return (quicksdk_nativeEnterBBS() == -100?0:1);
+			return 0;
 			#elif UNITY_ANDROID && !UNITY_EDITOR
 			QuickUnitySupportAndroid androidSupport = QuickUnitySupportAndroid.getInstance();
 			return androidSupport.callFunc(FuncType.QUICK_SDK_FUNC_TYPE_ENTER_BBS);
