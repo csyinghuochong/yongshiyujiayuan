@@ -72,7 +72,7 @@ namespace Umeng
        
 	        UMCommonSetAppkeyAndChannel(appKey,channelId);
             //iOS 必须设置 android 无此API
-	        _SetScenarioType();
+	        //_SetScenarioType();
 
 
 #elif UNITY_ANDROID
@@ -107,8 +107,8 @@ namespace Umeng
 #elif UNITY_IPHONE
 
 
-			_SetWrapperTypeAndVersion("Unity", Version);
-			_UMCommonSetAppkeyAndChannel(appkey, channelId);
+			//_SetWrapperTypeAndVersion("Unity", Version);
+			//_UMCommonSetAppkeyAndChannel(appkey, channelId);
 
 #elif UNITY_ANDROID
            
@@ -128,7 +128,7 @@ namespace Umeng
 #if UNITY_EDITOR
         //Debug.Log("SetLogEnabled");  
 #elif UNITY_IPHONE
-        _SetLogEnabled(value);
+        //_SetLogEnabled(value);
 #elif UNITY_ANDROID
             
 
@@ -150,7 +150,7 @@ namespace Umeng
 #if UNITY_EDITOR
         //Debug.Log("Event");  
 #elif UNITY_IPHONE
-        _Event(eventId);
+        //_Event(eventId);
 #elif UNITY_ANDROID
             Agent.CallStatic("onEvent", Context, eventId);
 #endif
@@ -169,7 +169,7 @@ namespace Umeng
 #if UNITY_EDITOR 
         //Debug.Log("Event");  
 #elif UNITY_IPHONE
-        _EventWithLabel(eventId, label);
+        //_EventWithLabel(eventId, label);
 #elif UNITY_ANDROID
             Agent.CallStatic("onEvent", Context, eventId, label);
 #endif
@@ -188,7 +188,7 @@ namespace Umeng
 #if UNITY_EDITOR
         	//Debug.Log("Event");        
 #elif UNITY_IPHONE
-			_EventWithAttributes(eventId, DictionaryToJson(attributes));
+			//_EventWithAttributes(eventId, DictionaryToJson(attributes));
 #elif UNITY_ANDROID
             Agent.CallStatic("onEvent", Context, eventId, ToJavaHashMap(attributes));
 #endif
@@ -206,7 +206,7 @@ namespace Umeng
 #if UNITY_EDITOR
 		    //Debug.Log("PageBegin");
 #elif UNITY_IPHONE
-            _BeginLogPageView(pageName);
+            //_BeginLogPageView(pageName);
 #elif UNITY_ANDROID
             Agent.CallStatic("onPageStart", pageName);
 #endif
@@ -223,7 +223,7 @@ namespace Umeng
 #if UNITY_EDITOR
 		    //Debug.Log("PageEnd"); 
 #elif UNITY_IPHONE
-            _EndLogPageView(pageName);
+            //_EndLogPageView(pageName);
 #elif UNITY_ANDROID
             Agent.CallStatic("onPageEnd", pageName);
 #endif
@@ -270,7 +270,7 @@ namespace Umeng
 			//Debug.Log("GetDeviceInfo return null");
 			return null;
 #elif UNITY_IPHONE
-			return _GetDeviceID();
+			return ""; //_GetDeviceID();
 #elif UNITY_ANDROID
 
             Debug.Log("GetDeviceInfo return ");
@@ -291,7 +291,7 @@ namespace Umeng
 			#if UNITY_EDITOR
 			//Debug.Log("SetLogEncryptEnabled");
 			#elif UNITY_IPHONE
-			_SetEncryptEnabled(value);
+			//_SetEncryptEnabled(value);
 			#elif UNITY_ANDROID
 			UMConfigure.CallStatic("setEncryptEnabled",value);
 			#endif

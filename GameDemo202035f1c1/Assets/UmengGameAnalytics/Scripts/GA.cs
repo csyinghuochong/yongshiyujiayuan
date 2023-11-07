@@ -36,7 +36,7 @@ namespace Umeng
 			#if UNITY_EDITOR
 			//Debug.Log("SetUserLevel");
 			#elif UNITY_IPHONE
-			_SetUserLevel(level);
+			//_SetUserLevel(level);
 			#elif UNITY_ANDROID
 			Agent.CallStatic("setPlayerLevel", level);
 			#endif
@@ -59,7 +59,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("SetUserInfo");
 #elif UNITY_IPHONE
-            _SetUserInfo(userId, (int)gender, age, platform);
+            //_SetUserInfo(userId, (int)gender, age, platform);
 #elif UNITY_ANDROID
             Agent.CallStatic("setPlayerInfo",userId, age,  (int)gender, platform);
 #endif
@@ -82,7 +82,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("StartLevel");
 #elif UNITY_IPHONE
-            _StartLevel(level);
+            //_StartLevel(level);
 #elif UNITY_ANDROID
             Agent.CallStatic("startLevel",level);
 #endif
@@ -99,7 +99,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("FinishLevel");
 #elif UNITY_IPHONE
-            _FinishLevel(level);
+            //_FinishLevel(level);
 #elif UNITY_ANDROID
             Agent.CallStatic("finishLevel",level);
 #endif
@@ -115,7 +115,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("FailLevel");
 #elif UNITY_IPHONE
-            _FailLevel(level);
+            //_FailLevel(level);
 #elif UNITY_ANDROID
             Agent.CallStatic("failLevel",level);
 #endif
@@ -195,7 +195,7 @@ namespace Umeng
 				#if UNITY_EDITOR
 				//Debug.Log("Pay");
 				#elif UNITY_IPHONE
-				_PayCashForCoin(cash,source,coin);
+				//_PayCashForCoin(cash,source,coin);
 				#elif UNITY_ANDROID
 				Agent.CallStatic("pay",cash , coin, source);
 				#endif
@@ -215,7 +215,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("Pay");
 #elif UNITY_IPHONE
-            _PayCashForItem(cash,(int)source,item,amount,price);
+            //_PayCashForItem(cash,(int)source,item,amount,price);
 #elif UNITY_ANDROID
             Agent.CallStatic("pay",cash, item, amount, price, (int)source);
 #endif
@@ -235,7 +235,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("Buy");
 #elif UNITY_IPHONE
-            _Buy(item,amount,price);
+            //_Buy(item,amount,price);
 #elif UNITY_ANDROID
             Agent.CallStatic("buy", item, amount, price);
 #endif
@@ -254,7 +254,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("Use");
 #elif UNITY_IPHONE
-            _Use(item, amount, price);
+            //_Use(item, amount, price);
 #elif UNITY_ANDROID
             Agent.CallStatic("use", item, amount, price);
 #endif
@@ -290,7 +290,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("Bonus");
 #elif UNITY_IPHONE
-            _BonusCoin(coin, (int)source);
+            //_BonusCoin(coin, (int)source);
 #elif UNITY_ANDROID
             Agent.CallStatic("bonus", coin, (int)source);
 #endif
@@ -312,7 +312,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("Bonus");
 #elif UNITY_IPHONE
-			_BonusItem(item, amount, price, (int)source);
+			//_BonusItem(item, amount, price, (int)source);
 #elif UNITY_ANDROID
             Agent.CallStatic("bonus", item, amount, price, (int)source);
 #endif
@@ -324,7 +324,7 @@ namespace Umeng
 			#if UNITY_EDITOR
 			//Debug.Log("ProfileSignIn");
 			#elif UNITY_IPHONE
-			_ProfileSignInWithPUID(userId);
+			//_ProfileSignInWithPUID(userId);
 			#elif UNITY_ANDROID
 			Agent.CallStatic("onProfileSignIn", userId);
 			#endif
@@ -354,7 +354,7 @@ namespace Umeng
 			#if UNITY_EDITOR
 			//Debug.Log("ProfileSignOff");
 			#elif UNITY_IPHONE
-			_ProfileSignOff();
+			//_ProfileSignOff();
 			#elif UNITY_ANDROID
 			Agent.CallStatic("onProfileSignOff");
 			#endif

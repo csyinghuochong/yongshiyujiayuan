@@ -510,7 +510,7 @@ public sealed class BuglyAgent
     private static void ConfigCrashReporterType(){
         if (!_crashReporterTypeConfiged) {
             try {
-                _BuglyConfigCrashReporterType(_crashReporterType);
+                //_BuglyConfigCrashReporterType(_crashReporterType);
                 _crashReporterTypeConfiged = true;
              } catch {
                 
@@ -522,7 +522,7 @@ public sealed class BuglyAgent
         ConfigCrashReporterType();
         
         try {
-            _BuglyDefaultConfig(channel, version, user, null);
+            //_BuglyDefaultConfig(channel, version, user, null);
         } catch {
             
         }
@@ -538,21 +538,21 @@ public sealed class BuglyAgent
         
         if(!string.IsNullOrEmpty(appId)) {
             
-            _BuglyInit(appId, _debugMode, _crashReproterCustomizedLogLevel); // Log level 
+            //_BuglyInit(appId, _debugMode, _crashReproterCustomizedLogLevel); // Log level 
         }
     }
     
     private static void SetUnityVersion(){
         ConfigCrashReporterType();
         
-        _BuglySetExtraConfig("UnityVersion", Application.unityVersion);
+        //_BuglySetExtraConfig("UnityVersion", Application.unityVersion);
     }
     
     private static void SetUserInfo(string userInfo){
         if(!string.IsNullOrEmpty(userInfo)) {
             ConfigCrashReporterType();
             
-            _BuglySetUserId(userInfo);
+            //_BuglySetUserId(userInfo);
         }
     }
     
@@ -589,13 +589,13 @@ public sealed class BuglyAgent
     private static void SetCurrentScene(int sceneId) {
         ConfigCrashReporterType();
         
-        _BuglySetTag(sceneId);
+        //_BuglySetTag(sceneId);
     }
     
     private static void AddKeyAndValueInScene(string key, string value){
         ConfigCrashReporterType();
         
-        _BuglySetKeyValue(key, value);
+        //_BuglySetKeyValue(key, value);
     }
     
     private static void AddExtraDataWithException(string key, string value) {
@@ -609,7 +609,7 @@ public sealed class BuglyAgent
         
         ConfigCrashReporterType();
         
-        _BuglyLogMessage(LogSeverityToInt(level), null, message);
+        //_BuglyLogMessage(LogSeverityToInt(level), null, message);
     }
     
     private static int LogSeverityToInt(LogSeverity logLevel){
