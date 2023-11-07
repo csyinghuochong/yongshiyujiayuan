@@ -183,7 +183,6 @@ public class MyEditorScript
 		//PlayerSettings.applicationIdentifier = "com.game.uc";
 		//PlayerSettings.bundleVersion = "v0.0.1";
 		//PlayerSettings.SetScriptingDefineSymbolsForGroup(targetGroup, "SUBSTANCE_PLUGIN_ENABLED;UC");
-		//==================�����ǱȽ���Ҫ�Ķ���=======================
 
 		GenericBuild(SCENES, target_dir + "/" + target_name, buildTarget, targetGroup, BuildOptions.None);
 
