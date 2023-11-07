@@ -96,10 +96,11 @@ public class UI_HuoDongDaTing : MonoBehaviour {
 	public GameObject Obj_Btn_ZhanQuRewardLv;
 	public GameObject Obj_Btn_ZhanQuRewardShiLi;
 
+    public GameObject Btn_ChongZhi;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
         //界面适配
         Game_PublicClassVar.Get_function_UI.UIFitResolutionRatio(this.gameObject);
