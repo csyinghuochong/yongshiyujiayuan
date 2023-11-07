@@ -15,14 +15,14 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
 #if UNITY_IPHONE
         ConfigurationBuilder builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 
-        builder.AddProduct("6SG", ProductType.Consumable);
-        builder.AddProduct("30SG", ProductType.Consumable);
-        builder.AddProduct("50SG", ProductType.Consumable);
-        builder.AddProduct("98SG", ProductType.Consumable);
-        builder.AddProduct("198SG", ProductType.Consumable);
-        builder.AddProduct("298SG", ProductType.Consumable);
-        builder.AddProduct("488SG", ProductType.Consumable);
-        builder.AddProduct("648SG", ProductType.Consumable);
+        builder.AddProduct("198YS", ProductType.Consumable);
+        builder.AddProduct("298YS", ProductType.Consumable);
+        builder.AddProduct("30YS", ProductType.Consumable);
+        builder.AddProduct("488YS", ProductType.Consumable);
+        builder.AddProduct("50YS", ProductType.Consumable);
+        builder.AddProduct("6YS", ProductType.Consumable);
+        builder.AddProduct("648YS", ProductType.Consumable);
+        builder.AddProduct("98YS", ProductType.Consumable);
 
         UnityPurchasing.Initialize(this, builder);
 
