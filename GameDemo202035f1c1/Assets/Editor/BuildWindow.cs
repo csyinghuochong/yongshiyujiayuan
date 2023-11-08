@@ -57,7 +57,7 @@ public class MyEditorScript
         BuildPipeline.BuildPlayer(SCENES, "ios", BuildTarget.iOS, BuildOptions.None);
     }
 
-    private static string formPath = @"E:\WeijingGame_2\Android\";//原路径   [guanfang\mubao]
+    private static string formPath = @"G:\yongshiyujiayuan_1\Android\";//原路径   [guanfang\mubao]
 
 	private static string targetPath = Application.dataPath + @"\Plugins\Android\libs_alipay"; //目标路径   ../表示当前项目文件的父路径
 	private static string mainfestFile = Application.dataPath + @"\Plugins\Android\AndroidManifest"; //目标路径   ../表示当前项目文件的父路径
