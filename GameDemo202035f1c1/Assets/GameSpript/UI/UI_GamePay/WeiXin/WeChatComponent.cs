@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class WeChatComponent : MonoBehaviour {
 
-    public string WXAppID = "wx0f24f5e538739f0d";
-    public string WXAppSecret = "dd075324e0a4ab44bd49d972efcffedc";
+    public string WXAppID = "wx1b7f30caa340e5f8";
+    public string WXAppSecret = "5b8b0e553320145e8270eb810e5145ed";
 
     public bool isRegisterToWechat = false;
 

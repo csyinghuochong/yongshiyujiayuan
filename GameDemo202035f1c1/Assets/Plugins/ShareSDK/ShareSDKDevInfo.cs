@@ -7,70 +7,26 @@ namespace cn.sharesdk.unity3d
 	[Serializable]
 	public class DevInfoSet
 	{
-		public SinaWeiboDevInfo sinaweibo;
-		public TencentWeiboDevInfo tencentweibo;
-		public Facebook facebook;
-		public Twitter twitter;
-		public Email email;
-		public ShortMessage shortMessage;
-		public Douban douban;
-		public Renren renren;
-		public GooglePlus googlePlus;
-		public KaiXin kaiXin;
-		public Pocket pocket;
-		public Instagram instagram;
-		public LinkedIn linkedIn;
-		public Tumblr tumblr;
-		public YouDao youDao;
-		public Flickr flickr;
-		public Evernote evernote;
-		public WhatsApp whatsApp;
-		public Line line;
-		public Dropbox dropbox;
-		public VKontakte vkontakte;
-		public Pinterest pinterest;
-		public Mingdao mingdao;
-		public KakaoTalk kakaoTalk;
-		public KakaoStory kakaoStory;
-		public QQ qq;
-		public QZone qzone;
-		public WeChat wechat;
-		public WeChatMoments wechatMoments; 
-		public WeChatFavorites wechatFavorites;
-		public Yixin yixin;
-		public YixinMoments yixinMoments;
-		public FacebookMessenger facebookMessenger;
-		public Instapaper instapaper;
-		public AliSocial aliSocial;
-		public AliSocialMoments aliSocialMoments;
-		public Dingding dingTalk;
-		public Youtube youtube;
-		public MeiPai meiPai;
-        public CMCC cmcc;
-		public Reddit reddit;
-        public Telegram telegram;
-        public ESurfing eSurfing; //中国电信
-        public FacebookAccount facebookAccount;//iOS端无需配置
-        public Douyin douyin; //抖音
-		public WeWork wework; //企业微信
-		public Oasis oasis; //绿洲
-		public TikTok tiktok; //TikTok
-		public KuaiShou kuaishou;
+        public QQ qq;
+        public QZone qzone;
+        public WeChat wechat;
+        public WeChatMoments wechatMoments;
+        public WeChatFavorites wechatFavorites;
+        public SinaWeiboDevInfo sinaweibo;
 #if UNITY_ANDROID
-		public FourSquare fourSquare;
+       // public FourSquare fourSquare;
 		//安卓配置印象笔记国内与国际版直接在Evernote中配置
 #elif UNITY_IPHONE
-		public Copy copy;
-		public YixinFavorites yixinFavorites;					//易信收藏，仅iOS端支持							[仅支持iOS端]
-		public YixinSeries yixinSeries;							//iOS端易信系列, 可直接配置易信三个子平台			[仅支持iOS端]
-		public WechatSeries wechatSeries;						//iOS端微信系列, 可直接配置微信三个子平台 		[仅支持iOS端]
-		public QQSeries qqSeries;								//iOS端QQ系列,  可直接配置QQ系列两个子平台		[仅支持iOS端]
-		public KakaoSeries kakaoSeries;                         //iOS端Kakao系列, 可直接配置Kakao系列两个子平台	[仅支持iOS端]
-        public SnapChat snapChat;
-        public EvernoteInternational evernoteInternational;		//iOS配置印象笔记国内版在Evernote中配置;国际版在EvernoteInternational中配置
-		public Apple apple;//苹果
-		public WatermelonVideo watermelonVideo;
-		
+		//public Copy copy;
+		//public YixinFavorites yixinFavorites;					//易信收藏，仅iOS端支持							[仅支持iOS端]
+		//public YixinSeries yixinSeries;							//iOS端易信系列, 可直接配置易信三个子平台			[仅支持iOS端]
+		//public WechatSeries wechatSeries;						//iOS端微信系列, 可直接配置微信三个子平台 		[仅支持iOS端]
+		//public QQSeries qqSeries;								//iOS端QQ系列,  可直接配置QQ系列两个子平台		[仅支持iOS端]
+		//public KakaoSeries kakaoSeries;                         //iOS端Kakao系列, 可直接配置Kakao系列两个子平台	[仅支持iOS端]
+  //      public SnapChat snapChat;
+  //      public EvernoteInternational evernoteInternational;		//iOS配置印象笔记国内版在Evernote中配置;国际版在EvernoteInternational中配置
+		//public Apple apple;//苹果
+		//public WatermelonVideo watermelonVideo;
 #endif
 
     }
@@ -172,8 +128,8 @@ namespace cn.sharesdk.unity3d
 		#if UNITY_ANDROID
 		public string SortId = "5";
 		public const int type = (int) PlatformType.WeChat;
-		public string AppId = "wx0f24f5e538739f0d";
-		public string AppSecret = "dd075324e0a4ab44bd49d972efcffedc";
+		public string AppId = "wx1b7f30caa340e5f8";
+		public string AppSecret = "5b8b0e553320145e8270eb810e5145ed";
 		public string UserName = "gh_afb25ac019c9@app";
 		public string Path = "/page/API/pages/share/share";
 		public bool BypassApproval = false;
@@ -181,46 +137,46 @@ namespace cn.sharesdk.unity3d
 		public string MiniprogramType = "0";
 #elif UNITY_IPHONE
 		public const int type = (int) PlatformType.WeChat;
-		public string app_id = "wx0f24f5e538739f0d";
-        public string app_secret = "dd075324e0a4ab44bd49d972efcffedc";
+		public string app_id = "wx1b7f30caa340e5f8";
+        public string app_secret = "5b8b0e553320145e8270eb810e5145ed";
         public string app_universalLink = "https://c4ovz.share2dlink.com/";
 #endif
-	}
+    }
 
-	[Serializable]
+    [Serializable]
 	public class WeChatMoments : DevInfo 
 	{
 		#if UNITY_ANDROID
 		public string SortId = "6";
 		public const int type = (int) PlatformType.WeChatMoments;
-		public string AppId = "wx0f24f5e538739f0d";
-		public string AppSecret = "dd075324e0a4ab44bd49d972efcffedc";
+		public string AppId = "wx1b7f30caa340e5f8";
+		public string AppSecret = "5b8b0e553320145e8270eb810e5145ed";
 		public bool BypassApproval = true;
 #elif UNITY_IPHONE
 		public const int type = (int) PlatformType.WeChatMoments;
-		public string app_id = "wx0f24f5e538739f0d";
-		public string app_secret = "dd075324e0a4ab44bd49d972efcffedc";
+		public string app_id = "wx1b7f30caa340e5f8";
+		public string app_secret = "5b8b0e553320145e8270eb810e5145ed";
         public string app_universalLink = "https://c4ovz.share2dlink.com/";
 #endif
-	}
+    }
 
-	[Serializable]
+    [Serializable]
 	public class WeChatFavorites : DevInfo 
 	{
 #if UNITY_ANDROID
 		public string SortId = "7";
 		public const int type = (int) PlatformType.WeChatFavorites;
-		public string AppId = "wx0f24f5e538739f0d";
-		public string AppSecret = "dd075324e0a4ab44bd49d972efcffedc";
+		public string AppId = "wx1b7f30caa340e5f8";
+		public string AppSecret = "5b8b0e553320145e8270eb810e5145ed";
 #elif UNITY_IPHONE
 		public const int type = (int) PlatformType.WeChatFavorites;
-		public string app_id = "wx0f24f5e538739f0d";
-		public string app_secret = "dd075324e0a4ab44bd49d972efcffedc";
+		public string app_id = "wx1b7f30caa340e5f8";
+		public string app_secret = "5b8b0e553320145e8270eb810e5145ed";
         public string app_universalLink = "https://c4ovz.share2dlink.com/";
 #endif
-	}
+    }
 
-	[Serializable]
+    [Serializable]
 	public class Facebook : DevInfo 
 	{
 		#if UNITY_ANDROID
