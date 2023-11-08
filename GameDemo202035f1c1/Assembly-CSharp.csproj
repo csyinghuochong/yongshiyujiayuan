@@ -1129,6 +1129,7 @@
     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
     <None Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
     <None Include="Assets\StreamingAssets\GameData\Xml_JM\Set_Xml\10001\RoseEquip.xml" />
+    <None Include="Assets\OPS\Obfuscator.Pro\Log\iOS.txt" />
     <None Include="Assets\T4M\Shaders\ShaderModel2\Unlit\T4M World Projection Shader Unlit+LM.shader" />
     <None Include="Assets\T4M\Shaders\ShaderModel3\Diffuse\T4M 4 Textures.shader" />
     <None Include="Assets\StreamingAssets\GameData\Xml_JM\Get_Xml\ChengHao_Template.xml" />
