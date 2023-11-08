@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Weijing;
-using Umeng;
+//using Umeng;
 
 
 public class UmengController : Singleton <UmengController>
@@ -15,7 +15,7 @@ public class UmengController : Singleton <UmengController>
 	/// <param name="eventId">友盟后台设定的事件Id</param>
 	public void Event(string eventId)
 	{
-		GA.Event(eventId);
+		//GA.Event(eventId);
 	}
 
 	/// <summary>
@@ -26,7 +26,7 @@ public class UmengController : Singleton <UmengController>
 
 	public void Event(string eventId, string label)
 	{
-		GA.Event(eventId, label);
+		//GA.Event(eventId, label);
 	}
 
 	/// <summary>
@@ -37,7 +37,7 @@ public class UmengController : Singleton <UmengController>
 	public void Event(string eventId, Dictionary<string, string> attributes)
 	{
 		Debug.Log("unity Event: " + eventId);
-		GA.Event(eventId, attributes);
+		//GA.Event(eventId, attributes);
 	}
 
 
