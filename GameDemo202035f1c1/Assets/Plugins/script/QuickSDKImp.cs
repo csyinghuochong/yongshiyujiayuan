@@ -211,7 +211,8 @@ namespace quicksdk
 		public int showToolBar(ToolbarPlace place)//1左上,2右上,3左中,4右中,5左下,6右下
 		{
 			#if UNITY_IOS && !UNITY_EDITOR
-			return (quicksdk_nativeShowToolBar((int)place) == -100?0:1);
+			//return (quicksdk_nativeShowToolBar((int)place) == -100?0:1);
+			return 0;
 			#elif UNITY_ANDROID && !UNITY_EDITOR
 			QuickUnitySupportAndroid androidSupport = QuickUnitySupportAndroid.getInstance();
 			return androidSupport.callFunc(FuncType.QUICK_SDK_FUNC_TYPE_SHOW_TOOLBAR);
@@ -223,7 +224,8 @@ namespace quicksdk
 		public int hideToolBar()
 		{
 			#if UNITY_IOS && !UNITY_EDITOR
-			return (quicksdk_nativeHideToolBar() == -100?0:1);
+			//return (quicksdk_nativeHideToolBar() == -100?0:1);
+			return 0;
 			#elif UNITY_ANDROID && !UNITY_EDITOR
 			QuickUnitySupportAndroid androidSupport = QuickUnitySupportAndroid.getInstance();
 			return androidSupport.callFunc(FuncType.QUICK_SDK_FUNC_TYPE_HIDE_TOOLBAR);
@@ -236,6 +238,7 @@ namespace quicksdk
 		public bool isFunctionSupported(FuncType type)//1暂停游戏,2进入用户中心,3进入论坛,4处理应用跳转(旧),5显示浮动工具栏,6隐藏浮动工具栏,7处理应用跳转(新)
 		{
 #if UNITY_IOS && !UNITY_EDITOR
+/*
 			switch (type) {
 			case FuncType.QUICK_SDK_FUNC_TYPE_ENTER_BBS:
 				return quicksdk_nativeIsFunctionTypeSupported(3);
@@ -254,6 +257,8 @@ namespace quicksdk
 			default:
 				return false;
 			}
+			*/
+			return false;
 #elif UNITY_ANDROID && !UNITY_EDITOR
 			QuickUnitySupportAndroid androidSupport = QuickUnitySupportAndroid.getInstance();
 			return androidSupport.isFuncSupport(type);
@@ -266,6 +271,7 @@ namespace quicksdk
         public void callFunction(FuncType type)
         {
 #if UNITY_IOS && !UNITY_EDITOR
+/*
 			switch (type) {
 			case FuncType.QUICK_SDK_FUNC_TYPE_ENTER_BBS:
 				quicksdk_nativeEnterBBS();
@@ -288,6 +294,8 @@ namespace quicksdk
 			default:
 				return;
 			}
+			*/
+			return;
 #elif UNITY_ANDROID && !UNITY_EDITOR
 			QuickUnitySupportAndroid androidSupport = QuickUnitySupportAndroid.getInstance();
 			androidSupport.callFunc(type);
@@ -455,6 +463,7 @@ namespace quicksdk
 		}
 		
 		#if UNITY_IOS && !UNITY_EDITOR
+/*
 		[DllImport("__Internal")]
 		private static extern void quicksdk_nativeSetListener(string gameObjectName);
 		[DllImport("__Internal")]
@@ -494,6 +503,7 @@ namespace quicksdk
 		private static extern IntPtr quicksdk_nativeSDKVersion();
 		[DllImport("__Internal")]
 		private static extern IntPtr quicksdk_nativeGetConfigValue(string key);
+*/
 		#endif
 
     }

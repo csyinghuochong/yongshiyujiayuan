@@ -158,7 +158,7 @@ namespace Umeng
 #if UNITY_EDITOR
 
 #elif UNITY_IPHONE
-        			_EventObject(eventID, ToJsonStr(dict));
+        			//_EventObject(eventID, ToJsonStr(dict));
 #elif UNITY_ANDROID
         			Agent.CallStatic("onEventObject", Context, eventID, ToJavaHashMap(dict));
 #endif
@@ -201,7 +201,7 @@ namespace Umeng
 #if UNITY_EDITOR
 
 #elif UNITY_IPHONE
-            _RegisterSuperProperty(filteredJsonObject.ToString());
+            //_RegisterSuperProperty(filteredJsonObject.ToString());
 #elif UNITY_ANDROID
 
             Agent.CallStatic("registerPreProperties", Context, AndroidJavaJsonObject(filteredJsonObject));
@@ -216,7 +216,7 @@ namespace Umeng
 #if UNITY_EDITOR
 
 #elif UNITY_IPHONE
-             _UnregisterSuperProperty(propertyName);
+             //_UnregisterSuperProperty(propertyName);
 #elif UNITY_ANDROID
             Agent.CallStatic("unregisterPreProperty", Context, propertyName);
 #endif
@@ -232,7 +232,8 @@ namespace Umeng
 #if UNITY_EDITOR
             return null;
 #elif UNITY_IPHONE
-            return (JSONObject)JSONObject.Parse(_GetSuperProperties());
+            //return (JSONObject)JSONObject.Parse(_GetSuperProperties());
+            return null;
 #elif UNITY_ANDROID
 			return jsonObjectFromJava( Agent.CallStatic<AndroidJavaObject>("getPreProperties", Context) );
 			
@@ -245,7 +246,7 @@ namespace Umeng
 #if UNITY_EDITOR
 
 #elif UNITY_IPHONE
-             _ClearSuperProperties();
+             //_ClearSuperProperties();
 #elif UNITY_ANDROID
             Agent.CallStatic("clearPreProperties", Context);
 #endif
@@ -259,7 +260,7 @@ namespace Umeng
 
 #elif UNITY_IPHONE
 
-             _SetFirstLaunchEvent(trackID, trackID.Length);
+             //_SetFirstLaunchEvent(trackID, trackID.Length);
 #elif UNITY_ANDROID
 
             Agent.CallStatic("setFirstLaunchEvent", Context, ToJavaList(trackID));
@@ -269,6 +270,7 @@ namespace Umeng
         }
 
 #if UNITY_IPHONE
+        /*
         [DllImport("__Internal")]
         private static extern void _EventObject(string eventID, string jsonStr);
         [DllImport("__Internal")]
@@ -281,6 +283,7 @@ namespace Umeng
         private static extern void _ClearSuperProperties();
         [DllImport("__Internal")]
         private static extern void _SetFirstLaunchEvent(string[] propertyName,int len);
+        */
 #endif
 
 

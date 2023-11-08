@@ -174,7 +174,7 @@ namespace Umeng
 #if UNITY_EDITOR
             //Debug.Log("Pay");
 #elif UNITY_IPHONE
-            _PayCashForCoin(cash,(int)source,coin);
+            //_PayCashForCoin(cash,(int)source,coin);
 #elif UNITY_ANDROID
             Agent.CallStatic("pay",cash , coin, (int)source);
 #endif
@@ -337,19 +337,20 @@ namespace Umeng
 
 		public static  void ProfileSignIn(string userId,string provider)
 		{
-			#if UNITY_EDITOR
+#if UNITY_EDITOR
 			//Debug.Log("ProfileSignIn");
-			#elif UNITY_IPHONE
-			_ProfileSignInWithPUIDAndProvider(userId,provider);
-			#elif UNITY_ANDROID
+#elif UNITY_IPHONE
+            //_ProfileSignInWithPUIDAndProvider(userId,provider);
+            //Debug.Log("ProfileSignIn");
+#elif UNITY_ANDROID
 			Agent.CallStatic("onProfileSignIn", provider,userId);
-			#endif
+#endif
 
 
-		}
-		
-		//该结束该userId的统计
-		public static  void ProfileSignOff()
+        }
+
+        //该结束该userId的统计
+        public static  void ProfileSignOff()
 		{
 			#if UNITY_EDITOR
 			//Debug.Log("ProfileSignOff");
@@ -365,7 +366,7 @@ namespace Umeng
 
 
 #if	UNITY_IPHONE
-
+        /*
         [DllImport("__Internal")]
         private static extern void _SetUserLevel(int level);
 
@@ -407,7 +408,7 @@ namespace Umeng
 
 		[DllImport("__Internal")]
 		private static extern void _ProfileSignOff();
-
+        */
 
 
 #endif

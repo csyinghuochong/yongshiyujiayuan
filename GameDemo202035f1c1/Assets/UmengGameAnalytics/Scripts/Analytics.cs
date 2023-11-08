@@ -377,7 +377,7 @@ namespace Umeng
 #if UNITY_EDITOR
         //Debug.Log("LogPageViewWithSeconds"); 
 #else
-        _LogPageViewWithSeconds(pageName, seconds);
+        //_LogPageViewWithSeconds(pageName, seconds);
 #endif
     }
 
@@ -394,7 +394,8 @@ namespace Umeng
         //Debug.Log("IsJailBroken always return false in UNITY_EDITOR mode");
         return false;
 #else
-        return _IsJailBroken();
+        //return _IsJailBroken();
+        return false;
 #endif
     }
 
@@ -409,7 +410,8 @@ namespace Umeng
         //Debug.Log("IsPirated always return false in UNITY_EDITOR mode");
         return false;
 #else
-        return _IsPirated();
+        //return _IsPirated();
+        return false;
 #endif
     }
 
@@ -485,7 +487,7 @@ namespace Umeng
 #if UNITY_IPHONE && !UNITY_EDITOR
 
 
-
+/*
      
 
 
@@ -570,7 +572,7 @@ namespace Umeng
 		
 
 
-				
+				*/
 #endif
         #endregion
     }

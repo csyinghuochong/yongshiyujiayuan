@@ -583,7 +583,7 @@ public sealed class BuglyAgent
         }
         
         // 4 is C# exception
-        _BuglyReportException(4, name, reason, stackTrace, extraInfo, quitProgram);
+        //_BuglyReportException(4, name, reason, stackTrace, extraInfo, quitProgram);
     }
     
     private static void SetCurrentScene(int sceneId) {
@@ -640,6 +640,8 @@ public sealed class BuglyAgent
     }
     
     // --- dllimport start ---
+
+    /*
     [DllImport("__Internal")]
     private static extern void _BuglyInit(string appId, bool debug, int level);
     
@@ -666,7 +668,7 @@ public sealed class BuglyAgent
     
     [DllImport("__Internal")]
     private static extern void _BuglySetExtraConfig(string key, string value);
-    
+    */
     // dllimport end
     #endregion
     
