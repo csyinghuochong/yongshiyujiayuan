@@ -57,8 +57,6 @@ public class MyEditorScript
         BuildPipeline.BuildPlayer(SCENES, "ios", BuildTarget.iOS, BuildOptions.None);
     }
 
-    private static string formPath = @"G:\yongshiyujiayuan_1\Android\";//原路径   [guanfang\mubao]
-
 	private static string targetPath = Application.dataPath + @"\Plugins\Android\libs_alipay"; //目标路径   ../表示当前项目文件的父路径
 	private static string mainfestFile = Application.dataPath + @"\Plugins\Android\AndroidManifest"; //目标路径   ../表示当前项目文件的父路径
 
@@ -69,7 +67,10 @@ public class MyEditorScript
 	{
 		isNull = false;
 
-		CopyDirectory(formPath + path, Application.dataPath + @"\Plugins\Android");
+        string formPath = Application.dataPath;
+        formPath = formPath.Replace("Assets", "Android/");
+
+        CopyDirectory(formPath + path, Application.dataPath + @"\Plugins\Android");
 		if (!isNull)
 		{
 			Debug.Log("目录文件导入成功！！");
