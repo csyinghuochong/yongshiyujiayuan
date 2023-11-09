@@ -27,16 +27,28 @@ public class ShopList : MonoBehaviour, IStoreListener
 	};
 
     //catalog 里面设置的id，和这边一一对应，这个id是unity端的一个映射，在catalog里面可以对应不同平台的真实的 商品id
+    //private string[] kProducts = new string[] {
+    //    "iospay6",
+    //    "iospay30",
+    //    "iospay50",
+    //    "iospay98",
+    //    "iospay198",
+    //    "iospay298",
+    //    "iospay488",
+    //    "iospay648"
+    //};
+
     private string[] kProducts = new string[] {
-        "iospay6",
-        "iospay30",
-        "iospay50",
-        "iospay98",
-        "iospay198",
-        "iospay298",
-        "iospay488",
-        "iospay648"
+        "6YS",
+        "30YS",
+        "50YS",
+        "98YS",
+        "198YS",
+        "298YS",
+        "488YS",
+        "648YS"
     };
+
     void Start()
     {
         InitializePurchasing();
@@ -220,6 +232,9 @@ public class ShopList : MonoBehaviour, IStoreListener
     //购买成功后的回调，包括restore的商品
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
+        Debug.Log("购买成功ios222");
+
+
         Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
 
 
@@ -302,6 +317,7 @@ public class ShopList : MonoBehaviour, IStoreListener
     //购买失败回调，根据具体情况给出具体的提示
     public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
     {
+        Debug.Log("OnPurchaseFailed222");
         //支付失败
         Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}", product.definition.storeSpecificId, failureReason));
         if (failureReason == PurchaseFailureReason.UserCancelled)
