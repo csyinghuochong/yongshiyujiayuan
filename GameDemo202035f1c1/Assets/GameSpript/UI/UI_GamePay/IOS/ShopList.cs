@@ -45,6 +45,7 @@ public class ShopList : MonoBehaviour, IStoreListener
     {
         return m_StoreController != null && m_StoreExtensionProvider != null;
     }
+
     //初始化内购项目，主要是从catalog中获取商品信息，设置给 UnityPurchasing
     void InitializePurchasing()
     {

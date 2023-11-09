@@ -11,6 +11,11 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
     private int count = 0;
     void Awake()
     {
+        if (this.GetComponent<UI_RmbStore>().IOSInitStatus == true)
+        {
+            return;
+        }
+
         Debug.Log("准备开始初始化..");
 #if UNITY_IPHONE
         ConfigurationBuilder builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
