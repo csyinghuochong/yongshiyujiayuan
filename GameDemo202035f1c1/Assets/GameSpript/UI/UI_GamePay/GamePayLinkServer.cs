@@ -339,14 +339,14 @@ public class GamePayLinkServer : MonoBehaviour {
             {
                 //国外服务器
                 serverIP = "47.88.26.105";
-                serverPort = 20001;
+                serverPort = 30001;
             }
             else
             {
                 //国内服务器
                 //serverIP = "gameserver_weijing2.weijinggame.com";
                 serverIP = "gameserver_weijing2_pay.weijinggame.com";
-                serverPort = 20001;
+                serverPort = 30001;
             }
 
 
