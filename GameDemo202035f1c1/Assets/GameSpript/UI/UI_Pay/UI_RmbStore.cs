@@ -507,7 +507,7 @@ public class UI_RmbStore : MonoBehaviour {
         //ios付费
 #if UNITY_IPHONE
         //BuyProduct(rmbPayValue + "SG");
-        Game_PublicClassVar.Get_wwwSet.gameObject.GetComponent<ShopList>().BuyProductID("iospay" + rmbPayValue);
+        Game_PublicClassVar.Get_wwwSet.gameObject.GetComponent<ShopList>().BuyProductID(rmbPayValue + "YS");
 #endif
 
 
