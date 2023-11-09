@@ -13,11 +13,6 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
 
     void Awake()
     {
-        if (this.GetComponent<UI_RmbStore>().IOSInitStatus == true)
-        {
-            return;
-        }
-
         Debug.Log("准备开始初始化..");
 #if UNITY_IPHONE
         ConfigurationBuilder builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
@@ -34,7 +29,6 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         UnityPurchasing.Initialize(this, builder);
 
         Debug.Log("Awake初始化结束..");
-        this.GetComponent<UI_RmbStore>().IOSInitStatus = true;
 #endif
     }
 
@@ -46,7 +40,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
 #if UNITY_IPHONE
         this.controller = controller;
         Debug.Log("初始化成功..");
-        this.GetComponent<UI_RmbStore>().IOSInitStatus = true;
+
+        this.GetComponent<ShopList>().OnInitialized(controller, extensions);
 #endif
     }
 
