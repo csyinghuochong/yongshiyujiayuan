@@ -40,7 +40,7 @@ public class UI_RmbStore : MonoBehaviour {
     public float HuaWeiChaXunSum;
     public bool HuaWeiChaXunStatus;
 
-    public bool IOSInitStatus;
+    public bool IOSInitStatus =false;
 
 #if UNITY_IPHONE
     /*
