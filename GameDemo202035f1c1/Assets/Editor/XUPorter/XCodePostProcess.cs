@@ -1,3 +1,5 @@
+#if UNITY_IOS || UNITY_IPHONE
+
 using UnityEngine;
 using UnityEditor.iOS.Xcode;
 #if UNITY_EDITOR
@@ -64,3 +66,5 @@ public static class XCodePostProcess
 		UnityEngine.Debug.Log("PostProcess: "+message);
 	}
 }
+
+#endif
