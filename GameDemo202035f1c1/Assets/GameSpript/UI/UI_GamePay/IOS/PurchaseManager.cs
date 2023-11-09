@@ -9,6 +9,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
 
     private IStoreController controller;
     private int count = 0;
+
+
     void Awake()
     {
         if (this.GetComponent<UI_RmbStore>().IOSInitStatus == true)
