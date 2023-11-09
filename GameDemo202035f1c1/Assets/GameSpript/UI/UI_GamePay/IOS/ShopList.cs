@@ -216,6 +216,7 @@ public class ShopList : MonoBehaviour, IStoreListener
             //
         }
     }
+
     //购买成功后的回调，包括restore的商品
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
