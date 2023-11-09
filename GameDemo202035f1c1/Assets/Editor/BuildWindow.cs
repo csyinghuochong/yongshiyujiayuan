@@ -27,7 +27,14 @@ public class MyEditorScript
 		BulidTarget("TapTap", "Android");
 	}
 
-	[MenuItem("Custom/Build Android MuBao")]
+    [MenuItem("Custom/Build Android TikTok")]
+    static void PerformAndroidTikTokBuild()
+    {
+        BulidTarget("TikTok", "Android");
+    }
+
+
+    [MenuItem("Custom/Build Android MuBao")]
 	static void PerformAndroidHuaWeiBuild()
 	{
 		BulidTarget("MuBao", "Android");
@@ -191,12 +198,12 @@ public class MyEditorScript
 
 		PlayerSettings.SetScriptingDefineSymbolsForGroup(targetGroup, "SUBSTANCE_PLUGIN_ENABLED;" + name);
 
-		//PlayerSettings.applicationIdentifier = "com.game.uc";
-		//PlayerSettings.bundleVersion = "v0.0.1";
-		//PlayerSettings.SetScriptingDefineSymbolsForGroup(targetGroup, "SUBSTANCE_PLUGIN_ENABLED;UC");
+		UnityEngine.Debug.LogWarning(PlayerSettings.bundleVersion);
+        PlayerSettings.Android.keystorePass = "829475";
+        PlayerSettings.Android.keyaliasPass = "829475";
+        PlayerSettings.applicationIdentifier = "com.guangying.yongshi";
 
-		GenericBuild(SCENES, target_dir + "/" + target_name, buildTarget, targetGroup, BuildOptions.None);
-
+        GenericBuild(SCENES, target_dir + "/" + target_name, buildTarget, targetGroup, BuildOptions.None);
 	}
 
 	private static string[] FindEnabledEditorScenes()
