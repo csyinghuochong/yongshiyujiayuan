@@ -15516,6 +15516,8 @@ public class Function_Rose {
 	public void GamePay(ObscuredString rmbValue, ObscuredString rmbDingDan)
 	{
 
+        Debug.Log("支付信息打印: rmbValue:" + rmbValue + " rmbDingDan:" + rmbDingDan);
+
 		//安卓调用
 		#if UNITY_ANDROID
 		if (rmbDingDan == "" || rmbDingDan == "0" || rmbDingDan == null)

@@ -163,7 +163,7 @@ public class MyEditorScript
 			CopyLibs("guanfang");
 		}
 
-		string app_name = "WeiJing_" + name;
+		string app_name = "YongShi_" + name;
 		string target_dir = Application.dataPath + "/TargetAndroid";
 		string target_name = app_name + ".apk";
 		BuildTargetGroup targetGroup = BuildTargetGroup.Android;

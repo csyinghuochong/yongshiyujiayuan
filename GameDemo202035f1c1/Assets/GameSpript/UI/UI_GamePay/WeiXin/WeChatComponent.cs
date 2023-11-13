@@ -49,6 +49,7 @@ public class WeChatComponent : MonoBehaviour {
         //安卓端已经在java层做了 这里忽略 
         if (!isRegisterToWechat)
         {
+            
             javaActive.Call("WechatInit", WXAppID);
         }
         isRegisterToWechat=true;

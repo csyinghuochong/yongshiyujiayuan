@@ -273,6 +273,8 @@ public class UI_RmbStore : MonoBehaviour {
         payText.GetComponent<Text>().text = payStr;
         */
 
+        UnityEngine.Debug.Log("PayQueryStatus:" + Game_PublicClassVar.Get_game_PositionVar.PayQueryStatus.ToString());
+
         //更新钻石显示
         if (Game_PublicClassVar.Get_game_PositionVar.PayQueryStatus) {
             Game_PublicClassVar.Get_game_PositionVar.PayQueryStatus = false;
@@ -388,6 +390,8 @@ public class UI_RmbStore : MonoBehaviour {
 
     public void Btn_BuyZuanShi(string rmbValue)
     {
+        Debug.Log("Btn_BuyZuanShi:" + rmbValue);
+
         if (EventHandle.IsQudaoPackage())
         {
             Btn_ClickQudaoBuy(rmbValue);
