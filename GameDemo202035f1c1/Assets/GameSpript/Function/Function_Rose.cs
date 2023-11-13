@@ -15688,6 +15688,12 @@ public class Function_Rose {
                       break;
                   */
 
+            case "0":
+            case "0.01":
+                returnZuanShiValue = 600;
+                Debug.Log("匹配到了");
+                break;
+
             //新付费
             case "6":
                 returnZuanShiValue = 600;
