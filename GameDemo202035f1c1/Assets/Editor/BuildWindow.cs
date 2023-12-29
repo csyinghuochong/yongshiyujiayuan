@@ -202,7 +202,7 @@ public class MyEditorScript
 		UnityEngine.Debug.LogWarning(PlayerSettings.bundleVersion);
         PlayerSettings.Android.keystorePass = "829475";
         PlayerSettings.Android.keyaliasPass = "829475";
-        PlayerSettings.applicationIdentifier = "com.guangying.yongshi";
+        //PlayerSettings.applicationIdentifier = "com.guangying.yongshi";
 
         GenericBuild(SCENES, target_dir + "/" + target_name, buildTarget, targetGroup, BuildOptions.None);
 	}

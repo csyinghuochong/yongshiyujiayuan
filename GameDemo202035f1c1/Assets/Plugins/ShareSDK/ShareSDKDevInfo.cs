@@ -80,49 +80,49 @@ namespace cn.sharesdk.unity3d
 #if UNITY_ANDROID
 		public const int type = (int) PlatformType.QQ;
 		public string SortId = "2";
-		public string AppId = "101883752";
-		public string AppKey = "ab9d332ee43d3259991047c7796767dd";
+		public string AppId = "102071593";
+		public string AppKey = "qbAXgdP0NVP4Wjmd";
 		public bool ShareByAppClient = true;
 
-		//========================================================
-		//when you test QQ miniprogram, you should use this params
-		//At the same time, the package name and signature should 
-		//correspond to the package name signature of the specific 
-		//QQ sharing small program applied in the background of tencent
-		//========================================================
-		//public const int type = (int) PlatformType.QQ;
-		//public string SortId = "2";
-		//public string AppId = "222222";
-		//public string AppKey = "aed9b0303e3ed1e27bae87c33761161d";
-		//public bool ShareByAppClient = true;
-		//========================================================
+        //========================================================
+        //when you test QQ miniprogram, you should use this params
+        //At the same time, the package name and signature should 
+        //correspond to the package name signature of the specific 
+        //QQ sharing small program applied in the background of tencent
+        //========================================================
+        //public const int type = (int) PlatformType.QQ;
+        //public string SortId = "2";
+        //public string AppId = "222222";
+        //public string AppKey = "aed9b0303e3ed1e27bae87c33761161d";
+        //public bool ShareByAppClient = true;
+        //========================================================
 #elif UNITY_IPHONE
 		public const int type = (int) PlatformType.QQ;
-		public string app_id = "101883752";
-		public string app_key = "ab9d332ee43d3259991047c7796767dd";
+		public string app_id = "102071593";
+		public string app_key = "qbAXgdP0NVP4Wjmd";
 //		public string auth_type = "both";  //can pass "both","sso",or "web" 
 #endif
-	}
+    }
 
-	[Serializable]
+    [Serializable]
 	public class QZone : DevInfo 
 	{
 #if UNITY_ANDROID
 		public string SortId = "1";
 		public const int type = (int) PlatformType.QZone;
-		public string AppId = "101883752";
-		public string AppKey = "ab9d332ee43d3259991047c7796767dd";
+		public string AppId = "102071593";
+		public string AppKey = "qbAXgdP0NVP4Wjmd";
 		public bool ShareByAppClient = true;
 #elif UNITY_IPHONE
 		public const int type = (int) PlatformType.QZone;
-		public string app_id = "101883752";
-		public string app_key = "ab9d332ee43d3259991047c7796767dd";
+		public string app_id = "102071593";
+		public string app_key = "qbAXgdP0NVP4Wjmd";
 //		public string auth_type = "both";  //can pass "both","sso",or "web" 
 #endif
-	}
+    }
 
 
-	[Serializable]
+    [Serializable]
 	public class WeChat : DevInfo 
 	{	
 		#if UNITY_ANDROID

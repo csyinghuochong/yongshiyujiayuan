@@ -8,8 +8,8 @@ apply plugin: 'com.mob.sdk'
 
 MobSDK {
 
-    appKey "2d21337c7dc80"
-    appSecret "a2c24f564def8b4a450a88491e5cc353"
+    appKey "38cd0e119222c"
+    appSecret "1c2260d351fc8572ece7f7fdb3a83d8a"
     spEdition "FP"
     //appKey shareappkey
     //appSecret shareappsecret
@@ -46,8 +46,8 @@ MobSDK {
             QZone {
                 id 3
                 sortId 3
-                appId "101883752"
-                appKey "ab9d332ee43d3259991047c7796767dd"
+                appId "102071593"
+                appKey "qbAXgdP0NVP4Wjmd"
                 shareByAppClient true
                 bypassApproval false
                 enable true
@@ -67,8 +67,8 @@ MobSDK {
             Wechat {
                 id 4
                 sortId 4
-                appId "wx0f24f5e538739f0d"
-                appSecret "dd075324e0a4ab44bd49d972efcffedc"
+                appId "wx1b7f30caa340e5f8"
+                appSecret "5b8b0e553320145e8270eb810e5145ed"
                 userName "gh_afb25ac019c9"
                 path "pages/index/index.html?id=1"
                 withShareTicket true
@@ -81,8 +81,8 @@ MobSDK {
             WechatMoments {
                 id 5
                 sortId 5
-                appId "wx0f24f5e538739f0d"
-                appSecret "dd075324e0a4ab44bd49d972efcffedc"
+                appId "wx1b7f30caa340e5f8"
+                appSecret "5b8b0e553320145e8270eb810e5145ed"
                 bypassApproval false
                 enable true
             }
@@ -91,8 +91,8 @@ MobSDK {
             WechatFavorite {
                 id 6
                 sortId 6
-                appId "wx0f24f5e538739f0d"
-                appSecret "dd075324e0a4ab44bd49d972efcffedc"
+                appId "wx1b7f30caa340e5f8"
+                appSecret "5b8b0e553320145e8270eb810e5145ed"
                 bypassApproval false
                 enable true
             }
@@ -100,8 +100,8 @@ MobSDK {
             QQ {
                 id 7
                 sortId 7
-                appId "101883752"
-                appKey "ab9d332ee43d3259991047c7796767dd"
+                appId "102071593"
+                appKey "qbAXgdP0NVP4Wjmd"
                 shareByAppClient true
                 bypassApproval false
                 enable true
