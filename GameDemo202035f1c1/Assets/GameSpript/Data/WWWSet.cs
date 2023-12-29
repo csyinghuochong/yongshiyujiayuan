@@ -379,7 +379,7 @@ public class WWWSet:MonoBehaviour{
         DontDestroyOnLoad(this.gameObject);
 
         UpdateGameID = 1;
-        xmlVersion = 500;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
+        xmlVersion = 521;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
         WorldLv = 20;                                           //默认世界等级
 
         //默认设置语言
