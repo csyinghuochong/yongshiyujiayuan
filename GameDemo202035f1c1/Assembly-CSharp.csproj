@@ -743,6 +743,7 @@
     <Compile Include="Assets\GameSpript\UI\UI_Item\UI_YiJianShuShou.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\Rose_SkillRange.cs" />
     <Compile Include="Assets\GameSpript\UI\ZhangHao\UI_UpdatePlayData.cs" />
+    <Compile Include="Assets\GameSpript\YinSi\YinSiXieYi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GameXml\Xml\Get_Xml\HonorStore_Template.xml" />

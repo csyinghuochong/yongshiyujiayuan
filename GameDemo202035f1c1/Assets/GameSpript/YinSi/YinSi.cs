@@ -16,7 +16,7 @@ public static class UILoginHelper
         son.transform.localScale = Vector3.one;
     }
 
-    public static string GetYingSiText()
+    public static string GetHongHuText()
     {
         try
         {
@@ -34,10 +34,26 @@ public static class UILoginHelper
         return "服务器维护中！";
     }
 
-    public static void ShowTextList(GameObject textItem)
+    public static string GetYingSiText()
     {
-        string pageHtml = GetYingSiText();
+        try
+        {
+            WebClient MyWebClient = new WebClient();
+            MyWebClient.Credentials = CredentialCache.DefaultCredentials;//获取或设置用于向Internet资源的请求进行身份验证的网络凭据
+            Byte[] pageData = MyWebClient.DownloadData("http://verification.weijinggame.com/weijing/yinsi4.txt"); //从指定网站下载数据
+            string pageHtml = Encoding.UTF8.GetString(pageData);
+            return pageHtml;
+        }
 
+        catch (WebException webEx)
+        {
+            UnityEngine.Debug.Log(webEx.ToString());
+        }
+        return "服务器维护中！";
+    }
+
+    public static void ShowTextList(string pageHtml, GameObject textItem)
+    {
         string tempstr = string.Empty;
         string leftValue = pageHtml;
         int indexlist = pageHtml.IndexOf('\n');

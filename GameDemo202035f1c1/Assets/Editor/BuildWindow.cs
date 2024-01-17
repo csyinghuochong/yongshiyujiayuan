@@ -9,32 +9,32 @@ using UnityEditor.Build.Reporting;
 public class MyEditorScript
 {
 	static string[] SCENES = FindEnabledEditorScenes();
-	[MenuItem("Custom/Build Android QQ")]
+	[MenuItem("Custom/Build Android QQ ++Version")]
 	static void PerformAndroidQQBuild()
 	{
 		BulidTarget("QQ", "Android");
 	}
 
-	[MenuItem("Custom/Build Android Share")]
+	[MenuItem("Custom/Build Android Share ++Version")]
 	static void PerformAndroidShareBuild()
 	{
 		BulidTarget("Share", "Android");
 	}
 
-	[MenuItem("Custom/Build Android TapTap")]
+	[MenuItem("Custom/Build Android TapTap ++Version")]
 	static void PerformAndroidTapTapBuild()
 	{
 		BulidTarget("TapTap", "Android");
 	}
 
-    [MenuItem("Custom/Build Android TikTok")]
+    [MenuItem("Custom/Build Android TikTok ++Version")]
     static void PerformAndroidTikTokBuild()
     {
         BulidTarget("TikTok", "Android");
     }
 
 
-    [MenuItem("Custom/Build Android MuBao")]
+    [MenuItem("Custom/Build Android MuBao ++Version")]
 	static void PerformAndroidHuaWeiBuild()
 	{
 		BulidTarget("MuBao", "Android");

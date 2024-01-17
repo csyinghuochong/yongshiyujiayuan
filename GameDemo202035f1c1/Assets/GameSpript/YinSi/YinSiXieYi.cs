@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class YongHuYinSi : MonoBehaviour
+public class YinSiXieYi : MonoBehaviour
 {
 
     public GameObject TextYinSi_0;
@@ -14,12 +14,12 @@ public class YongHuYinSi : MonoBehaviour
     {
         UnityEngine.Debug.Log("TextYinSi Awake");
         TextYinSi_0.SetActive(false);
-        UILoginHelper.ShowTextList(UILoginHelper.GetHongHuText(), this.TextYinSi_0);
+        UILoginHelper.ShowTextList(UILoginHelper.GetYingSiText(), this.TextYinSi_0);
     }
 
     void Start()
     {
         UnityEngine.Debug.Log("TextYinSi Start");
-       
+
     }
 }
