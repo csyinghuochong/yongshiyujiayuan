@@ -548,6 +548,7 @@
     <Compile Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Scripts\PostEffectsBase.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_PaiHang\UI_PaiHangListShow_DaMiJing.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_QiangHuaStartIconShow.cs" />
+    <Compile Include="Assets\GameSpript\YinSi\YinSiXieYi.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_ChengJiu\Rose_ShowShouShaNanDuRewardList.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseEquip\UI_EquipXiLianList.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_CreateRose.cs" />
@@ -743,7 +744,6 @@
     <Compile Include="Assets\GameSpript\UI\UI_Item\UI_YiJianShuShou.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\Rose_SkillRange.cs" />
     <Compile Include="Assets\GameSpript\UI\ZhangHao\UI_UpdatePlayData.cs" />
-    <Compile Include="Assets\GameSpript\YinSi\YinSiXieYi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GameXml\Xml\Get_Xml\HonorStore_Template.xml" />
