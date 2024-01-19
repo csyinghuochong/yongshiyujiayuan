@@ -19,8 +19,6 @@ MobSDK {
 
         loopShare false
 
-        version "3.9.3"
-
         //平台配置信息
         devInfo {
             SinaWeibo {

@@ -30,7 +30,7 @@ public class TapTapSdkHelper : MonoBehaviour
         // 适用于中国大陆
         TapLogin.Init(clientId);
         // 适用于其他国家或地区
-        TapLogin.Init(clientId, true, true);
+        //TapLogin.Init(clientId, true, true);
 
         AntiAddictionConfig config_2 = new AntiAddictionConfig()
         {
@@ -52,6 +52,12 @@ public class TapTapSdkHelper : MonoBehaviour
         AntiAddictionUIKit.Init(config_2, callback);
         // 如果是 PC 平台还需要额外设置一下 gameId
         TapTap.AntiAddiction.TapTapAntiAddictionManager.AntiAddictionConfig.gameId = clientId;
+
+
+        ///System.Guid.NewGuid();  系统方法生成唯一id
+        // 注意唯一标识参数值长度不能超过 64 字符
+        string userIdentifier = SystemInfo.deviceUniqueIdentifier;
+        AntiAddictionUIKit.Startup(userIdentifier);
     }
 
     private void AntiAddictionHandler(int code, string errorMsg)
@@ -70,5 +76,10 @@ public class TapTapSdkHelper : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnDestroy()
+    {
+        AntiAddictionUIKit.Exit();
     }
 }
