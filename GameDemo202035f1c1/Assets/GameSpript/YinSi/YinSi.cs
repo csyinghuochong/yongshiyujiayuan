@@ -181,4 +181,70 @@ public class YinSi : MonoBehaviour
         Game_PublicClassVar.Get_gameServerObj.Obj_UI_StartGameFunc.GetComponent<UI_StartGameFunc>().Btn_OpenYinSi();
     }
 
+    //注销账户数据
+    public void Btn_ZhuXiao() {
+
+        //弹出提示
+        GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
+        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+        uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否注销自身帐号的所有数据，注销后自身所有数据将自动删除，如果你确定要注销帐号数据请点击下方确认按钮！", ZhuXiao_True, ZhuXiao_Flase, "系统提示", "确定", "取消", ZhuXiao_Flase);
+        //DontDestroyOnLoad(uiCommonHint);
+        if (GameObject.Find("Canvas/GameGongGaoSet") != null)
+        {
+            uiCommonHint.transform.SetParent(GameObject.Find("Canvas/GameGongGaoSet").transform);
+            uiCommonHint.transform.localPosition = Vector3.zero;
+            uiCommonHint.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        }
+    }
+
+    //注销确认
+    public void ZhuXiao_True() {
+
+        //清空实名信息
+        PlayerPrefs.SetInt("FangChenMi_Type", 0);
+        PlayerPrefs.SetString("FangChenMi_Name", "");
+        PlayerPrefs.SetString("FangChenMi_ID", "");
+
+        //请求验证当前是否
+        Pro_ComStr_3 proComStr_3 = new Pro_ComStr_3();
+        proComStr_3.str_1 = SystemInfo.deviceUniqueIdentifier;
+        proComStr_3.str_2 = "zhuxiao";
+        Game_PublicClassVar.Get_gameLinkServerObj.SendToServerBuf(10000132, proComStr_3);
+
+        //PlayerPrefs.SetString("FangChenMi_Name",null);
+        //PlayerPrefs.SetString("FangChenMi_ID", null);
+        //PlayerPrefs.SetString("FangChenMi_Year", null);
+        //PlayerPrefs.SetString("YinSi", null);
+
+
+        string createXmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/";
+        string createIDListStr = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateIDList", "ID", "1", createXmlPath + "GameCreate.xml");
+        string deleteFileID = "";
+        string[] createIDList = createIDListStr.Split(';');
+        for (int i = 0; i < createIDList.Length; i++) {
+            if (createIDList[i] != "") {
+                string[] list = createIDList[i].Split(',');
+                if (list.Length >= 2) {
+                    
+                    PlayerPrefs.SetString("YanZhengFileStr_" + list[1], "");
+                }
+            }
+        }
+
+        PlayerPrefs.Save();
+
+        //删除所有数据
+        Game_PublicClassVar.Get_wwwSet.DeleteAllDate();
+
+        //退出游戏
+        Game_PublicClassVar.Get_wwwSet.ExitGame();
+    }
+
+    //注销取消
+    public void ZhuXiao_Flase() { 
+        
+
+
+    }
+
 }

@@ -107,6 +107,7 @@ public class WWWSet:MonoBehaviour{
     //路径
     public string Get_XmlPath;
     public string Set_XmlPath;
+    public string DeleteAll_XmlPath;
     public string Assets_XmlFileName;       
     public DataSet DataSetXml;          //初始化读取数据
     public DataSet DataWriteXml;        //初始化写入xml
@@ -310,6 +311,12 @@ public class WWWSet:MonoBehaviour{
 
     void Awake() {
 
+
+        string name = PlayerPrefs.GetString("FangChenMi_Name");
+        string shenfenID = PlayerPrefs.GetString("FangChenMi_ID");
+
+        Debug.Log("namestartwww = " + name + " shenfenID = " + shenfenID);
+
         //获取第一次进入游戏的时间戳
         if (FirstTimeStr == "" || FirstTimeStr == null) {
             FirstTimeStr = GetTimeStamp();
@@ -371,7 +378,7 @@ public class WWWSet:MonoBehaviour{
         wordldTimeStatus = 4;
         Get_XmlPath = Application.persistentDataPath + "/GameData/Xml/Get_Xml/";
         Set_XmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/" + RoseID + "/";
-
+        DeleteAll_XmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/";
 
         Debug.Log("Set_XmlPath = " + Set_XmlPath);
         QQqunID = "930374250";
@@ -6722,42 +6729,59 @@ public class WWWSet:MonoBehaviour{
     }
 
 
+    //删除数据
+    public void DeleteAllDate() {
+
+        string FileName = Set_XmlPath.Substring(0, Set_XmlPath.Length - 15);
+        Debug.Log("FileName = " + FileName);
+        //删除备份文件
+
+        if (Directory.Exists(FileName))
+        {
+            //删除文件夹
+            Directory.Delete(FileName, true);
+        }
+
+    }
+
+
+
     /*
     /// <summary>
     /// 获取解压缩后的数据集
     /// </summary>
     public DataSet DeCompress(byte[] arrbts)
     {
-        try
+    try
+    {
+        // 
+        MemoryStream ms = new MemoryStream();
+        ms.Write(arrbts, 0, ArrBytes.Length);
+        ms.Position = 0;
+        //
+        DeflateStream ZipStream = new DeflateStream(ms, CompressionMode.Decompress);
+        MemoryStream UnzipStream = new MemoryStream();
+        byte[] sDecompressed = new byte[128];
+        while (true)
         {
-            // 
-            MemoryStream ms = new MemoryStream();
-            ms.Write(arrbts, 0, ArrBytes.Length);
-            ms.Position = 0;
-            //
-            DeflateStream ZipStream = new DeflateStream(ms, CompressionMode.Decompress);
-            MemoryStream UnzipStream = new MemoryStream();
-            byte[] sDecompressed = new byte[128];
-            while (true)
+            int bytesRead = ZipStream.Read(sDecompressed, 0, 128);
+            if (bytesRead == 0)
             {
-                int bytesRead = ZipStream.Read(sDecompressed, 0, 128);
-                if (bytesRead == 0)
-                {
-                    break;
-                }
-                UnzipStream.Write(sDecompressed, 0, bytesRead);
+                break;
             }
-            ZipStream.Close();
-            ms.Close();
-            UnzipStream.Position = 0;
-            DataSet ds = new DataSet();
-            // 读取解压后xml数据
-            ds.ReadXml(UnzipStream);
-            ds.AcceptChanges();     //更新所有行的状态为初始状态
-            return ds;
+            UnzipStream.Write(sDecompressed, 0, bytesRead);
         }
-        catch
-        { return null; }
+        ZipStream.Close();
+        ms.Close();
+        UnzipStream.Position = 0;
+        DataSet ds = new DataSet();
+        // 读取解压后xml数据
+        ds.ReadXml(UnzipStream);
+        ds.AcceptChanges();     //更新所有行的状态为初始状态
+        return ds;
+    }
+    catch
+    { return null; }
     }
     */
-}
+    }

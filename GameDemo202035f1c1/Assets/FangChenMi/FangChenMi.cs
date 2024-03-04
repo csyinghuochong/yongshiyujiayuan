@@ -17,11 +17,11 @@ public class FangChenMi : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        
+        /*
         PlayerPrefs.SetInt("FangChenMi_Type", 0);
         PlayerPrefs.SetString("FangChenMi_Name", "");
         PlayerPrefs.SetString("FangChenMi_ID", "");
-        
+        */
 
         Game_PublicClassVar.Get_gameServerObj.Obj_ShenFenYanZheng = this.gameObject;
 
@@ -29,15 +29,17 @@ public class FangChenMi : MonoBehaviour {
         string name = PlayerPrefs.GetString("FangChenMi_Name");
         string shenfenID = PlayerPrefs.GetString("FangChenMi_ID");
 
+        Debug.Log("startname = " + name + " shenfenID = " + shenfenID);
+
         if (name != "" && name != null && shenfenID != "" && shenfenID != null)
         {
 
             //不需要进行防沉迷验证,已经验证成功
             WriteYanZheng();
-
+            Debug.Log("startname111 = ");
         }
         else {
-
+            Debug.Log("startname22221 = ");
             Obj_ShenFenRenZhengSucessHintSet.SetActive(false);
             //请求验证当前是否
             Pro_ComStr_3 proComStr_3 = new Pro_ComStr_3();
@@ -56,6 +58,8 @@ public class FangChenMi : MonoBehaviour {
 
         string name = PlayerPrefs.GetString("FangChenMi_Name");
         string shenfenID = PlayerPrefs.GetString("FangChenMi_ID");
+
+        Debug.Log("name = " + name + " shenfenID = " + shenfenID);
 
         //不需要进行防沉迷验证,已经验证成功
         string xinghaoStr = "";

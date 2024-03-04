@@ -1440,7 +1440,7 @@ public class GameLinkServer : MonoBehaviour {
 
                     if (name != "" && name != null && shenfenID != "" && shenfenID != null)
                     {
-
+                        Debug.Log("FangChenMi_Name服务器身份验证通过!");
                         PlayerPrefs.SetString("FangChenMi_Name", proPlayerYanZheng.Name);
                         PlayerPrefs.SetString("FangChenMi_ID", proPlayerYanZheng.ShenFenID);
                         PlayerPrefs.Save();
