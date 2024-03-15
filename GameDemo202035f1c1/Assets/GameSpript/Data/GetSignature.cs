@@ -565,7 +565,7 @@ public class GetSignature : MonoBehaviour
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
     public void onRecvRoot(string root)
     {
-        UnityEngine.Debug.Log("onRecvRoot");
+        UnityEngine.Debug.Log($"onRecvRoot:{root}");
         //分别取出个十百位的值，拼接成字符串 "0_1_1";
         int rootPermisson = int.Parse(root);
         string a1 = (rootPermisson / 10000 % 10).ToString();

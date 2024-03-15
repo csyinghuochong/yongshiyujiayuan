@@ -9,6 +9,7 @@ using UnityEngine;
 using TapTap.AntiAddiction;
 using TapTap.AntiAddiction.Model;
 
+
 public class TapTapSdkHelper : MonoBehaviour
 {
     private string clientId = "yrvsirol93o27hydc7";
@@ -19,6 +20,11 @@ public class TapTapSdkHelper : MonoBehaviour
 
     public Action<string> TapLoingHandler;
     public Action<int, string> AntiAddictionHandler;
+
+
+    public GameObject ButtonInit;
+    public GameObject ButtonLogin;
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,12 +43,23 @@ public class TapTapSdkHelper : MonoBehaviour
         // 适用于其他国家或地区
         //TapLogin.Init(clientId, true, true);
 
+        UnityEngine.Debug.Log("Tap Start");
+    }
+
+
+
+    //防沉迷接口初始化
+    public void TapInit_2()
+    {
+        UnityEngine.Debug.Log("TapInit");
         AntiAddictionConfig config_2 = new AntiAddictionConfig()
         {
             gameId = clientId,      // TapTap 开发者中心对应 Client ID
             showSwitchAccount = false,      // 是否显示切换账号按钮
         };
 
+
+        //初始化完成后，需要注册监听防沉迷消息的回调，示例如下：
         Action<int, string> callback = (code, errorMsg) => {
             //实名认证回调
             // code == 500;   // 登录成功
@@ -52,14 +69,17 @@ public class TapTapSdkHelper : MonoBehaviour
             // code == 1050;  // 时长限制
             // code == 9002;  // 实名过程中点击了关闭实名窗
             UnityEngine.Debug.LogFormat($"code: {code} error Message: {errorMsg}");
-            this.AntiAddictionHandler( code, errorMsg );
+            this.AntiAddictionHandler(code, errorMsg);
         };
 
-        AntiAddictionUIKit.Init(config_2, callback);
+        AntiAddictionUIKit.Init(config_2, callback); 
         // 如果是 PC 平台还需要额外设置一下 gameId
         TapTap.AntiAddiction.TapTapAntiAddictionManager.AntiAddictionConfig.gameId = clientId;
-    }
 
+        string userIdentifier = "玩家的唯一标识";
+        AntiAddictionUIKit.Startup(userIdentifier);
+    }
+   
     /// <summary>
     /// taptap登录
     /// </summary>
@@ -79,11 +99,17 @@ public class TapTapSdkHelper : MonoBehaviour
         }
         try
         {
+            //TapTapLogin333 success1:{
+            //    "__type":"Pointer","className":"_User","objectId":"65f2d7f3a48919957f900840","createdAt":"2024-03-14T10:56:51.47Z","updatedAt":"2024-03-14T10:56:51.47Z","ACL":{ "*":{ "read":true},"65f2d7f3a48919957f900840":{ "write":true} },"authData":{
+            //        "taptap":{
+             //           "access_token":"1/D_BSEm8fSIJ4pLwciMXQBOpD1-ee3u7maifYHJVFbpb9QOJ5HN_w1a8uvuAJSxB_dO4y5f-nGxke2SZkaIwmXhiitqxxMT7J9YlbLK-GvrJ7HebMMvJOV3yL2d0AnOlvhXr_EK0k67gMtZrD2h9RzYMMRtt5os4rvFBoKPyzfV8sxrjalJtxCa5bqLOlg3MuNKixgwTLCpdNOVO3NVVw6dqcqSdm16VnQwGpVKsYdTCfjyc4m_xzuVeW16uEEXycVCgIOedzFVhhl6iDIVDCbPpiatHEs9Nb2CFzkMruFF0VoBbEn4J_-86JK07aokjpknqw4JME14HITSNBWfBNMQ","avatar":"https://img3.tapimg.com/default_avatars/1a6a73fbd7be6ac0f37a1033ac4a9251.jpg?imageMogr2/auto-orient/strip/thumbnail/!270x270r/gravity/Center/crop/270x270/format/jpg/interlace/1/quality/80","kid":"1/D_BSEm8fSIJ4pLwciMXQBOpD1-ee3u7maifYHJVFbpb9QOJ5HN_w1a8uvuAJSxB_dO4y5f-nGxke2SZkaIwmXhiitqxxMT7J9YlbLK-GvrJ7HebMMvJOV3yL2d0AnOlvhXr_EK0k67gMtZrD2h9RzYMMRtt5os4rvFBoKPyzfV8sxrjalJtxCa5bq
+            //TapTapLogin444 success2: 65f2d7f3a48919957f900840
+
             UnityEngine.Debug.Log("TapTapLogin222");
             // 在 iOS、Android 系统下会唤起 TapTap 客户端或以 WebView 方式进行登录
             // 在 Windows、macOS 系统下显示二维码（默认）和跳转链接（需配置）
-            var tdsUser = await TDSUser.LoginWithTapTap();
-            UnityEngine.Debug.Log($"TapTapLogin333 success1:{tdsUser}");
+            TDSUser tdsUser = await TDSUser.LoginWithTapTap();
+            UnityEngine.Debug.Log($"TapTapLogin333 success1:{tdsUser}"); 
             // 获取 TDSUser 属性
             var objectId = tdsUser.ObjectId;     // 用户唯一标识
             var nickname = tdsUser["nickname"];  // 昵称
@@ -103,9 +129,8 @@ public class TapTapSdkHelper : MonoBehaviour
                 }
             }
         }
-        TapLoingHandler.Invoke(tapAccount);
+        TapLoingHandler?.Invoke(tapAccount);
     }
-
 
     /// <summary>
     /// taptap实名认证
