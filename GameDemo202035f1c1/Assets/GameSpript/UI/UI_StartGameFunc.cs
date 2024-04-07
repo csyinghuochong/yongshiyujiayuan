@@ -23,6 +23,7 @@ public class UI_StartGameFunc : MonoBehaviour {
     public GameObject Obj_BtnFindBtn;
     public GameObject Obj_YinSiSet;
     public GameObject Obj_QuanXianHint;
+    public GameObject ZhuXiaoZhangHaoObj;           //注销账号
     // Use this for initialization
     void Start () {
 
@@ -56,6 +57,11 @@ public class UI_StartGameFunc : MonoBehaviour {
         if ( string.IsNullOrEmpty(PlayerPrefs.GetString(YinSi.PlayerPrefsYinSi)))
         {
             Obj_HuaWeiYinSi.SetActive(true);
+        }
+
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            ZhuXiaoZhangHaoObj.SetActive(false);
         }
     }
 	
