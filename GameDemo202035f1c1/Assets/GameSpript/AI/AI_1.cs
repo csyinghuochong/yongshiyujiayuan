@@ -1197,39 +1197,35 @@ public class AI_1 : MonoBehaviour {
                                 float nowdropProVlaue = dropProVlaue;
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 1000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.9f;
+                                    dropProVlaue = nowdropProVlaue * 0.8f;
                                 }
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 2000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.8f;
-                                }
-                                if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 2500)
-                                {
-                                    dropProVlaue = nowdropProVlaue * 0.7f;
+                                    dropProVlaue = nowdropProVlaue * 0.65f;
                                 }
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 3000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.6f;
+                                    dropProVlaue = nowdropProVlaue * 0.5f;
                                 }
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 4000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.5f;
+                                    dropProVlaue = nowdropProVlaue * 0.35f;
                                 }
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 5000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.4f;
+                                    dropProVlaue = nowdropProVlaue * 0.2f;
                                 }
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 6000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.3f;
+                                    dropProVlaue = nowdropProVlaue * 0.1f;
                                 }
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 7000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.2f;
+                                    dropProVlaue = nowdropProVlaue * 0.05f;
                                 }
                                 if (Game_PublicClassVar.Get_game_PositionVar.DayKillMonsterNum >= 8000)
                                 {
-                                    dropProVlaue = nowdropProVlaue * 0.15f;
+                                    dropProVlaue = nowdropProVlaue * 0.01f;
                                 }
                             }
 
