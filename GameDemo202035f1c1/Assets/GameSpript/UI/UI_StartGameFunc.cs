@@ -61,7 +61,10 @@ public class UI_StartGameFunc : MonoBehaviour {
 
         if (Application.platform == RuntimePlatform.Android)
         {
-            ZhuXiaoZhangHaoObj.SetActive(false);
+            if (ZhuXiaoZhangHaoObj != null)
+            {
+                ZhuXiaoZhangHaoObj.SetActive(false);
+            }
         }
     }
 	

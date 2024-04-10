@@ -308,7 +308,6 @@ public class WWWSet:MonoBehaviour{
     public ObscuredBool useNewArchives;             //使用新存档
 
     public string EnterGameTimeStamp;               //进入时间戳
-    public GameObject ZhuXiaoZhangHaoObj;           //注销账号
 
     void Awake() {
 
@@ -487,10 +486,12 @@ public class WWWSet:MonoBehaviour{
 
 	void Start () {
 
+        /*
+        ZhuXiaoZhangHaoObj.SetActive(false);
         if (Application.platform == RuntimePlatform.Android) {
             ZhuXiaoZhangHaoObj.SetActive(false);
         }
-
+        */
         //配置表总数
         updataNum = 69;
 
