@@ -27,7 +27,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_33;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_CLOUD_FEATURES;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;SUBSTANCE_PLUGIN_ENABLED;QQ;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_33;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_CLOUD_FEATURES;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;SUBSTANCE_PLUGIN_ENABLED;TapTap;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn></NoWarn>
@@ -1409,17 +1409,8 @@
  <Reference Include="LitJson">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
- <Reference Include="LC.Google.Protobuf">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.leancloud.realtime@73c70db9d8/Plugins/LC.Google.Protobuf.dll</HintPath>
- </Reference>
- <Reference Include="LC.Newtonsoft.Json">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.leancloud.storage@beef2954fb/Plugins/LC.Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="I18N.CJK">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/Plugins/I18N.CJK.dll</HintPath>
- </Reference>
- <Reference Include="Storage">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.leancloud.storage@beef2954fb/Plugins/Storage.dll</HintPath>
  </Reference>
  <Reference Include="OPS.Rsa">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/OPS/Plugins/Rsa/Normal/OPS.Rsa.dll</HintPath>
@@ -1427,26 +1418,8 @@
  <Reference Include="Newtonsoft.Json">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
- <Reference Include="zxing.unity">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.taptap.tds.login@0582627f4e/Plugins/zxing.unity.dll</HintPath>
- </Reference>
- <Reference Include="Realtime">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.leancloud.realtime@73c70db9d8/Plugins/Realtime.dll</HintPath>
- </Reference>
- <Reference Include="TapTap.Login">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.taptap.tds.login@0582627f4e/Plugins/TapTap.Login.dll</HintPath>
- </Reference>
- <Reference Include="TapTap.Bootstrap">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.taptap.tds.bootstrap@f180631082/Plugins/TapTap.Bootstrap.dll</HintPath>
- </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/GameSpript/Data/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="TapTap.TapDB">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.taptap.tds.tapdb@033d2210a0/Plugins/TapTap.TapDB.dll</HintPath>
- </Reference>
- <Reference Include="Common">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.leancloud.storage@beef2954fb/Plugins/Common.dll</HintPath>
  </Reference>
  <Reference Include="UDP">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/Plugins/UDP/UDP.dll</HintPath>
@@ -1454,17 +1427,11 @@
  <Reference Include="UnityStore">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
  </Reference>
- <Reference Include="TapTap.Common">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.taptap.tds.common@d00b76a74c/Plugins/TapTap.Common.dll</HintPath>
- </Reference>
  <Reference Include="ChannelPurchase">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
  </Reference>
  <Reference Include="Substance.Game">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/Allegorithmic/Plugins/Substance.Game.dll</HintPath>
- </Reference>
- <Reference Include="Storage.Unity">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.leancloud.storage@beef2954fb/Plugins/Storage.Unity.dll</HintPath>
  </Reference>
  <Reference Include="I18N">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/Plugins/I18N.dll</HintPath>
@@ -1474,9 +1441,6 @@
  </Reference>
  <Reference Include="protobuf-net">
  <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Assets/GameSpript/Data/protobuf-net.dll</HintPath>
- </Reference>
- <Reference Include="LiveQuery">
- <HintPath>E:/yongshiyujiayuan/GameDemo202035f1c1/Packages/com.leancloud.realtime@73c70db9d8/Plugins/LiveQuery.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/Soft/Unity/Unity Hub/2020.3.33f1c2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -1898,41 +1862,13 @@
       <Project>{2fd6ffc4-6196-8ae1-9219-624ae3445cd8}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="TapTap.UI.csproj">
-      <Project>{773d5e3f-fb44-6c39-a8d8-3a2fdf815d18}</Project>
-      <Name>TapTap.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.Common.Editor.csproj">
-      <Project>{67f8edeb-864d-f3be-3b4b-1810f95764ef}</Project>
-      <Name>TapTap.Common.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.TapDB.Editor.csproj">
-      <Project>{ba8147e9-7b19-756d-6b9f-eba5cdaf4033}</Project>
-      <Name>TapTap.TapDB.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Substance.EditorHelper.csproj">
       <Project>{b5794640-5bb1-c32e-d4c8-2f07f7b52391}</Project>
       <Name>Substance.EditorHelper</Name>
     </ProjectReference>
-    <ProjectReference Include="TapTap.UI.Editor.csproj">
-      <Project>{30140f19-bf6f-c501-2ae0-2c2161358652}</Project>
-      <Name>TapTap.UI.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AntiAddiction.Editor.csproj">
-      <Project>{9f5a464c-ddff-5228-0e19-8b743fa8ca2d}</Project>
-      <Name>AntiAddiction.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Substance.Platform.csproj">
       <Project>{ed76ffb0-258f-dcfb-c7a3-50862cde8a24}</Project>
       <Name>Substance.Platform</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.Login.Editor.csproj">
-      <Project>{6a075c35-c84d-afd5-197e-450ab9e5d7fc}</Project>
-      <Name>TapTap.Login.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.AntiAddiction.csproj">
-      <Project>{31413dcb-0e0a-49fd-b9f0-4f65f7b9d177}</Project>
-      <Name>TapTap.AntiAddiction</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
