@@ -475,7 +475,8 @@ public class GameLinkServer : MonoBehaviour {
         else
         {
             //国内服务器
-            ipAddress = "gameserver_weijing2.weijinggame.com";
+            //ipAddress = "gameserver_weijing2.weijinggame.com";
+            ipAddress = "molongbanhao.weijinggame.com";
             port = 15006;
             //port = 15006;
         }

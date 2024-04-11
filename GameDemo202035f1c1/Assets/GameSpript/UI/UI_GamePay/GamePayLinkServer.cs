@@ -345,7 +345,7 @@ public class GamePayLinkServer : MonoBehaviour {
             {
                 //国内服务器
                 //serverIP = "gameserver_weijing2.weijinggame.com";
-                serverIP = "gameserver_weijing2_pay.weijinggame.com";
+                serverIP = "molongbanhao.weijinggame.com";
                 serverPort = 30001;
             }
 
