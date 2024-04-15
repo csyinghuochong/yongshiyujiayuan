@@ -75,8 +75,9 @@ public class MyEditorScript
 	{
 		isNull = false;
 
-        string formPath = Application.dataPath;
-        formPath = formPath.Replace("Assets", "Android/");
+        //string formPath = Application.dataPath;
+        //formPath = formPath.Replace("Assets", "Android/");
+        string formPath = "F:/gitcustom/trunk_android/AndroidProject_YongShi/Android";
 
         CopyDirectory(formPath + path, Application.dataPath + @"\Plugins\Android");
 		if (!isNull)

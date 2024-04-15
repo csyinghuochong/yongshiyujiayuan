@@ -99,8 +99,8 @@
      <Compile Include="Assets\GameSpript\Effect\YanChiEffect.cs" />
      <Compile Include="Assets\GameSpript\UI\UI_RoseDeath.cs" />
      <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\Rose_SelectRange.cs" />
-     <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_AddBuff_1.cs" />
      <Compile Include="Assets\GameSpript\UI\UI_HuoDong\UI_LvLiBao_MianFei.cs" />
+     <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_AddBuff_1.cs" />
      <Compile Include="Assets\GameSpript\PetSkill\PetSkill_TargetMove_1.cs" />
      <Compile Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Scripts\Blur.cs" />
      <Compile Include="Assets\Editor Default Resources\Effect\Old\Effect_BeiYong\Effects_01\Prefebs\FollowTarget.cs" />

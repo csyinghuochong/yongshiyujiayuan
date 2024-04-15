@@ -683,12 +683,17 @@ public class GetSignature : MonoBehaviour
     public void onRequestPermissionsResult(string permissons)
     {
         UnityEngine.Debug.Log($"onRecvPermissionsResult！ {permissons}");
+        if (this.AgreeNumber >= 10)
+        {
+            return;
+        }
 
         string[] values = permissons.Split('_');
         if (values[1] == "0")
         {
-            Application.Quit();
-            return;
+            //Application.Quit();
+            //return;
+            this.AgreeNumber = 10;
         }
         this.AgreeNumber++;
         if (this.AgreeNumber >= 4 || permissons == "1_1")
@@ -697,7 +702,6 @@ public class GetSignature : MonoBehaviour
             UnityEngine.Debug.Log($"onRequestPermissionsResult: StartUpdate");
             GameObject.Find("Canvas/HuaWeiYinSi").SetActive(false);
         }
-
         //弹出界面
         //Game_PublicClassVar.Get_gameServerObj.Obj_UI_StartGameFunc.GetComponent<UI_StartGameFunc>().QingQiuQuanXianShow();
     }
