@@ -77,7 +77,7 @@ public class MyEditorScript
 
         //string formPath = Application.dataPath;
         //formPath = formPath.Replace("Assets", "Android/");
-        string formPath = "F:/gitcustom/trunk_android/AndroidProject_YongShi/Android";
+        string formPath = @"F:\gitcustom\trunk_android\AndroidProject_YongShi\Android\";
 
         CopyDirectory(formPath + path, Application.dataPath + @"\Plugins\Android");
 		if (!isNull)
@@ -197,6 +197,7 @@ public class MyEditorScript
 		{
 			Directory.CreateDirectory(target_dir);
 		}
+
 
 		PlayerSettings.SetScriptingDefineSymbolsForGroup(targetGroup, "SUBSTANCE_PLUGIN_ENABLED;" + name);
 
