@@ -696,9 +696,9 @@ public class GetSignature : MonoBehaviour
             this.AgreeNumber = 10;
         }
         this.AgreeNumber++;
-        if (this.AgreeNumber >= 4 || permissons == "1_1")
+        if (this.AgreeNumber >= 2 || permissons == "1_1")
         {
-            PlayerPrefs.SetString(YinSi.PlayerPrefsYinSi, "1");
+            PlayerPrefs.SetString(YinSi.PlayerPrefsYinSi, "20240415");
             UnityEngine.Debug.Log($"onRequestPermissionsResult: StartUpdate");
             GameObject.Find("Canvas/HuaWeiYinSi").SetActive(false);
         }
