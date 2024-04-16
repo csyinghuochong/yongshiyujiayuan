@@ -138,8 +138,10 @@ public class GameLinkServer : MonoBehaviour {
 
         gameVerSionStr = Application.version;
 
-        nowShebeiStr = SystemInfo.deviceUniqueIdentifier;
-
+        if (PlayerPrefs.GetInt("GameYinSi") == 1)
+        {
+            nowShebeiStr = SystemInfo.deviceUniqueIdentifier;
+        }
 
         GetWANIp(delegate (string iip)
         {
