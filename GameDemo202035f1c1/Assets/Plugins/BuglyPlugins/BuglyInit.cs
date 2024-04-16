@@ -61,8 +61,10 @@ public class BuglyInit : MonoBehaviour
         extras.Add ("deviceModel", SystemInfo.deviceModel);
         extras.Add ("deviceName", SystemInfo.deviceName);
         extras.Add ("deviceType", SystemInfo.deviceType.ToString ());
-        
-        extras.Add ("deviceUId", SystemInfo.deviceUniqueIdentifier);
+        if (PlayerPrefs.GetInt("GameYinSi") == 1)
+        {
+            extras.Add("deviceUId", SystemInfo.deviceUniqueIdentifier);
+        }
         extras.Add ("gDId", string.Format ("{0}", SystemInfo.graphicsDeviceID));
         extras.Add ("gDName", SystemInfo.graphicsDeviceName);
         extras.Add ("gDVdr", SystemInfo.graphicsDeviceVendor);
