@@ -52,7 +52,10 @@ public class GetSignature : MonoBehaviour
         {
             //texts = new string[100];
             if (EventHandle.IsHuiWeiChannel() == false) {
-                GetDeviceInformation();
+                if (PlayerPrefs.GetInt("GameYinSi") == 1)
+                {
+                    GetDeviceInformation();
+                }
             }
 
             /*
@@ -233,9 +236,9 @@ public class GetSignature : MonoBehaviour
         foreach (ZipEntry entry in zf)
         {
             //一个被压缩文件,称为一个条目
-            Debug.Log("压缩包内文件名:" + entry.Name);
-            Debug.Log("压缩包大小:" + entry.Size);
-            Debug.Log("GetHashCode:" + entry.GetHashCode());
+            //Debug.Log("压缩包内文件名:" + entry.Name);
+            //Debug.Log("压缩包大小:" + entry.Size);
+            //Debug.Log("GetHashCode:" + entry.GetHashCode());
 
             //解压出被压缩的文件
 

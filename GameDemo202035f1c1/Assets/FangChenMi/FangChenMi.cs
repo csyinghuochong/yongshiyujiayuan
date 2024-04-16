@@ -59,7 +59,7 @@ public class FangChenMi : MonoBehaviour {
         string name = PlayerPrefs.GetString("FangChenMi_Name");
         string shenfenID = PlayerPrefs.GetString("FangChenMi_ID");
 
-        Debug.Log("name = " + name + " shenfenID = " + shenfenID);
+        //Debug.Log("name = " + name + " shenfenID = " + shenfenID);
 
         //不需要进行防沉迷验证,已经验证成功
         string xinghaoStr = "";

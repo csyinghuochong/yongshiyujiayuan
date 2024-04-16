@@ -163,6 +163,11 @@ public class YinSi : MonoBehaviour
         //申请权限
         UnityEngine.Debug.Log("unitycall.btnYes");
         Game_PublicClassVar.Get_getSignature.QuDaoRequestPermissions();
+
+        //获取对应权限
+        Game_PublicClassVar.Get_wwwSet.GetComponent<GetSignature>().GetDeviceInformation();
+
+        PlayerPrefs.SetInt("GameYinSi", 1);
     }
 
     /// <summary>
@@ -170,6 +175,7 @@ public class YinSi : MonoBehaviour
     /// </summary>
     public void btnNo() 
     {
+        PlayerPrefs.SetInt("GameYinSi", 0);
         Application.Quit();
     }
 
