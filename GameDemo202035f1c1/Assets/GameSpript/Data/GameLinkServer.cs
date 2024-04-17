@@ -277,8 +277,11 @@ public class GameLinkServer : MonoBehaviour {
             SendToServerBuf(10001036, "");
 
             //请求文件验证记录
-            string shebeiID = SystemInfo.deviceUniqueIdentifier;
-            SendToServerBuf(10001600, shebeiID);
+            if (PlayerPrefs.GetInt("GameYinSi") == 1)
+            {
+                string shebeiID = SystemInfo.deviceUniqueIdentifier;
+                SendToServerBuf(10001600, shebeiID);
+            }
 
             //发送当前语言
             SendToServerBuf(10001021, "");
@@ -1542,7 +1545,7 @@ public class GameLinkServer : MonoBehaviour {
                 //跨线程调用(跨线程调用的值不能传出)
                 MainTaskProcessor.AppendOneAction(new TaskUnit(() =>
                 {
-                    Debug.Log("pro_ComStr_1.str_1 = " + pro_ComStr_1.str_1 + "SystemInfo.deviceUniqueIdentifier = " + SystemInfo.deviceUniqueIdentifier);
+                    //Debug.Log("pro_ComStr_1.str_1 = " + pro_ComStr_1.str_1 + "SystemInfo.deviceUniqueIdentifier = " + SystemInfo.deviceUniqueIdentifier);
                     if (pro_ComStr_1.str_1 == SystemInfo.deviceUniqueIdentifier)
                     {
                         PlayerPrefs.SetString("YanZhengFileStr_" + Game_PublicClassVar.Get_wwwSet.NowSelectFileName, "999");
