@@ -64,13 +64,13 @@ public class BuglyInit : MonoBehaviour
         if (PlayerPrefs.GetInt("GameYinSi") == 1)
         {
             extras.Add("deviceUId", SystemInfo.deviceUniqueIdentifier);
+            extras.Add("gDId", string.Format("{0}", SystemInfo.graphicsDeviceID));
+            extras.Add("gDName", SystemInfo.graphicsDeviceName);
+            extras.Add("gDVdr", SystemInfo.graphicsDeviceVendor);
+            extras.Add("gDVer", SystemInfo.graphicsDeviceVersion);
+            extras.Add("gDVdrID", string.Format("{0}", SystemInfo.graphicsDeviceVendorID));
         }
-        extras.Add ("gDId", string.Format ("{0}", SystemInfo.graphicsDeviceID));
-        extras.Add ("gDName", SystemInfo.graphicsDeviceName);
-        extras.Add ("gDVdr", SystemInfo.graphicsDeviceVendor);
-        extras.Add ("gDVer", SystemInfo.graphicsDeviceVersion);
-        extras.Add ("gDVdrID", string.Format ("{0}", SystemInfo.graphicsDeviceVendorID));
-        
+       
         extras.Add ("graphicsMemorySize", string.Format ("{0}", SystemInfo.graphicsMemorySize));
         extras.Add ("systemMemorySize", string.Format ("{0}", SystemInfo.systemMemorySize));
         extras.Add ("UnityVersion", Application.unityVersion);
