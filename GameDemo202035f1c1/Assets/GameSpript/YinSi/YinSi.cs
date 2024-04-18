@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public static class UILoginHelper
@@ -127,6 +128,8 @@ public class YinSi : MonoBehaviour
     public GameObject TextYinSi;
 
     public static string PlayerPrefsYinSi = "YinSi0105";
+    public static string YinSiValue = "20240415";
+
 
     void Start()
     {
@@ -162,12 +165,60 @@ public class YinSi : MonoBehaviour
     {
         //申请权限
         UnityEngine.Debug.Log("unitycall.btnYes");
-        Game_PublicClassVar.Get_getSignature.QuDaoRequestPermissions();
+        QuDaoRequestPermissions();
 
         //获取对应权限
-        Game_PublicClassVar.Get_wwwSet.GetComponent<GetSignature>().GetDeviceInformation();
+        //Game_PublicClassVar.Get_wwwSet.GetComponent<GetSignature>().GetDeviceInformation();
 
         PlayerPrefs.SetInt("GameYinSi", 1);
+    }
+
+
+    public int AgreeNumber = 0;
+    //隐私权限
+    [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
+    public void onRequestPermissionsResult(string permissons)
+    {
+        UnityEngine.Debug.Log($"onRecvPermissionsResult！ {permissons}");
+        if (this.AgreeNumber >= 10)
+        {
+            return;
+        }
+
+        string[] values = permissons.Split('_');
+        if (values[1] == "0")
+        {
+            //Application.Quit();
+            //return;
+            this.AgreeNumber = 10;
+        }
+        this.AgreeNumber++;
+        if (this.AgreeNumber >= 2 || permissons == "1_1")
+        {
+            PlayerPrefs.SetString(YinSi.PlayerPrefsYinSi, YinSi.YinSiValue);
+            UnityEngine.Debug.Log($"onRequestPermissionsResult: StartUpdate");
+
+            //加载场景
+            SceneManager.LoadScene("StartGame");        //加载场景
+        }
+        //弹出界面
+        //Game_PublicClassVar.Get_gameServerObj.Obj_UI_StartGameFunc.GetComponent<UI_StartGameFunc>().QingQiuQuanXianShow();
+    }
+
+    public void QuDaoRequestPermissions()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+        using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+        {
+            using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
+            {
+                UnityEngine.Debug.Log("unitycall: yyyy");
+                jo.Call("QuDaoRequestPermissions" );
+            }
+        }
+#else
+        onRequestPermissionsResult("1_1");
+#endif
     }
 
     /// <summary>

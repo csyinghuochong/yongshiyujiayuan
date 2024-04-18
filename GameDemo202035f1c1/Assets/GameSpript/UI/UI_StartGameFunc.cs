@@ -54,7 +54,7 @@ public class UI_StartGameFunc : MonoBehaviour {
         }
 
         //打开隐私协议
-        if ( PlayerPrefs.GetString(YinSi.PlayerPrefsYinSi)!="20240415") 
+        if ( PlayerPrefs.GetString(YinSi.PlayerPrefsYinSi)!= YinSi.YinSiValue)
         {
             Obj_HuaWeiYinSi.SetActive(true);
         }
