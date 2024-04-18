@@ -128,7 +128,7 @@ public class YinSi : MonoBehaviour
     public GameObject TextYinSi;
 
     public static string PlayerPrefsYinSi = "YinSi0105";
-    public static string YinSiValue = "20240415";
+    public static string YinSiValue = "20240416";
 
 
     void Start()
