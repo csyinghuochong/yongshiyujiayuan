@@ -34,6 +34,7 @@ public class TapTapSdkHelper : MonoBehaviour
 
     public void TapInit_1()
     {
+#if !UNITY_EDITOR
         var config = new TapConfig.Builder()
       .ClientID(clientId)
       .ClientToken(clientToken)
@@ -48,6 +49,7 @@ public class TapTapSdkHelper : MonoBehaviour
         // 适用于其他国家或地区
         //TapLogin.Init(clientId, true, true);
 
+#endif
         UnityEngine.Debug.Log("TapTap Start");
     }
 

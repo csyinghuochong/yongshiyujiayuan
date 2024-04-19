@@ -701,7 +701,7 @@ public class GetSignature : MonoBehaviour
         this.AgreeNumber++;
         if (this.AgreeNumber >= 2 || permissons == "1_1")
         {
-            PlayerPrefs.SetString(YinSi.PlayerPrefsYinSi, "20240415");
+            PlayerPrefs.SetString(YinSi.PlayerPrefsYinSi, YinSi.YinSiValue);
             UnityEngine.Debug.Log($"onRequestPermissionsResult: StartUpdate");
             GameObject.Find("Canvas/HuaWeiYinSi").SetActive(false);
             GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
