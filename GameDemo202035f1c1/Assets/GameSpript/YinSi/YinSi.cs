@@ -128,7 +128,7 @@ public class YinSi : MonoBehaviour
     public GameObject TextYinSi;
 
     public static string PlayerPrefsYinSi = "YinSi0105";
-    public static string YinSiValue = "20240416";
+    public static string YinSiValue = "20240408";
 
 
     void Start()
@@ -165,10 +165,10 @@ public class YinSi : MonoBehaviour
     {
         //申请权限
         UnityEngine.Debug.Log("unitycall.btnYes");
-        GameObject.Find("InitGame").GetComponent< InitGame >().QuDaoRequestPermissions();
+        Game_PublicClassVar.Get_getSignature.QuDaoRequestPermissions();
 
         //获取对应权限
-        //Game_PublicClassVar.Get_wwwSet.GetComponent<GetSignature>().GetDeviceInformation();
+        Game_PublicClassVar.Get_wwwSet.GetComponent<GetSignature>().GetDeviceInformation();
 
         PlayerPrefs.SetInt("GameYinSi", 1);
     }

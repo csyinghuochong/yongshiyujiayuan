@@ -89,9 +89,7 @@ public class UI_StartGameFunc : MonoBehaviour {
 
     //展示服务器列表
     public void Btn_ShowServerList() {
-
         Obj_ServerListShowSet.SetActive(true);
-
     }
 
     //打开认证
