@@ -111,6 +111,9 @@ public class UI_FubenList : MonoBehaviour
 
     public void Btn_EnterScene() {
 
+
+
+
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("封测版本不开启此功能！");
         //return;
 

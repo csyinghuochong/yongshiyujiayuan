@@ -54,9 +54,13 @@ public class UI_StartGameFunc : MonoBehaviour {
         }
 
         //打开隐私协议
-        if ( PlayerPrefs.GetString(YinSi.PlayerPrefsYinSi)!= YinSi.YinSiValue)
+        if (PlayerPrefs.GetString(YinSi.PlayerPrefsYinSi) != YinSi.YinSiValue)
         {
             Obj_HuaWeiYinSi.SetActive(true);
+        }
+        else
+        {
+            GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
         }
 
         if (Application.platform == RuntimePlatform.Android)
