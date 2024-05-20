@@ -704,7 +704,10 @@ public class GetSignature : MonoBehaviour
             PlayerPrefs.SetString(YinSi.PlayerPrefsYinSi, YinSi.YinSiValue);
             UnityEngine.Debug.Log($"onRequestPermissionsResult: StartUpdate");
             GameObject.Find("Canvas/HuaWeiYinSi").SetActive(false);
+
+#if UNITY_ANDROID && !UNITY_EDITOR
             GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
+#endif
         }
         //弹出界面
         //Game_PublicClassVar.Get_gameServerObj.Obj_UI_StartGameFunc.GetComponent<UI_StartGameFunc>().QingQiuQuanXianShow();

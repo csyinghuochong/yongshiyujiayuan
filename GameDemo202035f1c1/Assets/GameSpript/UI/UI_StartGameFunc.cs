@@ -60,7 +60,9 @@ public class UI_StartGameFunc : MonoBehaviour {
         }
         else
         {
+#if UNITY_ANDROID && !UNITY_EDITOR
             GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
+#endif
         }
 
         if (Application.platform == RuntimePlatform.Android)
