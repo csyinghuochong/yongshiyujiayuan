@@ -141,6 +141,7 @@ public class GameLinkServer : MonoBehaviour {
         if (PlayerPrefs.GetInt("GameYinSi") == 1)
         {
             nowShebeiStr = SystemInfo.deviceUniqueIdentifier;
+            Debug.Log("AAAAAAAAAAAAAAAAAAA");
         }
 
         GetWANIp(delegate (string iip)
@@ -279,6 +280,7 @@ public class GameLinkServer : MonoBehaviour {
             //请求文件验证记录
             if (PlayerPrefs.GetInt("GameYinSi") == 1)
             {
+                Debug.Log("AAAAAAAAAAAAAAAAAAA");
                 string shebeiID = SystemInfo.deviceUniqueIdentifier;
                 SendToServerBuf(10001600, shebeiID);
             }
@@ -955,7 +957,7 @@ public class GameLinkServer : MonoBehaviour {
                 //SendToServerBuf(10000121, "");
 
                 Debug.Log("请求公告信息");
-                string BanBenStr = "25";
+                string BanBenStr = "30";
                 
                 //发送版本ID
 #if UNITY_ANDROID
@@ -1511,6 +1513,7 @@ public class GameLinkServer : MonoBehaviour {
                 //跨线程调用(跨线程调用的值不能传出)
                 MainTaskProcessor.AppendOneAction(new TaskUnit(() =>
                 {
+                    Debug.Log("AAAAAAAAAAAAAAAAA");
                     if (pro_ComStr_1.str_1 == SystemInfo.deviceUniqueIdentifier) {
                         Game_PublicClassVar.Get_wwwSet.ClearnFileYanZheng();
                     }
@@ -1546,6 +1549,7 @@ public class GameLinkServer : MonoBehaviour {
                 MainTaskProcessor.AppendOneAction(new TaskUnit(() =>
                 {
                     //Debug.Log("pro_ComStr_1.str_1 = " + pro_ComStr_1.str_1 + "SystemInfo.deviceUniqueIdentifier = " + SystemInfo.deviceUniqueIdentifier);
+                    Debug.Log("AAAAAAAAAAAAAAAAA");
                     if (pro_ComStr_1.str_1 == SystemInfo.deviceUniqueIdentifier)
                     {
                         PlayerPrefs.SetString("YanZhengFileStr_" + Game_PublicClassVar.Get_wwwSet.NowSelectFileName, "999");
@@ -4349,6 +4353,7 @@ public class GameLinkServer : MonoBehaviour {
             //验证账号的唯一设备表示ID
             case 10001010:
                 string zhangHaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhanghaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+                Debug.Log("AAAAAAAAAAAAAAAAA");
                 string shebeiID = SystemInfo.deviceUniqueIdentifier;
                 proComStr_3 = new Pro_ComStr_3() { str_1 = zhangHaoID, str_2 = shebeiID, str_3 = "预留" };
                 ProtoBuf.Serializer.Serialize<Pro_ComStr_3>(ms, proComStr_3);
@@ -4413,6 +4418,7 @@ public class GameLinkServer : MonoBehaviour {
 
             //发送给服务端设备ID
             case 10001020:
+                Debug.Log("AAAAAAAAAAAAAAAAA");
                 shebeiID = SystemInfo.deviceUniqueIdentifier;
                 zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
                 proComStr_4 = new Pro_ComStr_4() { str_1 = shebeiID,str_2 = zhanghaoID, str_3 = "",str_4 = "" };
@@ -4421,6 +4427,7 @@ public class GameLinkServer : MonoBehaviour {
 
             //发送给当前语言类型
             case 10001021:
+                Debug.Log("AAAAAAAAAAAAAAAAA");
                 shebeiID = SystemInfo.deviceUniqueIdentifier;
                 string typeStr = PlayerPrefs.GetString("GameLanguageType");
                 proComStr_4 = new Pro_ComStr_4() { str_1 = typeStr, str_2 = "", str_3 = "", str_4 = "" };

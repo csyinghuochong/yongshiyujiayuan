@@ -386,7 +386,7 @@ public class WWWSet:MonoBehaviour{
         DontDestroyOnLoad(this.gameObject);
 
         UpdateGameID = 1;
-        xmlVersion = 521;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
+        xmlVersion = 522;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
         WorldLv = 20;                                           //默认世界等级
 
         //默认设置语言
@@ -891,6 +891,7 @@ public class WWWSet:MonoBehaviour{
                             Pro_ComStr_4 com4 = new Pro_ComStr_4();
                             string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
                             com4.str_1 = Game_PublicClassVar.Get_xmlScript.Encrypt(zhanghaoID);
+                            Debug.Log("AAAAAAAAAAAAAAAAAAA");
                             com4.str_2 = Game_PublicClassVar.Get_xmlScript.Encrypt(SystemInfo.deviceUniqueIdentifier);
                             com4.str_3 = Game_PublicClassVar.Get_xmlScript.Encrypt("TongGuo:" + yanZhengFileStr);
                             com4.str_4 = Game_PublicClassVar.Get_xmlScript.Encrypt(NowSelectFileName);
@@ -1091,6 +1092,7 @@ public class WWWSet:MonoBehaviour{
                                             Pro_ComStr_4 com4 = new Pro_ComStr_4();
                                             string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
                                             com4.str_1 = Game_PublicClassVar.Get_xmlScript.Encrypt(zhanghaoID);
+                                            Debug.Log("AAAAAAAAAAAAAAAAAAA");
                                             com4.str_2 = Game_PublicClassVar.Get_xmlScript.Encrypt(SystemInfo.deviceUniqueIdentifier);
                                             com4.str_3 = Game_PublicClassVar.Get_xmlScript.Encrypt(yanZhengFileStr);
                                             com4.str_4 = Game_PublicClassVar.Get_xmlScript.Encrypt(yanZhengFileStr_roseData +";" + yanZhengFileStr_roseBag + ";" + yanZhengFileStr_rosePet + ";" + yanZhengFileStr_roseStoreHouse + ";" + yanZhengFileStr_roseEquip + ";" + yanZhengFileStr_rosePastureData + ";" + yanZhengFileStr_rosePastureBag + ";" + yanZhengFileStr_rosePasture + ";" + yanZhengFileStr_roseChengJiu + ";" + yanZhengFileStr_roseConfig + ";" + yanZhengFileStr_roseDayReward);
@@ -1133,6 +1135,7 @@ public class WWWSet:MonoBehaviour{
                                             Pro_ComStr_4 com4 = new Pro_ComStr_4();
                                             string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
                                             com4.str_1 = Game_PublicClassVar.Get_xmlScript.Encrypt(zhanghaoID);
+                                            Debug.Log("AAAAAAAAAAAAAAAAAAA");
                                             com4.str_2 = Game_PublicClassVar.Get_xmlScript.Encrypt(SystemInfo.deviceUniqueIdentifier);
                                             com4.str_3 = Game_PublicClassVar.Get_xmlScript.Encrypt("Init:" + yanZhengFileStr);
                                             com4.str_4 = Game_PublicClassVar.Get_xmlScript.Encrypt(yanZhengFileStr_roseData + ";" + yanZhengFileStr_roseBag + ";" + yanZhengFileStr_rosePet + ";" + yanZhengFileStr_roseStoreHouse + ";" + yanZhengFileStr_roseEquip + ";" + yanZhengFileStr_rosePastureData + ";" + yanZhengFileStr_rosePastureBag + ";" + yanZhengFileStr_rosePasture + ";" + yanZhengFileStr_roseChengJiu + ";" + yanZhengFileStr_roseConfig + ";" + yanZhengFileStr_roseDayReward);
@@ -1305,6 +1308,7 @@ public class WWWSet:MonoBehaviour{
                                 string shenfenID = PlayerPrefs.GetString("FangChenMi_ID");
                                 if (shenfenID != "" && shenfenID != "0" && shenfenID != null) {
                                     Pro_ComStr_4 com_4 = new Pro_ComStr_4();
+                                    Debug.Log("AAAAAAAAAAAAAAAAAAA");
                                     com_4.str_1 = SystemInfo.deviceUniqueIdentifier;
                                     com_4.str_2 = shenfenID;
                                     com_4.str_3 = zhangHaoID;
@@ -1829,7 +1833,7 @@ public class WWWSet:MonoBehaviour{
         if (FindRoseStatus == true && DataUpdataStatus == true) {
             FindRoseStatus = false;
             Debug.Log("允许下载数据！");
-            
+            Debug.Log("AAAAAAAAAAAAAAAAAAA");
             string shebeiStr = SystemInfo.deviceUniqueIdentifier;
             string[] saveList = new string[] { FindRoseZhangHaoID, FindRosePassword, shebeiStr };
             Game_PublicClassVar.Get_gameLinkServerObj.SendToServerBuf(100010071, saveList);
@@ -6219,6 +6223,7 @@ public class WWWSet:MonoBehaviour{
                     Pro_ComStr_4 com4 = new Pro_ComStr_4();
                     string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
                     com4.str_1 = Game_PublicClassVar.Get_xmlScript.Encrypt(zhanghaoID);
+                    Debug.Log("AAAAAAAAAAAAAAAAAAA");
                     com4.str_2 = Game_PublicClassVar.Get_xmlScript.Encrypt(SystemInfo.deviceUniqueIdentifier);
                     com4.str_3 = Game_PublicClassVar.Get_xmlScript.Encrypt("ServerYanZheng");
                     com4.str_4 = Game_PublicClassVar.Get_xmlScript.Encrypt(serverYanZhengFileStr + ";" + yanzhengValue);
@@ -6541,6 +6546,7 @@ public class WWWSet:MonoBehaviour{
 
         string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         if (zhanghaoID != "" && zhanghaoID != null && zhanghaoID != "0") {
+            Debug.Log("AAAAAAAAAAAAAAAAAAA");
             string shebeiStr = SystemInfo.deviceUniqueIdentifier;
             string[] saveList = new string[] { zhanghaoID, "", shebeiStr };
             Game_PublicClassVar.Get_gameLinkServerObj.SendToServerBuf(100010071, saveList);
