@@ -138,6 +138,11 @@ public class TapTapSdkHelper : MonoBehaviour
         TapLoingHandler?.Invoke(tapAccount);
     }
 
+    public void  TapTapAuther()
+    {
+        AntiAddiction();
+    }
+
     /// <summary>
     /// taptap实名认证
     /// </summary>

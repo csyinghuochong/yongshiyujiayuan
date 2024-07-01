@@ -103,8 +103,8 @@
     <Compile Include="Assets\GameSpript\Effect\YanChiEffect.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseDeath.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\Rose_SelectRange.cs" />
-    <Compile Include="Assets\GameSpript\UI\UI_HuoDong\UI_LvLiBao_MianFei.cs" />
     <Compile Include="Assets\GameSpript\MonsterSkill\MonsterSkill_AddBuff_1.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_HuoDong\UI_LvLiBao_MianFei.cs" />
     <Compile Include="Assets\GameSpript\PetSkill\PetSkill_TargetMove_1.cs" />
     <Compile Include="Assets\Resources\Effect\EffectsSharde\ImageEffects\Scripts\Blur.cs" />
     <Compile Include="Assets\Editor Default Resources\Effect\Old\Effect_BeiYong\Effects_01\Prefebs\FollowTarget.cs" />
@@ -743,8 +743,8 @@
     <Compile Include="Assets\Editor Default Resources\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\Hose.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_DayReward\UI_BaoLvListShow.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseTask\UI_DayTaskRewardSet.cs" />
-    <Compile Include="Assets\GameSpript\UI\UI_HuoDong\UI_ZhanQu_RewardLv.cs" />
     <Compile Include="Assets\I2\Common\CoroutineManager.cs" />
+    <Compile Include="Assets\GameSpript\UI\UI_HuoDong\UI_ZhanQu_RewardLv.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_Item\UI_YiJianShuShou.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_RoseSkill\Rose_SkillRange.cs" />
     <Compile Include="Assets\GameSpript\UI\ZhangHao\UI_UpdatePlayData.cs" />
@@ -1429,47 +1429,20 @@
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
-    <Reference Include="I18N.CJK">
-      <HintPath>Assets\Plugins\I18N.CJK.dll</HintPath>
-    </Reference>
-    <Reference Include="OPS.Rsa">
-      <HintPath>Assets\OPS\Plugins\Rsa\Normal\OPS.Rsa.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets\GameSpript\Data\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UDP">
-      <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityStore">
-      <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
-    </Reference>
-    <Reference Include="ChannelPurchase">
-      <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
-    </Reference>
-    <Reference Include="Substance.Game">
-      <HintPath>Assets\Allegorithmic\Plugins\Substance.Game.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N">
-      <HintPath>Assets\Plugins\I18N.dll</HintPath>
-    </Reference>
-    <Reference Include="ArabicSupport">
-      <HintPath>Assets\I2\Localization\Dlls\ArabicSupport.dll</HintPath>
-    </Reference>
-    <Reference Include="protobuf-net">
-      <HintPath>Assets\GameSpript\Data\protobuf-net.dll</HintPath>
-    </Reference>
     <Reference Include="LC.Google.Protobuf">
       <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LC.Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="LC.Newtonsoft.Json">
       <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\LC.Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>Assets\Plugins\I18N.CJK.dll</HintPath>
+    </Reference>
     <Reference Include="Storage">
       <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="OPS.Rsa">
+      <HintPath>Assets\OPS\Plugins\Rsa\Normal\OPS.Rsa.dll</HintPath>
     </Reference>
     <Reference Include="zxing.unity">
       <HintPath>Packages\com.taptap.tds.login@0582627f4e\Plugins\zxing.unity.dll</HintPath>
@@ -1483,17 +1456,44 @@
     <Reference Include="TapTap.Bootstrap">
       <HintPath>Packages\com.taptap.tds.bootstrap@f180631082\Plugins\TapTap.Bootstrap.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\GameSpript\Data\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="TapTap.TapDB">
       <HintPath>Packages\com.taptap.tds.tapdb@033d2210a0\Plugins\TapTap.TapDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Common">
       <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Common.dll</HintPath>
     </Reference>
+    <Reference Include="UDP">
+      <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    </Reference>
     <Reference Include="TapTap.Common">
       <HintPath>Packages\com.taptap.tds.common@d00b76a74c\Plugins\TapTap.Common.dll</HintPath>
     </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="Substance.Game">
+      <HintPath>Assets\Allegorithmic\Plugins\Substance.Game.dll</HintPath>
+    </Reference>
     <Reference Include="Storage.Unity">
       <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>Assets\Plugins\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="ArabicSupport">
+      <HintPath>Assets\I2\Localization\Dlls\ArabicSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>Assets\GameSpript\Data\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="LiveQuery">
       <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LiveQuery.dll</HintPath>
@@ -1852,23 +1852,14 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityCore">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Codeless">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -1878,12 +1869,6 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing.SecurityStub">
       <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Stores">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -1897,39 +1882,26 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{C4FFD62F-9661-E18A-9219-624AE3445CD8}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Substance.Platform.csproj">
-      <Project>{B0FF76ED-8F25-FBDC-C7A3-50862CDE8A24}</Project>
-      <Name>Substance.Platform</Name>
-    </ProjectReference>
-    <ProjectReference Include="Substance.EditorHelper.csproj">
-      <Project>{404679B5-B15B-2EC3-D4C8-2F07F7B52391}</Project>
-      <Name>Substance.EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.TapDB.Editor.csproj">
-      <Project>{E94781BA-197B-6D75-6B9F-EBA5CDAF4033}</Project>
-      <Name>TapTap.TapDB.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.UI.Editor.csproj">
-      <Project>{190F1430-6FBF-01C5-2AE0-2C2161358652}</Project>
-      <Name>TapTap.UI.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.AntiAddiction.csproj">
-      <Project>{CB3D4131-0A0E-FD49-B9F0-4F65F7B9D177}</Project>
-      <Name>TapTap.AntiAddiction</Name>
-    </ProjectReference>
-    <ProjectReference Include="AntiAddiction.Editor.csproj">
-      <Project>{4C465A9F-FFDD-2852-0E19-8B743FA8CA2D}</Project>
-      <Name>AntiAddiction.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="TapTap.Login.Editor.csproj">
-      <Project>{355C076A-4DC8-D5AF-197E-450AB9E5D7FC}</Project>
-      <Name>TapTap.Login.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="TapTap.UI.csproj">
       <Project>{3F5E3D77-44FB-396C-A8D8-3A2FDF815D18}</Project>
@@ -1938,6 +1910,34 @@
     <ProjectReference Include="TapTap.Common.Editor.csproj">
       <Project>{EBEDF867-4D86-BEF3-3B4B-1810F95764EF}</Project>
       <Name>TapTap.Common.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="TapTap.TapDB.Editor.csproj">
+      <Project>{E94781BA-197B-6D75-6B9F-EBA5CDAF4033}</Project>
+      <Name>TapTap.TapDB.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Substance.EditorHelper.csproj">
+      <Project>{404679B5-B15B-2EC3-D4C8-2F07F7B52391}</Project>
+      <Name>Substance.EditorHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="TapTap.UI.Editor.csproj">
+      <Project>{190F1430-6FBF-01C5-2AE0-2C2161358652}</Project>
+      <Name>TapTap.UI.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AntiAddiction.Editor.csproj">
+      <Project>{4C465A9F-FFDD-2852-0E19-8B743FA8CA2D}</Project>
+      <Name>AntiAddiction.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Substance.Platform.csproj">
+      <Project>{B0FF76ED-8F25-FBDC-C7A3-50862CDE8A24}</Project>
+      <Name>Substance.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="TapTap.Login.Editor.csproj">
+      <Project>{355C076A-4DC8-D5AF-197E-450AB9E5D7FC}</Project>
+      <Name>TapTap.Login.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="TapTap.AntiAddiction.csproj">
+      <Project>{CB3D4131-0A0E-FD49-B9F0-4F65F7B9D177}</Project>
+      <Name>TapTap.AntiAddiction</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

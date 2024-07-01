@@ -56,21 +56,21 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\gen\AchievementLocalizationItems.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\MonoSingleton.cs" />
     <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\ScrollViewEx\ObjPool\SimpleObjPool.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\BasePanel\BasePanelController.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\gen\AntiAddictionLocalizationItems.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\UIManager.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\LocalizationMgr.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\Singleton.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\LoadingPanelController.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\ScrollViewEx\ScrollView\ScrollView.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Params\BasePanelConfig.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Params\IOpenPanelParameter.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\ScrollViewEx\ScrollView\ScrollViewEx.cs" />
     <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\ToastPanelController.cs" />
     <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\Const.cs" />
-    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\ScrollViewEx\ScrollView\ScrollViewEx.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\Singleton.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\gen\AntiAddictionLocalizationItems.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Params\BasePanelConfig.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\MonoSingleton.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\BasePanel\BasePanelController.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\UIManager.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\LoadingPanelController.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\ScrollViewEx\ScrollView\ScrollView.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\gen\AchievementLocalizationItems.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Base\LocalizationMgr.cs" />
+    <Compile Include="Packages\com.taptap.tds.common@d00b76a74c\UI\Scripts\Params\IOpenPanelParameter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.taptap.tds.common@d00b76a74c\UI\TapTap.UI.asmdef" />
@@ -307,6 +307,12 @@
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
+    <Reference Include="LC.Google.Protobuf">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LC.Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="LC.Newtonsoft.Json">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\LC.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -315,6 +321,9 @@
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Storage">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.dll</HintPath>
     </Reference>
     <Reference Include="OPS.Mono.Cecil.Pdb">
       <HintPath>Assets\OPS\Editor\Plugins\Mono.Cecil\OPS.Mono.Cecil.Pdb.dll</HintPath>
@@ -328,20 +337,41 @@
     <Reference Include="OPS.Rsa">
       <HintPath>Assets\OPS\Plugins\Rsa\Normal\OPS.Rsa.dll</HintPath>
     </Reference>
+    <Reference Include="zxing.unity">
+      <HintPath>Packages\com.taptap.tds.login@0582627f4e\Plugins\zxing.unity.dll</HintPath>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Realtime">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="TapTap.Login">
+      <HintPath>Packages\com.taptap.tds.login@0582627f4e\Plugins\TapTap.Login.dll</HintPath>
+    </Reference>
+    <Reference Include="TapTap.Bootstrap">
+      <HintPath>Packages\com.taptap.tds.bootstrap@f180631082\Plugins\TapTap.Bootstrap.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>Assets\GameSpript\Data\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="TapTap.TapDB">
+      <HintPath>Packages\com.taptap.tds.tapdb@033d2210a0\Plugins\TapTap.TapDB.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Common.dll</HintPath>
     </Reference>
     <Reference Include="UDP">
       <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
     </Reference>
     <Reference Include="UnityStore">
       <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="TapTap.Common">
+      <HintPath>Packages\com.taptap.tds.common@d00b76a74c\Plugins\TapTap.Common.dll</HintPath>
     </Reference>
     <Reference Include="ChannelPurchase">
       <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
@@ -354,6 +384,9 @@
     </Reference>
     <Reference Include="OPS.Mono.Cecil">
       <HintPath>Assets\OPS\Editor\Plugins\Mono.Cecil\OPS.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Storage.Unity">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.Unity.dll</HintPath>
     </Reference>
     <Reference Include="I18N">
       <HintPath>Assets\Plugins\I18N.dll</HintPath>
@@ -370,44 +403,11 @@
     <Reference Include="SourceUnityLib">
       <HintPath>Assets\Allegorithmic\Plugins\Substance\Substance Source\Editor\SourceUnityLib.dll</HintPath>
     </Reference>
-    <Reference Include="Substance.Editor">
-      <HintPath>Assets\Allegorithmic\Plugins\Substance\Substance Engine\Editor\Substance.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="LC.Google.Protobuf">
-      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LC.Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="LC.Newtonsoft.Json">
-      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\LC.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Storage">
-      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.dll</HintPath>
-    </Reference>
-    <Reference Include="zxing.unity">
-      <HintPath>Packages\com.taptap.tds.login@0582627f4e\Plugins\zxing.unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Realtime">
-      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\Realtime.dll</HintPath>
-    </Reference>
-    <Reference Include="TapTap.Login">
-      <HintPath>Packages\com.taptap.tds.login@0582627f4e\Plugins\TapTap.Login.dll</HintPath>
-    </Reference>
-    <Reference Include="TapTap.Bootstrap">
-      <HintPath>Packages\com.taptap.tds.bootstrap@f180631082\Plugins\TapTap.Bootstrap.dll</HintPath>
-    </Reference>
-    <Reference Include="TapTap.TapDB">
-      <HintPath>Packages\com.taptap.tds.tapdb@033d2210a0\Plugins\TapTap.TapDB.dll</HintPath>
-    </Reference>
-    <Reference Include="Common">
-      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Common.dll</HintPath>
-    </Reference>
-    <Reference Include="TapTap.Common">
-      <HintPath>Packages\com.taptap.tds.common@d00b76a74c\Plugins\TapTap.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Storage.Unity">
-      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="LiveQuery">
       <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LiveQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Substance.Editor">
+      <HintPath>Assets\Allegorithmic\Plugins\Substance\Substance Engine\Editor\Substance.Editor.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\Soft\Unity\Unity Hub\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
