@@ -192,7 +192,7 @@ public class TapTapSdkHelper : MonoBehaviour
     {
         ///System.Guid.NewGuid();  系统方法生成唯一id
         // 注意唯一标识参数值长度不能超过 64 字符
-        string userIdentifier = SystemInfo.deviceUniqueIdentifier + Time.time.ToString();
+        string userIdentifier = SystemInfo.deviceUniqueIdentifier + "a";
         AntiAddictionUIKit.Startup(userIdentifier);
     }
 
