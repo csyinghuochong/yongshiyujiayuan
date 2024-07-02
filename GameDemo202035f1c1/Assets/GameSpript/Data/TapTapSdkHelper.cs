@@ -1,6 +1,6 @@
 using System;
 
-#if UNITY_ANDROID
+
 
 using TapTap.Bootstrap;
 using TapTap.Common;
@@ -282,6 +282,5 @@ public class TapTapSdkHelper : MonoBehaviour
     }
 }
 
-#endif
 
 
