@@ -1,7 +1,4 @@
 using System;
-
-
-
 using TapTap.Bootstrap;
 using TapTap.Common;
 using TapTap.Login;
@@ -80,7 +77,39 @@ public class TapTapSdkHelper : MonoBehaviour
             // code == 1100;  // 当前用户因触发应用设置的年龄限制无法进入游戏
             // code == 1200;  // 数据请求失败，游戏需检查当前设置的应用信息是否正确及判断当前网络连接是否正常
             // code == 9002;  // 实名过程中点击了关闭实名窗，游戏可重新开始防沉迷认证
+            
+            // 根据回调返回的参数 code 添加不同情况的处理
+            switch (code)
+            {
+
+                case 500: // 玩家未受限制，可正常进入
+                    // TODO: 显示开始游戏按钮      
+                    break;
+
+                case 1000: // 防沉迷认证凭证无效时触发
+                case 1001: // 当玩家触发时长限制时，点击了拦截窗口中「切换账号」按钮
+                case 9002: // 实名认证过程中玩家关闭了实名窗口
+                    TapLogin.Logout(); // 如果游戏有其他账户系统，此时也应执行退出
+                                       // TODO: 切换到登录页面 例如：SceneManager.LoadScene("Login");
+                    break;
+
+                case 1100: // 当前用户因触发应用设置的年龄限制无法进入游戏
+                           // TODO: 游戏应自行绘制适龄限制提示，并引导玩家退出游戏
+                    break;
+
+                case 1200: // 数据请求失败，应用信息错误或网络连接异常  
+                           // TODO: 引导玩家确认网络连接是否正常，并重新调用开始认证接口
+                    break;
+
+                default:
+                    Debug.Log("其他可选回调");
+                    break;
+            }
+
             UnityEngine.Debug.LogFormat($"code: {code} error Message: {errorMsg}");
+
+            UnityEngine.Debug.LogFormat($"ageRange: {AntiAddictionUIKit.AgeRange}");
+            UnityEngine.Debug.LogFormat($"remainingTime: {AntiAddictionUIKit.RemainingTime}");
 
             if (this.AntiAddictionHandler != null)
             {
@@ -99,14 +128,7 @@ public class TapTapSdkHelper : MonoBehaviour
         // 如果是 PC 平台还需要额外设置一下 gameId
         TapTap.AntiAddiction.TapTapAntiAddictionManager.AntiAddictionConfig.gameId = clientId;
 
-
         AntiAddiction();
-        //开发者可调用如下接口获取玩家所处年龄段：上例中的 ageRange 是一个整数，表示玩家所处年龄段的下限（最低年龄）。
-        //int ageRange = AntiAddictionUIKit.AgeRange;
-
-        //获取玩家当前剩余时长：
-        //int remainingTimeInSeconds = AntiAddictionUIKit.RemainingTime;  
-        //int remainingTimeInMinutes = AntiAddictionUIKit.RemainingTimeInMinutes;
     }
 
     /// <summary>
@@ -173,7 +195,7 @@ public class TapTapSdkHelper : MonoBehaviour
     {
         ///System.Guid.NewGuid();  系统方法生成唯一id
         // 注意唯一标识参数值长度不能超过 64 字符
-        string userIdentifier = SystemInfo.deviceUniqueIdentifier;
+        string userIdentifier = SystemInfo.deviceUniqueIdentifier + Time.time.ToString();
         AntiAddictionUIKit.StartupWithTapTap(userIdentifier);
     }
 
