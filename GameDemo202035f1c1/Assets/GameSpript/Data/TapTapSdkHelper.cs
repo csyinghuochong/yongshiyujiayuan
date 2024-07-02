@@ -64,6 +64,7 @@ public class TapTapSdkHelper : MonoBehaviour
         {
             gameId = clientId,      // TapTap 开发者中心对应 Client ID
             showSwitchAccount = false,      // 是否显示切换账号按钮
+            useAgeRange = false,
         };
 
 
@@ -87,10 +88,13 @@ public class TapTapSdkHelper : MonoBehaviour
             }
         };
 
-        TapLogin.Init(clientId);
+
+        // 初始化 TapTap 登录
+        //TapLogin.Init(clientId);
 
         //初始化防沉迷 UI 模块，包括设置启动防沉迷功能的配置、注册防沉迷的消息监听。
-        AntiAddictionUIKit.Init(config_2, callback);
+        AntiAddictionUIKit.Init(config_2);
+        AntiAddictionUIKit.SetAntiAddictionCallback(callback);
 
         // 如果是 PC 平台还需要额外设置一下 gameId
         TapTap.AntiAddiction.TapTapAntiAddictionManager.AntiAddictionConfig.gameId = clientId;
@@ -170,7 +174,7 @@ public class TapTapSdkHelper : MonoBehaviour
         ///System.Guid.NewGuid();  系统方法生成唯一id
         // 注意唯一标识参数值长度不能超过 64 字符
         string userIdentifier = SystemInfo.deviceUniqueIdentifier;
-        AntiAddictionUIKit.Startup(userIdentifier);
+        AntiAddictionUIKit.StartupWithTapTap(userIdentifier);
     }
 
 

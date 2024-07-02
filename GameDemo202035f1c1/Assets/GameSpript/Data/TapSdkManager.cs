@@ -74,12 +74,12 @@ public sealed class GameSDKManager
             {
                 gameId = clientId,           // TapTap 开发者中心对应 Client ID
                 showSwitchAccount = true,    // 是否显示切换账号按钮
-                //useAgeRange = false          // 是否使用年龄段信息
+                useAgeRange = false          // 是否使用年龄段信息
             };
 
             // 初始化合规认证及设置回调
-            AntiAddictionUIKit.Init(config, AntiAddictionCallback);
-            //AntiAddictionUIKit.SetAntiAddictionCallback(AntiAddictionCallback);
+            AntiAddictionUIKit.Init(config);
+            AntiAddictionUIKit.SetAntiAddictionCallback(AntiAddictionCallback);
         }
     }
 
@@ -90,6 +90,6 @@ public sealed class GameSDKManager
     public void StartAntiAddiction(string userIdentifier)
     {
         hasCheckedAntiAddiction = false;
-        AntiAddictionUIKit.Startup(userIdentifier);
+        AntiAddictionUIKit.StartupWithTapTap(userIdentifier);
     }
 }
