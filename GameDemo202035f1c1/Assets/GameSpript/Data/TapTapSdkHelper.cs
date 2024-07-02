@@ -125,9 +125,6 @@ public class TapTapSdkHelper : MonoBehaviour
         AntiAddictionUIKit.Init(config_2);
         AntiAddictionUIKit.SetAntiAddictionCallback(callback);
 
-        // 如果是 PC 平台还需要额外设置一下 gameId
-        TapTap.AntiAddiction.TapTapAntiAddictionManager.AntiAddictionConfig.gameId = clientId;
-
         AntiAddiction();
     }
 
