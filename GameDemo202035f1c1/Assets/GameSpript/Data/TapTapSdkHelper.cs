@@ -32,6 +32,9 @@ public class TapTapSdkHelper : MonoBehaviour
       
     }
 
+    //从 3.27.0 版本开始，防沉迷初始化有两种方式，使用 TapBootstrap 模块 和 单独调用防沉迷接口初始化，游戏根据需要选择一种即可，
+    //3.27.0 之前的版本只支持单独调用防沉迷接口初始化。
+    //TapBootstrap 初始化（不推荐)
     public void TapInit_1()
     {
 #if !UNITY_EDITOR
@@ -53,7 +56,7 @@ public class TapTapSdkHelper : MonoBehaviour
         UnityEngine.Debug.Log("TapTap Start");
     }
 
-    //防沉迷接口初始化
+    //防沉迷接口单独初始化（推荐）
     public void TapInit_2()
     {
         UnityEngine.Debug.Log("TapInit");
@@ -68,22 +71,34 @@ public class TapTapSdkHelper : MonoBehaviour
         Action<int, string> callback = (code, errorMsg) =>
         {
             //实名认证回调
-            // code == 500;   // 登录成功
-            // code == 1000;  // 用户登出
-            // code == 1001;  // 切换账号
-            // code == 1030;  // 用户当前无法进行游戏
-            // code == 1050;  // 时长限制
-            // code == 9002;  // 实名过程中点击了关闭实名窗
+            // code == 500;   // 玩家未受到限制，正常进入游戏
+            // code == 1000;  // 退出防沉迷认证及检查，当开发者调用 Exit 接口时或用户认证信息无效时触发，游戏应返回到登录页
+            // code == 1001;  // 用户点击切换账号，游戏应返回到登录页
+            // code == 1030;  // 用户当前时间无法进行游戏，此时用户只能退出游戏或切换账号
+            // code == 1050;  // 用户无可玩时长，此时用户只能退出游戏或切换账号
+            // code == 1100;  // 当前用户因触发应用设置的年龄限制无法进入游戏
+            // code == 1200;  // 数据请求失败，游戏需检查当前设置的应用信息是否正确及判断当前网络连接是否正常
+            // code == 9002;  // 实名过程中点击了关闭实名窗，游戏可重新开始防沉迷认证
             UnityEngine.Debug.LogFormat($"code: {code} error Message: {errorMsg}");
             this.AntiAddictionHandler(code, errorMsg);
         };
 
+        TapLogin.Init(clientId);
+
+        //初始化防沉迷 UI 模块，包括设置启动防沉迷功能的配置、注册防沉迷的消息监听。
         AntiAddictionUIKit.Init(config_2, callback);
+
         // 如果是 PC 平台还需要额外设置一下 gameId
         TapTap.AntiAddiction.TapTapAntiAddictionManager.AntiAddictionConfig.gameId = clientId;
 
-        string userIdentifier = "玩家的唯一标识";
-        AntiAddictionUIKit.Startup(userIdentifier);
+
+        AntiAddiction();
+        //开发者可调用如下接口获取玩家所处年龄段：上例中的 ageRange 是一个整数，表示玩家所处年龄段的下限（最低年龄）。
+        //int ageRange = AntiAddictionUIKit.AgeRange;
+
+        //获取玩家当前剩余时长：
+        //int remainingTimeInSeconds = AntiAddictionUIKit.RemainingTime;  
+        //int remainingTimeInMinutes = AntiAddictionUIKit.RemainingTimeInMinutes;
     }
 
     /// <summary>
