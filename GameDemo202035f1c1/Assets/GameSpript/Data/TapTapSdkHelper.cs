@@ -12,9 +12,9 @@ using TapTap.AntiAddiction.Model;
 
 public class TapTapSdkHelper : MonoBehaviour
 {
-    private string clientId = "yrvsirol93o27hydc7";
-    private string clientToken = "4lTeqdbgS3FtR5i4UliTIUaAvN1Ga4AtirdUeGTB";
-    private string serverUrl = "https://yrvsirol.cloud.tds1.tapapis.cn";
+    public static string clientId = "yfbkmzv4zafmyq8nzb";// "yrvsirol93o27hydc7";
+    private string clientToken = "UAmCBcwjj6NPxQbOk2PRxlHWfFaSUblIxXOz7J8Q";// "4lTeqdbgS3FtR5i4UliTIUaAvN1Ga4AtirdUeGTB";
+    private string serverUrl = "j7pl8yru0wLrdC4cwbdS6bzaDTByr9RQ";// "https://yrvsirol.cloud.tds1.tapapis.cn";
     private RegionType regionType = RegionType.CN;
     private bool showAntiAddictionSwitchAccount; //showAntiAddictionSwitchAccount 参数为 bool 类型，表示是否显示切换账号
 
@@ -80,7 +80,11 @@ public class TapTapSdkHelper : MonoBehaviour
             // code == 1200;  // 数据请求失败，游戏需检查当前设置的应用信息是否正确及判断当前网络连接是否正常
             // code == 9002;  // 实名过程中点击了关闭实名窗，游戏可重新开始防沉迷认证
             UnityEngine.Debug.LogFormat($"code: {code} error Message: {errorMsg}");
-            this.AntiAddictionHandler(code, errorMsg);
+
+            if (this.AntiAddictionHandler != null)
+            {
+                this.AntiAddictionHandler(code, errorMsg);
+            }
         };
 
         TapLogin.Init(clientId);
@@ -169,7 +173,104 @@ public class TapTapSdkHelper : MonoBehaviour
         AntiAddictionUIKit.Startup(userIdentifier);
     }
 
-    // Update is called once per frame
+
+    //新的初始化
+    public void TapInit_3()
+    {
+        Start_3();
+    }
+
+    //新的登陆
+    public void TapTapLogin_3()
+    {
+        OnTapLoginButtonClick();
+    }
+
+        /// <summary>
+        /// 初始化 SDK 并判断本地是否已登录，已登录时开始合规认证检查，否则显示登录按钮
+        /// </summary>
+        async void Start_3()
+    {
+        // 初始化 SDK
+        GameSDKManager.Instance.InitSDK();
+
+        AccessToken currentToken = null;
+        try
+        {
+            // 检查本地是否已存在 TapToken
+            currentToken = await TapLogin.GetAccessToken();
+        }
+        catch (Exception e)
+        {
+            Debug.Log("本地无有效 token");
+        }
+
+        if (currentToken == null)
+        {
+            // TODO: 显示登录按钮
+        }
+        else
+        {
+            // 如果当前还未通过合规认证检查，开始认证
+            if (!GameSDKManager.Instance.hasCheckedAntiAddiction)
+            {
+                // 开始合规认证检查
+                StartAntiAddiction();
+            }
+        }
+    }
+
+    /// <summary>
+    /// 登录按钮点击后执行 Tap 登录
+    /// </summary>
+    public async void OnTapLoginButtonClick()
+    {
+        try
+        {
+            // 发起 Tap 登录并获取用户信息
+            var accessToken = await TapLogin.Login();
+
+            // 开始合规认证检查
+            StartAntiAddiction();
+        }
+        catch (Exception e)
+        {
+            // 登录取消或错误，提示用户重新登录
+            Debug.Log("用户登录取消或错误");
+        }
+    }
+
+    /// <summary>
+    /// 开启合规认证检查
+    /// </summary>
+    public async void StartAntiAddiction()
+    {
+        // 获取当前已登录用户的 Profile 信息
+        Profile profile = null;
+        try
+        {
+            profile = await TapLogin.GetProfile();
+        }
+        catch (Exception exception)
+        {
+            Debug.Log($"获取 Profile 信息出现异常：{exception}");
+        }
+        if (profile == null)
+        {
+            // 无法获取 Profile 时，登出并显示登录按钮
+            TapLogin.Logout();
+            // TODO: 显示登录按钮
+            return;
+        }
+
+        // 使用当前 Tap 用户的 unionid 作为用户标识进行合规认证检查
+        string userIdentifier = profile.unionid;
+        GameSDKManager.Instance.StartAntiAddiction(userIdentifier);
+    }
+
+
+
+// Update is called once per frame
     void Update()
     {
 
