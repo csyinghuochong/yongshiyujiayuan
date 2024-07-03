@@ -40,8 +40,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 //UIColor 转UIImage
 + (UIImage*)createImageWithColor: (UIColor *)color;
-
-+ (void)preloadImageToCache:(NSString *)imageUrl timeout:(int) timeout;
 @end
 
 NS_ASSUME_NONNULL_END

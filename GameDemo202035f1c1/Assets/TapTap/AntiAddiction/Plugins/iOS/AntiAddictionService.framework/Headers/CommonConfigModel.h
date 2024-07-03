@@ -16,19 +16,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSArray *auth_identify_words;
 
-// 实名相关配置
+@property (nonatomic,strong) NSDictionary * ui_config;
 
-@property (nonatomic,strong) NSDictionary * real_name_text;
+@property (nonatomic,strong) NSString *unKnowTitle;
 
-@property (nonatomic,assign) BOOL manual_auth_enable;
+@property (nonatomic,strong) NSString *unKnowDesc;
 
-//政策及对应提示文案
-@property (nonatomic,strong) NSDictionary * anti_addiciton_strategy;
+@property (nonatomic,strong) NSString *name;
 
-//本地模式下文案及时间段
-@property (nonatomic,strong) NSDictionary * time_range;
-
-
+//  实名是否有记录 /public-department/v1/clients/{clientId}/users/{userId}/real-name 接口返回
+@property (nonatomic,assign) BOOL hasAuthRecord;
 
 @end
 

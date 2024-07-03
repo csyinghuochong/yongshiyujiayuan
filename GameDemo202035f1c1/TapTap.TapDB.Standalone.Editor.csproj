@@ -54,7 +54,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="F:\soft\vs\ide\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="G:\yongshiyujiayuan_1\GameDemo202035f1c1\Assets\TapTap\Login\Plugins\zxing.unity.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TapTap\TapDB\Standalone\Editor\TapDBStandaloneProcessBuild.cs" />
@@ -303,14 +302,11 @@
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
+    <Reference Include="Storage">
+      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\Storage.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="LC.Google.Protobuf">
-      <HintPath>Library\PackageCache\com.leancloud.realtime@eb739f35de\Plugins\LC.Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="LC.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\LC.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -321,11 +317,11 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Storage">
-      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\Storage.dll</HintPath>
-    </Reference>
     <Reference Include="OPS.Mono.Cecil.Pdb">
       <HintPath>Assets\OPS\Editor\Plugins\Mono.Cecil\OPS.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveQuery">
+      <HintPath>Library\PackageCache\com.leancloud.realtime@eb739f35de\Plugins\LiveQuery.dll</HintPath>
     </Reference>
     <Reference Include="OPS.Obfuscator">
       <HintPath>Assets\OPS\Obfuscator.Pro\Editor\Plugins\OPS.Obfuscator.dll</HintPath>
@@ -336,20 +332,23 @@
     <Reference Include="OPS.Rsa">
       <HintPath>Assets\OPS\Plugins\Rsa\Normal\OPS.Rsa.dll</HintPath>
     </Reference>
+    <Reference Include="LC.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\LC.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Realtime">
-      <HintPath>Library\PackageCache\com.leancloud.realtime@eb739f35de\Plugins\Realtime.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>Assets\GameSpript\Data\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="Realtime">
+      <HintPath>Library\PackageCache\com.leancloud.realtime@eb739f35de\Plugins\Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="LC.Google.Protobuf">
+      <HintPath>Library\PackageCache\com.leancloud.realtime@eb739f35de\Plugins\LC.Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Common">
-      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\Common.dll</HintPath>
     </Reference>
     <Reference Include="UDP">
       <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
@@ -360,6 +359,9 @@
     <Reference Include="ChannelPurchase">
       <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
     </Reference>
+    <Reference Include="Storage.Unity">
+      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\Storage.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="Substance.Game">
       <HintPath>Assets\Allegorithmic\Plugins\Substance.Game.dll</HintPath>
     </Reference>
@@ -368,9 +370,6 @@
     </Reference>
     <Reference Include="OPS.Mono.Cecil">
       <HintPath>Assets\OPS\Editor\Plugins\Mono.Cecil\OPS.Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Storage.Unity">
-      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\Storage.Unity.dll</HintPath>
     </Reference>
     <Reference Include="I18N">
       <HintPath>Assets\Plugins\I18N.dll</HintPath>
@@ -387,8 +386,8 @@
     <Reference Include="SourceUnityLib">
       <HintPath>Assets\Allegorithmic\Plugins\Substance\Substance Source\Editor\SourceUnityLib.dll</HintPath>
     </Reference>
-    <Reference Include="LiveQuery">
-      <HintPath>Library\PackageCache\com.leancloud.realtime@eb739f35de\Plugins\LiveQuery.dll</HintPath>
+    <Reference Include="Common">
+      <HintPath>Library\PackageCache\com.leancloud.storage@64fe9b06e2\Plugins\Common.dll</HintPath>
     </Reference>
     <Reference Include="Substance.Editor">
       <HintPath>Assets\Allegorithmic\Plugins\Substance\Substance Engine\Editor\Substance.Editor.dll</HintPath>

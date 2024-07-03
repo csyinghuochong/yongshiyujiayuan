@@ -19,10 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)getDeviceIdentifier;
 
-+ (NSString *)getAppVersion;
-
-+ (NSString *)getAppBuildNumber;
-
 + (NSString *)getHardParam;
 
 + (NSString *)getNetworkType;
@@ -31,27 +27,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)getTotalMemorySize:(unsigned long long)fileSize;
 
-+ (long long)getTotalDiskSize;
++ (NSString *)getTotalDiskSize;
 
 + (NSString *)localeIdentifier;
 
-+ (NSString *)getCpuArchitecture;
++ (NSString *)getCpuInfo;
 
 + (NSString *)topic:(TDSTrackerType)type;
-
-+ (NSString *)getProcessId;
-
-
-+ (NSString *)getTdsId;
-
-+ (NSString *)getOpenId;
-
-+ (NSString *)getScreenSR;
-
-+ (NSString *)getScreenWidth;
-
-+ (NSString *)getScreenHeight;
-
 @end
 
 NS_ASSUME_NONNULL_END

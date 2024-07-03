@@ -16,18 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, AntiAddictionResultHandlerCode) {
     AntiAddictionResultHandlerLoginSuccess          = 500,   //登录成功
-    AntiAddictionResultHandlerExited                = 1000,   //登出成功
+    AntiAddictionResultHandlerExited                = 1000,   //登录成功
     AntiAddictionResultHandlerSwitchAccount         = 1001,  // 切换账号
-    AntiAddictionResultHandlerPeriodRestrict        = 1030,  // 不可玩时间段游戏
-    AntiAddictionResultHandlerAgeLimit              = 1100,  // 适龄限制
-    AntiAddictionResultHandlerInvalidClientOrNetworkError        = 1200,  // 无效应用 ID 或网络异常
-
+    AntiAddictionResultHandlerPeriodRestrict        = 1030,  // 达到宵禁时间，不可玩游戏
+    AntiAddictionResultHandlerDurationLimit         = 1050,  // 可玩时长耗尽，不可玩游戏
     AntiAddictionResultHandlerRealNameStop          = 9002,  // 实名过程中点击了关闭实名窗
     
     AntiAddictionResultHandlerLoginLogout __attribute__((deprecated("Please use AntiAddictionResultHandlerExited"))) = 1000,  //用户登出
     AntiAddictionResultHandlerTimeLimit __attribute__((deprecated("Please use AntiAddictionResultHandlerPeriodRestrict"))) = 1030,  // 用户当前无法进行游戏
-    AntiAddictionResultHandlerOpenAlert __attribute__((deprecated("Not supported"))) = 1095,//未成年允许游戏弹窗
-
+    AntiAddictionResultHandlerOpenAlert __attribute__((deprecated("Not supported in future versions"))) = 1095,  // 未成年允许游戏弹窗
 };
 
 typedef NS_ENUM(NSInteger, AntiAddictionAgeLimit) {
@@ -47,47 +44,32 @@ typedef NS_ENUM(NSInteger, AntiAddictionAgeLimit) {
 
 @interface AntiAddiction : NSObject
 
-/// 初始化配置
+/// 初始化
 /// @param config 防沉迷配置
-+ (void)initWithConfig:(AntiAddictionConfig *)config;
-
-/// 设置回调代理
-/// @param delegate 防沉迷代理
-+ (void)setDelegate:(id<AntiAddictionDelegate>)delegate;
-
-/// 设置测试环境，需要在 startup 接口调用前设置
-/// @param enable 测试环境是否可用
-+ (void)setTestEnvironment:(BOOL)enable;
+/// @param delegate 回调代理
++ (void)initWithConfig:(AntiAddictionConfig *)config delegate:(id<AntiAddictionDelegate>)delegate;
 
 /// 启动防沉迷&实名系统
 /// @param userID 游戏维度的用户唯一标识
-+ (void)startupWithUserID:(NSString *)userID __attribute__((deprecated("Please use [AntiAddiction startupWithTapTap:]")));
-
-/// 启动防沉迷&实名系统
-/// @param userID 游戏维度的用户唯一标识
-+ (void)startupWithUserID:(NSString *)userID isTapUser:(bool)isTapUser __attribute__((deprecated("Please use [AntiAddiction startupWithTapTap:]")));
-
-/// 如果使用的TapTap登录，可以快速启动防沉迷&实名系统
-/// @param userID 游戏维度的用户唯一标识
-+ (void)startupWithTapTap:(NSString *)userID;
++ (void)startupWithUserID:(NSString *)userID;
 
 /// 退出防沉迷&实名系统
 + (void)exit;
 
 /// 进入游戏
-+ (void)enterGame __attribute__((deprecated("Not supported in future versions")));
++ (void)enterGame;
 
 /// 离开游戏
-+ (void)leaveGame __attribute__((deprecated("Not supported in future versions")));
++ (void)leaveGame;
+
+/// 获取用户年龄段
++ (AntiAddictionAgeLimit)getAgeRange;
 
 /// 获取用户剩余时长（单位：秒）
 + (NSInteger)getRemainingTime;
 
 /// 获取用户剩余时长（单位：分钟）
 + (NSInteger)getRemainingTimeInMinutes;
-
-/// 获取用户年龄段
-+ (AntiAddictionAgeLimit)getAgeRange;
 
 
 /// 查询能否支付
@@ -106,9 +88,9 @@ typedef NS_ENUM(NSInteger, AntiAddictionAgeLimit) {
 + (NSString *)currentToken;
 
 
-+ (void)initWithConfig:(AntiAddictionConfig *)config delegate:(id<AntiAddictionDelegate>)delegate __attribute__((deprecated("Please use [AntiAddiction initWithConfig:] and [AntiAddiction setDelegate:]")));
+
 + (void)initGameIdentifier:(NSString *)gameIdentifier antiAddictionConfig:(AntiAddictionConfiguration *)config  antiAddictionCallbackDelegate:(id<AntiAddictionDelegate>)delegate completionHandler:(void(^)(BOOL))com __attribute__((deprecated("Please use [AntiAddiction initWithConfig:delegate:]")));
-+ (void)startUpUseTapLogin:(BOOL)useTapLogin userIdentifier:(NSString *)userIdentifier __attribute__((deprecated("Please use [AntiAddiction startupWithTapTap:]")));
++ (void)startUpUseTapLogin:(BOOL)useTapLogin userIdentifier:(NSString *)userIdentifier __attribute__((deprecated("Please use [AntiAddiction startupWithUserID:]")));
 + (NSInteger)getCurrentUserAgeLimite __attribute__((deprecated("Please use [AntiAddiction getAgeRange]")));
 + (NSInteger)getCurrentUserRemainTime __attribute__((deprecated("Please use [AntiAddiction getRemainingTime]")));
 + (void)checkPayLimit:(NSInteger)amount callBack:(void (^ _Nullable)(BOOL status, NSString * _Nonnull title, NSString *  _Nonnull description))callBack failureHandler:(void (^ _Nullable)(NSString * _Nonnull))failureHandler __attribute__((deprecated("Please use [AntiAddiction checkPayLimit:resultBlock:failureHandler:]")));

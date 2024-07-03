@@ -7,15 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, TapRSAEncryptionPaddingType) {
-    TapRSAEncryptionPaddingTypeNone      = 0,
-    TapRSAEncryptionPaddingTypePKCS1     = 1,
-    TapRSAEncryptionPaddingTypeOAEP      = 2,
-};
-
 @interface RSAObjC : NSObject
-
-+ (void)setDefaultPaddingType:(TapRSAEncryptionPaddingType)paddingType;
 
 /**
  * -------RSA 字符串公钥加密-------

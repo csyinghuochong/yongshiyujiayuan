@@ -6,6 +6,6 @@ framework module AntiAddictionUI {
 }
 
 module AntiAddictionUI.Swift {
-  header "AntiAddictionUI-Swift.h"
-  requires objc
+    header "AntiAddictionUI-Swift.h"
+    requires objc
 }

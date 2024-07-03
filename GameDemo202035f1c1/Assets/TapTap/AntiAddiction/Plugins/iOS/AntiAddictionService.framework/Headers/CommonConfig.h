@@ -13,16 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CommonConfig : NSObject
 
+//+ (void)dataFromJson;
 
+// 老逻辑，暂时不动
++ (void)dataFromJsonWithConfig:(NSDictionary *)data_dict;
 
-+ (void)saveRealNameConfigToJsonFile:(NSDictionary *)dic;
-+ (nullable NSDictionary *)loadRealNameConfigFromJsonFile;
-
-
-+ (void)saveUserConfigToJsonFile:(NSString *) userId data:(NSDictionary *)dic;
-+ (nullable NSDictionary<NSString* ,NSObject*> *)loadUserConfigFromJsonFile:(NSString *) userId;
-
-+(void)clearUserConfig:(NSString *) userId;
++ (void)saveConfigToJsonFile:(NSDictionary *)dic;
++ (nullable NSDictionary *)loadConfigFromJsonFile;
 
 @end
 

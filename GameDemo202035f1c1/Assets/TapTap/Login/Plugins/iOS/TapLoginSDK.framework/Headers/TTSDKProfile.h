@@ -43,6 +43,4 @@
 + (void)fetchProfileForCurrentAccessToken:(void (^)(TTSDKProfile *profile, NSError *error))handler;
 
 - (NSString *)toJsonString;
-
-- (NSDictionary *)toDictionary;
 @end

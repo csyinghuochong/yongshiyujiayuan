@@ -19,9 +19,6 @@ public class TapTapSdkHelper : MonoBehaviour
     public Action<int, string> AntiAddictionHandler;
 
 
-    public GameObject ButtonInit;
-    public GameObject ButtonLogin;
-
 
     // Start is called before the first frame update
     void Start()
@@ -290,6 +287,8 @@ public class TapTapSdkHelper : MonoBehaviour
         string userIdentifier = profile.unionid;
         GameSDKManager.Instance.StartAntiAddiction(userIdentifier);
     }
+
+
 
 
 

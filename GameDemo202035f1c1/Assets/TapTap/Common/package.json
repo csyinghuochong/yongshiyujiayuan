@@ -2,8 +2,10 @@
   "name": "com.taptap.tds.common",
   "displayName": "TapTap Common",
   "description": "TapTap Develop Service",
-  "version": "3.29.2",
-  "unity": "2019.4",
-  "license": "MIT",
-  "dependencies": {}
+  "version": "3.16.6",
+  "unity": "2018.3",
+  "dependencies": {
+    "com.unity.modules.ui": "1.0.0"
+  },
+  "license": "MIT"
 }

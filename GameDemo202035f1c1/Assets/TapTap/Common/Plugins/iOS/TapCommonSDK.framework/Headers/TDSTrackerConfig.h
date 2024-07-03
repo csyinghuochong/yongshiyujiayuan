@@ -12,8 +12,7 @@ typedef enum : NSUInteger {
     TDSTrackerForTapsdk = 1,
     TDSTrackerForFriends,
     TDSTrackerForNetwork,
-    TDSTrackerForTapSDKNetwork,
-    TDSTrackerForTapConnect
+    TDSTrackerForTapSDKNetwork
 } TDSTrackerType;
 
 @interface TDSTrackerConfig : NSObject
@@ -23,11 +22,8 @@ typedef enum : NSUInteger {
 @property (nonatomic, copy) NSString *endPoint;
 @property (nonatomic, copy) NSString *logStore;
 @property (nonatomic, copy) NSString *sdkVersionName;
-@property (nonatomic, copy) NSString *sdkVersionCode;
 @property (nonatomic, assign) TDSTrackerType trackerType;
 @property (nonatomic, assign) NSInteger groupSize;
-// SDK 模块
-@property (nonatomic, copy) NSString *sdkModule;
 @end
 
 NS_ASSUME_NONNULL_END

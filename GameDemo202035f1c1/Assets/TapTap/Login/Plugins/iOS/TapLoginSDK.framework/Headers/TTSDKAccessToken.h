@@ -37,8 +37,8 @@
 @property (nonatomic, copy) NSArray<NSString *> * scopeArray;
 
 /// 根据JSON生成 TTSDKAccessToken
-/// @param accessTokenJsonString json字符串类型的AccessToken
-+ (TTSDKAccessToken *)build:(NSString *)accessTokenJsonString;
+/// @param accessTokenString json字符串类型的AccessToken
++ (TTSDKAccessToken *)build:(NSString *)accessTokenString;
 
 /// 通过参数生成实例
 + (TTSDKAccessToken *)build:(NSString *)kid accessToken:(NSString *)accessToken tokenType:(NSString *)tokenType macKey:(NSString *)macKey macAlgorithm:(NSString *)macAlgorithm;
@@ -48,14 +48,7 @@
 /// 转换成json字符串
 - (NSString *)toJsonString;
 
-- (NSDictionary *)toDictionary;
-
 + (NSArray *)scopeStringToArray:(NSString *)scopeString;
-
-+ (TTSDKAccessToken *)createWithQueryStr:(NSString *)queryStr;
-+ (TTSDKAccessToken *)createWithDictionary:(NSDictionary *)dic;
-
-- (NSString *)toQueryString;
 
 /**
  *  @brief 获取当前认证

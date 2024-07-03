@@ -16,10 +16,9 @@ typedef NS_ENUM(NSInteger, AntiAddictionRegion) {
 @interface AntiAddictionConfig : NSObject
 
 @property (nonatomic, strong) NSString *clientID;
-@property (nonatomic, assign) BOOL useTapLogin __attribute__((deprecated("useTapLogin is not valid any more")));
+@property (nonatomic, assign) BOOL useTapLogin;
 @property (nonatomic, assign) BOOL showSwitchAccount;
 @property (nonatomic, assign) AntiAddictionRegion region;
-@property (nonatomic, assign) BOOL useAgeRange;
 
 - (instancetype)init;
 

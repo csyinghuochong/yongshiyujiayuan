@@ -25,12 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param callback 下载结果回调
 + (void)downloadFile:(NSString *)url callback:(downloadCallback)callback;
 
-/// 下载文件
-/// @param url 文件url
-/// @param timeout 超时时间
-/// @param callback 下载结果回调
-+ (void)downloadFile:(NSString *)url timeout:(int) timeout callback:(downloadCallback)callback;
-
 @end
 
 NS_ASSUME_NONNULL_END
