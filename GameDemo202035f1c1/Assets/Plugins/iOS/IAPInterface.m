@@ -49,23 +49,26 @@ void CheckIphoneYueyu(const char *p){
 
 }
 
-void CheckIphoneYueyu(const char *p){
+void CheckIosSignature(const char *p){
 
     int t1 = 0;
     int t2 = 0;
 
-
-
+    BOOL b1 = [IAPInterface isFromJailbrokenChannel:@"teamid" andString2:@""];
+    BOOL b2 = [IAPInterface checkCodesign:@"teamid"];
 
 
     NSString *str = [ NSString stringWithFormat:@"%d_%d", t1, t2 ];
-    UnitySendMessage("WWW_Set", "CheckIosSignature", [str UTF8String] );
+    UnitySendMessage("WWW_Set", "OnRecvIosSignature", [str UTF8String] );
 }
 
-+ (BOOL)isFromJailbrokenChannel
-{
++(BOOL)isFromJailbrokenChannel:(NSString*)appid andString2: (NSString*)initbundleid  {
     NSString *bundleId = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleIdentifierKey];
-    if (![bundleId isEqualToString:@"your bundle id"]) {
+    
+    
+    NSLog(@"%@  aaaaaa", bundleId);
+    if (![bundleId isEqualToString:initbundleid]) {
+        
         return YES;
     }
     //取出embedded.mobileprovision这个描述文件的内容进行判断
@@ -79,9 +82,9 @@ void CheckIphoneYueyu(const char *p){
         NSData *tempPlistData = [tempPlistString dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *plistDic =  [NSPropertyListSerialization propertyListWithData:tempPlistData options:NSPropertyListImmutable format:nil error:nil];
         
-        NSArray *applicationIdentifierPrefix = [plistDic getArrayValueForKey:@"ApplicationIdentifierPrefix" defaultValue:nil];
-        NSDictionary *entitlementsDic = [plistDic getDictionaryValueForKey:@"Entitlements" defaultValue:nil];
-        NSString *mobileBundleID = [entitlementsDic getStringValueForKey:@"application-identifier" defaultValue:nil];
+        NSArray *applicationIdentifierPrefix = [plistDic objectForKey:<#(nonnull id)#>:@"ApplicationIdentifierPrefix" defaultValue:nil];
+        NSDictionary *entitlementsDic = [plistDic objectForKey:<#(nonnull id)#>:@"Entitlements" defaultValue:nil];
+        NSString *mobileBundleID = [entitlementsDic objectForKey:<#(nonnull id)#>:@"application-identifier" defaultValue:nil];
         if (applicationIdentifierPrefix.count > 0 && mobileBundleID != nil) {
             if (![mobileBundleID isEqualToString:[NSString stringWithFormat:@"%@.%@",[applicationIdentifierPrefix firstObject],@"your applicationId"]]) {
                 return YES;
@@ -93,7 +96,7 @@ void CheckIphoneYueyu(const char *p){
     
 }
 
-- (BOOL)checkCodesign:(NSString*)teamID {
++(BOOL)checkCodesign:(NSString*)initteamID {
     //获取描述文件路径
     NSString *embeddedPath = [[NSBundle mainBundle] pathForResource:@"embedded" ofType:@"mobileprovision"];
     if ([[NSFileManager defaultManager] fileExistsAtPath:embeddedPath]) {
@@ -110,8 +113,13 @@ void CheckIphoneYueyu(const char *p){
                 NSString *fullIdentifier = [[embeddedProvisioningLines objectAtIndex:i+1] substringWithRange:range];
                 NSArray *identifierComponents = [fullIdentifier componentsSeparatedByString:@"."];
                 NSString *appIdentifier = [identifierComponents firstObject];
+                
+
+                NSLog(@"%@  ccccc", initteamID);
+                NSLog(@"%@  ddddd", appIdentifier);
+                
                 // 对比签名ID
-                if ([appIdentifier isEqual:teamID]) {
+                if ([appIdentifier isEqual:initteamID]) {
                     NSLog(@"签名验证签名验证成功");
                     return YES;
                 } else{
