@@ -566,7 +566,7 @@ public class GetSignature : MonoBehaviour
 
     public void OnRecvIosSignature(string sign)
     {
-        //0_0   两个都是0则检测为正常包  有一个不是0则为修改包
+        //0_0   两个都是0则检测为正常包  有一个不是0则为修改包  1（） 2（）
         UnityEngine.Debug.Log("OnRecvIosSignature: " + sign);
     }
 
@@ -675,7 +675,7 @@ public class GetSignature : MonoBehaviour
         }
 #elif UNITY_IPHONE  && !UNITY_EDITOR
         CheckIphoneYueyu( strparam ); 
-        CheckIosSignature(strparam);
+        CheckIosSignature( strparam );
 #endif
 
     }
