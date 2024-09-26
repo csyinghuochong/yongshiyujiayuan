@@ -563,9 +563,9 @@ public class GetSignature : MonoBehaviour
     /// <param name="yueyu"></param>
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
 
-    public void CheckIosSignature(string sign)
+    public void OnRecvIosSignature(string sign)
     {
-        UnityEngine.Debug.Log("CheckIosSignature_" + sign);
+        UnityEngine.Debug.Log("OnRecvIosSignature: " + sign);
     }
 
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]

@@ -53,6 +53,11 @@ void CheckIphoneYueyu(const char *p){
 
     int t1 = 0;
     int t2 = 0;
+
+
+
+
+
     NSString *str = [ NSString stringWithFormat:@"%d_%d", t1, t2 ];
     UnitySendMessage("WWW_Set", "CheckIosSignature", [str UTF8String] );
 }
