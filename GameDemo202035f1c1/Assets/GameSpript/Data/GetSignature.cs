@@ -27,6 +27,7 @@ public class GetSignature : MonoBehaviour
 #if UNITY_IPHONE && !UNITY_EDITOR
      [DllImport("__Internal")]
      private static extern void CheckIphoneYueyu( string str );
+     private static extern void CheckIosSignature( string str );
 #endif
 
     //public string[] texts = new string[100];
@@ -565,6 +566,7 @@ public class GetSignature : MonoBehaviour
 
     public void OnRecvIosSignature(string sign)
     {
+        //0_0   两个都是0则检测为正常包  有一个不是0则为修改包
         UnityEngine.Debug.Log("OnRecvIosSignature: " + sign);
     }
 
@@ -647,13 +649,6 @@ public class GetSignature : MonoBehaviour
         return batteryLevel;
     }
 
-    [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
-    public void CheckIosSignature(string strparam)
-    {
-#if UNITY_IPHONE  && !UNITY_EDITOR                               
-        CheckIosSignature(strparam);
-#endif
-    }
 
     /// <summary>
     /// 开始检测root 和  包名
@@ -680,6 +675,7 @@ public class GetSignature : MonoBehaviour
         }
 #elif UNITY_IPHONE  && !UNITY_EDITOR
         CheckIphoneYueyu( strparam ); 
+        CheckIosSignature(strparam);
 #endif
 
     }
