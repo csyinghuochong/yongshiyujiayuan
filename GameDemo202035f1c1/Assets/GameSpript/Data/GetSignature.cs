@@ -557,6 +557,16 @@ public class GetSignature : MonoBehaviour
         JianCeNum = JianCeNum + 1;
     }
 
+    /// <summary>
+    /// ios检测
+    /// </summary>
+    /// <param name="yueyu"></param>
+    [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
+
+    public void CheckIosSignature(string sign)
+    {
+        UnityEngine.Debug.Log("CheckIosSignature_" + sign);
+    }
 
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
     public void OnRecvBundleids(string bundles)
@@ -635,6 +645,14 @@ public class GetSignature : MonoBehaviour
     public int GetBatteryLevel()
     {
         return batteryLevel;
+    }
+
+    [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
+    public void CheckIosSignature(string strparam)
+    {
+#if UNITY_IPHONE  && !UNITY_EDITOR                               
+        CheckIosSignature(strparam);
+#endif
     }
 
     /// <summary>
