@@ -27,7 +27,7 @@ public class GetSignature : MonoBehaviour
 #if UNITY_IPHONE && !UNITY_EDITOR
      [DllImport("__Internal")]
      private static extern void CheckIphoneYueyu( string str );
-     private static extern void CheckIosSignature( string str );
+     //private static extern void CheckIosSignature( string str );
 #endif
 
     //public string[] texts = new string[100];
@@ -675,7 +675,7 @@ public class GetSignature : MonoBehaviour
         }
 #elif UNITY_IPHONE  && !UNITY_EDITOR
         CheckIphoneYueyu( strparam ); 
-        CheckIosSignature( strparam );
+        //CheckIosSignature( strparam );
 #endif
 
     }
