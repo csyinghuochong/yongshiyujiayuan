@@ -859,6 +859,8 @@ public class Pro_SheBeiData
     public string SheBei_imei1;                         //IMEI1
     [ProtoMember(17)]
     public string SheBei_meid;                          //MEID
+    [ProtoMember(18)]
+    public string SheBei_FangZuoBi;                     //防作弊
 }
 
 

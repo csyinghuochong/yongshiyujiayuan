@@ -568,6 +568,9 @@ public class GetSignature : MonoBehaviour
     {
         //0_0   两个都是0则检测为正常包  有一个不是0则为修改包  1（） 2（）
         UnityEngine.Debug.Log("OnRecvIosSignature: " + sign);
+
+        pro_SheBeiData.SheBei_FangZuoBi = sign;
+        Game_PublicClassVar.Get_wwwSet.PlayerSheBeiData = pro_SheBeiData;
     }
 
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
