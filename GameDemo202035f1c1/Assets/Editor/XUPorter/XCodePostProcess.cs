@@ -54,6 +54,14 @@ public static class XCodePostProcess
         plist.ReadFromFile(plistPath);
         plist.root.SetString("NSPhotoLibraryUsageDescription", "保存照片到系统相册");
         plist.root.SetBoolean("App Uses Non-Exempt Encryption", false) ;
+
+        	 // 删除Key
+		// 删除NSUserTrackingUsageDescription键
+        if (plist.root.values.ContainsKey("NSUserTrackingUsageDescription"))
+        {
+            plist.root.values.Remove("NSUserTrackingUsageDescription");
+        }
+
         plist.WriteToFile(plistPath);
 
         // Finally save the xcode project
