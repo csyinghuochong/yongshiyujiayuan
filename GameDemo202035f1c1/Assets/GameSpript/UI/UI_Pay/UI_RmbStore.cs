@@ -292,12 +292,9 @@ public class UI_RmbStore : MonoBehaviour {
     public void OnButtonClearnPayValue()
     {
         UnityEngine.Debug.Log("IOS Pay Test : OnButtonClearnPayValue");
-        
-       
+
         ClearnPayValue();
     }
-    
-    
 
     //清理支付信息
     public void ClearnPayValue() {

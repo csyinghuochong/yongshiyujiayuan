@@ -159,6 +159,9 @@ public class ShopList : MonoBehaviour, IStoreListener
     {
         if (IsInitialized())
         {
+            
+            this.GetComponent<PurchaseManager>().ClearLastPurchase();
+            
             UnityEngine.Debug.Log("IOS Pay Test : Buy ProductID: " + productId);
             Product product = m_StoreController.products.WithID(productId);
             if (product != null && product.availableToPurchase)
