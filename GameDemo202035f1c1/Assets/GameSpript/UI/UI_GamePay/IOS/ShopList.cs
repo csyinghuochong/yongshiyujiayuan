@@ -8,7 +8,7 @@ using System;
 /// <summary>
 /// 这是通用方式，通过读取catalog里面的信息，获取所有商品信息
 /// </summary>
-public class ShopList : MonoBehaviour, IStoreListener
+public class ShopList : MonoBehaviour
 {
     private static IStoreController m_StoreController;
     private static IExtensionProvider m_StoreExtensionProvider;
@@ -90,7 +90,7 @@ public class ShopList : MonoBehaviour, IStoreListener
                 builder.AddProduct(product.id, product.type);
             }
         }
-        UnityPurchasing.Initialize(this, builder);
+        //UnityPurchasing.Initialize(this, builder);
     }
 
     //供外部调用，当按 Restore 按钮时触发
@@ -233,7 +233,7 @@ public class ShopList : MonoBehaviour, IStoreListener
     }
 
     //购买成功后的回调，包括restore的商品
-    public PurchaseProcessingResult ShopProcessPurchase(PurchaseEventArgs args)
+    public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
         Debug.Log("购买成功ios222.ProcessPurchase");
 
