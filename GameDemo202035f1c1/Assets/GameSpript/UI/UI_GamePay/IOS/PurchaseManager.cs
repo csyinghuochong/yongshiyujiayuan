@@ -75,7 +75,7 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
 
             Debug.Log("t4=" + unifiedReceipt.Payload.ToString());
             
-            UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseAAAA");
+            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA:{unifiedReceipt.TransactionID}");
             Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
             
             /*
@@ -97,6 +97,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         //购买成功之后的回调
         string id = e.purchasedProduct.definition.id;
         
+        
+        UnityEngine.Debug.Log("IOS Pay Test : PurchaseProcessingResult.Complete");
         //可以根据id进行发货操作
         return PurchaseProcessingResult.Complete;
     }
