@@ -8,7 +8,7 @@ using System;
 /// <summary>
 /// 这是通用方式，通过读取catalog里面的信息，获取所有商品信息
 /// </summary>
-public class ShopList : MonoBehaviour
+public class ShopList : MonoBehaviour,IStoreListener
 {
     private static IStoreController m_StoreController;
     private static IExtensionProvider m_StoreExtensionProvider;
@@ -68,29 +68,48 @@ public class ShopList : MonoBehaviour
         }
         StandardPurchasingModule module = StandardPurchasingModule.Instance();
         module.useFakeStoreUIMode = FakeStoreUIMode.StandardUser;
-        ConfigurationBuilder builder = ConfigurationBuilder.Instance(module);
-        //通过编辑器中的Catalog添加，方便操作
-        ProductCatalog catalog = ProductCatalog.LoadDefaultCatalog();
-        // Debug.Log(catalog.allProducts.Count);
-        foreach (var product in catalog.allProducts)
-        {
-            if (product.allStoreIDs.Count > 0)
-            {
-                // Debug.Log("product:" + product.id);
-                var ids = new IDs();
-                foreach (var storeID in product.allStoreIDs)
-                {
-                    ids.Add(storeID.id, storeID.store);
-                    // Debug.Log("stordId:" + storeID.id  + ", " + storeID.store);
-                }
-                builder.AddProduct(product.id, product.type, ids);
-            }
-            else
-            {
-                builder.AddProduct(product.id, product.type);
-            }
-        }
+        // ConfigurationBuilder builder = ConfigurationBuilder.Instance(module);
+        // //通过编辑器中的Catalog添加，方便操作
+        // ProductCatalog catalog = ProductCatalog.LoadDefaultCatalog();
+        // // Debug.Log(catalog.allProducts.Count);
+        // foreach (var product in catalog.allProducts)
+        // {
+        //     if (product.allStoreIDs.Count > 0)
+        //     {
+        //         // Debug.Log("product:" + product.id);
+        //         var ids = new IDs();
+        //         foreach (var storeID in product.allStoreIDs)
+        //         {
+        //             ids.Add(storeID.id, storeID.store);
+        //             // Debug.Log("stordId:" + storeID.id  + ", " + storeID.store);
+        //         }
+        //         builder.AddProduct(product.id, product.type, ids);
+        //     }
+        //     else
+        //     {
+        //         builder.AddProduct(product.id, product.type);
+        //     }
+        // }
         //UnityPurchasing.Initialize(this, builder);
+
+
+        Debug.Log("准备开始初始化..");
+        #if UNITY_IPHONE
+                ConfigurationBuilder builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+
+                builder.AddProduct("6YS", ProductType.Consumable);
+                builder.AddProduct("30YS", ProductType.Consumable);
+                builder.AddProduct("50YS", ProductType.Consumable);
+                 builder.AddProduct("98YS", ProductType.Consumable);
+                builder.AddProduct("198YS", ProductType.Consumable);
+                builder.AddProduct("298YS", ProductType.Consumable);
+                builder.AddProduct("488YS", ProductType.Consumable);
+                builder.AddProduct("648YS", ProductType.Consumable);
+               
+                UnityPurchasing.Initialize(this, builder);
+
+                Debug.Log("Awake初始化结束..");
+        #endif
     }
 
     //供外部调用，当按 Restore 按钮时触发
@@ -151,13 +170,9 @@ public class ShopList : MonoBehaviour
     {
         if (IsInitialized())
         {
-
-            UnityEngine.Debug.Log("IOS Pay Test : Buy ProductID: " + productId);
             Product product = m_StoreController.products.WithID(productId);
             if (product != null && product.availableToPurchase)
             {
-                UnityEngine.Debug.Log(string.Format("IOS Pay Test : Purchasing product asychronously: '{0}'", product.definition.id));
-           
                 m_StoreController.InitiatePurchase(product);
             }
             else
@@ -210,10 +225,24 @@ public class ShopList : MonoBehaviour
     {
         //初始化成功
         Debug.Log("OnInitialized: PASS");
+        
+
         m_StoreController = controller;
         m_StoreExtensionProvider = extensions;
     }
+    
+    public void OnPurchaseClicked(string productId)
+    {
+        Debug.Log("点击购买！" + productId);
+        m_StoreController.InitiatePurchase(productId);
+    }
 
+    public void ClosePanel_Shop()
+    {
+        Debug.Log("关闭");
+        gameObject.SetActive(false);
+    }
+    
     public void OnInitializeFailed(InitializationFailureReason error)
     {
         //初始化失败
@@ -236,9 +265,7 @@ public class ShopList : MonoBehaviour
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
         Debug.Log("购买成功ios222.ProcessPurchase");
-
         
-        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_00000");
         Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
 
 
@@ -273,8 +300,6 @@ public class ShopList : MonoBehaviour
         }
         */
 
-        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_11111");
-        
         Debug.Log("aaa:" + args.purchasedProduct.metadata.localizedTitle + ";" + args.purchasedProduct.metadata.localizedDescription);
         //Debug.Log("订单号1:" + args.purchasedProduct.receipt);
         //Debug.Log("transaiD:" + args.purchasedProduct.transactionID);
@@ -295,8 +320,6 @@ public class ShopList : MonoBehaviour
                 //读取json的验证信息
                 Debug.Log("验证票据:" + unifiedReceipt.Payload.ToString());
 
-                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_33333");
-                
                 if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set != null && Game_PublicClassVar.Get_wwwSet.DataUpdataStatus && Application.loadedLevelName != "StartGame")
                 {
                     if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore != null)
@@ -313,19 +336,16 @@ public class ShopList : MonoBehaviour
                 Debug.LogError("IOS支付报错：" + Ex);
                 ifsave = true;
             }
-
-            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_55555");
-
+            
             //存储交易票据
             if (ifsave == true) {
                 Game_PublicClassVar.Get_game_PositionVar.SaveIosPay(unifiedReceipt.Payload.ToString());
             }
-
-            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_66666");
         }
-
-        return PurchaseProcessingResult.Complete;       //如果屏蔽此处,程序每隔一段时间会返回一次调用,表示没有完成一次支付,每次重启也会自动调用一次
+        
+        return PurchaseProcessingResult.Complete;
     }
+    
     //购买失败回调，根据具体情况给出具体的提示
     public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
     {
@@ -362,7 +382,7 @@ public class ShopList : MonoBehaviour
         {
             if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore != null)
             {
-                Game_PublicClassVar.Get_game_PositionVar.OnPayResultReturnFail("");
+                Game_PublicClassVar.Get_game_PositionVar.OnPayResultReturnFail("支付失败");
             }
         }
 

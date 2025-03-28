@@ -134,7 +134,6 @@ public class UI_RmbStore : MonoBehaviour {
         
         if (Game_PublicClassVar.Get_game_PositionVar.PayStatusIOS) {
             
-            UnityEngine.Debug.Log("IOS Pay Test : game_PublicClassVar.Get_game_PositionVar.PayStatusIOS = false");
             Game_PublicClassVar.Get_game_PositionVar.PayStatusIOS = false;
 
             //ios发送
