@@ -237,7 +237,8 @@ public class ShopList : MonoBehaviour, IStoreListener
     {
         Debug.Log("购买成功ios222");
 
-
+        
+        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_00000");
         Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
 
 
