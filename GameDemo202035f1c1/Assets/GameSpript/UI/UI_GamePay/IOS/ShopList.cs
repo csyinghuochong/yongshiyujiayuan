@@ -153,14 +153,6 @@ public class ShopList : MonoBehaviour, IStoreListener
        
         UnityPurchasing.ClearTransactionLog();
     }
-
-    public void ConfirmPendingPurchase(PurchaseEventArgs e)
-    {
-        //m_StoreExtensionProvider.c();
-        UnityEngine.Debug.Log("IOS Pay Test : ConfirmPendingPurchase");
-       
-        m_StoreController.ConfirmPendingPurchase(e.purchasedProduct);
-    }
     
     //这里是通过商品id购买物品
     public void BuyProductID(string productId)
