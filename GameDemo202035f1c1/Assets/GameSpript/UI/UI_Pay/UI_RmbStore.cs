@@ -274,7 +274,7 @@ public class UI_RmbStore : MonoBehaviour {
         payText.GetComponent<Text>().text = payStr;
         */
 
-        UnityEngine.Debug.Log("PayQueryStatus:" + Game_PublicClassVar.Get_game_PositionVar.PayQueryStatus.ToString());
+        //UnityEngine.Debug.Log("PayQueryStatus:" + Game_PublicClassVar.Get_game_PositionVar.PayQueryStatus.ToString());
 
         //更新钻石显示
         if (Game_PublicClassVar.Get_game_PositionVar.PayQueryStatus) {

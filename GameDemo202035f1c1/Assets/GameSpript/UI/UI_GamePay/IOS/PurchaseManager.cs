@@ -73,9 +73,9 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         if (unifiedReceipt != null && !string.IsNullOrEmpty(unifiedReceipt.Payload))
         {
 
-            Debug.Log("t4=" + unifiedReceipt.Payload.ToString());
+            //Debug.Log("t4=" + unifiedReceipt.Payload.ToString());
             
-            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA:{unifiedReceipt.TransactionID}");
+            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA:111");
             Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
 
             UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 22222");
@@ -95,29 +95,7 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         }
 
         UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 333");
-
-        if (e == null)
-        {
-            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 333  e == null");
-        }
         
-        if (this.GetComponent<ShopList>() == null)
-        {
-            UnityEngine.Debug.Log($"IOS Pay Test : thisgame.name {this.gameObject.name}");
-
-            // 获取所有组件
-            Component[] allComponents = gameObject.GetComponents<Component>();
-
-            // 遍历并输出组件类型
-            foreach (Component component in allComponents)
-            {
-                UnityEngine.Debug.Log($"IOS Pay Test : 组件类型：{component.GetType().Name}");
-            }
-            
-            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 333  this.GetComponent<ShopList>()");
-        }
-        
-
         //this.GetComponent<ShopList>().ProcessPurchase(e);
 
         UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 444");
