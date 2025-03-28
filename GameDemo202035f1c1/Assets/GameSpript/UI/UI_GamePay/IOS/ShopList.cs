@@ -235,10 +235,10 @@ public class ShopList : MonoBehaviour, IStoreListener
     //购买成功后的回调，包括restore的商品
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
-        Debug.Log("购买成功ios222");
+        Debug.Log("购买成功ios222.ProcessPurchase");
 
         
-        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_00000");
+        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_00000");
         Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
 
 
@@ -273,19 +273,18 @@ public class ShopList : MonoBehaviour, IStoreListener
         }
         */
 
-        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_11111");
+        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_11111");
         
         Debug.Log("aaa:" + args.purchasedProduct.metadata.localizedTitle + ";" + args.purchasedProduct.metadata.localizedDescription);
-        Debug.Log("订单号1:" + args.purchasedProduct.receipt);
-        Debug.Log("transaiD:" + args.purchasedProduct.transactionID);
-        Debug.Log("storeid:" + args.purchasedProduct.definition.storeSpecificId);
-        Debug.Log("price:" + args.purchasedProduct.metadata.localizedPriceString);
+        //Debug.Log("订单号1:" + args.purchasedProduct.receipt);
+        //Debug.Log("transaiD:" + args.purchasedProduct.transactionID);
+        //Debug.Log("storeid:" + args.purchasedProduct.definition.storeSpecificId);
+        //Debug.Log("price:" + args.purchasedProduct.metadata.localizedPriceString);
         //args.purchasedProduct.receipt.
 
         var unifiedReceipt = JsonUtility.FromJson<UnifiedReceipt>(args.purchasedProduct.receipt);
 
-        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_2222");
-        
+
         if (unifiedReceipt != null && !string.IsNullOrEmpty(unifiedReceipt.Payload))
         {
             //调用触发
@@ -296,24 +295,15 @@ public class ShopList : MonoBehaviour, IStoreListener
                 //读取json的验证信息
                 Debug.Log("验证票据:" + unifiedReceipt.Payload.ToString());
 
-                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_3333");
+                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_33333");
                 
                 if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set != null && Game_PublicClassVar.Get_wwwSet.DataUpdataStatus && Application.loadedLevelName != "StartGame")
                 {
-                    
-                    UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_4444");
-                    
                     if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore != null)
                     {
                         
-                        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_5555");
-                        
-                        UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseBBBB");
                         Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
                         ifsave = false;
-                        
-                        
-                        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_6666");
                     }
                 }
 
@@ -324,14 +314,14 @@ public class ShopList : MonoBehaviour, IStoreListener
                 ifsave = true;
             }
 
-            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_7777");
+            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_55555");
 
             //存储交易票据
             if (ifsave == true) {
                 Game_PublicClassVar.Get_game_PositionVar.SaveIosPay(unifiedReceipt.Payload.ToString());
             }
 
-            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_8888");
+            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase_YYY_66666");
         }
 
         return PurchaseProcessingResult.Complete;       //如果屏蔽此处,程序每隔一段时间会返回一次调用,表示没有完成一次支付,每次重启也会自动调用一次

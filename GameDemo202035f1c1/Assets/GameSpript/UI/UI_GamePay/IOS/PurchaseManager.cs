@@ -95,15 +95,7 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         }
 
         UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 333");
-        
-        //this.GetComponent<ShopList>().ProcessPurchase(e);
 
-        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 444");
-        
-        //购买成功之后的回调
-        string id = e.purchasedProduct.definition.id;
-        
-        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 555 {id}");
 
         UnityEngine.Debug.Log("IOS Pay Test : PurchaseProcessingResult.Complete");
         //可以根据id进行发货操作
