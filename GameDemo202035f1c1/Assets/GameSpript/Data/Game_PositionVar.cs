@@ -1655,30 +1655,49 @@ public class Game_PositionVar : MonoBehaviour {
     //支付回执(IOS回执)（客户端回执）
     public void OnPayResult(string str)
     {
-        if (str != ""&& str!=null)
+
+        try
         {
-            Debug.Log("客户端回执:" + str);
-            PayIOS_Str = str;
-            Debug.Log("PayIOS_Str:" + PayIOS_Str);
-            //PayIOSYanZhengStr = str.Substring(50, 30);
-            PayStatusIOS = true;   //开启支付状态
+            if (str != ""&& str!=null)
+            {
+                Debug.Log("客户端回执:" + str);
+                PayIOS_Str = str;
+                Debug.Log("PayIOS_Str:" + PayIOS_Str);
+                //PayIOSYanZhengStr = str.Substring(50, 30);
+                PayStatusIOS = true;   //开启支付状态
 
-            //存储付费数据
-            SaveIosPay(PayIOS_Str);
 
-            //记录付费返回值
-            //PlayerPrefs.SetString("iosPay_" + Game_PublicClassVar.Get_wwwSet.NowSelectFileName, PayIOS_Str);
-            //PlayerPrefs.Save();
+                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase111");
+                
+                //存储付费数据
+                SaveIosPay(PayIOS_Str);
+                
+                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase222");
+                
+                //记录付费返回值
+                //PlayerPrefs.SetString("iosPay_" + Game_PublicClassVar.Get_wwwSet.NowSelectFileName, PayIOS_Str);
+                //PlayerPrefs.Save();
 
+            }
+            else {
+                
+                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase333");
+                
+                string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+                //参数：协议号,账号ID,平台ID,交易金额,交易状态,IOS查询Base64位码
+                string sendStr = "IOSPayNullValue," + zhanghaoID + "," + "3" + "," + Game_PublicClassVar.Get_game_PositionVar.PayValueNow + "," + "1" + "," + "未收到验证字符";
+                Debug.Log("sendStr = " + sendStr);
+
+                Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore.GetComponent<GamePayLinkServer>().SendToServer(sendStr);
+                
+                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase444");
+            }
         }
-        else {
-            string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-            //参数：协议号,账号ID,平台ID,交易金额,交易状态,IOS查询Base64位码
-            string sendStr = "IOSPayNullValue," + zhanghaoID + "," + "3" + "," + Game_PublicClassVar.Get_game_PositionVar.PayValueNow + "," + "1" + "," + "未收到验证字符";
-            Debug.Log("sendStr = " + sendStr);
-            Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore.GetComponent<GamePayLinkServer>().SendToServer(sendStr);
+        catch (Exception e)
+        {
+            UnityEngine.Debug.Log(e);
+            throw;
         }
-
     }
 
     //存储IOS支付订单编号

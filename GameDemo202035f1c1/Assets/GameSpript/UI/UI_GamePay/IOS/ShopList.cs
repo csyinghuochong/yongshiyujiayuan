@@ -272,6 +272,8 @@ public class ShopList : MonoBehaviour, IStoreListener
         }
         */
 
+        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_11111");
+        
         Debug.Log("aaa:" + args.purchasedProduct.metadata.localizedTitle + ";" + args.purchasedProduct.metadata.localizedDescription);
         Debug.Log("订单号1:" + args.purchasedProduct.receipt);
         Debug.Log("transaiD:" + args.purchasedProduct.transactionID);
@@ -281,6 +283,8 @@ public class ShopList : MonoBehaviour, IStoreListener
 
         var unifiedReceipt = JsonUtility.FromJson<UnifiedReceipt>(args.purchasedProduct.receipt);
 
+        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_2222");
+        
         if (unifiedReceipt != null && !string.IsNullOrEmpty(unifiedReceipt.Payload))
         {
             //调用触发
@@ -291,13 +295,24 @@ public class ShopList : MonoBehaviour, IStoreListener
                 //读取json的验证信息
                 Debug.Log("验证票据:" + unifiedReceipt.Payload.ToString());
 
+                UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_3333");
+                
                 if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set != null && Game_PublicClassVar.Get_wwwSet.DataUpdataStatus && Application.loadedLevelName != "StartGame")
                 {
+                    
+                    UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_4444");
+                    
                     if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore != null)
                     {
+                        
+                        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_5555");
+                        
                         UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseBBBB");
                         Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
                         ifsave = false;
+                        
+                        
+                        UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_6666");
                     }
                 }
 
@@ -308,12 +323,14 @@ public class ShopList : MonoBehaviour, IStoreListener
                 ifsave = true;
             }
 
+            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_7777");
 
             //存储交易票据
             if (ifsave == true) {
                 Game_PublicClassVar.Get_game_PositionVar.SaveIosPay(unifiedReceipt.Payload.ToString());
             }
 
+            UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchase10_8888");
         }
 
         return PurchaseProcessingResult.Complete;       //如果屏蔽此处,程序每隔一段时间会返回一次调用,表示没有完成一次支付,每次重启也会自动调用一次
