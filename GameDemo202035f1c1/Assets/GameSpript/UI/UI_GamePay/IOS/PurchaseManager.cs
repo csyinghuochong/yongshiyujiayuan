@@ -75,7 +75,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
             
             UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseAAAA");
             Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
-
+            
+            Game_PublicClassVar.Get_wwwSet.gameObject.GetComponent<ShopList>().ConfirmPendingPurchase(e);
             /*
             string a1 = unifiedReceipt.Payload.ToString();
             string a2 = a1.Replace(@"\r", @"").Replace(@"\n", @"").Replace(" ", "+");
