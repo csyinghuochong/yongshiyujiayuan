@@ -233,7 +233,7 @@ public class ShopList : MonoBehaviour, IStoreListener
     }
 
     //购买成功后的回调，包括restore的商品
-    public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
+    public PurchaseProcessingResult ShopProcessPurchase(PurchaseEventArgs args)
     {
         Debug.Log("购买成功ios222.ProcessPurchase");
 
