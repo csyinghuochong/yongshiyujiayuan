@@ -94,7 +94,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
 
         //购买成功之后的回调
         string id = e.purchasedProduct.definition.id;
-
+        
+        UnityPurchasing.ClearTransactionLog();
         controller.ConfirmPendingPurchase(e.purchasedProduct);
 
         //可以根据id进行发货操作
