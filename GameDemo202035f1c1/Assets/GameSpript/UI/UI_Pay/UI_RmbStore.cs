@@ -283,19 +283,7 @@ public class UI_RmbStore : MonoBehaviour {
             Obj_RoseZuanShiValue.GetComponent<Text>().text = zuanShi.ToString() + "钻";
         }
 	}
-
-    public void ButtonClearTransactionLog()
-    {
-        Game_PublicClassVar.Get_wwwSet.gameObject.GetComponent<ShopList>().ClearTransactionLog();
-    }
     
-    public void OnButtonClearnPayValue()
-    {
-        UnityEngine.Debug.Log("IOS Pay Test : OnButtonClearnPayValue");
-
-        ClearnPayValue();
-    }
-
     //清理支付信息
     public void ClearnPayValue() {
 

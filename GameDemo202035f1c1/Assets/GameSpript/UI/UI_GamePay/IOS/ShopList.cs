@@ -145,23 +145,13 @@ public class ShopList : MonoBehaviour, IStoreListener
         }
         
     }
-
-    public void ClearTransactionLog()
-    {
-        //m_StoreExtensionProvider.c();
-        UnityEngine.Debug.Log("IOS Pay Test : ClearTransactionLog");
-       
-        UnityPurchasing.ClearTransactionLog();
-    }
     
     //这里是通过商品id购买物品
     public void BuyProductID(string productId)
     {
         if (IsInitialized())
         {
-            
-            this.GetComponent<PurchaseManager>().ClearLastPurchase();
-            
+
             UnityEngine.Debug.Log("IOS Pay Test : Buy ProductID: " + productId);
             Product product = m_StoreController.products.WithID(productId);
             if (product != null && product.availableToPurchase)

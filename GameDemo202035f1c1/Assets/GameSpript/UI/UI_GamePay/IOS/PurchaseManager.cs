@@ -57,17 +57,6 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         Debug.Log("初始化失败");
     }
 
-
-    public Product LastPurchasedProduct;
-    public void ClearLastPurchase()
-    {
-        //UnityPurchasing.ClearTransactionLog();
-        if (LastPurchasedProduct != null)
-        {
-            controller.ConfirmPendingPurchase(LastPurchasedProduct);
-        }
-    }
-
     /// <summary>
     /// Called when a purchase completes.
     ///
@@ -89,9 +78,6 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
             UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseAAAA");
             Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
             
-            //UnityPurchasing.ClearTransactionLog();
-            //controller.ConfirmPendingPurchase(e.purchasedProduct);;
-            LastPurchasedProduct = e.purchasedProduct;
             /*
             string a1 = unifiedReceipt.Payload.ToString();
             string a2 = a1.Replace(@"\r", @"").Replace(@"\n", @"").Replace(" ", "+");
