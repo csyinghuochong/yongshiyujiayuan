@@ -145,6 +145,14 @@ public class ShopList : MonoBehaviour, IStoreListener
         }
         
     }
+
+    public void ClearTransactionLog()
+    {
+        //m_StoreExtensionProvider.c();
+        UnityPurchasing.ClearTransactionLog();
+        UnityEngine.Debug.Log("IOS Pay Test : ClearTransactionLog");
+    }
+
     //这里是通过商品id购买物品
     public void BuyProductID(string productId)
     {
@@ -155,6 +163,7 @@ public class ShopList : MonoBehaviour, IStoreListener
             if (product != null && product.availableToPurchase)
             {
                 UnityEngine.Debug.Log(string.Format("IOS Pay Test : Purchasing product asychronously: '{0}'", product.definition.id));
+           
                 m_StoreController.InitiatePurchase(product);
             }
             else
@@ -346,7 +355,7 @@ public class ShopList : MonoBehaviour, IStoreListener
             //位置错误
         }
 
-        Debug.Log("用户支付取消");
+        Debug.Log("有用户支付取消");
         if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set != null && Game_PublicClassVar.Get_wwwSet.DataUpdataStatus && Application.loadedLevelName != "StartGame")
         {
             if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore != null)
