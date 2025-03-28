@@ -65,6 +65,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs e)
     {
         Debug.Log("购买成功ios11");
+        
+        // 获取所有未完成交易
 
         var unifiedReceipt = JsonUtility.FromJson<UnifiedReceipt>(e.purchasedProduct.receipt);
 
@@ -75,7 +77,10 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
             
             UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseAAAA");
             Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
-         
+            
+            UnityPurchasing.ClearTransactionLog();
+            controller.ConfirmPendingPurchase(e.purchasedProduct);
+            
             /*
             string a1 = unifiedReceipt.Payload.ToString();
             string a2 = a1.Replace(@"\r", @"").Replace(@"\n", @"").Replace(" ", "+");
@@ -95,9 +100,6 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         //购买成功之后的回调
         string id = e.purchasedProduct.definition.id;
         
-        UnityPurchasing.ClearTransactionLog();
-        controller.ConfirmPendingPurchase(e.purchasedProduct);
-
         //可以根据id进行发货操作
         return PurchaseProcessingResult.Complete;
     }
