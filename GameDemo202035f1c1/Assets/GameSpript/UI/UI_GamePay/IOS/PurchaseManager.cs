@@ -117,9 +117,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
             UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 333  this.GetComponent<ShopList>()");
         }
         
-        
 
-        this.GetComponent<ShopList>().ProcessPurchase(e);
+        //this.GetComponent<ShopList>().ProcessPurchase(e);
 
         UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 444");
         
