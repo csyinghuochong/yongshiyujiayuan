@@ -72,7 +72,8 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         {
 
             Debug.Log("t4=" + unifiedReceipt.Payload.ToString());
-
+            
+            UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseAAAA");
             Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
 
             /*

@@ -150,11 +150,11 @@ public class ShopList : MonoBehaviour, IStoreListener
     {
         if (IsInitialized())
         {
-            Debug.Log("Buy ProductID: " + productId);
+            UnityEngine.Debug.Log("IOS Pay Test : Buy ProductID: " + productId);
             Product product = m_StoreController.products.WithID(productId);
             if (product != null && product.availableToPurchase)
             {
-                Debug.Log(string.Format("Purchasing product asychronously: '{0}'", product.definition.id));
+                UnityEngine.Debug.Log(string.Format("IOS Pay Test : Purchasing product asychronously: '{0}'", product.definition.id));
                 m_StoreController.InitiatePurchase(product);
             }
             else
@@ -292,6 +292,7 @@ public class ShopList : MonoBehaviour, IStoreListener
                 {
                     if (Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RmbStore != null)
                     {
+                        UnityEngine.Debug.Log("IOS Pay Test : ProcessPurchaseBBBB");
                         Game_PublicClassVar.Get_game_PositionVar.OnPayResult(unifiedReceipt.Payload.ToString());
                         ifsave = false;
                     }
