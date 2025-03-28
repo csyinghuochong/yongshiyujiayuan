@@ -149,8 +149,8 @@ public class ShopList : MonoBehaviour, IStoreListener
     public void ClearTransactionLog()
     {
         //m_StoreExtensionProvider.c();
-        UnityPurchasing.ClearTransactionLog();
         UnityEngine.Debug.Log("IOS Pay Test : ClearTransactionLog");
+        UnityPurchasing.ClearTransactionLog();
     }
 
     //这里是通过商品id购买物品
