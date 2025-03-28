@@ -103,8 +103,21 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
         
         if (this.GetComponent<ShopList>() == null)
         {
+            UnityEngine.Debug.Log($"IOS Pay Test : thisgame.name {this.gameObject.name}");
+
+            // 获取所有组件
+            Component[] allComponents = gameObject.GetComponents<Component>();
+
+            // 遍历并输出组件类型
+            foreach (Component component in allComponents)
+            {
+                UnityEngine.Debug.Log($"IOS Pay Test : 组件类型：{component.GetType().Name}");
+            }
+            
             UnityEngine.Debug.Log($"IOS Pay Test : ProcessPurchaseAAAA 333  this.GetComponent<ShopList>()");
         }
+        
+        
 
         this.GetComponent<ShopList>().ProcessPurchase(e);
 
