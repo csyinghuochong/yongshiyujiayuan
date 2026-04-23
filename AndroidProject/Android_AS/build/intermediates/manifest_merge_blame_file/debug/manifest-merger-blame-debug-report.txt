@@ -1,0 +1,105 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.qk.test" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="1"
+6-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="1" />
+7-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+9-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:5:5-78
+9-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:5:22-75
+10    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+10-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:6:5-80
+10-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:6:22-77
+11    <uses-permission android:name="android.permission.GET_TASKS" />
+11-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:7:5-68
+11-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:7:22-65
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:8:5-81
+12-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:8:22-78
+13    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+13-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:9:5-76
+13-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:9:22-73
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:10:5-76
+14-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:10:22-73
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:11:5-67
+15-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:11:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:12:5-79
+16-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:12:22-76
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:10:5-76
+17-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:10:22-73
+18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+18-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:14:5-75
+18-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:14:22-72
+19    <uses-permission android:name="android.permission.BLUETOOTH" />
+19-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:15:5-68
+19-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:15:22-65
+20    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+20-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:16:2-79
+20-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:16:19-77
+21
+22    <application
+22-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:18:5-47:19
+23        android:name="com.qk.game.GameApplication"
+23-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:19:9-51
+24        android:allowBackup="true"
+24-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:20:9-35
+25        android:usesCleartextTraffic="true" >
+25-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:21:9-44
+26        <activity
+26-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:22:9-33:20
+27            android:name="com.qk.game.SplashActivity"
+27-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:23:13-54
+28            android:configChanges="mnc|keyboardHidden|screenSize|orientation|keyboard"
+28-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:24:13-87
+29            android:exported="true"
+29-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:26:13-36
+30            android:screenOrientation="landscape"
+30-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:25:13-50
+31            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+31-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:27:13-77
+32            <intent-filter>
+32-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:28:13-32:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:29:17-69
+33-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:29:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:31:17-77
+35-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:31:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:34:9-39:20
+39            android:name="com.qk.game.MainActivity"
+39-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:35:13-52
+40            android:configChanges="mnc|keyboardHidden|screenSize|orientation|keyboard"
+40-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:36:13-87
+41            android:screenOrientation="landscape"
+41-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:37:13-50
+42            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+42-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:38:13-77
+43        </activity>
+44
+45        <meta-data
+45-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:41:9-43:36
+46            android:name="unityplayer.ForwardNativeEventsToDalvik"
+46-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:42:13-67
+47            android:value="true" />
+47-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:43:13-33
+48        <meta-data
+48-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:44:9-46:36
+49            android:name="unityplayer.UnityActivity"
+49-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:45:13-53
+50            android:value="true" />
+50-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:46:13-33
+51    </application>
+52
+53</manifest>

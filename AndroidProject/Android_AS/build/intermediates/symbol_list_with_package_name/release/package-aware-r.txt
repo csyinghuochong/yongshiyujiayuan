@@ -1,0 +1,16 @@
+com.qk.test
+drawable ic_launcher
+drawable qk_game_load01
+drawable qk_game_load02
+drawable qk_game_load03
+drawable qk_game_load04
+drawable qk_game_load05
+drawable qk_game_load06
+drawable qk_game_load07
+drawable qk_game_load08
+drawable qk_game_loadbg
+drawable qk_game_loading
+id qk_img_loading
+layout qk_game_view_loading
+style qk_game_style_loading
+xml filepaths

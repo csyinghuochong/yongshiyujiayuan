@@ -1,0 +1,124 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.qk.test.test" >
+4
+5    <uses-sdk
+5-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:5:5-72
+6        android:minSdkVersion="1"
+6-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:5:15-40
+7        android:targetSdkVersion="1" />
+7-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:5:41-69
+8
+9    <instrumentation
+9-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:11:5-15:66
+10        android:name="android.test.InstrumentationTestRunner"
+10-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:11:22-75
+11        android:functionalTest="false"
+11-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:14:22-52
+12        android:handleProfiling="false"
+12-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:13:22-53
+13        android:label="Tests for com.qk.test.test"
+13-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:15:22-64
+14        android:targetPackage="com.qk.test.test" />
+14-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:12:22-62
+15
+16    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+16-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-78
+16-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-75
+17    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+17-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-80
+17-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-77
+18    <uses-permission android:name="android.permission.GET_TASKS" />
+18-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-68
+18-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-65
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-81
+19-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-78
+20    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+20-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-76
+20-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-73
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+21-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-76
+21-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:22-73
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-67
+22-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:22-64
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:5-79
+23-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:22-76
+24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+24-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-76
+24-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:22-73
+25    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+25-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:5-75
+25-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:22-72
+26    <uses-permission android:name="android.permission.BLUETOOTH" />
+26-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-68
+26-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:22-65
+27    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+27-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-83
+27-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:22-80
+28
+29    <application
+29-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:7:5-9:19
+30        android:name="com.qk.game.GameApplication"
+30-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:9-51
+31        android:allowBackup="true"
+31-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-35
+32        android:debuggable="true"
+33        android:usesCleartextTraffic="true" >
+33-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-44
+34        <uses-library android:name="android.test.runner" />
+34-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:8:9-60
+34-->F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13959694416382997390.xml:8:23-57
+35
+36        <activity
+36-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-37:20
+37            android:name="com.qk.game.SplashActivity"
+37-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-54
+38            android:configChanges="mnc|keyboardHidden|screenSize|orientation|keyboard"
+38-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-87
+39            android:exported="true"
+39-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-36
+40            android:screenOrientation="landscape"
+40-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-50
+41            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+41-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-77
+42            <intent-filter>
+42-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-36:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-69
+43-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:17-77
+45-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:9-43:20
+49            android:name="com.qk.game.MainActivity"
+49-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:13-52
+50            android:configChanges="mnc|keyboardHidden|screenSize|orientation|keyboard"
+50-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:13-87
+51            android:screenOrientation="landscape"
+51-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-50
+52            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+52-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-77
+53        </activity>
+54
+55        <meta-data
+55-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:36
+56            android:name="unityplayer.ForwardNativeEventsToDalvik"
+56-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-67
+57            android:value="true" />
+57-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-33
+58        <meta-data
+58-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:9-50:36
+59            android:name="unityplayer.UnityActivity"
+59-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-53
+60            android:value="true" />
+60-->[:Android_AS] F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_manifest\debug\AndroidManifest.xml:50:13-33
+61    </application>
+62
+63</manifest>

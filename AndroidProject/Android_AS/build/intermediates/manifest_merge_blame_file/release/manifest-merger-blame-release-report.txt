@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.qk.test" >
+4
+5    <uses-sdk android:minSdkVersion="1" />
+5-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+7-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:5:5-78
+7-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:5:22-75
+8    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+8-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:6:5-80
+8-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:6:22-77
+9    <uses-permission android:name="android.permission.GET_TASKS" />
+9-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:7:5-68
+9-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:7:22-65
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:8:5-81
+10-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:8:22-78
+11    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+11-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:9:5-76
+11-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:9:22-73
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:10:5-76
+12-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:10:22-73
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:11:5-67
+13-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:11:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:12:5-79
+14-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:12:22-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:10:5-76
+15-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:10:22-73
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:14:5-75
+16-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:14:22-72
+17    <uses-permission android:name="android.permission.BLUETOOTH" />
+17-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:15:5-68
+17-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:15:22-65
+18    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+18-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:16:2-79
+18-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:16:19-77
+19
+20    <application
+20-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:18:5-47:19
+21        android:name="com.qk.game.GameApplication"
+21-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:19:9-51
+22        android:allowBackup="true"
+22-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:20:9-35
+23        android:usesCleartextTraffic="true" >
+23-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:21:9-44
+24        <activity
+24-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:22:9-33:20
+25            android:name="com.qk.game.SplashActivity"
+25-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:23:13-54
+26            android:configChanges="mnc|keyboardHidden|screenSize|orientation|keyboard"
+26-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:24:13-87
+27            android:exported="true"
+27-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:26:13-36
+28            android:screenOrientation="landscape"
+28-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:25:13-50
+29            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+29-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:27:13-77
+30            <intent-filter>
+30-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:28:13-32:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:29:17-69
+31-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:29:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:31:17-77
+33-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:31:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:34:9-39:20
+37            android:name="com.qk.game.MainActivity"
+37-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:35:13-52
+38            android:configChanges="mnc|keyboardHidden|screenSize|orientation|keyboard"
+38-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:36:13-87
+39            android:screenOrientation="landscape"
+39-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:37:13-50
+40            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+40-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:38:13-77
+41        </activity>
+42
+43        <meta-data
+43-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:41:9-43:36
+44            android:name="unityplayer.ForwardNativeEventsToDalvik"
+44-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:42:13-67
+45            android:value="true" />
+45-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:43:13-33
+46        <meta-data
+46-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:44:9-46:36
+47            android:name="unityplayer.UnityActivity"
+47-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:45:13-53
+48            android:value="true" />
+48-->D:\TestSpace\MyApplication3\Android_AS\src\main\AndroidManifest.xml:46:13-33
+49    </application>
+50
+51</manifest>

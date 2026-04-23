@@ -1,0 +1,121 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:2:1-49:12
+	package
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:3:5-26
+		INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+		INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.SYSTEM_OVERLAY_WINDOW
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.GET_TASKS
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:7:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:10:22-73
+uses-permission#android.permission.INTERNET
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:14:5-75
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:14:22-72
+uses-permission#android.permission.BLUETOOTH
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:15:22-65
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:16:2-79
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:16:19-77
+application
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:18:5-47:19
+	android:allowBackup
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:20:9-35
+	android:usesCleartextTraffic
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:21:9-44
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:19:9-51
+activity#com.qk.game.SplashActivity
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:22:9-33:20
+	android:screenOrientation
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:25:13-50
+	android:exported
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:26:13-36
+	android:configChanges
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:24:13-87
+	android:theme
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:27:13-77
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:23:13-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:28:13-32:29
+action#android.intent.action.MAIN
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:31:27-74
+activity#com.qk.game.MainActivity
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:34:9-39:20
+	android:screenOrientation
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:37:13-50
+	android:configChanges
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:36:13-87
+	android:theme
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:38:13-77
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:35:13-52
+meta-data#unityplayer.ForwardNativeEventsToDalvik
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:41:9-43:36
+	android:value
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:43:13-33
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:42:13-67
+meta-data#unityplayer.UnityActivity
+ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:44:9-46:36
+	android:value
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:46:13-33
+	android:name
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml:45:13-53
+uses-sdk
+INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+		INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+		ADDED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml
+		INJECTED from F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\main\AndroidManifest.xml

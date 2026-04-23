@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.qk.test.test.Android_AS-mergeDebugAndroidTestResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "F:\\UnityProjects\\yongshiyujiayuan\\AndroidProject\\Android_AS\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "448"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+com.qk.test.test.Android_AS-androidTest-0 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\generated\res\resValues\androidTest\debug
+com.qk.test.test.Android_AS-androidTest-1 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\generated\res\rs\androidTest\debug
+com.qk.test.test.Android_AS-mergeDebugAndroidTestResources-2 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.qk.test.test.Android_AS-mergeDebugAndroidTestResources-3 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.qk.test.test.Android_AS-merged_res-4 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\merged_res\debugAndroidTest
+com.qk.test.test.Android_AS-packaged_res-5 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\build\intermediates\packaged_res\debug
+com.qk.test.test.Android_AS-androidTest-6 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\androidTest\res
+com.qk.test.test.Android_AS-androidTestDebug-7 F:\UnityProjects\yongshiyujiayuan\AndroidProject\Android_AS\src\androidTestDebug\res

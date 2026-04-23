@@ -1,0 +1,23 @@
+com/qk/game/MainActivity.java
+ com.qk.game.MainActivity
+com/qk/game/GameApplication.java
+ com.qk.game.GameApplication
+com/qk/unity/QuickUnityPlayerproxyActivity.java
+ com.qk.unity.QuickUnityPlayerproxyActivity
+ com.qk.unity.QuickUnityPlayerproxyActivity$1
+ com.qk.unity.QuickUnityPlayerproxyActivity$1$1
+ com.qk.unity.QuickUnityPlayerproxyActivity$2
+ com.qk.unity.QuickUnityPlayerproxyActivity$3
+ com.qk.unity.QuickUnityPlayerproxyActivity$4
+ com.qk.unity.QuickUnityPlayerproxyActivity$5
+ com.qk.unity.QuickUnityPlayerproxyActivity$6
+ com.qk.unity.QuickUnityPlayerproxyActivity$QuickUnityExitNotiry
+ com.qk.unity.QuickUnityPlayerproxyActivity$QuickUnityInitNotify
+ com.qk.unity.QuickUnityPlayerproxyActivity$QuickUnityLoginNotify
+ com.qk.unity.QuickUnityPlayerproxyActivity$QuickUnityLogoutNotify
+ com.qk.unity.QuickUnityPlayerproxyActivity$QuickUnityPayNotify
+ com.qk.unity.QuickUnityPlayerproxyActivity$QuickUnitySwitchAccountNotify
+com/qk/game/SplashActivity.java
+ com.qk.game.SplashActivity
+com/qk/test/BuildConfig.java
+ com.qk.test.BuildConfig

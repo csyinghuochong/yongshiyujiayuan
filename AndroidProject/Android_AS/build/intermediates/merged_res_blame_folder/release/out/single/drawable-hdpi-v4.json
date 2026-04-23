@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load03.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load03.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load02.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load02.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load05.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load05.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load01.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load01.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load06.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load06.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load07.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load07.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load04.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load04.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_load08.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_load08.png"
+    },
+    {
+        "merged": "D:\\TestSpace\\MyApplication3\\Android_AS\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\qk_game_loadbg.png",
+        "source": "D:\\TestSpace\\MyApplication3\\Android_AS\\src\\main\\res\\drawable-hdpi\\qk_game_loadbg.png"
+    }
+]
