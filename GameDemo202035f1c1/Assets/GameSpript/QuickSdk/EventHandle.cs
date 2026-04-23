@@ -520,6 +520,22 @@ public class EventHandle : QuickSDKListener
 		QuickSDK.getInstance().exitGame();
 	}
 
+	public override void onPrivaceAgree()
+	{
+	}
+
+	public override void onPrivaceRefuse()
+	{
+	}
+
+	public override void onCallbackSuccess(string msg)
+	{
+	}
+
+	public override void onCallbackFaild(string msg)
+	{
+	}
+
 	public override void onSucceed(string infos)
 	{
 

@@ -27,7 +27,12 @@ namespace quicksdk
 			QuickSDKImp.getInstance().init();
 		}
 
-		public void init()
+        public void showPrivace()
+        {
+            QuickSDKImp.getInstance().callShowPrivace();
+        }
+
+        public void init()
         {
 			QuickSDKImp.getInstance().init();
 		}
@@ -80,11 +85,11 @@ namespace quicksdk
 
 
 
-		public int showToolBar(ToolbarPlace place)//1左上,2右上,3左中,4右中,5左下,6右下
+		public String showToolBar(ToolbarPlace place)//1左上,2右上,3左中,4右中,5左下,6右下
 		{
 			return QuickSDKImp.getInstance ().showToolBar (place);
 		}
-		public int hideToolBar()
+		public String hideToolBar()
 		{
 			return QuickSDKImp.getInstance ().hideToolBar ();
 		}
@@ -92,10 +97,15 @@ namespace quicksdk
 		{
 			return QuickSDKImp.getInstance ().isFunctionSupported (type);
 		}
-		public void callFunction(FuncType type)
+		public String callFunction(FuncType type)
 		{
-			QuickSDKImp.getInstance ().callFunction (type);
+			return QuickSDKImp.getInstance ().callFunction (type);
 		}
+
+        public String callFunctionWithResult(FuncType type)
+        {
+            return QuickSDKImp.getInstance().callFuncWithResult(type);
+        }
         public string channelName()          //获取渠道名称
 		{
 			return QuickSDKImp.getInstance ().channelName ();
@@ -134,13 +144,50 @@ namespace quicksdk
 			QuickSDKImp.getInstance ().updateRoleInfoWith (gameRoleInfo, isCreateRole);
 		}
 
-		public int enterUserCenter() //用户中心
+		public String enterUserCenter() //用户中心
 		{
 			return QuickSDKImp.getInstance ().enterUserCenter ();
 		}
 
 
+		public String openFloatUserCenter() //用户中心
+		{
+			return QuickSDKImp.getInstance().openFloatUserCenter();
+		}
+
+		public String getOaid()
+        {
+            return QuickSDKImp.getInstance().getOaid();
+        }
+
+        public String getParentChannelType()
+        {
+            return QuickSDKImp.getInstance().getParentChannelType();
+        }
+
+		public int callFuncTypeWithParams(int funcType,String[] param)
+        {
+			return QuickSDKImp.getInstance().callFunctionWithParams(funcType, param);
+        }
+
+		public void callFunctionWithParamsCallBack(int funcType, String[] param)
+		{
+			 QuickSDKImp.getInstance().callFunctionWithParamsCallBack(funcType, param);
+		}
+
+
+		public void callExtendFunction(int funcType)
+		{
+			QuickSDKImp.getInstance().callExtendFunction(funcType);
+		}
+
 		
+
+
+
+
+
+
 
 	}
 }
