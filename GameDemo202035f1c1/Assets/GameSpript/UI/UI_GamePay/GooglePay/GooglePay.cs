@@ -25,6 +25,8 @@ public class GooglePay : MonoBehaviour, IStoreListener
 
     void Start()
     {
+        if (EventHandle.IsQudaoPackage())
+            return;
 
     //如果是IOS则卸载脚本
 #if UNITY_IPHONE

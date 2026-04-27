@@ -16,5 +16,20 @@ class QudaoPayComponent : MonoBehaviour
     {
         Debug.Log("QudaoPay: " + state );
     }
+    
+    public void QudaoPayCallback(string result)
+    {
+        qudaoPayCallback(result);
+        //告诉服务器已经支付 等待返回结果
+        //再监听结果 进行发放奖励 实际上都是独立的
+        if (result == "支付成功")
+        {
+            Debug.Log("渠道支付成功");
+        }
+        else
+        {
+            Debug.Log("渠道支付失败");
+        }
+    }
 
 }

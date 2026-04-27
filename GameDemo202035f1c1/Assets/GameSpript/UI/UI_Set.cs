@@ -418,6 +418,11 @@ public class UI_Set : MonoBehaviour {
 
         //测试
         //Game_PublicClassVar.Get_gameLinkServerObj.QiangZhiShiMingStatus = true;
+
+        if (EventHandle.IsQudaoPackage())
+        {
+            return;
+        }
         
         if (Game_PublicClassVar.Get_gameLinkServerObj.QiangZhiShiMingStatus == false) {
             //不进行实名认证

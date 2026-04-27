@@ -723,7 +723,9 @@ public class GetSignature : MonoBehaviour
             GameObject.Find("Canvas/HuaWeiYinSi").SetActive(false);
 
 #if UNITY_ANDROID && !UNITY_EDITOR
+#if TapTap
             GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
+#endif
 #endif
         }
         //弹出界面

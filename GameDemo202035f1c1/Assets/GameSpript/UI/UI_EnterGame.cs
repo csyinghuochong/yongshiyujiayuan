@@ -346,11 +346,11 @@ public class UI_EnterGame : MonoBehaviour {
     private void OnDestroy()
     {
         Debug.Log("开始销毁：EnterGame");
-        //if (bReturnMainCity != true)
-        //{
-        //    EventHandle.CheckCreateRole();
-        //}
-        //bReturnMainCity = false;
+        if (bReturnMainCity != true)
+        {
+            EventHandle.CheckCreateRole();
+        }
+        bReturnMainCity = false;
     }
 
     //进入建筑界面
