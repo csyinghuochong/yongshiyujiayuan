@@ -4,10 +4,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using Weijing;
+using YooAsset;
 
 public class UI_EnterGame : MonoBehaviour {
 
-    private AsyncOperation mAsyn;
+    private SceneHandle mAsyn;
     private bool enterGameStatus;
     public GameObject Obj_Loading;
     private GameObject obj_loading;
@@ -75,24 +76,25 @@ public class UI_EnterGame : MonoBehaviour {
                         Game_PublicClassVar.Get_wwwSet.MapEnterStatus = true;
                         Game_PublicClassVar.Get_wwwSet.MapEnterTimeSum = 0;
 
-                        StartCoroutine("Load");
+                        Load();
+                        // StartCoroutine("Load");
                         //Debug.Log("异步加载执行完毕");
                     }
                 }
-                if (mAsyn != null && !mAsyn.isDone)
+                if (mAsyn != null && !mAsyn.IsDone)
                 {
                     //Debug.Log("下载不为空准备设置坐标点");
-                    float value = (float)mAsyn.progress / 2.0f;
+                    float value = (float)mAsyn.Progress / 2.0f;
                     //Debug.Log(value);
                     if (value != 0)
                     {
                         //Debug.Log("设置坐标点3");
                         obj_loading.GetComponent<UI_Loading>().LoadingValue = value + loadingSumTime + 0.1f;
                         //Debug.Log("Loding:" + obj_loading.GetComponent<UI_Loading>().LoadingValue);
-                        if (mAsyn.progress >= 0.9f)
+                        if (mAsyn.Progress >= 0.9f)
                         {
                             obj_loading.GetComponent<UI_Loading>().LoadingValue = 1;
-                            mAsyn.allowSceneActivation = true;
+                            // mAsyn.allowSceneActivation = true;
                             //Debug.Log("下载不为空准备设置坐标点123");
                             //Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.SetActive(false);
                             //测试
@@ -197,7 +199,7 @@ public class UI_EnterGame : MonoBehaviour {
                 if (mAsyn != null)
                 {
                     //Debug.Log("下载完成!");
-                    if (mAsyn.isDone)
+                    if (mAsyn.IsDone)
                     {
                         System.GC.Collect();
                         Resources.UnloadUnusedAssets();
@@ -307,7 +309,7 @@ public class UI_EnterGame : MonoBehaviour {
                     DestroyKeepObj = true;
                     //Application.LoadLevel("EnterGame"); //加载场景
                     Debug.Log("进入主城开始...");
-                    SceneManager.LoadScene(1);
+                    YooAssets.LoadSceneAsync("Assets/Bundles/Scenes/EnterGame.unity");
                     Debug.Log("进入主城结束...");
                 }
             }
@@ -464,7 +466,7 @@ public class UI_EnterGame : MonoBehaviour {
     }
 
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
-    IEnumerator Load()
+    void Load()
     {
         //获取角色当前进入地图
         string mapName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NowMapName", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
@@ -475,9 +477,9 @@ public class UI_EnterGame : MonoBehaviour {
         //mapName = "EnterGame";
         //Debug.Log("mapName = " + mapName);
         //Debug.Log("mapPositionName = " + mapPositionName);
-        mAsyn = SceneManager.LoadSceneAsync(mapName);
+        mAsyn = YooAssets.LoadSceneAsync($"Assets/Bundles/Scenes/{mapName}.unity");
         //Debug.Log("开始加载地图 = " + mapName);
-        mAsyn.allowSceneActivation = false;
+        // mAsyn.allowSceneActivation = false;
         //进入游戏界面恢复主界面正常显示
         Game_PublicClassVar.Get_game_PositionVar.EnterRoseCameraDrawStatus = false;
         if (ui_set != null) {
@@ -487,7 +489,7 @@ public class UI_EnterGame : MonoBehaviour {
             Game_PublicClassVar.Get_game_PositionVar.UpdataMainSkillUI = true;
         }
         //Debug.Log("开始载入游戏地图");
-        yield return mAsyn;
+        // yield return mAsyn;
     }
 
 

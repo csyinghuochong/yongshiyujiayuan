@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using YooAsset;
 
 public class UI_GameSetting : MonoBehaviour {
 
@@ -759,7 +760,7 @@ public class UI_GameSetting : MonoBehaviour {
         }
         Destroy(Game_PublicClassVar.Get_wwwSet.gameObject.GetComponent<WWWSet>());
         Destroy(Game_PublicClassVar.Get_wwwSet.gameObject);
-        SceneManager.LoadScene("StartGame");        //加载场景
+        YooAssets.LoadSceneAsync("Assets/Bundles/Scenes/StartGame");        //加载场景
     }
 
     //打开测试帧率

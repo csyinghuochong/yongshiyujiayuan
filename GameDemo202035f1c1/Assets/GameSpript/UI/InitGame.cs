@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YooAsset;
 
 public class InitGame : MonoBehaviour
 {
@@ -53,7 +54,7 @@ public class InitGame : MonoBehaviour
             UnityEngine.Debug.Log($"onRequestPermissionsResult: StartUpdate");
 
             //加载场景
-            SceneManager.LoadScene("StartGame");        //加载场景
+            YooAssets.LoadSceneAsync("Assets/Bundles/Scenes/StartGame.unity");        //加载场景
         }
         //弹出界面
         //Game_PublicClassVar.Get_gameServerObj.Obj_UI_StartGameFunc.GetComponent<UI_StartGameFunc>().QingQiuQuanXianShow();

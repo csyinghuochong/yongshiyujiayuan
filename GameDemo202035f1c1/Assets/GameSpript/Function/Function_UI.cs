@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using CodeStage.AntiCheat.ObscuredTypes;
+using YooAsset;
 
 public class Function_UI 
 {
@@ -3307,7 +3308,7 @@ public class Function_UI
         }
         MonoBehaviour.Destroy(Game_PublicClassVar.Get_wwwSet.gameObject.GetComponent<WWWSet>());
         MonoBehaviour.Destroy(Game_PublicClassVar.Get_wwwSet.gameObject);
-        SceneManager.LoadScene("StartGame");        //加载场景
+        YooAssets.LoadSceneAsync("Assets/Bundles/Scenes/StartGame");        //加载场景
     }
 
 

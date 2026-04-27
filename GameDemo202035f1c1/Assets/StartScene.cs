@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YooAsset;
 
 public class StartScene : MonoBehaviour
 {
 
-    [RuntimeInitializeOnLoadMethod]
-    static void Initialize()
-    {
-        string startSceneName = "StartGame";
-        Scene scene = SceneManager.GetActiveScene();
-        if (scene.name.Equals(startSceneName))
-        {
-            return;
-        }
-        SceneManager.LoadScene(startSceneName);
-    }
+    // [RuntimeInitializeOnLoadMethod]
+    // static void Initialize()
+    // {
+    //     string startSceneName = "StartGame";
+    //     Scene scene = SceneManager.GetActiveScene();
+    //     if (scene.name.Equals(startSceneName))
+    //     {
+    //         return;
+    //     }
+    //     SceneManager.LoadScene(startSceneName);
+    // }
 }
