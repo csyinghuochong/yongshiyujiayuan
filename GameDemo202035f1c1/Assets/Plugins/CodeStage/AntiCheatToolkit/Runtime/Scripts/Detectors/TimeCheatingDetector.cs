@@ -213,7 +213,7 @@ namespace CodeStage.AntiCheat.Detectors
 			Get
 		}
 
-		internal const string ComponentName = "Time Cheating Detector";
+		public const string ComponentName = "Time Cheating Detector";
 		private const string LogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
 		private const int DefaultTimeoutSeconds = 10;
 

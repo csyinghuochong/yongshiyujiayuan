@@ -1,0 +1,17 @@
+{
+    "name": "CodeStage.AntiCheat.Examples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ad4539f3b96acb84cb0e27e153d07a62",
+        "GUID:50e4c5e721a23604dba7d4a45bdfca4f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

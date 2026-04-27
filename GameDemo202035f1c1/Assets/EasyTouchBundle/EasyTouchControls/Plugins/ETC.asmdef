@@ -1,0 +1,16 @@
+{
+    "name": "ETC",
+    "rootNamespace": "",
+    "references": [
+        "GUID:77343df2aadd5f44c9d04a0da5012d18"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

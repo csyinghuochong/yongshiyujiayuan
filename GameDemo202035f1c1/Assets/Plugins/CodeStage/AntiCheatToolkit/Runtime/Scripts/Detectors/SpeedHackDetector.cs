@@ -33,8 +33,8 @@ namespace CodeStage.AntiCheat.Detectors
 	[HelpURL(ACTkConstants.DocsRootUrl + "class_code_stage_1_1_anti_cheat_1_1_detectors_1_1_speed_hack_detector.html")]
 	public class SpeedHackDetector : ACTkDetectorBase
 	{
-		internal const string ComponentName = "Speed Hack Detector";
-		internal const string LogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
+		public const string ComponentName = "Speed Hack Detector";
+		public const string LogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
 
 		private const long TicksPerSecond = TimeSpan.TicksPerMillisecond * 1000;
 		private const int Threshold = 5000000; // == 500 ms, allowed time difference between genuine and vulnerable ticks

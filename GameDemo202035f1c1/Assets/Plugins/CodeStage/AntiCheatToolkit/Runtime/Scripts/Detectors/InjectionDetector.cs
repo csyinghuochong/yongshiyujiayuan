@@ -65,7 +65,7 @@ namespace CodeStage.AntiCheat.Detectors
 	[HelpURL(ACTkConstants.DocsRootUrl + "class_code_stage_1_1_anti_cheat_1_1_detectors_1_1_injection_detector.html")]
 	public class InjectionDetector : ACTkDetectorBase
 	{
-		internal const string ComponentName = "Injection Detector";
+		public const string ComponentName = "Injection Detector";
 		internal const string FinalLogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
 
 #if UNITY_SUPPORTED_PLATFORM

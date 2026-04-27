@@ -48,8 +48,8 @@ namespace CodeStage.AntiCheat.Detectors
 	[HelpURL(ACTkConstants.DocsRootUrl + "class_code_stage_1_1_anti_cheat_1_1_detectors_1_1_wall_hack_detector.html")]
 	public class WallHackDetector : ACTkDetectorBase
 	{
-		internal const string ComponentName = "WallHack Detector";
-		internal const string FinalLogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
+		public const string ComponentName = "WallHack Detector";
+		public const string FinalLogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
 
 		private const string ServiceContainerName = "[WH Detector Service]";
 		private const string WireframeShaderName = "Hidden/ACTk/WallHackTexture";

@@ -29,8 +29,8 @@ namespace CodeStage.AntiCheat.Detectors
 	[HelpURL(ACTkConstants.DocsRootUrl + "class_code_stage_1_1_anti_cheat_1_1_detectors_1_1_obscured_cheating_detector.html")]
 	public class ObscuredCheatingDetector : ACTkDetectorBase
 	{
-		internal const string ComponentName = "Obscured Cheating Detector";
-		internal const string FinalLogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
+		public const string ComponentName = "Obscured Cheating Detector";
+		public const string FinalLogPrefix = ACTkConstants.LogPrefix + ComponentName + ": ";
 
 		private static int instancesInScene;
 

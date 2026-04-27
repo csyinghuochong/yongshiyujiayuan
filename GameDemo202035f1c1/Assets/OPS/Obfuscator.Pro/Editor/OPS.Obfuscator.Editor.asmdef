@@ -1,8 +1,8 @@
 {
-    "name": "Loader",
+    "name": "OPS.Obfuscator.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:e34a5702dd353724aa315fb8011f08c3"
+        "GUID:a3be8200eec2b4d46b430ad89b549e1c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
