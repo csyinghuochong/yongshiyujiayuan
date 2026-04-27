@@ -3159,7 +3159,7 @@ public class Rose_Status : MonoBehaviour
 
 
     //碰撞范围内调用
-    void OnCollisionEnter(Collider collider)
+    void OnCollisionEnter(Collision collision)
     {
 
         //Debug.Log("碰撞体111：" + collider.gameObject.name);
