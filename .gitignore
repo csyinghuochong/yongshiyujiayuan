@@ -5,6 +5,9 @@
 
 *.pyc
 *.suo
+*.csproj
+*.sln
+*/UserSettings/
 
 .settings/
 .localhistory/
