@@ -82,7 +82,7 @@ crashlytics-build.properties
 .vscode
 
 #Bundles
-Bundles/
+/Bundles/
 
 #Sandbox
 Sandbox/
@@ -97,3 +97,7 @@ package/
 #YooAssets
 package/
 yoo/
+
+UserSettings/
+
+[Aa]ssets/Bundles/Code

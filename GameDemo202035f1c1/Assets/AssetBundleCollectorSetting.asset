@@ -38,3 +38,16 @@ MonoBehaviour:
         FilterRuleName: CollectScene
         AssetTags: 
         UserData: 
+    - GroupName: Code
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Bundles/Code
+        CollectorGUID: af991fe6dee76ff4dbb52dbffa04bf48
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 

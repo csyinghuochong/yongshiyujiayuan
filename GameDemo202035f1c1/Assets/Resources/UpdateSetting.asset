@@ -24,6 +24,7 @@ MonoBehaviour:
   - UniTask.dll
   - YooAsset.dll
   - UnityEngine.CoreModule.dll
+  - protobuf-net.dll
   LogicMainDllName: Game.Hotfix.dll
   AssemblyTextAssetExtension: .bytes
   AssemblyTextAssetPath: Bundles/Code

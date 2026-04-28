@@ -154,7 +154,6 @@ public class Init : MonoBehaviour
                     AssetHandle handle = YooAssets.LoadAssetAsync<TextAsset>(assetLocation);
                     await handle.Task;
                     TextAsset result = (TextAsset)handle.AssetObject;
-                    handle.Release();
 
                     LoadAssetSuccess(result);
                 }
@@ -321,11 +320,8 @@ public class Init : MonoBehaviour
             Debug.Log($"LoadMetadataAsset: [ {assetLocation} ]");
             _loadMetadataAssetCount++;
 
-            AssetHandle handle = YooAssets.LoadAssetSync<TextAsset>(assetLocation);
-            TextAsset result = (TextAsset)handle.AssetObject;
-            handle.Release();
-
-            LoadMetadataAssetSuccess(result);
+            AssetHandle handle = YooAssets.LoadAssetAsync<TextAsset>(assetLocation);
+            handle.Completed += assetHandle => LoadMetadataAssetSuccess((TextAsset)assetHandle.AssetObject);
         }
 
         _loadMetadataAssemblyWait = true;

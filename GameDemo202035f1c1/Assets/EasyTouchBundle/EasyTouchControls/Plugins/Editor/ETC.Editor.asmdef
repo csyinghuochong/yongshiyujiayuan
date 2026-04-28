@@ -1,8 +1,8 @@
 {
-    "name": "I2.Loc.Common.Editor",
+    "name": "ETC.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:6b0f5bb1696694a4fbdadc439c6e8631"
+        "GUID:29f169183a85ec442b73aabf4797e1d7"
     ],
     "includePlatforms": [
         "Editor"
