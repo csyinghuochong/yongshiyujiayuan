@@ -89301,7 +89301,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 99affb8387c99cf42991947c6f44f520, type: 3}
+  - {fileID: 21300000, guid: c3b4694ae20c37c47bed4a5061eb2dd0, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -242907,8 +242909,8 @@ MonoBehaviour:
     - GameUI/Img/Img_168[Img_168]
     - GameUI/Img/UI_Image_59[UI_Image_59]
     Languages_Touch:
-    - 
-    - 
+    - Img_168
+    - UI_Image_59
     Flags: 0000
   - Term: "\u8FD4\u56DE"
     TermType: 0
