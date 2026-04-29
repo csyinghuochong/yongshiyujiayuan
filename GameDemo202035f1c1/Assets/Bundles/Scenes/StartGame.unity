@@ -11435,8 +11435,8 @@ MonoBehaviour:
     - GameUI/Btn/Btn_54[Btn_54]
     - GameUI_EN/Btn/Btn_54[Btn_54]
     Languages_Touch:
-    - 
-    - 
+    - Btn_54
+    - Btn_54
     Flags: 0000
   - Term: "\u56FE\u7247_\u6218\u58EB"
     TermType: 5
@@ -11445,8 +11445,8 @@ MonoBehaviour:
     - GameUI/Img/Img_151[Img_151]
     - GameUI_EN/Img/Img_151[Img_151]
     Languages_Touch:
-    - 
-    - 
+    - Img_151
+    - Img_151
     Flags: 0000
   - Term: "\u56FE\u7247_\u9B54\u6CD5\u5E08"
     TermType: 5
@@ -11455,8 +11455,8 @@ MonoBehaviour:
     - GameUI/Img/Img_155[Img_155]
     - GameUI/Img/UI_Image_59[UI_Image_59]
     Languages_Touch:
-    - GameUI/Img/Img_152[Img_152]
-    - 
+    - Img_152
+    - Img_152
     Flags: 0000
   - Term: "\u8F93\u51FA"
     TermType: 0
@@ -11505,7 +11505,7 @@ MonoBehaviour:
     - GameUI/Img/Img_154[Img_154]
     - GameUI/Img/UI_Image_59[UI_Image_59]
     Languages_Touch:
-    - 
+    - Img_154
     - 
     Flags: 0000
   - Term: "\u56FE\u7247_\u9B54\u6CD5\u5E08\u63CF\u8FF0"
@@ -11515,7 +11515,7 @@ MonoBehaviour:
     - 
     - 
     Languages_Touch:
-    - GameUI/Img/Img_155[Img_155]
+    - Img_155
     - GameUI/Img/UI_Image_59[UI_Image_59]
     Flags: 0000
   - Term: "\u56FE\u7247_\u51FA\u6218\u4E2D1"
@@ -16934,7 +16934,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &1026694122
 RectTransform:
@@ -17017,7 +17017,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 14f548ccc276ad545b7ad440792f6d95, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -19917,7 +19918,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 48c093d6d080baa4f8aafc1c707964ae, type: 3}
+  - {fileID: 21300000, guid: ccfd7b7f0d90b014e92e8da68702dec6, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -21228,9 +21231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bba04d8d61ad4d36b6c49dbb738b98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appKey: 2d21337c7dc80
-  appSerect: a2c24f564def8b4a450a88491e5cc353
-  isWarn: 1
 --- !u!114 &1284042165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21243,13 +21243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3108023233a4a55ac84bf8ad028513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demoSkin: {fileID: 0}
-  smssdk: {fileID: 1284042164}
-  phone: 
-  zone: 86
-  tempCode: 14373831
-  code: 
-  result: 
 --- !u!1 &1285563746
 GameObject:
   m_ObjectHideFlags: 0
@@ -24916,7 +24909,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: f4c03667d6373e84896c0c7bf0b886c7, type: 3}
+  - {fileID: 21300000, guid: afdfd0837460e8d4fa9ed4bdf8886fe0, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -29975,7 +29970,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: b151d078992886140b0821a04217a492, type: 3}
+  - {fileID: 21300000, guid: d3c8ce30a4121ff49bba113ae9c99305, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -31398,7 +31395,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 04c9fc4e1345e584696cefc4bd2736c7, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
