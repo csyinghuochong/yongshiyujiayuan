@@ -518,7 +518,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 5460bb1a106b2c4478019f4c690d049c, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -6855,7 +6856,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 45246470bfb445646bf19a882e088bd2, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -6959,7 +6961,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 45246470bfb445646bf19a882e088bd2, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -9293,7 +9296,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 45246470bfb445646bf19a882e088bd2, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -9669,7 +9673,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 5c056188fdf933a4db3e91cfdc6228ad, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -11333,7 +11338,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 36c9a2694c5bd634f9e905b2ca6e0d4d, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -11906,7 +11912,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 3eb0f56527fa6d04b9609a847a8616e5, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -12010,7 +12017,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 9efadffdcb0b14a42aca679c9aea8f88, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -12734,7 +12742,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 45246470bfb445646bf19a882e088bd2, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -12971,7 +12980,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: ae56163f7f95eac479e2fefb57be8374, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -15214,7 +15224,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 17db9453183149140aca173ba59d9c19, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -15468,7 +15479,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 85e276bbad40c354fbc48d359d80784e, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -16893,7 +16905,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 69093a5b681819c4f967595543b2d131, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -19275,7 +19288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3eb0f56527fa6d04b9609a847a8616e5, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19309,7 +19322,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 3eb0f56527fa6d04b9609a847a8616e5, type: 3}
+  - {fileID: 21300000, guid: a00fdb232c2a9df488dfa65345ed5dc6, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -20842,7 +20857,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 45246470bfb445646bf19a882e088bd2, type: 3}
+  - {fileID: 21300000, guid: f4304273587fbec4daf62d33bf61eec7, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -21096,7 +21113,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 36c9a2694c5bd634f9e905b2ca6e0d4d, type: 3}
+  - {fileID: 21300000, guid: b35a1aca4656b4e4d84d70a4b7017cec, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -22357,7 +22376,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 5c056188fdf933a4db3e91cfdc6228ad, type: 3}
+  - {fileID: 21300000, guid: 3144c20e37a0b19478fb8f65026ffd34, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -23596,7 +23617,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 21aabf8075a34ad40af8608580046ffe, type: 3}
+  - {fileID: 21300000, guid: 35a9056babfa82146be3c5894d179c67, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -24425,7 +24448,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 17db9453183149140aca173ba59d9c19, type: 3}
+  - {fileID: 21300000, guid: 50db5f11c50aa96408c1596b586bf3f2, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -33979,7 +34004,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: ae56163f7f95eac479e2fefb57be8374, type: 3}
+  - {fileID: 21300000, guid: 27773b281f0bcc4438d9c9e223763204, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -34408,7 +34435,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 9efadffdcb0b14a42aca679c9aea8f88, type: 3}
+  - {fileID: 21300000, guid: 78167a0f395b5404ca955d8e26c285a6, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -41128,7 +41157,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 45246470bfb445646bf19a882e088bd2, type: 3}
+  - {fileID: 21300000, guid: f4304273587fbec4daf62d33bf61eec7, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -42004,7 +42035,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 69093a5b681819c4f967595543b2d131, type: 3}
+  - {fileID: 21300000, guid: 8bed8da5e8925294595a5728cf3de7ef, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -42291,7 +42324,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 45246470bfb445646bf19a882e088bd2, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -48445,7 +48479,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 5460bb1a106b2c4478019f4c690d049c, type: 3}
+  - {fileID: 21300000, guid: d8ea9810a2b449d48b36b50f0d939392, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -49907,7 +49943,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 85e276bbad40c354fbc48d359d80784e, type: 3}
+  - {fileID: 21300000, guid: 74256015086911d43ab549d5d3425f78, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
