@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Btn_GanXieMingDan : MonoBehaviour {
@@ -29,7 +29,7 @@ public class Btn_GanXieMingDan : MonoBehaviour {
 
     //DebugLog
     public void Btn_DebugLog() {
-        GameObject logObj = (GameObject)Resources.Load("UGUI/UISet/Other/UI_ErrorLog", typeof(GameObject));
+        GameObject logObj = (GameObject)ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>("UISet/Other/UI_ErrorLog");
         GameObject errorLogObj = (GameObject)Instantiate(logObj);
         errorLogObj.transform.SetParent(GameObject.Find("Canvas").transform);
         errorLogObj.transform.localPosition = Vector3.zero;

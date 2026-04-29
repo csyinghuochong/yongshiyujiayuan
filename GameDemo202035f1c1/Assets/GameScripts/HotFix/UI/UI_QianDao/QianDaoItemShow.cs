@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -74,7 +74,7 @@ public class QianDaoItemShow : MonoBehaviour {
         if (qianDaoNum_Com_Day == "0") {
             if (int.Parse(qianDaoDay) - 1 > int.Parse(qianDaoNum_Com))
             {
-                object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+                object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                 Material huiMaterial = huiObj as Material;
                 Obj_QianDaoShowImg_1.GetComponent<Image>().material = huiMaterial;
                 Obj_QianDaoShowImg_2.GetComponent<Image>().material = huiMaterial;
@@ -88,7 +88,7 @@ public class QianDaoItemShow : MonoBehaviour {
         {
             if (int.Parse(qianDaoDay) > int.Parse(qianDaoNum_Com))
             {
-                object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+                object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                 Material huiMaterial = huiObj as Material;
                 Obj_QianDaoShowImg_1.GetComponent<Image>().material = huiMaterial;
                 Obj_QianDaoShowImg_2.GetComponent<Image>().material = huiMaterial;

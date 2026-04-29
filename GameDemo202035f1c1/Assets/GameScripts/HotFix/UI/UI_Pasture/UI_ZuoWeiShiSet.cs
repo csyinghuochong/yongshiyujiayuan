@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -59,7 +59,7 @@ public class UI_ZuoWeiShiSet : MonoBehaviour {
 
         //显示阶段
         string nowLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZuoQiJieDuanLv", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RosePastureData");
-        object obj = Resources.Load("GameUI/Img/ZuoQiJieDuanLv_" + nowLv, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Img/ZuoQiJieDuanLv_" + nowLv);
         Sprite itemIcon = obj as Sprite;
         Obj_ZuoQiJinJieShow.GetComponent<Image>().sprite = itemIcon;
 
@@ -121,7 +121,7 @@ public class UI_ZuoWeiShiSet : MonoBehaviour {
         Obj_SelectItemID.SetActive(true);
 
         //显示道具Icon
-        object obj = Resources.Load("ItemIcon/" + nowItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + nowItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_SelectItemID.GetComponent<Image>().sprite = itemIcon;
 

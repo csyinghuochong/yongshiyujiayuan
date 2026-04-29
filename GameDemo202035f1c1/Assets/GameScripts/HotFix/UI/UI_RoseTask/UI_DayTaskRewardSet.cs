@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,7 +25,7 @@ public class UI_DayTaskRewardSet : MonoBehaviour {
         //显示道具Icon
         string ItemIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", ItemID, "Item_Template");
         //string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", ItemID, "Item_Template");
-        object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
         Obj_ItemNum.GetComponent<Text>().text = ItemNum;

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -89,7 +89,7 @@ public class Main_100005 : MonoBehaviour {
                     Game_PublicClassVar.Get_game_PositionVar.FuBen_ShangHaiValue_Rose = 0;
 
                     //播放特效
-                    //GameObject SkillObj = (GameObject)Resources.Load("Effect/Skill/" + "Eff_Skill_ZhaoHuan_4", typeof(GameObject));
+                    //GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_Skill_ZhaoHuan_4");
                     GameObject SkillObject_p = (GameObject)Instantiate(CreateMonsterEffectObj);
 
                     //SkillObject_p.transform.position = monsterObj.transform.position;

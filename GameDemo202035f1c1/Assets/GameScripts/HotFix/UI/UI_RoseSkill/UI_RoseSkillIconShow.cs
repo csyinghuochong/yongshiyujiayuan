@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -36,7 +36,7 @@ public class UI_RoseSkillIconShow : MonoBehaviour {
                     //string skillValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillID", "ID", skillID, "Item_Template");
                     //修改ICON （在做技能交换位置时,此处会修正）
                     string skillIconID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", skillID, "Item_Template");
-                    object obj = Resources.Load("ItemIcon/" + skillIconID, typeof(Sprite));
+                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + skillIconID);
                     Sprite skillIconSp = obj as Sprite;
                     Img_SkillIcon.GetComponent<Image>().sprite = skillIconSp;
 
@@ -45,7 +45,7 @@ public class UI_RoseSkillIconShow : MonoBehaviour {
                 case "6":
 
                     string skillIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillIcon", "ID", skillID, "Skill_Template");
-                    obj = Resources.Load("SkillIcon/" + skillIcon, typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIcon);
                     skillIconSp = obj as Sprite;
                     Img_SkillIcon.GetComponent<Image>().sprite = skillIconSp;
 
@@ -136,7 +136,7 @@ public class UI_RoseSkillIconShow : MonoBehaviour {
             {
                 moveIconObj = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.OBJ_UIMoveIcon);
                 //显示Icon
-                object obj = Resources.Load("ItemIcon/" + skillIcon, typeof(Sprite));
+                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + skillIcon);
                 Sprite skillIconSpr = obj as Sprite;
                 moveIconObj.GetComponent<UI_MoveItemIcon>().itemIconSprite = skillIconSpr;      //传入图标精灵
                 moveIconObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UI_TipsSet.transform);
@@ -150,7 +150,7 @@ public class UI_RoseSkillIconShow : MonoBehaviour {
             {
                 moveIconObj = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.OBJ_UIMoveIcon);
                 //显示Icon
-                object obj = Resources.Load("SkillIcon/" + skillIcon, typeof(Sprite));
+                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIcon);
                 Sprite skillIconSpr = obj as Sprite;
                 moveIconObj.GetComponent<UI_MoveItemIcon>().itemIconSprite = skillIconSpr;      //传入图标精灵
                 moveIconObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UI_TipsSet.transform);

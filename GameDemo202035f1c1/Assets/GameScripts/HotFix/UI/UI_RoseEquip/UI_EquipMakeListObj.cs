@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -48,12 +48,12 @@ public class UI_EquipMakeListObj : MonoBehaviour {
 		Obj_ItemLv.GetComponent<Text>().text = makeLv + "级";
 
         //显示底图
-		Object obj = Resources.Load("ItemIcon/" + itemIcon, typeof(Sprite));
+		Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + itemIcon);
         Sprite img = obj as Sprite;
 		Obj_ItemIcon.GetComponent<Image>().sprite = img;
 
 		//显示品质
-		object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(itemquality), typeof(Sprite));
+		object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(itemquality));
 		Sprite itemQuality = obj2 as Sprite;
 		Obj_ItemQuality.GetComponent<Image>().sprite = itemQuality;
 		/*
@@ -82,7 +82,7 @@ public class UI_EquipMakeListObj : MonoBehaviour {
 		if (!ifMakeStatus) {
 
 			//置灰
-			object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+			object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
 			Material huiMaterial = huiObj as Material;
 			Obj_ItemIcon.GetComponent<Image>().material = huiMaterial;
 			Obj_ItemQuality.GetComponent<Image>().material = huiMaterial;

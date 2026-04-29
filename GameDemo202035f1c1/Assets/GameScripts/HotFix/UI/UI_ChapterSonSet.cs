@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -105,7 +105,7 @@ public class UI_ChapterSonSet : MonoBehaviour {
         }
         //Debug.Log("ShowMonsterName = " + ShowMonsterName);
         ShowMonsterNameObj.GetComponent<Text>().text = ShowMonsterName;
-        object obj2 = Resources.Load("CameraText/MonsterMolde_" + ChapterNum, typeof(Texture));
+        object obj2 = ResourcesLoaderComponent.Instance.LoadTextureSync<Texture>("CameraText/MonsterMolde_" + ChapterNum);
         Texture monsterImage = obj2 as Texture;
         //Obj_EquipQuality.GetComponent<Image>().sprite = itemQuality;
         ShowMonsterImageObj.GetComponent<RawImage>().texture = monsterImage;

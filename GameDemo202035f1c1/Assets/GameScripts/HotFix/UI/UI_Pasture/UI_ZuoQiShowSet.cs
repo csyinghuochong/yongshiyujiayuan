@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -69,7 +69,7 @@ public class UI_ZuoQiShowSet : MonoBehaviour {
         }
 
         //显示阶段属性加成
-        object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+        object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
         Material huiMaterial = huiObj as Material;
         Obj_JinJieShowImage[0].GetComponent<Image>().material = huiMaterial;
         Obj_JinJieShowImage[1].GetComponent<Image>().material = huiMaterial;
@@ -120,7 +120,7 @@ public class UI_ZuoQiShowSet : MonoBehaviour {
         else {
             Obj_ZuoQiJinJieShow.SetActive(true);
             Debug.Log("nowLv = " + nowLv);
-            object obj = Resources.Load("GameUI/Img/ZuoQiJieDuanLv_" + nowLv, typeof(Sprite));
+            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Img/ZuoQiJieDuanLv_" + nowLv);
             Sprite itemIcon = obj as Sprite;
             Obj_ZuoQiJinJieShow.GetComponent<Image>().sprite = itemIcon;
         }
@@ -132,7 +132,7 @@ public class UI_ZuoQiShowSet : MonoBehaviour {
             if (nowZuoQiShowID == "" || nowZuoQiShowID == "0" || nowZuoQiShowID == null) {
                 nowZuoQiShowID = "10001";
             }
-            object obj = Resources.Load("CameraImage/ZuoQi_" + nowZuoQiShowID, typeof(Texture));
+            object obj = ResourcesLoaderComponent.Instance.LoadTextureSync<Texture>("CameraImage/ZuoQi_" + nowZuoQiShowID);
             Texture itemIcon = obj as Texture;
             Obj_ZuoQiImgShow.GetComponent<RawImage>().texture = itemIcon;
         }

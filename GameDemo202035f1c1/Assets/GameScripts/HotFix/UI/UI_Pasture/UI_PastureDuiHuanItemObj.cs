@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -48,7 +48,7 @@ public class UI_PastureDuiHuanItemObj : MonoBehaviour
 
         if (!ifshow)
         {
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_BtnImg.GetComponent<Image>().material = huiMaterial;
             Obj_ItemName.SetActive(false);
@@ -61,12 +61,12 @@ public class UI_PastureDuiHuanItemObj : MonoBehaviour
         else
         {
             //显示道具Icon
-            object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
             Sprite itemIcon = obj as Sprite;
             Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
             //显示品质
-            object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality), typeof(Sprite));
+            object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
             Sprite itemQuality = obj2 as Sprite;
             Obj_ItemQuality.GetComponent<Image>().sprite = itemQuality;
 

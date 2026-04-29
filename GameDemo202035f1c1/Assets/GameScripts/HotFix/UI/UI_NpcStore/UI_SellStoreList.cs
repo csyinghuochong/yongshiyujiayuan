@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -31,13 +31,13 @@ public class UI_SellStoreList : MonoBehaviour
 		string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", ItemID, "Item_Template");
 		ItemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", ItemID, "Item_Template");
 		//显示道具Icon
-		object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
 		Sprite itemIcon = obj as Sprite;
 		Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 		
 		//显示道具品质
 		string itemQuality = Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality);
-		obj = Resources.Load(itemQuality, typeof(Sprite));
+		obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(itemQuality);
 		Sprite itemQuility = obj as Sprite;
 		Obj_ItemQuality.GetComponent<Image>().sprite = itemQuility;
 

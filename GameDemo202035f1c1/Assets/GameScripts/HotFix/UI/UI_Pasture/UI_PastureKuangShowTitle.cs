@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -84,7 +84,7 @@ public class UI_PastureKuangShowTitle : MonoBehaviour
                         //Obj_PetName[y].GetComponent<Text>().text = petName;
 
                         //显示底图
-                        Object obj = Resources.Load("PetHeadIcon/" + petHeadIcon, typeof(Sprite));
+                        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + petHeadIcon);
                         Sprite img = obj as Sprite;
                         Obj_PetHeadIcon[y].GetComponent<Image>().sprite = img;
                     }

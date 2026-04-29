@@ -245,11 +245,11 @@ public class UI_ItemTips : MonoBehaviour {
         //职业处理
 
         //string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", ItemID, "Item_Template");
-        object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
-        object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(itemQuality), typeof(Sprite));
+        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(itemQuality));
         Sprite itemQualityobj = obj2 as Sprite;
         Obj_ItemQuality.GetComponent<Image>().sprite = itemQualityobj;
 

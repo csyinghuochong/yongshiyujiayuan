@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -94,7 +94,7 @@ public class UI_PastureItemFunctionSet : MonoBehaviour {
         Obj_EquipBtnText_3.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 
         //显示按钮
-        object obj = Resources.Load("GameUI/" + "Btn/Btn_12_2", typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         ObjBtn_HeCheng.GetComponent<Image>().sprite = img;
         ObjBtn_ShangRen.GetComponent<Image>().sprite = img;
@@ -106,7 +106,7 @@ public class UI_PastureItemFunctionSet : MonoBehaviour {
             case "1":
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_HeCheng.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_1.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -117,7 +117,7 @@ public class UI_PastureItemFunctionSet : MonoBehaviour {
             case "2":
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_ShangRen.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_2.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -128,7 +128,7 @@ public class UI_PastureItemFunctionSet : MonoBehaviour {
             case "3":
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_FuMo.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_3.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);

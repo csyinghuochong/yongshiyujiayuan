@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 //加血技能
 public class PetSkill_ZhongJi_1 : MonoBehaviour
@@ -29,7 +29,7 @@ public class PetSkill_ZhongJi_1 : MonoBehaviour
                 string effectName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HitEffectName", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
                 if (effectName != "0")
                 {
-                    actObj.GetComponent<AI_1>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName);
+                    actObj.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                     actObj.GetComponent<AI_1>().IfHitEffect = true;
                 }
             }
@@ -41,7 +41,7 @@ public class PetSkill_ZhongJi_1 : MonoBehaviour
                 string effectName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HitEffectName", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
                 if (effectName != "0")
                 {
-                    actObj.GetComponent<AIPet>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName);
+                    actObj.GetComponent<AIPet>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                     actObj.GetComponent<AIPet>().IfHitEffect = true;
                 }
             }
@@ -50,7 +50,7 @@ public class PetSkill_ZhongJi_1 : MonoBehaviour
             //获取技能特效名称
             string acteffectName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EffectName", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
             //实例化技能特效
-            GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + acteffectName, typeof(GameObject));
+            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
             if (SkillEffect != null) {
                 GameObject effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
@@ -93,7 +93,7 @@ public class PetSkill_ZhongJi_1 : MonoBehaviour
 
         //实例化技能特效
         /*
-        GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
         GameObject effect = (GameObject)Instantiate(SkillEffect);
         effect.SetActive(false);
         effect.transform.parent = this.transform;

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -501,7 +501,7 @@ public class Function_AI : MonoBehaviour {
         GameObject monsterObj = null;
         if (newMonsterObj == null)
         {
-            GameObject obj = (GameObject)Resources.Load("CreateMonster/" + monsterID, typeof(GameObject));
+            GameObject obj = (GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("CreateMonster/" + monsterID);
             if (obj != null)
             {
                 monsterObj = Instantiate(obj);
@@ -3920,7 +3920,7 @@ public class Function_AI : MonoBehaviour {
         modelShowID = modelShowID;
 
         //更换贴图
-        object huiObj = (Material)Resources.Load("3DModel/MonsterModel/BianYiTieTu/" + modelShowID, typeof(Material));
+        object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadUnitSync<Material>("3DModel/MonsterModel/BianYiTieTu/" + modelShowID);
         Material huiMaterial = huiObj as Material;
         SkinnedMeshRenderer skinned = null;
         if (aiObj.GetComponent<AI_1>() != null) {

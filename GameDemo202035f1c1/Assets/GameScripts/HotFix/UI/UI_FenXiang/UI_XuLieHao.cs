@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,12 +35,12 @@ public class UI_XuLieHao : MonoBehaviour {
         Obj_QQSet.SetActive(false);
 
         //显示按钮
-        object obj = Resources.Load("GameUI/" + "Btn/Btn_23_2", typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_2");
         Sprite img = obj as Sprite;
         Obj_Btn_WeiXin.GetComponent<Image>().sprite = img;
 
         //显示按钮
-        obj = Resources.Load("GameUI/" + "Btn/Btn_23_1", typeof(Sprite));
+        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_1");
         img = obj as Sprite;
         Obj_Btn_QQ.GetComponent<Image>().sprite = img;
 
@@ -53,12 +53,12 @@ public class UI_XuLieHao : MonoBehaviour {
         Obj_QQSet.SetActive(true);
 
         //显示按钮
-        object obj = Resources.Load("GameUI/" + "Btn/Btn_23_1", typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_1");
         Sprite img = obj as Sprite;
         Obj_Btn_WeiXin.GetComponent<Image>().sprite = img;
 
         //显示按钮
-        obj = Resources.Load("GameUI/" + "Btn/Btn_23_2", typeof(Sprite));
+        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_2");
         img = obj as Sprite;
         Obj_Btn_QQ.GetComponent<Image>().sprite = img;
 

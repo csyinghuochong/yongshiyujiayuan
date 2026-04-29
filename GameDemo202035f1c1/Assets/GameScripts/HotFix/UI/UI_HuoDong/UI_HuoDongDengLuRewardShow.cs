@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -57,7 +57,7 @@ public class UI_HuoDongDengLuRewardShow : MonoBehaviour {
         else {
             Obj_YiJingQuImg.SetActive(true);
             //置灰
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_CommonItemShow.GetComponent<UI_Common_ItemIcon>().Obj_NeedItemIcon.GetComponent<Image>().material = huiMaterial;
             //Obj_CommonItemShow.GetComponent<UI_Common_ItemIcon>().Obj_NeedItemIcon.GetComponent<Image>().material = huiMaterial;

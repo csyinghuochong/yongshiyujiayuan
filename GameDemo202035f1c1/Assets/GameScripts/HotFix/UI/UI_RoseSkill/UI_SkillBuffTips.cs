@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -23,7 +23,7 @@ public class UI_SkillBuffTips : MonoBehaviour {
 
 		//显示技能Icon
 		string skillBuffIconID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffIcon", "ID", SkillBuffID, "SkillBuff_Template");
-		object obj = Resources.Load("SkillIcon/BuffIcon/" + skillBuffIconID, typeof(Sprite));
+		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/BuffIcon/" + skillBuffIconID);
 
 		skillIcon = obj as Sprite;
 		Obj_SkillIcon.GetComponent<Image>().sprite = skillIcon;

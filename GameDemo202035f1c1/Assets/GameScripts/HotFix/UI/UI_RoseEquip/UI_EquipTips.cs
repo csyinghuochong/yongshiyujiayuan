@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -1007,12 +1007,12 @@ public class UI_EquipTips : MonoBehaviour {
         float DiHight = 250 + 20 * properShowNum + HintTextNum + showGemTextNum + EquipNeedTextNum + EquipBottomTextNum + equipSuitTextNum;
         Obj_Imgback.GetComponent<RectTransform>().sizeDelta = new Vector2(301.0f, DiHight);
 		//显示道具Icon
-		object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
 		Sprite itemIcon = obj as Sprite;
 		Obj_EquipIcon.GetComponent<Image>().sprite = itemIcon;
 
 		//显示品质
-		object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality), typeof(Sprite));
+		object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
 		Sprite itemQuality = obj2 as Sprite;
 		Obj_EquipQuality.GetComponent<Image>().sprite = itemQuality;
 
@@ -1515,7 +1515,7 @@ public class UI_EquipTips : MonoBehaviour {
             string gemItemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", gemItemID, "Item_Template");
             string gemItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", gemItemID, "Item_Template");
             
-            object obj = Resources.Load("ItemIcon/" + gemItemIcon, typeof(Sprite));
+            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + gemItemIcon);
             Sprite itemIcon = obj as Sprite;
             gemIconObj.GetComponent<Image>().sprite = itemIcon;
             gemTextObj.GetComponent<Text>().text = gemItemName;
@@ -1531,7 +1531,7 @@ public class UI_EquipTips : MonoBehaviour {
                     string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("红色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
-                    object obj = Resources.Load("GemHoleDi/" + gemHoleID, typeof(Sprite));
+                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
                     Sprite itemIcon = obj as Sprite;
                     gemIconObj.GetComponent<Image>().sprite = itemIcon;
                     break;
@@ -1540,7 +1540,7 @@ public class UI_EquipTips : MonoBehaviour {
                     langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("紫色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
-                    obj = Resources.Load("GemHoleDi/" + gemHoleID, typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
                     itemIcon = obj as Sprite;
                     gemIconObj.GetComponent<Image>().sprite = itemIcon;
                     break;
@@ -1549,7 +1549,7 @@ public class UI_EquipTips : MonoBehaviour {
                     langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("蓝色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
-                    obj = Resources.Load("GemHoleDi/" + gemHoleID, typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
                     itemIcon = obj as Sprite;
                     gemIconObj.GetComponent<Image>().sprite = itemIcon;
                     break;
@@ -1558,7 +1558,7 @@ public class UI_EquipTips : MonoBehaviour {
                     langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("绿色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
-                    obj = Resources.Load("GemHoleDi/" + gemHoleID, typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
                     itemIcon = obj as Sprite;
                     gemIconObj.GetComponent<Image>().sprite = itemIcon;
                     break;
@@ -1567,7 +1567,7 @@ public class UI_EquipTips : MonoBehaviour {
                     langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("白色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
-                    obj = Resources.Load("GemHoleDi/" + gemHoleID, typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
                     itemIcon = obj as Sprite;
                     gemIconObj.GetComponent<Image>().sprite = itemIcon;
                     break;
@@ -1576,7 +1576,7 @@ public class UI_EquipTips : MonoBehaviour {
                     langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("多彩插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
-                    obj = Resources.Load("GemHoleDi/" + gemHoleID, typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
                     itemIcon = obj as Sprite;
                     gemIconObj.GetComponent<Image>().sprite = itemIcon;
                     break;

@@ -1,4 +1,4 @@
-﻿ using UnityEngine;
+ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -93,14 +93,14 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
 
                 //显示角色
                 case "101":
-                    object obj = Resources.Load(path + "Img_101", typeof(Sprite));
+                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_101");
                     Sprite img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
                     break;
 
                 //显示宠物列表
                 case "201":
-                    obj = Resources.Load(path + "Img_201", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_201");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
                     break;
@@ -108,14 +108,14 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
                 //显示宠物合成
                 case "202":
 
-                    obj = Resources.Load(path + "Img_202", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_202");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
                     break;
 
                 //显示任务
                 case "301":
-                    obj = Resources.Load(path + "Img_301", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_301");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
 
@@ -124,7 +124,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
                 //显示技能             
                 case "401":
 
-                    obj = Resources.Load(path + "Img_401", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_401");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
 
@@ -132,7 +132,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
 
                 //显示天赋             
                 case "402":
-                    obj = Resources.Load(path + "Img_402", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_402");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
 
@@ -140,7 +140,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
 
 				//显示制作              
 				case "501":
-                    obj = Resources.Load(path + "Img_501", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_501");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
 
@@ -149,7 +149,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
                 //显示商店2
                 case "601":
 
-                    obj = Resources.Load(path + "Img_601", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_601");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
                     break;
@@ -157,7 +157,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
                 //显示钻石商店
                 case "602":
      
-                    obj = Resources.Load(path + "Img_601", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_601");
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
                     Obj_TitleHintText.GetComponent<Text>().text = "提示:每天8点、12点、20点、24点刷新道具";
@@ -165,20 +165,20 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
 
 				//显示成就
 				case "701":
-					obj = Resources.Load(path + "Img_701", typeof(Sprite));
+					obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_701");
 					img = obj as Sprite;
 					Obj_TitleImg.GetComponent<Image>().sprite = img;
 					break;
 
 				//显示商店2
 				case "801":
-					obj = Resources.Load(path + "Img_801", typeof(Sprite));
+					obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_801");
 					img = obj as Sprite;
 					Obj_TitleImg.GetComponent<Image>().sprite = img;
 					break;
 
                 default:
-                    obj = Resources.Load(path + "Img_"+ TitleImgType, typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(path + "Img_"+ TitleImgType);
                     img = obj as Sprite;
                     Obj_TitleImg.GetComponent<Image>().sprite = img;
                     break;
@@ -193,7 +193,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
             Obj_Other_Value.SetActive(true);
             //获取道具图标
             string ItemIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", OutheItemID, "Item_Template");
-            object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
             Sprite itemIcon = obj as Sprite;
             Obj_Other_Icon.GetComponent<Image>().sprite = itemIcon;
 

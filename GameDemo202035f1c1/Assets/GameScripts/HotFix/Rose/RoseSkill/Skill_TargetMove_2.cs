@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 //立即释放技能（没有弹道） 
@@ -71,7 +71,7 @@ public class Skill_TargetMove_2 : MonoBehaviour
                         AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().IfHitEffect = true;    //播放
                         AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffectt_Position = AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().BoneSet.transform.Find(AI_HitPosition).gameObject;  //设置播放位置
                         if (skillHitEffectName != "" && skillHitEffectName != "0") {
-                            AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + skillHitEffectName);
+                            AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
                         }
                         break;
                 }

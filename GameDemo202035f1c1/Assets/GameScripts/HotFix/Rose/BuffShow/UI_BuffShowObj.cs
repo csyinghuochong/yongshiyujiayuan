@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,7 +36,7 @@ public class UI_BuffShowObj : MonoBehaviour {
             string buffIDIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffIcon", "ID", BuffID, "SkillBuff_Template");
 
             //显示底图
-            Object obj = Resources.Load("SkillIcon/BuffIcon/" + buffIDIcon, typeof(Sprite));
+            Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/BuffIcon/" + buffIDIcon);
             Sprite img = obj as Sprite;
             Obj_BuffIcon.GetComponent<Image>().sprite = img;
         }

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -72,7 +72,7 @@ public class UI_RoseTargetIconSet : MonoBehaviour {
                     Obj_MonsterLv.GetComponent<Text>().text = monsterLv + "级";
 
                     //显示BOSS头像
-                    object obj = Resources.Load("HeadIcon/BossIcon/" + monsterID, typeof(Sprite));
+                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/BossIcon/" + monsterID);
                     if (obj != null)
                     {
                         Sprite Icon = obj as Sprite;

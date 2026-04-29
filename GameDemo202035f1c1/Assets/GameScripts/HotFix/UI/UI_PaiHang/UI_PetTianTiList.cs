@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -58,7 +58,7 @@ public class UI_PetTianTiList : MonoBehaviour {
                     string nowHeadIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HeadIcon", "ID", nowPetID, "Pet_Template");
 
                     //显示底图
-                    Object obj = Resources.Load("PetHeadIcon/" + nowHeadIcon, typeof(Sprite));
+                    Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                     Sprite img = obj as Sprite;
                     Obj_PetHeadIconList[i].GetComponent<Image>().sprite = img;
                 }

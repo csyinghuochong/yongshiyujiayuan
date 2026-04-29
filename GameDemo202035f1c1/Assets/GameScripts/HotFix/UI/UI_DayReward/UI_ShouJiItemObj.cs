@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -39,12 +39,12 @@ public class UI_ShouJiItemObj : MonoBehaviour
 
 
         //显示道具Icon
-        object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
         //Obj_ItemIcon.GetComponent<Image>().sprite = Sprite.Create((Texture2D)obj, new Rect(0, 0, 80, 80), new Vector2(0.5f, 0.5f));
         //显示品质
-        object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality), typeof(Sprite));
+        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_ItemQuality.GetComponent<Image>().sprite = itemQuality;
         //Obj_ItemIcon.GetComponent<Image>().sprite = Sprite.Create((Texture2D)obj2, new Rect(0, 0, 80, 80), new Vector2(0.5f, 0.5f));
@@ -57,7 +57,7 @@ public class UI_ShouJiItemObj : MonoBehaviour
         }
         else {
             //置灰
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_ItemIcon.GetComponent<Image>().material = huiMaterial;
             Obj_ItemQuality.GetComponent<Image>().material = huiMaterial;

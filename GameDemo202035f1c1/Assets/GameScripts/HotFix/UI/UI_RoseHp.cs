@@ -147,7 +147,7 @@ public class UI_RoseHp : MonoBehaviour {
         {
             if (zhenying == "1")
             {
-                object obj = Resources.Load("GameUI/Img/UI_Image_319", typeof(Sprite));
+                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Img/UI_Image_319");
                 Sprite itemIcon = obj as Sprite;
                 Obj_PaiImg.GetComponent<Image>().sprite = itemIcon;
                 Obj_PaiImg.SetActive(true);
@@ -155,7 +155,7 @@ public class UI_RoseHp : MonoBehaviour {
 
             if (zhenying == "2")
             {
-                object obj = Resources.Load("GameUI/Img/UI_Image_318", typeof(Sprite));
+                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Img/UI_Image_318");
                 Sprite itemIcon = obj as Sprite;
                 Obj_PaiImg.GetComponent<Image>().sprite = itemIcon;
                 Obj_PaiImg.SetActive(true);

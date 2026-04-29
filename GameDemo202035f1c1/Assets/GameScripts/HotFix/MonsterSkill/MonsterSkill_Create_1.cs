@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 //召唤怪物技能
 public class MonsterSkill_Create_1 : MonoBehaviour
@@ -44,7 +44,7 @@ public class MonsterSkill_Create_1 : MonoBehaviour
 
         /*
         //实例化技能特效
-        GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
         GameObject effect = (GameObject)Instantiate(SkillEffect);
         effect.SetActive(false);
         effect.transform.parent = this.transform;
@@ -59,7 +59,7 @@ public class MonsterSkill_Create_1 : MonoBehaviour
         //延迟时间注销
         //Destroy(this.gameObject, SkillTime);
 
-        //monsterObj = Resources.Load("CreateMonster/" + "70009001", typeof(GameObject));
+        //monsterObj = ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("CreateMonster/" + "70009001");
         //GameObject sdd = (GameObject)Instantiate(monsterObj);
         //Destroy(sdd);
 
@@ -92,13 +92,13 @@ public class MonsterSkill_Create_1 : MonoBehaviour
             for (int x = 0; x <= createNum - 1; x++)
             {
                 Vec3 = new Vector3(Vec3.x + Random.value*2-1, Vec3.y + 0.5f, Vec3.z + Random.value*2-1);
-                monsterObj = Resources.Load("CreateMonster/" + createID, typeof(GameObject));
+                monsterObj = ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("CreateMonster/" + createID);
                 Game_PublicClassVar.Get_function_AI.AI_CreatMonster(createID, Vec3, this.GetComponent<SkillObjBase>().MonsterSkillObj, monsterObj);
                 //播放传送特效
                 /*
-                GameObject SkillObj = (GameObject)Resources.Load("Effect/Rose/" + "Rose_MoveScene", typeof(GameObject));
+                GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Rose/" + "Rose_MoveScene");
                 GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
-                GameObject effectObj = (GameObject)Instantiate((GameObject)Resources.Load("Effect/Skill/Rose_CriAct"));
+                GameObject effectObj = (GameObject)Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Rose_CriAct"));
                 SkillObject_p.transform.position = Vec3;
                 SkillObject_p.transform.localScale = new Vector3(1, 1, 1);
                  */

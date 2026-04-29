@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -135,7 +135,7 @@ public class Main_100006 : MonoBehaviour {
 
                         string[] CreateMonsterList = MonsterList[i].Split(',');
                         if (CreateMonsterList.Length >= 2) {
-                            GameObject monsterObj = (GameObject)Instantiate(Resources.Load("3DModel/MonsterModel/100006/" + CreateMonsterList[0], typeof(GameObject)));
+                            GameObject monsterObj = (GameObject)Instantiate(ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/MonsterModel/100006/" + CreateMonsterList[0]));
 
                             monsterObj.transform.SetParent(monsterCreatePosition.transform);
                             monsterObj.transform.position = monsterCreatePosition.transform.position;           //设置创建位置
@@ -146,7 +146,7 @@ public class Main_100006 : MonoBehaviour {
                             //Game_PublicClassVar.Get_function_AI.AI_CreatMonster(CreateMonsterList[0], monsterCreatePosition.transform.position, this.GetComponent<SkillObjBase>().MonsterSkillObj, monsterObj);
 
                             //播放特效
-                            //GameObject SkillObj = (GameObject)Resources.Load("Effect/Skill/" + "Eff_Skill_ZhaoHuan_4", typeof(GameObject));
+                            //GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_Skill_ZhaoHuan_4");
                             GameObject SkillObject_p = (GameObject)Instantiate(CreateMonsterEffectObj);
 
                             //SkillObject_p.transform.position = monsterObj.transform.position;

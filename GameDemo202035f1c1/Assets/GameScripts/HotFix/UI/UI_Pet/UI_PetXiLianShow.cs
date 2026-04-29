@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -59,7 +59,7 @@ public class UI_PetXiLianShow : MonoBehaviour
         }
             
         //显示宠物头像
-        object obj = Resources.Load("PetHeadIcon/" + headIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + headIcon);
         Sprite img = obj as Sprite;
         Obj_PetIcon.GetComponent<Image>().sprite = img;
 

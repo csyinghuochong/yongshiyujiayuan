@@ -84,7 +84,7 @@ public class UI_BossHp : MonoBehaviour {
 				Obj_MonsterLv.GetComponent<Text>().text = monsterLv;
 
                 //显示BOSS头像
-                object obj = Resources.Load("HeadIcon/BossIcon/" + monsterID, typeof(Sprite));
+                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>( $"HeadIcon/BossIcon/{monsterID}");
                 if (obj != null)
                 {
                     Sprite Icon = obj as Sprite;

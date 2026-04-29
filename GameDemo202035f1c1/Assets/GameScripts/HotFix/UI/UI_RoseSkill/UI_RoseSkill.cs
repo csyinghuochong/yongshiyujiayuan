@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -376,7 +376,7 @@ public class UI_RoseSkill : MonoBehaviour {
 
 
         //显示按钮
-        object obj = Resources.Load("GameUI/" + "Btn/Btn_12_2", typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         Obj_FunctionBtn_1.GetComponent<Image>().sprite = img;
         Obj_FunctionBtn_2.GetComponent<Image>().sprite = img;
@@ -391,7 +391,7 @@ public class UI_RoseSkill : MonoBehaviour {
             //技能信息
             case "1":
                 //显示底图S
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 Obj_FunctionBtn_1.GetComponent<Image>().sprite = img;
                 Obj_SkillListSet.SetActive(true);
@@ -406,7 +406,7 @@ public class UI_RoseSkill : MonoBehaviour {
             case "2":
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 Obj_FunctionBtn_2.GetComponent<Image>().sprite = img;
                 Obj_SkillListSet.SetActive(false);
@@ -419,7 +419,7 @@ public class UI_RoseSkill : MonoBehaviour {
             case "3":
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 Obj_FunctionBtn_3.GetComponent<Image>().sprite = img;
                 Obj_SkillListSet.SetActive(false);

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -67,12 +67,12 @@ public class UI_RoseEquipShow : MonoBehaviour {
                 EquipQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", EquipID, "Item_Template");
                 //显示道具品质
                 string itemQuality = Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(EquipQuality);
-                object Equipobj = Resources.Load(itemQuality, typeof(Sprite));
+                object Equipobj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(itemQuality);
 				Sprite itemQuility = Equipobj as Sprite;
                 Obj_EquipQuility.GetComponent<Image>().sprite = itemQuility;
                 //显示道具Icon
                 string equipIcon = Game_PublicClassVar.Get_function_UI.EquipIconToPath(EquipIcon);
-				Equipobj = Resources.Load(equipIcon, typeof(Sprite));
+				Equipobj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(equipIcon);
 				itemIcon = Equipobj as Sprite;
                 Obj_EquipIcon.GetComponent<Image>().sprite = itemIcon;
 				Obj_EquipQuility.SetActive(true);

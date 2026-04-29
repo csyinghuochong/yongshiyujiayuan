@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -136,7 +136,7 @@ public class UI_PastureBagSpace : MonoBehaviour
                 string itemType = function_DataSet.DataSet_ReadData("ItemType", "ID", ItemID, "Item_Template");
 
                 //显示道具Icon
-                object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
                 itemIcon = obj as Sprite;
                 UI_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
@@ -148,7 +148,7 @@ public class UI_PastureBagSpace : MonoBehaviour
 
                 //显示道具品质
                 string itemQuality = Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality);
-                obj = Resources.Load(itemQuality, typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(itemQuality);
                 Sprite itemQuility = obj as Sprite;
                 UI_ItemQuility.GetComponent<Image>().sprite = itemQuility;
             }

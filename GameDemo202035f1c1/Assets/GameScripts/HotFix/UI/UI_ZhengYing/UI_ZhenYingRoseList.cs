@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -65,7 +65,7 @@ public class UI_ZhenYingRoseList : MonoBehaviour {
                 break;
         }
 
-        Object obj = Resources.Load("HeadIcon/PlayerIcon/" + roseHeadIconId, typeof(Sprite));
+        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + roseHeadIconId);
         Sprite img = obj as Sprite;
         Obj_ZhenYingRoseHeadIcon.GetComponent<Image>().sprite = img;
         Obj_ZhenYingRoseHeadIcon.GetComponent<Image>().SetNativeSize();

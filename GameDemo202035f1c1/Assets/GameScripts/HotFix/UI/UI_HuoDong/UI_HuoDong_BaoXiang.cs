@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -338,7 +338,7 @@ public class UI_HuoDong_BaoXiang : MonoBehaviour {
         ChestSet.Add(ChestXuHao, baoXiangData);
 
         //播放特效  Eff_HuoDongBaoXiangShow
-        GameObject SkillObj = (GameObject)Resources.Load("Effect/Skill/" + "Eff_HuoDongBaoXiangShow", typeof(GameObject));
+        GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_HuoDongBaoXiangShow");
         GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
 
         //SkillObject_p.transform.position = monsterObj.transform.position;

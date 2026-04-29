@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -39,7 +39,7 @@ public class RoseSkill_ChaoFeng_3 : MonoBehaviour
 
 
         //实例化技能特效
-        GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
         if (SkillEffect != null)
         {
             GameObject effect = (GameObject)Instantiate(SkillEffect);

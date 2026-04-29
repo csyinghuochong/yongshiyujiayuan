@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -61,13 +61,13 @@ public class UI_PastureSellList : MonoBehaviour {
             Obj_PastureJieSuo.GetComponent<Text>().text = "需要牧场等级达到" + needLv + "级解锁";
 
             //头像显示灰色
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_PastureHeadIcon.GetComponent<Image>().material = huiMaterial;
         }
         //显示头像
         string PastureIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", PastureID, "Pasture_Template");
-        object obj = Resources.Load("HeadIcon/PastureIcon/" + PastureIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PastureIcon/" + PastureIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_PastureHeadIcon.GetComponent<Image>().sprite = itemIcon;
     }

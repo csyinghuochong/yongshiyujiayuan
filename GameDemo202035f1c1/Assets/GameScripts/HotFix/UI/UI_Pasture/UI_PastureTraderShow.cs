@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,7 +24,7 @@ public class UI_PastureTraderShow : MonoBehaviour {
 
         string[] pastureTraderList = Game_PublicClassVar.Get_function_Pasture.GetPastureTraderIDData(int.Parse(PastureTraderID));
         string npcHeadIconID = pastureTraderList[0];
-        object obj = Resources.Load("HeadIcon/PastureTraderIcon/" + npcHeadIconID, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PastureTraderIcon/" + npcHeadIconID);
         Sprite itemIcon = obj as Sprite;
         Obj_PastureTraderHeadIcon.GetComponent<Image>().sprite = itemIcon;
     }

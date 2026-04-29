@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -41,7 +41,7 @@ public class UI_DayTaskList : MonoBehaviour
 
         ObscuredString dayTaskIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TaskIcon", "ID", dayTaskID, "TaskCountry_Template");
 
-        object obj = Resources.Load("EveryDayTaskIcon/" + dayTaskIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("EveryDayTaskIcon/" + dayTaskIcon);
         Sprite taskIcon = obj as Sprite;
         Obj_dayTaskIcon.GetComponent<Image>().sprite = taskIcon;
 

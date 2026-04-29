@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -74,7 +74,7 @@ public class Rose_ChengJiuDataShowList : MonoBehaviour {
         UI_ChengJiuNum.GetComponent<Text>().text = rewardNum;
 
         //显示Icon
-        object obj = Resources.Load("ChengJiuIcon/" + icon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
         Sprite itemIcon = obj as Sprite;
         UI_ChengJiuIcon.GetComponent<Image>().sprite = itemIcon;
 

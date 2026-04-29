@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -73,7 +73,7 @@ public class UI_PetXiuLian : MonoBehaviour {
         //显示图标
         string icon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", XiuLianLvList[type], "PetXiuLian_Template");
         //显示底图
-        Object obj = Resources.Load("PetXiuLian/" + icon, typeof(Sprite));
+        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetXiuLian/" + icon);
         Sprite img = obj as Sprite;
         Obj_XiuLianIcon.GetComponent<Image>().sprite = img;
 

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -85,12 +85,12 @@ public class UI_EquipUp: MonoBehaviour {
                 Obj_UpItemName.GetComponent<Text>().text = makeItemName;
 
                 //显示道具Icon
-                object obj = Resources.Load("ItemIcon/" + upItemIcon, typeof(Sprite));
+                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + upItemIcon);
                 Sprite itemIcon = obj as Sprite;
                 Obj_UpItemIcon.GetComponent<Image>().sprite = itemIcon;
 
                 //显示品质
-                object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(upItemQuality), typeof(Sprite));
+                object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(upItemQuality));
                 Sprite itemQuality = obj2 as Sprite;
                 Obj_UpItemQuality.GetComponent<Image>().sprite = itemQuality;
 
@@ -122,12 +122,12 @@ public class UI_EquipUp: MonoBehaviour {
                 Obj_MakeItemName.GetComponent<Text>().text = makeItemName;
 
                 //显示道具Icon
-                obj = Resources.Load("ItemIcon/" + makeItemIcon, typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + makeItemIcon);
                 itemIcon = obj as Sprite;
                 Obj_MakeItemIcon.GetComponent<Image>().sprite = itemIcon;
 
                 //显示品质
-                obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(makeItemQuality), typeof(Sprite));
+                obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(makeItemQuality));
                 itemQuality = obj2 as Sprite;
                 Obj_MakeItemQuality.GetComponent<Image>().sprite = itemQuality;
 

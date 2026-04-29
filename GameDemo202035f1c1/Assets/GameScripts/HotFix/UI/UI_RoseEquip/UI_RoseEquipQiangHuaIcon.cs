@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -69,7 +69,7 @@ public class UI_RoseEquipQiangHuaIcon : MonoBehaviour
         Obj_EquipSelect.SetActive(true);
         /*
         string itemQuality = Game_PublicClassVar.Get_function_UI.ItemQualiytoPath("4");
-        object Equipobj = Resources.Load(itemQuality, typeof(Sprite));
+        object Equipobj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(itemQuality);
         Sprite itemQuility = Equipobj as Sprite;
         Obj_EquipSelect.GetComponent<Image>().sprite = itemQuility;
         */

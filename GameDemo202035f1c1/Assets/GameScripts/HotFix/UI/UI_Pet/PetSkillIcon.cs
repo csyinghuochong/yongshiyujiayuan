@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -32,7 +32,7 @@ public class PetSkillIcon : MonoBehaviour {
         //Debug.Log("skillIconID = " + skillIconID);
 
         //显示底图
-        Object obj = Resources.Load("SkillIcon/PetSkill/" + skillIconID, typeof(Sprite));
+        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/PetSkill/" + skillIconID);
         Sprite img = obj as Sprite;
         PetSkillIconObj.GetComponent<Image>().sprite = img;
 

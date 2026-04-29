@@ -22,30 +22,30 @@ public class UI_ZhuLingShowList : MonoBehaviour
 
     public void Init() { 
     
-        //获取数据
+        //鑾峰彇鏁版嵁
         string iconID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Iamge", "ID", ShowZhuLingID, "ZhuLing_Template");
         string name = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", ShowZhuLingID, "ZhuLing_Template");
 
-        //展示
-        object obj = Resources.Load("OtherIcon/ZhuLingIcon/" + iconID, typeof(Sprite));
+        //灞曠ず
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("OtherIcon/ZhuLingIcon/" + iconID);
         Sprite itemIcon = obj as Sprite;
         ZhuLingIconShow.GetComponent<Image>().sprite = itemIcon;
         ZhuLingNameShow.GetComponent<Text>().text = name;
 
-        //判定自身是否已经激活
+        //鍒ゅ畾鑷韩鏄惁宸茬粡婵€娲?
         bool ifJiHuo = Game_PublicClassVar.Get_function_Rose.IfRoseZhuLing(ShowZhuLingID);
         if (ifJiHuo == false)
         {
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             ZhuLingIconShow.GetComponent<Image>().material = huiMaterial;
-            //显示等级
+            //鏄剧ず绛夌骇
             string NeedRoseLvStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NeedLv", "ID", ShowZhuLingID, "ZhuLing_Template");
-            Obj_ZhuLingNeedLv.GetComponent<Text>().text = "(激活等级:" + NeedRoseLvStr + ")";
+            Obj_ZhuLingNeedLv.GetComponent<Text>().text = "(婵€娲荤瓑绾?" + NeedRoseLvStr + ")";
         }
         else {
-            //显示等级
-            Obj_ZhuLingNeedLv.GetComponent<Text>().text = "(已激活)";
+            //鏄剧ず绛夌骇
+            Obj_ZhuLingNeedLv.GetComponent<Text>().text = "(宸叉縺娲?";
             Obj_ZhuLingNeedLv.GetComponent<Text>().color = new Color(0, 0.5f, 0);
             ZhuLingIconShow.GetComponent<Image>().material = null;
         }

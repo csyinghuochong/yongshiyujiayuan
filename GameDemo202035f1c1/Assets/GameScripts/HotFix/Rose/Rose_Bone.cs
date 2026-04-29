@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Rose_Bone : MonoBehaviour {
@@ -118,7 +118,7 @@ public class Rose_Bone : MonoBehaviour {
             //添加特效
             if (jueXingEffect == null)
             {
-                GameObject effect = (GameObject)Resources.Load("Effect/Skill/Effect_JueXing", typeof(GameObject));
+                GameObject effect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Effect_JueXing");
                 jueXingEffect = (GameObject)Instantiate(effect);
                 jueXingEffect.transform.localScale = new Vector3(1, 1, 1);
                 jueXingEffect.GetComponent<SkillEffectPosition>().TargetObj = Bone_Low;

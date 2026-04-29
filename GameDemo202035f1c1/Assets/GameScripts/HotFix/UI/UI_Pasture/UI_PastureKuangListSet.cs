@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -76,7 +76,7 @@ public class UI_PastureKuangListSet : MonoBehaviour
                         //显示头像
                         string nowHeadIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HeadIcon", "ID", nowPetID, "Pet_Template");
                         //显示底图
-                        Object obj = Resources.Load("PetHeadIcon/" + nowHeadIcon, typeof(Sprite));
+                        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                         Sprite img = obj as Sprite;
                         Obj_PlayerPetList[i].GetComponent<Image>().sprite = img;
                         */
@@ -97,7 +97,7 @@ public class UI_PastureKuangListSet : MonoBehaviour
                                 if (nowHeadIcon != "" && nowHeadIcon != "0" && nowHeadIcon != null)
                                 {
                                     //显示底图
-                                    Object obj = Resources.Load("PetHeadIcon/" + nowHeadIcon, typeof(Sprite));
+                                    Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                                     Sprite img = obj as Sprite;
                                     Obj_PlayerPetList[i].GetComponent<Image>().sprite = img;
                                 }
@@ -134,7 +134,7 @@ public class UI_PastureKuangListSet : MonoBehaviour
 
                         if (nowHeadIcon != "" && nowHeadIcon != "0" && nowHeadIcon != null) {
                             //显示底图
-                            Object obj = Resources.Load("PetHeadIcon/" + nowHeadIcon, typeof(Sprite));
+                            Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                             Sprite img = obj as Sprite;
                             Obj_PlayerPetList[i].GetComponent<Image>().sprite = img;
                         }

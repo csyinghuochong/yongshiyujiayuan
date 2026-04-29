@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 //加血技能
 public class RoseSkill_ZhongJi_1 : MonoBehaviour
@@ -28,7 +28,7 @@ public class RoseSkill_ZhongJi_1 : MonoBehaviour
             //获取特效名称
             string effectName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HitEffectName", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
             if (effectName != "0") {
-                actObj.GetComponent<AI_1>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName);
+                actObj.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                 actObj.GetComponent<AI_1>().IfHitEffect = true;
             }
             
@@ -37,7 +37,7 @@ public class RoseSkill_ZhongJi_1 : MonoBehaviour
             if (acteffectName != "0")
             {
                 //实例化技能特效
-                GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + acteffectName, typeof(GameObject));
+                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
                 GameObject effect = (GameObject)Instantiate(SkillEffect);
            
                 //Debug.Log("冰裂斩"+effect.name);
@@ -70,7 +70,7 @@ public class RoseSkill_ZhongJi_1 : MonoBehaviour
 
         //实例化技能特效
         /*
-        GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
         GameObject effect = (GameObject)Instantiate(SkillEffect);
         effect.SetActive(false);
         effect.transform.parent = this.transform;

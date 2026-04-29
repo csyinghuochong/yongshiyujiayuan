@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -654,7 +654,7 @@ public class UI_TianFu : MonoBehaviour {
     public void Btn_TianFuType(string type) {
 
         //初始化按钮状态
-        object obj = Resources.Load("GameUI/" + "Btn/Btn_69_1", typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_69_1");
         Sprite img = obj as Sprite;
         Obj_TianFuBtnType_1.GetComponent<Image>().sprite = img;
         Obj_TianFuTextType_1.GetComponent<Text>().color = new Color(1f, 0.88f, 0.76f);
@@ -669,7 +669,7 @@ public class UI_TianFu : MonoBehaviour {
                 Obj_TianFuShowType_2.SetActive(false);
 
                 //按钮变换
-                obj = Resources.Load("GameUI/" + "Btn/Btn_69_2", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_69_2");
                 img = obj as Sprite;
                 Obj_TianFuBtnType_1.GetComponent<Image>().sprite = img;
                 Obj_TianFuTextType_1.GetComponent<Text>().color = new Color(0.71f, 0.35f, 0f);
@@ -681,7 +681,7 @@ public class UI_TianFu : MonoBehaviour {
 
                 //按钮变换
                 //按钮变换
-                obj = Resources.Load("GameUI/" + "Btn/Btn_69_2", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_69_2");
                 img = obj as Sprite;
                 Obj_TianFuBtnType_2.GetComponent<Image>().sprite = img;
                 Obj_TianFuTextType_2.GetComponent<Text>().color = new Color(0.71f, 0.35f, 0f);

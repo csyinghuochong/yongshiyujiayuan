@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 //向目标移动区域移动,在技能初始化的时候就已经设定了技能的移动方向，期间技能不会更改方向
@@ -84,7 +84,7 @@ public class MonsterSkill_TargetMove_2 : MonoBehaviour
         {
 
             //实例化技能特效
-            GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)MonoBehaviour.Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = this.gameObject.transform;

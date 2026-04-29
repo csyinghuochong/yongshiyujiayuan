@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -191,7 +191,7 @@ public class MainUI_SkillGrid : MonoBehaviour
         if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_LanValue < useMP)
         {
             if (ifUseShowStatus) {
-                object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+                object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                 Material huiMaterial = huiObj as Material;
                 Img_SkillIcon.GetComponent<Image>().material = huiMaterial;
                 ifUseShowStatus = false;
@@ -250,7 +250,7 @@ public class MainUI_SkillGrid : MonoBehaviour
                         skillCDSelfTime = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillCD", "ID", skillValue, "Skill_Template"));
                         //修改ICON （在做技能交换位置时,此处会修正）
                         skillIconID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", SkillID, "Item_Template");
-                        object obj = Resources.Load("ItemIcon/" + skillIconID, typeof(Sprite));
+                        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + skillIconID);
                         skillIcon = obj as Sprite;
                         Img_SkillIcon.GetComponent<Image>().sprite = skillIcon;
 
@@ -263,7 +263,7 @@ public class MainUI_SkillGrid : MonoBehaviour
                     SkillItemNum.SetActive(true);      //显示道具数量
                     if (itemnNum <= 0)
                     {
-                        object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+                        object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                         Material huiMaterial = huiObj as Material;
                         Img_SkillIcon.GetComponent<Image>().material = huiMaterial;
                     }
@@ -279,7 +279,7 @@ public class MainUI_SkillGrid : MonoBehaviour
                         UseSkillID = SkillID;
                         skillCDSelfTime = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillCD", "ID", SkillID, "Skill_Template"));
                         skillIconID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillIcon", "ID", SkillID, "Skill_Template");
-                        object obj = Resources.Load("SkillIcon/" + skillIconID, typeof(Sprite));
+                        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIconID);
                         skillIcon = obj as Sprite;
                         Img_SkillIcon.GetComponent<Image>().sprite = skillIcon;
                         SkillItemNum.SetActive(false);      //不显示道具数量
@@ -717,7 +717,7 @@ public class MainUI_SkillGrid : MonoBehaviour
         mouseMoveSkillIcon.transform.parent = this.transform.parent.transform;
         //显示图标
         skillIconID = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("SkillIcon", "ID", SkillID, Game_PublicClassVar.Get_game_PositionVar.Xml_Path + "Skill_Template.xml");
-        object obj = Resources.Load("SkillIcon/" + skillIconID, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIconID);
         skillIcon = obj as Sprite;
         mouseMoveSkillIcon.transform.Find("SkillIcon").GetComponent<Image>().sprite = skillIcon;
         //图标位置

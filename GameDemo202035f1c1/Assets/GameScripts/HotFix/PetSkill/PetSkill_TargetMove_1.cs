@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 //怪物远程攻击技能
@@ -98,7 +98,7 @@ public class PetSkill_TargetMove_1 : MonoBehaviour
         {
 
             //实例化技能特效
-            GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)MonoBehaviour.Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = this.gameObject.transform;
@@ -206,7 +206,7 @@ public class PetSkill_TargetMove_1 : MonoBehaviour
                         if (effectName != "0")
                         {
                             effectName = "Eff_Hit_Fire_3";
-                            collider.GetComponent<AI_1>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName);
+                            collider.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                         }
                         collider.gameObject.GetComponent<AI_1>().IfHitEffect = true;    //播放
                         collider.gameObject.GetComponent<AI_1>().HitEffectt_Position = collider.gameObject.GetComponent<AI_1>().BoneSet.transform.Find(AI_HitPosition).gameObject;  //设置播放位置
@@ -217,7 +217,7 @@ public class PetSkill_TargetMove_1 : MonoBehaviour
                         if (effectName != "0")
                         {
                             effectName = "Eff_Hit_Fire_3";
-                            collider.GetComponent<AIPet>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName);
+                            collider.GetComponent<AIPet>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                         }
                         collider.gameObject.GetComponent<AIPet>().IfHitEffect = true;    //播放
                         collider.gameObject.GetComponent<AIPet>().HitEffectt_Position = collider.gameObject.GetComponent<AIPet>().BoneSet.transform.Find(AI_HitPosition).gameObject;  //设置播放位置

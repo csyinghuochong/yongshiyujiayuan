@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -151,7 +151,7 @@ public class UI_ZhenYingSet : MonoBehaviour {
     public void Btn_XuanZhongShow(GameObject obj, GameObject obj_Text)
     {
         //显示按钮
-        object imgObj = Resources.Load("GameUI/" + "Btn/Btn_57_1", typeof(Sprite));
+        object imgObj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_57_1");
         Sprite img = imgObj as Sprite;
         //重置按钮状态
         obj.GetComponent<Image>().sprite = img;
@@ -162,7 +162,7 @@ public class UI_ZhenYingSet : MonoBehaviour {
     public void Btn_ChongZhi()
     {
         //显示按钮
-        object obj = Resources.Load("GameUI/" + "Btn/Btn_57_2", typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_57_2");
         Sprite img = obj as Sprite;
 
         //重置按钮状态

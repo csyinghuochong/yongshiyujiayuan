@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -55,7 +55,7 @@ public class PastureSet : MonoBehaviour {
 
                 //获取怪物
                 string nowModelID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ModelID", "ID", nowPastureID, "Pasture_Template");
-                GameObject shiliObj = (GameObject)Resources.Load("3DModel/Pasture/" + nowModelID, typeof(GameObject));
+                GameObject shiliObj = (GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/Pasture/" + nowModelID);
                 if (shiliObj != null) {
                     GameObject monsterObj = Instantiate(shiliObj);
                     //创建怪物
@@ -112,7 +112,7 @@ public class PastureSet : MonoBehaviour {
 
                         //读取掉落模型ID
                         string modelName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ModelName", "ID", scenceID, "SceneItem_Template");
-                        GameObject monsterObj = Instantiate((GameObject)Resources.Load("3DModel/SceneItemObj/" + modelName, typeof(GameObject)));
+                        GameObject monsterObj = Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/SceneItemObj/" + modelName));
                         if (monsterObj != null)
                         {
                             monsterObj.transform.SetParent(Obj_PastureSceneSet.transform);
@@ -243,7 +243,7 @@ public class PastureSet : MonoBehaviour {
 
             //获取怪物
             string nowModelID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ModelID", "ID", nowPastureID, "Pasture_Template");
-            GameObject monsterObj = Instantiate((GameObject)Resources.Load("3DModel/Pasture/" + nowModelID, typeof(GameObject)));
+            GameObject monsterObj = Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/Pasture/" + nowModelID));
             //创建怪物
             if (monsterObj != null)
             {

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -165,7 +165,7 @@ public class UI_RoseDataSet : MonoBehaviour {
                 break;
         }
 
-        Object obj = Resources.Load("HeadIcon/PlayerIcon/" + roseHeadIconId, typeof(Sprite));
+        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + roseHeadIconId);
 		Sprite img = obj as Sprite;
         Obj_RoseIconShow.GetComponent<Image>().sprite = img;
 		
@@ -207,7 +207,7 @@ public class UI_RoseDataSet : MonoBehaviour {
 
             if (int.Parse(petHp) <= 0) {
 				//灰化Icon
-				object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+				object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
 				Material huiMaterial = huiObj as Material;
 				Obj_PetIconShow.GetComponent<Image>().material = huiMaterial;
 				//Obj_JingLingName.GetComponent<Text>().color = new Color(0.55f, 0.55f, 0.55f, 1);
@@ -244,7 +244,7 @@ public class UI_RoseDataSet : MonoBehaviour {
 		string petHeadIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HeadIcon", "ID", petID, "Pet_Template");
 
 		//显示底图
-		Object obj = Resources.Load("PetHeadIcon/" + petHeadIcon, typeof(Sprite));
+		Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + petHeadIcon);
 		Sprite img = obj as Sprite;
 		Obj_PetIconShow.GetComponent<Image>().sprite = img;
 

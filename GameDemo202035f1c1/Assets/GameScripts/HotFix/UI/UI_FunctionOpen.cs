@@ -955,7 +955,7 @@ public class UI_FunctionOpen : MonoBehaviour {
             if (acteffectName != "" && acteffectName != "0")
             {
                 //实例化技能特效
-                GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + acteffectName, typeof(GameObject));
+                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
                 GameObject effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
                 //string positionName = "Center";
@@ -1122,7 +1122,7 @@ public class UI_FunctionOpen : MonoBehaviour {
         actObj.GetComponent<AI_1>().AI_BuZhuoNum = actObj.GetComponent<AI_1>().AI_BuZhuoNum + 1;
 
         //播放捕捉特效
-        GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + "Eff_BuZhuo", typeof(GameObject));
+        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_BuZhuo");
         if (SkillEffect!=null) {
             GameObject effect = (GameObject)Instantiate(SkillEffect);
             effect.SetActive(false);
@@ -1872,7 +1872,7 @@ public class UI_FunctionOpen : MonoBehaviour {
             return GameObject.Instantiate<GameObject>(go);
         }
 
-        go = Resources.Load<GameObject>(mPrefabPath[path]);
+        go = ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>(mPrefabPath[path]);
         mPrefabGameObject.Add(path, go);
         return GameObject.Instantiate<GameObject>(go);
     }
@@ -1882,34 +1882,34 @@ public class UI_FunctionOpen : MonoBehaviour {
     {
         mPrefabPath = new Dictionary<string, string>();
         mPrefabGameObject = new Dictionary<string, GameObject>();
-        mPrefabPath.Add("Obj_Bag", "UGUI/UISet/Bag/Rose_UIBag");
-        mPrefabPath.Add("Obj_Equip", "UGUI/UISet/RoseEquip/RoseEquip");
-        mPrefabPath.Add("Obj_Task", "UGUI/UISet/Task/Rose_TaskList");
-        mPrefabPath.Add("Obj_Pet", "UGUI/UISet/Pet/RosePet");
-        mPrefabPath.Add("Obj_Skill", "UGUI/UISet/Skill/UI_RoseSkill");
-        mPrefabPath.Add("Obj_MakeItem", "UGUI/UISet/RoseEquip/UI_EquipMake");
-        mPrefabPath.Add("Obj_FenXiang", "UGUI/UISet/FenXiang/UI_FenXiang");
-        mPrefabPath.Add("Obj_HuoDongDaTing", "UGUI/UISet/Other/UI_HuoDongDaTing");
-        mPrefabPath.Add("Obj_Map", "UGUI/UISet/Map/UI_Map");
-        mPrefabPath.Add("Obj_Pet_ZhaoHuanSet", "UGUI/UISet/Pet/UI_Pet_ZhaoHuanSet");
-        mPrefabPath.Add("Obj_ChengJiu", "UGUI/UISet/ChengJiu/Rose_ChengJiuSet");
-        mPrefabPath.Add("Obj_PaiMaiHang", "UGUI/UISet/PaiMaiHang/Rose_PaiMaiHangSet");
-        mPrefabPath.Add("Obj_PaiHangBang", "UGUI/UISet/PaiHang/UI_PaiHang");
-        mPrefabPath.Add("Obj_ZhanQuHuoDong", "UGUI/UISet/ZhanQuHuoDong/UI_ZhanQuHuoDong");
-        mPrefabPath.Add("Obj_DayTask", "UGUI/UISet/RoseDay/UI_DayTask");
-        mPrefabPath.Add("Obj_WorldLv", "UGUI/UISet/WorldLv/UI_WorldLvSet");
-        mPrefabPath.Add("Obj_PlayerEquipShow", "UGUI/UISet/PaiHang/UI_PaiHangRoseEquip");
-        mPrefabPath.Add("Obj_PlayerPetShow", "UGUI/UISet/PaiHang/UI_PaiHangShow_RosePet");
-        mPrefabPath.Add("Obj_AcTUIEffect", "UGUI/UISet/Fight/UI_FightHintEffect");
+        mPrefabPath.Add("Obj_Bag", "UISet/Bag/Rose_UIBag");
+        mPrefabPath.Add("Obj_Equip", "UISet/RoseEquip/RoseEquip");
+        mPrefabPath.Add("Obj_Task", "UISet/Task/Rose_TaskList");
+        mPrefabPath.Add("Obj_Pet", "UISet/Pet/RosePet");
+        mPrefabPath.Add("Obj_Skill", "UISet/Skill/UI_RoseSkill");
+        mPrefabPath.Add("Obj_MakeItem", "UISet/RoseEquip/UI_EquipMake");
+        mPrefabPath.Add("Obj_FenXiang", "UISet/FenXiang/UI_FenXiang");
+        mPrefabPath.Add("Obj_HuoDongDaTing", "UISet/Other/UI_HuoDongDaTing");
+        mPrefabPath.Add("Obj_Map", "UISet/Map/UI_Map");
+        mPrefabPath.Add("Obj_Pet_ZhaoHuanSet", "UISet/Pet/UI_Pet_ZhaoHuanSet");
+        mPrefabPath.Add("Obj_ChengJiu", "UISet/ChengJiu/Rose_ChengJiuSet");
+        mPrefabPath.Add("Obj_PaiMaiHang", "UISet/PaiMaiHang/Rose_PaiMaiHangSet");
+        mPrefabPath.Add("Obj_PaiHangBang", "UISet/PaiHang/UI_PaiHang");
+        mPrefabPath.Add("Obj_ZhanQuHuoDong", "UISet/ZhanQuHuoDong/UI_ZhanQuHuoDong");
+        mPrefabPath.Add("Obj_DayTask", "UISet/RoseDay/UI_DayTask");
+        mPrefabPath.Add("Obj_WorldLv", "UISet/WorldLv/UI_WorldLvSet");
+        mPrefabPath.Add("Obj_PlayerEquipShow", "UISet/PaiHang/UI_PaiHangRoseEquip");
+        mPrefabPath.Add("Obj_PlayerPetShow", "UISet/PaiHang/UI_PaiHangShow_RosePet");
+        mPrefabPath.Add("Obj_AcTUIEffect", "UISet/Fight/UI_FightHintEffect");
         mPrefabPath.Add("Obj_JianCeNpc", "3DModel/RoseModel/RoseJianCeNpc");
-        mPrefabPath.Add("Obj_ZhenYing", "UGUI/UISet/ZhenYing/UI_ZhenYingSet");
-        mPrefabPath.Add("Obj_HongBao", "UGUI/UISet/HongBao/UI_HongBaoSet");
-        mPrefabPath.Add("Obj_ShouLie", "UGUI/UISet/HuoDong/UI_HuoDong_ShouLie");
-        mPrefabPath.Add("Obj_Tower", "UGUI/UISet/HuoDong/UI_HuoDong_Tower_Reward");
-        mPrefabPath.Add("Obj_ShangHaiShiLian", "UGUI/UISet/FuBen/UI_FuBen_ShangHaiRewadSet");
-        mPrefabPath.Add("Obj_ShiMing", "UGUI/UISet/ShiMing/UI_ShiMingRewardSet");
-        mPrefabPath.Add("Obj_LiXianShouYi", "UGUI/UISet/LiXian/UI_LiXianShouYi");
-        mPrefabPath.Add("UI_ZhuLingSet", "UGUI/UISet/ZhuLing/UI_ZhuLingSet");
+        mPrefabPath.Add("Obj_ZhenYing", "UISet/ZhenYing/UI_ZhenYingSet");
+        mPrefabPath.Add("Obj_HongBao", "UISet/HongBao/UI_HongBaoSet");
+        mPrefabPath.Add("Obj_ShouLie", "UISet/HuoDong/UI_HuoDong_ShouLie");
+        mPrefabPath.Add("Obj_Tower", "UISet/HuoDong/UI_HuoDong_Tower_Reward");
+        mPrefabPath.Add("Obj_ShangHaiShiLian", "UISet/FuBen/UI_FuBen_ShangHaiRewadSet");
+        mPrefabPath.Add("Obj_ShiMing", "UISet/ShiMing/UI_ShiMingRewardSet");
+        mPrefabPath.Add("Obj_LiXianShouYi", "UISet/LiXian/UI_LiXianShouYi");
+        mPrefabPath.Add("UI_ZhuLingSet", "UISet/ZhuLing/UI_ZhuLingSet");
         
     }
 }

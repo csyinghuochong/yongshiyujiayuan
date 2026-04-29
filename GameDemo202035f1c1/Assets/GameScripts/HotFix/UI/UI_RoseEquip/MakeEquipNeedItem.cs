@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -23,12 +23,12 @@ public class MakeEquipNeedItem : MonoBehaviour {
         Obj_NeedItemName.GetComponent<Text>().text = needItemName;
 
         //显示道具Icon
-        object obj = Resources.Load("ItemIcon/" + needItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + needItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_NeedItemIcon.GetComponent<Image>().sprite = itemIcon;
 
         //显示品质
-        object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(needItemQuality), typeof(Sprite));
+        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(needItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_NeedItemQuality.GetComponent<Image>().sprite = itemQuality;
 

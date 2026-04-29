@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 //冲击波技能 可以配置移动速度和受到的伤害
@@ -104,7 +104,7 @@ public class RoseSkill_ChongJi : MonoBehaviour
                             {
                                 collider.gameObject.GetComponent<AI_1>().IfHitEffect = true;    //播放
                                 //实例化技能特效
-                                GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + AI_HitEffect, typeof(GameObject));
+                                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + AI_HitEffect);
                                 GameObject effect = (GameObject)MonoBehaviour.Instantiate(SkillEffect);
                                 collider.gameObject.GetComponent<AI_1>().HitEffect = effect;
                                 collider.gameObject.GetComponent<AI_1>().HitEffectt_Position = collider.gameObject.GetComponent<AI_1>().BoneSet.transform.Find(AI_HitPosition).gameObject;  //设置播放位置

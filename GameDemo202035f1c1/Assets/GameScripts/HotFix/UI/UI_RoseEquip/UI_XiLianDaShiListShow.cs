@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,7 +51,7 @@ public class UI_XiLianDaShiListShow : MonoBehaviour {
         else {
             Obj_JiHuoHintImg.SetActive(false);
             //变灰
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_JiHuoImg.GetComponent<Image>().material = huiMaterial;
             Obj_JiHuoImg.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 //加血技能
 public class MonsterSkill_ZhongJi_1 : MonoBehaviour
@@ -26,7 +26,7 @@ public class MonsterSkill_ZhongJi_1 : MonoBehaviour
 
         //实例化技能特效
         /*
-        GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
         GameObject effect = (GameObject)Instantiate(SkillEffect);
         effect.SetActive(false);
         effect.transform.parent = this.transform;
@@ -74,9 +74,9 @@ public class MonsterSkill_ZhongJi_1 : MonoBehaviour
             {
                 //播放受击特效
                 Debug.Log("播放受击特效");
-                //actObj.GetComponent<Rose_Status>().HitEffectObj = (GameObject)Resources.Load("Effect/Skill/" + effectName);
+                //actObj.GetComponent<Rose_Status>().HitEffectObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                 //actObj.GetComponent<Rose_Status>().RoseIfHit = true;
-                GameObject hitEffectObj = (GameObject)Instantiate((GameObject)Resources.Load("Effect/Skill/" + effectName));
+                GameObject hitEffectObj = (GameObject)Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName));
 
                 //GameObject hitEffectObj = (GameObject)Instantiate(hitEffectObj);
                 hitEffectObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Low.transform);
@@ -91,7 +91,7 @@ public class MonsterSkill_ZhongJi_1 : MonoBehaviour
             //实例化技能特效
             if (acteffectName != "" && acteffectName != "0")
             {
-                GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + acteffectName, typeof(GameObject));
+                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
                 GameObject effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
                 //effect.transform.parent = this.transform;

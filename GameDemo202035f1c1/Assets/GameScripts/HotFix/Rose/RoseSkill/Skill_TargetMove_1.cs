@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 //冲击波技能 可以配置移动速度和受到的伤害
@@ -149,7 +149,7 @@ public class Skill_TargetMove_1 : MonoBehaviour
                         collider.gameObject.GetComponent<AI_1>().HitEffectt_Position = collider.gameObject.GetComponent<AI_1>().BoneSet.transform.Find(AI_HitPosition).gameObject;  //设置播放位置
                         if (skillHitEffectName != "" && skillHitEffectName != "0")
                         {
-                            AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + skillHitEffectName);
+                            AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
                             AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect.transform.localRotation = Quaternion.Euler(0, 90, 0);
                             //AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect.transform.LookAt( new Vector3(Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position.x, AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect.transform.position.y, Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position.z));
                             

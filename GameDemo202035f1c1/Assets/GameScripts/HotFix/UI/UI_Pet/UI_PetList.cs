@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -49,7 +49,7 @@ public class UI_PetList : MonoBehaviour {
         Obj_PetLv.GetComponent<Text>().text = petLv + langStr;
 
         //显示底图
-        Object obj = Resources.Load("PetHeadIcon/" + petHeadIcon, typeof(Sprite));
+        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + petHeadIcon);
         Sprite img = obj as Sprite;
         Obj_PetIcon.GetComponent<Image>().sprite = img;
 

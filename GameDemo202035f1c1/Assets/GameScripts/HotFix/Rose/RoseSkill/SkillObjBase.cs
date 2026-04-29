@@ -210,7 +210,7 @@ public class SkillObjBase : MonoBehaviour {
                 if (!hintSkillEffectStatus) {
                     
                     //实例化一个提示特效
-                    GameObject obj = (GameObject)Resources.Load("Effect/Rose/Rose_SelectRange_Monster", typeof(GameObject));        //实例化范围特效
+                    GameObject obj = ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Rose/Rose_SelectRange_Monster");        //实例化范围特效
                     HintSkillEffect = (GameObject)Instantiate(obj);
                     HintSkillEffect.transform.position = SkillTargetPoint;
                     hintSkillEffectStatus = true;

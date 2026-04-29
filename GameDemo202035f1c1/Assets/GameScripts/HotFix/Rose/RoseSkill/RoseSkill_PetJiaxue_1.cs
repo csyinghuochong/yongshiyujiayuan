@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 //加血技能
 public class RoseSkill_PetJiaxue_1 : MonoBehaviour
@@ -39,7 +39,7 @@ public class RoseSkill_PetJiaxue_1 : MonoBehaviour
             //实例化技能特效
             if (effectName != "0")
             {
-                GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                 GameObject effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
                 effect.transform.parent = this.transform;
@@ -83,7 +83,7 @@ public class RoseSkill_PetJiaxue_1 : MonoBehaviour
                     Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().HuDunTime = int.Parse(skillParValue[4]);
 
                     //添加护盾特效
-                    GameObject hudunEffect = (GameObject)Resources.Load("Effect/Skill/" + skillParValue[5], typeof(GameObject));
+                    GameObject hudunEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillParValue[5]);
                     GameObject effect = (GameObject)Instantiate(hudunEffect);
                     effect.SetActive(false);
                     //effect.transform.parent = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Center.transform;

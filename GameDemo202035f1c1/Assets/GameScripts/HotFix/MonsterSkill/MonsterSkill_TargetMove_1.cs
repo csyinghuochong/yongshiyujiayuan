@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 //怪物远程攻击技能
@@ -120,7 +120,7 @@ public class MonsterSkill_TargetMove_1 : MonoBehaviour
         {
 
             //实例化技能特效
-            GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)MonoBehaviour.Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = this.gameObject.transform;

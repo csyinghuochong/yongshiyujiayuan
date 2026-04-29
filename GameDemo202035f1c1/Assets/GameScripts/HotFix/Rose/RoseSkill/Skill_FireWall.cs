@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -57,7 +57,7 @@ public class Skill_FireWall : MonoBehaviour
         //实例化技能特效
         if (effectName != "" && effectName != null && effectName != "0") {
 
-            GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             if (SkillEffect != null)
             {
                 effect = (GameObject)Instantiate(SkillEffect);
@@ -179,7 +179,7 @@ public class Skill_FireWall : MonoBehaviour
                             case "1":
                                 if (skillHitEffectName != "" && skillHitEffectName != "0")
                                 {
-                                    AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)Resources.Load("Effect/Skill/" + skillHitEffectName);
+                                    AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
                                 }
                                 AI_Collider.gameObject.GetComponent<AI_1>().IfHitEffect = true;    //播放
                                 AI_Collider.gameObject.GetComponent<AI_1>().HitStatus = true;

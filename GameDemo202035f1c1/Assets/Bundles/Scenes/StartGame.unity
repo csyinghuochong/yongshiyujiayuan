@@ -2845,7 +2845,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 3a029aab4f408ee468e995ec9cbe09cf, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -2870,7 +2871,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 3a029aab4f408ee468e995ec9cbe09cf, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12514,8 +12515,8 @@ MonoBehaviour:
     - 
     - 
     Languages_Touch:
-    - GameUI/Back/Back_5[Back_5]
-    - GameUI_EN/Back/Back_1[Back_1]
+    - Back_5
+    - Back_1
     Flags: 0000
   - Term: "\u56FE\u7247\u767B\u9646\u80CC\u666F2"
     TermType: 5
@@ -12524,7 +12525,7 @@ MonoBehaviour:
     - 
     - 
     Languages_Touch:
-    - GameUI/Img/UI_Image_294[UI_Image_294]
+    - UI_Image_294
     - GameUI/Img/UI_Image_59[UI_Image_59]
     Flags: 0000
   - Term: "\u8FDB\u5165\u4F24\u5BB3\u8BD5\u70BC\u526F\u672C"
@@ -16567,7 +16568,8 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 3a029aab4f408ee468e995ec9cbe09cf, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -16592,7 +16594,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 3a029aab4f408ee468e995ec9cbe09cf, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -31254,7 +31256,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: b1dbb53a7a20d4d47836ff14f8a06f80, type: 3}
+  - {fileID: 21300000, guid: 38ad0341e0f4cf2449c1cd9d1a174aea, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 

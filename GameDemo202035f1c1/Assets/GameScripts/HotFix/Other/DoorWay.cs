@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using Weijing;
@@ -221,11 +221,11 @@ public class DoorWay : MonoBehaviour {
                 roseStatus.Move_Target_Position = roseStatus.gameObject.transform.position;
 
                 //播放传送特效
-                GameObject SkillObj = (GameObject)Resources.Load("Effect/Rose/" + "Rose_MoveScene", typeof(GameObject));
+                GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Rose/" + "Rose_MoveScene");
                 GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
                 //Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Low
 
-                GameObject effectObj =(GameObject)Instantiate((GameObject)Resources.Load("Effect/Skill/Rose_CriAct"));
+                GameObject effectObj =(GameObject)Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Rose_CriAct"));
                 SkillObject_p.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Low.transform);
                 SkillObject_p.transform.localPosition = new Vector3(0, 0.5f, 0);
                 SkillObject_p.transform.localScale = new Vector3(1, 1, 1);

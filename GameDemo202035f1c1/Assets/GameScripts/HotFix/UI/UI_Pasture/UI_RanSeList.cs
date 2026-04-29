@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,7 +41,7 @@ public class UI_RanSeList : MonoBehaviour {
         //测试
         //ranSeIcon = "10001";
 
-        object obj = Resources.Load("OtherIcon/YanSe/" + ranSeIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("OtherIcon/YanSe/" + ranSeIcon);
 		Sprite itemIcon = obj as Sprite;
 		Obj_YanSeIconShow.GetComponent<Image>().sprite = itemIcon;
 

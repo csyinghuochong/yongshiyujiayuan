@@ -136,13 +136,13 @@ public class RoseSkill_Sing_1 : MonoBehaviour
 
             //Debug.Log("技能选择范围中000");
             //实例化选中特效
-            SkillSelectRangeEffect = (GameObject)Resources.Load("Effect/Rose/Rose_SelectRange", typeof(GameObject));        //实例化范围特效
+            SkillSelectRangeEffect = ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Rose/Rose_SelectRange");        //实例化范围特效
             effect = (GameObject)Instantiate(SkillSelectRangeEffect);
             effect.transform.parent = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.Find("SclectEffectSet");
             effect.GetComponent<Rose_SelectRange>().RangeSize = rangeSize;
 
             //实例化玩家释法范围
-            GameObject skillRangeEffect = (GameObject)Resources.Load("Effect/Rose/Rose_SkillRange", typeof(GameObject));        //实例化范围特效
+            GameObject skillRangeEffect = ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Rose/Rose_SkillRange");        //实例化范围特效
             SkillRangeEffect = (GameObject)Instantiate(skillRangeEffect);
             //SkillRangeEffect.transform.parent = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.Find("SclectEffectSet");
             //float rangeSize = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillRangeSize", "ID", skillID, "Skill_Template"));
@@ -219,7 +219,7 @@ public class RoseSkill_Sing_1 : MonoBehaviour
 
         //设置实例化技能
         string skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template");
-        SkillObj = (GameObject)Resources.Load("Effect/Skill_Obj/" + skillObjName, typeof(GameObject));
+        SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
         SkillObject_p = (GameObject)Instantiate(SkillObj);
         //传递技能对应的值
         SkillObjBase skillStatus = SkillObject_p.transform.GetComponent<SkillObjBase>();
@@ -316,7 +316,7 @@ public class RoseSkill_Sing_1 : MonoBehaviour
                         //{
                         //设置实例化技能
                         skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template");
-                        SkillObj = (GameObject)Resources.Load("Effect/Skill_Obj/" + skillObjName, typeof(GameObject));
+                        SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
                         GameObject nowSkillObject_p = (GameObject)Instantiate(SkillObj);
                         //传递技能对应的值
                         SkillObjBase nowskillStatus = nowSkillObject_p.transform.GetComponent<SkillObjBase>();
@@ -361,7 +361,7 @@ public class RoseSkill_Sing_1 : MonoBehaviour
                 {
                     //设置实例化技能
                     skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template");
-                    SkillObj = (GameObject)Resources.Load("Effect/Skill_Obj/" + skillObjName, typeof(GameObject));
+                    SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
                     GameObject nowSkillObject_p = (GameObject)Instantiate(SkillObj);
                     //传递技能对应的值
                     SkillObjBase nowskillStatus = nowSkillObject_p.transform.GetComponent<SkillObjBase>();

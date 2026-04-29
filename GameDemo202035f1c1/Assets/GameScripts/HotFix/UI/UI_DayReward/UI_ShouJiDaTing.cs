@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -63,7 +63,7 @@ public class UI_ShouJiDaTing : MonoBehaviour
                 }
                 else {
                     //显示激活图标
-                    object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+                    object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                     Material huiMaterial = huiObj as Material;
                     duiHuanTitleObj.GetComponent<UI_ShouJiTitleObj>().Obj_UISign.GetComponent<Image>().material = huiMaterial;
                     //duiHuanTitleObj.GetComponent<UI_ShouJiTitleObj>().Obj_UITitleText.GetComponent<Text>().text = "国家达到<color=#ff0000ff>(" + countryLv + "/" + countryLvlimit + ")</color>可激活兑换";

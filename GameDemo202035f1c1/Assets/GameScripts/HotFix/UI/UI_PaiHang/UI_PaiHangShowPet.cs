@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -717,7 +717,7 @@ public class UI_PaiHangShowPet : MonoBehaviour {
         Obj_EquipBtnText_3.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 
         //显示按钮
-        object obj = Resources.Load("GameUI/" + "Btn/Btn_12_2", typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadArtResourceSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         ObjBtn_Pet_List.GetComponent<Image>().sprite = img;
         ObjBtn_Pet_HeCheng.GetComponent<Image>().sprite = img;
@@ -735,7 +735,7 @@ public class UI_PaiHangShowPet : MonoBehaviour {
                 UpdateShowStatus = true;
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadArtResourceSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Pet_List.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_1.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -746,7 +746,7 @@ public class UI_PaiHangShowPet : MonoBehaviour {
                 Obj_Pet_HeChengSet.SetActive(true);
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadArtResourceSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Pet_HeCheng.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_2.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -762,7 +762,7 @@ public class UI_PaiHangShowPet : MonoBehaviour {
                 Obj_Pet_XiLianSet.SetActive(true);
 
                 //显示底图
-                obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                obj = ResourcesLoaderComponent.Instance.LoadArtResourceSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Pet_XiLian.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_3.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);

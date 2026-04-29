@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Function_Skill{
@@ -378,7 +378,7 @@ public class Function_Skill{
         if (effectName != "" && effectName != "0") {
 
             //实例化技能特效
-            GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)MonoBehaviour.Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = SelfObj.transform;

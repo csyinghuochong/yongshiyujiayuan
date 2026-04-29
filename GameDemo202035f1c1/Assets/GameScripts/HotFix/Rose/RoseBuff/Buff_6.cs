@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using CodeStage.AntiCheat.ObscuredTypes;
 
@@ -59,7 +59,7 @@ public class Buff_6 : MonoBehaviour {
             //实例化技能特效
             if (effectName != "" && effectName!="0")
             {
-                GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                 effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
                 //根据Buff目标绑定不同的位置

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -61,7 +61,7 @@ public class UI_MyTeamSet : MonoBehaviour {
                     Obj_TeamLvList[i].GetComponent<Text>().text = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级") +" " + petLv;
 
                     //显示底图
-                    Object obj = Resources.Load("PetHeadIcon/" + nowHeadIcon, typeof(Sprite));
+                    Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                     Sprite img = obj as Sprite;
                     Obj_TeamIconList[i].GetComponent<Image>().sprite = img;
                 }

@@ -47,12 +47,12 @@ public class UI_CunMinDeXin : MonoBehaviour {
         string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", ItemID, "Item_Template");
 
         //显示道具Icon
-        object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
         //显示品质
-        object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality), typeof(Sprite));
+        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_ItemQuatily.GetComponent<Image>().sprite = itemQuality;
 

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -48,7 +48,7 @@ public class UI_HuoDongDaTingDengLu : MonoBehaviour {
             itemObj.GetComponent<UI_ChouKaItemObj>().ItemNum = dengLuRewardItemValue[1];
             if (ifItemIconHui) {
                 //变灰
-                object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+                object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                 Material huiMaterial = huiObj as Material;
                 itemObj.GetComponent<UI_ChouKaItemObj>().Obj_ItemIcon.GetComponent<Image>().material = huiMaterial;
             }

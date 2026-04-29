@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,7 +36,7 @@ public class UI_ChengJiuHintObj : MonoBehaviour {
         Obj_ChengJiuNum.GetComponent<Text>().text = rewardNum;
 
         //显示Icon
-        object obj = Resources.Load("ChengJiuIcon/" + icon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
         Sprite itemIcon = obj as Sprite;
         Obj_ChengJiuIcon.GetComponent<Image>().sprite = itemIcon;
 

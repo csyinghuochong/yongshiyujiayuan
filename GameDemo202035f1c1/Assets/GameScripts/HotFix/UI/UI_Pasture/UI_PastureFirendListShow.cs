@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -104,7 +104,7 @@ public class UI_PastureFirendListShow : MonoBehaviour {
                 headIconID = "10002";
                 break;
         }
-        object obj = Resources.Load("HeadIcon/PlayerIcon/" + headIconID, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + headIconID);
         Sprite itemIcon = obj as Sprite;
         Obj_HeadIcon.GetComponent<Image>().sprite = itemIcon;
         BtnShow();

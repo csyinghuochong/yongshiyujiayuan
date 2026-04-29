@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 //加血技能
 public class MonsterSkill_Jiaxue_1 : MonoBehaviour
@@ -36,7 +36,7 @@ public class MonsterSkill_Jiaxue_1 : MonoBehaviour
 
         //实例化技能特效
         if (effectName != "0") {
-            GameObject SkillEffect = (GameObject)Resources.Load("Effect/Skill/" + effectName, typeof(GameObject));
+            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = this.transform;

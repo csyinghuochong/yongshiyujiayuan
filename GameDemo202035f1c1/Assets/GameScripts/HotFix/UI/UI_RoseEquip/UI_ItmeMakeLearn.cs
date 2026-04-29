@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -155,12 +155,12 @@ public class UI_ItmeMakeLearn : MonoBehaviour
         Obj_MakeItemName.GetComponent<Text>().text = makeItemName;
 
         //显示道具Icon
-        object obj = Resources.Load("ItemIcon/" + makeItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + makeItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_MakeItemIcon.GetComponent<Image>().sprite = itemIcon;
 
         //显示品质
-        object obj2 = Resources.Load(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(makeItemQuality), typeof(Sprite));
+        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(makeItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_MakeItemQuality.GetComponent<Image>().sprite = itemQuality;
 
@@ -491,7 +491,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
 	{
 
 		//显示按钮
-		object obj = Resources.Load("GameUI/" + "Btn/Btn_12_2", typeof(Sprite));
+		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
 		Sprite img = obj as Sprite;
 		Btn_CaiYao.GetComponent<Image>().sprite = img;
 		Btn_DaZao.GetComponent<Image>().sprite = img;
@@ -505,7 +505,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
 			    Btn_Lianjin.SetActive(true);
 
 			    //显示底图
-			    obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+			    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
 			    img = obj as Sprite;
 			    Btn_Lianjin.GetComponent<Image>().sprite = img;
 
@@ -520,7 +520,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
                     //Obj_Pet_HeChengSet.SetActive(true);
 
                     //显示底图
-                    obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadArtResourceSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                     img = obj as Sprite;
                     Btn_CaiYao.GetComponent<Image>().sprite = img;
 
@@ -532,7 +532,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
                 case "3":
 
                     //显示底图
-                    obj = Resources.Load("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+                    obj = ResourcesLoaderComponent.Instance.LoadArtResourceSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                     img = obj as Sprite;
                     Btn_DaZao.GetComponent<Image>().sprite = img;
 

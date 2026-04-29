@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -74,7 +74,7 @@ public class Player_Bone : MonoBehaviour {
             case "1":
                 string waiguanName = "PiFu_" + showType;
 
-                Texture2D img = (Texture2D)Resources.Load("3DModel/RoseModel/Occ_ZhanShi/PiFu/" + waiguanName);
+                Texture2D img = (Texture2D)ResourcesLoaderComponent.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_ZhanShi/PiFu/" + waiguanName);
                 if (img == null) {
                     return;
                 }
@@ -87,7 +87,7 @@ public class Player_Bone : MonoBehaviour {
             //法师相关
             case "2":
                 waiguanName = "PiFu_" + showType;
-                img = (Texture2D)Resources.Load("3DModel/RoseModel/Occ_MoFaShi/PiFu/" + waiguanName);
+                img = (Texture2D)ResourcesLoaderComponent.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_MoFaShi/PiFu/" + waiguanName);
                 if (img == null)
                 {
                     return;

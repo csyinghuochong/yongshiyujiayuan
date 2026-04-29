@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -37,7 +37,7 @@ public class UI_BaoLvListShow : MonoBehaviour {
             UI_ShowSelect.SetActive(false);
 
             //置灰
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             UI_ShowBaoLvIcon.GetComponent<Image>().material = huiMaterial;
             //Obj_ItemName.GetComponent<Text>().color = new Color(0.55f, 0.55f, 0.55f, 1);

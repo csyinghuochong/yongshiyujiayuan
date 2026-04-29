@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -54,7 +54,7 @@ public class UI_PastureShowDataViewSet : MonoBehaviour {
         string nowModelID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ModelID", "ID", PastureID, "Pasture_Template");
         float nowShowPro = float.Parse( Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ShowImgPro", "ID", PastureID, "Pasture_Template"));
         
-        GameObject monsterObj = Instantiate((GameObject)Resources.Load("3DModel/Pasture/" + nowModelID, typeof(GameObject)));
+        GameObject monsterObj = Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/Pasture/" + nowModelID));
 
         //创建怪物
         if (monsterObj != null)
@@ -136,7 +136,7 @@ public class UI_PastureShowDataViewSet : MonoBehaviour {
         string nowShowItemID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ShowItemID", "ID", PastureID, "Pasture_Template");
         string ItemIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", nowShowItemID, "Item_Template");
         //string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", ItemID, "Item_Template");
-        object obj = Resources.Load("ItemIcon/" + ItemIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_PastureItemIcon.GetComponent<Image>().sprite = itemIcon;
 

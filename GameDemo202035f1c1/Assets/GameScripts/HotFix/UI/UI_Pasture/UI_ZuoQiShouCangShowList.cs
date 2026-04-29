@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -60,7 +60,7 @@ public class UI_ZuoQiShouCangShowList : MonoBehaviour {
 
 
         //显示模型
-        object obj = Resources.Load("CameraImage/ZuoQi_" + ModelIDStr, typeof(Texture));
+        object obj = ResourcesLoaderComponent.Instance.LoadTextureSync<Texture>("CameraImage/ZuoQi_" + ModelIDStr);
         Texture objImg = obj as Texture;
         Obj_ZuoQiShowImage.GetComponent<RawImage>().texture = objImg;
 
@@ -87,7 +87,7 @@ public class UI_ZuoQiShouCangShowList : MonoBehaviour {
             Obj_ZuoQiWeiJiHuo.SetActive(true);
 
             //显示阶段属性加成
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_ZuoQiShowImage.GetComponent<RawImage>().material = huiMaterial;
 

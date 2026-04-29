@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -102,7 +102,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         }
 
         //显示Icon
-        object obj = Resources.Load("SkillIcon/" + skillIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIcon);
         skillIconSpr = obj as Sprite;
         Obj_SkillIcon.GetComponent<Image>().sprite = skillIconSpr;
         //灰化按钮
@@ -113,7 +113,7 @@ public class UI_RoseSkillList : MonoBehaviour {
 
         }
         else {
-            object huiObj = (Material)Resources.Load("Effect/UI_Effect/Sharde/UI_Hui", typeof(Material));
+            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_SkillIcon.GetComponent<Image>().material = huiMaterial;
             string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("未学习");

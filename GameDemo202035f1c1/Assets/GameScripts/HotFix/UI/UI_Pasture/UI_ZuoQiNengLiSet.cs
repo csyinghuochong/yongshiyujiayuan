@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -117,7 +117,7 @@ public class UI_ZuoQiNengLiSet : MonoBehaviour {
         //显示Icon要处理
         string nengLiIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", nowZuoQiNengLiLvID, "ZuoQiNengLi_Template");
         //显示道具Icon
-        object obj = Resources.Load("OtherIcon/NengLiIcon/" + nengLiIcon, typeof(Sprite));
+        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("OtherIcon/NengLiIcon/" + nengLiIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_NengLiIcon.GetComponent<Image>().sprite = itemIcon;
 

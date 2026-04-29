@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using YooAsset;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 public class GameApp
 {
@@ -10,6 +10,7 @@ public class GameApp
     public static void Entrance(object[] objects)
     {
         Debug.Log("热更程序集完成 开始游戏！！！！！！！！！！");
-        YooAssets.LoadSceneAsync("Assets/Bundles/Scenes/StartGame.unity");
+
+        ResourcesLoaderComponent.Instance.LoadSceneAsync(ABPathHelper.GetScenePath("StartGame")).Forget();
     }
 }
