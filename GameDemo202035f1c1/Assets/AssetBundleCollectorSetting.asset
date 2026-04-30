@@ -74,7 +74,7 @@ MonoBehaviour:
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
-        FilterRuleName: CollectPrefab
+        FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
     - GroupName: Icon
