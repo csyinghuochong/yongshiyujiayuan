@@ -1872,7 +1872,15 @@ public class UI_FunctionOpen : MonoBehaviour {
             return GameObject.Instantiate<GameObject>(go);
         }
 
-        go = ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>(mPrefabPath[path]);
+        if (path == "Obj_JianCeNpc")
+        {
+            go = ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>(mPrefabPath[path]);
+        }
+        else
+        {
+            go = ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>(mPrefabPath[path]);
+        }
+
         mPrefabGameObject.Add(path, go);
         return GameObject.Instantiate<GameObject>(go);
     }
@@ -1901,7 +1909,7 @@ public class UI_FunctionOpen : MonoBehaviour {
         mPrefabPath.Add("Obj_PlayerEquipShow", "UISet/PaiHang/UI_PaiHangRoseEquip");
         mPrefabPath.Add("Obj_PlayerPetShow", "UISet/PaiHang/UI_PaiHangShow_RosePet");
         mPrefabPath.Add("Obj_AcTUIEffect", "UISet/Fight/UI_FightHintEffect");
-        mPrefabPath.Add("Obj_JianCeNpc", "3DModel/RoseModel/RoseJianCeNpc");
+        mPrefabPath.Add("Obj_JianCeNpc", "3DModel/RoseModel/RoseJianCeNpc");// !!!
         mPrefabPath.Add("Obj_ZhenYing", "UISet/ZhenYing/UI_ZhenYingSet");
         mPrefabPath.Add("Obj_HongBao", "UISet/HongBao/UI_HongBaoSet");
         mPrefabPath.Add("Obj_ShouLie", "UISet/HuoDong/UI_HuoDong_ShouLie");
