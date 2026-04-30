@@ -22350,7 +22350,6 @@ GameObject:
   - component: {fileID: 149667811}
   - component: {fileID: 149667810}
   - component: {fileID: 149667813}
-  - component: {fileID: 149667814}
   m_Layer: 5
   m_Name: Btn_FanGun
   m_TagString: Untagged
@@ -22486,34 +22485,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Btn_Type: 3
---- !u!114 &149667814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149667808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u4E3B\u754C\u9762_\u524D\u51B2"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &149798142
 GameObject:
   m_ObjectHideFlags: 0
@@ -115845,7 +115816,6 @@ GameObject:
   - component: {fileID: 773849345}
   - component: {fileID: 773849344}
   - component: {fileID: 773849343}
-  - component: {fileID: 773849347}
   m_Layer: 5
   m_Name: Btn_TanSuo
   m_TagString: Untagged
@@ -115980,34 +115950,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773849341}
   m_CullTransparentMesh: 1
---- !u!114 &773849347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773849341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u4E3B\u754C\u9762_\u63A2\u7D22"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &773989602
 GameObject:
   m_ObjectHideFlags: 0
@@ -170615,7 +170557,9 @@ MonoBehaviour:
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
+  TranslatedObjects:
+  - {fileID: 21300000, guid: 26b0f5d08e5bd524bac4db56c0fcfe41, type: 3}
+  - {fileID: 21300000, guid: a7677e56d0ff7c34c95be885faf8efe1, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 
@@ -181604,7 +181548,6 @@ GameObject:
   - component: {fileID: 1247026517}
   - component: {fileID: 1247026516}
   - component: {fileID: 1247026515}
-  - component: {fileID: 1247026519}
   m_Layer: 5
   m_Name: Btn_BuZhuo
   m_TagString: Untagged
@@ -181740,34 +181683,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247026513}
   m_CullTransparentMesh: 1
---- !u!114 &1247026519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247026513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u4E3B\u754C\u9762_\u6293\u6355"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1247194254
 GameObject:
   m_ObjectHideFlags: 0
@@ -241490,8 +241405,8 @@ MonoBehaviour:
     - GameUI/Btn/Btn_48[Btn_48]
     - GameUI_EN/Btn/Btn_48[Btn_48]
     Languages_Touch:
-    - 
-    - 
+    - Btn_48
+    - Btn_49
     Flags: 0000
   - Term: "\u4E3B\u754C\u9762_\u6293\u6355"
     TermType: 5
@@ -241500,8 +241415,8 @@ MonoBehaviour:
     - GameUI/Btn/Btn_49[Btn_49]
     - GameUI_EN/Btn/Btn_49[Btn_49]
     Languages_Touch:
-    - 
-    - 
+    - Btn_49
+    - Btn_49
     Flags: 0000
   - Term: "\u4E3B\u754C\u9762_\u5BF9\u8BDD"
     TermType: 5
@@ -241540,8 +241455,8 @@ MonoBehaviour:
     - GameUI/Btn/Btn_55[Btn_55]
     - GameUI_EN/Btn/Btn_55[Btn_55]
     Languages_Touch:
-    - 
-    - 
+    - Btn_55
+    - Btn_55
     Flags: 0000
   - Term: "\u4E3B\u754C\u9762_\u62FE\u53D6"
     TermType: 5
@@ -242929,8 +242844,8 @@ MonoBehaviour:
     - 
     - 
     Languages_Touch:
-    - GameUI/Btn/Btn_11[Btn_11]
-    - GameUI_EN/Btn/Btn_11[Btn_11]
+    - Btn_11
+    - Btn_11
     Flags: 0000
   mLanguages:
   - Name: Chinese
