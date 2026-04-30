@@ -27698,7 +27698,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u51FA\n\u552E"
+  m_Text: "\u51fa\n\u552e"
 --- !u!114 &114002398370431376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30237,7 +30237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u62CD\n\u5356"
+  m_Text: "\u62cd\n\u5356"
 --- !u!114 &114012782381074900
 MonoBehaviour:
   m_ObjectHideFlags: 0

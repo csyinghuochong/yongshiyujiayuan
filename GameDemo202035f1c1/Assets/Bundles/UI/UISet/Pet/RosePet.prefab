@@ -5685,7 +5685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4FEE\n\u70BC"
+  m_Text: "\u4fee\n\u70bc"
 --- !u!114 &114082883999071550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9070,7 +9070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PetPosition
+  m_Text: "\u4e3b\u5ba0"
 --- !u!114 &114743793153971120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11286,7 +11286,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F53\u524D\u5269\u4F59\u70B9\u6570:"
+  m_Text: "\u5f53\u524d\u5269\u4f59\u70b9\u6570"
 --- !u!114 &114183132414068602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12267,7 +12267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u70B9\u51FB\u653E\u5165\u5BA0\u7269\u88C5\u5907"
+  m_Text: "\u70b9\u51fb\u653e\u5165\u6d17\u70bc\u9053\u5177"
 --- !u!114 &114937452070936656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23638,7 +23638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5206\u89E3"
+  m_Text: "\u653e\u751f"
 --- !u!114 &114273839539735332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34236,7 +34236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SP
+  m_Text: "\u9b54\u6cd5"
 --- !u!114 &114608834500145424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48246,7 +48246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u53CC\u9632"
+  m_Text: "\u53cc\u9632"
 --- !u!114 &114502416555808164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53476,7 +53476,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ATK
+  m_Text: "\u653b\u51fb"
 --- !u!114 &114771852705822226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58345,7 +58345,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6D17\n\u70BC"
+  m_Text: "\u6d17\n\u70bc"
 --- !u!114 &114282338079036296
 MonoBehaviour:
   m_ObjectHideFlags: 0

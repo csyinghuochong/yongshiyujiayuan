@@ -1360,7 +1360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Learn
+  m_Text: "\u5b66\u4e60\u5236\u4f5c"
 --- !u!114 &114624723069525748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5105,7 +5105,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Learn Make
+  m_Text: "\u5b66\u4e60\u5236\u9020"
 
 '
 --- !u!114 &114595329909024106
@@ -5310,7 +5310,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: 'Learn Cost:'
+  m_Text: "\u5b66\u4e60\u6d88\u8017:"
 --- !u!114 &114440052724633522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5636,7 +5636,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.42
-  m_Text: none
+  m_Text: "\u5f53\u524d\u6682\u65e0\u5b66\u4e60\u6280\u80fd\n\u63d0\u5347\u7b49\u7ea7\u89e3\u9501\u5b66\u4e60"
 --- !u!114 &114028913520614726
 MonoBehaviour:
   m_ObjectHideFlags: 0

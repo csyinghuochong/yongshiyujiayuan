@@ -80,7 +80,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (No)
+  m_Text: "(\u672a\u62e5\u6709)"
 --- !u!114 &11481526
 MonoBehaviour:
   m_ObjectHideFlags: 0

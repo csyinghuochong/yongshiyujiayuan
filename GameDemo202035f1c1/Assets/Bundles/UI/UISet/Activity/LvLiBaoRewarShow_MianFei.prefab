@@ -2182,7 +2182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Arrival Level Charge
+  m_Text: "\u5230\u8fbe\u7b49\u7ea7\u514d\u8d39\u9886\u53d6"
 --- !u!114 &114782547198870934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3184,7 +3184,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Get
+  m_Text: "\u9886\u53d6"
 --- !u!114 &114220078827016234
 MonoBehaviour:
   m_ObjectHideFlags: 0

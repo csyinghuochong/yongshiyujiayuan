@@ -305,7 +305,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resurrection
+  m_Text: "\u539f\u5730\u590d\u6d3b"
 --- !u!114 &11471990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +844,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u590D\u6D3B\u5E01\u6570\u91CF:"
+  m_Text: "\u590d\u6d3b\u5e01\u6570\u91cf"
 --- !u!114 &114890178286834522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,7 +1074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go Back
+  m_Text: "\u56de\u5230\u4e3b\u57ce"
 --- !u!114 &114925397531754564
 MonoBehaviour:
   m_ObjectHideFlags: 0

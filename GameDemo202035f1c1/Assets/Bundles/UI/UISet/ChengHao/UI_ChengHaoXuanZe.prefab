@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: No Title!
+  m_Text: "\u6682\u65e0\u62e5\u6709\u79f0\u53f7!"
 --- !u!114 &114365783788332080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select Title
+  m_Text: "\u9009\u62e9\u79f0\u53f7"
 --- !u!114 &114696127009573652
 MonoBehaviour:
   m_ObjectHideFlags: 0

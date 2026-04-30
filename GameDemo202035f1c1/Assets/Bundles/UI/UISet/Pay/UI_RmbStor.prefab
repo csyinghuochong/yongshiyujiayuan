@@ -11227,7 +11227,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Please click here if you haven't arrived after recharging
+  m_Text: "\u5145\u503c\u540e\u672a\u5230\u8d26\u8bf7\u70b9\u51fb\u6b64\u5904"
 --- !u!114 &114947207823814254
 MonoBehaviour:
   m_ObjectHideFlags: 0

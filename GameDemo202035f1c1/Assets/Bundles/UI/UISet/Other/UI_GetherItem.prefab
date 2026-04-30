@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Opening\u2026\u2026"
+  m_Text: "\u5f00\u542f\u4e2d\u2026\u2026"
 --- !u!114 &11474024
 MonoBehaviour:
   m_ObjectHideFlags: 0

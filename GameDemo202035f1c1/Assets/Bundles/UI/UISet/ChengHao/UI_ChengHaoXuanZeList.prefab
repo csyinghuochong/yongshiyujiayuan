@@ -346,7 +346,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UseTitle
+  m_Text: "\u4f7f\u7528\u79f0\u53f7"
 --- !u!114 &114837080160889012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +976,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UseTitle
+  m_Text: "\u4f7f\u7528\u79f0\u53f7"
 --- !u!114 &114578422196549584
 MonoBehaviour:
   m_ObjectHideFlags: 0

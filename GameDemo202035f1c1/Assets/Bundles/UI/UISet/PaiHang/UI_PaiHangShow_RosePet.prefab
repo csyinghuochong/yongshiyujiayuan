@@ -1992,7 +1992,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HP
+  m_Text: "\u8840\u91cf"
 --- !u!114 &114268871201775670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,7 +2275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RES
+  m_Text: "\u9b54\u9632"
 --- !u!114 &114578930893261644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2811,7 +2811,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: IntQuality
+  m_Text: "\u6cd5\u529b\u8d44\u8d28"
 --- !u!114 &114398999126804014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3812,7 +3812,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ATK
+  m_Text: "\u653b\u51fb"
 --- !u!114 &114802484356859232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4932,7 +4932,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UPQuality
+  m_Text: "\u6210\u957f\u8d44\u8d28"
 --- !u!114 &114467541801070266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6399,7 +6399,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ACTQuality
+  m_Text: "\u653b\u51fb\u8d44\u8d28"
 --- !u!114 &114720878935527000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6773,7 +6773,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DEFQuality
+  m_Text: "\u7269\u9632\u8d44\u8d28"
 --- !u!114 &114573291436217754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7049,7 +7049,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DEF
+  m_Text: "\u7269\u9632"
 --- !u!114 &114015543097766316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7671,7 +7671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PetQualifications
+  m_Text: "\u5ba0\u7269\u8d44\u8d28"
 --- !u!114 &114439218344183964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8564,8 +8564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: After tapping the combination,the main pet or the sub-pet will disappear
-    randomly,and the combined pet will randomly change the qualifications and skills.
+  m_Text: "\u4f60\u8fd8\u672a\u62e5\u6709\u4e00\u53ea\u5ba0\u7269"
 --- !u!114 &114303807670858752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9629,7 +9628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ISP
+  m_Text: "\u653b\u901f"
 --- !u!114 &114773397392951922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9737,7 +9736,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HpQuality
+  m_Text: "\u8840\u91cf\u8d44\u8d28"
 --- !u!114 &114524206254468334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10111,7 +10110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ADFQuality
+  m_Text: "\u6cd5\u9632\u8d44\u8d28"
 --- !u!114 &114311238854375378
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1231,7 +1231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6280\n\u80FD"
+  m_Text: "\u6280\n\u80fd"
 --- !u!114 &114111910987313602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2351,8 +2351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: When the character level is higher than level 10,each level will gain 1
-    talent point.
+  m_Text: "\u63d0\u793a\uff1a\u5f53\u89d2\u8272\u5927\u4e8e10\u7ea7\u540e,\u6bcf\u53471\u7ea7\u83b7\u5f971\u70b9\u5929\u8d4b\u70b9\u6570"
 --- !u!114 &114614966777158060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4946,7 +4945,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5929\n\u8D4B"
+  m_Text: "\u89c9\u9192"
 --- !u!114 &114466168408668310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10815,7 +10814,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5929\n\u8D4B"
+  m_Text: "\u5929\n\u8d4b"
 --- !u!114 &114073685341992692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11003,7 +11002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'RemainderPoint:'
+  m_Text: "\u5269\u4f59\u5929\u8d4b\u70b9\uff1a"
 --- !u!114 &114750349414765328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13711,7 +13710,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Skill
+  m_Text: "\u4e3b\u52a8\u6280\u80fd"
 --- !u!114 &114000600140062720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17455,7 +17454,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Skill
+  m_Text: "\u4e3b\u52a8\u6280\u80fd"
 --- !u!114 &114686966922676334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18393,7 +18392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ATKType
+  m_Text: "\u6b66\u5668\u5929\u8d4b"
 --- !u!114 &114115346145716426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20826,7 +20825,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rest
+  m_Text: "\u5929\u8d4b\u91cd\u7f6e"
 --- !u!114 &114099109477943190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25176,7 +25175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bag Items
+  m_Text: "\u80cc\u5305\u9053\u5177"
 --- !u!114 &114533893882336640
 MonoBehaviour:
   m_ObjectHideFlags: 0

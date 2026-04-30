@@ -484,7 +484,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ViewPet
+  m_Text: "\u67e5\u770b\u5ba0\u7269"
 --- !u!114 &114159308365802436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ViewEquip
+  m_Text: "\u67e5\u770b\u88c5\u5907"
 --- !u!114 &114246620906198952
 MonoBehaviour:
   m_ObjectHideFlags: 0

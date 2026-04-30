@@ -404,7 +404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (Not activated)
+  m_Text: "(\u672a\u6fc0\u6d3b)"
 --- !u!114 &114273787512861148
 MonoBehaviour:
   m_ObjectHideFlags: 0

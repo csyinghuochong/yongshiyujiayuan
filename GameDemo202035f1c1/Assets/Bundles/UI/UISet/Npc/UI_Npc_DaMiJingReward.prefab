@@ -132,7 +132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Receive rewards
+  m_Text: "\u9886\u53d6\u5927\u79d8\u5883\u5956\u52b1"
 --- !u!114 &114767056690776272
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -375,7 +375,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spirit Ability
+  m_Text: "\u7cbe\u7075\u80fd\u529b"
 --- !u!114 &114163566449425288
 MonoBehaviour:
   m_ObjectHideFlags: 0

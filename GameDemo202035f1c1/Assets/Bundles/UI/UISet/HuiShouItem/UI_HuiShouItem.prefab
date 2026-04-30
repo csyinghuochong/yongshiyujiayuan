@@ -3119,7 +3119,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Recycle
+  m_Text: "\u56de\u6536\u88c5\u5907"
 --- !u!114 &114397430445801116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5170,7 +5170,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Put Purple Quality
+  m_Text: "\u4e00\u952e\u653e\u5165\u7d2b\u8272\u7269\u54c1"
 --- !u!114 &114018517216947958
 MonoBehaviour:
   m_ObjectHideFlags: 0

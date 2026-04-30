@@ -8219,7 +8219,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spirit Ability
+  m_Text: "\u7cbe\u7075\u80fd\u529b"
 --- !u!114 &114348772213285164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10118,7 +10118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Achievements Number
+  m_Text: "\u603b\u6210\u5c31\u70b9\u6570\uff1a"
 --- !u!114 &114876667952401536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11992,7 +11992,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spirit
+  m_Text: "\u7cbe\n\u7075"
 --- !u!114 &114954401990988752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13970,9 +13970,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: There is a low probability of defeating a monster to unlock the corresponding
-    monstersprite.Only one of the active sprites can be activated,and all of the
-    passive sprites are activated after unlocking.
+  m_Text: "\u63d0\u793a:\u51fb\u8d25\u602a\u7269\u6709\u8f83\u4f4e\u6982\u7387\u53ef\u4ee5\u6fc0\u6d3b\u5bf9\u5e94\u7684\u602a\u7269\u7cbe\u7075,\u4e3b\u52a8\u7cbe\u7075\u53ea\u80fd\u6fc0\u6d3b\u4e00\u79cd,\u88ab\u52a8\u7cbe\u7075\u4e3a\u5168\u90e8\u6fc0\u6d3b"
 --- !u!114 &114574755247920424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14080,7 +14078,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ethnicity:'
+  m_Text: "\u79cd\u65cf\uff1a"
 --- !u!114 &114038969777314924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17087,7 +17085,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9996\u6740\u540D\u5355"
+  m_Text: "\u9996\u80dc\u540d\u5355"
 --- !u!114 &114060122703726832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17732,7 +17730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Receive
+  m_Text: "\u9886\u53d6\u5956\u52b1"
 --- !u!114 &114406938984317548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17856,7 +17854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Target
+  m_Text: "\u6210\n\u5c31"
 --- !u!114 &114784873803794454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25712,7 +25710,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Win
+  m_Text: "\u9996\n\u80dc"
 --- !u!114 &114640489217661432
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -737,7 +737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sell
+  m_Text: "\u51fa \u552e"
 --- !u!114 &114707292808294686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,7 +1757,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u51FA\u552E\u4E2D\u7684\u9053\u5177"
+  m_Text: "\u51fa\u552e\u7684\u9053\u5177"
 --- !u!114 &114091734539942022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2443,7 +2443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tips: Need 5% Processing Fees'
+  m_Text: "\u624b\u7eed\u8d39"
 --- !u!114 &114519426229363400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,7 +2870,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sell Number
+  m_Text: "\u51fa\u552e\u6570\u91cf"
 --- !u!114 &114001563069360048
 MonoBehaviour:
   m_ObjectHideFlags: 0

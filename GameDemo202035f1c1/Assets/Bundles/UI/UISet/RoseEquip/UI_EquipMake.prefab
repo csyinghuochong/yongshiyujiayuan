@@ -631,7 +631,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Make Content
+  m_Text: "\u5236\u4f5c\u5185\u5bb9"
 --- !u!114 &114984701061561980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Make Recipes
+  m_Text: "\u5236\u4f5c\u914d\u65b9"
 --- !u!114 &114073667116943696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Make Result
+  m_Text: "\u5236\u4f5c\u9053\u5177"
 --- !u!114 &11480526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,7 +3282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (Boost Good Equip Probability)
+  m_Text: "(\u63d0\u5347\u6253\u9020\u6781\u54c1\u7684\u6982\u7387)"
 --- !u!114 &114261036631751478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4221,7 +4221,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Alchemy
+  m_Text: "\u70bc\n\u91d1"
 --- !u!114 &114069530914141358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5032,7 +5032,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gem
+  m_Text: "\u5b9d\n\u77f3"
 --- !u!114 &114243063168897556
 MonoBehaviour:
   m_ObjectHideFlags: 0

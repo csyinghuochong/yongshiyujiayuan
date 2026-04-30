@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &100360
 GameObject:
@@ -3748,7 +3748,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u89D2\n\u8272"
+  m_Text: "\u89d2\n\u8272"
 --- !u!114 &114929007221977014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4652,7 +4652,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F3A\u5316\u90E8\u4F4D:"
+  m_Text: "\u5f3a\u5316\u90e8\u4f4d"
 --- !u!114 &114985432126623296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5525,7 +5525,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F3A\u5316\u5C5E\u6027\n"
+  m_Text: "\u5f3a\u5316\u5c5e\u6027"
 --- !u!114 &114766014118041750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7535,7 +7535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F3A\n\u5316"
+  m_Text: "\u5f3a\n\u5316"
 --- !u!114 &114706455568034170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12101,7 +12101,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5C5E\n\u6027"
+  m_Text: "\u5c5e\n\u6027"
 --- !u!114 &114529988600711224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16370,7 +16370,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F3A\u5316\u6D88\u8017\n"
+  m_Text: "\u5f3a\u5316\u6d88\u8017"
 --- !u!114 &114921188467935430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40590,7 +40590,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6280\u80FD\u4F24\u5BB3"
+  m_Text: "\u6cd5\u672f\u5f3a\u5ea6"
 --- !u!114 &114312251867977524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49408,7 +49408,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9576\n\u5D4C"
+  m_Text: "\u9576\n\u5d4c"
 --- !u!114 &114297229979827206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51029,7 +51029,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DEF
+  m_Text: "\u7269\u9632"
 --- !u!114 &114090456180196730
 MonoBehaviour:
   m_ObjectHideFlags: 0

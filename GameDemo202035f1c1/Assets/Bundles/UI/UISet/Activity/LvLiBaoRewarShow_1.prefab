@@ -1802,7 +1802,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buy
+  m_Text: "\u8d2d\u4e70"
 --- !u!114 &114709171153612646
 MonoBehaviour:
   m_ObjectHideFlags: 0

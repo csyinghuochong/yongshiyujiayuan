@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SPQuality
+  m_Text: "\u6cd5\u529b\u8d44\u8d28"
 --- !u!114 &114258475163312738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,7 +1068,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UPQuality
+  m_Text: "\u6210\u957f\u8d44\u8d28"
 --- !u!114 &114479419862769510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,7 +1689,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ADFQuality
+  m_Text: "\u6cd5\u9632\u8d44\u8d28"
 --- !u!114 &114748657640230754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1872,7 +1872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ATKQuality
+  m_Text: "\u653b\u51fb\u8d44\u8d28"
 --- !u!114 &114385553188271466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,7 +1980,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HpQuality
+  m_Text: "\u8840\u91cf\u8d44\u8d28"
 --- !u!114 &114291361317212588
 MonoBehaviour:
   m_ObjectHideFlags: 0

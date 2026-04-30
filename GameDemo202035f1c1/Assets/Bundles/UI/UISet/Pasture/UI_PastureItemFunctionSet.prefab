@@ -95045,7 +95045,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F3A\n\u5316"
+  m_Text: "\u5f3a\n\u5316"
 --- !u!114 &114604941120464512
 MonoBehaviour:
   m_ObjectHideFlags: 0

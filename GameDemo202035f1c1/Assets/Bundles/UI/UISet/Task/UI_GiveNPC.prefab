@@ -1366,7 +1366,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7ED9\u4E0E\u8981\u6C42"
+  m_Text: "\u7ed9\u4e0e\u8981\u6c42"
 --- !u!114 &114430534300085446
 MonoBehaviour:
   m_ObjectHideFlags: 0
