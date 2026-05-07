@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;//首先，引入IO流命名空间和UI
+using Cysharp.Threading.Tasks;
 
 
 public class pingbizi : MonoBehaviour {
@@ -12,7 +12,7 @@ public class pingbizi : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //Debug.Log("开始加载屏蔽字");
-        StartCoroutine("LoadWWW");
+        LoadWWW().Forget();
         //添加输入事件监听
         transform.GetComponent<InputField>().onValueChanged.AddListener(OnValueChanged);
 
@@ -65,29 +65,16 @@ public class pingbizi : MonoBehaviour {
     /// </summary>
     /// <returns></returns>
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
-    IEnumerator LoadWWW()
+    private async UniTask LoadWWW()
     {
-        WWW www;
-        //不同平台下StreamingAssets的路径是不同的，这里需要注意一下。
-        if (Application.platform == RuntimePlatform.Android)
-        {
-
-            www = new WWW(Application.streamingAssetsPath + "/" + "SensitiveWords1.txt");
-        }
-        else
-        {
-            //Debug.Log("开始加载屏蔽字11111");
-            www = new WWW("file://" + Application.streamingAssetsPath + "/" + "SensitiveWords1.txt");
-            //Debug.Log("开始加载屏蔽字22222" + www.bytes.Length);
-        }
-        yield return www;
-
-        if (!(www.Equals("") || www.Equals(null)))
+        var text = await ResourcesLoaderComponent.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetTextPath("SensitiveWords1"));
+        
+        if (!(text.text.Equals("") || text.text.Equals(null)))
         {
             //Debug.Log("开始加载屏蔽字33333");
             //Debug.Log(www.text);
             //将读取到的字符串进行分割后存储到定义好的数组中
-            SentiWords = www.text.Split('、');
+            SentiWords = text.text.Split('、');
         }
     }
 
