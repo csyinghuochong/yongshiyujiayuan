@@ -1,2 +1,974 @@
 ﻿Key,Type,Desc,English
-text_登录,Text,,Login
+(已完成),Text,,(Completed)
+1,Text,,1
+10级开启,Text,,10 lv open
+20级开启,Text,,20 lv open
+4级开启,Text,,4 lv open
+8级开启,Text,,8 lv open
+BOSS伤害加成,Text,,Armor Dmg To Boss % 
+Boss技能攻击加成,Text,,Magic Dmg To Boss % 
+Debuff时间缩短,Text,,DEBUFF Length- X SEC
+comhintText_1,Text,,Talent resetting
+comhintText_10,Text,,Receive reward
+comhintText_11,Text,,Confirm
+comhintText_12,Text,,Cancel
+comhintText_13,Text,,Sale confirmation
+comhintText_14,Text,,Confirm
+comhintText_15,Text,,Cancel
+comhintText_16,Text,,Instructions for using the prop
+comhintText_17,Text,,Send to
+comhintText_18,Text,,Location
+comhintText_19,Text,,Game announcement
+comhintText_2,Text,,Confirm
+comhintText_20,Text,,"Tip: you can only download account data once a month 
+ The items sold by the auction house will be emptied!"
+comhintText_3,Text,,Cancel
+comhintText_4,Text,,Recycling confirmation
+comhintText_5,Text,,Confirm
+comhintText_6,Text,,Cancel
+comhintText_7,Text,,Redemption confirmation
+comhintText_8,Text,,Confirm
+comhintText_9,Text,,Cancel
+comhint_1,Text,,"Whether to enter the copy?
+ Tip: Only one chance to enter every day!"
+comhint_10,Text,,"Whether to factor this pet?
+ Decompose wild pets to get 1-3 pet decomposition stones, decompose baby pets to get 5-15 decomposition stones"
+comhint_11,Text,,Whether to enter the recharge interface?
+comhint_12,Text,,Whether to enter the interface of the gold coins exchange?
+comhint_13,Text,,"Get a pet field for every 15, 25, 35, 45, 55 level of the role!"
+comhint_14,Text,,Whether to spend 600 diamonds to reset talent?
+comhint_15,Text,,"Are you sure to recycle these equipment？
+ (Tip: There are some gems on the current equipment ,or the recycled equipment is at least orange quality!)"
+comhint_16,Text,,"Whether to enter Treasure Cave?
+ Tip: Only one chance to enter every day!"
+comhint_17,Text,,Hidden skill found on the equipment:
+comhint_18,Text,,"!
+Tip: the hidden skill would disappear if you continue to refine!"
+comhint_19,Text,,Whether exchange 20% experience to: 
+comhint_2,Text,,Whether to exchange 100 pieces for a legendary pet?
+comhint_20,Text,, gold coins
+comhint_21,Text,,"Whether to exchange the materials for an advanced treasure map?
+ Props needed:"
+comhint_22,Text,,"1. The map will randomly refresh the real and fake treasure chests. You can get real rewards when you touch the real treasure chests. There are only 6 real treasure chests  in the map.
+2. There are only  5 minutes for you to find the treasure chest, then you will be sent out!
+3. No skills or props can be used in the map"
+comhint_23,Text,,Congratulations! Today you have found 
+comhint_24,Text,," real treasure chests!
+ 1-3 treasure chests to get 1 more treasure map
+ 4-5 treasure chests to get 2 more treasure maps
+ 6 treasure chests to get 3 more treasure maps"
+comhint_25,Text,,"""Whether to delete the account"""
+comhint_26,Text,,Whether to sell the prop:
+comhint_27,Text,,Whether to sell the equipment:
+comhint_28,Text,,"
+ (Tip: Some gems are inlaid in the current equipment!)"
+comhint_29,Text,,"
+ (Tip: Recycling at the equipment recycle businessman can gain experience and equipment debris!)"
+comhint_3,Text,,Whether to release this pet?
+comhint_30,Text,,"
+ (Tip: Recycling at the equipment recycle businessman can gain experience and equipment debris!)
+ You can get gold coins:"
+comhint_31,Text,,Click to save the coordinates to be transferred!
+comhint_32,Text,,Your current location is: 
+comhint_33,Text,,"
+ Coordinate points: "
+comhint_34,Text,,Whether to consume 300 diamonds to empty all times
+comhint_35,Text,,"Congratulations on winning the battle of TIANTI today
+ Winning reward: gold coin * 30000"
+comhint_36,Text,,"I'm sorry you didn't beat the pet team
+ Failure reward: gold coin * 10000"
+comhint_37,Text,,Whether to consume 30000 gold coins to refresh the current random ranking
+comhint_38,Text,,Please ask your pet to fight again before the current skills and attributes of the pet will take effect
+comhint_39,Text,,"In the game, it supports to turn on the stand-alone mode. After turning on, all the weak networking functions in the game will be automatically blocked! 
+ (click the avatar to open the setting interface and check the stand-alone mode)"
+comhint_4,Text,,"Whether to enter the copy?
+ Tip: Only one chance to enter every day!"
+comhint_40,Text,,I got it!
+comhint_41,Text,,Selling home props will get construction funds:
+comhint_5,Text,,"1. The player needs to kill the monsters to collect the secret value within a limited time. When the secret value reaches 500 points, BOSS will be summoned.
+2. After killing the BOSS,  you can enter the next tier. The higher tier of the mystery, the more difficult it is.
+3.The mystery shards will be dropped in the Grand Mystery. You can redeem rewards at the mystery businessman!
+After  you kill BOSS in Grand Mystery, you can continue to challenge next tier. If you failed, you can only wait for tomorrow!"
+comhint_6,Text,,Whether to receive the Tier 
+comhint_7,Text,, reward of Grand Mystery?
+comhint_8,Text,,Whether to enter the interface of the gold coins exchange?
+comhint_9,Text,,Whether to spend 600 diamonds to reset SP?
+hint_1,Text,,"Full backpack, please reserve at least 1 space!"
+hint_10,Text,,Skill casting is interrupted
+hint_100,Text,,Summon is in CD!
+hint_101,Text,,You have downloaded the account
+hint_102,Text,,", please create a "
+hint_103,Text,, role to download this data
+hint_104,Text,,Server is not connected!
+hint_105,Text,,"The world level has been completely released, so it cannot be redeemed!"
+hint_106,Text,,Server is not connected!
+hint_107,Text,,"The world level has been completely released, so it cannot be redeemed!"
+hint_108,Text,,Insufficient experience to redeem!
+hint_109,Text,,Not reach the world level!
+hint_11,Text,,Please select the target
+hint_110,Text,,"The world level has been completely released, so it cannot be redeemed!"
+hint_111,Text,,Auto-hang is off!
+hint_112,Text,,Auto-hang is on!
+hint_113,Text,,No draw for free below level 8!
+hint_114,Text,,You have turned off networking! This function is only available when you turn on it in the game settings!
+hint_115,Text,,You can turn on the theater activity function when you get LV 9!
+hint_116,Text,,You consume 
+hint_117,Text,, experience to exchange 
+hint_118,Text,, gold coins
+hint_119,Text,,Insufficient experience to redeem!
+hint_12,Text,,You need to get closer
+hint_120,Text,,Not reach the world level!
+hint_121,Text,,The prop cannot be sold at the auction house!
+hint_122,Text,,Cancel skill casting
+hint_123,Text,,Your treasure chest has been snatched by others!
+hint_124,Text,,"Your level does not meet the chapter requirements, and you cannot switch to this chapter!"
+hint_125,Text,,You have opened a corroded treasure chest and it seems to have a bad effect on you!
+hint_126,Text,,You have opened a corroded treasure chest and it seems to have a bad effect on you!
+hint_127,Text,,Please do not enter Chinese characters!
+hint_128,Text,,Account cannot be empty
+hint_129,Text,,Please do not enter Chinese characters!
+hint_13,Text,,You have learned this manufacturing skill!
+hint_130,Text,,Please check the password! The two passwords are inconsistent
+hint_131,Text,,Insufficient energy 
+hint_132,Text,," , it recovers 1 every 5 minutes"
+hint_133,Text,,Password cannot be empty
+hint_134,Text,,Account cannot be empty
+hint_135,Text,,Tip: Please improve your role level to LV 
+hint_136,Text,, to continue to next level of the building
+hint_137,Text,,Get prosperity:
+hint_138,Text,,Insufficient gold coins!
+hint_139,Text,,Please wait for the countdown to finish!
+hint_14,Text,,Insufficient role level!
+hint_140,Text,,"You have run out of rewards today, please come back tomorrow!"
+hint_141,Text,,Please wait for the countdown to finish!
+hint_142,Text,,"You have run out of rewards today, please come back tomorrow!"
+hint_143,Text,,This warehouse field will open after the adventurer level reach to level 3!
+hint_144,Text,,This warehouse field will open after the adventurer level reach to level 6!
+hint_145,Text,,This warehouse field will open after the adventurer level reach to level 8!
+hint_146,Text,,"Sorting out, please try again later!"
+hint_147,Text,,Retrieve combat pet successfully!
+hint_148,Text,,Successful synthesis! Please check it in the pet list
+hint_149,Text,,The role level doesn't reach LV 20
+hint_15,Text,,Insufficient gold coins to learn!
+hint_150,Text,,You have a new mail! Please go to the mail office of Halo Central City to pick it up
+hint_151,Text,,Please click [Start Adventure] in the bottom right corner to enter the adventure map to complete the mission!
+hint_152,Text,,Insufficient backpack space! Please reserve at least 
+hint_153,Text,, places
+hint_154,Text,,"The reward has been received, please do not repeat it!"
+hint_155,Text,,The maximum number of single purchase groups is 
+hint_156,Text,,Insufficient backpack space! Please reserve at least 
+hint_157,Text,, places
+hint_158,Text,,Good luck! Congratulations on getting one piece of legendary pet after you complete the active mission!
+hint_159,Text,,The number of props sold cannot be 0
+hint_16,Text,,No pet here!
+hint_160,Text,,Server is not connected!
+hint_161,Text,,Only 8 props can be listed
+hint_162,Text,,Selling pet skill book props requires the role level reach LV 20
+hint_163,Text,,Please select the props to sell first
+hint_164,Text,,The number of redeemed diamonds cannot be 0
+hint_165,Text,,You may not be connected to the server! The number of gold coins exchanged cannot be 0
+hint_166,Text,,Successful redemption! You exchanged 
+hint_167,Text,, gold coins
+hint_168,Text,,Successful activation of sprite attributes!
+hint_169,Text,,Passive sprite cannot be activated!
+hint_17,Text,,The skill triggers Tactician!
+hint_170,Text,,The sprite has not been activated yet!
+hint_171,Text,,"The payment is successful! The diamonds has been successfully credited, please check"
+hint_172,Text,,No synthesize! Combat pet is in the synthetic pets
+hint_173,Text,,The legendary pet cannot be synthesized!
+hint_174,Text,,Get 
+hint_175,Text,,
+hint_176,Text,, proficiency points
+hint_177,Text,,"The pet fields are currently full! Get a pet field for every 15, 25, 35, 45, 55 level of the role!"
+hint_178,Text,,Congratulations! A new trial level has been activated!
+hint_179,Text,,
+hint_18,Text,,Congratulations! Learn to make prop:
+hint_180,Text,,"The target cannot be captured, the capture is invalid!"
+hint_181,Text,,Your movement range is too big and the target gets away
+hint_182,Text,,You need to reach LV 10(级数) to capture!
+hint_183,Text,,
+hint_184,Text,,The pet field is currently full!
+hint_185,Text,,Your movement range is too big and the target gets away
+hint_186,Text,,Capture failed!
+hint_187,Text,,"The target cannot be captured, the capture is invalid!"
+hint_188,Text,,You need to reach LV 
+hint_189,Text,, to capture!
+hint_19,Text,,Insufficient level to combat
+hint_190,Text,,This skill cannot be released in combat!
+hint_191,Text,,Get prosperity:
+hint_192,Text,,Insufficient level to combat
+hint_193,Text,,Pet summon is in CD
+hint_194,Text,,The combat table is full!
+hint_195,Text,,BOSD appears!
+hint_196,Text,,Congratulations! Success in Tier 
+hint_197,Text,,
+hint_198,Text,,You have killed BOSS! Now you can return to the map to challenge the next tier of mystery!
+hint_199,Text,,Get honor:
+hint_2,Text,,This skill is already equipped
+hint_20,Text,,Pet summon is in CD
+hint_200,Text,,Please upgrade the prosperity level to open the prop reward!
+hint_201,Text,,"Full backpack, please reserve at least 1 space!"
+hint_202,Text,,Insufficient honor!
+hint_203,Text,,Congratulations on your success in killing BOSS of the copy!
+hint_204,Text,,"90 seconds refresh the next BOSS , please be prepared!"
+hint_205,Text,,Processing last recycled data! Please wait ...
+hint_206,Text,,Please put in the equipment to be recycled!
+hint_207,Text,,Your backpack must be reserved at least 
+hint_208,Text,, places
+hint_209,Text,,"No recycle, the recycled props exceed 15 of the role level!"
+hint_21,Text,,Pet summon is in CD
+hint_210,Text,,This Boss don't have first-kill reward!
+hint_211,Text,,Successfully picked up the mission!
+hint_212,Text,,The equipment put in does not meet the requirements
+hint_213,Text,,The number of copy entered today is full!
+hint_214,Text,,Insufficient levels of kingdom prosperity! Please upgrade to: LV 
+hint_215,Text,,
+hint_216,Text,,Insufficient levels of the role! Please upgrade to: LV 
+hint_217,Text,,Please pass the previous level before challenging this level!
+hint_218,Text,,Talent system will open after LV 10
+hint_219,Text,,Warrior Ranking has been refreshed!
+hint_22,Text,,The combat table is full!
+hint_220,Text,,You have summoned this monster!
+hint_221,Text,,Fast movement in small map is on!
+hint_222,Text,,Insufficient props!
+hint_223,Text,,Your skill is working!
+hint_224,Text,,Your pet already has the same skill!
+hint_225,Text,,The mutant pets need more powerful props to refine!
+hint_226,Text,,Your pet is given a powerful ability!
+hint_227,Text,,A mysterious power improves your pet's qualifications!
+hint_228,Text,,A mysterious power improves your pet's growth!
+hint_229,Text,,This prop cannot be used for wild pets!
+hint_23,Text,,Pet cannot be withdrawn in combat
+hint_230,Text,,"Reset failed, insufficient attribute points!"
+hint_231,Text,,A mysterious power reset your pet attribute points!
+hint_232,Text,,Insufficient levels to purchase
+hint_233,Text,,Insufficient backpack places!
+hint_234,Text,,Insufficient currencies to purchase
+hint_235,Text,,Insufficient backpack places!
+hint_236,Text,,"You have already purchased this package, please come back tomorrow!"
+hint_237,Text,,Insufficient currencies to purchase
+hint_238,Text,,Please upgrade the prosperity level to open the prop reward!
+hint_239,Text,,"Full backpack, please reserve at least 1 space!"
+hint_24,Text,,Name cannot be empty
+hint_240,Text,,Insufficient honor!
+hint_241,Text,,Successful reborn!
+hint_242,Text,,You can enter Treasure Cave after LV 15!
+hint_243,Text,,"You have entered Treasure Cave once today, please come back tomorrow!"
+hint_244,Text,,Insufficient materials!
+hint_245,Text,,"You have rceived today, please come back tomorrow!"
+hint_246,Text,,The reward can only be viewed on the specified number of days!
+hint_247,Text,,"You have received the sign-in reward for today, please come back tomorrow!"
+hint_248,Text,,Please receive the sign-in rewards in order!
+hint_249,Text,,Insufficient backpack places!
+hint_25,Text,,Name cannot be longer than 7 characters
+hint_250,Text,,You have already received the sign-in reward
+hint_251,Text,,"Today's sponsorship sign-in reward has been received, please come back tomorrow!"
+hint_252,Text,,Failed! You can receive this reward by sponsoring any amount today!
+hint_253,Text,,Insufficient backpack places!
+hint_254,Text,,You have already received the sign-in reward
+hint_255,Text,,Hang status is off
+hint_256,Text,,Skill casting is interrupted!
+hint_257,Text,,"Full backpack, and the trial reward has failed to receive!"
+hint_258,Text,,Skill casting is interrupted!
+hint_259,Text,,Enter combat
+hint_26,Text,,Pet cannot be released during the combat
+hint_260,Text,,Quit combat
+hint_261,Text,,The monster is out of combat and cannot be attacked
+hint_262,Text,,Receive failed! Insufficient achievement points!
+hint_263,Text,,No pet here！
+hint_264,Text,,This achievement reward has been received
+hint_265,Text,,Insufficient level to combat! Your role must reach LV 
+hint_266,Text,, to summon this pet
+hint_267,Text,,Pet summon is in CD
+hint_268,Text,,Pet summon is in CD
+hint_269,Text,,The combat table is full!
+hint_27,Text,,Unable to claim! Golden token not reached
+hint_270,Text,,Pet cannot be withdrawn in combat
+hint_271,Text,,"Wild pets: Pets that can be seen everywhere in the wild, the pet attributes are inherently 40 points less than babies, and can only be used temporarily!"
+hint_272,Text,,"Pet baby: There are relatively few pets in the wild, you can freely allocate his attribute points to maximize revenue!"
+hint_273,Text,,Mutant baby: a very rare pet whose qualification may exceed the upper limit!
+hint_274,Text,, Legendary pets: the most precious pets in the game!
+hint_275,Text,,Name cannot be empty
+hint_276,Text,,Name cannot be longer than 7 characters
+hint_277,Text,,Modify failed! Special characters exist
+hint_278,Text,,Pets cannot be released during the combat!
+hint_279,Text,,Insufficient SP(skill points)
+hint_28,Text,,Unable to claim! Diamond token not reached
+hint_280,Text,, Require activated talent points reach: 
+hint_281,Text,,
+hint_282,Text,,Insufficient level to learn the skill
+hint_283,Text,,The current talent has reached the upper limit
+hint_284,Text,,"Relevant talent is not activated, please activate the relevant talent first"
+hint_285,Text,,"There is a gem in the current hole, please remove the gem first"
+hint_286,Text,,"Inlay failed, please make sure the color of the gem is consistent with the hole position!"
+hint_287,Text,,Wrong hole position!
+hint_288,Text,,"Full backpack, please clean it first"
+hint_289,Text,,Reinforcement has reached the full level!
+hint_29,Text,,You need to reserve 1 prop space to receive the reward
+hint_290,Text,,Require LV 
+hint_291,Text,, to enable this reinforcement!
+hint_292,Text,,Insufficient gold coins to reinforce
+hint_293,Text,,Insufficient props to reinforce
+hint_294,Text,,Reinforce failed! Terrible luck
+hint_295,Text,,Insufficient reborn coins to reborn
+hint_296,Text,,Please select an attack target first
+hint_297,Text,,Congratulations! Produce the crit double props!
+hint_298,Text,,No pet here!
+hint_299,Text,,You have a new mail! Please go to the mail office of Halo Central City to pick it up
+hint_3,Text,,"Passive skill ,cannot be dragged"
+hint_30,Text,,Payment is being opened ...
+hint_300,Text,,No points are currently allocated
+hint_301,Text,,"Full backpack, please keep enough space in the backpack!"
+hint_302,Text,,Luck is bursting! An extra gem hole was drilled when refining the equipment
+hint_303,Text,,Insufficient quality to delete
+hint_304,Text,,The pet is in combat
+hint_305,Text,,Successful pet summon! Activate 15 seconds of invincible time! Activate only once in 1 minute!
+hint_306,Text,,Get the title! Please go to the setting interface to view the list of titles and use
+hint_307,Text,,Congratulations! Activate the sprite:
+hint_308,Text,,Upgrading this skill requires the role level up to 
+hint_309,Text,,
+hint_31,Text,,"Payment is busy, please pay later. If there is no response for a long time, please restart the game!"
+hint_310,Text,,"Insufficient SP, get 1 SP for each level!"
+hint_311,Text,,Switch to Easy mode successfully!
+hint_312,Text,,Switch Challenge mode successfully! Boss has been stronger to drop props with greater probability!
+hint_313,Text,,Challenge mode will be open after LV 10!
+hint_314,Text,,Switch Hell mode successfully! Boss has been stronger to drop props with large probability!
+hint_315,Text,,Hell mode will be open after LV 15!
+hint_316,Text,,Successfully reset skills!
+hint_317,Text,,Enter the scene after leveling up to LV 
+hint_318,Text,,!
+hint_319,Text,,"The props worked, BOSS have been refreshed!"
+hint_32,Text,,"During payment transfer, please do not close the interface ..."
+hint_320,Text,,This prop can only be used in Halo Central City!
+hint_321,Text,,Full energy!
+hint_322,Text,,Please enter the chapter map to use this prop
+hint_323,Text,,Full vitality!
+hint_324,Text,,Exceed the limited level
+hint_325,Text,,"Full backpack, please reserve enough place to submit the mission!"
+hint_326,Text,,Please put in the submitted equipment
+hint_327,Text,,The pet will get 
+hint_328,Text,, experience
+hint_329,Text,,"Full backpack, please reserve enough place to submit the mission!"
+hint_33,Text,,This reward has been received!
+hint_330,Text,,This mission cannot offer auto-wayfinding!
+hint_331,Text,,Please go to the map:
+hint_332,Text,,Please find 
+hint_333,Text,, to submit the mission
+hint_334,Text,,Purchase failed! Please check your money first
+hint_335,Text,,The countdown is over!
+hint_336,Text,,Don't drag the equipment while refining!
+hint_337,Text,,Please select the gem to be set
+hint_338,Text,,Please put in the equipment to be refined 
+hint_339,Text,, Level Open the function
+hint_34,Text,,"Not connected to the Payment Server,please check the local network or enter the game gruop to contact the admin!"
+hint_340,Text,,Don't arrange your backpack while refining equipment!
+hint_341,Text,,Don't arrange your warehouse while refining equipment!
+hint_342,Text,,Activate the collected equipment successfully!
+hint_343,Text,,Please wait for CD to the end
+hint_343_1,Text,,Please put in the equipment
+hint_344,Text,,Please raise your strength to the corresponding value to receive it
+hint_344_1,Text,,Equipment quality to be transferred must be above purple
+hint_345,Text,,The current number of recipients is full
+hint_345_1,Text,,Position different
+hint_346,Text,,The server isn't connected
+hint_346_1,Text,,Property transfer succeeded
+hint_347,Text,,"Please check the manufacturing level, the role cannot manufacture outside this manufacturing level"
+hint_348,Text,,At least 2 seats reserved in backpack for manufacturing prop
+hint_349,Text,,Insufficient materials required for manufacturing!
+hint_35,Text,,"Tip: You have recharged, please wait patiently for the return result of payment, do not close this interface or exit the game!"
+hint_350,Text,,Insufficient gold coins required for manufacturing!
+hint_351,Text,,Insufficient proficiency required for manufacturing!
+hint_352,Text,,Manufacturing success! Get the equipment:
+hint_353,Text,,"Manufacturing failure, the manufacturing probability will increase next time!"
+hint_354,Text,,Insufficient manufacturing materials
+hint_355,Text,,Please raise the level to the specified level to receive it!
+hint_356,Text,,The current number of recipients is full
+hint_357,Text,,Success in inheritance! Get the equipment:
+hint_358,Text,,"Manufacturing failure, the manufacturing probability will increase next time!"
+hint_359,Text,,Award received
+hint_36,Text,,"No more chance to enter the copy, please try it tomorrow!"
+hint_360,Text,,Please raise the level to level 12 to receive it!
+hint_361,Text,,"Insufficient sponsorship, please try again later!"
+hint_362,Text,,Award received
+hint_363,Text,,Please raise the level to level 12 to receive it!
+hint_364,Text,,"Insufficient sponsorship, please try again later!"
+hint_365,Text,,Require 
+hint_366,Text,,
+hint_367,Text,,to open
+hint_368,Text,,Passive skill cannot be dragged
+hint_369,Text,,Successful skill upgrade
+hint_37,Text,,The copy has not been opened yet! 
+hint_370,Text,,It has been received today
+hint_371,Text,,You cannot get it without killing the boss today
+hint_372,Text,,Joystick operation is off
+hint_373,Text,,Joystick operation is on
+hint_374,Text,,Click-to-move mode is on
+hint_375,Text,,Fixed joystick operation is off
+hint_376,Text,,Move joystick operation is off
+hint_377,Text,,Your nickname has been changed to:
+hint_378,Text,,Please enter the town to change the difficulty of the game
+hint_379,Text,,The interval between using props is too short! Please use it later
+hint_38,Text,,"No more chance to enter the copy, please try it tomorrow!"
+hint_380,Text,,Please raise the level to level 15 to receive it!
+hint_381,Text,,Please follow the login rewards in order!
+hint_382,Text,,Today's login reward has been received!
+hint_383,Text,,redeem
+hint_384,Text,,Insufficient conditions for receiving rewards
+hint_385,Text,,Please enter the level map before using this prop
+hint_386,Text,,Insufficient props
+hint_387,Text,,"Open for free, get experience:"
+hint_388,Text,,"Open for free, get gold coins:"
+hint_389,Text,,"Reached the current highest level, cannot use this prop!"
+hint_39,Text,,You have received the Grand Mystery reward of Tier 
+hint_390,Text,,Trigger a experience crit! Gain a lot of experience:
+hint_391,Text,,Open by diamonds! Gain a lot of experience:
+hint_392,Text,,Trigger a gold coin crit! Get a lot of gold coins:
+hint_393,Text,,Open by diamonds! Gain a lot of gold coins:
+hint_394,Text,,Quantity
+hint_395,Text,,"This is the author's thanks box, which can be opened after sponsoring any amount of support for the author!"
+hint_396,Text,,Trigger a rebirth!
+hint_397,Text,,No matching equipment is currently placed!
+hint_398,Text,,Too many times in a short time! Please try again later
+hint_399,Text,,Insufficient diamonds
+hint_4,Text,,This skill has not been learned
+hint_40,Text,,
+hint_400,Text,,It seems nothing happend!
+hint_401,Text,,Equipment refining success!
+hint_402,Text,,Skill cannot be moved while it is in CD
+hint_403,Text,,Too many times in a short time! Please try again later
+hint_404,Text,,Please click the equipment on the left to put in the equipment to be refined!
+hint_405,Text,,No equipment to be refined!
+hint_406,Text,,Insufficient refining stone
+hint_407,Text,,"Insufficient diamonds, please click the store to recharge!"
+hint_408,Text,,It seems nothing happend!
+hint_409,Text,,Current props cannot be recycled
+hint_41,Text,,You haven't cleared  Tier 1 of Grand Mystery and can't claim the reward!
+hint_410,Text,,"Cannot be used, this prop cannot unload gems in this slot"
+hint_411,Text,,Open the weekly card successfully!
+hint_412,Text,,Today's weekly card has been received.
+hint_413,Text,,Please enter CD-KEY!
+hint_414,Text,,CD-KEY has been used
+hint_415,Text,,"The organization benefits have been successfully received, and the reward has been sent to the backpack, please click to view!"
+hint_416,Text,,CD-KEY is incorrect!
+hint_417,Text,,CD-KEY is incorrect!
+hint_418,Text,,"CD-KEY is incorrect, please check before entering!"
+hint_419,Text,,"Thank you for your sponsorship for the author, it's enough!"
+hint_42,Text,,This map cannot use recovery props!
+hint_420,Text,,The amount of sponsorship is insufficient!
+hint_421,Text,,You get
+hint_422,Text,,gold coins
+hint_423,Text,,diamonds
+hint_424,Text,,You get
+hint_425,Text,,New chapter successfully opened!
+hint_426,Text,,Level fast transfer activated successfully!
+hint_427,Text,,
+hint_428,Text,,Summon pets successfully!
+hint_429,Text,,"The role level is insufficient, cannot use the manufacture book!"
+hint_43,Text,,Start failed! Please reserve at least 5 places in the backpack!
+hint_430,Text,,Require
+hint_431,Text,,
+hint_432,Text,,to open
+hint_433,Text,,You triggered 
+hint_434,Text,,drop effect
+hint_435,Text,,Refresh success!
+hint_436,Text,,Refresh failed!
+hint_437,Text,,Insufficient times
+hint_438,Text,,congratulations! Get diamonds
+hint_439,Text,,Modification of pet team configuration succeeded
+hint_44,Text,,The function is not turned on yet!
+hint_440,Text,,TIANTI fight times are full today
+hint_441,Text,,Please configure your own pet team
+hint_442,Text,,Please select a pet of baby type! Wild pets can't join the team
+hint_443,Text,,Unable to view intruder's pet information
+hint_444,Text,,The current pet cultivation level has reached the maximum
+hint_445,Text,,I'm sorry that I failed
+hint_446,Text,,"Insufficient consumption of resources, unable to Practice"
+hint_447,Text,,Congratulations! Success in Practice
+hint_448,Text,,"Congratulations, activate the drop rate"
+hint_449,Text,,Please put in the pet
+hint_45,Text,,You have learned the manufacturing prop! Do not repeat the learning
+hint_450,Text,,You can't sell the props for the time being because you often get on and off the shelves. Please come back tomorrow!
+hint_451,Text,,Loading game data
+hint_452,Text,,Insufficient points to redeem offline
+hint_453,Text,,"IOS is not initialized, please click later"
+hint_454,Text,,Please raise the level to level 12 to open it!
+hint_455,Text,,-00:00 Send Reward
+hint_456,Text,,
+hint_457,Text,,Please upgrade to level 55 before entering
+hint_458,Text,,Insufficient Mana!
+hint_459,Text,,Home fund
+hint_46,Text,,"The pet fields are currently full! Get a pet field for every 15, 25, 35, 45, 55 level of the role!"
+hint_460,Text,,Kill boss level 15 lower than your own level does not trigger the difficulty burst rate bonus
+hint_47,Text,,Congratulations! You get a mutant pet
+hint_48,Text,,Congratulations! You get a pet
+hint_49,Text,,Please raise the role level to LV 8 to enable the pet function!
+hint_5,Text,,There is no spare pet slot
+hint_50,Text,,"There is currently no combat pet, so it cannot be used!"
+hint_51,Text,,The maximum price can only be increased to 100%.
+hint_52,Text,,The minimum price can only be decreased to 10%.
+hint_53,Text,,"The skill is pet treating, but there is no combat pet!"
+hint_54,Text,,The skill is in CD ...
+hint_55,Text,,Pet level is too low to use!
+hint_56,Text,,Your pet level is 5 higher than your role level and cannot be used!
+hint_57,Text,,The quantity sold does not match the actual
+hint_58,Text,,Please check that the server is connected properly
+hint_59,Text,,Your combat pet has gained 
+hint_6,Text,,Congratulations: Get a legendary pet!
+hint_60,Text,,experience.
+hint_61,Text,,There are not enough backpack props. Please check your backpack!
+hint_62,Text,,"There is currently no combat pet, so it cannot be used!"
+hint_63,Text,,Pet level is too high to use!
+hint_64,Text,,Your pet level is 5 higher than your role level and cannot be used!
+hint_65,Text,,Please move to the map:
+hint_66,Text,,Please move to 
+hint_67,Text,,to open it
+hint_68,Text,,Start digging!
+hint_69,Text,,Please raise the role level to LV 8 to capture pets!
+hint_7,Text,,Insufficient pieces of legendary pet
+hint_70,Text,,Unable to capture while exploring!
+hint_71,Text,,Please select the target you want to capture first!
+hint_72,Text,,BOSS cannot be captured!
+hint_73,Text,,The target is dead and cannot be captured!
+hint_74,Text,,"The capture skill is in CD, please try again after "
+hint_75,Text,,s...
+hint_76,Text,,Insufficient energy to capture!
+hint_77,Text,, You can use props 
+hint_78,Text,, to continue
+hint_79,Text,,Consume 
+hint_8,Text,,Perfect treasure: Double treasure chances
+hint_80,Text,, pet prop
+hint_81,Text,,"The interface is open, please select the hole of the corresponding color for gem setting"
+hint_82,Text,,The warehouse is full
+hint_83,Text,,The warehouse is not open
+hint_84,Text,,The backpack is full
+hint_85,Text,,No draw below level 8!
+hint_86,Text,,Insufficient diamonds!
+hint_87,Text,,"Gull backpack, please reserve at least 10 places!"
+hint_88,Text,,Cannot save coordinates in town map!
+hint_89,Text,,Congratulations! Success in capturing pet
+hint_9,Text,,You cannot use any skill in this map
+hint_90,Text,,You cannot explore while picking up props!
+hint_91,Text,,It can only be used once in half an hour!  
+hint_92,Text,,min CD remaining
+hint_93,Text,,Please save the coordinate points to be transferred first!
+hint_94,Text,,"Exploring is in CD, please try later"
+hint_95,Text,,"You have explored this area, please move to another one!"
+hint_96,Text,,Insufficient vitality to explore! Vitality will increase with online time!
+hint_97,Text,,You seem to have found something! But your backpack doesn't fit anymore!
+hint_98,Text,,You accidentally find the props scattered outside:
+hint_99,Text,,Exploring is complete! Nothing seems to be around here!
+万,Text,,0 thousand
+万众瞩目,Text,,Drop Rate Lv.6
+上涨价格,Text,,Up
+下一等级,Text,,Next level
+下级部位属性提升,Text,,Next Position
+下降价格,Text,,Down
+专注额外提高,Text,,
+个,Text,,
+主动精灵,Text,,Active
+主宠,Text,,PetPosition
+主线任务,Text,,Main Task
+人形攻击伤害,Text,,Damage To Humanoid % 
+人形攻击抗性,Text,,Humanoid  Resistance
+人物攻击抗性额外提高,Text,,Humanoid  Resistance Up 
+人类,Text,,Human
+今日抽卡次数,Text,,Times today
+今日挑战次数,Text,,Number of fight today
+今日累计次数,Text,,Accumulated times today
+以下道具随机获得一种,Text,,Get one of the following items at random
+件套,Text,,-pc-set
+价格浮动,Text,,Price
+任意颜色的,Text,,Any Color
+休 息,Text,,Rest
+传送,Text,,Go
+伤害修炼,Text,,Damge Practice
+伤害减免,Text,,DR
+伤害加成,Text,,ED
+伪装值额外提高,Text,,Reduced Up 
+低级技能,Text,,Low Skill
+体力,Text,,STA
+你今日已赞助,Text,,Recharged
+使用天赋点数,Text,,Use talent points
+使用等级,Text,,Use Level
+修炼成功概率,Text,,Success rate
+倍爆率,Text,,times drop rate
+元,Text,,
+元可直接开启礼包,Text,,Can Open Week Pass
+光抗性,Text,,Holy Resistance
+光明抗性,Text,,HR
+光辉洗炼,Text,,Brilliant Polish
+冒险家积分不足,Text,,Adventurer Point Insufficient
+冰霜抗性,Text,,CR
+冰霜抗性额外提高,Text,,Frost Resistance Up 
+出 战,Text,,Fight
+击杀,Text,,Kill
+击杀BOSS,Text,,Kill Boss
+击杀BOSS级别怪物,Text,,Kill Any Boss
+击杀任意BOSS,Text,,Kill any boss
+击杀任意怪物,Text,,Kill Any Monster
+击杀时间,Text,,Kill Time
+分钟,Text,,Min
+到达等级免费领取,Text,,Free at level
+制造数量,Text,,Number
+制造等级 无限制,Text,,Need Lv : 1
+制造难度,Text,,Difficulty
+前往,Text,,Go
+前置激活条件,Text,,Activation requirements
+剩余储备经验,Text,,Residual reserve experience
+剩余点数,Text,,test1
+副宠,Text,,PetPosition
+千载难逢,Text,,Drop Rate Lv.5
+反击伤害,Text,,APR
+取 消,Text,,NO
+受到Boss技能攻击减免,Text,,Magic Dmg Reduced By boss
+受到Boss普通攻击减免,Text,,Armor Dmg Reduced By Boss
+受到首领技能减免额外提高,Text,,Magic Dmg Reduced By boss Up 
+受到首领攻击减免额外提高,Text,,Armor Dmg Reduced By Boss Up 
+召唤天赋,Text,,Summon
+可以获得经验加成,Text,,Experience bonus
+可镶嵌在,Text,,Inlaid in
+吸血,Text,,health steal 
+吸血率额外提高,Text,,health steal  Up 
+周卡剩余领取次数,Text,,Remains Number
+命中,Text,,Hit
+命中率,Text,,Attack Rating 
+命中等级,Text,,Attack Rating LV
+命中等级额外提高,Text,,Attack Rating LV Up 
+品质,Text,,Quality
+嗜血几率额外提高,Text,,Increased Defense per Hit Up 
+回血值,Text,,Replenish Life  X
+回血固定值额外提高,Text,,Replenish Life Up 
+回血百分比,Text,,Replenish  %
+回血百分比额外提高,Text,,Replenish Up 
+困难模式,Text,,Challenge
+固定伤害额外提高,Text,,Fixed Damage Up 
+圣光洗炼,Text,,Holy Polish
+地图剩余时间,Text,,Map remaining time
+地狱,Text,,Hell
+地狱模式,Text,,Hell
+地狱难度首胜奖励,Text,,Hell  Reward
+复活几率额外提高,Text,,Reborn Chance Up 
+多彩,Text,,Colourful 
+多彩插槽,Text,,Colourful Hole
+天赋系统,Text,,Talent
+天赋达到,Text,,Talent points to
+头盔,Text,,Helmet
+头领,Text,,Leader
+孔位,Text,,Hole
+宝石,Text,,Gem
+宝石熟练度,Text,,Gem Proficiency
+宠物,Text,,Pet
+宠物受伤减免,Text,,PET Damage reduction
+宠物受伤减免额外提高,Text,,
+宠物合成,Text,,Pet Mix
+宠物攻击加成,Text,,PET Enhanced Damage
+宠物攻击加成额外提高,Text,,
+宠物系统,Text,,Pet
+对话,Text,,Speak
+寻找,Text,,Find
+寻找到真实宝箱,Text,,Find the real treasure chest
+小时,Text,,Hours
+小赚一笔,Text,,Drop Rate Lv.2
+已上架,Text,,Sell Time : 
+已击杀,Text,,Kill Success
+已刷新,Text,,Appear
+已完成,Text,,Completed
+已达成,Text,,Completed
+幸运值,Text,,Luck
+幸运玩家,Text,,Drop Rate Lv.3
+开启周卡需消耗,Text,,Open Week Pass Cost
+强化 装备属性提升,Text,,Intensify Proprety
+强化成功概率,Text,,Probability
+强壮的,Text,,Strong
+当前,Text,,Now
+当前可免费领取,Text,,Get for free
+当前技能点数,Text,,SP
+当前爆率,Text,,drop rate
+当前版本为最新版本,Text,,Latest Version
+当前的等级,Text,,Current Level
+当前的经验百分比,Text,,Current experience percentage
+当前离线点数,Text,,Current offline points
+当前自身的实力值,Text,,Self Strength
+当前部位属性提升,Text,,Aktuell Position
+必中额外提高,Text,,Increased Hit Up 
+忽视目标防御值,Text,,Ignore P-def 
+忽视目标防御值额外提高,Text,,Ignore P-def  Up 
+忽视目标魔防值,Text,,Ignore M- def
+忽视目标魔防值额外提高,Text,,Ignore M- def Up 
+怪物脱战距离额外提高,Text,,
+恶魔,Text,,Demon
+恶魔攻击伤害,Text,,Damage To Demons % 
+恶魔攻击抗性,Text,, Demons  Resistance
+恶魔攻击抗性额外提高,Text,, Demons  Resistance Up 
+成功概率,Text,,Probability
+成就,Text,,Achievement
+成就列表,Text,,List
+成就首页,Text,,Home
+我的实力值,Text,,My Strength
+我的排名,Text,,MyRank
+我的等级,Text,,My Level
+战士,Text,,Warrior
+战斗回血比例额外提高,Text,,Combat regeneration Up 
+战斗回血百分比,Text,,Combat regeneration %
+战斗成就,Text,,Fight
+手套,Text,,Gloves
+打造熟练度,Text,,Make Proficiency
+找到符合要求的装备,Text,,Find Target Equip
+技能,Text,,Skill
+技能冷却时间缩减,Text,,Cooldown Reduction  （cdr）
+技能冷却时间缩减额外提高,Text,,Cooldown Reduction Up 
+技能点数,Text,,SP
+技能等级,Text,,Skill Level
+技能闪避,Text,,SkillDog
+抓获,Text,,Catch
+抗性宝石,Text,,Resistance
+折,Text,,percent off
+护盾开启,Text,,Shield
+护符,Text,,Talismans
+抵消伤害,Text,,Counteract
+拥有者,Text,,Master
+挑战,Text,,Challenge
+挑战难度首胜奖励,Text,,Challenge Reward
+挖宝位置,Text,,Treasure location
+捕捉宠物,Text,,Catch Pet
+探宝次数达到,Text,,Times to
+探索寻找物品中,Text,,Find Loading
+探索成就,Text,,Explore
+提升打造极品的概率,Text,,Increase the probability of creating the best quality
+提升至,Text,,Up to
+携带宠物数量,Text,,test1
+支线任务,Text,,Branch Task
+收集成就,Text,,Collect
+攻击,Text,,Atk
+攻击上限,Text,,Max DMG
+攻击下限,Text,, Min Dmg
+攻击人物伤害额外提高,Text,,Damage To Humanoid Up 
+攻击修炼,Text,,ACT Practice
+攻击力不足,Text,,Insufficient ATK 
+攻击反击,Text,,Attacker Takes Damage
+攻击反弹额外提高,Text,,Attacker Takes Damage Of  Up 
+攻击大于,Text,,ATK greater than
+攻击恶魔伤害额外提高,Text,,Damage To Demons  Up 
+攻击穿透额外提高,Text,, Armor Penetration Up 
+攻击野兽伤害额外提高,Text,,Damage To beas Up 
+攻击附加伤害,Text,,Extra Fixed Damage
+无消耗,Text,,Pass
+无视防御额外提高,Text,,Ignore Target Defense  Up 
+星,Text,,
+普普通通,Text,,Drop Rate Lv.1
+普通模式,Text,,Normal
+普通难度首胜奖励,Text,,Normal Reward
+暗影抗性额外提高,Text,,shadow  Resistance Up 
+暗抗性,Text,,shadow  Resistance
+暴击,Text,,Cri
+暴击率,Text,,Critical Chance
+暴击等级,Text,,Critical LV
+暴击等级额外提高,Text,,Critical LV Up 
+最新版本,Text,,New Version
+未击杀,Text,,Not Killed
+未学习,Text,,Unlearned
+未连接服务器获取最新版本,Text,,Server not connected
+材料,Text,,Material
+极品值额外提高,Text,,
+格挡值,Text,,Block Value
+格挡值额外提高,Text,,Block Value Up 
+概率获得神兽碎片,Text,,Probability Get Mythical Animals Debris
+橙色品质的装备,Text,,Orange quality equipment
+正在向服务器请求首杀数据,Text,,Requesting first kill data from server
+正在退出地图,Text,,Exiting the map
+此宠物已经在你的战队中,Text,,This pet is already in your team
+此额度每日0点清空,Text,,Every Day Clearn
+武器,Text,,Weapon
+每日任务,Text,,Daily Task
+水抗性,Text,,Fire Resistance
+法术上限,Text,,MAX SDMG
+法术下限,Text,,MIN SDMG
+法术反击,Text,,Spell Attacker Takes Damage
+法术反弹额外提高,Text,,Spell Takes Damage Of  Up 
+法术强度,Text,,Sp
+洗炼极品掉落,Text,,Good Drop
+活力,Text,,Ener
+活跃度,Text,,Active
+海神洗炼,Text,,Poseidon Polish
+消耗,Text,,Cost
+消耗体力,Text,,Need STA
+消耗品,Text,,Material
+消耗金币,Text,,Cost
+游戏战区,Text,,Server Name
+漠灵洗炼,Text,,Desert Undead Polish
+火抗性,Text,,Frost Resistance
+火焰抗性,Text,,FR
+火焰抗性额外提高,Text,,Fire Resistance Up 
+灵石,Text,,Ring
+灾难值额外提高,Text,,Increase Vulnerable  Up 
+点,Text,,
+点击放入上阵宠物,Text,,Click to put the pet in the battle
+点击放置合成宠物,Text,,Click Put
+点击领取作者回馈礼包,Text,,Click Claim
+点活跃度奖励,Text,,Activity Award
+点的装备,Text,,equipment
+炼金暴击!有概率获得双倍收益,Text,,Alchemy Crit！;There is a probability of double income
+炼金熟练度,Text,,Alchemy Proficiency
+熟练度,Text,,Proficiency
+熟练度达到,Text,,Proficiency need
+物理免伤提升,Text,,Armor Damage reduction
+物防大于,Text,,DEF greater than
+环,Text,,
+生产药剂暴击概率额外提高,Text,,Extra Elixir From Alchemy  Up 
+电抗性,Text,,Lightning Resistance
+白色,Text,,White 
+白色品质的装备,Text,,White quality equipment
+白色插槽,Text,,White
+百里挑一,Text,,Drop Rate Lv.4
+的头盔,Text,,Helmet
+的戒指,Text,,Ring
+的手套,Text,,Gloves
+的护符,Text,,Talismans
+的武器,Text,,Weapon
+的腰带,Text,,Belts
+的衣服,Text,,Clothes
+的裤子,Text,,Pants
+的队伍,Text,,Team
+的鞋子,Text,,shoes
+的项链,Text,,Necklace
+的饰品,Text,,Magic
+确 定,Text,,Yes
+祝福值额外提高,Text,,
+神农值额外提高,Text,,
+神圣抗性额外提高,Text,,Holy Resistance Up 
+离线宝箱奖励,Text,,Offline chest reward
+秒,Text,,s
+秒后免费领取,Text,,s Get for free
+秒后开启,Text,,second Open
+秘境值,Text,,Mystic value
+移动速度,Text,,MS
+移动速度提升,Text,,Movement Speed
+穿戴身上激活成就,Text,,Wear activation
+第,Text,,No.
+第101-200名,Text,,No.101-200
+第11-20名,Text,,No.11-20
+第1名,Text,,No.1
+第201-500名,Text,,No.201-500
+第21-30名,Text,,No.21-30
+第2名,Text,,No.2
+第31-50名,Text,,No.31-50
+第3名,Text,,No.3
+第4-10名,Text,,No.4-10
+第51-100名,Text,,No.51-100
+第一个升级至20级的为肝帝,Text,,The first one upgraded to level 20 is the Level king
+第一章,Text,,chap. 1
+第一章探宝,Text,,Par.1
+第三章,Text,,chap. 3
+第三章探宝,Text,,Par.3
+第二章,Text,,chap. 2
+第二章探宝,Text,,Par.2
+第五章,Text,,chap. 5
+第五章探宝,Text,,Par.5
+第四章,Text,,chap. 4
+第四章探宝,Text,,Par.4
+等级,Text,,Level
+等级不足,Text,,Insufficient Level
+等级到达,Text,,Level to
+等级大于,Text,,Level greater than
+类型,Text,,Type
+系统提示,Text,,Tips
+紫色,Text,,Violet 
+紫色品质的装备,Text,,Purple quality equipment
+紫色插槽,Text,,Purple
+红色,Text,,Red 
+红色插槽,Text,,Red
+级,Text,,Lv
+级冒险家,Text,,Level Adventurer
+级学习,Text,,level
+级开启购买,Text,,Level open purchase
+经验,Text,,Exp
+经验加成,Text,,Extra EXP
+经验收益额外提高,Text,,Extra EXP Up 
+绝世耀眼,Text,,Drop Rate Lv.7
+绿色,Text,,Green 
+绿色品质的装备,Text,,Green quality equipment
+绿色插槽,Text,,Green
+肝帝,Text,,Level King
+腰带,Text,,Belts
+自身buff效果延长,Text,,BUFF Length+ X SEC
+英勇洗炼,Text,,Heroic Polish
+药剂熟练度增加,Text,,Alchemy LV/point
+药剂类熟练度额外提高,Text,,Alchemy point Up 
+获得,Text,,Get
+蓝色,Text,,Blue 
+蓝色品质的装备,Text,,Blue quality equipment
+蓝色插槽,Text,,Blue
+虚弱的,Text,,Frail
+血量,Text,,Hp
+血量修炼,Text,,HP Practice
+衣服,Text,,Clothes
+被动精灵,Text,,Passive
+装备,Text,,Equip
+装备上的宝石槽位出现概率,Text,,CHANCE Extra Hole
+装备制造,Text,,Make
+装备隐藏属性出现概率,Text,,CHANCE Hidden Properties
+裤子,Text,,Pants
+谁与争锋,Text,,Drop Rate Lv.8
+财富值额外提高,Text,,Extra Gold Up 
+赞助,Text,,Recharge
+达到,Text,,to
+运气值额外提高,Text,,
+进度,Text,,Need
+进度值,Text,,Progress
+通 用,Text,,General
+通用,Text,,General
+部位,Text,,Position
+重击,Text,,HH
+重击概率,Text,,Heavy Hit
+重击概率额外提高,Text,,Heavy Hit Up 
+重击附加伤害,Text,,Extra HH Damage
+重击附加伤害额外提高,Text,,Extra HH Damage Up 
+野兽,Text,,Beast
+野兽攻击伤害,Text,,Damage To beas % 
+野兽攻击抗性,Text,,beast  Resistance
+野兽攻击抗性额外提高,Text,,beast  Resistance Up 
+金币,Text,,Gold
+金币不足,Text,,Not Enough Gold
+金币加成,Text,,Extra Gold 
+金币收益额外提高,Text,,Extra Gold  Up 
+钻石,Text,,Diamond
+锻造熟练度增加,Text,,Blacksmithing LV/point
+锻造类熟练度额外提高,Text,,Blacksmithing point Up 
+镶 嵌,Text,,Inlay
+闪电抗性,Text,,LR
+闪电抗性额外提高,Text,,Lightning Resistance Up 
+闪避,Text,,Dog
+闪避 血量,Text,,DOG HP
+闪避恢复血量,Text,,Replenish 
+闪避率,Text,,Dodge  chance
+闪避等级,Text,,Dodge  LV
+闪避等级额外提高,Text,,Dodge LV Up 
+防御,Text,,Def
+防御上限,Text,,MAN DEF
+防御下限,Text,,MIN DEF
+防御修炼,Text,,DEF Practice
+隐藏属性,Text,,Hide
+需要,Text,,Need
+需要战力达到,Text,,Need Strength to
+需要熟练度,Text,,Need Proficiency
+需要等级,Text,,Need Lv
+需要等级达到,Text,,Need Level to
+鞋子,Text,,shoes
+韧性,Text,,CRIT Resist
+韧性概率额外提高,Text,,CRIT Resist Up 
+韧性等级,Text,,CRIT Resist LV
+韧性等级额外提高,Text,,CRIT Resist LV Up 
+项链,Text,,Necklace
+饰品,Text,,Magic
+首领技能加成额外提高,Text,,Magic Dmg To Boss Up 
+首领攻击加成额外提高,Text,,Armor Dmg To Boss Up 
+高级技能,Text,,Advanced
+魔法免伤提升,Text,,Spell Damage reduction
+魔法天赋,Text,,Magic
+魔法师,Text,,Magician
+魔法穿透额外提高,Text,,Spell Penetration Up 
+魔防,Text,,Res
+魔防上限,Text,,MAX RES
+魔防下限,Text,,MIN RES
+魔防大于,Text,,ADF greater than
+黑暗抗性,Text,,SR
