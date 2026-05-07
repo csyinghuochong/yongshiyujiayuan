@@ -24,14 +24,15 @@ public class AliComponent : MonoBehaviour {
         if (EventHandle.IsQudaoPackage())
             return;
 
-#if UNITY_EDITOR
-#elif UNITY_ANDROID
-        
-        javaActive = new AndroidJavaObject(javaClassStr);
-        //初始化 获得项目对应的MainActivity
-        //javaClass = new AndroidJavaClass(javaClassStr);
-        //javaActive = javaClass.GetStatic<AndroidJavaObject>(javaActiveStr);
+        if (!Define.IsEditor)
+        {
+#if UNITY_ANDROID
+            javaActive = new AndroidJavaObject(javaClassStr);
+            //初始化 获得项目对应的MainActivity
+            //javaClass = new AndroidJavaClass(javaClassStr);
+            //javaActive = javaClass.GetStatic<AndroidJavaObject>(javaActiveStr);
 #endif
+        }
 
     }
 
@@ -43,11 +44,13 @@ public class AliComponent : MonoBehaviour {
     public void AliPay(string OrderInfo)
     {
 
-#if UNITY_EDITOR
-#elif UNITY_ANDROID
-        object[] objs = new object[] { OrderInfo,aliSDKCallObjName, "AliPayCallback" };
-        javaActive.Call("AliPay", objs);
+        if (!Define.IsEditor)
+        {
+#if UNITY_ANDROID
+            object[] objs = new object[] { OrderInfo,aliSDKCallObjName, "AliPayCallback" };
+            javaActive.Call("AliPay", objs);
 #endif
+        }
 
     }
 

@@ -31,7 +31,8 @@ public class TapTapSdkHelper : MonoBehaviour
     //TapBootstrap 初始化（不推荐)
     public void TapInit_1()
     {
-#if !UNITY_EDITOR
+        if (!Define.IsEditor)
+        {
         var config = new TapConfig.Builder()
       .ClientID(clientId)
       .ClientToken(clientToken)
@@ -45,8 +46,7 @@ public class TapTapSdkHelper : MonoBehaviour
         TapLogin.Init(clientId);
         // 适用于其他国家或地区
         //TapLogin.Init(clientId, true, true);
-
-#endif
+        }
         UnityEngine.Debug.Log("TapTap Start");
     }
 

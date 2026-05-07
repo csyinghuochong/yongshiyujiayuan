@@ -199,11 +199,9 @@ public class Function_DataSet{
 
         try
         {
-#if !UNITY_EDITOR
-            if (Game_PublicClassVar.Get_wwwSet.forceExitGameStatus) {
+            if (!Define.IsEditor && Game_PublicClassVar.Get_wwwSet.forceExitGameStatus) {
                 return false;
             }
-#endif
             if (Game_PublicClassVar.Get_wwwSet.IfAddKey)
             {
 
@@ -1274,11 +1272,9 @@ public class Function_DataSet{
             row[writeKey] = writeValue;
             */
 
-#if !UNITY_EDITOR
-            if (Game_PublicClassVar.Get_wwwSet.forceExitGameStatus) {
+            if (!Define.IsEditor && Game_PublicClassVar.Get_wwwSet.forceExitGameStatus) {
                 return false;
             }
-#endif
 
             if (writeValue == null) {
                 writeValue = "";

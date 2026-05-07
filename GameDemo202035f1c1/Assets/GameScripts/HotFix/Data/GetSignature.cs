@@ -24,7 +24,7 @@ public class GetSignature : MonoBehaviour
     public int batteryLevel = 100;
     public string ChannelId = "1";
 
-#if UNITY_IPHONE && !UNITY_EDITOR
+#if UNITY_IPHONE
      [DllImport("__Internal")]
      private static extern void CheckIphoneYueyu( string str );
      //private static extern void CheckIosSignature( string str );
@@ -668,32 +668,38 @@ public class GetSignature : MonoBehaviour
         JianCeNum = 0;
         string strparam = this.checkPackages.ToString();
 
-#if UNITY_ANDROID && !UNITY_EDITOR
-        using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+        if (!Define.IsEditor)
         {
-            using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
+#if UNITY_ANDROID
+            using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
             {
-                jo.Call("excuteCheckAction", strparam );
+                using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
+                {
+                    jo.Call("excuteCheckAction", strparam );
+                }
             }
-        }
-#elif UNITY_IPHONE  && !UNITY_EDITOR
-        CheckIphoneYueyu( strparam ); 
-        //CheckIosSignature( strparam );
+#elif UNITY_IPHONE
+            CheckIphoneYueyu( strparam ); 
+            //CheckIosSignature( strparam );
 #endif
+        }
 
     }
 
     public void ReqGetChannel()
     {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+        if (!Define.IsEditor)
         {
-            using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
+#if UNITY_ANDROID
+            using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
             {
-                jo.Call("ReqGetChannel" );
+                using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
+                {
+                    jo.Call("ReqGetChannel" );
+                }
             }
-        }
 #endif
+        }
     }
 
 
@@ -722,11 +728,14 @@ public class GetSignature : MonoBehaviour
             UnityEngine.Debug.Log($"onRequestPermissionsResult: StartUpdate");
             GameObject.Find("Canvas/HuaWeiYinSi").SetActive(false);
 
-#if UNITY_ANDROID && !UNITY_EDITOR
+            if (!Define.IsEditor)
+            {
+#if UNITY_ANDROID
 #if TapTap
-            GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
+                GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
 #endif
 #endif
+            }
         }
         //弹出界面
         //Game_PublicClassVar.Get_gameServerObj.Obj_UI_StartGameFunc.GetComponent<UI_StartGameFunc>().QingQiuQuanXianShow();
@@ -734,17 +743,24 @@ public class GetSignature : MonoBehaviour
 
     public void QuDaoRequestPermissions()
     {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+        if (Define.IsEditor)
         {
-            using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
-            {
-                UnityEngine.Debug.Log("unitycall: yyyy");
-                jo.Call("QuDaoRequestPermissions" );
-            }
+            onRequestPermissionsResult("1_1");
         }
+        else
+        {
+#if UNITY_ANDROID
+            using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+            {
+                using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
+                {
+                    UnityEngine.Debug.Log("unitycall: yyyy");
+                    jo.Call("QuDaoRequestPermissions" );
+                }
+            }
 #else
-        onRequestPermissionsResult("1_1");
+            onRequestPermissionsResult("1_1");
 #endif
+        }
     }
 }

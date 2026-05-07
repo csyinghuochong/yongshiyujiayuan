@@ -31,12 +31,14 @@ public class WeChatComponent : MonoBehaviour {
         if (EventHandle.IsQudaoPackage())
             return;
 
-#if UNITY_EDITOR
-#elif UNITY_ANDROID
-        //初始化 获得项目对应的MainActivity
-        javaClass = new AndroidJavaClass(javaClassStr);
-        javaActive = javaClass.GetStatic<AndroidJavaObject>(javaActiveStr);
+        if (!Define.IsEditor)
+        {
+#if UNITY_ANDROID
+            //初始化 获得项目对应的MainActivity
+            javaClass = new AndroidJavaClass(javaClassStr);
+            javaActive = javaClass.GetStatic<AndroidJavaObject>(javaActiveStr);
 #endif
+        }
         RegisterAppWechat();
     }
 
@@ -44,25 +46,28 @@ public class WeChatComponent : MonoBehaviour {
     /// <summary> 微信初始化:注册ID </summary>
     public void RegisterAppWechat()
     {
-#if UNITY_EDITOR
-#elif UNITY_ANDROID
-        //安卓端已经在java层做了 这里忽略 
-        if (!isRegisterToWechat)
+        if (!Define.IsEditor)
         {
-            
-            javaActive.Call("WechatInit", WXAppID);
-        }
-        isRegisterToWechat=true;
+#if UNITY_ANDROID
+            //安卓端已经在java层做了 这里忽略 
+            if (!isRegisterToWechat)
+            {
+                javaActive.Call("WechatInit", WXAppID);
+            }
+            isRegisterToWechat=true;
 #endif
+        }
     }
 
     /// <summary> 是否安装了微信 </summary>
     public bool IsWechatInstalled()
     {
 
-#if UNITY_EDITOR
-        return false;
-#elif UNITY_ANDROID
+        if (Define.IsEditor)
+        {
+            return false;
+        }
+#if UNITY_ANDROID
         return javaActive.Call<bool>("IsWechatInstalled");
 #endif
 		return false;
@@ -72,23 +77,27 @@ public class WeChatComponent : MonoBehaviour {
     public void WeChatLogon( string state)
     {
 
-#if UNITY_EDITOR
-#elif UNITY_ANDROID
-        object[] objs = new object[] { WXAppID, state, WeChatCallObjName, "LogonCallback" };
-        javaActive.Call("LoginWechat", objs);
+        if (!Define.IsEditor)
+        {
+#if UNITY_ANDROID
+            object[] objs = new object[] { WXAppID, state, WeChatCallObjName, "LogonCallback" };
+            javaActive.Call("LoginWechat", objs);
 #endif
+        }
     }
 
     /// <summary>微信充值</summary>
     public void WeChatPay(string appid, string mchid, string prepayid, string noncestr, string timestamp, string sign)
     {
-#if UNITY_EDITOR
-#elif UNITY_ANDROID
-        //将服务器返回的参数 封装到object数组里 分别是:会话ID,随机字符串,时间戳,签名,支付结果通知回调的物体,物体上的某个回调函数名称
-        object[] objs = new object[] { appid, mchid, prepayid, noncestr, timestamp, sign, WeChatCallObjName, "WechatPayCallback" };
-        //调用安卓层的WeiChatPayReq方法 进行支付
-        javaActive.Call("WeChatPayReq", objs);
+        if (!Define.IsEditor)
+        {
+#if UNITY_ANDROID
+            //将服务器返回的参数 封装到object数组里 分别是:会话ID,随机字符串,时间戳,签名,支付结果通知回调的物体,物体上的某个回调函数名称
+            object[] objs = new object[] { appid, mchid, prepayid, noncestr, timestamp, sign, WeChatCallObjName, "WechatPayCallback" };
+            //调用安卓层的WeiChatPayReq方法 进行支付
+            javaActive.Call("WeChatPayReq", objs);
 #endif
+        }
     }
 
     /// <summary> 微信支付回调 </summary>

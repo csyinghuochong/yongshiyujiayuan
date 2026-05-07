@@ -470,11 +470,9 @@ public class Rose_Status : MonoBehaviour
             {
                 //检测是否触碰到UI上,安卓或IOS可能要换一下
 
-#if UNITY_EDITOR
-                if (!EventSystem.current.IsPointerOverGameObject())
-#else
-                    if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
-#endif
+                if (!(Define.IsEditor
+                    ? EventSystem.current.IsPointerOverGameObject()
+                    : EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)))
 
                 /*
                 #if UNITY_IPHONE
@@ -487,15 +485,21 @@ public class Rose_Status : MonoBehaviour
                 {
 
                     bool dianjiUI = false;
-#if UNITY_EDITOR
-                    if (EventSystem.current.IsPointerOverGameObject())
-#else
-                    if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
-#endif
+                    if (Define.IsEditor)
                     {
-                        dianjiUI = true;
+                        if (EventSystem.current.IsPointerOverGameObject())
+                        {
+                            dianjiUI = true;
+                        }
                     }
                     else
+                    {
+                        if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+                        {
+                            dianjiUI = true;
+                        }
+                    }
+                    if (!dianjiUI)
                     {
                         if (RoseMapMoveNowStatus)
                         {

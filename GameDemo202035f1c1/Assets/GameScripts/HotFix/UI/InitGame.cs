@@ -62,18 +62,25 @@ public class InitGame : MonoBehaviour
 
     public void QuDaoRequestPermissions()
     {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+        if (Define.IsEditor)
         {
-            using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
-            {
-                UnityEngine.Debug.Log("unitycall: yyyy");
-                jo.Call("QuDaoRequestPermissions" );
-            }
+            onRequestPermissionsResult("1_1");
         }
+        else
+        {
+#if UNITY_ANDROID
+            using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+            {
+                using (AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"))
+                {
+                    UnityEngine.Debug.Log("unitycall: yyyy");
+                    jo.Call("QuDaoRequestPermissions" );
+                }
+            }
 #else
-        onRequestPermissionsResult("1_1");
+            onRequestPermissionsResult("1_1");
 #endif
+        }
     }
 
 

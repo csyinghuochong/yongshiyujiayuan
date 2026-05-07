@@ -55,10 +55,13 @@ public class NativeController : Singleton<NativeController>
         s_timelist = new List<float>();
         s_timelist_Fps = new List<float>();
 
-#if UNITY_ANDROID && !UNITY_EDITOR
-        jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        if (!Define.IsEditor)
+        {
+#if UNITY_ANDROID
+            jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
 #endif
+        }
     }
 
     public void SetCheckIntervalTime(float time)
@@ -73,52 +76,50 @@ public class NativeController : Singleton<NativeController>
         //Game_PublicClassVar.Get_wwwSet.AddShowLogSava_NoKey("unitytime1  LoseFocusTime: " + LoseFocusTime);
         //Game_PublicClassVar.Get_wwwSet.AddShowLogSava_NoKey("unitytime1  GetFocusTime: " + GetFocusTime);
 
-#if UNITY_ANDROID || UNITY_EDITOR
-
-        if (s_timelist == null || s_timelist.Count < 2)
-            return;
-
-        float timeJiange = 0;
-        string xunhuanStr = "";
-        s_timelist.Add(Time.realtimeSinceStartup);
-        for (int i = 0; i < s_timelist.Count - 1; i++)
+        if (Application.platform == RuntimePlatform.Android || Define.IsEditor)
         {
-            if (s_timelist[i + 1] - s_timelist[i] > timeJiange)
+            if (s_timelist == null || s_timelist.Count < 2)
+                return;
+
+            float timeJiange = 0;
+            string xunhuanStr = "";
+            s_timelist.Add(Time.realtimeSinceStartup);
+            for (int i = 0; i < s_timelist.Count - 1; i++)
             {
-                timeJiange = s_timelist[i + 1] - s_timelist[i];
-                xunhuanStr = xunhuanStr + ":" + timeJiange;
-            }
-        }
-
-        s_timelist.RemoveAt(s_timelist.Count - 1);
-
-        Game_PublicClassVar.Get_wwwSet.AddShowLogSava_NoKey("unitytime1  timeJiange: " + timeJiange);
-        float jiaodianTIme = GetFocusTime - LoseFocusTime;
-        if (Game_PublicClassVar.Get_wwwSet.IfRootStatus.ToString().Contains("1"))
-        {
-            if (timeJiange >= 2)
-            {
-
-                if (jiaodianTIme < 0.1)
+                if (s_timelist[i + 1] - s_timelist[i] > timeJiange)
                 {
-                    //直接闪退
-                    Game_PublicClassVar.Get_wwwSet.Show_YanZhengError("游戏时间异常.." + +timeJiange * 5 + " : " + jiaodianTIme * 5);
+                    timeJiange = s_timelist[i + 1] - s_timelist[i];
+                    xunhuanStr = xunhuanStr + ":" + timeJiange;
                 }
-                else
-                {
+            }
 
-                    float proJianCe = timeJiange / jiaodianTIme;
-                    if (proJianCe >= 10)
+            s_timelist.RemoveAt(s_timelist.Count - 1);
+
+            Game_PublicClassVar.Get_wwwSet.AddShowLogSava_NoKey("unitytime1  timeJiange: " + timeJiange);
+            float jiaodianTIme = GetFocusTime - LoseFocusTime;
+            if (Game_PublicClassVar.Get_wwwSet.IfRootStatus.ToString().Contains("1"))
+            {
+                if (timeJiange >= 2)
+                {
+                    if (jiaodianTIme < 0.1)
                     {
                         //直接闪退
-                        Game_PublicClassVar.Get_wwwSet.Show_YanZhengError("游戏时间异常..." + timeJiange * 5 + " : " + jiaodianTIme * 5);
+                        Game_PublicClassVar.Get_wwwSet.Show_YanZhengError("游戏时间异常.." + +timeJiange * 5 + " : " + jiaodianTIme * 5);
+                    }
+                    else
+                    {
+                        float proJianCe = timeJiange / jiaodianTIme;
+                        if (proJianCe >= 10)
+                        {
+                            //直接闪退
+                            Game_PublicClassVar.Get_wwwSet.Show_YanZhengError("游戏时间异常..." + timeJiange * 5 + " : " + jiaodianTIme * 5);
+                        }
                     }
                 }
             }
-        }
 
-        s_timelist.Clear();
-#endif
+            s_timelist.Clear();
+        }
     }
 
     public void Update()
@@ -171,10 +172,13 @@ public class NativeController : Singleton<NativeController>
     {
         if (jc == null)
         {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+            if (!Define.IsEditor)
+            {
+#if UNITY_ANDROID
+                jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+                jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
 #endif
+            }
         }
 
         if (jc == null || jo == null)
@@ -203,10 +207,13 @@ public class NativeController : Singleton<NativeController>
     {
         if (jc == null)
         {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+            if (!Define.IsEditor)
+            {
+#if UNITY_ANDROID
+                jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+                jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
 #endif
+            }
         }
 
         SetCheckIntervalTime(interval);

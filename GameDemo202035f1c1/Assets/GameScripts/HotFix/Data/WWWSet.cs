@@ -352,15 +352,18 @@ public class WWWSet:MonoBehaviour{
         logStatus = false;              //log状态开启
         logNoKeyStatus = false;
 
-#if UNITY_EDITOR
-        IfAddKey = false;               //默认False不加密文件
-		IfUpdateWorldTime = false;      //关闭此选项,不会链接网络 要不会卡
-		TiaoShiStatus = false;          //开启调试状态,正式打包要关闭此状态(打包调整为:False)
-#else
-        IfAddKey = true;                //默认False不加密文件
-        IfUpdateWorldTime = true;       //关闭此选项,不会链接网络 要不会卡
-		TiaoShiStatus = false;          //调试状态
-#endif
+        if (Define.IsEditor)
+        {
+            IfAddKey = false; //默认False不加密文件
+            IfUpdateWorldTime = false; //关闭此选项,不会链接网络 要不会卡
+            TiaoShiStatus = false; //开启调试状态,正式打包要关闭此状态(打包调整为:False)
+        }
+        else
+        {
+            IfAddKey = true; //默认False不加密文件
+            IfUpdateWorldTime = true; //关闭此选项,不会链接网络 要不会卡
+            TiaoShiStatus = false; //调试状态
+        }
 
         if (IfAddKey)
         {
@@ -879,9 +882,10 @@ public class WWWSet:MonoBehaviour{
                             AddShowLog("通过检测数据...");
                         }
 
-#if UNITY_EDITOR
-                        //yanzhengStatus = false;
-#endif
+                        if (Define.IsEditor)
+                        {
+                            //yanzhengStatus = false;
+                        }
 
                         if (yanzhengStatus == false) {
 
@@ -1385,21 +1389,24 @@ public class WWWSet:MonoBehaviour{
                     {
                         try
                         {
-#if UNITY_ANDROID && !UNITY_EDITOR
-                            //设置Umeng Appkey
-                            GameTimer timer = new GameTimer(0.1f, 1, delegate ()
-                           {
-                               GA.StartWithAppKeyAndChannelId("5de0ff374ca357ddf00003ef", "App Store");        //设置appID信息
+                            if (!Define.IsEditor)
+                            {
+#if UNITY_ANDROID
+                                //设置Umeng Appkey
+                                GameTimer timer = new GameTimer(0.1f, 1, delegate ()
+                               {
+                                   GA.StartWithAppKeyAndChannelId("5de0ff374ca357ddf00003ef", "App Store");        //设置appID信息
 
-                               //调试时开启日志
-                               GA.SetLogEnabled(false);            //不输出Logo信息
-                               GA.SetLogEncryptEnabled(true);      //加密传输信息
-                                                                   //GA.ProfileSignIn(zhangHaoID);     //写入账号ID
-                               IfSendYouMengData = true;           //开启友盟发送
-                               Debug.Log("unity : 初始化友盟参数");
-                           });
-                           timer.Start();
+                                   //调试时开启日志
+                                   GA.SetLogEnabled(false);            //不输出Logo信息
+                                   GA.SetLogEncryptEnabled(true);      //加密传输信息
+                                                                       //GA.ProfileSignIn(zhangHaoID);     //写入账号ID
+                                   IfSendYouMengData = true;           //开启友盟发送
+                                   Debug.Log("unity : 初始化友盟参数");
+                               });
+                               timer.Start();
 #endif
+                            }
                         }
                         catch (Exception ex)
                         {
@@ -1869,8 +1876,7 @@ public class WWWSet:MonoBehaviour{
             }
         }
 
-#if UNITY_EDITOR
-        if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose && Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.activeInHierarchy)
+        if (Define.IsEditor && Game_PublicClassVar.Get_game_PositionVar.Obj_Rose && Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.activeInHierarchy)
         {
             NavMeshAgent agent = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<UnityEngine.AI.NavMeshAgent>();
             Vector3 pos = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position;
@@ -1892,7 +1898,6 @@ public class WWWSet:MonoBehaviour{
                 agent.SetDestination(new Vector3(pos.x, pos.y, pos.z - 1));
             }
         }
-#endif
     }
 
     //注销时调用,保存上次时间
@@ -5809,18 +5814,21 @@ public class WWWSet:MonoBehaviour{
 
     //检测电量,低于1%自动退出游戏。
     public void JianCeDianLiang() {
-#if  UNITY_ANDROID && !UNITY_EDITOR
-        int dianLiangValue = GetBatteryLevel();
-        Debug.Log("dianLiangValue: " + dianLiangValue);
-        if (dianLiangValue <= 2 && dianLiangValue!= -2)
+        if (!Define.IsEditor)
         {
-            //退出游戏
-            ShowAndroidToastMessage("电量低于1%时,游戏将自动退出!防止游戏因为突然关机产生数据错误...");
-            //Application.Quit();
-            Debug.Log("强制退出!电量原因");
-            ExitGame();
-        }
+#if  UNITY_ANDROID
+            int dianLiangValue = GetBatteryLevel();
+            Debug.Log("dianLiangValue: " + dianLiangValue);
+            if (dianLiangValue <= 2 && dianLiangValue!= -2)
+            {
+                //退出游戏
+                ShowAndroidToastMessage("电量低于1%时,游戏将自动退出!防止游戏因为突然关机产生数据错误...");
+                //Application.Quit();
+                Debug.Log("强制退出!电量原因");
+                ExitGame();
+            }
 #endif
+        }
     }
 
 

@@ -923,9 +923,10 @@ public class GameLinkServer : MonoBehaviour {
 #if UNITY_IPHONE
                 SendToServerBuf(10000103,"");
 #endif
-#if UNITY_EDITOR
-                SendToServerBuf(10000102, "");
-#endif
+                if (Define.IsEditor)
+                {
+                    SendToServerBuf(10000102, "");
+                }
                 //获取时间戳
                 SendToServerBuf(10000101,"");
 

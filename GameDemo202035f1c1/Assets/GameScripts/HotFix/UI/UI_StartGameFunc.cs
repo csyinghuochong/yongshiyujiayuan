@@ -61,11 +61,14 @@ public class UI_StartGameFunc : MonoBehaviour {
         }
         else
         {
-#if UNITY_ANDROID && !UNITY_EDITOR
+            if (!Define.IsEditor)
+            {
+#if UNITY_ANDROID
 #if TapTap
-            GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
+                GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
 #endif
 #endif
+            }
         }
 
         if (Application.platform == RuntimePlatform.Android)
