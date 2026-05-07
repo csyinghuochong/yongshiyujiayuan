@@ -74,7 +74,7 @@ public class Rose_ChengJiuDataShowList : MonoBehaviour {
         UI_ChengJiuNum.GetComponent<Text>().text = rewardNum;
 
         //显示Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
         Sprite itemIcon = obj as Sprite;
         UI_ChengJiuIcon.GetComponent<Image>().sprite = itemIcon;
 

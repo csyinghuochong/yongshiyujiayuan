@@ -191,13 +191,13 @@ public class UI_EquipXiLian : MonoBehaviour {
 
                     //显示道具Icon
                     string ItemIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", moveItemID, "Item_Template");
-                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+                    object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
                     Sprite itemIcon = obj as Sprite;
                     Obj_EquipItem.GetComponent<Image>().sprite = itemIcon;
 
                     //显示品质
                     string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", moveItemID, "Item_Template");
-                    object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
+                    object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
                     Sprite itemQuality = obj2 as Sprite;
                     Obj_EquipQuality.GetComponent<Image>().sprite = itemQuality;
 
@@ -887,7 +887,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         Obj_EquipPropertyMove.SetActive(false);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         Obj_ItemXiLianBtn.GetComponent<Image>().sprite = img;
         Obj_RMBXiLianBtn.GetComponent<Image>().sprite = img;
@@ -910,7 +910,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
 
         //显示底图
-        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
         img = obj as Sprite;
         Obj_RMBXiLianBtn.GetComponent<Image>().sprite = img;
 
@@ -927,7 +927,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         Obj_EquipPropertyMove.SetActive(false);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         Obj_ItemXiLianBtn.GetComponent<Image>().sprite = img;
         Obj_RMBXiLianBtn.GetComponent<Image>().sprite = img;
@@ -950,7 +950,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
 
         //显示底图
-        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
         img = obj as Sprite;
         Obj_ItemXiLianBtn.GetComponent<Image>().sprite = img;
     }
@@ -964,7 +964,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         Obj_EquipPropertyMove.SetActive(false);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         Obj_ItemXiLianBtn.GetComponent<Image>().sprite = img;
         Obj_RMBXiLianBtn.GetComponent<Image>().sprite = img;
@@ -986,7 +986,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
 
         //显示底图
-        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
         img = obj as Sprite;
         Obj_XiLianDaShiBtn.GetComponent<Image>().sprite = img;
 
@@ -1006,7 +1006,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         Obj_EquipPropertyMove.SetActive(true);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         Obj_ItemXiLianBtn.GetComponent<Image>().sprite = img;
         Obj_RMBXiLianBtn.GetComponent<Image>().sprite = img;
@@ -1028,7 +1028,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
 
         //显示底图
-        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
         img = obj as Sprite;
         Obj_XiLianMoveBtn.GetComponent<Image>().sprite = img;
 
@@ -1217,12 +1217,12 @@ public class UI_EquipXiLian : MonoBehaviour {
 
                             //显示道具Icon
                             string ItemIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", moveItemID, "Item_Template");
-                            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+                            object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
                             Sprite itemIcon = obj as Sprite;
 
                             //显示品质
                             string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", moveItemID, "Item_Template");
-                            object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
+                            object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
                             Sprite itemQuality = obj2 as Sprite;
 
                             switch (type)

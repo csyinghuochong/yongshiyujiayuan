@@ -43,7 +43,7 @@ public class UI_TianFuIcon : MonoBehaviour {
         string tianFuIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", TianFuID, "Talent_Template");
 
         //更新天赋Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("TianFuIcon/" + tianFuIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("TianFuIcon/" + tianFuIcon);
         Sprite img = obj as Sprite;
         Obj_TianFuIcon.GetComponent<Image>().sprite = img;
         
@@ -62,7 +62,7 @@ public class UI_TianFuIcon : MonoBehaviour {
             tianFuNowLv = "0";
             Obj_TianFuLv.GetComponent<Text>().color = new Color(0.6f, 0.6f, 0.6f);
             //灰化Icon
-            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+            object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_TianFuIcon.GetComponent<Image>().material = huiMaterial;
         }

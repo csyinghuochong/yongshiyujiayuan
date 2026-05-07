@@ -23,12 +23,12 @@ public class MakeEquipNeedItem : MonoBehaviour {
         Obj_NeedItemName.GetComponent<Text>().text = needItemName;
 
         //显示道具Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + needItemIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + needItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_NeedItemIcon.GetComponent<Image>().sprite = itemIcon;
 
         //显示品质
-        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(needItemQuality));
+        object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(needItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_NeedItemQuality.GetComponent<Image>().sprite = itemQuality;
 

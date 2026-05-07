@@ -36,7 +36,7 @@ public class UI_ChengJiuHintObj : MonoBehaviour {
         Obj_ChengJiuNum.GetComponent<Text>().text = rewardNum;
 
         //显示Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
         Sprite itemIcon = obj as Sprite;
         Obj_ChengJiuIcon.GetComponent<Image>().sprite = itemIcon;
 

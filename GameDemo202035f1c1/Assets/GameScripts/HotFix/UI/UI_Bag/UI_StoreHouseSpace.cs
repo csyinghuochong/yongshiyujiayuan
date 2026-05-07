@@ -107,7 +107,7 @@ public class UI_StoreHouseSpace: MonoBehaviour
             string itemType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemType", "ID", ItemID, "Item_Template");
 
             //显示道具Icon
-            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+            object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
             itemIcon = obj as Sprite;
             UI_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
@@ -120,7 +120,7 @@ public class UI_StoreHouseSpace: MonoBehaviour
 
             //显示道具品质
             string itemQuality = Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality);
-            obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(itemQuality);
+            obj = ResourcesManager.Instance.LoadIconSync<Sprite>(itemQuality);
             Sprite itemQuility = obj as Sprite;
             UI_ItemQuility.GetComponent<Image>().sprite = itemQuility;
 

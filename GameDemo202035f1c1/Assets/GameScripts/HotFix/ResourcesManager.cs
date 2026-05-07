@@ -3,16 +3,16 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using YooAsset;
 
-public class ResourcesLoaderComponent
+public class ResourcesManager
 {
-    private static ResourcesLoaderComponent _instance;
+    private static ResourcesManager _instance;
 
-    public static ResourcesLoaderComponent Instance
+    public static ResourcesManager Instance
     {
         get
         {
             if (_instance == null)
-                _instance = new ResourcesLoaderComponent();
+                _instance = new ResourcesManager();
             return _instance;
         }
     }

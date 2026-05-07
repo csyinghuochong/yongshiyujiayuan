@@ -41,7 +41,7 @@ public class UI_DayTaskList : MonoBehaviour
 
         ObscuredString dayTaskIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TaskIcon", "ID", dayTaskID, "TaskCountry_Template");
 
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("EveryDayTaskIcon/" + dayTaskIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("EveryDayTaskIcon/" + dayTaskIcon);
         Sprite taskIcon = obj as Sprite;
         Obj_dayTaskIcon.GetComponent<Image>().sprite = taskIcon;
 

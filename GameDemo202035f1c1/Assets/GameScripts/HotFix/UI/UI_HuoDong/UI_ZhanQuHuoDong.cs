@@ -94,7 +94,7 @@ public class UI_ZhanQuHuoDong : MonoBehaviour {
     public void Btn_XuanZhongShow(GameObject obj, GameObject obj_Text)
     {
         //显示按钮
-        object imgObj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_57_1");
+        object imgObj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_57_1");
         Sprite img = imgObj as Sprite;
         //重置按钮状态
         obj.GetComponent<Image>().sprite = img;
@@ -105,7 +105,7 @@ public class UI_ZhanQuHuoDong : MonoBehaviour {
     public void Btn_ChongZhi()
     {
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_57_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_57_2");
         Sprite img = obj as Sprite;
 
         //重置按钮状态

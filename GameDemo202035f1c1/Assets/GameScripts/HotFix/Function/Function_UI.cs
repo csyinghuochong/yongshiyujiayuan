@@ -1829,7 +1829,7 @@ public class Function_UI
 
                 //播放UI音效
                 case "1":
-                    AudioClip audioClip = (AudioClip)ResourcesLoaderComponent.Instance.LoadAudioSync<AudioClip>("GameSource/UI/" + sourceName);
+                    AudioClip audioClip = (AudioClip)ResourcesManager.Instance.LoadAudioSync<AudioClip>("GameSource/UI/" + sourceName);
                     audioSource.clip = audioClip;
                     if (playTime > 0)
                     {
@@ -1842,7 +1842,7 @@ public class Function_UI
 
                 //播放游戏音效
                 case "2":
-                    audioClip = (AudioClip)ResourcesLoaderComponent.Instance.LoadAudioSync<AudioClip>("GameSource/Game/" + sourceName);
+                    audioClip = (AudioClip)ResourcesManager.Instance.LoadAudioSync<AudioClip>("GameSource/Game/" + sourceName);
                     audioSource.clip = audioClip;
                     if (playTime > 0)
                     {
@@ -1855,7 +1855,7 @@ public class Function_UI
 
                 //播放场景背景音效
                 case "3":
-                    audioClip = (AudioClip)ResourcesLoaderComponent.Instance.LoadAudioSync<AudioClip>("GameSource/BGM/" + sourceName);
+                    audioClip = (AudioClip)ResourcesManager.Instance.LoadAudioSync<AudioClip>("GameSource/BGM/" + sourceName);
                     audioSource.clip = audioClip;
                     audioSource.loop = true;    //循环播放
                     audioSource.GetComponent<GameSourceObj>().playTime = 999999;
@@ -1865,7 +1865,7 @@ public class Function_UI
 
                 //播放技能游戏音效
                 case "4":
-                    audioClip = (AudioClip)ResourcesLoaderComponent.Instance.LoadAudioSync<AudioClip>("GameSource/Skill/" + sourceName);
+                    audioClip = (AudioClip)ResourcesManager.Instance.LoadAudioSync<AudioClip>("GameSource/Skill/" + sourceName);
                     audioSource.clip = audioClip;
                     if (playTime > 0)
                     {
@@ -1985,7 +1985,7 @@ public class Function_UI
         
         //实例化
         string petModelShowID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetModel", "ID", petModelID, "Pet_Template");
-        GameObject obj = (GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("PetSet/" + petModelShowID);
+        GameObject obj = (GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + petModelShowID);
         if (obj != null)
         {
             GameObject modelObj = MonoBehaviour.Instantiate(obj);
@@ -2039,7 +2039,7 @@ public class Function_UI
 
         //实例化
         string petModelShowID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetModel", "ID", petModelID, "Pet_Template");
-        GameObject obj = (GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("PetSet/" + petModelShowID);
+        GameObject obj = (GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + petModelShowID);
         if (obj != null)
         {
             GameObject modelObj = MonoBehaviour.Instantiate(obj);
@@ -3926,7 +3926,7 @@ public class Function_UI
                 break;
         }
 
-        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + roseHeadIconId);
+        Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + roseHeadIconId);
         Sprite img = obj as Sprite;
         Obj_HeadIcon.GetComponent<Image>().sprite = img;
         Obj_HeadIcon.GetComponent<Image>().SetNativeSize();

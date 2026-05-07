@@ -44,7 +44,7 @@ public class MonsterSkill_ModelSize_1 : MonoBehaviour
 
         //实例化技能特效
         if (effectName != "0" && effectName != "") {
-            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+            GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = this.transform;

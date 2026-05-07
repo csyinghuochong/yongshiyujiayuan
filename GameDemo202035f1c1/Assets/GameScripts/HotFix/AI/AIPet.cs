@@ -1181,7 +1181,7 @@ public class AIPet : MonoBehaviour {
                 if (PetType == "2" && PetTianTiType == "2") {
                     //特殊显示
                     UI_Hp.GetComponent<UI_AIHp>().Obj_aiName.GetComponent<TMP_Text>().color = new Color(0.96f,0.372f,0.2f);
-                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Pro/UI_Image_34");
+                    object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/Pro/UI_Image_34");
                     Sprite itemIcon = obj as Sprite;
                     UI_Hp.GetComponent<UI_AIHp>().Obj_aiImgValue.GetComponent<Image>().sprite = itemIcon;
                 }
@@ -1468,13 +1468,13 @@ public class AIPet : MonoBehaviour {
             //Debug.Log("触发攻击!!!!!!!!!");
             Game_PublicClassVar.Get_fight_Formult.PetActMonster(this.gameObject, "62000003", AI_Target, false);         //战斗
             if (PetType == "0" || PetType == "1") {
-                AI_Target.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act");       //
+                AI_Target.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act");       //
                 AI_Target.GetComponent<AI_1>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 AI_Target.GetComponent<AI_1>().IfHitEffect = true;
                 AI_Target.GetComponent<AI_1>().HitStatus = true;      //播放受击特效
             }
             if (PetType == "2") {
-                AI_Target.GetComponent<AIPet>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act");       //
+                AI_Target.GetComponent<AIPet>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act");       //
                 AI_Target.GetComponent<AIPet>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 AI_Target.GetComponent<AIPet>().IfHitEffect = true;
                 AI_Target.GetComponent<AIPet>().HitStatus = true;      //播放受击特效
@@ -1734,7 +1734,7 @@ public class AIPet : MonoBehaviour {
             //Debug.Log("触发宠物技能" + skillID[i]);
             //触发BUFF
             string skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID[i], "Skill_Template");
-            GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
+            GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
             GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
             SkillObject_p.GetComponent<SkillObjBase>().SkillTargetObj = AI_Target;
             string skillParent = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillParent", "ID", skillID[i], "Skill_Template");

@@ -40,7 +40,7 @@ public class UI_ChengJiuRewardShowSet : MonoBehaviour {
         Obj_ChengJiuRewardDes.GetComponent<Text>().text = Des;
 
         //显示Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ChengJiuIcon/" + icon);
         Sprite itemIcon = obj as Sprite;
         Obj_ChengJiuIcon.GetComponent<Image>().sprite = itemIcon;
 

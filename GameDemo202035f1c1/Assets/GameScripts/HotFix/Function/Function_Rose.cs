@@ -12600,7 +12600,7 @@ public class Function_Rose {
             }
         }
 
-        GameObject uiXinlianList = MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>("UISet/RoseEquip/UI_EquipXiLianList"));
+        GameObject uiXinlianList = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUGUISync<GameObject>("UISet/RoseEquip/UI_EquipXiLianList"));
         uiXinlianList.GetComponent<UI_EquipXiLianList>().InitData(mXiLianResults, this.OnClickConfimButton);
         uiXinlianList.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiXinlianList.transform.localPosition = Vector3.zero;
@@ -14137,7 +14137,7 @@ public class Function_Rose {
         //获取怪物并设置位置
         if (petModel != "")
         {
-            GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("PetSet/" + petModel));
+            GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + petModel));
             monsterObj.SetActive(false);
             monsterObj.transform.SetParent(monsterSetObj.transform);
             Vector3 CreateVec3 = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position;
@@ -14159,7 +14159,7 @@ public class Function_Rose {
                 //Game_PublicClassVar.Get_function_UI.GameHint("召唤宠物成功！");
 
                 //实例化一个特效
-                GameObject zhaoHuanEffect = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Eff_Skill_ZhaoHuan_1"));        //实例化特效
+                GameObject zhaoHuanEffect = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Eff_Skill_ZhaoHuan_1"));        //实例化特效
                 zhaoHuanEffect.transform.position = CreateVec3;
                 zhaoHuanEffect.transform.localScale = new Vector3(1, 1, 1);
             }
@@ -14651,7 +14651,7 @@ public class Function_Rose {
         }
 
         //显示角色武器
-        GameObject weaponObj = (GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
+        GameObject weaponObj = (GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
         if (weaponObj == null)
         {
             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponBaseModel.SetActive(true);
@@ -14714,7 +14714,7 @@ public class Function_Rose {
         }
 
         //设置角色UI的武器模型
-        GameObject weaponObj = (GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
+        GameObject weaponObj = (GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
         if (weaponObj == null)
         {
             Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_ShowOtherPlayerWeapon_Model.SetActive(true);
@@ -14958,7 +14958,7 @@ public class Function_Rose {
             string chenghaoIamge = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Iamge", "ID", chenghaoID, "ChengHao_Template");
             if (chenghaoIamge != "" && chenghaoIamge != null && chenghaoIamge != "0")
             {
-                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ChengWeiIcon/" + chenghaoIamge);
+                object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ChengWeiIcon/" + chenghaoIamge);
                 Sprite itemIcon = obj as Sprite;
                 Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UI_RoseHp.GetComponent<UI_RoseHp>().Obj_ChengWei_Img.GetComponent<Image>().sprite = itemIcon;
                 Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UI_RoseHp.GetComponent<UI_RoseHp>().Obj_ChengWeiNameSet.SetActive(false);
@@ -16206,7 +16206,7 @@ public class Function_Rose {
         string nowEffectID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EffectID", "ID", nowYanSeID, "RanSe_Template");
         if (nowEffectID != "" && nowEffectID != "0" && nowEffectID != null)
         {
-            GameObject effect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + nowEffectID);
+            GameObject effect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + nowEffectID);
             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().RoseModelEffect = (GameObject)MonoBehaviour.Instantiate(effect);
             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().RoseModelEffect.transform.localScale = new Vector3(1, 1, 1);
             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().RoseModelEffect.GetComponent<SkillEffectPosition>().TargetObj = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Low;
@@ -16238,7 +16238,7 @@ public class Function_Rose {
             //战士相关
             case "1":
                 string waiguanName = "PiFu_" + showType;
-                Texture2D img = (Texture2D)ResourcesLoaderComponent.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_ZhanShi/PiFu/" + waiguanName);
+                Texture2D img = (Texture2D)ResourcesManager.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_ZhanShi/PiFu/" + waiguanName);
                 if (img == null)
                 {
                     return;
@@ -16246,7 +16246,7 @@ public class Function_Rose {
 
                 //头发
                 string waiguanHairName = "PiFuHair_" + showType;
-                Texture2D HairImg = (Texture2D)ResourcesLoaderComponent.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_ZhanShi/PiFu/" + waiguanHairName);
+                Texture2D HairImg = (Texture2D)ResourcesManager.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_ZhanShi/PiFu/" + waiguanHairName);
                 if (HairImg == null)
                 {
                     return;
@@ -16311,7 +16311,7 @@ public class Function_Rose {
             //法师相关
             case "2":
                 waiguanName = "PiFu_" + showType;
-                img = (Texture2D)ResourcesLoaderComponent.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_MoFaShi/PiFu/" + waiguanName);
+                img = (Texture2D)ResourcesManager.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_MoFaShi/PiFu/" + waiguanName);
                 if (img == null)
                 {
                     return;
@@ -16401,7 +16401,7 @@ public class Function_Rose {
             case "3":
                 waiguanName = "PiFu_" + showType;
 
-                img = (Texture2D)ResourcesLoaderComponent.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_LieRen/PiFu/" + waiguanName);
+                img = (Texture2D)ResourcesManager.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_LieRen/PiFu/" + waiguanName);
                 if (img == null)
                 {
                     return;
@@ -16496,7 +16496,7 @@ public class Function_Rose {
         string nowEffectID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EffectID", "ID", nowYanSeID, "RanSe_Template");
         if (nowEffectID != "" && nowEffectID != "0" && nowEffectID != null)
         {
-            GameObject effect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + nowEffectID);
+            GameObject effect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + nowEffectID);
             Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_EquipModel_Posi_ModelEffect = (GameObject)MonoBehaviour.Instantiate(effect);
             Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_EquipModel_Posi_ModelEffect.transform.localScale = new Vector3(1, 1, 1);
             Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_EquipModel_Posi_ModelEffect.GetComponent<SkillEffectPosition>().TargetObj = Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_EquipModel_Posi_Low;

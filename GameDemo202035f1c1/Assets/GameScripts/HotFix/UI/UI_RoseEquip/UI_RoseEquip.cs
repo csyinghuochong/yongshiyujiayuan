@@ -445,7 +445,7 @@ public class UI_RoseEquip : MonoBehaviour {
         Obj_EquipBtnText_4.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         ObjBtn_Bag.GetComponent<Image>().sprite = img;
         ObjBtn_Property.GetComponent<Image>().sprite = img;
@@ -461,7 +461,7 @@ public class UI_RoseEquip : MonoBehaviour {
                 Obj_RoseModelImg.SetActive(true);
                 RoseEquipStatus = "1";
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Bag.GetComponent<Image>().sprite = img;
                 //更新通用图标显示
@@ -479,7 +479,7 @@ public class UI_RoseEquip : MonoBehaviour {
                 Obj_RoseModelImg.SetActive(true);
                 RoseEquipStatus = "2";
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Property.GetComponent<Image>().sprite = img;
                 //更新通用图标显示
@@ -494,7 +494,7 @@ public class UI_RoseEquip : MonoBehaviour {
                 Obj_Bag.SetActive(true);
                 RoseEquipStatus = "3";
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Gem.GetComponent<Image>().sprite = img;
                 //更新通用图标显示
@@ -512,7 +512,7 @@ public class UI_RoseEquip : MonoBehaviour {
                 Obj_EquipQiangHuaSet.SetActive(true);
                 RoseEquipStatus = "4";
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_QiangHua.GetComponent<Image>().sprite = img;
                 //更新通用图标显示

@@ -155,12 +155,12 @@ public class UI_ItmeMakeLearn : MonoBehaviour
         Obj_MakeItemName.GetComponent<Text>().text = makeItemName;
 
         //显示道具Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + makeItemIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + makeItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_MakeItemIcon.GetComponent<Image>().sprite = itemIcon;
 
         //显示品质
-        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(makeItemQuality));
+        object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(makeItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_MakeItemQuality.GetComponent<Image>().sprite = itemQuality;
 
@@ -491,7 +491,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
 	{
 
 		//显示按钮
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
 		Sprite img = obj as Sprite;
 		Btn_CaiYao.GetComponent<Image>().sprite = img;
 		Btn_DaZao.GetComponent<Image>().sprite = img;
@@ -505,7 +505,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
 			    Btn_Lianjin.SetActive(true);
 
 			    //显示底图
-			    obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+			    obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
 			    img = obj as Sprite;
 			    Btn_Lianjin.GetComponent<Image>().sprite = img;
 

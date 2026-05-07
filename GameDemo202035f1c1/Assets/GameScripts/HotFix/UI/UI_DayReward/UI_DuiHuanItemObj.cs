@@ -35,7 +35,7 @@ public class UI_DuiHuanItemObj : MonoBehaviour
         Obj_BuyPrice.GetComponent<Text>().text = buyPrice + "荣誉";
         if (!ifshow)
         {
-            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+            object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_BtnImg.GetComponent<Image>().material = huiMaterial;
             Obj_ItemName.SetActive(false);
@@ -44,12 +44,12 @@ public class UI_DuiHuanItemObj : MonoBehaviour
         }
         else {
             //显示道具Icon
-            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+            object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
             Sprite itemIcon = obj as Sprite;
             Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
             //显示品质
-            object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
+            object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
             Sprite itemQuality = obj2 as Sprite;
             Obj_ItemQuality.GetComponent<Image>().sprite = itemQuality;
         }

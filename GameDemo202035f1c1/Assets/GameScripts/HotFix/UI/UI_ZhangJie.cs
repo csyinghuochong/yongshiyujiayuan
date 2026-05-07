@@ -51,7 +51,7 @@ public class UI_ZhangJie : MonoBehaviour {
         if (nowLanguage == "1") {
             pathStr = "GameUI_EN";
         }
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(pathStr + "/Back/ZhangJie_" + ZhangJieID);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>(pathStr + "/Back/ZhangJie_" + ZhangJieID);
         Sprite itemIcon = obj as Sprite;
         UI_ZhangJieDi_Yes.GetComponent<Image>().sprite = itemIcon;
         UI_ZhangJieDi_No.GetComponent<Image>().sprite = itemIcon;

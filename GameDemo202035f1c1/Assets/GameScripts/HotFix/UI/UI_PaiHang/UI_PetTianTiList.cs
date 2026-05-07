@@ -58,7 +58,7 @@ public class UI_PetTianTiList : MonoBehaviour {
                     string nowHeadIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HeadIcon", "ID", nowPetID, "Pet_Template");
 
                     //显示底图
-                    Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
+                    Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                     Sprite img = obj as Sprite;
                     Obj_PetHeadIconList[i].GetComponent<Image>().sprite = img;
                 }

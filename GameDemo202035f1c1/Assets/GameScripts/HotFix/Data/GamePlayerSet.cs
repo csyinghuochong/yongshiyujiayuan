@@ -247,7 +247,7 @@ public class GamePlayerSet : MonoBehaviour {
             string chenghaoIamge = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Iamge", "ID", ChengHaoID, "ChengHao_Template");
             if (chenghaoIamge != "" && chenghaoIamge != null && chenghaoIamge != "0")
             {
-                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ChengWeiIcon/" + chenghaoIamge);
+                object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ChengWeiIcon/" + chenghaoIamge);
                 Sprite itemIcon = obj as Sprite;
                 ShowObj.GetComponent<UI_PlayerHp>().Obj_ChengHao.SetActive(true);
                 ShowObj.GetComponent<UI_PlayerHp>().Obj_ChengHao.GetComponent<Image>().sprite = itemIcon;
@@ -272,7 +272,7 @@ public class GamePlayerSet : MonoBehaviour {
         {
             if (zhenying == "1")
             {
-                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Img/UI_Image_319");
+                object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/Img/UI_Image_319");
                 Sprite itemIcon = obj as Sprite;
                 ShowObj.GetComponent<UI_PlayerHp>().Obj_PaiImg.GetComponent<Image>().sprite = itemIcon;
                 ShowObj.GetComponent<UI_PlayerHp>().Obj_PaiImg.SetActive(true);
@@ -280,7 +280,7 @@ public class GamePlayerSet : MonoBehaviour {
 
             if (zhenying == "2")
             {
-                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Img/UI_Image_318");
+                object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/Img/UI_Image_318");
                 Sprite itemIcon = obj as Sprite;
                 ShowObj.GetComponent<UI_PlayerHp>().Obj_PaiImg.GetComponent<Image>().sprite = itemIcon;
                 ShowObj.GetComponent<UI_PlayerHp>().Obj_PaiImg.SetActive(true);
@@ -352,7 +352,7 @@ public class GamePlayerSet : MonoBehaviour {
         //显示角色武器
         string showWeaponID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemMondel", "ID", EquipID, "Item_Template", playerObj.GetComponent<Player_Status>().OccType);
         //Debug.Log("showWeaponID = " + showWeaponID);
-        GameObject weaponObj = (GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
+        GameObject weaponObj = (GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
         if (weaponObj == null)
         {
             playerObj.GetComponent<Player_Bone>().ZhanShi_WuQiObj_Base.SetActive(true);
@@ -440,7 +440,7 @@ public class GamePlayerSet : MonoBehaviour {
         //获取怪物并设置位置
         if (petModel != "")
         {
-            GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("PetSet/" + petModel));
+            GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + petModel));
             monsterObj.SetActive(false);
             monsterObj.transform.SetParent(this.gameObject.transform);
             //Vector3 CreateVec3 = ShowObj.GetComponent<Player_Bone>().PetPositionSet_Posi_1.transform.position;
@@ -493,7 +493,7 @@ public class GamePlayerSet : MonoBehaviour {
         if (PlayerSet.ContainsKey(playerID))
         {
             //播放传送特效
-            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_ChuanSong");
+            GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_ChuanSong");
             if (SkillEffect != null)
             {
                 GameObject effect = (GameObject)Instantiate(SkillEffect);

@@ -73,7 +73,7 @@ public class UI_PetXiuLian : MonoBehaviour {
         //显示图标
         string icon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", XiuLianLvList[type], "PetXiuLian_Template");
         //显示底图
-        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetXiuLian/" + icon);
+        Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetXiuLian/" + icon);
         Sprite img = obj as Sprite;
         Obj_XiuLianIcon.GetComponent<Image>().sprite = img;
 

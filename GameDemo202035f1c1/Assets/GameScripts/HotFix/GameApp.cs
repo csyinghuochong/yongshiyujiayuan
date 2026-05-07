@@ -13,6 +13,6 @@ public class GameApp
 
         LanguageManager.Instance.OnInitL2Localization();
         NameManager.Instance.StartLoadRandomNameData();
-        ResourcesLoaderComponent.Instance.LoadSceneAsync(ABPathHelper.GetScenePath("StartGame")).Forget();
+        ResourcesManager.Instance.LoadSceneAsync(ABPathHelper.GetScenePath("StartGame")).Forget();
     }
 }

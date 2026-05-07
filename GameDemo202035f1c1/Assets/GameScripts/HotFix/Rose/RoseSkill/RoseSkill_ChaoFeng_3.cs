@@ -39,7 +39,7 @@ public class RoseSkill_ChaoFeng_3 : MonoBehaviour
 
 
         //实例化技能特效
-        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+        GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
         if (SkillEffect != null)
         {
             GameObject effect = (GameObject)Instantiate(SkillEffect);

@@ -27,7 +27,7 @@ public class UI_ZhuLingShowList : MonoBehaviour
         string name = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", ShowZhuLingID, "ZhuLing_Template");
 
         //灞曠ず
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("OtherIcon/ZhuLingIcon/" + iconID);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("OtherIcon/ZhuLingIcon/" + iconID);
         Sprite itemIcon = obj as Sprite;
         ZhuLingIconShow.GetComponent<Image>().sprite = itemIcon;
         ZhuLingNameShow.GetComponent<Text>().text = name;
@@ -36,7 +36,7 @@ public class UI_ZhuLingShowList : MonoBehaviour
         bool ifJiHuo = Game_PublicClassVar.Get_function_Rose.IfRoseZhuLing(ShowZhuLingID);
         if (ifJiHuo == false)
         {
-            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+            object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             ZhuLingIconShow.GetComponent<Image>().material = huiMaterial;
             //鏄剧ず绛夌骇

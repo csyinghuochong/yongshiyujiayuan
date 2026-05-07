@@ -64,7 +64,7 @@ public class MonsterSkill_Create_2 : MonoBehaviour
         if (createList.Length > 0)
         {
             string createID = createList[0].Split(',')[0];
-            monsterObj = ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("CreateMonster/" + createID);
+            monsterObj = ResourcesManager.Instance.LoadUnitSync<GameObject>("CreateMonster/" + createID);
         }
 
 
@@ -106,7 +106,7 @@ public class MonsterSkill_Create_2 : MonoBehaviour
                 string[] Vec3Position = createList[1].Split(',');
                 Vec3 = new Vector3(float.Parse(Vec3Position[0]), float.Parse(Vec3Position[1]), float.Parse(Vec3Position[2]));
                 //Debug.Log("Vec3 = " + Vec3 + "this.GetComponent<SkillObjBase>().SkillID = " + this.GetComponent<SkillObjBase>().SkillID);
-                monsterObj = ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("CreateMonster/" + createID);
+                monsterObj = ResourcesManager.Instance.LoadUnitSync<GameObject>("CreateMonster/" + createID);
                 Game_PublicClassVar.Get_function_AI.AI_CreatMonster(createID, Vec3, this.GetComponent<SkillObjBase>().MonsterSkillObj, monsterObj);
 
                 /*

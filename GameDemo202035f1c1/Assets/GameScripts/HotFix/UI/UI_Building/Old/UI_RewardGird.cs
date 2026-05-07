@@ -16,7 +16,7 @@ public class UI_RewardGird : MonoBehaviour {
         //显示资源图标
         string iconPath = Game_PublicClassVar.Get_function_UI.ResourceTypeReturnIconPath(RewardType);
         Debug.Log("iconPath = " + iconPath);
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(iconPath);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>(iconPath);
         Sprite itemQuality = obj as Sprite;
         Obj_RewardType.GetComponent<Image>().sprite = itemQuality;
 

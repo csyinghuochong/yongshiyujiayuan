@@ -159,7 +159,7 @@ public class UI_ZuoQiSet : MonoBehaviour {
         Obj_EquipBtnText_4.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         ObjBtn_XinXi.GetComponent<Image>().sprite = img;
         ObjBtn_NengLi.GetComponent<Image>().sprite = img;
@@ -172,7 +172,7 @@ public class UI_ZuoQiSet : MonoBehaviour {
             case "1":
 
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_XinXi.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_1.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -183,7 +183,7 @@ public class UI_ZuoQiSet : MonoBehaviour {
             case "2":
 
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_NengLi.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_2.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -194,7 +194,7 @@ public class UI_ZuoQiSet : MonoBehaviour {
             case "3":
 
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_WeiShi.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_3.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -205,7 +205,7 @@ public class UI_ZuoQiSet : MonoBehaviour {
             case "4":
 
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_ShouCang.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_4.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);

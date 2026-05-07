@@ -29,7 +29,7 @@ public class Btn_GanXieMingDan : MonoBehaviour {
 
     //DebugLog
     public void Btn_DebugLog() {
-        GameObject logObj = (GameObject)ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>("UISet/Other/UI_ErrorLog");
+        GameObject logObj = (GameObject)ResourcesManager.Instance.LoadUGUISync<GameObject>("UISet/Other/UI_ErrorLog");
         GameObject errorLogObj = (GameObject)Instantiate(logObj);
         errorLogObj.transform.SetParent(GameObject.Find("Canvas").transform);
         errorLogObj.transform.localPosition = Vector3.zero;

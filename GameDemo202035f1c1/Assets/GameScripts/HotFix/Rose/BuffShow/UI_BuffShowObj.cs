@@ -36,7 +36,7 @@ public class UI_BuffShowObj : MonoBehaviour {
             string buffIDIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffIcon", "ID", BuffID, "SkillBuff_Template");
 
             //显示底图
-            Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/BuffIcon/" + buffIDIcon);
+            Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("SkillIcon/BuffIcon/" + buffIDIcon);
             Sprite img = obj as Sprite;
             Obj_BuffIcon.GetComponent<Image>().sprite = img;
         }

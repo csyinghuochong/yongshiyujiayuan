@@ -135,7 +135,7 @@ public class Main_100006 : MonoBehaviour {
 
                         string[] CreateMonsterList = MonsterList[i].Split(',');
                         if (CreateMonsterList.Length >= 2) {
-                            GameObject monsterObj = (GameObject)Instantiate(ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/MonsterModel/100006/" + CreateMonsterList[0]));
+                            GameObject monsterObj = (GameObject)Instantiate(ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/MonsterModel/100006/" + CreateMonsterList[0]));
 
                             monsterObj.transform.SetParent(monsterCreatePosition.transform);
                             monsterObj.transform.position = monsterCreatePosition.transform.position;           //设置创建位置

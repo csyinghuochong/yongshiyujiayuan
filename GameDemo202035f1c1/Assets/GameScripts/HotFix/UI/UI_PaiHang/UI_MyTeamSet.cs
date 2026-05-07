@@ -61,7 +61,7 @@ public class UI_MyTeamSet : MonoBehaviour {
                     Obj_TeamLvList[i].GetComponent<Text>().text = LanguageManager.Instance.LoadLocalization("等级") +" " + petLv;
 
                     //显示底图
-                    Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
+                    Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                     Sprite img = obj as Sprite;
                     Obj_TeamIconList[i].GetComponent<Image>().sprite = img;
                 }

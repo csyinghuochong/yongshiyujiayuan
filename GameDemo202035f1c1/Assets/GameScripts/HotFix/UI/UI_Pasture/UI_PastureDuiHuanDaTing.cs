@@ -68,7 +68,7 @@ public class UI_PastureDuiHuanDaTing : MonoBehaviour
                 }
                 else {
                     //显示激活图标
-                    object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+                    object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                     Material huiMaterial = huiObj as Material;
                     duiHuanTitleObj.GetComponent<UI_PastureDuiHuanTitleObj>().Obj_UISign.GetComponent<Image>().material = huiMaterial;
                     duiHuanTitleObj.GetComponent<UI_PastureDuiHuanTitleObj>().Obj_UITitleText.GetComponent<Text>().text = "家园达到<color=#ff0000ff>(" + pastureLvInt + "/" + pastureLvlimit + ")</color>可激活兑换";

@@ -955,7 +955,7 @@ public class UI_FunctionOpen : MonoBehaviour {
             if (acteffectName != "" && acteffectName != "0")
             {
                 //实例化技能特效
-                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
+                GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
                 GameObject effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
                 //string positionName = "Center";
@@ -1122,7 +1122,7 @@ public class UI_FunctionOpen : MonoBehaviour {
         actObj.GetComponent<AI_1>().AI_BuZhuoNum = actObj.GetComponent<AI_1>().AI_BuZhuoNum + 1;
 
         //播放捕捉特效
-        GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_BuZhuo");
+        GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + "Eff_BuZhuo");
         if (SkillEffect!=null) {
             GameObject effect = (GameObject)Instantiate(SkillEffect);
             effect.SetActive(false);
@@ -1874,11 +1874,11 @@ public class UI_FunctionOpen : MonoBehaviour {
 
         if (path == "Obj_JianCeNpc")
         {
-            go = ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>(mPrefabPath[path]);
+            go = ResourcesManager.Instance.LoadUnitSync<GameObject>(mPrefabPath[path]);
         }
         else
         {
-            go = ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>(mPrefabPath[path]);
+            go = ResourcesManager.Instance.LoadUGUISync<GameObject>(mPrefabPath[path]);
         }
 
         mPrefabGameObject.Add(path, go);

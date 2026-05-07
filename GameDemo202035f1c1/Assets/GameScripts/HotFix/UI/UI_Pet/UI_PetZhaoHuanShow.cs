@@ -29,7 +29,7 @@ public class UI_PetZhaoHuanShow : MonoBehaviour {
         Obj_PetHeadLv.GetComponent<Text>().text = "Lv." + petLv;
         string petStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetStatus", "ID", NowPetID, "RosePet");
         //显示宠物头像
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + headIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + headIcon);
         Sprite img = obj as Sprite;
         Obj_PetHeadIcon.GetComponent<Image>().sprite = img;
 

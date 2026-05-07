@@ -729,7 +729,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 		Obj_PaiMaiHangSaleSet.SetActive(false);
 		Obj_PaiMaiHangDuiHuanSet.SetActive (false);
 		//显示底图
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
 		Sprite img = obj as Sprite;
 		Obj_Btn_Buy_Img.GetComponent<Image>().sprite = img;
 		//更新通用图标显示
@@ -748,7 +748,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 		Obj_PaiMaiHangDuiHuanSet.SetActive (false);
 
 		//显示底图
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
 		Sprite img = obj as Sprite;
 		Obj_Btn_Sale_Img.GetComponent<Image>().sprite = img;
 		//更新通用图标显示
@@ -777,7 +777,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 		Obj_PaiMaiHangDuiHuanSet.SetActive (true);
 
 		//显示底图
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
 		Sprite img = obj as Sprite;
 		Obj_Btn_DuiHuan_Img.GetComponent<Image>().sprite = img;
 		//更新通用图标显示
@@ -1265,7 +1265,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 		Obj_Btn_Sale_Text.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 		Obj_Btn_DuiHuan_Text.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 		//显示按钮
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
 		Sprite img = obj as Sprite;
 		Obj_Btn_Buy_Img.GetComponent<Image>().sprite = img;
 		Obj_Btn_Sale_Img.GetComponent<Image>().sprite = img;

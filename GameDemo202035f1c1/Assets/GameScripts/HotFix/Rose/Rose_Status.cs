@@ -394,7 +394,7 @@ public class Rose_Status : MonoBehaviour
                 TaskRunStatus = "0";
                 if (roseDeathObj == null)
                 {
-                    roseDeathObj = (GameObject)Instantiate(ResourcesLoaderComponent.Instance.LoadUGUISync<GameObject>("UISet/Other/UI_RoseDeath"));
+                    roseDeathObj = (GameObject)Instantiate(ResourcesManager.Instance.LoadUGUISync<GameObject>("UISet/Other/UI_RoseDeath"));
                     roseDeathObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_GameGirdHint_Front.transform);
                     roseDeathObj.transform.localPosition = new Vector3(0, 0, 0);
                     roseDeathObj.transform.localScale = new Vector3(1, 1, 1);
@@ -2186,7 +2186,7 @@ public class Rose_Status : MonoBehaviour
                 if (Obj_ActTarget != null)
                 {
                     Obj_ActTarget.GetComponent<AI_1>().HitStatus = true;      //播放受击特效
-                    Obj_ActTarget.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act_2");
+                    Obj_ActTarget.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act_2");
                     Obj_ActTarget.GetComponent<AI_1>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                     Obj_ActTarget.GetComponent<AI_1>().IfHitEffect = true;
                     Game_PublicClassVar.Get_fight_Formult.RoseActMonster("62000001", Obj_ActTarget, false, true);
@@ -2212,7 +2212,7 @@ public class Rose_Status : MonoBehaviour
                 //设置实例化技能
                 string fashi_SkillID = "60011001";
                 string skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", fashi_SkillID, "Skill_Template");
-                GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
+                GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
                 GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
                 SkillObject_p.SetActive(false);
                 //设置技能位置
@@ -2241,7 +2241,7 @@ public class Rose_Status : MonoBehaviour
                 //设置实例化技能
                 fashi_SkillID = "60012001";
                 skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", fashi_SkillID, "Skill_Template");
-                SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
+                SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
                 SkillObject_p = (GameObject)Instantiate(SkillObj);
                 SkillObject_p.SetActive(false);
                 //设置技能位置
@@ -2291,7 +2291,7 @@ public class Rose_Status : MonoBehaviour
 
         roseCriActStatus = false;
 
-        GameObject effectObj = (GameObject)Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Rose_CriAct"));
+        GameObject effectObj = (GameObject)Instantiate((GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_CriAct"));
         if (Obj_ActTarget != null)
         {
             effectObj.transform.SetParent(Obj_ActTarget.GetComponent<AI_1>().BoneSet.transform.Find("Di").transform);
@@ -2561,7 +2561,7 @@ public class Rose_Status : MonoBehaviour
             if (skillObjName != "" && skillObjName != "0")
             {
 
-                GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
+                GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
                 GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
 
                 SkillObject_p.GetComponent<SkillObjBase>().SkillTargetObj = Obj_ActTarget;
@@ -3203,7 +3203,7 @@ public class Rose_Status : MonoBehaviour
         }
 
         //实例化玩家释法范围
-        GameObject skillRangeEffect = ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Rose/Rose_SkillRange_2");        //实例化范围特效
+        GameObject skillRangeEffect = ResourcesManager.Instance.LoadEffectSync<GameObject>("Rose/Rose_SkillRange_2");        //实例化范围特效
         SkillRangeEffect = (GameObject)Instantiate(skillRangeEffect);
         Vector3 playerVec3 = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position;
         SkillRangeEffect.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform);

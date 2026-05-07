@@ -92,7 +92,7 @@ public class MonsterSkill_Create_1 : MonoBehaviour
             for (int x = 0; x <= createNum - 1; x++)
             {
                 Vec3 = new Vector3(Vec3.x + Random.value*2-1, Vec3.y + 0.5f, Vec3.z + Random.value*2-1);
-                monsterObj = ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("CreateMonster/" + createID);
+                monsterObj = ResourcesManager.Instance.LoadUnitSync<GameObject>("CreateMonster/" + createID);
                 Game_PublicClassVar.Get_function_AI.AI_CreatMonster(createID, Vec3, this.GetComponent<SkillObjBase>().MonsterSkillObj, monsterObj);
                 //播放传送特效
                 /*

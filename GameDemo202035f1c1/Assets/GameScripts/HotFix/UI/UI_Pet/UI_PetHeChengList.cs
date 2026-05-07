@@ -59,7 +59,7 @@ public class UI_PetHeChengList : MonoBehaviour {
         }
             
         //显示宠物头像
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + headIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + headIcon);
         Sprite img = obj as Sprite;
         Obj_PetIcon.GetComponent<Image>().sprite = img;
 

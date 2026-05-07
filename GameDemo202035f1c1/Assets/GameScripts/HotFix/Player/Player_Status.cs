@@ -214,7 +214,7 @@ public class Player_Status : MonoBehaviour {
 
         //设置实例化技能
         string skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template");
-        GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
+        GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
         GameObject SkillObject_p = (GameObject)MonoBehaviour.Instantiate(SkillObj);
 
         //设定父节点

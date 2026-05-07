@@ -67,7 +67,7 @@ public class pingbizi : MonoBehaviour {
     [OPS.Obfuscator.Attribute.DoNotRenameAttribute]
     private async UniTask LoadWWW()
     {
-        var text = await ResourcesLoaderComponent.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetTextPath("SensitiveWords1"));
+        var text = await ResourcesManager.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetTextPath("SensitiveWords1"));
         
         if (!(text.text.Equals("") || text.text.Equals(null)))
         {

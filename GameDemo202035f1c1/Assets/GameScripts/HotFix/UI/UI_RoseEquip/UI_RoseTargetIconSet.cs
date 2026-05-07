@@ -72,7 +72,7 @@ public class UI_RoseTargetIconSet : MonoBehaviour {
                     Obj_MonsterLv.GetComponent<Text>().text = monsterLv + "级";
 
                     //显示BOSS头像
-                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/BossIcon/" + monsterID);
+                    object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("HeadIcon/BossIcon/" + monsterID);
                     if (obj != null)
                     {
                         Sprite Icon = obj as Sprite;

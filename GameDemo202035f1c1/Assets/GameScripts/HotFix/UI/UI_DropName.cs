@@ -88,7 +88,7 @@ public class UI_DropName : MonoBehaviour
             dropItemIcon = "DropGold";
         }
 
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Texture2D>("ItemIcon/" + dropItemIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Texture2D>("ItemIcon/" + dropItemIcon);
         Texture2D itemIcon = obj as Texture2D;
         //UI_ItemIcon.GetComponent<Image>().sprite = itemIcon;
         ModelMesh.material.mainTexture = itemIcon;

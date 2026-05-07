@@ -39,7 +39,7 @@ public class UI_JingLingShow : MonoBehaviour {
         Obj_JingLingDes.GetComponent<Text>().text = des;
 
         //显示Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("JingLingIcon/" + icon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("JingLingIcon/" + icon);
         Sprite itemIcon = obj as Sprite;
         Obj_JingLingIcon.GetComponent<Image>().sprite = itemIcon;
 
@@ -100,7 +100,7 @@ public class UI_JingLingShow : MonoBehaviour {
             Obj_JingLingJiHuo.SetActive(false);
             Obj_JingLingBtn.SetActive(false);
             //灰化Icon
-            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+            object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_JingLingIcon.GetComponent<Image>().material = huiMaterial;
             Obj_JingLingName.GetComponent<Text>().color = new Color(0.55f, 0.55f, 0.55f, 1);

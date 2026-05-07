@@ -25,7 +25,7 @@ public class UI_ShangHaiRewardShowList : MonoBehaviour {
     public void Show() {
 
         string iconStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", ShangHaiID, "FuBenShangHai_Template");
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("OtherIcon/FuBen/" + iconStr);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("OtherIcon/FuBen/" + iconStr);
         Sprite itemIcon = obj as Sprite;
         Obj_ShangHaiIcon.GetComponent<Image>().sprite = itemIcon;
 
@@ -63,7 +63,7 @@ public class UI_ShangHaiRewardShowList : MonoBehaviour {
             }
             if (int.Parse(nowHightShangHaiID) < int.Parse(ShangHaiID))
             {
-                object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+                object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
                 Material huiMaterial = huiObj as Material;
                 Obj_ShangHaiIcon.GetComponent<Image>().material = huiMaterial;
             }

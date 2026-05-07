@@ -38,7 +38,7 @@ public class RoseSkill_ChaoFeng_1 : MonoBehaviour
             //实例化技能特效
             if (effectName != "" && effectName != "0" && effectName != null)
             {
-                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+                GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                 GameObject effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
                 effect.transform.parent = actObj.transform;
@@ -69,7 +69,7 @@ public class RoseSkill_ChaoFeng_1 : MonoBehaviour
                 if (skillHitEffectName != "" && skillHitEffectName != "0")
                 {
                     //Debug.Log("嘲讽播放受击特效222");
-                    collider.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
+                    collider.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
                 }
             }
         }

@@ -97,13 +97,13 @@ public class UI_GiveNPC : MonoBehaviour
 
                     //显示道具Icon
                     string ItemIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", moveItemID, "Item_Template");
-                    object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+                    object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
                     Sprite itemIcon = obj as Sprite;
                     Obj_EquipItem.GetComponent<Image>().sprite = itemIcon;
 
                     //显示品质
                     string ItemQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", moveItemID, "Item_Template");
-                    object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
+                    object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
                     Sprite itemQuality = obj2 as Sprite;
                     Obj_EquipQuality.GetComponent<Image>().sprite = itemQuality;
 

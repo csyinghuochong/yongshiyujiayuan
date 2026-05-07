@@ -102,7 +102,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         }
 
         //显示Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIcon);
         skillIconSpr = obj as Sprite;
         Obj_SkillIcon.GetComponent<Image>().sprite = skillIconSpr;
         //灰化按钮
@@ -113,7 +113,7 @@ public class UI_RoseSkillList : MonoBehaviour {
 
         }
         else {
-            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+            object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_SkillIcon.GetComponent<Image>().material = huiMaterial;
             string langStr = LanguageManager.Instance.LoadLocalization("未学习");

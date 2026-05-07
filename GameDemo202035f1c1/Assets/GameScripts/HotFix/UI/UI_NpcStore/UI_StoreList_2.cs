@@ -31,13 +31,13 @@ public class UI_StoreList_2 : MonoBehaviour {
 		ItemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", ItemID, "Item_Template");
 
 		//显示道具Icon
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
 		Sprite itemIcon = obj as Sprite;
 		Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 		
 		//显示道具品质
 		string itemQuality = Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality);
-		obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(itemQuality);
+		obj = ResourcesManager.Instance.LoadIconSync<Sprite>(itemQuality);
 		Sprite itemQuility = obj as Sprite;
 		Obj_ItemQuality.GetComponent<Image>().sprite = itemQuility;
 
@@ -66,7 +66,7 @@ public class UI_StoreList_2 : MonoBehaviour {
                 ItmePrice = ItmePrice * int.Parse(ItemNum);
 		        Obj_ItemPrice.GetComponent<Text>().text = ItmePrice.ToString();		
                 //显示钻石图标
-                object priceObj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + "10003");
+                object priceObj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + "10003");
                 Sprite priceItemIconObj = priceObj as Sprite;
                 Obj_ItemPriceIcon.GetComponent<Image>().sprite = priceItemIconObj;
                 break;
@@ -77,7 +77,7 @@ public class UI_StoreList_2 : MonoBehaviour {
 		        Obj_ItemPrice.GetComponent<Text>().text = ItmePrice.ToString();
 		        //显示道具图标
                 string priceItemIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", BuyUseItem, "Item_Template");
-                priceObj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + priceItemIcon);
+                priceObj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + priceItemIcon);
                 priceItemIconObj = priceObj as Sprite;
                 Obj_ItemPriceIcon.GetComponent<Image>().sprite = priceItemIconObj;
                 break;

@@ -130,7 +130,7 @@ public class LanguageManager
 
         var assetName = GetLanguageAssetName(language);
 
-        var assetTextAsset = await ResourcesLoaderComponent.Instance.LoadAssetAsync<TextAsset>(assetName);
+        var assetTextAsset = await ResourcesManager.Instance.LoadAssetAsync<TextAsset>(assetName);
         if (assetTextAsset == null)
         {
             Log.Error($"没有加载到目标语言资源 {language}");

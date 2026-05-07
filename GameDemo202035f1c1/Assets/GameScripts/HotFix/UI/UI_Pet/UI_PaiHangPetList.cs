@@ -48,7 +48,7 @@ public class UI_PaiHangPetList : MonoBehaviour {
         Obj_PetLv.GetComponent<Text>().text = petLv + langStr;
 
         //显示底图
-        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + petHeadIcon);
+        Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + petHeadIcon);
         Sprite img = obj as Sprite;
         Obj_PetIcon.GetComponent<Image>().sprite = img;
 

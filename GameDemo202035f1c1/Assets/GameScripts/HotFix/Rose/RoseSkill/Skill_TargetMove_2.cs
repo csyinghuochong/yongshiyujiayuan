@@ -71,7 +71,7 @@ public class Skill_TargetMove_2 : MonoBehaviour
                         AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().IfHitEffect = true;    //播放
                         AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffectt_Position = AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().BoneSet.transform.Find(AI_HitPosition).gameObject;  //设置播放位置
                         if (skillHitEffectName != "" && skillHitEffectName != "0") {
-                            AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
+                            AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
                         }
                         break;
                 }

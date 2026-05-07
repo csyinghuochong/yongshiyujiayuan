@@ -43,11 +43,11 @@ public class UI_SkillTips : MonoBehaviour {
                 switch (SkillType) {
                         //玩家技能
                     case "1":
-                        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIconID);
+                        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("SkillIcon/" + skillIconID);
                         break;
                         //宠物技能
                     case "2":
-                        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/PetSkill/" + skillIconID);
+                        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("SkillIcon/PetSkill/" + skillIconID);
                         break;
                 }
 

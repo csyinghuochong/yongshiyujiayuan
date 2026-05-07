@@ -105,7 +105,7 @@ public class UI_ChapterSonSet : MonoBehaviour {
         }
         //Debug.Log("ShowMonsterName = " + ShowMonsterName);
         ShowMonsterNameObj.GetComponent<Text>().text = ShowMonsterName;
-        object obj2 = ResourcesLoaderComponent.Instance.LoadTextureSync<Texture>("CameraText/MonsterMolde_" + ChapterNum);
+        object obj2 = ResourcesManager.Instance.LoadTextureSync<Texture>("CameraText/MonsterMolde_" + ChapterNum);
         Texture monsterImage = obj2 as Texture;
         //Obj_EquipQuality.GetComponent<Image>().sprite = itemQuality;
         ShowMonsterImageObj.GetComponent<RawImage>().texture = monsterImage;

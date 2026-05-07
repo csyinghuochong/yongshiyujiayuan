@@ -29,7 +29,7 @@ public class UI_JingLingHintObj : MonoBehaviour {
         Obj_JingLingDes.GetComponent<Text>().text = JingLingDes;
 
         //显示Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("JingLingIcon/" + icon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("JingLingIcon/" + icon);
         Sprite itemIcon = obj as Sprite;
         Obj_JingLingIcon.GetComponent<Image>().sprite = itemIcon;
 

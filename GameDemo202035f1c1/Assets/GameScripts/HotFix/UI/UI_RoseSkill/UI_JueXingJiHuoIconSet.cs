@@ -59,7 +59,7 @@ public class UI_JueXingJiHuoIconSet : MonoBehaviour {
             }
         }
 
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/" + icon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("SkillIcon/" + icon);
         Sprite skillIconSp = obj as Sprite;
         Obj_JueXingIcon.GetComponent<Image>().sprite = skillIconSp;
         //查询自身是否激活
@@ -67,7 +67,7 @@ public class UI_JueXingJiHuoIconSet : MonoBehaviour {
         if (jihuoIDStr.Contains(JueXingID)== false)
         {
             //未激活显示灰色状态
-            object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
+            object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_JueXingIcon.GetComponent<Image>().material = huiMaterial;
         }

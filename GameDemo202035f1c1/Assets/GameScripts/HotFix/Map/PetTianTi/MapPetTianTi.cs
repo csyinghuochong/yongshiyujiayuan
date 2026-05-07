@@ -546,7 +546,7 @@ public class MapPetTianTi : MonoBehaviour {
         {
 
             //Debug.Log("petModel = " + petModel);
-            GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("PetSet/" + petModel));
+            GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + petModel));
             monsterObj.SetActive(false);
             monsterObj.transform.SetParent(monsterSetObj.transform);
  
@@ -603,7 +603,7 @@ public class MapPetTianTi : MonoBehaviour {
                 //Game_PublicClassVar.Get_function_UI.GameHint("召唤宠物成功！");
 
                 //实例化一个特效
-                GameObject zhaoHuanEffect = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Eff_Skill_ZhaoHuan_1"));        //实例化特效
+                GameObject zhaoHuanEffect = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Eff_Skill_ZhaoHuan_1"));        //实例化特效
                 zhaoHuanEffect.transform.position = CreateVec3;
                 zhaoHuanEffect.transform.localScale = new Vector3(1, 1, 1);
             }

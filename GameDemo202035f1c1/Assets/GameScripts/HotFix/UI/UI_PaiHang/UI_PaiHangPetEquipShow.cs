@@ -71,12 +71,12 @@ public class UI_PaiHangPetEquipShow : MonoBehaviour {
                 EquipQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", EquipID, "Item_Template");
                 //显示道具品质
                 string itemQuality = Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(EquipQuality);
-                object Equipobj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(itemQuality);
+                object Equipobj = ResourcesManager.Instance.LoadIconSync<Sprite>(itemQuality);
 				Sprite itemQuility = Equipobj as Sprite;
                 Obj_EquipQuility.GetComponent<Image>().sprite = itemQuility;
                 //显示道具Icon
                 string equipIcon = Game_PublicClassVar.Get_function_UI.EquipIconToPath(EquipIcon);
-				Equipobj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(equipIcon);
+				Equipobj = ResourcesManager.Instance.LoadIconSync<Sprite>(equipIcon);
 				itemIcon = Equipobj as Sprite;
                 Obj_EquipIcon.GetComponent<Image>().sprite = itemIcon;
 				Obj_EquipQuility.SetActive(true);

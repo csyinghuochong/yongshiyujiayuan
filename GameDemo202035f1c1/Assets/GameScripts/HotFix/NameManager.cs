@@ -51,7 +51,7 @@ public class NameManager
     private async UniTask<string[]> LoadRandomNameList(string fileName)
     {
         var text =
-            await ResourcesLoaderComponent.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetTextPath(fileName));
+            await ResourcesManager.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetTextPath(fileName));
         if (string.IsNullOrEmpty(text.text))
         {
             return null;

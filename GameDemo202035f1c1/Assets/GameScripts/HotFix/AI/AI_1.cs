@@ -2230,7 +2230,7 @@ public class AI_1 : MonoBehaviour {
             string skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID[i], "Skill_Template");
             //skillObjName = "Monster_FireWall_1";
             //Debug.Log("触发技能skillID[i] = " + skillID[i]);
-            GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
+            GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
             GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
             SkillObject_p.GetComponent<SkillObjBase>().SkillTargetObj = AI_Target;
             string skillParent = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillParent", "ID", skillID[i], "Skill_Template");

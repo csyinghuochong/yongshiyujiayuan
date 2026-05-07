@@ -27,12 +27,12 @@ public class UI_ItemIcomShow : MonoBehaviour
         //Debug.Log("ItemIcon = " + ItemIcon);
 
         //显示道具Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
         //显示品质
-        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
+        object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_ItemQuality.GetComponent<Image>().sprite = itemQuality;
 
@@ -113,12 +113,12 @@ public class UI_ItemIcomShow : MonoBehaviour
         //Debug.Log("ItemIcon = " + ItemIcon);
 
         //显示道具Icon
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + ItemIcon);
         Sprite itemIcon = obj as Sprite;
         Obj_ItemIcon.GetComponent<Image>().sprite = itemIcon;
 
         //显示品质
-        object obj2 = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
+        object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(ItemQuality));
         Sprite itemQuality = obj2 as Sprite;
         Obj_ItemQuality.GetComponent<Image>().sprite = itemQuality;
         //显示名称

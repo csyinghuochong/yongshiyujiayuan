@@ -365,7 +365,7 @@ public class UI_EnterGame : MonoBehaviour {
         //更换Loding背景图
         if (mapName == "EnterGame")
         {
-            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Back/Loding_1");
+            object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/Back/Loding_1");
             Sprite itemIcon = obj as Sprite;
             obj_loading.GetComponent<UI_Loading>().Obj_ImgBack.GetComponent<Image>().sprite = itemIcon;
         }
@@ -409,7 +409,7 @@ public class UI_EnterGame : MonoBehaviour {
         //更换Loding背景图
         if (mapName == "EnterGame")
         {
-            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Back/Loding_1");
+            object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/Back/Loding_1");
             Sprite itemIcon = obj as Sprite;
             obj_loading.GetComponent<UI_Loading>().Obj_ImgBack.GetComponent<Image>().sprite = itemIcon;
 
@@ -422,7 +422,7 @@ public class UI_EnterGame : MonoBehaviour {
         }
         else {
             int ranIntValue = Game_PublicClassVar.Get_function_Rose.ReturnEquipRamdomValue(2, 5);
-            object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/Back/Loding_" + ranIntValue);
+            object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/Back/Loding_" + ranIntValue);
             Sprite itemIcon = obj as Sprite;
             obj_loading.GetComponent<UI_Loading>().Obj_ImgBack.GetComponent<Image>().sprite = itemIcon;
         }

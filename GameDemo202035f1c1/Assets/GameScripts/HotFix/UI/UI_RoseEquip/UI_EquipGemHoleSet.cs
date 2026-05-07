@@ -309,42 +309,42 @@ public class UI_EquipGemHoleSet : MonoBehaviour {
         {
             //红色孔位
             case "101":
-                object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
+                object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
                 Sprite itemIcon = obj as Sprite;
                 holeTypeDi.GetComponent<Image>().sprite = itemIcon;
                 holeTypeLab.GetComponent<Text>().text = "红色孔位";
                 break;
             //紫色孔位
             case "102":
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
                 itemIcon = obj as Sprite;
                 holeTypeDi.GetComponent<Image>().sprite = itemIcon;
                 holeTypeLab.GetComponent<Text>().text = "紫色孔位";
                 break;
             //蓝色孔位
             case "103":
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
                 itemIcon = obj as Sprite;
                 holeTypeDi.GetComponent<Image>().sprite = itemIcon;
                 holeTypeLab.GetComponent<Text>().text = "蓝色孔位";
                 break;
             //绿色孔位
             case "104":
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
                 itemIcon = obj as Sprite;
                 holeTypeDi.GetComponent<Image>().sprite = itemIcon;
                 holeTypeLab.GetComponent<Text>().text = "绿色孔位";
                 break;
             //白色孔位
             case "105":
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
                 itemIcon = obj as Sprite;
                 holeTypeDi.GetComponent<Image>().sprite = itemIcon;
                 holeTypeLab.GetComponent<Text>().text = "白色孔位";
                 break;
             //多彩插槽
             case "110":
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GemHoleDi/" + holeType);
                 itemIcon = obj as Sprite;
                 holeTypeDi.GetComponent<Image>().sprite = itemIcon;
                 holeTypeLab.GetComponent<Text>().text = "多彩插槽";

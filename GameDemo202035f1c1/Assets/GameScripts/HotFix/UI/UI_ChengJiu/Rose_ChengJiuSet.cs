@@ -662,7 +662,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 		Obj_ShouShaSet.SetActive (false);
 
         //显示底图
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
         Sprite img = obj as Sprite;
         Obj_Btn_ChengJiu_Img.GetComponent<Image>().sprite = img;
         //更新通用图标显示
@@ -676,7 +676,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
         Obj_JingLingSet.SetActive(true);
 		Obj_ShouShaSet.SetActive (false);
         //显示底图
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
         Sprite img = obj as Sprite;
         Obj_Btn_JingLing_Img.GetComponent<Image>().sprite = img;
         //更新通用图标显示
@@ -694,7 +694,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 		Obj_ShouShaSet.SetActive (true);
 
 		//显示底图
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
 		Sprite img = obj as Sprite;
 		Obj_Btn_ShouSha_Img.GetComponent<Image>().sprite = img;
 		//更新通用图标显示
@@ -713,7 +713,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
         Obj_Btn_JingLing_Text.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 		Obj_Btn_ShouSha_Text.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         Obj_Btn_ChengJiu_Img.GetComponent<Image>().sprite = img;
         Obj_Btn_JingLing_Img.GetComponent<Image>().sprite = img;
@@ -1067,7 +1067,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 		Obj_ShouShaShow_Name.GetComponent<Text> ().text = monsterName;
 		Obj_ShouShaShow_Des.GetComponent<Text> ().text = monsterDes;
 		Obj_ShouShaShow_Race.GetComponent<Text> ().text = raceStr;
-		object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/BossIcon/" + monsterIcon);
+		object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("HeadIcon/BossIcon/" + monsterIcon);
 		Sprite itemIcon = obj as Sprite;
 		Obj_ShouShaShow_Icon.GetComponent<Image>().sprite = itemIcon;
 

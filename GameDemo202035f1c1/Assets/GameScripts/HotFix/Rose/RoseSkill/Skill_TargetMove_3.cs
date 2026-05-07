@@ -146,7 +146,7 @@ public class Skill_TargetMove_3 : MonoBehaviour
                                 collider.gameObject.GetComponent<AI_1>().HitEffectt_Position = collider.gameObject.GetComponent<AI_1>().BoneSet.transform.Find(AI_HitPosition).gameObject;  //设置播放位置
                                 if (skillHitEffectName != "" && skillHitEffectName != "0")
                                 {
-                                    AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
+                                    AI_Collider.GetComponent<Collider>().gameObject.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + skillHitEffectName);
                                 }
                                 break;
                         }

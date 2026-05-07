@@ -183,7 +183,7 @@ public class UIBuilding : MonoBehaviour {
     
         //显示资源图标
         string iconPath = Game_PublicClassVar.Get_function_UI.ResourceTypeReturnIconPath(IconType);
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>(iconPath);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>(iconPath);
         Sprite itemQuality = obj as Sprite;
         obj_Icon.GetComponent<Image>().sprite = itemQuality;
 

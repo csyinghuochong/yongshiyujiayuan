@@ -120,7 +120,7 @@ public class MonsterSkill_TargetMove_1 : MonoBehaviour
         {
 
             //实例化技能特效
-            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+            GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)MonoBehaviour.Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = this.gameObject.transform;

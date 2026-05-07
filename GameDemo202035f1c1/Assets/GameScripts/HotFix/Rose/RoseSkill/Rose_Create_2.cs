@@ -43,7 +43,7 @@ public class Rose_Create_2 : MonoBehaviour
         string EffectNameStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EffectName", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
         if (EffectNameStr != "" && EffectNameStr != "0")
         {
-            GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + EffectNameStr);
+            GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + EffectNameStr);
             GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
 
             //SkillObject_p.transform.position = monsterObj.transform.position;
@@ -181,7 +181,7 @@ public class Rose_Create_2 : MonoBehaviour
 
                 //Debug.Log("createName = " + createName);
                 //角色属性
-                GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("PetSet/" + createName));
+                GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + createName));
                 monsterObj.transform.SetParent(monsterSetObj.transform);
                 Vector3 Vec3 = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position;
                 Vec3 = new Vector3(Vec3.x + Random.value, Vec3.y + 0.5f, Vec3.z + Random.value);
@@ -221,7 +221,7 @@ public class Rose_Create_2 : MonoBehaviour
                     EffectNameStr = "Eff_Skill_ZhaoHuan_3";
                 }
 
-                GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + EffectNameStr);
+                GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + EffectNameStr);
                 GameObject SkillObject_p = (GameObject)Instantiate(SkillObj);
 
                 //SkillObject_p.transform.position = monsterObj.transform.position;

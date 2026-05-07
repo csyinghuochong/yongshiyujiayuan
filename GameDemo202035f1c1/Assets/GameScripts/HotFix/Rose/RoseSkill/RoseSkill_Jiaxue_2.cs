@@ -35,7 +35,7 @@ public class RoseSkill_Jiaxue_2 : MonoBehaviour
         //实例化技能特效
         if (effectName != "0")
         {
-            GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+            GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
             GameObject effect = (GameObject)Instantiate(SkillEffect);
             effect.SetActive(false);
             effect.transform.parent = this.transform;
@@ -76,7 +76,7 @@ public class RoseSkill_Jiaxue_2 : MonoBehaviour
                     Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().HuDunTime = int.Parse(skillParValue[4]);
 
                     //添加护盾特效
-                    GameObject hudunEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + skillParValue[5]);
+                    GameObject hudunEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + skillParValue[5]);
                     GameObject effect = (GameObject)Instantiate(hudunEffect);
                     effect.SetActive(false);
                     //effect.transform.parent = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Center.transform;

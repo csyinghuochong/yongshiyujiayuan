@@ -2418,7 +2418,7 @@ public class Function_Pasture {
 
         //zuoqiModelID = "10001";
 
-        GameObject zuoQiObj = MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/ZuoQiModel/" + zuoqiModelID));
+        GameObject zuoQiObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/ZuoQiModel/" + zuoqiModelID));
         zuoQiObj.SetActive(false);
         zuoQiObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_ZuoQiShowSet.transform);
         zuoQiObj.transform.localPosition = Vector3.zero;
@@ -2456,7 +2456,7 @@ public class Function_Pasture {
 
         //zuoqiModelID = "10001";
 
-        GameObject zuoQiObj = MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadUnitSync<GameObject>("3DModel/ZuoQiModel/" + zuoqiModelID));
+        GameObject zuoQiObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/ZuoQiModel/" + zuoqiModelID));
         zuoQiObj.SetActive(false);
         //zuoQiObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_ZuoQiShowSet.transform);
         zuoQiObj.transform.SetParent(PlayerObj.GetComponent<Player_Status>().Obj_ZuoQiShowSet.transform);

@@ -97,7 +97,7 @@ public class UI_PastureKuangListSet : MonoBehaviour
                                 if (nowHeadIcon != "" && nowHeadIcon != "0" && nowHeadIcon != null)
                                 {
                                     //显示底图
-                                    Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
+                                    Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                                     Sprite img = obj as Sprite;
                                     Obj_PlayerPetList[i].GetComponent<Image>().sprite = img;
                                 }
@@ -134,7 +134,7 @@ public class UI_PastureKuangListSet : MonoBehaviour
 
                         if (nowHeadIcon != "" && nowHeadIcon != "0" && nowHeadIcon != null) {
                             //显示底图
-                            Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
+                            Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
                             Sprite img = obj as Sprite;
                             Obj_PlayerPetList[i].GetComponent<Image>().sprite = img;
                         }

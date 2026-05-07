@@ -104,7 +104,7 @@ public class UI_PastureFirendListShow : MonoBehaviour {
                 headIconID = "10002";
                 break;
         }
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + headIconID);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + headIconID);
         Sprite itemIcon = obj as Sprite;
         Obj_HeadIcon.GetComponent<Image>().sprite = itemIcon;
         BtnShow();

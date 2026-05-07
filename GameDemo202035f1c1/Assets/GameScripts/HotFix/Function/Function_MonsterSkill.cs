@@ -43,7 +43,7 @@ public class Function_MonsterSkill{
 
         //触发BUFF
         string skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template");
-        GameObject SkillObj = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
+        GameObject SkillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + skillObjName);
         if (SkillObj == null) {
             //Debug.Log("技能GameObjectName为空，skillID = " + skillID);
             return;

@@ -770,7 +770,7 @@ public class UI_Pet : MonoBehaviour {
         Obj_EquipBtnText_4.GetComponent<Text>().color = new Color(0.66f, 0.44f, 0.266f);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_2");
         Sprite img = obj as Sprite;
         ObjBtn_Pet_List.GetComponent<Image>().sprite = img;
         ObjBtn_Pet_HeCheng.GetComponent<Image>().sprite = img;
@@ -789,7 +789,7 @@ public class UI_Pet : MonoBehaviour {
                 UpdateShowStatus = true;
 
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Pet_List.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_1.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -800,7 +800,7 @@ public class UI_Pet : MonoBehaviour {
                 Obj_Pet_HeChengSet.SetActive(true);
 
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Pet_HeCheng.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_2.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -816,7 +816,7 @@ public class UI_Pet : MonoBehaviour {
                 Obj_Pet_XiLianSet.SetActive(true);
                 Obj_Pet_XiLianSet.GetComponent<UI_PetXiLian>().Obj_XiLianNeedItem.SetActive(false);
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Pet_XiLian.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_3.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);
@@ -826,7 +826,7 @@ public class UI_Pet : MonoBehaviour {
             case "4":
                 Obj_Pet_XiuLianSet.SetActive(true);
                 //显示底图
-                obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
+                obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
                 img = obj as Sprite;
                 ObjBtn_Pet_XiuLian.GetComponent<Image>().sprite = img;
                 Obj_EquipBtnText_4.GetComponent<Text>().color = new Color(0.415f, 0.25f, 0.1f);

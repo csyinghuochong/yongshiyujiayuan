@@ -232,7 +232,7 @@ public class UI_PastureNpcBuySet : MonoBehaviour {
         string npcNeedItemJiaGe = pastureTraderList[7];
         string npcNeedItemTime = pastureTraderList[6];
 
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("HeadIcon/PastureTraderIcon/" + npcHeadIconID);
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("HeadIcon/PastureTraderIcon/" + npcHeadIconID);
         Sprite itemIcon = obj as Sprite;
         Obj_ShangRenHeadIcon.GetComponent<Image>().sprite = itemIcon;
         Obj_ShangRenName.GetComponent<Text>().text = npcBuyName;
@@ -249,7 +249,7 @@ public class UI_PastureNpcBuySet : MonoBehaviour {
 
         //显示Icon
         string itemIconStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemIcon", "ID", pastureItemID, "Item_Template");
-        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("ItemIcon/" + itemIconStr);
+        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + itemIconStr);
         itemIcon = obj as Sprite;
         Obj_PastureItemIconShow.GetComponent<Image>().sprite = itemIcon;
         

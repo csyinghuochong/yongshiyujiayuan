@@ -41,13 +41,13 @@ public class UI_GameFenXiangSet : MonoBehaviour {
         Obj_XuLieHaoSet.SetActive(false);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_2");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_2");
         Sprite img = obj as Sprite;
         Obj_Btn_FenXiang.GetComponent<Image>().sprite = img;
         Obj_Btn_FenXiangText.GetComponent<Text>().color = new Color(0.52f,0.31f,0);
 
         //显示按钮
-        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_1");
+        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_1");
         img = obj as Sprite;
         Obj_Btn_XuLieHao.GetComponent<Image>().sprite = img;
         Obj_Btn_XuLieHaoText.GetComponent<Text>().color = new Color(1, 1, 1);
@@ -59,12 +59,12 @@ public class UI_GameFenXiangSet : MonoBehaviour {
         Obj_XuLieHaoSet.SetActive(true);
 
         //显示按钮
-        object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_1");
+        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_1");
         Sprite img = obj as Sprite;
         Obj_Btn_FenXiang.GetComponent<Image>().sprite = img;
         Obj_Btn_FenXiangText.GetComponent<Text>().color = new Color(1, 1, 1);
         //显示按钮
-        obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_2");
+        obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_23_2");
         img = obj as Sprite;
         Obj_Btn_XuLieHao.GetComponent<Image>().sprite = img;
         Obj_Btn_XuLieHaoText.GetComponent<Text>().color = new Color(0.52f, 0.31f, 0);

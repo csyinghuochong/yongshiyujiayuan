@@ -38,7 +38,7 @@ public class ZuoQiShowModel : MonoBehaviour {
             string nowZuoQiShowID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NowZuoQiShowID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RosePastureData");
             string effName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TuoWeiEffectID", "ID", nowZuoQiShowID, "ZuoQiShow_Template");
             if (effName != "" && effName != "0" && effName != null) {
-                obj_ZuoQiTuoWei = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Other/ZuoQiRun/" + effName));        //实例化特效
+                obj_ZuoQiTuoWei = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Other/ZuoQiRun/" + effName));        //实例化特效
                 obj_ZuoQiTuoWei.transform.SetParent(this.transform);
                 obj_ZuoQiTuoWei.transform.position = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Low.transform.position;
                 obj_ZuoQiTuoWei.transform.localScale = new Vector3(1, 1, 1);
@@ -93,7 +93,7 @@ public class ZuoQiShowModel : MonoBehaviour {
 
         //播放特效
         //实例化一个特效（上马特效）
-        GameObject zhaoHuanEffect = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/Rose_ZuoQiEffect"));        //实例化特效
+        GameObject zhaoHuanEffect = (GameObject)MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_ZuoQiEffect"));        //实例化特效
         zhaoHuanEffect.transform.position = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().Bone_Low.transform.position;
         zhaoHuanEffect.transform.localScale = new Vector3(1, 1, 1);
 

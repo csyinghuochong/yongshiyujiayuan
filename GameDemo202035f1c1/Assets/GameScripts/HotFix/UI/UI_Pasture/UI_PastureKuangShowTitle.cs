@@ -84,7 +84,7 @@ public class UI_PastureKuangShowTitle : MonoBehaviour
                         //Obj_PetName[y].GetComponent<Text>().text = petName;
 
                         //显示底图
-                        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + petHeadIcon);
+                        Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + petHeadIcon);
                         Sprite img = obj as Sprite;
                         Obj_PetHeadIcon[y].GetComponent<Image>().sprite = img;
                     }

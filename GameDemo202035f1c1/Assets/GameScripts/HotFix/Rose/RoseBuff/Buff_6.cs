@@ -59,7 +59,7 @@ public class Buff_6 : MonoBehaviour {
             //实例化技能特效
             if (effectName != "" && effectName!="0")
             {
-                GameObject SkillEffect = (GameObject)ResourcesLoaderComponent.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+                GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
                 effect = (GameObject)Instantiate(SkillEffect);
                 effect.SetActive(false);
                 //根据Buff目标绑定不同的位置

@@ -32,7 +32,7 @@ public class PetSkillIcon : MonoBehaviour {
         //Debug.Log("skillIconID = " + skillIconID);
 
         //显示底图
-        Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("SkillIcon/PetSkill/" + skillIconID);
+        Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("SkillIcon/PetSkill/" + skillIconID);
         Sprite img = obj as Sprite;
         PetSkillIconObj.GetComponent<Image>().sprite = img;
 
