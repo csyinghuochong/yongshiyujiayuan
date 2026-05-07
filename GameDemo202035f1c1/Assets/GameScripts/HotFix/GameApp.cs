@@ -1,4 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
+using GameScripts;
 using UnityEngine;
 
 public class GameApp
@@ -11,6 +12,7 @@ public class GameApp
     {
         Debug.Log("热更程序集完成 开始游戏！！！！！！！！！！");
 
+        LanguageManager.Instance.OnInitL2Localization();
         ResourcesLoaderComponent.Instance.LoadSceneAsync(ABPathHelper.GetScenePath("StartGame")).Forget();
     }
 }
