@@ -309,7 +309,7 @@ public class UI_EnterGame : MonoBehaviour {
                     DestroyKeepObj = true;
                     //Application.LoadLevel("EnterGame"); //加载场景
                     Debug.Log("进入主城开始...");
-                    YooAssets.LoadSceneAsync("Assets/Bundles/Scenes/EnterGame.unity");
+                    YooAssets.LoadSceneSync("Assets/Bundles/Scenes/EnterGame.unity");
                     Debug.Log("进入主城结束...");
                 }
             }
