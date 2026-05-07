@@ -15085,7 +15085,6 @@ GameObject:
   - component: {fileID: 103749872}
   - component: {fileID: 103749874}
   - component: {fileID: 103749873}
-  - component: {fileID: 103749875}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -15154,34 +15153,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103749871}
   m_CullTransparentMesh: 1
---- !u!114 &103749875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103749871}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_4
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &103946896
 GameObject:
   m_ObjectHideFlags: 0
@@ -89183,7 +89154,6 @@ GameObject:
   - component: {fileID: 618280712}
   - component: {fileID: 618280714}
   - component: {fileID: 618280713}
-  - component: {fileID: 618280715}
   m_Layer: 5
   m_Name: Img_Di (1)
   m_TagString: Untagged
@@ -89248,36 +89218,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618280711}
   m_CullTransparentMesh: 1
---- !u!114 &618280715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618280711}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u5173\u5361\u6218\u5F79\u56FE\u7247"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects:
-  - {fileID: 21300000, guid: 99affb8387c99cf42991947c6f44f520, type: 3}
-  - {fileID: 21300000, guid: c3b4694ae20c37c47bed4a5061eb2dd0, type: 3}
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &618541544
 GameObject:
   m_ObjectHideFlags: 0
@@ -92217,7 +92157,6 @@ GameObject:
   - component: {fileID: 637159262}
   - component: {fileID: 637159264}
   - component: {fileID: 637159263}
-  - component: {fileID: 637159265}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -92286,34 +92225,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637159261}
   m_CullTransparentMesh: 1
---- !u!114 &637159265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637159261}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_1
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &637262384
 GameObject:
   m_ObjectHideFlags: 0
@@ -124613,7 +124524,6 @@ GameObject:
   - component: {fileID: 836122850}
   - component: {fileID: 836122852}
   - component: {fileID: 836122851}
-  - component: {fileID: 836122853}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -124682,34 +124592,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836122849}
   m_CullTransparentMesh: 1
---- !u!114 &836122853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836122849}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_6
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &836394817
 GameObject:
   m_ObjectHideFlags: 0
@@ -127846,7 +127728,6 @@ GameObject:
   - component: {fileID: 855002368}
   - component: {fileID: 855002370}
   - component: {fileID: 855002369}
-  - component: {fileID: 855002371}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -127915,34 +127796,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855002367}
   m_CullTransparentMesh: 1
---- !u!114 &855002371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855002367}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_8
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &855267512
 GameObject:
   m_ObjectHideFlags: 0
@@ -131693,7 +131546,6 @@ GameObject:
   - component: {fileID: 889992224}
   - component: {fileID: 889992226}
   - component: {fileID: 889992225}
-  - component: {fileID: 889992227}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -131762,34 +131614,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889992223}
   m_CullTransparentMesh: 1
---- !u!114 &889992227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889992223}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_5
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &890028546
 GameObject:
   m_ObjectHideFlags: 0
@@ -149113,7 +148937,6 @@ GameObject:
   - component: {fileID: 1026788727}
   - component: {fileID: 1026788729}
   - component: {fileID: 1026788728}
-  - component: {fileID: 1026788730}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -149182,34 +149005,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026788726}
   m_CullTransparentMesh: 1
---- !u!114 &1026788730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026788726}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_3
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1027876370
 GameObject:
   m_ObjectHideFlags: 0
@@ -170409,7 +170204,6 @@ GameObject:
   - component: {fileID: 1173495372}
   - component: {fileID: 1173495371}
   - component: {fileID: 1173495370}
-  - component: {fileID: 1173495374}
   - component: {fileID: 1173495375}
   m_Layer: 5
   m_Name: Btn_Fight
@@ -170533,36 +170327,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173495368}
   m_CullTransparentMesh: 1
---- !u!114 &1173495374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173495368}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u653B\u51FB\u56FE\u7247"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects:
-  - {fileID: 21300000, guid: 26b0f5d08e5bd524bac4db56c0fcfe41, type: 3}
-  - {fileID: 21300000, guid: a7677e56d0ff7c34c95be885faf8efe1, type: 3}
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!114 &1173495375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212881,7 +212645,6 @@ GameObject:
   - component: {fileID: 1463523161}
   - component: {fileID: 1463523160}
   - component: {fileID: 1463523159}
-  - component: {fileID: 1463523162}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -212965,34 +212728,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463523157}
   m_CullTransparentMesh: 1
---- !u!114 &1463523162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463523157}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u8FD4\u56DE"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1463566532
 GameObject:
   m_ObjectHideFlags: 0
@@ -269870,7 +269605,6 @@ GameObject:
   - component: {fileID: 1826579000}
   - component: {fileID: 1826578999}
   - component: {fileID: 1826578998}
-  - component: {fileID: 1826579001}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -269954,34 +269688,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826578996}
   m_CullTransparentMesh: 1
---- !u!114 &1826579001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826578996}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u90AE\u4EF6\u63D0\u793A"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1827103251
 GameObject:
   m_ObjectHideFlags: 0
@@ -277977,7 +277683,6 @@ GameObject:
   - component: {fileID: 1881751668}
   - component: {fileID: 1881751670}
   - component: {fileID: 1881751669}
-  - component: {fileID: 1881751671}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -278046,34 +277751,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881751667}
   m_CullTransparentMesh: 1
---- !u!114 &1881751671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881751667}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_2
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1881824229
 GameObject:
   m_ObjectHideFlags: 0
@@ -280437,7 +280114,6 @@ GameObject:
   - component: {fileID: 1898393024}
   - component: {fileID: 1898393026}
   - component: {fileID: 1898393025}
-  - component: {fileID: 1898393027}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -280506,34 +280182,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898393023}
   m_CullTransparentMesh: 1
---- !u!114 &1898393027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898393023}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: yindao_7
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 0
-  Source: {fileID: 1655846890}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1898636270
 GameObject:
   m_ObjectHideFlags: 0

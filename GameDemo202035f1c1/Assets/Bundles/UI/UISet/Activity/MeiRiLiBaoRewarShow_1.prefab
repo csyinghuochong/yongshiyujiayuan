@@ -3127,7 +3127,6 @@ GameObject:
   - component: {fileID: 224743099612107210}
   - component: {fileID: 222437504366924220}
   - component: {fileID: 114173263634357710}
-  - component: {fileID: 114773437170893192}
   m_Layer: 5
   m_Name: Img_LingQu
   m_TagString: Untagged
@@ -3192,34 +3191,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &114773437170893192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885371665356914}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u5DF2\u9886\u53D6\u56FE\u7247"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1936108605402118
 GameObject:
   m_ObjectHideFlags: 0

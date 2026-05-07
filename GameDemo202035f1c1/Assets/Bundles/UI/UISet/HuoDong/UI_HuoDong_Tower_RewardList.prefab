@@ -1128,7 +1128,6 @@ GameObject:
   - component: {fileID: 222587015150519120}
   - component: {fileID: 114909774307247776}
   - component: {fileID: 114680235501976114}
-  - component: {fileID: 114195397179384838}
   m_Layer: 5
   m_Name: Text (1)
   m_TagString: Untagged
@@ -1212,34 +1211,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.5176471, g: 0.27058825, b: 0.003921569, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &114195397179384838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459091641835666}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u5DF2\u9886\u53D6"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1500474865786828
 GameObject:
   m_ObjectHideFlags: 0

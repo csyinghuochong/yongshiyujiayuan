@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 224074226422376166}
   - component: {fileID: 222559649329807562}
   - component: {fileID: 114082915828821278}
-  - component: {fileID: 114420338544692038}
   m_Layer: 5
   m_Name: Lab_TaskName
   m_TagString: Untagged
@@ -80,34 +79,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u8FDB\u5165\u559C\u4ECE\u5929\u964D\u6D3B\u52A8"
---- !u!114 &114420338544692038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133296400378842}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u8FDB\u5165\u559C\u4ECE\u5929\u964D\u6D3B\u52A8"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1291278355653602
 GameObject:
   m_ObjectHideFlags: 0

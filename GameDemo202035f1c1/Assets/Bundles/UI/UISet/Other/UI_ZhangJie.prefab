@@ -505,7 +505,6 @@ GameObject:
   - component: {fileID: 22496144}
   - component: {fileID: 22268418}
   - component: {fileID: 11408432}
-  - component: {fileID: 114605824975241772}
   m_Layer: 0
   m_Name: Img_Di (3)
   m_TagString: Untagged
@@ -570,35 +569,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &114605824975241772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138540}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u56FE\u7247\u7B49\u5F85\u89E3\u9501"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects:
-  - {fileID: 21300000, guid: 1884e0ee3dc081d4d9b35c90a8c95bf0, type: 3}
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &155360
 GameObject:
   m_ObjectHideFlags: 0

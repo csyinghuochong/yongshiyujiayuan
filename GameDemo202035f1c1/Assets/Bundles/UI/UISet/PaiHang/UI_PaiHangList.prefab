@@ -669,7 +669,6 @@ GameObject:
   - component: {fileID: 222465841467757324}
   - component: {fileID: 114969991089183620}
   - component: {fileID: 114753170645356122}
-  - component: {fileID: 114333434880339978}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -753,34 +752,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.58431375, g: 0.45098042, b: 0.28627452, a: 1}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &114333434880339978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460722338041316}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u67E5\u770B\u88C5\u5907"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1481121505808444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,7 +993,6 @@ GameObject:
   - component: {fileID: 222389560394505810}
   - component: {fileID: 114247928170393868}
   - component: {fileID: 114710462329774896}
-  - component: {fileID: 114426561625749966}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1106,34 +1076,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.58431375, g: 0.4509804, b: 0.28627452, a: 1}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &114426561625749966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808228251491254}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u67E5\u770B\u5BA0\u7269"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1810802916477042
 GameObject:
   m_ObjectHideFlags: 0

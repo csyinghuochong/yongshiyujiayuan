@@ -784,7 +784,6 @@ GameObject:
   - component: {fileID: 224886444744092582}
   - component: {fileID: 222962861036487772}
   - component: {fileID: 114639354826693670}
-  - component: {fileID: 114236956449748118}
   m_Layer: 5
   m_Name: Image (5)
   m_TagString: Untagged
@@ -849,36 +848,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &114236956449748118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097986698204046}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u5730\u56FE\u80CC\u666F"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 0
-  AllowMainTermToBeRTL: 0
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects:
-  - {fileID: 21300000, guid: f6599e0e5300e4148b01ae8830cf8097, type: 3}
-  - {fileID: 21300000, guid: b99520834af60b54697550b29f359ec1, type: 3}
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &1246254125911908
 GameObject:
   m_ObjectHideFlags: 0

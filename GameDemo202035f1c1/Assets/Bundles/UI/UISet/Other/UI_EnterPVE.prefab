@@ -393,7 +393,6 @@ GameObject:
   - component: {fileID: 22288978}
   - component: {fileID: 11411340}
   - component: {fileID: 11450062}
-  - component: {fileID: 114790762353636758}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -477,34 +476,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.3372549, g: 0.2392157, b: 0.13333334, a: 1}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &114790762353636758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154542}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: "\u5F00\u59CB\u5192\u9669\u5B57"
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  CanUseSecondaryTerm: 1
-  AllowMainTermToBeRTL: 1
-  AllowSecondTermToBeRTL: 0
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  CorrectAlignmentForRTL: 1
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
 --- !u!1 &170754
 GameObject:
   m_ObjectHideFlags: 0
