@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -53,7 +53,7 @@ public class XiLianEquipNeedItem : MonoBehaviour
             string showText = selfNum + "/" + NeedItemNum;
 			if (selfNum >= 10000) {
 				int numwan = (int)(selfNum / 10000);
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("万");
+                string langStr = LanguageManager.Instance.LoadLocalization("万");
                 /*
 				Obj_NeedItemNum.GetComponent<Text>().text = numwan.ToString() + langStr + "/" + NeedItemNum;
                 */
@@ -67,7 +67,7 @@ public class XiLianEquipNeedItem : MonoBehaviour
             if (NeedItemNum >= 10000)
             {
                 int numwan = (int)(NeedItemNum / 10000);
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("万");
+                string langStr = LanguageManager.Instance.LoadLocalization("万");
                 showText = showText + numwan + langStr;
             }
             else {

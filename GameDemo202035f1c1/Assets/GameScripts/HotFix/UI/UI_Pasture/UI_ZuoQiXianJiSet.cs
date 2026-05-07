@@ -266,7 +266,7 @@ public class UI_ZuoQiXianJiSet : MonoBehaviour {
     public void Btn_TiQianOpen() {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_12");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_12");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("冒险家5级可以提前免费开启坐骑献祭", TiQianOpen, OpenMaoXianJia, "系统提示","免费开启","查看冒险家",null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往兑换金币界面？", GoToGoToDuiHuanGold, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

@@ -101,8 +101,8 @@ public class UI_GuoWangDaTing : MonoBehaviour {
         if (float.Parse(guoWangExpNow) >= float.Parse(guoWangExpMax)) {
             int countryRoseLvMax = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("CountryRoseLvMax", "ID", guoWangLv, "Country_Template"));
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_135");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_136");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_135");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_136");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + countryRoseLvMax.ToString() + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("提示：请将角色等级提升至" + countryRoseLvMax.ToString() + "级后可继续升级下一级建筑");
             //更新每日任务
@@ -119,7 +119,7 @@ public class UI_GuoWangDaTing : MonoBehaviour {
             //执行获取经验
             bool ifUpLv = Game_PublicClassVar.Get_function_Country.addCoutryExp(int.Parse(goldGetExp));
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_137");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_137");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("获得繁荣度：" + goldGetExp);
             Debug.Log("升级成功");
@@ -138,7 +138,7 @@ public class UI_GuoWangDaTing : MonoBehaviour {
              */
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_138");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_138");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("金币不足！");

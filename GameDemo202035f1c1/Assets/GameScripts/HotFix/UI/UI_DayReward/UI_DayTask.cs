@@ -143,7 +143,7 @@ public class UI_DayTask : MonoBehaviour
         ObscuredString rewardDes = "";
         ObscuredString writeRewardID = dayTaskCommonHuoYueRewardID + huoyueDuValue + ";";
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点活跃度奖励");
+        string langStr = LanguageManager.Instance.LoadLocalization("点活跃度奖励");
 
         switch (huoyueDuValue) {
 
@@ -195,7 +195,7 @@ public class UI_DayTask : MonoBehaviour
 
         if (huoyueDuValue == "120") {
 
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("概率获得神兽碎片");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("概率获得神兽碎片");
             rewardDes = rewardDes + langStr_1;
         }
 
@@ -210,7 +210,7 @@ public class UI_DayTask : MonoBehaviour
 
             if (dayTaskCommonHuoYueRewardID.ToString().Contains(huoyueDuValue))
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_154");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_154");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("奖励已领取,请勿重新领取！");
                 return;
@@ -234,8 +234,8 @@ public class UI_DayTask : MonoBehaviour
 
             //检测背包格子
             if (Game_PublicClassVar.Get_function_Rose.BagNullNum() < rewardStrList.Length) {
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_156");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_157");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_156");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_157");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + rewardStrList.Length + langStrHint_2);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包空间不足！请预留至少" + rewardStrList.Length + "个位置领取奖励");
                 return;
@@ -257,7 +257,7 @@ public class UI_DayTask : MonoBehaviour
             if (huoyueDuValue == "120") {
                 if (Random.value <= 0.2f) {
                     Game_PublicClassVar.Get_function_Rose.SendRewardToBag("10010087", 1,"0",0,"0",true,"14");
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_158");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_158");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("天降幸运！恭喜你完成活跃任务时获得了神兽碎片！");
                     string roseName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");

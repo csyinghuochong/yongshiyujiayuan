@@ -19,7 +19,7 @@ public class Function_Task {
     public bool GetTask(string taskID) {
         try
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_211");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_211");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("接取任务成功!");
             if (taskID == "30100100") {
@@ -353,7 +353,7 @@ public class Function_Task {
         //获取背包剩余格子数量，判定奖励数量是否大于格子数量
         if (Game_PublicClassVar.Get_function_UI.BagSpaceNullNum() < rewardItemID.Length)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_329");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_329");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("背包已满,请先清空背包在提交任务！");
             return false;       //背包格子不足,领取奖励失败
@@ -939,7 +939,7 @@ public class Function_Task {
         //判定是否成功
         if (!ifSuccess)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_212");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_212");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("放入装备不符合要求");
             return false;
@@ -1590,7 +1590,7 @@ public class Function_Task {
                             }
                         }
                         else {
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_257");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_257");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("您的背包已满,本次试炼奖励领取失败!");
                         }
@@ -1605,7 +1605,7 @@ public class Function_Task {
                         }
                         else
                         {
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_257");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_257");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("您的背包已满,本次试炼奖励领取失败!");
                         }
@@ -2016,7 +2016,7 @@ public class Function_Task {
             }
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("此任务不可以自动寻路！");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_330");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_330");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
         }
@@ -2079,9 +2079,9 @@ public class Function_Task {
 				string nameNpc = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NpcName", "ID", npcID, "Npc_Template");
 
 
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_331");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_332");
-                string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_333");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_331");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_332");
+                string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("hint_333");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint(langStrHint_1 + sceneName + langStrHint_2 + nameNpc + langStrHint_3);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint("请先前往地图：" + sceneName + ",如需提交任务,请找到" + nameNpc + "可提交任务");
             }
@@ -3121,7 +3121,7 @@ public class Function_Task {
             string chengJiuNeedNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ChengJiuNeedNum", "ID", rewardID, "ChengJiuReward_Template");
             int roseChengJiuNum = ChengJiu_GetComChengJiuNum();
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_262");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_262");
 
             if (roseChengJiuNum < int.Parse(chengJiuNeedNum)) {
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
@@ -3181,7 +3181,7 @@ public class Function_Task {
         }
         else {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_264");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_264");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("此成就奖励已经领取");

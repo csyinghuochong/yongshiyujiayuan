@@ -829,21 +829,26 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: SUBSTANCE_PLUGIN_ENABLED;ENABLE_HYBRIDCLR
-    4: SUBSTANCE_PLUGIN_ENABLED;ENABLE_HYBRIDCLR
-    7: SUBSTANCE_PLUGIN_ENABLED;TapTap;ENABLE_HYBRIDCLR
-    13: ENABLE_HYBRIDCLR
-    14: ENABLE_HYBRIDCLR
+    1: SUBSTANCE_PLUGIN_ENABLED;ENABLE_HYBRIDCLR;TextMeshPro
+    4: SUBSTANCE_PLUGIN_ENABLED;ENABLE_HYBRIDCLR;TextMeshPro
+    7: SUBSTANCE_PLUGIN_ENABLED;TapTap;ENABLE_HYBRIDCLR;TextMeshPro
+    13: ENABLE_HYBRIDCLR;TextMeshPro
+    14: ENABLE_HYBRIDCLR;TextMeshPro
     17: 
     18: 
-    19: 
+    19: TextMeshPro
     20: 
-    21: 
+    21: TextMeshPro
     23: 
     24: 
-    25: 
+    25: TextMeshPro
     26: 
-    27: 
+    27: TextMeshPro
+    28: TextMeshPro
+    29: TextMeshPro
+    30: TextMeshPro
+    32: TextMeshPro
+    33: TextMeshPro
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

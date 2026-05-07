@@ -80,11 +80,11 @@ public class UI_RoseEquipQiangHua : MonoBehaviour {
         {
             float nextEquipPropreAdd = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EquipPropreAdd", "ID", nextID, "EquipQiangHua_Template"));
 
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("下级部位属性提升");
+            string langStr = LanguageManager.Instance.LoadLocalization("下级部位属性提升");
             qianghuaObj.GetComponent<UI_RoseEquipQiangHuaPro>().QiangHuaProStr = langStr + "：" + nextEquipPropreAdd * 100 + "%" + "<color=#059600> (+" +  ((nextEquipPropreAdd - equipPropreAdd)*100).ToString("F1") + "%)</color>";
         }
         else {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前部位属性提升");
+            string langStr = LanguageManager.Instance.LoadLocalization("当前部位属性提升");
             qianghuaObj.GetComponent<UI_RoseEquipQiangHuaPro>().QiangHuaProStr = langStr + "：" + equipPropreAdd * 100 + "%";
         }
 
@@ -107,7 +107,7 @@ public class UI_RoseEquipQiangHua : MonoBehaviour {
 
         //显示强化概率
         string successPro = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SuccessPro", "ID", QiangHuaID, "EquipQiangHua_Template");
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("强化成功概率");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("强化成功概率");
         Obj_QiangHuaSuccessPro.GetComponent<Text>().text = langStr_1 + "：" + (int)(float.Parse(successPro) * 100) + "%";
 
         //显示属性

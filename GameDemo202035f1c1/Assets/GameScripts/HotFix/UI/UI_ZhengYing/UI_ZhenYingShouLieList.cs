@@ -58,7 +58,7 @@ public class UI_ZhenYingShouLieList : MonoBehaviour
             if (!Game_PublicClassVar.Get_function_Rose.IfBagNullNum(1))
             {
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_301");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_301");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 return;
             }

@@ -225,7 +225,7 @@ public class UI_HuiShouItem : MonoBehaviour {
 
 		UpdateStatus = true;
 		if (HuiShouBagNumList [0] == "" || HuiShouBagNumList [0] == "0") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_397");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_397");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint ("当前没有符合要求的装备放入!");
 
@@ -322,7 +322,7 @@ public class UI_HuiShouItem : MonoBehaviour {
 		//Debug.Log ("huishou");
 
         if (huiShouStatus) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_205");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_205");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("正在处理上次回收数据!请稍后...");
             return;
@@ -330,7 +330,7 @@ public class UI_HuiShouItem : MonoBehaviour {
 
 
         if (HuiShouGetItemIDStr == ""|| HuiShouGetItemNumStr=="") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_206");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_206");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请放入要回收的装备!");
             //清理显示
@@ -344,8 +344,8 @@ public class UI_HuiShouItem : MonoBehaviour {
         if (Game_PublicClassVar.Get_function_Rose.BagNullNum() < huiShouGetItemIDStrList.Length)
         {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_207");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_208");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_207");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_208");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + huiShouGetItemIDStrList.Length + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的背包需要剩余最少" + huiShouGetItemIDStrList.Length + "个位置!");
             //清理显示
@@ -368,7 +368,7 @@ public class UI_HuiShouItem : MonoBehaviour {
 
                 int lvCha = int.Parse(itemLv) - roseLv;
                 if (lvCha >= 15) {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_209");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_209");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("回收物品超过自身等级15级,无法回收!");
                     return;
@@ -423,10 +423,10 @@ public class UI_HuiShouItem : MonoBehaviour {
             //弹出提示
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
             //string jieshaoStr = "是否确认回收这些装备！\n(提示:当前装备上附带宝石或回收的装备为橙色级别以上装备!)";
-            string jieshaoStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_15");
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_4");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_5");
-            string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_6");
+            string jieshaoStr = LanguageManager.Instance.LoadLocalizationHint("comhint_15");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhintText_4");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhintText_5");
+            string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("comhintText_6");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, HuiShou, null, langStrHint_1, langStrHint_2, langStrHint_3);
             //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, HuiShou, null, "回收确认", "回收", "取消");
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

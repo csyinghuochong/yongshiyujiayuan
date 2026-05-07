@@ -142,14 +142,14 @@ public class Main_100003 : MonoBehaviour {
 
         if (mapTimeObj != null) {
             mapTimeShowObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapTime;
-            string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-            string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+            string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+            string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
             mapTimeShowObj.GetComponent<Text>().text = langstr_1 + ":" + MapTime + langstr_2;
 
         }
 
         mapChestNumObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapChestNum;
-        string langstr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("寻找到真实宝箱");
+        string langstr_3 = LanguageManager.Instance.LoadLocalization("寻找到真实宝箱");
         mapChestNumObj.GetComponent<Text>().text = langstr_3 + "0" + "/" + ChestTrueNum;
 
         //创建追踪怪物的时间
@@ -241,13 +241,13 @@ public class Main_100003 : MonoBehaviour {
             {
                 if (nowMapTime >= 0)
                 {
-                    string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-                    string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+                    string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+                    string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
                     mapTimeShowObj.GetComponent<Text>().text = langstr_1 + nowMapTime + langstr_2;
                 }
                 else
                 {
-                    string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("正在退出地图");
+                    string langstr_2 = LanguageManager.Instance.LoadLocalization("正在退出地图");
                     mapTimeShowObj.GetComponent<Text>().text = langstr_2;
                 }
             }
@@ -255,7 +255,7 @@ public class Main_100003 : MonoBehaviour {
             //显示地图宝箱数量
             NowChestTrueNum = GetChestTrue();
             mapChestNumObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapChestNum;
-            string langstr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("寻找到真实宝箱");
+            string langstr_3 = LanguageManager.Instance.LoadLocalization("寻找到真实宝箱");
             mapChestNumObj.GetComponent<Text>().text = langstr_3 + ":" + (ChestTrueNum - NowChestTrueNum).ToString() + "/" + ChestTrueNum;
             //mapChestNumObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
 

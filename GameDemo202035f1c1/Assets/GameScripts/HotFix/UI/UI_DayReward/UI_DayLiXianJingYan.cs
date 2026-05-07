@@ -40,7 +40,7 @@ public class UI_DayLiXianJingYan : MonoBehaviour {
         {
             offLinkExpMaxStr = ((int)(offLinkExpMaxInt / 10000)).ToString() + "w";
         }
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("剩余储备经验");
+        string langStr = LanguageManager.Instance.LoadLocalization("剩余储备经验");
         Obj_ChuBeiExp_Text.GetComponent<Text>().text = langStr + ":" + ChuBeiExpStr + "/" + offLinkExpMaxStr;
         Obj_ChuBeiExp_Img.GetComponent<Image>().fillAmount = float.Parse(ChuBeiExp) / float.Parse(offLinkExpMax);
 
@@ -51,7 +51,7 @@ public class UI_DayLiXianJingYan : MonoBehaviour {
         }
 
         ChuBeiNum = int.Parse(ChuBeiNumStr);
-        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前离线点数");
+        langStr = LanguageManager.Instance.LoadLocalization("当前离线点数");
         Obj_ChuBeiNum.GetComponent<Text>().text = langStr + ":" + ChuBeiNum.ToString();
 
     }
@@ -66,7 +66,7 @@ public class UI_DayLiXianJingYan : MonoBehaviour {
 
         //判定背包是否有1个空格
         if (Game_PublicClassVar.Get_function_Rose.BagNullNum() < 1) {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_1");
+            string langStr_1 = LanguageManager.Instance.LoadLocalizationHint("hint_1");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr_1);
             return;
         }
@@ -112,7 +112,7 @@ public class UI_DayLiXianJingYan : MonoBehaviour {
             Init();
         }
         else {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_452");
+            string langStr_1 = LanguageManager.Instance.LoadLocalizationHint("hint_452");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr_1);
         }
     }
@@ -130,7 +130,7 @@ public class UI_DayLiXianJingYan : MonoBehaviour {
         ObscuredString rewardDes = "";
 
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("离线宝箱奖励");
+        string langStr = LanguageManager.Instance.LoadLocalization("离线宝箱奖励");
 
         switch (huoyueDuValue)
         {
@@ -171,7 +171,7 @@ public class UI_DayLiXianJingYan : MonoBehaviour {
             }
         }
 
-        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("以下道具随机获得一种");
+        langStr = LanguageManager.Instance.LoadLocalization("以下道具随机获得一种");
         rewardDes = langStr + "\n" + rewardDes;
 
         if (ifShowTips)

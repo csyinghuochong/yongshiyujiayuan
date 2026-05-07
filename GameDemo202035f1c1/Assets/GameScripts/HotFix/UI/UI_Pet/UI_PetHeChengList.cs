@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -50,7 +50,7 @@ public class UI_PetHeChengList : MonoBehaviour {
         string headIcon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HeadIcon", "ID", petTemplateID, "Pet_Template");
 
         if(PetID=="0"){
-            petName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点击放置合成宠物");
+            petName = LanguageManager.Instance.LoadLocalization("点击放置合成宠物");
             //Obj_PingFen.SetActive(false);
             Obj_PetIcon.SetActive(false);
         }else{
@@ -119,11 +119,11 @@ public class UI_PetHeChengList : MonoBehaviour {
         //显示主副宠标签
         switch (HeChengWeiZhi) { 
             case "1":
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("主宠");
+                string langStr = LanguageManager.Instance.LoadLocalization("主宠");
                 Obj_PetTitle.GetComponent<Text>().text = langStr;
                 break;
             case "2":
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("副宠");
+                langStr = LanguageManager.Instance.LoadLocalization("副宠");
                 Obj_PetTitle.GetComponent<Text>().text = langStr;
                 break;
         }

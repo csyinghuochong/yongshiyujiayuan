@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -51,7 +51,7 @@ public class Rose_ChengJiuDataShowList : MonoBehaviour {
             }
 
             chengJiuDes = chengJiuDes.Substring(0,chengJiuDes.Length-1);
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("穿戴身上激活成就");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("穿戴身上激活成就");
             chengJiuDes = chengJiuDes + "("+ langStr_1 + ")";
         }
         
@@ -67,7 +67,7 @@ public class Rose_ChengJiuDataShowList : MonoBehaviour {
         }
 
         //显示完成值
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("进度");
+        string langStr = LanguageManager.Instance.LoadLocalization("进度");
         UI_ProValue.GetComponent<Text>().text = langStr + ":" + nowValue +"/"+ targetValue;
 
         //显示点数

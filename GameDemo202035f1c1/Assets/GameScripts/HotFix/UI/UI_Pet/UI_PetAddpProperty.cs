@@ -222,7 +222,7 @@ public class UI_PetAddpProperty : MonoBehaviour {
         //获取当前点数
         if (NowShengYuNum<=0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_300");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_300");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前没有可分配的点数");
             return;

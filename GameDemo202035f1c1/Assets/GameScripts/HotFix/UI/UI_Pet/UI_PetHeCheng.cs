@@ -77,7 +77,7 @@ public class UI_PetHeCheng : MonoBehaviour {
         //检测服务器网络
         if (Game_PublicClassVar.gameLinkServer.ServerLinkStatus == false)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_58");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_58");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
             return;
         }
@@ -85,7 +85,7 @@ public class UI_PetHeCheng : MonoBehaviour {
         int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
         if (roseLv < 20)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_149");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_149");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("需要达到20级后开启!");
             return;
@@ -144,7 +144,7 @@ public class UI_PetHeCheng : MonoBehaviour {
 
             if (Game_PublicClassVar.Get_function_AI.Pet_HeCheng(PetID_List_1, PetID_List_2)) {
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_148");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_148");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("宠物合成成功!请到宠物列表中进行查看");
                 //清空数据

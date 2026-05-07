@@ -22,7 +22,7 @@ public class UI_Npc_CangBaoTu : MonoBehaviour {
         int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
         if (roseLv < 15) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_242");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_242");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("15级可以进入藏宝洞窟！");
             return;
@@ -38,7 +38,7 @@ public class UI_Npc_CangBaoTu : MonoBehaviour {
         if (cangbaoNum <= 0)
         {
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_16");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_16");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, EnterCangBaoTu, null);
             //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入藏宝洞窟？\n提示:每天只有一次进入机会！", EnterCangBaoTu, null);
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -47,7 +47,7 @@ public class UI_Npc_CangBaoTu : MonoBehaviour {
         }
         else {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_243");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_243");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今天已经进入藏宝洞窟一次了,请明天再来！");
         }
@@ -93,7 +93,7 @@ public class UI_Npc_CangBaoTu : MonoBehaviour {
         string itemName_3 = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", "10000020", "Item_Template");
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_21");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_21");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint + itemName_1  + "x1 "+ itemName_2 + "x1 " + itemName_3 + "x1 ", DuiHuanGaoJiCangBaoTu, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否消耗材料兑换一个高级藏宝图？\n消耗道具:" + itemName_1 + "x1 " + itemName_2 + "x1 " + itemName_3 + "x1 ", DuiHuanGaoJiCangBaoTu, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -119,7 +119,7 @@ public class UI_Npc_CangBaoTu : MonoBehaviour {
         }
         else {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_244");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_244");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("需要材料不足");
         }
@@ -130,7 +130,7 @@ public class UI_Npc_CangBaoTu : MonoBehaviour {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint_2);
         //string jieshaoStr = "1.地图随机刷新出真假宝箱,触碰到真的宝箱可以获得真正的奖励,地图内会出现6个真正的藏宝箱\n2.地图只有5分钟时间提供给玩家寻找宝箱,超过时间会自动传送出地图！\n3.地图内不能使用任何技能和道具";
-        string jieshaoStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_22");
+        string jieshaoStr = LanguageManager.Instance.LoadLocalizationHint("comhint_22");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, null, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;
@@ -145,20 +145,20 @@ public class UI_Npc_CangBaoTu : MonoBehaviour {
         string chestNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MeiRiCangBaoTrueChestNum", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (chestNum == "-1")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_245");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_245");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日已经领取,请明日再来！");
             return;
         }
         //弹出提示
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_23");
-        string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_24");
+        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhint_23");
+        string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_24");
         //string jieshaoStr = "恭喜你!今天你寻找到了" + chestNum + "个真实宝箱！\n寻找1-3个宝箱获得1张藏宝图 \n寻找4-5个宝箱获得2张藏宝图 \n寻找6个宝箱获得3张藏宝图";
         string jieshaoStr = langStrHint_1 + chestNum + langStrHint_2;
-        string langStrHint_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_10");
-        string langStrHint_5 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_11");
-        string langStrHint_6 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_12");
+        string langStrHint_4 = LanguageManager.Instance.LoadLocalizationHint("comhintText_10");
+        string langStrHint_5 = LanguageManager.Instance.LoadLocalizationHint("comhintText_11");
+        string langStrHint_6 = LanguageManager.Instance.LoadLocalizationHint("comhintText_12");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, SendCangBaoTuReward, null, langStrHint_4, langStrHint_5, langStrHint_6);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -47,12 +47,12 @@ public class UI_JingLingShow : MonoBehaviour {
         string mainSkill = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MainSkill", "ID", JingLingID, "Spirit_Template");
         if (mainSkill != "" && mainSkill != "0")
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("主动精灵");
+            string langStr = LanguageManager.Instance.LoadLocalization("主动精灵");
             Obj_JingLingType.GetComponent<Text>().text = "(" + langStr + ")";
         }
         else
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("被动精灵");
+            string langStr = LanguageManager.Instance.LoadLocalization("被动精灵");
             Obj_JingLingType.GetComponent<Text>().text = "("+ langStr + ")";
         }
 

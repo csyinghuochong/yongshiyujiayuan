@@ -57,12 +57,12 @@ public class UI_EnterPVE : MonoBehaviour {
             string costTiLi = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("CostTiLi", "ID", ScenceID, "Scene_Template");
             if (costTiLi == "0")
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("无消耗");
+                string langStr = LanguageManager.Instance.LoadLocalization("无消耗");
                 UI_CostTiLi.GetComponent<Text>().text = langStr;
             }
             else
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("消耗体力");
+                string langStr = LanguageManager.Instance.LoadLocalization("消耗体力");
                 UI_CostTiLi.GetComponent<Text>().text = langStr + "：" + costTiLi;
             }
         }
@@ -137,8 +137,8 @@ public class UI_EnterPVE : MonoBehaviour {
 
         if (roseTiLi_Now < 0)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_131");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_132");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_131");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_132");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + sceneTiLi + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("体力不足" + sceneTiLi + "点,体力每5分钟恢复1点！");
             return;

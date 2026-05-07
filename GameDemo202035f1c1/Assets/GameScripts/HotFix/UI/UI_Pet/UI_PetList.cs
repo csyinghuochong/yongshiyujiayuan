@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -45,7 +45,7 @@ public class UI_PetList : MonoBehaviour {
 
         //显示宠物信息
         Obj_PetName.GetComponent<Text>().text = petName;
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级");
+        string langStr = LanguageManager.Instance.LoadLocalization("级");
         Obj_PetLv.GetComponent<Text>().text = petLv + langStr;
 
         //显示底图

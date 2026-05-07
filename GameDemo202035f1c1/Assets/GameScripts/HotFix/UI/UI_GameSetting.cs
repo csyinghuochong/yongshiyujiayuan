@@ -140,18 +140,18 @@ public class UI_GameSetting : MonoBehaviour {
             //if (Application.version != Game_PublicClassVar.Get_wwwSet.GameServerVersionStr)
             if(GameVersionBiJiao(Application.version, Game_PublicClassVar.Get_wwwSet.GameServerVersionStr)==false)
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("最新版本");
+                string langStr = LanguageManager.Instance.LoadLocalization("最新版本");
                 Obj_ServerGameVersion.GetComponent<Text>().text = langStr + ":" + Game_PublicClassVar.Get_wwwSet.GameServerVersionStr;
             }
             else
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前版本为最新版本");
+                string langStr = LanguageManager.Instance.LoadLocalization("当前版本为最新版本");
                 Obj_ServerGameVersion.GetComponent<Text>().text = langStr;
             }
         }
         else
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("未连接服务器获取最新版本");
+            string langStr = LanguageManager.Instance.LoadLocalization("未连接服务器获取最新版本");
             Obj_ServerGameVersion.GetComponent<Text>().text = langStr;
         }
 
@@ -228,7 +228,7 @@ public class UI_GameSetting : MonoBehaviour {
             //显示区服
             if (Game_PublicClassVar.Get_wwwSet.ServerName != "" && Game_PublicClassVar.Get_wwwSet.ServerName != null)
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("游戏战区");
+                string langStr = LanguageManager.Instance.LoadLocalization("游戏战区");
                 Obj_ServerObj.GetComponent<Text>().text = langStr + ":" + Game_PublicClassVar.Get_wwwSet.ServerName;
                 serverNameStatus = true;
             }
@@ -361,7 +361,7 @@ public class UI_GameSetting : MonoBehaviour {
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
             //Game_PublicClassVar.Get_function_UI.GameHint("摇杆操作已关闭");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_372");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_372");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         }
         else
@@ -374,7 +374,7 @@ public class UI_GameSetting : MonoBehaviour {
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
             //Game_PublicClassVar.Get_function_UI.GameHint("摇杆操作已开启");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_373");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_373");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         }
         Btn_ShowYaoImg();
@@ -392,7 +392,7 @@ public class UI_GameSetting : MonoBehaviour {
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
         //Game_PublicClassVar.Get_function_UI.GameHint("点击移动模式开启");
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_374");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_374");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         Btn_ShowYaoImg();
         //设置摇杆状态
@@ -411,7 +411,7 @@ public class UI_GameSetting : MonoBehaviour {
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
         //Game_PublicClassVar.Get_function_UI.GameHint("摇杆(移动)操作已开启");
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_375");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_375");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         Btn_ShowYaoImg();
         //设置摇杆状态
@@ -430,7 +430,7 @@ public class UI_GameSetting : MonoBehaviour {
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "2", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
         //Game_PublicClassVar.Get_function_UI.GameHint("摇杆(固定)操作已开启");
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_376");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_376");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         Btn_ShowYaoImg();
         //设置摇杆状态
@@ -447,7 +447,7 @@ public class UI_GameSetting : MonoBehaviour {
         //Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         //Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
         //Game_PublicClassVar.Get_function_UI.GameHint("点击移动模式开启");
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_374");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_374");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("更改宠物模式为:攻击模式");
         Btn_ShowPetMoShiImg();
         Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RoseDataSet.GetComponent<UI_RoseDataSet>().PetActModel();
@@ -461,7 +461,7 @@ public class UI_GameSetting : MonoBehaviour {
         //Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         //Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
         //Game_PublicClassVar.Get_function_UI.GameHint("摇杆(移动)操作已开启");
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_375");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_375");
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("更改宠物模式为:跟随模式");
         Btn_ShowPetMoShiImg();
@@ -476,7 +476,7 @@ public class UI_GameSetting : MonoBehaviour {
         //Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YaoGanStatus", "2", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         //Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
         //Game_PublicClassVar.Get_function_UI.GameHint("摇杆(固定)操作已开启");
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_376");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_376");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("更改宠物模式为:守护模式");
         Btn_ShowPetMoShiImg();
         Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_RoseDataSet.GetComponent<UI_RoseDataSet>().PetActModel();
@@ -515,7 +515,7 @@ public class UI_GameSetting : MonoBehaviour {
         //修改主界面显示的名称
         Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_BuildingMainUISet.GetComponent<BuildingMainUI>().Obj_RoseName.GetComponent<Text>().text = roseName;
         //Game_PublicClassVar.Get_function_UI.GameHint("你的昵称已修改为：" + roseName);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_377");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_377");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + roseName);
         //存储角色通用数据
         Game_PublicClassVar.Get_function_Rose.SaveGameConfig_Rose(Game_PublicClassVar.Get_wwwSet.RoseID, "Name", roseName);
@@ -542,7 +542,7 @@ public class UI_GameSetting : MonoBehaviour {
         if (Application.loadedLevelName != "EnterGame")
         {
             //Game_PublicClassVar.Get_function_UI.GameHint("请进入城镇使用更改游戏难度");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_378");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_378");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
         }
@@ -552,7 +552,7 @@ public class UI_GameSetting : MonoBehaviour {
             //切换普通
             case "1":
                 Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("BeiYong_4", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_311");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_311");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint("切换普通模式成功!");
                 Game_PublicClassVar.Get_game_PositionVar.GameNanduValue = "1";
@@ -563,7 +563,7 @@ public class UI_GameSetting : MonoBehaviour {
                 if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() >= 10)
                 {
                     Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("BeiYong_4", "2", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_312");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_312");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint("切换挑战模式成功！Boss属性增强,更有大概率掉落道具！");
                     Game_PublicClassVar.Get_game_PositionVar.GameNanduValue = "2";
@@ -571,7 +571,7 @@ public class UI_GameSetting : MonoBehaviour {
                 }
                 else
                 {
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_313");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_313");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint("等级提升至10级后开启挑战模式！");
                 }
@@ -582,7 +582,7 @@ public class UI_GameSetting : MonoBehaviour {
                 if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() >= 15)
                 {
                     Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("BeiYong_4", "3", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_314");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_314");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint("切换地狱模式成功！Boss属性大大增强,更有超大概率掉落道具！");
                     Game_PublicClassVar.Get_game_PositionVar.GameNanduValue = "3";
@@ -590,7 +590,7 @@ public class UI_GameSetting : MonoBehaviour {
                 }
                 else
                 {
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_315");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_315");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint("等级提升至15级后开启地狱模式！");
                 }
@@ -787,7 +787,7 @@ public class UI_GameSetting : MonoBehaviour {
         
         //弹出提示框
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(hintText, UpdateGame, null,"游戏更新","更新游戏");
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -925,14 +925,14 @@ public class UI_GameSetting : MonoBehaviour {
         switch (langType) {
             //切换中文
             case "0":
-                Game_PublicClassVar.Get_gameSettingLanguge.SetLanguage("Chinese");
+                LanguageManager.Instance.SetLanguage("Chinese");
                 PlayerPrefs.SetString("GameLanguageType","0");
                 Obj_Language_0.SetActive(true);
                 break;
 
             //切换英文
             case "1":
-                Game_PublicClassVar.gameSettingLanguge.SetLanguage("English");
+                LanguageManager.Instance.SetLanguage("English");
                 PlayerPrefs.SetString("GameLanguageType", "1");
                 Obj_Language_1.SetActive(true);
                 break;
@@ -1023,3 +1023,4 @@ public class UI_GameSetting : MonoBehaviour {
     //string createIDListStr = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateIDList", "ID", "1", createXmlPath + "GameCreate.xml");
 
 }
+

@@ -95,13 +95,13 @@ public class UI_ShiLianZhiTaObj : MonoBehaviour
         //效验次数
         int LingQuFuBenExp = PlayerPrefs.GetInt("LingQuFuBenExp");
         if (LingQuFuBenExp >= 1) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_370");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_370");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("今日已经领取");
             return;
         }
         if (KillBossNum < 1) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_371");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_371");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("今天未击杀BOSS不能领取！");
             return;

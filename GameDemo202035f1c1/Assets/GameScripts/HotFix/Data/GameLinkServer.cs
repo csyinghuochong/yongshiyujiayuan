@@ -396,7 +396,7 @@ public class GameLinkServer : MonoBehaviour {
 
                 //弹出提示
                 GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
                 uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(HintMsgText_Exit, Game_PublicClassVar.Get_wwwSet.ExitGame, Game_PublicClassVar.Get_wwwSet.ExitGame, "系统提示", "确定", "取消", Game_PublicClassVar.Get_wwwSet.ExitGame);
                 //DontDestroyOnLoad(uiCommonHint);
                 if (GameObject.Find("Canvas/GameGongGaoSet") != null)
@@ -418,7 +418,7 @@ public class GameLinkServer : MonoBehaviour {
 
                 //弹出提示
                 GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
                 uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(HintMsgText, null, null, "系统提示", "确定", "取消", null);
                 //DontDestroyOnLoad(uiCommonHint);
                 if (GameObject.Find("Canvas/GameGongGaoSet") != null)
@@ -437,7 +437,7 @@ public class GameLinkServer : MonoBehaviour {
 
             //弹出提示
             GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(HintMsgText_StartGame, null, null, "系统提示", "确定", "取消", null);
             //DontDestroyOnLoad(uiCommonHint);
             if (GameObject.Find("Canvas/GameGongGaoSet") != null)
@@ -1021,7 +1021,7 @@ public class GameLinkServer : MonoBehaviour {
                     //弹出提示
                     /*
                     GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
                     uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("数据异常!断开与服务器连接...", Game_PublicClassVar.Get_wwwSet.ExitGame, Game_PublicClassVar.Get_wwwSet.ExitGame,"系统提示","确定","取消", Game_PublicClassVar.Get_wwwSet.ExitGame);
 
                     if (GameObject.Find("Canvas/GameGongGaoSet") != null) {
@@ -1055,7 +1055,7 @@ public class GameLinkServer : MonoBehaviour {
                     Debug.Log("提示1111");
                     //弹出提示
                     GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
                     uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(pro_ComStr_1.str_1, Game_PublicClassVar.Get_wwwSet.ExitGame, Game_PublicClassVar.Get_wwwSet.ExitGame, "系统提示", "确定", "取消", Game_PublicClassVar.Get_wwwSet.ExitGame);
                     //DontDestroyOnLoad(uiCommonHint.transform.parent.gameObject);        
                     if (GameObject.Find("Canvas/GameGongGaoSet") != null)
@@ -1089,7 +1089,7 @@ public class GameLinkServer : MonoBehaviour {
                     /*
                     //弹出提示
                     GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
                     uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(pro_ComStr_1.str_1, Game_PublicClassVar.Get_wwwSet.ExitGame, Game_PublicClassVar.Get_wwwSet.ExitGame, "系统提示", "确定", "取消", Game_PublicClassVar.Get_wwwSet.ExitGame);
 
                     if (GameObject.Find("Canvas/GameGongGaoSet") != null)
@@ -1668,9 +1668,9 @@ public class GameLinkServer : MonoBehaviour {
                         Debug.Log("下载数据失败！职业不匹配！");
                         SendToServerBuf(10001013, proPlay.Write_ZhangHaoID);
 
-                        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_101");
-                        string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_102");
-                        string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_103");
+                        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_101");
+                        string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_102");
+                        string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("hint_103");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + occStr + langStrHint_2 + occStr + langStrHint_3);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你要下载的账号" + occStr + ",请创建一个" + occStr + "角色在下载此数据");
                     }
@@ -1921,7 +1921,7 @@ public class GameLinkServer : MonoBehaviour {
                     //循环处理排行
                     if (Game_PublicClassVar.Get_gameServerObj.Obj_PaiHang != null)
                     {
-                        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("我的排名");
+                        string langStr = LanguageManager.Instance.LoadLocalization("我的排名");
                         Game_PublicClassVar.Get_gameServerObj.Obj_PaiHang.GetComponent<UI_PaiHang>().Obj_PaiHangRankValue.GetComponent<Text>().text = langStr + ":" + pro_ComStr_1.str_1;
                         Game_PublicClassVar.Get_gameServerObj.Obj_PaiHang.GetComponent<UI_PaiHang>().Obj_RewardEveryDayPaiHang_RankValue.GetComponent<Text>().text = langStr + ":" + pro_ComStr_1.str_1;
                         Game_PublicClassVar.Get_gameServerObj.Obj_PaiHang.GetComponent<UI_PaiHang>().Obj_HeQuPaiHang_RankValue.GetComponent<Text>().text = langStr + ":" + pro_ComStr_1.str_1;
@@ -2319,7 +2319,7 @@ public class GameLinkServer : MonoBehaviour {
                         saleObj.GetComponent<UI_PaiMaiChuShouShow>().ShowSale();
                     }
                     else {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_121");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_121");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前物品无法在拍卖行出售!");
                     }
@@ -2690,12 +2690,12 @@ public class GameLinkServer : MonoBehaviour {
                     if (Game_PublicClassVar.gameServerObj.Obj_PetTianTi != null) {
                         Game_PublicClassVar.gameServerObj.Obj_PetTianTi.GetComponent<UI_PetTianTiSet>().SelfRank = pro_ComStr_1.str_1;
                         Game_PublicClassVar.gameServerObj.Obj_PetTianTi.GetComponent<UI_PetTianTiSet>().ShowMyRank();
-                        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("我的排名");
+                        string langStr = LanguageManager.Instance.LoadLocalization("我的排名");
                         Game_PublicClassVar.gameServerObj.Obj_PaiHang.GetComponent<UI_PaiHang>().Obj_RewardPetPaiHang_RankValue.GetComponent<Text>().text = langStr + ":" + pro_ComStr_1.str_1;
                     }
 
                     if (Game_PublicClassVar.gameServerObj.Obj_PaiHang != null) {
-                        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("我的排名");
+                        string langStr = LanguageManager.Instance.LoadLocalization("我的排名");
                         Game_PublicClassVar.gameServerObj.Obj_PaiHang.GetComponent<UI_PaiHang>().Obj_HeQuPetPaiHang_RankValue.GetComponent<Text>().text = langStr + ":" + pro_ComStr_1.str_1;
                     }
 
@@ -3335,7 +3335,7 @@ public class GameLinkServer : MonoBehaviour {
                 MainTaskProcessor.AppendOneAction(new TaskUnit(() =>
                 {
                     GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-                    //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_11");
+                    //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_11");
                     uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("亲爱的玩家,您上次有未领取的订单,请进入充值界面自动领取!", Game_PublicClassVar.function_UI.GoToRmbStore, null);
                     //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往充值界面？", GoToRmbStore, null);
                     uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

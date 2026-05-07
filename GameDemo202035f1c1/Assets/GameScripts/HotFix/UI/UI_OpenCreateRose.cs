@@ -47,7 +47,7 @@ public class UI_OpenCreateRose : MonoBehaviour {
         {
             //Debug.Log("检测到未连接网络!无法进入");
             //Game_PublicClassVar.Get_wwwSet.Show_GameHint("检测到未连接网络!无法进入\n (本次篝火测试需要联网才可以进入游戏)因为是第一次测试,所以需要玩家进行联网进行测试资格验证！\n(游戏正式上线后单机也可以进入游戏!)");
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_104");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_104");
             Game_PublicClassVar.Get_wwwSet.Show_GameHint(langStr);
             return;
         }
@@ -58,7 +58,7 @@ public class UI_OpenCreateRose : MonoBehaviour {
 
             if (Game_PublicClassVar.Get_wwwSet.IfGooglePay)
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_104");
+                string langStr = LanguageManager.Instance.LoadLocalization("hint_104");
                 Game_PublicClassVar.Get_wwwSet.Show_GameHint(langStr);
             }
             else

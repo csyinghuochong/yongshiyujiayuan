@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -62,7 +62,7 @@ public class UI_HuoDongDaTingDengLu : MonoBehaviour {
         //判定当前等级是否大于15级
         int roseLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
         if (roseLv < 15) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_380");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_380");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("请将等级提升至15级后领取!");
             return;
@@ -72,7 +72,7 @@ public class UI_HuoDongDaTingDengLu : MonoBehaviour {
         string dengLuReward = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("DengLuReward", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
 
         if (dengLuReward != DengLuRewardDay) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_381");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_381");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("请按照登陆奖励依次领取!");
             return;
@@ -82,7 +82,7 @@ public class UI_HuoDongDaTingDengLu : MonoBehaviour {
         string dengLuDayStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("DengLuDayStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         if (dengLuDayStatus == "1")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_382");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_382");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("今日登陆奖励已领取!");
             return;
@@ -94,8 +94,8 @@ public class UI_HuoDongDaTingDengLu : MonoBehaviour {
         int spaceNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
         if (dengLuRewardValue.Length - 1 > spaceNullNum)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_152");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_153");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_152");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_153");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + (dengLuRewardValue.Length - 1).ToString() + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameHint("请预留" + (dengLuRewardValue.Length - 1).ToString() + "个背包空位置！");
             return;

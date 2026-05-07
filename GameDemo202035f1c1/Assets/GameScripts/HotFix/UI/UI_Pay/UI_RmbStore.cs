@@ -400,7 +400,7 @@ public class UI_RmbStore : MonoBehaviour {
 
         Debug.Log("我点击了支付按钮[非渠道包！]:" + rmbValue);
         if(clickPayBtnStatus){
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_30");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_30");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("支付开启中,请稍等……！");
             return;
@@ -459,21 +459,21 @@ public class UI_RmbStore : MonoBehaviour {
         //判定当前是否在支付状态,如果是,则取消本次支付
         if (buyStatus)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_31");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_31");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("支付繁忙,请稍后支付,如长时间无反应请重启游戏应用！");
             return;
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_32");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_32");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("支付转接中,请不要关闭界面……");
         }
 
 #if UNITY_IPHONE
         if (IOSBuyStatus) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_32");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_32");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("支付转接中,请不要关闭界面……");
             return;
@@ -584,7 +584,7 @@ public class UI_RmbStore : MonoBehaviour {
         }
         else {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_34");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_34");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("未连接支付服务器,请确认本地网络或加游戏群联系管理员！");
 
@@ -836,7 +836,7 @@ public class UI_RmbStore : MonoBehaviour {
 
         if (clickPayBtnStatus == true)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_35");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_35");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("提示:你已充值,请耐心等待支付返回结果,不要关闭此界面和退出游戏！");
         }

@@ -82,7 +82,7 @@ public class UI_RoseDeath : MonoBehaviour {
         }
         else
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_295");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_295");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }

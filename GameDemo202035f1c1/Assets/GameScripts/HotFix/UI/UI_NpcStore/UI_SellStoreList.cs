@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -79,7 +79,7 @@ public class UI_SellStoreList : MonoBehaviour
 			//发送道具至背包
             Game_PublicClassVar.Get_function_Rose.SendRewardToBag(ItemID, int.Parse(SellNum),"0",0,HideID,true,"9");
             //Debug.Log("商店购买道具");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_383");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_383");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + ItemName + "X" + SellNum);
             //Game_PublicClassVar.Get_function_UI.GameHint("赎回" + ItemName + "X" + SellNum);
 

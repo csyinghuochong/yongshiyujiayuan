@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -75,7 +75,7 @@ public class UI_EquipMake : MonoBehaviour {
 
 
         //初始化标签按钮
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language != "Chinese")
+        if (LanguageManager.Instance.CurrentLanguage != LanguageType.Chinese)
         {
             Obj_EquipBtnText_1.GetComponent<Text>().fontSize = 20;
             Obj_EquipBtnText_2.GetComponent<Text>().fontSize = 20;
@@ -135,13 +135,13 @@ public class UI_EquipMake : MonoBehaviour {
         //Obj_MakeItemNameTitle.GetComponent<Text>().text = itemName;
         if (makeItemLv <= 1&& makeItemMaxLv==0)
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("制造等级：无限制");
+            string langStr = LanguageManager.Instance.LoadLocalization("制造等级：无限制");
             Obj_MakeItemLv.GetComponent<Text>().text = langStr;
         }
         else {
 
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("需要等级");
-            string langStr_Lv = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级");
+            string langStr = LanguageManager.Instance.LoadLocalization("需要等级");
+            string langStr_Lv = LanguageManager.Instance.LoadLocalization("级");
             
             if (makeItemMaxLv == 0)
             {
@@ -160,13 +160,13 @@ public class UI_EquipMake : MonoBehaviour {
             showMakeSuccessPro = 1;
         }
 
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("制造数量");
-        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("成功概率");
-        string langStr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("制造难度");
-        string langStr_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("消耗金币");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("制造数量");
+        string langStr_2 = LanguageManager.Instance.LoadLocalization("成功概率");
+        string langStr_3 = LanguageManager.Instance.LoadLocalization("制造难度");
+        string langStr_4 = LanguageManager.Instance.LoadLocalization("消耗金币");
 
-        string langStr_5 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("个");
-        string langStr_6 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("星");
+        string langStr_5 = LanguageManager.Instance.LoadLocalization("个");
+        string langStr_6 = LanguageManager.Instance.LoadLocalization("星");
 
         Obj_MakeItemNum.GetComponent<Text>().text = langStr_1 + "：" + makeEquipNum + langStr_5;
         Obj_MakeSuccesPro.GetComponent<Text>().text = langStr_2 + "：" + showMakeSuccessPro + "%";
@@ -187,7 +187,7 @@ public class UI_EquipMake : MonoBehaviour {
         Obj_MakeItemQuality.GetComponent<Image>().sprite = itemQuality;
 
         //显示熟练度
-        string langStr_7 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("需要熟练度");
+        string langStr_7 = LanguageManager.Instance.LoadLocalization("需要熟练度");
         Obj_MakeProficiency.GetComponent<Text>().text = langStr_7 + ":" + nowficiencyValue + "/" + needProficiencyValue;
         if (nowficiencyValue >= needProficiencyValue)
         {
@@ -202,7 +202,7 @@ public class UI_EquipMake : MonoBehaviour {
         if (Game_PublicClassVar.Get_function_Rose.GetRoseMoney() < makeNeedGold)
         {
             Obj_MakeNeedGold.GetComponent<Text>().color = Color.red;
-            string langStr_8 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("金币不足");
+            string langStr_8 = LanguageManager.Instance.LoadLocalization("金币不足");
             Obj_MakeNeedGold.GetComponent<Text>().text += "("+ langStr_8 + ")";
         }
         
@@ -307,7 +307,7 @@ public class UI_EquipMake : MonoBehaviour {
 
         if (roseLv < makeItemLv || roseLv > makeItemMaxLv) {
             makeStatus = false;
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_347");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_347");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("请查看制造等级,角色不在此制造等级范围内无法制造");
             ClickMakeBtn = false;
@@ -330,7 +330,7 @@ public class UI_EquipMake : MonoBehaviour {
         //检测剩余背包
         if (Game_PublicClassVar.Get_function_Rose.BagNullNum() <= 1) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_348");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_348");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制造道具背包至少预留2个位置...");
             return;
@@ -352,7 +352,7 @@ public class UI_EquipMake : MonoBehaviour {
                 if (selfItemNum < int.Parse(needItemNum))
                 {
                     makeStatus = false;
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_349");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_349");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameHint("制造需要的材料不足!");
                     ClickMakeBtn = false;
@@ -365,7 +365,7 @@ public class UI_EquipMake : MonoBehaviour {
         if (Game_PublicClassVar.Get_function_Rose.GetRoseMoney() < makeNeedGold)
         {
             //金币不足
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_350");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_350");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制造需要的金币不足!");
             makeStatus = false;
@@ -380,7 +380,7 @@ public class UI_EquipMake : MonoBehaviour {
         int nowficiencyValue = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Proficiency_" + proficiencyType, "ID", Game_PublicClassVar.Get_game_PositionVar.RoseID, "RoseData"));
         if (nowficiencyValue < needProficiencyValue) {
             //金币不足
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_351");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_351");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制造需要的熟练度不足!");
             makeStatus = false;
@@ -421,8 +421,8 @@ public class UI_EquipMake : MonoBehaviour {
             {
 
                 GameObject Obj_XiLianHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-                //string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_17");
-                //string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_18");
+                //string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhint_17");
+                //string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_18");
                 Obj_XiLianHint.GetComponent<UI_CommonHint>().Btn_CommonHint("在即将消耗的装备上发现了宝石或宝石槽位,是否继续制作？\n提示:继续制作将损失宝石。", null, MakeItem, "制作提示", "取消", "确定", null);
                 //Obj_XiLianHint.GetComponent<UI_CommonHint>().Btn_CommonHint("在此装备上发现了隐藏技能:"+ hintSkillName + "！\n提示:如果再次洗炼隐藏技能有可能消失！", Btn_EquipXiLian, null);
                 Obj_XiLianHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -453,7 +453,7 @@ public class UI_EquipMake : MonoBehaviour {
             //获取成功概率
             if (Random.value <= makeSuccessPro)
             {
-                string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_352");
+                string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_352");
                 string hintStr = langStrHint_A + makeItemName;
                 //string hintStr = "制造成功！获得装备：" + makeItemName;
                 //发送对应奖励
@@ -485,7 +485,7 @@ public class UI_EquipMake : MonoBehaviour {
                         nowMakeBaoJi = nowMakeBaoJi + shulianToPro();
                         if (Random.value < nowMakeBaoJi)
                         {
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_297");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_297");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你！制造产生了暴击获得双倍物品！");
                             Game_PublicClassVar.Get_function_Rose.SendRewardToBag(makeItemID, makeEquipNum, "1", 0, "0", true, "38");
@@ -529,7 +529,7 @@ public class UI_EquipMake : MonoBehaviour {
             }
             else {
                 //制造失败
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_353");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_353");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("制造失败,下次制造概率提升！");
             }
@@ -541,7 +541,7 @@ public class UI_EquipMake : MonoBehaviour {
             */
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_354");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_354");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制造材料不足");
         }
@@ -572,7 +572,7 @@ public class UI_EquipMake : MonoBehaviour {
         //获取成功概率
         if (Random.value <= makeSuccessPro)
         {
-            string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_352");
+            string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_352");
             string hintStr = langStrHint_A + makeItemName;
             //string hintStr = "制造成功！获得装备：" + makeItemName;
             //发送对应奖励
@@ -607,7 +607,7 @@ public class UI_EquipMake : MonoBehaviour {
                     nowMakeBaoJi = nowMakeBaoJi + shulianToPro();
                     if (Random.value < nowMakeBaoJi)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_297");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_297");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你！制造产生了暴击获得双倍物品！");
                         Game_PublicClassVar.Get_function_Rose.SendRewardToBag(makeItemID, makeEquipNum, "1", 0, "0", true, "38");
@@ -652,7 +652,7 @@ public class UI_EquipMake : MonoBehaviour {
         else
         {
             //制造失败
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_353");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_353");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制造失败,下次制造概率提升！");
         }
@@ -763,12 +763,12 @@ public class UI_EquipMake : MonoBehaviour {
         //展示熟练点数
         string ProficiencyValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Proficiency_" + nowClickType, "ID", Game_PublicClassVar.Get_game_PositionVar.RoseID, "RoseData");
 
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("打造熟练度");
-        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("炼金熟练度");
-        string langStr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("宝石熟练度");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("打造熟练度");
+        string langStr_2 = LanguageManager.Instance.LoadLocalization("炼金熟练度");
+        string langStr_3 = LanguageManager.Instance.LoadLocalization("宝石熟练度");
 
-        string langStr_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("提升打造极品的概率");
-        string langStr_5 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("炼金暴击!有概率获得双倍收益");
+        string langStr_4 = LanguageManager.Instance.LoadLocalization("提升打造极品的概率");
+        string langStr_5 = LanguageManager.Instance.LoadLocalization("炼金暴击!有概率获得双倍收益");
 
         //展示熟练度文本
         string showStr = "";

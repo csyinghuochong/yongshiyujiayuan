@@ -41,7 +41,7 @@ public class UI_BaoLvShowSet : MonoBehaviour {
 
             //显示信息
             obj.GetComponent<UI_BaoLvListShow>().Obj_BaoLvName.GetComponent<Text>().text = Game_PublicClassVar.Get_function_Rose.GetBaoLvName(i);
-            string lang_str_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("倍爆率");
+            string lang_str_2 = LanguageManager.Instance.LoadLocalizationHint("倍爆率");
             obj.GetComponent<UI_BaoLvListShow>().Obj_BaoLvProValue.GetComponent<Text>().text = "(" + Game_PublicClassVar.Get_function_Rose.GetBaoLvProValue(i).ToString("0.0") + lang_str_2 + ")";
         }
 
@@ -67,7 +67,7 @@ public class UI_BaoLvShowSet : MonoBehaviour {
 
         string showRoseMoneyStr = roseMoney.ToString();
         if (roseMoney >= 3000000) {
-            string lang_str_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("万");
+            string lang_str_2 = LanguageManager.Instance.LoadLocalizationHint("万");
             showRoseMoneyStr = ((int)(roseMoney / 10000)).ToString() + lang_str_2;
         }
 
@@ -111,7 +111,7 @@ public class UI_BaoLvShowSet : MonoBehaviour {
         }
         else
         {
-            string str = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_138");
+            string str = LanguageManager.Instance.LoadLocalizationHint("hint_138");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(str);
         }
     }
@@ -131,7 +131,7 @@ public class UI_BaoLvShowSet : MonoBehaviour {
             Btn_UpdateBaoLv("2");
         }
         else {
-            string str = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_86");
+            string str = LanguageManager.Instance.LoadLocalizationHint("hint_86");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(str);
         }
 
@@ -201,7 +201,7 @@ public class UI_BaoLvShowSet : MonoBehaviour {
         if (BaoLvIDLast >= BaoLvID)
         {
             BaoLvID = BaoLvIDLast;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_436");
+            string langStr = LanguageManager.Instance.LoadLocalizationHint("hint_436");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
 
             //累计失败5次必须升级成功.
@@ -235,7 +235,7 @@ public class UI_BaoLvShowSet : MonoBehaviour {
         //升级成功刷新显示
         if (ifUpdate)
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_435");
+            string langStr = LanguageManager.Instance.LoadLocalizationHint("hint_435");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
 
             UpdateStatus = true;
@@ -256,8 +256,8 @@ public class UI_BaoLvShowSet : MonoBehaviour {
 
     private void showBaoLvShow() {
 
-        string lang_str_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("当前爆率");
-        string lang_str_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("倍爆率");
+        string lang_str_1 = LanguageManager.Instance.LoadLocalizationHint("当前爆率");
+        string lang_str_2 = LanguageManager.Instance.LoadLocalizationHint("倍爆率");
 
         Obj_BaoLvShowText.GetComponent<Text>().text = lang_str_1 + "：" + Game_PublicClassVar.Get_function_Rose.GetBaoLvName(BaoLvID) + "(" + Game_PublicClassVar.function_Rose.GetBaoLvProValue(BaoLvID).ToString("0.0") + lang_str_2 + ")";
         //Obj_BaoLvShowText.GetComponent<Text>().text = "当前爆率：" + Game_PublicClassVar.Get_function_Rose.GetBaoLvName(BaoLvID) + "(" + Game_PublicClassVar.function_Rose.GetBaoLvProValue(BaoLvID).ToString("0.0") + "倍爆率)";

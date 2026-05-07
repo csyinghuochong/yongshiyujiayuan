@@ -177,9 +177,9 @@ public class UI_GetherItem : MonoBehaviour {
                         else
                         {
                             string costItemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", CostItemID, "Item_Template");
-                            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_430");
-                            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_431");
-                            string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_432");
+                            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_430");
+                            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_431");
+                            string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("hint_432");
 
                             Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 + CostItemNum + langStrHint_2 + costItemName + "," + langStrHint_3);
                             //Game_PublicClassVar.Get_function_UI.GameHint("需要" + CostItemNum + "个" + costItemName + ",才能开启");
@@ -295,13 +295,13 @@ public class UI_GetherItem : MonoBehaviour {
                     if (Random.value >= 0.5f)
                     {
                         buffIDStr = "95001002";     //减速Buff
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_125");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_125");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你碰到了一个被腐蚀的宝箱,似乎对你产生了不好的作用!");
                     }
                     else {
                         buffIDStr = "95001003";     //眩晕Buff
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_126");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_126");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你碰到了一个被腐蚀的宝箱,似乎对你产生了不好的作用!");
                     }
@@ -460,7 +460,7 @@ public class UI_GetherItem : MonoBehaviour {
     {
         if (IfRoseTake)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_123");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_123");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的宝箱已经先手被别人抢走了！ T.T");
         }
@@ -516,9 +516,9 @@ public class UI_GetherItem : MonoBehaviour {
                 else
                 {
                     string costItemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", CostItemID, "Item_Template");
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_127");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_128");
-                    string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_129");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_127");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_128");
+                    string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("hint_129");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + CostItemNum + langStrHint_2 + costItemName + langStrHint_3 );
                     //Game_PublicClassVar.Get_function_UI.GameHint("需要" + CostItemNum + "个" + costItemName + ",才能开启");
                     return;

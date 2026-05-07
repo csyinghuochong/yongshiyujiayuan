@@ -92,8 +92,8 @@ public class UI_PaiHang : MonoBehaviour
         Btn_ZongHePaiHang();
 
         //显示自身的实力值
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前自身的实力值");
-        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点");
+        string langStr = LanguageManager.Instance.LoadLocalization("当前自身的实力值");
+        string langStr_2 = LanguageManager.Instance.LoadLocalization("点");
 
         Obj_ShiLiStr.GetComponent<Text>().text = langStr + ":" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ShiLiValue + langStr_2;
         Obj_TimeStr.SetActive(false);
@@ -366,7 +366,7 @@ public class UI_PaiHang : MonoBehaviour
 
         string[] sendStrList_1 = new string[] { zhanghaoID, "1", "", "" };
         Game_PublicClassVar.Get_gameLinkServerObj.SendToServerBuf(10001031, sendStrList_1);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_219");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_219");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("战士排行榜已刷新！");
         Obj_PaiHangTableText.GetComponent<Text>().text = "战士排行榜";
@@ -500,8 +500,8 @@ public class UI_PaiHang : MonoBehaviour
                 break;
         }
 
-        string lang_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_455");
-        string lang_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_456");
+        string lang_1 = LanguageManager.Instance.LoadLocalization("hint_455");
+        string lang_2 = LanguageManager.Instance.LoadLocalization("hint_456");
 
         string startShowStr = "";
         DateTime date = new DateTime();

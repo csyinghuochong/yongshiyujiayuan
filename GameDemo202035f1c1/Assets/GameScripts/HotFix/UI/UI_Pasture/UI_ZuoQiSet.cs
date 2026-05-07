@@ -1,4 +1,4 @@
-using CodeStage.AntiCheat.ObscuredTypes;
+﻿using CodeStage.AntiCheat.ObscuredTypes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -221,7 +221,7 @@ public class UI_ZuoQiSet : MonoBehaviour {
     {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_12");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_12");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往购买钻石界面", GoToGoToDuiHuanGold, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往兑换金币界面？", GoToGoToDuiHuanGold, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -254,7 +254,7 @@ public class UI_ZuoQiSet : MonoBehaviour {
         //Obj_DuiHuanShow.GetComponent<Text>().text = "";
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否消耗" + duiHuanCostZuanShi + "钻石兑换" + duiHuanGetPastureGold + "家园资金", Game_PublicClassVar.Get_function_Pasture.DuiHuanPastureGold, Game_PublicClassVar.Get_function_Pasture.DuiHuanPastureGold_Ten, "系统提示", "兑换一次", "兑换十次", null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

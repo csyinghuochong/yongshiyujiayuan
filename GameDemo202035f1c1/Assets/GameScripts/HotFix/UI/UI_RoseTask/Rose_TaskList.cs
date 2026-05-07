@@ -130,7 +130,7 @@ public class Rose_TaskList : MonoBehaviour {
         switch(taskType){
             
             case "1":
-                tasktypeName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("主线任务");
+                tasktypeName = LanguageManager.Instance.LoadLocalization("主线任务");
                 UI_RoseTaskType.transform.parent = UIPoint_TaskType_Main.transform;
                 UI_RoseTaskType.transform.localPosition = new Vector3(0, 0, 0);
                 UI_RoseTaskType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -147,7 +147,7 @@ public class Rose_TaskList : MonoBehaviour {
             break;
 
             case "2":
-                tasktypeName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("支线任务");
+                tasktypeName = LanguageManager.Instance.LoadLocalization("支线任务");
                 UI_RoseTaskType.transform.parent = UIPoint_TaskType_Branch.transform;
                 UI_RoseTaskType.transform.localPosition = new Vector3(0, hight, 0);
                 UI_RoseTaskType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -164,7 +164,7 @@ public class Rose_TaskList : MonoBehaviour {
             break;
 
             case "3":
-                tasktypeName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("每日任务");
+                tasktypeName = LanguageManager.Instance.LoadLocalization("每日任务");
                 UI_RoseTaskType.transform.parent = UIPoint_TaskType_Everyday.transform;
                 UI_RoseTaskType.transform.localPosition = new Vector3(0, hight, 0);
                 UI_RoseTaskType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -240,8 +240,8 @@ public class Rose_TaskList : MonoBehaviour {
             //显示任务名称
             //taskType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TaskType", "ID", nowTaskID, "Task_Template");
             string taskSonType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TaskSonType", "ID", nowTaskID, "Task_Template");
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("环");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("第");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("环");
 
             //名称特殊处理
             switch (taskType)
@@ -281,7 +281,7 @@ public class Rose_TaskList : MonoBehaviour {
             
             //显示任务等级
             Text textLv = uiPoint.UI_TaskLv.GetComponent<Text>();
-            string langStr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级");
+            string langStr_3 = LanguageManager.Instance.LoadLocalization("级");
             textLv.text = "[" + taskLv + langStr_3 + "]";
 
             //判定当前任务是否为选中的任务

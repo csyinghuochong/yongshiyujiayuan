@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using CodeStage.AntiCheat.ObscuredTypes;
 using UnityEngine.SceneManagement;
@@ -513,40 +513,40 @@ public class Function_Rose {
 
         //4级开启装备制造
         if (roseLv >= 1) {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("4级开启");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("装备制造");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("4级开启");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("装备制造");
             returnHintStr = langStr_1 + "\n" + langStr_2;
         }
 
         //8级开启宠物系统
         if (roseLv >= 4)
         {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("8级开启");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("宠物系统");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("8级开启");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("宠物系统");
             returnHintStr = langStr_1 + "\n" + langStr_2;
         }
 
         //10级开启天赋系统
         if (roseLv >= 8)
         {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("10级开启");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("天赋系统");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("10级开启");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("天赋系统");
             returnHintStr = langStr_1 + "\n" + langStr_2;
         }
 
         //13级开启家园系统
         if (roseLv >= 10)
         {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("13级开启");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("家园系统");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("13级开启");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("家园系统");
             returnHintStr = langStr_1 + "\n" + langStr_2;
         }
 
         //20级开启宠物合成
         if (roseLv >= 13)
         {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("20级开启");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("宠物合成");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("20级开启");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("宠物合成");
             returnHintStr = langStr_1 + "\n" + langStr_2;
         }
 
@@ -875,8 +875,8 @@ public class Function_Rose {
             {
                 //广播
                 case "0":
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_422");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_422");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + dropNum.ToString() + langStrHint_2);
                     //Game_PublicClassVar.Get_function_UI.GameHint("你获得" + dropNum.ToString() + "金币");
                     break;
@@ -911,8 +911,8 @@ public class Function_Rose {
             {
                 //广播
                 case "0":
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_423");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_423");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + dropNum.ToString() + langStrHint_2);
                     //Game_PublicClassVar.Get_function_UI.GameHint("你获得" + dropNum.ToString() + "钻石");
                     break;
@@ -940,8 +940,8 @@ public class Function_Rose {
             {
                 //广播
                 case "0":
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_459");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_459");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + dropNum.ToString() + langStrHint_2);
                     //Game_PublicClassVar.Get_function_UI.GameHint("你获得" + dropNum.ToString() + "钻石");
                     break;
@@ -998,7 +998,7 @@ public class Function_Rose {
                                 //获取道具品质
                                 string itemQuality = function_DataSet.DataSet_ReadData("ItemQuality", "ID", dropID, "Item_Template");
                                 string qualityStr = Game_PublicClassVar.Get_function_UI.QualityReturnColorText(itemQuality);
-                                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
+                                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
                                 Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 +" "+ qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                                 //Game_PublicClassVar.Get_function_UI.GameHint("你获得 " + qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                                 break;
@@ -1064,7 +1064,7 @@ public class Function_Rose {
                             //获取道具品质
                             string itemQuality = function_DataSet.DataSet_ReadData("ItemQuality", "ID", dropID, "Item_Template");
                             string qualityStr = Game_PublicClassVar.Get_function_UI.QualityReturnColorText(itemQuality);
-                            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
+                            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
                             Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 + " " + qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                             //Game_PublicClassVar.Get_function_UI.GameHint("你获得 " + qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                             break;
@@ -1294,7 +1294,7 @@ public class Function_Rose {
                 //在结束循环的最后判定道具如果没有被拾取,判定为背包满了
                 if (i == Game_PublicClassVar.Get_game_PositionVar.RoseBagMaxNum)
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_301");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_301");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint("背包已满,请及时清理背包！");
                     return false;
@@ -1881,7 +1881,7 @@ public class Function_Rose {
         string itemID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemID", "ID", spaceID, "RoseBag");
         string itemNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemNum", "ID", spaceID, "RoseBag");
         if (int.Parse(itemNum) < saleNum) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_303");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_303");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("删除指定数量不足！");
             return false;
@@ -8143,7 +8143,7 @@ public class Function_Rose {
 		//弹出属性提示
         if (rose_ActMin > rose_Proprety.Rose_ActMin) {
             if (ifHint) {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("攻击下限")+ "+"+ (rose_ActMin - rose_Proprety.Rose_ActMin), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("攻击下限")+ "+"+ (rose_ActMin - rose_Proprety.Rose_ActMin), "7FFF00FF");
             }
         }
         //结算出结果后进行属性赋值
@@ -8165,7 +8165,7 @@ public class Function_Rose {
         if (rose_ActMax > rose_Proprety.Rose_ActMax)
         {
             if (ifHint){
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("攻击上限")+"+" + (rose_ActMax - rose_Proprety.Rose_ActMax), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("攻击上限")+"+" + (rose_ActMax - rose_Proprety.Rose_ActMax), "7FFF00FF");
             }
         }
 
@@ -8187,7 +8187,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("法术下限")+"+" + (rose_MagActMin - rose_Proprety.Rose_MagActMin), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("法术下限")+"+" + (rose_MagActMin - rose_Proprety.Rose_MagActMin), "7FFF00FF");
             }
         }
         //结算出结果后进行属性赋值
@@ -8210,7 +8210,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("法术上限")+"+" + (rose_MagActMax - rose_Proprety.Rose_MagActMax), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("法术上限")+"+" + (rose_MagActMax - rose_Proprety.Rose_MagActMax), "7FFF00FF");
             }
         }
         //结算出结果后进行属性赋值
@@ -8232,7 +8232,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("防御下限")+"+" + (rose_DefMin - rose_Proprety.Rose_DefMin), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("防御下限")+"+" + (rose_DefMin - rose_Proprety.Rose_DefMin), "7FFF00FF");
             }
         }
 		//结算出结果后进行属性赋值
@@ -8254,7 +8254,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("防御上限")+"+"+ (rose_DefMax - rose_Proprety.Rose_DefMax), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("防御上限")+"+"+ (rose_DefMax - rose_Proprety.Rose_DefMax), "7FFF00FF");
             }
         }
 		//结算出结果后进行属性赋值
@@ -8275,7 +8275,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("魔防下限")+"+" + (rose_AdfMin - rose_Proprety.Rose_AdfMin), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("魔防下限")+"+" + (rose_AdfMin - rose_Proprety.Rose_AdfMin), "7FFF00FF");
             }
         }
 		//结算出结果后进行属性赋值
@@ -8297,7 +8297,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("魔防上限")+"+" + (rose_AdfMax - rose_Proprety.Rose_AdfMax), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("魔防上限")+"+" + (rose_AdfMax - rose_Proprety.Rose_AdfMax), "7FFF00FF");
             }
         }
 		//结算出结果后进行属性赋值
@@ -8316,7 +8316,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("移动速度提升") + (rose_MoveSpeed - rose_Proprety.Rose_MoveSpeed)*100+"%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("移动速度提升") + (rose_MoveSpeed - rose_Proprety.Rose_MoveSpeed)*100+"%", "7FFF00FF");
             }
         }
 
@@ -8336,7 +8336,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("暴击等级")+"+" + (rose_CriRating - rose_Proprety.Rose_CriRating), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("暴击等级")+"+" + (rose_CriRating - rose_Proprety.Rose_CriRating), "7FFF00FF");
             }
         }
 
@@ -8362,7 +8362,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("韧性等级")+"+" + (rose_ResRating - rose_Proprety.Rose_ResilienceRating), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("韧性等级")+"+" + (rose_ResRating - rose_Proprety.Rose_ResilienceRating), "7FFF00FF");
             }
         }
 
@@ -8384,7 +8384,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("命中等级")+"+" + (rose_HitRating - rose_Proprety.Rose_HitRating), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("命中等级")+"+" + (rose_HitRating - rose_Proprety.Rose_HitRating), "7FFF00FF");
             }
         }
 
@@ -8406,7 +8406,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("闪避等级")+"+" + (rose_DodgeRating - rose_Proprety.Rose_DodgeRating), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("闪避等级")+"+" + (rose_DodgeRating - rose_Proprety.Rose_DodgeRating), "7FFF00FF");
             }
         }
 
@@ -8429,7 +8429,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("暴击率")+"+" + (rose_Cri - rose_Proprety.Rose_Cri) * 100 + "%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("暴击率")+"+" + (rose_Cri - rose_Proprety.Rose_Cri) * 100 + "%", "7FFF00FF");
             }
         }
 
@@ -8448,7 +8448,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("命中率") + "+" + (rose_Hit - rose_Proprety.Rose_Hit) * 100 + "%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("命中率") + "+" + (rose_Hit - rose_Proprety.Rose_Hit) * 100 + "%", "7FFF00FF");
             }
         }
 
@@ -8467,7 +8467,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("闪避率")+"+" + (rose_Dodge - rose_Proprety.Rose_Dodge) * 100 + "%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("闪避率")+"+" + (rose_Dodge - rose_Proprety.Rose_Dodge) * 100 + "%", "7FFF00FF");
             }
         }
 			
@@ -8485,7 +8485,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("格挡值")+"+" + (rose_GeDangValue - rose_Proprety.Rose_GeDangValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("格挡值")+"+" + (rose_GeDangValue - rose_Proprety.Rose_GeDangValue), "7FFF00FF");
             }
         }
 		
@@ -8505,7 +8505,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("重击概率")+"+" + (rose_ZhongJiPro - rose_Proprety.Rose_ZhongJiPro) * 100 + "%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("重击概率")+"+" + (rose_ZhongJiPro - rose_Proprety.Rose_ZhongJiPro) * 100 + "%", "7FFF00FF");
             }
         }
 
@@ -8524,7 +8524,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("重击附加伤害")+"+" + (rose_ZhongJiValue - rose_Proprety.Rose_ZhongJiValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("重击附加伤害")+"+" + (rose_ZhongJiValue - rose_Proprety.Rose_ZhongJiValue), "7FFF00FF");
             }
         }
 
@@ -8543,7 +8543,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("攻击附加伤害")+"+" + (rose_GuDingValue - rose_Proprety.Rose_GuDingValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("攻击附加伤害")+"+" + (rose_GuDingValue - rose_Proprety.Rose_GuDingValue), "7FFF00FF");
             }
         }
 
@@ -8562,7 +8562,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("忽视目标防御值")+"+" + (rose_HuShiDefValue - rose_Proprety.Rose_HuShiDefValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("忽视目标防御值")+"+" + (rose_HuShiDefValue - rose_Proprety.Rose_HuShiDefValue), "7FFF00FF");
             }
         }
 
@@ -8581,7 +8581,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("忽视目标魔防值")+"+" + (rose_HuShiAdfValue - rose_Proprety.Rose_HuShiAdfValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("忽视目标魔防值")+"+" + (rose_HuShiAdfValue - rose_Proprety.Rose_HuShiAdfValue), "7FFF00FF");
             }
         }
 
@@ -8600,7 +8600,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("忽视目标防御值")+"+" + (rose_HuShiDefValuePro - rose_Proprety.Rose_HuShiDefValuePro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("忽视目标防御值")+"+" + (rose_HuShiDefValuePro - rose_Proprety.Rose_HuShiDefValuePro), "7FFF00FF");
             }
         }
 
@@ -8619,7 +8619,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("忽视目标魔防值")+"+" + (rose_HuShiAdfValuePro - rose_Proprety.Rose_HuShiAdfValuePro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("忽视目标魔防值")+"+" + (rose_HuShiAdfValuePro - rose_Proprety.Rose_HuShiAdfValuePro), "7FFF00FF");
             }
         }
 
@@ -8638,7 +8638,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("吸血")+"+" + (rose_XiXuePro - rose_Proprety.Rose_XiXuePro) * 100 + "%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("吸血")+"+" + (rose_XiXuePro - rose_Proprety.Rose_XiXuePro) * 100 + "%", "7FFF00FF");
             }
         }
 
@@ -8657,7 +8657,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("物理免伤提升") + (rose_DefAdd - rose_Proprety.Rose_DefAdd) * 100 + "%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("物理免伤提升") + (rose_DefAdd - rose_Proprety.Rose_DefAdd) * 100 + "%", "7FFF00FF");
             }
         }
 
@@ -8675,7 +8675,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("魔法免伤提升") + (rose_AdfAdd - rose_Proprety.Rose_AdfAdd) * 100 + "%", "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("魔法免伤提升") + (rose_AdfAdd - rose_Proprety.Rose_AdfAdd) * 100 + "%", "7FFF00FF");
             }
         }
 		//结算出结果后进行属性赋值
@@ -8724,7 +8724,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("韧性")+ "+" + (rose_Resilience - rose_Proprety.Rose_Res), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("韧性")+ "+" + (rose_Resilience - rose_Proprety.Rose_Res), "7FFF00FF");
             }
         }
 
@@ -8743,7 +8743,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("法术反击")+"+" + (rose_MagicRebound - rose_Proprety.Rose_MagicRebound), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("法术反击")+"+" + (rose_MagicRebound - rose_Proprety.Rose_MagicRebound), "7FFF00FF");
             }
         }
 
@@ -8762,7 +8762,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("攻击反击")+"+" + (rose_ActRebound - rose_Proprety.Rose_ActRebound), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("攻击反击")+"+" + (rose_ActRebound - rose_Proprety.Rose_ActRebound), "7FFF00FF");
             }
         }
 
@@ -8781,7 +8781,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("回血值")+"+" + (rose_HealHpValue - rose_Proprety.Rose_HealHpValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("回血值")+"+" + (rose_HealHpValue - rose_Proprety.Rose_HealHpValue), "7FFF00FF");
             }
         }
 
@@ -8800,7 +8800,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("回血百分比")+"+" + (rose_HealHpPro - rose_Proprety.Rose_HealHpPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("回血百分比")+"+" + (rose_HealHpPro - rose_Proprety.Rose_HealHpPro), "7FFF00FF");
             }
         }
 
@@ -8826,7 +8826,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("战斗回血百分比")+"+" + (rose_HealHpFightPro - rose_Proprety.Rose_HealHpFightPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("战斗回血百分比")+"+" + (rose_HealHpFightPro - rose_Proprety.Rose_HealHpFightPro), "7FFF00FF");
             }
         }
 
@@ -8845,7 +8845,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("光抗性")+"+" + (rose_Resistance_1 - rose_Proprety.Rose_Resistance_1), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("光抗性")+"+" + (rose_Resistance_1 - rose_Proprety.Rose_Resistance_1), "7FFF00FF");
             }
         }
 
@@ -8864,7 +8864,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("暗抗性")+"+" + (rose_Resistance_2 - rose_Proprety.Rose_Resistance_2), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("暗抗性")+"+" + (rose_Resistance_2 - rose_Proprety.Rose_Resistance_2), "7FFF00FF");
             }
         }
 
@@ -8883,7 +8883,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("火抗性")+"+" + (rose_Resistance_3 - rose_Proprety.Rose_Resistance_3), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("火抗性")+"+" + (rose_Resistance_3 - rose_Proprety.Rose_Resistance_3), "7FFF00FF");
             }
         }
 
@@ -8902,7 +8902,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("水抗性")+"+" + (rose_Resistance_4 - rose_Proprety.Rose_Resistance_4), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("水抗性")+"+" + (rose_Resistance_4 - rose_Proprety.Rose_Resistance_4), "7FFF00FF");
             }
         }
 
@@ -8921,7 +8921,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("电抗性")+"+" + (rose_Resistance_5 - rose_Proprety.Rose_Resistance_5), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("电抗性")+"+" + (rose_Resistance_5 - rose_Proprety.Rose_Resistance_5), "7FFF00FF");
             }
         }
 
@@ -8940,7 +8940,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("野兽攻击抗性")+"+" + (rose_RaceResistance_1 - rose_Proprety.Rose_RaceResistance_1), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("野兽攻击抗性")+"+" + (rose_RaceResistance_1 - rose_Proprety.Rose_RaceResistance_1), "7FFF00FF");
             }
         }
 
@@ -8959,7 +8959,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("人形攻击抗性")+"+" + (rose_RaceResistance_2 - rose_Proprety.Rose_RaceResistance_2), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("人形攻击抗性")+"+" + (rose_RaceResistance_2 - rose_Proprety.Rose_RaceResistance_2), "7FFF00FF");
             }
         }
 
@@ -8978,7 +8978,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("恶魔攻击抗性")+"+" + (rose_RaceResistance_3 - rose_Proprety.Rose_RaceResistance_3), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("恶魔攻击抗性")+"+" + (rose_RaceResistance_3 - rose_Proprety.Rose_RaceResistance_3), "7FFF00FF");
             }
         }
 
@@ -8997,7 +8997,7 @@ public class Function_Rose {
 		{
 			if (ifHint)
 			{
-				Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("野兽攻击伤害")+"+" + (rose_RaceDamge_1 - rose_Proprety.Rose_RaceDamge_1), "7FFF00FF");
+				Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("野兽攻击伤害")+"+" + (rose_RaceDamge_1 - rose_Proprety.Rose_RaceDamge_1), "7FFF00FF");
 			}
 		}
 
@@ -9016,7 +9016,7 @@ public class Function_Rose {
 		{
 			if (ifHint)
 			{
-				Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("人形攻击伤害")+"+" + (rose_RaceDamge_2 - rose_Proprety.Rose_RaceDamge_2), "7FFF00FF");
+				Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("人形攻击伤害")+"+" + (rose_RaceDamge_2 - rose_Proprety.Rose_RaceDamge_2), "7FFF00FF");
 			}
 		}
 
@@ -9036,7 +9036,7 @@ public class Function_Rose {
 		{
 			if (ifHint)
 			{
-				Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("恶魔攻击伤害")+"+" + (rose_RaceDamge_3 - rose_Proprety.Rose_RaceDamge_3), "7FFF00FF");
+				Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("恶魔攻击伤害")+"+" + (rose_RaceDamge_3 - rose_Proprety.Rose_RaceDamge_3), "7FFF00FF");
 			}
 		}
 
@@ -9056,7 +9056,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("BOSS伤害加成")+"+" + (rose_Boss_ActAdd - rose_Proprety.Rose_Boss_ActAdd), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("BOSS伤害加成")+"+" + (rose_Boss_ActAdd - rose_Proprety.Rose_Boss_ActAdd), "7FFF00FF");
             }
         }
 
@@ -9076,7 +9076,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("Boss技能攻击加成")+"+" + (rose_Boss_SkillAdd - rose_Proprety.Rose_Boss_SkillAdd), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("Boss技能攻击加成")+"+" + (rose_Boss_SkillAdd - rose_Proprety.Rose_Boss_SkillAdd), "7FFF00FF");
             }
         }
 
@@ -9096,7 +9096,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("受到Boss普通攻击减免")+"+" + (rose_Boss_ActHitCost - rose_Proprety.Rose_Boss_ActHitCost), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("受到Boss普通攻击减免")+"+" + (rose_Boss_ActHitCost - rose_Proprety.Rose_Boss_ActHitCost), "7FFF00FF");
             }
         }
 
@@ -9116,7 +9116,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("受到Boss技能攻击减免")+"+" + (rose_Boss_SkillHitCost - rose_Proprety.Rose_Boss_SkillHitCost), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("受到Boss技能攻击减免")+"+" + (rose_Boss_SkillHitCost - rose_Proprety.Rose_Boss_SkillHitCost), "7FFF00FF");
             }
         }
 
@@ -9136,7 +9136,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("宠物攻击加成")+"+" + (rose_PetActAdd - rose_Proprety.Rose_PetActAdd), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("宠物攻击加成")+"+" + (rose_PetActAdd - rose_Proprety.Rose_PetActAdd), "7FFF00FF");
             }
         }
 
@@ -9156,7 +9156,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("宠物受伤减免")+"+" + (rose_PetActHitCost - rose_Proprety.Rose_PetActHitCost), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("宠物受伤减免")+"+" + (rose_PetActHitCost - rose_Proprety.Rose_PetActHitCost), "7FFF00FF");
             }
         }
 
@@ -9177,7 +9177,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("技能冷却时间缩减")+"+" + (rose_SkillCDTimePro - rose_Proprety.Rose_SkillCDTimePro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("技能冷却时间缩减")+"+" + (rose_SkillCDTimePro - rose_Proprety.Rose_SkillCDTimePro), "7FFF00FF");
             }
         }
 
@@ -9198,7 +9198,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("自身buff效果延长")+"+" + (rose_BuffTimeAddPro - rose_Proprety.Rose_BuffTimeAddPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("自身buff效果延长")+"+" + (rose_BuffTimeAddPro - rose_Proprety.Rose_BuffTimeAddPro), "7FFF00FF");
             }
         }
 
@@ -9220,7 +9220,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("Debuff时间缩短")+"+" + (rose_DeBuffTimeCostPro - rose_Proprety.Rose_DeBuffTimeCostPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("Debuff时间缩短")+"+" + (rose_DeBuffTimeCostPro - rose_Proprety.Rose_DeBuffTimeCostPro), "7FFF00FF");
             }
         }
 
@@ -9241,7 +9241,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("闪避恢复血量")+"+" + (rose_DodgeAddHpPro - rose_Proprety.Rose_DodgeAddHpPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("闪避恢复血量")+"+" + (rose_DodgeAddHpPro - rose_Proprety.Rose_DodgeAddHpPro), "7FFF00FF");
             }
         }
 
@@ -9265,7 +9265,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("经验加成")+"+" + (rose_Exp_AddPro - rose_Proprety.Rose_Exp_AddPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("经验加成")+"+" + (rose_Exp_AddPro - rose_Proprety.Rose_Exp_AddPro), "7FFF00FF");
             }
         }
 
@@ -9281,7 +9281,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("经验加成")+"+" + (rose_Exp_AddValue - rose_Proprety.Rose_Exp_AddValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("经验加成")+"+" + (rose_Exp_AddValue - rose_Proprety.Rose_Exp_AddValue), "7FFF00FF");
             }
         }
 
@@ -9298,7 +9298,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("金币加成")+"+" + (rose_Gold_AddPro - rose_Proprety.Rose_Gold_AddPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("金币加成")+"+" + (rose_Gold_AddPro - rose_Proprety.Rose_Gold_AddPro), "7FFF00FF");
             }
         }
 
@@ -9314,7 +9314,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("金币加成")+"+" + (rose_Gold_AddValue - rose_Proprety.Rose_Gold_AddValue), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("金币加成")+"+" + (rose_Gold_AddValue - rose_Proprety.Rose_Gold_AddValue), "7FFF00FF");
             }
         }
 
@@ -9330,7 +9330,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("洗炼极品掉落") + "+" + (rose_Blessing_AddPro - rose_Proprety.Rose_Blessing_AddPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("洗炼极品掉落") + "+" + (rose_Blessing_AddPro - rose_Proprety.Rose_Blessing_AddPro), "7FFF00FF");
             }
         }
 
@@ -9346,7 +9346,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("装备隐藏属性出现概率")+"+" + (rose_HidePro_AddPro - rose_Proprety.Rose_HidePro_AddPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("装备隐藏属性出现概率")+"+" + (rose_HidePro_AddPro - rose_Proprety.Rose_HidePro_AddPro), "7FFF00FF");
             }
         }
 
@@ -9362,7 +9362,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("装备上的宝石槽位出现概率") +"+" + (rose_GemHole_AddPro - rose_Proprety.Rose_GemHole_AddPro), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("装备上的宝石槽位出现概率") +"+" + (rose_GemHole_AddPro - rose_Proprety.Rose_GemHole_AddPro), "7FFF00FF");
             }
         }
 
@@ -9378,7 +9378,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("药剂熟练度增加")+"+" + (rose_YaoJiValue - rose_Proprety.Rose_YaoJiShuLian_Value), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("药剂熟练度增加")+"+" + (rose_YaoJiValue - rose_Proprety.Rose_YaoJiShuLian_Value), "7FFF00FF");
             }
         }
 
@@ -9394,7 +9394,7 @@ public class Function_Rose {
         {
             if (ifHint)
             {
-                Game_PublicClassVar.Get_function_UI.GameGirdHint(Game_PublicClassVar.gameSettingLanguge.LoadLocalization("锻造熟练度增加")+"+"+ (rose_DuanZaoValue - rose_Proprety.Rose_DuanZuaoShuLian_Value), "7FFF00FF");
+                Game_PublicClassVar.Get_function_UI.GameGirdHint(LanguageManager.Instance.LoadLocalization("锻造熟练度增加")+"+"+ (rose_DuanZaoValue - rose_Proprety.Rose_DuanZuaoShuLian_Value), "7FFF00FF");
             }
         }
 
@@ -9829,7 +9829,7 @@ public class Function_Rose {
 
                 string[] chapterName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SceneIDSet", "ID", pve2[0], "Chapter_Template").Split(';');
                 string chapterSonName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ChapterSonName", "ID", chapterName[int.Parse(pve2[1]) - 1], "ChapterSon_Template");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_425");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_425");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + chapterSonName);
                 //Game_PublicClassVar.Get_function_UI.GameHint("新的章节开启成功!!!  " + chapterSonName);
                 return;
@@ -9849,7 +9849,7 @@ public class Function_Rose {
                 string[] chapterName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SceneIDSet", "ID", pve2[0], "Chapter_Template").Split(';');
                 //Debug.Log("chapterName[int.Parse(pve2[1])] = " + chapterName[int.Parse(pve2[1])]);
                 string chapterSonName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ChapterSonName", "ID", chapterName[int.Parse(pve2[1])-1], "ChapterSon_Template");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_426");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_426");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + chapterSonName);
                 //Game_PublicClassVar.Get_function_UI.GameHint("关卡快捷传送激活成功!!!  " + chapterSonName);
 
@@ -10008,8 +10008,8 @@ public class Function_Rose {
 
                 //广播
                 case "0":
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_422");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_422");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + dropNum.ToString() + langStrHint_2);
                     //Game_PublicClassVar.Get_function_UI.GameHint("你获得" + dropNum.ToString() + "金币");
                     break;
@@ -10082,8 +10082,8 @@ public class Function_Rose {
                         {
                             //广播
                             case "0":
-                                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
-                                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_427");
+                                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
+                                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_427");
                                 Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 + dropNum.ToString() + langStrHint_2 + itemName);
                                 //Game_PublicClassVar.Get_function_UI.GameHint("你获得" + dropNum.ToString() + "个" + itemName);
                                 break;
@@ -10119,8 +10119,8 @@ public class Function_Rose {
                     {
                         //广播
                         case "0":
-                            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
-                            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_427");
+                            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
+                            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_427");
                             Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 + dropNum.ToString() + langStrHint_2 + itemName);
                             //Game_PublicClassVar.Get_function_UI.GameHint("你获得" + dropNum.ToString() + "个" + itemName);
                             break;
@@ -10221,7 +10221,7 @@ public class Function_Rose {
         if (Game_PublicClassVar.Get_game_PositionVar.EquipXiLianStatus)
         {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_340");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_340");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("洗练装备时禁止整理背包！");
             return;
@@ -10989,7 +10989,7 @@ public class Function_Rose {
         //检索移动不成功的条件
         if (Game_PublicClassVar.Get_game_PositionVar.EquipXiLianStatus)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_340");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_340");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("洗练装备时禁止整理背包！");
             return;
@@ -11146,7 +11146,7 @@ public class Function_Rose {
         //检索移动不成功的条件
         if (Game_PublicClassVar.Get_game_PositionVar.EquipXiLianStatus)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_341");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_341");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("洗练装备时禁止整理仓库！");
             return;
@@ -11284,7 +11284,7 @@ public class Function_Rose {
         //检索移动不成功的条件
         if (Game_PublicClassVar.Get_game_PositionVar.EquipXiLianStatus)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_341");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_341");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("洗练装备时禁止整理仓库！");
             return;
@@ -13834,7 +13834,7 @@ public class Function_Rose {
                 }
 
                 string shouJiItemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", itemID, "Item_Template");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_342");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_342");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(shouJiItemName + langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint(shouJiItemName + "激活收藏道具成功！");
                 //Debug.Log("startListStr = " + startListStr);
@@ -14125,7 +14125,7 @@ public class Function_Rose {
         //判定当前宠物是否出战
         if(roseStatus.RosePetObj[rosePetID-1] != null){
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_304");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_304");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前宠物已经出战");
             return;
@@ -14154,7 +14154,7 @@ public class Function_Rose {
 
             if (ifSpeak) {
 
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_428");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_428");
                 Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1);
                 //Game_PublicClassVar.Get_function_UI.GameHint("召唤宠物成功！");
 
@@ -14197,7 +14197,7 @@ public class Function_Rose {
                 Game_PublicClassVar.Get_function_Skill.SkillBuff("90043011", nowChuZhanObj);
                 if (ifSpeak)
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_305");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_305");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("召唤宠物成功!激活15秒无敌时间!1分钟内只能激活一次!");
                 }
@@ -14916,7 +14916,7 @@ public class Function_Rose {
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("ChengHaoIDSet", chengHaoIDSet,"ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_306");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_306");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("添加称号成功！请到设置界面查看称号列表并使用");
         }
@@ -15028,7 +15028,7 @@ public class Function_Rose {
             //提示激活
             string jinglingName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", jingLingID, "Spirit_Template");
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_307");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_307");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + jinglingName);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你!激活精灵:" + jinglingName);
 
@@ -15091,7 +15091,7 @@ public class Function_Rose {
                 Game_PublicClassVar.Get_function_Skill.UpdataEquipSkillID();
 
                 //提示
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_168");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_168");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("激活精灵属性成功!");
 
@@ -15102,7 +15102,7 @@ public class Function_Rose {
 
             }
             else {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_169");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_169");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("被动精灵无法激活!");
                 return false;
@@ -15110,7 +15110,7 @@ public class Function_Rose {
 
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_170");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_170");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("此精灵暂未拥有!");
             return false;
@@ -15601,7 +15601,7 @@ public class Function_Rose {
                 //ui_rmbStore.ClearnPayValue();       //清理支付值
             }
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_171");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_171");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你,支付成功!钻石已成功到账,请查收");
@@ -15756,11 +15756,11 @@ public class Function_Rose {
                 break;
         }
 
-        hintTitleStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(hintTitleStr);
+        hintTitleStr = LanguageManager.Instance.LoadLocalization(hintTitleStr);
 
-        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_174");
-        string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_175");
-        string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_176");
+        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_174");
+        string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_175");
+        string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("hint_176");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + addValue + langStrHint_2 + hintTitleStr + langStrHint_3);
 
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("增加" + addValue + "点" + hintTitleStr + "熟练度!");
@@ -15808,8 +15808,8 @@ public class Function_Rose {
                     string needXiLianValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NeedXiLianValue", "ID", nextXiLianDaShiID, "EquipXiLianDaShi_Template");
                     if (nowValue >= int.Parse(needXiLianValue)) {
 
-                        string langStrHint_11 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_178");
-                        string langStrHint_22 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_179");
+                        string langStrHint_11 = LanguageManager.Instance.LoadLocalizationHint("hint_178");
+                        string langStrHint_22 = LanguageManager.Instance.LoadLocalizationHint("hint_179");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + hintTitleStr + langStrHint_2);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你!激活了新的"+ hintTitleStr + "试炼等级！");
 
@@ -15978,7 +15978,7 @@ public class Function_Rose {
 
         }
 
-        name = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(name);
+        name = LanguageManager.Instance.LoadLocalization(name);
 
         return name;
 
@@ -17112,3 +17112,4 @@ public class Function_Rose {
     }
 
 }
+

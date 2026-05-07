@@ -51,9 +51,9 @@ public class UI_GameGongGao : MonoBehaviour {
 
         hintStr = System.Text.RegularExpressions.Regex.Unescape(hintStr);       //有“/n”的处理为换行符
 
-        hintTitle = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(hintTitle);
-        hint_TrueStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(hint_TrueStr);
-        hint_FalseStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(hint_FalseStr);
+        hintTitle = LanguageManager.Instance.LoadLocalization(hintTitle);
+        hint_TrueStr = LanguageManager.Instance.LoadLocalization(hint_TrueStr);
+        hint_FalseStr = LanguageManager.Instance.LoadLocalization(hint_FalseStr);
 
         //显示提示信息
         Obj_HintTitleName.GetComponent<Text>().text = hintTitle;

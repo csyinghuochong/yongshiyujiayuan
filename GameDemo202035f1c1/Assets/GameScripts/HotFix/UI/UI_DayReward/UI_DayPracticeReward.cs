@@ -157,14 +157,14 @@ public class UI_DayPracticeReward : MonoBehaviour {
                 Game_PublicClassVar.Get_function_Country.UpdataTaskValue("1", "3", "1");
 
             }else{
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_139");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_139");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请等待倒计时结束后领取！");
                 //Debug.Log("请等待倒计时结束后领取！");
             }
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_140");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_140");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日已达领取次数已达上限,请明天再来领取！");
             //Debug.Log("今日已达领取次数已达上限,请明天再来领取！");
@@ -176,7 +176,7 @@ public class UI_DayPracticeReward : MonoBehaviour {
     {
         int Rmb = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID","5","GameMainValue"));
         if (!Game_PublicClassVar.Get_function_Rose.CostReward("2", Rmb.ToString())) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_86");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_86");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("钻石不足！");
             return;
@@ -227,7 +227,7 @@ public class UI_DayPracticeReward : MonoBehaviour {
             }
             else
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_141");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_141");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请等待倒计时结束后领取！");
                 //Debug.Log("请等待倒计时结束后领取！");
@@ -235,7 +235,7 @@ public class UI_DayPracticeReward : MonoBehaviour {
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_142");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_142");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日已达领取次数已达上限,请明天再来领取！");
             //Debug.Log("今日已达领取次数已达上限,请明天再来领取！");
@@ -250,7 +250,7 @@ public class UI_DayPracticeReward : MonoBehaviour {
         int Rmb = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "10", "GameMainValue"));
         if (!Game_PublicClassVar.Get_function_Rose.CostReward("2", Rmb.ToString()))
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_86");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_86");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("钻石不足！");
             return;

@@ -54,7 +54,7 @@ public class UI_ChouKaNumRewardList : MonoBehaviour {
         else {
             Obj_ChouKaRewardLingQuBtn.SetActive(true);
         }
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("探宝次数达到");
+        string langStr = LanguageManager.Instance.LoadLocalization("探宝次数达到");
         Reward_Name = langStr;
 
         switch (ChouKaRewardListID) {
@@ -139,7 +139,7 @@ public class UI_ChouKaNumRewardList : MonoBehaviour {
         string langStr;
         //判断自身道具格子
         if (Game_PublicClassVar.Get_function_Rose.BagNullNum() < 1) {
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_84");
+            langStr = LanguageManager.Instance.LoadLocalization("hint_84");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }
@@ -152,7 +152,7 @@ public class UI_ChouKaNumRewardList : MonoBehaviour {
             dayChouKaNum = "0";
         }
         if (int.Parse(dayChouKaNum) < NeedChouKaNum) {
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_437");
+            langStr = LanguageManager.Instance.LoadLocalization("hint_437");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }
@@ -163,7 +163,7 @@ public class UI_ChouKaNumRewardList : MonoBehaviour {
 
         //随机钻石
         int addValue = Reward_Min + (int)((Reward_Max - Reward_Min) * Random.value);
-        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_438");
+        langStr = LanguageManager.Instance.LoadLocalization("hint_438");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr + addValue);
         Game_PublicClassVar.Get_function_Rose.SendReward("2", addValue.ToString(), "54");
 

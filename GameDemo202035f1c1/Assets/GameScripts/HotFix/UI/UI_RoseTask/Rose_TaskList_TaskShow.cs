@@ -32,7 +32,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
 
         TaskColor_Complete = new Color((float)25 / 255, (float)150 / 255, (float)30 / 255, 1.0f);
         TaskColor_NoComplete = new Color((float)86 / 255, (float)59 / 255, (float)33 / 255, 1.0f);
-        string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("已完成");
+        string langstr = LanguageManager.Instance.LoadLocalization("已完成");
         CompleteTaskAddStr = " " + "(" + langstr + ")";
 
         updateTaskData();
@@ -56,7 +56,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
 
         Debug.Log("更新任务1111");
 
-        string fuhelangStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("找到符合要求的装备");
+        string fuhelangStr = LanguageManager.Instance.LoadLocalization("找到符合要求的装备");
 
         
 
@@ -128,7 +128,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
                     
                         //获取杀怪名称
 						string monsterName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MonsterName", "ID", TaskTarget1, "Monster_Template");
-                        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("击杀");
+                        string langStr = LanguageManager.Instance.LoadLocalization("击杀");
                         //改变字体颜色
                         if (int.Parse(TaskValuePro1) >= int.Parse(TargetValue1))
                         {
@@ -148,7 +148,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
 				case "2":
 					//获取道具名称
 					string itemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", TaskTarget1, "Item_Template");
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("获得");
+                    langStr = LanguageManager.Instance.LoadLocalization("获得");
                     //改变字体颜色
                     if (int.Parse(TaskValuePro1) >= int.Parse(TargetValue1))
 					{
@@ -199,7 +199,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
 					}
 
                     //显示当前获取的道具
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级到达");
+                    langStr = LanguageManager.Instance.LoadLocalization("等级到达");
                     UI_TaskTarget_1.GetComponent<Text>().text = langStr + ": " + TaskValuePro1 + " / " + TargetValue1;
 					
 					break;
@@ -242,7 +242,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
                             UI_TaskTarget_1.GetComponent<Text>().color = TaskColor_NoComplete;
                         }
 
-                        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("击杀BOSS级别怪物");
+                        langStr = LanguageManager.Instance.LoadLocalization("击杀BOSS级别怪物");
                         //显示当前获取的道具
                         UI_TaskTarget_1.GetComponent<Text>().text = langStr + ": " + TaskValuePro1 + " / " + TargetValue1;
 
@@ -264,8 +264,8 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
                             UI_TaskTarget_1.GetComponent<Text>().color = TaskColor_NoComplete;
                         }
 
-                        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("抓获");
-                        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("宠物");
+                        string langStr_1 = LanguageManager.Instance.LoadLocalization("抓获");
+                        string langStr_2 = LanguageManager.Instance.LoadLocalization("宠物");
                         //显示当前获取的道具
                         UI_TaskTarget_1.GetComponent<Text>().text = langStr_1 + petName + langStr_2 + ": " + TaskValuePro1 + " / " + TargetValue1;
 
@@ -353,7 +353,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
                 UI_TaskTarget_1.GetComponent<Text>().color = TaskColor_Complete;       //这里不能用上面的颜色初始化变量,要不会变成透明的
                 
                 //显示当前获取的道具
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("寻找");
+                string langStr = LanguageManager.Instance.LoadLocalization("寻找");
                 UI_TaskTarget_1.GetComponent<Text>().text = langStr + "：" + npcName;
                 //Debug.Log("sdsdsdsdsdsd,nowTaskID2222 = " + TaskColor_NoComplete);
             }
@@ -383,7 +383,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
 
                         //获取道具名称
                         string itemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", TaskTarget2, "Item_Template");
-                        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("获得");
+                        string langStr = LanguageManager.Instance.LoadLocalization("获得");
                         //改变字体颜色
                         if (int.Parse(TaskValuePro2) >= int.Parse(TargetValue2))
                         {
@@ -435,7 +435,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
                 //获取目标值
                 string TaskValuePro3 = Game_PublicClassVar.Get_function_Task.TaskReturnValue(nowTaskID, "3");
                 string TargetValue3 = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TargetValue3", "ID", nowTaskID, "Task_Template");
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("获得");
+                string langStr = LanguageManager.Instance.LoadLocalization("获得");
                 //判定当前任务目标是获得道具还是杀怪（根据ID规则判定）
 
                 switch (TaskTarget1[0].ToString())
@@ -490,7 +490,7 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
                 //获取寻找人的名称
                 string completeNpcID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("CompleteNpcID", "ID", nowTaskID, "Task_Template");
                 string npcName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NpcName", "ID", completeNpcID, "Npc_Template");
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("寻找");
+                string langStr = LanguageManager.Instance.LoadLocalization("寻找");
                 UI_TaskTarget_3.GetComponent<Text>().text = langStr + "：" + npcName;
             }
 
@@ -522,13 +522,13 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
 
 			if (exp != "0") 
 			{
-                string langStr = Game_PublicClassVar.gameSettingLanguge.LoadLocalization("经验");
+                string langStr = LanguageManager.Instance.LoadLocalization("经验");
 				UI_TaskTrophy_Exp.GetComponent<Text>().text = langStr + "+" +exp;
 			}
 
 			if (money != "0")
 			{
-                string langStr = Game_PublicClassVar.gameSettingLanguge.LoadLocalization("金币");
+                string langStr = LanguageManager.Instance.LoadLocalization("金币");
                 UI_TaskTrophy_Money.GetComponent<Text>().text = langStr + "+" + money;
 			}
 
@@ -607,3 +607,4 @@ public class Rose_TaskList_TaskShow : MonoBehaviour {
 		Game_PublicClassVar.Get_game_PositionVar.Obj_UI_FunctionOpen.GetComponent<UI_FunctionOpen> ().RoseTask_Status = false;
     }
 }
+

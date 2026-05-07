@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,7 +28,7 @@ public class UI_ChengJiuHintObj : MonoBehaviour {
         string rewardNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("RewardNum", "ID", ChengJiuID, "ChengJiu_Template");
         string icon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", ChengJiuID, "ChengJiu_Template");
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("成就");
+        string langStr = LanguageManager.Instance.LoadLocalization("成就");
         Obj_ChengJiuName.GetComponent<Text>().text = langStr + ":" + chengJiuName;
         Obj_ChengJiuDes.GetComponent<Text>().text = chengJiuDes;
 

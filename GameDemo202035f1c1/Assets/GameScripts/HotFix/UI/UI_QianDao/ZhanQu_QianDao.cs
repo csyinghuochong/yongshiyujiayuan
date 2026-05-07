@@ -75,7 +75,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
             //今日已经领取
             if (int.Parse(qianDaoID) > int.Parse(qianDaoNum_Com) + 10000)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_246");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_246");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("到当天指定天数才可查看奖励喔!");
                 return;
@@ -84,7 +84,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
         else {
             if (int.Parse(qianDaoID) > int.Parse(qianDaoNum_Com) + 1 + 10000)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_246");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_246");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("到当天指定天数才可查看奖励喔!");
                 return;
@@ -176,7 +176,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
 
         ObscuredString qianDaoNum_Com_Day = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("QianDaoNum_Com_Day", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (qianDaoNum_Com_Day == "1") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_247");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_247");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日签到奖励已领取,请明日再来!");
             return;
@@ -188,7 +188,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
         //ObscuredString qianDaoNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("QianDaoNum_Pay", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         
         if (qianDaoDay!= (int.Parse(qianDaoNum)+1).ToString()) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_248");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_248");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请按顺领取签到奖励!");
             return;
@@ -228,7 +228,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
                 }
                 else {
 
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_249");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_249");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包剩余空间不足!");
                 }
@@ -237,7 +237,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
         
         else {
             //当前已经签到
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_250");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_250");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("签到奖励已经领取!");
         }
@@ -256,7 +256,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
         ObscuredString qianDaoNum_Pay_Day = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("QianDaoNum_Pay_Day", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (qianDaoNum_Pay_Day == "1")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_251");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_251");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日赞助签到奖励已领取,请明日再来!");
             return;
@@ -265,7 +265,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
         //获取今日是否付费
         ObscuredString dayPayValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("DayPayValue", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (dayPayValue == ""|| dayPayValue == "0") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_252");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_252");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("领取失败,每天赞助任意金额即可领取此奖励!");
             return;
@@ -337,7 +337,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
             else
                 {
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_253");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_253");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包剩余空间不足!");
             }
@@ -346,7 +346,7 @@ public class ZhanQu_QianDao : MonoBehaviour {
         else
         {
             //当前已经签到
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_254");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_254");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("签到奖励已经领取!");
         }

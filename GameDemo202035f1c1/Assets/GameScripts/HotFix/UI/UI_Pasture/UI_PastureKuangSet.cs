@@ -42,7 +42,7 @@ public class UI_PastureKuangSet : MonoBehaviour
             petTiaoZhanNum = "0";
         }
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("今日掠夺次数");
+        string langStr = LanguageManager.Instance.LoadLocalization("今日掠夺次数");
         Obj_TiaoZhanNumStr.GetComponent<Text>().text = langStr + ":" + petTiaoZhanNum + "/" + "5";
 
         //初始化挑战列表
@@ -68,7 +68,7 @@ public class UI_PastureKuangSet : MonoBehaviour
         TeamName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetTiaoZhanTeamName", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (TeamName == "")
         {
-            TeamName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData") + Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的队伍"); ;
+            TeamName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData") + LanguageManager.Instance.LoadLocalization("的队伍"); ;
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("PetTiaoZhanTeamName", TeamName, "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseDayReward");
         }

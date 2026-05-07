@@ -54,7 +54,7 @@ public class UI_PetZhaoHuanSet : MonoBehaviour {
         }
 
         if (showPetNum == 0) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_298");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_298");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前没有宠物！");
             Destroy(this.gameObject);

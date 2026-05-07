@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using Weijing;
@@ -33,7 +33,7 @@ public class DoorWay : MonoBehaviour {
         NextMapName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MapID", "ID", DoorWayID, "SceneTransfer_Template");
         //NextMapPosition = "RosePosition_1";
         NextMapPosition = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MapTransferName", "ID", DoorWayID, "SceneTransfer_Template");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("传送");
+        string langStr = LanguageManager.Instance.LoadLocalization("传送");
         doorWayName = langStr + ":" + Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TransferName", "ID", DoorWayID, "SceneTransfer_Template");
         doorWayNameUpdateStatus = true;
 	}
@@ -246,8 +246,8 @@ public class DoorWay : MonoBehaviour {
             }
             else {
 
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_317");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_3185");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_317");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_3185");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + sceneEnterLv + langStrHint_2);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint("击杀场景怪物提升至" + sceneEnterLv + "级后进入！");
             }

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -86,7 +86,7 @@ public class UI_RoseSkill : MonoBehaviour {
         }
 
         //初始化标签按钮
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language != "Chinese")
+        if (LanguageManager.Instance.CurrentLanguage != LanguageType.Chinese)
         {
             Obj_EquipBtnText_1.GetComponent<Text>().fontSize = 20;
             Obj_EquipBtnText_2.GetComponent<Text>().fontSize = 20;
@@ -129,7 +129,7 @@ public class UI_RoseSkill : MonoBehaviour {
         UpdataSkillData();  //更新技能数据
         //显示当前SP值
         string spvalue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillSP", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前技能点数");
+        string langStr = LanguageManager.Instance.LoadLocalization("当前技能点数");
         Obj_SpValue.GetComponent<Text>().text = langStr + "：" + spvalue;
 
 		//循环删除子控件
@@ -307,7 +307,7 @@ public class UI_RoseSkill : MonoBehaviour {
 
         GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
 
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_9");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_9");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, Btn_SkillReSP, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否花费600钻石重置SP值？", Btn_SkillReSP, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -329,7 +329,7 @@ public class UI_RoseSkill : MonoBehaviour {
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_86");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_86");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("钻石不足!");
         }
@@ -346,7 +346,7 @@ public class UI_RoseSkill : MonoBehaviour {
         if (type == "2") {
             if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() < 10)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_218");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_218");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("10级开启天赋系统");
                 return;
@@ -366,7 +366,7 @@ public class UI_RoseSkill : MonoBehaviour {
                     Game_PublicClassVar.Get_function_Task.jueXingJianCe();
                 }
                 else {
-                    //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_218");
+                    //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_218");
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("玩家升到60级后,完成觉醒系列职业任务后开启此系统");
                     return;

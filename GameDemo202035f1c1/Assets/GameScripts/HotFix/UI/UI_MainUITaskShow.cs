@@ -51,8 +51,8 @@ public class UI_MainUITaskShow : MonoBehaviour {
                         }
                         int shilianNum = int.Parse(shilianNumStr);
                         shilianNum = shilianNum + 1;
-                        string langStr_1 = Game_PublicClassVar.gameSettingLanguge.LoadLocalization("第");
-                        string langStr_2 = Game_PublicClassVar.gameSettingLanguge.LoadLocalization("环");
+                        string langStr_1 = LanguageManager.Instance.LoadLocalization("第");
+                        string langStr_2 = LanguageManager.Instance.LoadLocalization("环");
                         taskName = taskName + "(" + langStr_1 + shilianNum + langStr_2 + ")";
 						Obj_TaskType_2.SetActive (true);
                     }
@@ -67,8 +67,8 @@ public class UI_MainUITaskShow : MonoBehaviour {
                     }
                     int shiMenNum = int.Parse(shimenNumStr);
                     shiMenNum = shiMenNum + 1;
-                    string langStr_11 = Game_PublicClassVar.gameSettingLanguge.LoadLocalization("第");
-                    string langStr_22 = Game_PublicClassVar.gameSettingLanguge.LoadLocalization("环");
+                    string langStr_11 = LanguageManager.Instance.LoadLocalization("第");
+                    string langStr_22 = LanguageManager.Instance.LoadLocalization("环");
                     taskName = taskName + "(" + langStr_11 + shiMenNum + langStr_22 + ")";
 					Obj_TaskType_3.SetActive (true);
                     break;
@@ -102,7 +102,7 @@ public class UI_MainUITaskShow : MonoBehaviour {
                 //获取寻找人的名称
                 string completeNpcID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("CompleteNpcID", "ID", TaskID, "Task_Template");
                 string npcName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NpcName", "ID", completeNpcID, "Npc_Template");
-                string langStr = Game_PublicClassVar.gameSettingLanguge.LoadLocalization("寻找");
+                string langStr = LanguageManager.Instance.LoadLocalization("寻找");
                 taskText = langStr + "：" + npcName;
             }
 
@@ -149,21 +149,21 @@ public class UI_MainUITaskShow : MonoBehaviour {
             case "4":
                 targetText = "等级";
                 taskTargetName = "提升至";
-                taskTargetName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(taskTargetName);
+                taskTargetName = LanguageManager.Instance.LoadLocalization(taskTargetName);
                 break;
 
 
             case "5":
                 targetText = "击杀";
                 taskTargetName = "击杀任意怪物";
-                taskTargetName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(taskTargetName);
+                taskTargetName = LanguageManager.Instance.LoadLocalization(taskTargetName);
 
                 break;
 
             case "6":
                 targetText = "击杀BOSS";
                 taskTargetName = "击杀任意BOSS";
-                taskTargetName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(taskTargetName);
+                taskTargetName = LanguageManager.Instance.LoadLocalization(taskTargetName);
                 break;
 
             case "7":
@@ -181,29 +181,29 @@ public class UI_MainUITaskShow : MonoBehaviour {
                 {
                     //攻击
                     case "1":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("攻击大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("点的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "攻击大于" + EquipNeedValue + "点的装备";
                             break;
                     //物防
                     case "2":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("物防大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("物防大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("点的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "物防大于" + EquipNeedValue + "点的装备";
                             break;
                     //魔防
                     case "3":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔防大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("魔防大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("点的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "魔防大于" + EquipNeedValue + "点的装备";
                             break;
                     //等级
                     case "4":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("点的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "点的装备";
                             break;
@@ -219,36 +219,36 @@ public class UI_MainUITaskShow : MonoBehaviour {
                 {
                     //白色
                     case "1":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("白色品质的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("白色品质的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "白色品质的装备";
                         break;
                     //绿色
                     case "2":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("绿色品质的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("绿色品质的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "绿色品质的装备";
                         break;
                     //蓝色
                     case "3":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("蓝色品质的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("蓝色品质的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "蓝色品质的装备";
                         break;
                     //紫色
                     case "4":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("紫色品质的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("紫色品质的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "紫色品质的装备";
                         break;
                     //橙色
                     case "5":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("橙色品质的装备");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("橙色品质的装备");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "橙色品质的装备";
                         break;
@@ -263,78 +263,78 @@ public class UI_MainUITaskShow : MonoBehaviour {
                 switch (EquipNeedProType)
                 {
                     case "1":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的武器");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的武器");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的武器";
                         break;
 
                     case "2":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的衣服");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的衣服");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的衣服";
                         break;
 
                     case "3":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的护符");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的护符");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的护符";
                         break;
 
                     case "4":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的戒指");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的戒指");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的戒指";
                         break;
 
                     case "5":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的饰品");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的饰品");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的饰品";
                         break;
 
                     case "6":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的鞋子");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的鞋子");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的鞋子";
                         break;
 
                     case "7":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的裤子");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的裤子");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的裤子";
                         break;
 
                     case "8":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的腰带");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的腰带");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的腰带";
                         break;
 
                     case "9":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的手套");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的手套");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的手套";
                         break;
  
                     case "10":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的头盔");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的头盔");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的头盔";
                         break;
 
                     case "11":
-                            langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级大于");
-                            langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的项链");
+                            langstr_1 = LanguageManager.Instance.LoadLocalization("等级大于");
+                            langstr_2 = LanguageManager.Instance.LoadLocalization("的项链");
                             taskTargetName = langstr_1 + EquipNeedValue + langstr_2;
                             //taskTargetName = "等级大于" + EquipNeedValue + "的项链";
                         break;
@@ -344,7 +344,7 @@ public class UI_MainUITaskShow : MonoBehaviour {
 			}
 
             //本地化翻译
-            targetText = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(targetText);
+            targetText = LanguageManager.Instance.LoadLocalization(targetText);
 
 
 
@@ -355,13 +355,13 @@ public class UI_MainUITaskShow : MonoBehaviour {
                 //这里报错 因为达到要求后给与任务的是2个参数,所以这里报错
                 //Debug.Log("taskNowTargetValue = " + taskNowTargetValue + "taskTargetValue = " + taskTargetValue);
                 if (int.Parse(taskNowTargetValue) >= int.Parse(taskTargetValue)) {
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("已完成");
+                    string langStr = LanguageManager.Instance.LoadLocalization("已完成");
                     taskText = targetText + taskTargetName + "(" + taskNowTargetValue + "/" + taskTargetValue + ")" + "<color=#00ff00ff>" + "（"+ langStr + "）</color>" + "\n";
                 }
                 
                 if (targetType == "4")
                 {
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级");
+                    string langStr = LanguageManager.Instance.LoadLocalization("级");
                     taskText = targetText + taskTargetName + taskTargetValue + langStr + "\n";
                     /*
                     int roseLv = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Lv;
@@ -382,7 +382,7 @@ public class UI_MainUITaskShow : MonoBehaviour {
     public void Btn_TaskMove(){
 
         if (TaskID == "30100000" && Application.loadedLevelName == "EnterGame") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_151");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_151");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.function_UI.GameGirdHint_Front("请点击右下角 [开始冒险] 进入冒险地图完成任务!");
             return;

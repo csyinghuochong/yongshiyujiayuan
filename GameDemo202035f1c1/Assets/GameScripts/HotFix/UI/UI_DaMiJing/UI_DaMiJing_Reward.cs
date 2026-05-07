@@ -79,7 +79,7 @@ public class UI_DaMiJing_Reward : MonoBehaviour {
         if (cangbaoNum <= 0)
         {
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, Enter_DaMiJing, null);
             //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -88,7 +88,7 @@ public class UI_DaMiJing_Reward : MonoBehaviour {
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_38");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_38");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今天已经进入副本一次了,请明天再来！");
         }
@@ -141,8 +141,8 @@ public class UI_DaMiJing_Reward : MonoBehaviour {
             if (daMiJingLv_int > daMiJingRewardLv_int)
             {
                 //可以领取礼包
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_6");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_7");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhint_6");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_7");
                 daMiJingRewardLv_int = daMiJingRewardLv_int + 1;
                 string jieshaoStr = langStrHint_1 + daMiJingRewardLv_int + langStrHint_2;
                 //string jieshaoStr = "是否领取通关大秘境第"+ daMiJingRewardLv_int+ "层奖励？";
@@ -155,14 +155,14 @@ public class UI_DaMiJing_Reward : MonoBehaviour {
             {
                 if (daMiJingLv_int > 1)
                 {
-                    //string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_39");
-                    //string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_40");
+                    //string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_39");
+                    //string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_40");
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + (daMiJingLv_int - 1).ToString() + langStrHint_2);
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请先完成对应层数的挑战！");
                 }
                 else
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_41");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_41");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你还未通关大秘境第1层,无法领取奖励！");
                 }
@@ -170,7 +170,7 @@ public class UI_DaMiJing_Reward : MonoBehaviour {
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_41");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_41");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你还未通关大秘境第1层,无法领取奖励！");
         }

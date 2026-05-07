@@ -20,7 +20,7 @@ public class UI_ZhanQu_RewardShiLi : MonoBehaviour {
         Game_PublicClassVar.Get_gameServerObj.Obj_ZhanQu_RewardShiLi = this.gameObject;
         UpdateRewardPlayerNum();
         //显示自身等级
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("我的实力值");
+        string langStr = LanguageManager.Instance.LoadLocalization("我的实力值");
         Obj_MyShiLi.GetComponent<Text>().text = langStr + ":" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ShiLiValue;
         this.gameObject.SetActive(false);
     }

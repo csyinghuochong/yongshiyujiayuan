@@ -179,14 +179,14 @@ public class UI_HuoDongDaTing : MonoBehaviour {
             yuekaValueInt = 0;
         }
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("周卡剩余领取次数");
+        string langStr = LanguageManager.Instance.LoadLocalization("周卡剩余领取次数");
         Obj_YueKa_DayNum.GetComponent<Text>().text = langStr + "：" + yuekaValueInt.ToString() + "/7";
         if (yuekaValue == "0")
         {
             int buyValue = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "YueKaBuyValue", "GameMainValue"));
             Obj_YueKa_BuyText.SetActive(true);
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("开启周卡需消耗");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("钻石");
+            langStr = LanguageManager.Instance.LoadLocalization("开启周卡需消耗");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("钻石");
             Obj_YueKa_BuyText.GetComponent<Text>().text = langStr + "：" + buyValue + langStr_2;
             Obj_YueKa_Buy.SetActive(true);
             Obj_YueKa_Get.SetActive(false);
@@ -320,7 +320,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
 
         //显示名称
         int showLv = int.Parse(zhiChiZuoZheID.Substring(3, 2));
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级冒险家");
+        string langStr = LanguageManager.Instance.LoadLocalization("级冒险家");
         Obj_ZhiChiZuoZheNameObj.GetComponent<Text>().text = showLv + langStr;
 
         //读取当前奖励
@@ -376,16 +376,16 @@ public class UI_HuoDongDaTing : MonoBehaviour {
         {
             needValue = 0;
             needValueStr = needValue.ToString();
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点击领取作者回馈礼包");
+            langStr = LanguageManager.Instance.LoadLocalization("点击领取作者回馈礼包");
             Obj_ZhiChiZuoZhe_BuyText.GetComponent<Text>().text = langStr;
         }
         else {
             //向下取整显示
             //needValueStr = needValue.ToString("0.0");   //保留小数点后一位
             float showJiaGeValue = needValue / 10;
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("冒险家积分不足");
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("赞助");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("元可直接开启礼包");
+            langStr = LanguageManager.Instance.LoadLocalization("冒险家积分不足");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("赞助");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("元可直接开启礼包");
             Obj_ZhiChiZuoZhe_BuyText.GetComponent<Text>().text = langStr + "!" + langStr_1 + showJiaGeValue.ToString() + langStr_2;
         }
 
@@ -416,9 +416,9 @@ public class UI_HuoDongDaTing : MonoBehaviour {
         Obj_MeiRiRewardSet.SetActive(true);
 
         string payValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BeiYong_8", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("你今日已赞助");
-        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("元");
-        string langStr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("此额度每日0点清空");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("你今日已赞助");
+        string langStr_2 = LanguageManager.Instance.LoadLocalization("元");
+        string langStr_3 = LanguageManager.Instance.LoadLocalization("此额度每日0点清空");
         Obj_MeiRiPayValue.GetComponent<Text>().text = langStr_1 + payValue + langStr_2 + "，"+ langStr_3;
 
     }
@@ -439,7 +439,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
                 Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YueKa", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
                 Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
                 //Game_PublicClassVar.Get_function_UI.GameHint("开启周卡成功!");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_411");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_411");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
                 //更新UI显示状态
@@ -455,7 +455,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
             }
             else{
                 //Game_PublicClassVar.Get_function_UI.GameHint("钻石不足!");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_399");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_399");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             }
         }
@@ -470,7 +470,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
         string yueKaDayStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("YueKaDayStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         if (yueKaDayStatus == "1") {
             //Game_PublicClassVar.Get_function_UI.GameHint("今日周卡已经领取");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_412");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_412");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
         }
@@ -512,8 +512,8 @@ public class UI_HuoDongDaTing : MonoBehaviour {
                 Game_PublicClassVar.Get_function_UI.HuoDongHuoBiUpdate();
             }
             else {
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_152");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_153");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_152");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_153");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + rewardStr.Length + langStrHint_2);
                 //Game_PublicClassVar.Get_function_UI.GameHint("背包请预留至少" + rewardStr.Length +"个位置!");
             }
@@ -525,14 +525,14 @@ public class UI_HuoDongDaTing : MonoBehaviour {
         string xulieHaoID = Obj_XuLieHaoID.GetComponent<InputField>().text;
         //Debug.Log("输入值:" + xulieHaoID);
         if (xulieHaoID == "") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_413");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_413");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("请输入序列号!");
             return;
         }
         if (Game_PublicClassVar.Get_function_Rose.ifGetXuLieHao(xulieHaoID))
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_414");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_414");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("序列号已被领取!");
             return;
@@ -540,7 +540,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
 
         switch (xulieHaoID) { 
             case "weijing666":
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_415");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_415");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("领取组织福利成功,奖励已发往背包,请点击查看！");
                 //检测背包格子
@@ -564,7 +564,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
                 break;
 
             case "zuozhezhenshuai":
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_415");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_415");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("领取组织福利成功,奖励已发往背包,请点击查看！");
 
@@ -587,7 +587,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
                 break;
 
             case "weijingweibo":
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_415");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_415");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("领取组织福利成功,奖励已发往背包,请点击查看！");
 
@@ -688,7 +688,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
                     bool sendReward = false;
                     string[] xuliehaoList = xuliehao.Split(';');
                     if (xuliehaoList.Length < 3) {
-                        langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_416");
+                        langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_416");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameHint("序列号不正确!");
                         return;
@@ -698,7 +698,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
 
                     if (!sendReward)
                     {
-                        langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_417");
+                        langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_417");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameHint("序列号密匙不正确!");
                         return;
@@ -710,7 +710,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
 
                             //检测背包格子
                             if (!Game_PublicClassVar.Get_function_Rose.IfBagNullNum(1)) {
-                                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_201");
+                                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_201");
                                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                                 //Game_PublicClassVar.Get_function_UI.GameHint("请背包预留至少1个位置!");
                                 return;
@@ -725,7 +725,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
                                 Game_PublicClassVar.Get_function_Rose.WriteXuLieHao(xulieHaoID);
                             }
                             else {
-                                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_418");
+                                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_418");
                                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                                 //Game_PublicClassVar.Get_function_UI.GameHint("序列号不正确,请检查后在进行输入!");
                             }
@@ -822,7 +822,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
                     }
                 }
                 else {
-                    string langStrHint_c = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_416");
+                    string langStrHint_c = LanguageManager.Instance.LoadLocalizationHint("hint_416");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_c);
                     //Game_PublicClassVar.Get_function_UI.GameHint("序列号不正确!");
                 }
@@ -843,7 +843,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
         
         if (zhiChiZuoZheID == ZuiHouLiBaoID_MaxBase)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_419");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_419");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("感谢你为作者做出的赞助,已经够多了,作者在此感谢你！");
             return;
@@ -856,8 +856,8 @@ public class UI_HuoDongDaTing : MonoBehaviour {
         //检测背包位置是否足够
         int spaceNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
         if (zhiChiZuoZheValue.Length> spaceNullNum) {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_152");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_153");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_152");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_153");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + (zhiChiZuoZheValue.Length - 1).ToString() + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameHint("请预留" + (zhiChiZuoZheValue.Length).ToString()+"个背包空位置！");
             return;
@@ -901,7 +901,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
         else {
             string hintTextStr = Obj_ZhiChiZuoZhe_BuyText.GetComponent<Text>().text;
             //Game_PublicClassVar.Get_function_UI.GameHint("赞助金额不足!   " + hintTextStr);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_420");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_420");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + hintTextStr);
         }
     }
@@ -1108,7 +1108,7 @@ public class UI_HuoDongDaTing : MonoBehaviour {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
 
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_8");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_8");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, GoToGoToDuiHuanGold, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往兑换金币界面？", GoToGoToDuiHuanGold, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

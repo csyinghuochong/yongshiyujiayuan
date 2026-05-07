@@ -30,7 +30,7 @@ public class UI_PaiHangReward : MonoBehaviour {
         Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_RewardList);
 
         //显示道具
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(RankStr);
+        string langStr = LanguageManager.Instance.LoadLocalization(RankStr);
         Obj_RankStr.GetComponent<Text>().text = langStr;
         string[] rewardList = RewardStr.Split(';');
         int obj_x = 45;

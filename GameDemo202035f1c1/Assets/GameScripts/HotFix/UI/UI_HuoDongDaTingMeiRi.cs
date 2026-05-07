@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -94,7 +94,7 @@ public class UI_HuoDongDaTingMeiRi : MonoBehaviour
 
         if (lingQuList[DengLuRewardDay] != "0")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_362");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_362");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("奖励已领取");
             return;
@@ -105,7 +105,7 @@ public class UI_HuoDongDaTingMeiRi : MonoBehaviour
             int roseLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
             if (roseLv < 12)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_363");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_363");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("请将等级提升至12级后领取!");
                 return;
@@ -118,7 +118,7 @@ public class UI_HuoDongDaTingMeiRi : MonoBehaviour
         float needDayRmbValue = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "EveryDayRMB_" + DengLuRewardDay, "GameMainValue"));
         if (nowDayRmbValue < needDayRmbValue)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_364");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_364");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("赞助额度不足请稍后再试!");
             return;
@@ -147,8 +147,8 @@ public class UI_HuoDongDaTingMeiRi : MonoBehaviour
         int spaceNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
         if (dengLuRewardValue.Length - 1 > spaceNullNum)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_152");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_153");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_152");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_153");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + (dengLuRewardValue.Length - 1).ToString() + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameHint("请预留" + (dengLuRewardValue.Length - 1).ToString() + "个背包空位置！");
             return;

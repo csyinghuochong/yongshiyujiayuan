@@ -67,12 +67,12 @@ public class Main_100002 : MonoBehaviour {
         mapTimeObj.transform.localScale = new Vector3(1, 1, 1);
 
         mapTimeShowObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapTime;
-        string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-        string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+        string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+        string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
         mapTimeShowObj.GetComponent<Text>().text = langstr_1 + ":" + MapTime + langstr_2;
 
         mapChestNumObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapChestNum;
-        string langstr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秘境值");
+        string langstr_3 = LanguageManager.Instance.LoadLocalization("秘境值");
         mapChestNumObj.GetComponent<Text>().text = langstr_3 + ":" + "0" + "/" + MiJingMaxValie.ToString();
 
         //根据秘境等级确定怪物实力
@@ -130,7 +130,7 @@ public class Main_100002 : MonoBehaviour {
             {
                 MiJingBossStatus = true;
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_195");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_195");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("BOSS出现！！！");
 
@@ -150,8 +150,8 @@ public class Main_100002 : MonoBehaviour {
                 {
                     MiJingSendRewardStatus = true;
 
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_196");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_197");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_196");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_197");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + MiJingLv + langStrHint_2);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你!挑战" + MiJingLv + "层秘境成功!");
 
@@ -197,7 +197,7 @@ public class Main_100002 : MonoBehaviour {
                 guangboSum = guangboSum + Time.deltaTime;
                 if (guangboSum >= 3) {
 
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_198");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_198");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你已经击杀BOSS！你现在可以返回地图挑战下一层秘境！");
                 }
@@ -220,20 +220,20 @@ public class Main_100002 : MonoBehaviour {
             {
                 if (nowMapTime >= 0)
                 {
-                    string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-                    string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+                    string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+                    string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
                     mapTimeShowObj.GetComponent<Text>().text = langstr_1 + ":" + nowMapTime + langstr_2;
                 }
                 else
                 {
-                    string langstr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("正在退出地图");
+                    string langstr_3 = LanguageManager.Instance.LoadLocalization("正在退出地图");
                     mapTimeShowObj.GetComponent<Text>().text = langstr_3;
                 }
             }
 
             //显示地图宝箱数量
             mapChestNumObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapChestNum;
-            string langstr_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秘境值");
+            string langstr_4 = LanguageManager.Instance.LoadLocalization("秘境值");
             mapChestNumObj.GetComponent<Text>().text = langstr_4 + ":" + rose_Proprety.Rose_MijingValue + "/" + MiJingMaxValie.ToString();
             mapChestNumObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
 

@@ -76,7 +76,7 @@ public class UI_PaiMaiChuShouShow : MonoBehaviour {
 		saleAddValuePro = saleAddValuePro + 0.1f;
 		if (saleAddValuePro >= 1) {
 			saleAddValuePro = 1;
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_51");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_51");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("最高只能加价至100%");
 		}
@@ -90,7 +90,7 @@ public class UI_PaiMaiChuShouShow : MonoBehaviour {
 		saleAddValuePro = saleAddValuePro - 0.1f;
 		if (saleAddValuePro <= -0.9f) {
 			saleAddValuePro = -0.9f;
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_52");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_52");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("最高只能1折出售");
 		}
@@ -108,7 +108,7 @@ public class UI_PaiMaiChuShouShow : MonoBehaviour {
         }
         if (int.Parse(sellnum) >= 20)
         {
-            Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_450"));
+            Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(LanguageManager.Instance.LoadLocalizationHint("hint_450"));
             return;
         }
 
@@ -163,14 +163,14 @@ public class UI_PaiMaiChuShouShow : MonoBehaviour {
                 }
                 */
             } else {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_57");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_57");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 				//Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("出售数量与实际不匹配");
 				//关闭界面
 				Destroy(this.gameObject);
 			}
 		} else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_58");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_58");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 			//Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("请检查服务器是否正常连接");
 			//关闭界面

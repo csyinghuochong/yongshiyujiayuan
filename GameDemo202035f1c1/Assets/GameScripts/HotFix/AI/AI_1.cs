@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -1137,7 +1137,7 @@ public class AI_1 : MonoBehaviour {
                                         }
                                     }
                                     else {
-                                        string hintStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_460");
+                                        string hintStr = LanguageManager.Instance.LoadLocalizationHint("hint_460");
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("击败比自己等级低15级的BOSS不触发难度爆率加成");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(hintStr);
                                     }
@@ -1166,8 +1166,8 @@ public class AI_1 : MonoBehaviour {
 
                                     //提示并初始化
                                     if (addValue >= 0) {
-                                        string lang_str_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_433");
-                                        string lang_str_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_434");
+                                        string lang_str_1 = LanguageManager.Instance.LoadLocalizationHint("hint_433");
+                                        string lang_str_2 = LanguageManager.Instance.LoadLocalizationHint("hint_434");
                                         Game_PublicClassVar.Get_function_UI.GameHint(lang_str_1 + Game_PublicClassVar.Get_function_Rose.GetBaoLvName(Game_PublicClassVar.Get_wwwSet.BaoLvID) + lang_str_2 + "！");
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你触发了" + Game_PublicClassVar.Get_function_Rose.GetBaoLvName(Game_PublicClassVar.Get_wwwSet.BaoLvID) + "爆率效果！");
                                         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("BaoLvID", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");

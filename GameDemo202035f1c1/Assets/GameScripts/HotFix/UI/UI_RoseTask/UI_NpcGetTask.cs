@@ -113,7 +113,7 @@ public class UI_NpcGetTask : MonoBehaviour {
         //获取背包剩余格子数量，判定奖励数量是否大于格子数量
         if (Game_PublicClassVar.Get_function_UI.BagSpaceNullNum() < rewardItemID.Length)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_325");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_325");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("背包已满,请先清空背包在提交任务！");
             return;       //背包格子不足,领取奖励失败

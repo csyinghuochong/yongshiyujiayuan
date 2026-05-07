@@ -764,7 +764,7 @@ public class Function_DataSet{
         string readStr = "";
         bool ifAdd = false;
 
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language == "Chinese") {
+        if (LanguageManager.Instance.CurrentLanguage == LanguageType.Chinese) {
             return readKey;
         }
 

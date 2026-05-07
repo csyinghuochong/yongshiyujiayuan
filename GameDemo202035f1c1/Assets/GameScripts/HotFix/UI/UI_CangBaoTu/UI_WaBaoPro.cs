@@ -118,7 +118,7 @@ public class UI_WaBaoPro : MonoBehaviour {
                         //不是完美挖宝有5%概率获得双倍掉落
                         if (Random.value <= 0.1f)
                         {
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_8");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_8");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你触发完美挖宝!获得2次奖励机会,每次各自随机!");
                             wanmeiWaBaoStatus = true;

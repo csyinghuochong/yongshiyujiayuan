@@ -54,30 +54,30 @@ public class UI_CreateRoseListObj : MonoBehaviour {
             switch (roseOcc) { 
                 case "1":
 
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("战士");
+                    string langStr = LanguageManager.Instance.LoadLocalization("战士");
                     roseOcc = langStr;
                     break;
 
                 case "2":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔法师");
+                    langStr = LanguageManager.Instance.LoadLocalization("魔法师");
                     roseOcc = langStr;
                     break;
 
                 case "3":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("狩猎者");
+                    langStr = LanguageManager.Instance.LoadLocalization("狩猎者");
                     roseOcc = langStr;
                     break;
 
                 default:
 
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("战士");
+                    langStr = LanguageManager.Instance.LoadLocalization("战士");
                     roseOcc = langStr;
                     break;
             }
 
             //显示
             Obj_CreateRoseName.GetComponent<Text>().text = roseName;
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("等级");
             Obj_CreateRoseLv.GetComponent<Text>().text = langStr_1 +" " + roseLv;
             Obj_CreateRoseOcc.GetComponent<Text>().text = roseOcc;
             Obj_CreateRoseHint.SetActive(false);
@@ -179,7 +179,7 @@ public class UI_CreateRoseListObj : MonoBehaviour {
             string roseName = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("Name", "ID", roseID, set_XmlPath + "GameConfig.xml");
             string roseLv = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("Lv", "ID", roseID, set_XmlPath + "GameConfig.xml");
             //Debug.Log("名字：" + "Lv." + roseLv + "  " + roseName);
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("等级");
             Obj_CreatePar.GetComponent<UI_CreateRose>().UI_NameObj.GetComponent<Text>().text = langStr_1 + " " + roseLv + "  " + roseName;
             //Obj_CreatePar.GetComponent<UI_CreateRose>().MoveStatus = true;
             //选中角色隐藏后面两个的UI显示

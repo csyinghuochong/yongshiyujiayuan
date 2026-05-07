@@ -140,7 +140,7 @@ public class UI_StartGame : MonoBehaviour {
         //查询网络是否连接
         if (Game_PublicClassVar.Get_gameLinkServerObj.ServerLinkStatus == false) {
             //Debug.Log("网络未连接...");
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_104");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_104");
             Game_PublicClassVar.Get_wwwSet.Show_GameHint(langStr);
             return;
         }

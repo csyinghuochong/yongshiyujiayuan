@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -116,7 +116,7 @@ public class UI_RoseSkillList : MonoBehaviour {
             object huiObj = (Material)ResourcesLoaderComponent.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
             Material huiMaterial = huiObj as Material;
             Obj_SkillIcon.GetComponent<Image>().material = huiMaterial;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("未学习");
+            string langStr = LanguageManager.Instance.LoadLocalization("未学习");
             Obj_SkillLv.GetComponent<Text>().text = langStr;
         }
         
@@ -126,7 +126,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         if (int.Parse(learnSkillLv) > lv)
         {
             //Obj_SkillUp.GetComponent<Image>().material = huiMaterial;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级学习");
+            string langStr = LanguageManager.Instance.LoadLocalization("级学习");
             Obj_SkillUpText.GetComponent<Text>().text = learnSkillLv + langStr;
             //获得技能学习需要角色等级
             //Obj_SkillLv.GetComponent<Text>().text = "";
@@ -138,7 +138,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         Obj_SkillDes.GetComponent<Text>().text = skillDes;
         if (lvChazhi > 0)
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("技能等级");
+            string langStr = LanguageManager.Instance.LoadLocalization("技能等级");
             Obj_SkillName.GetComponent<Text>().text = SkillName + "<color=#099810FF>("+ langStr + "+" + lvChazhi + ")</color>";
         }
 
@@ -152,9 +152,9 @@ public class UI_RoseSkillList : MonoBehaviour {
         }
         else {
             string costGoldValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("CostGoldValue", "ID", SkillID, "Skill_Template");
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("消耗");
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("技能点数");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点");
+            string langStr = LanguageManager.Instance.LoadLocalization("消耗");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("技能点数");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("点");
             Obj_SkillGold.GetComponent<Text>().text = langStr + "        " + costGoldValue;
             Obj_SkillSP.GetComponent<Text>().text = langStr_1 + "：" + skillSP + langStr_2;
         }
@@ -253,7 +253,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         }
         else {
             //Debug.Log("被动技能不能被拖拽");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_368");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_368");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("被动技能不能被拖拽");
         }
@@ -288,8 +288,8 @@ public class UI_RoseSkillList : MonoBehaviour {
         //判定当前学习技能等级是否满足
         if (int.Parse(learnSkillLv) > lv)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_308");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_309");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_308");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_309");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + learnSkillLv + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("升级技能需要玩家等级达到" + learnSkillLv + "级");
             return;
@@ -300,7 +300,7 @@ public class UI_RoseSkillList : MonoBehaviour {
        if (skillupStatus)
        {
 
-           string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_369");
+           string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_369");
            Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
            //Game_PublicClassVar.Get_function_UI.GameHint("技能升级成功");
            //获取技能下一级ID,并更新相应的UI
@@ -333,7 +333,7 @@ public class UI_RoseSkillList : MonoBehaviour {
 
         //更新主界面SP值
         string spvalue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillSP", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前技能点数");
+        string langStr = LanguageManager.Instance.LoadLocalization("当前技能点数");
         Obj_SkillParent.GetComponent<UI_RoseSkill>().Obj_SpValue.GetComponent<Text>().text = langStr + "：" + spvalue;
        }
        else {
@@ -348,7 +348,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         //判定当前技能是否已经装备
         if (Game_PublicClassVar.Get_function_Skill.IfEquipMainSkill(SkillID))
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_2");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_2");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
         }
@@ -356,7 +356,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         //判断技能是否是被动技能
         string skillType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillType", "ID", SkillID, "Skill_Template");
         if (skillType != "1") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_3");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_3");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("此技能为被动技能,无法拖动!");
             return;
@@ -364,7 +364,7 @@ public class UI_RoseSkillList : MonoBehaviour {
         //判断当前技能是否已经学习
         string skillLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillLv", "ID", SkillID, "Skill_Template");
         if (skillLv == "0") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_4");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_4");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("该技能未学习");
             return;

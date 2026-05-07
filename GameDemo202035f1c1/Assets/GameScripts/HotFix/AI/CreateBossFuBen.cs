@@ -70,8 +70,8 @@ public class CreateBossFuBen : MonoBehaviour {
                        //设置一定时间刷新第二个BOSS
                         CreateBossTime = 5.0f;
 
-                        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_203");
-                        string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_204");
+                        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_203");
+                        string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_204");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + CreateBossTime + langStrHint_2);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你击杀副本BOSS成功!" + CreateBossTime + "秒后刷新下一只BOSS,请做好准备！");
                         //设置Boss

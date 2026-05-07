@@ -5,64 +5,61 @@ using I2.Loc;
 using Substance.Game;
 using UnityEngine;
 
-namespace GameScripts
+public static class LanguageType
 {
-    public static class LanguageType
-    {
-        public const string Chinese = "Chinese";
-        public const string English = "English";
-        public const string Japanese = "Japanese";
-    }
-    
-    public class LanguageManager
-    {
-        private static LanguageManager _instance;
+    public const string Chinese = "Chinese";
+    public const string English = "English";
+    public const string Japanese = "Japanese";
+}
 
-        public static LanguageManager Instance
+public class LanguageManager
+{
+    private static LanguageManager _instance;
+
+    public static LanguageManager Instance
+    {
+        get
         {
-            get
-            {
-                if (_instance == null)
-                    _instance = new LanguageManager();
-                return _instance;
-            }
+            if (_instance == null)
+                _instance = new LanguageManager();
+            return _instance;
         }
-        
-        // 多语言插件
-        public LanguageSource LanguageSource;
-        public LanguageSourceData LanguageSourceData => this.LanguageSource.SourceData;
+    }
 
-        public List<string> AllLanguage = new List<string>();
+    // 多语言插件
+    public LanguageSource LanguageSource;
+    public LanguageSourceData LanguageSourceData => this.LanguageSource.SourceData;
 
-        public bool UseRuntimeModule = false; //模拟平台运行时 编辑器资源不加载
+    public List<string> AllLanguage = new List<string>();
 
-        public string DefaultLanguage;
+    public bool UseRuntimeModule = false; //模拟平台运行时 编辑器资源不加载
 
-        public string CurrentLanguage;
-        
-        public void OnInitL2Localization()
+    public string DefaultLanguage;
+
+    public string CurrentLanguage;
+
+    public int ranNameNum;
+    public string[] randomName_xing = new string[0];
+    public string[] randomName_name = new string[0];
+    private bool _randomNameLoadingStarted;
+
+    public void OnInitL2Localization()
+    {
+        DefaultLanguage = PlayerPrefs.GetString("Localization", LanguageType.Chinese);
+
+        GameObject go = UnityEngine.Object.Instantiate(new GameObject());
+        UnityEngine.Object.DontDestroyOnLoad(go);
+        go.name = "[I2LocalizeMgr]";
+        go.AddComponent<LanguageSource>();
+        LanguageSource = go.GetComponent<LanguageSource>();
+
+        if (Define.IsEditor)
         {
-            DefaultLanguage = PlayerPrefs.GetString("Localization", LanguageType.Chinese);
-
-            GameObject go = UnityEngine.Object.Instantiate(new GameObject());
-            UnityEngine.Object.DontDestroyOnLoad(go);
-            go.name = "[I2LocalizeMgr]";
-            go.AddComponent<LanguageSource>();
-            LanguageSource = go.GetComponent<LanguageSource>();
-
-            if (Define.IsEditor)
+            if (!UseRuntimeModule)
             {
-                if (!UseRuntimeModule)
-                {
-                    LocalizationManager.RegisterSourceInEditor();
-                    UpdateAllLanguages();
-                    SetLanguage(DefaultLanguage);
-                }
-                else
-                {
-                    LanguageSourceData.Awake();
-                    LoadLanguage(DefaultLanguage, true).Forget();
-                }
+                LocalizationManager.RegisterSourceInEditor();
+                UpdateAllLanguages();
+                SetLanguage(DefaultLanguage);
             }
             else
             {
@@ -70,101 +67,164 @@ namespace GameScripts
                 LoadLanguage(DefaultLanguage, true).Forget();
             }
         }
-
-        private void UpdateAllLanguages()
+        else
         {
-            AllLanguage.Clear();
-            foreach (var language in LocalizationManager.GetAllLanguages())
-            {
-                var newLanguage = Regex.Replace(language, @"[\r\n]", "");
-                AllLanguage.Add(newLanguage);
-            }
+            LanguageSourceData.Awake();
+            LoadLanguage(DefaultLanguage, true).Forget();
         }
 
-        public bool CheckLanguage(string language)
+        StartLoadRandomNameData();
+    }
+
+    private void UpdateAllLanguages()
+    {
+        AllLanguage.Clear();
+        foreach (var language in LocalizationManager.GetAllLanguages())
         {
-            return AllLanguage.Contains(language);
+            var newLanguage = Regex.Replace(language, @"[\r\n]", "");
+            AllLanguage.Add(newLanguage);
         }
+    }
 
-        //运行时注意 需要提前加载你需要的所有语言
-        public bool SetLanguage(string language, bool load = false)
+    public bool CheckLanguage(string language)
+    {
+        return AllLanguage.Contains(language);
+    }
+
+    //运行时注意 需要提前加载你需要的所有语言
+    public bool SetLanguage(string language, bool load = false)
+    {
+        if (!CheckLanguage(language))
         {
-            if (!CheckLanguage(language))
+            if (load)
             {
-                if (load)
-                {
-                    LoadLanguage(language, true).Forget();
-                    return true;
-                }
-
-                Log.Error($"当前没有这个语言无法切换到此语言 {language}");
-                return false;
-            }
-
-            if (CurrentLanguage == language)
-            {
+                LoadLanguage(language, true).Forget();
                 return true;
             }
 
-            Debug.Log($"设置当前语言 = {language}");
-            LocalizationManager.CurrentLanguage = language;
-            CurrentLanguage = language;
+            Log.Error($"当前没有这个语言无法切换到此语言 {language}");
+            return false;
+        }
+
+        if (CurrentLanguage == language)
+        {
             return true;
         }
 
-        //根据需求可提前加载语言
-        public async UniTask LoadLanguage(string language, bool setCurrent = false)
-        {
-            if (Define.IsEditor)
-            {
-                if (!UseRuntimeModule)
-                {
-                    Log.Error($"禁止在此模式下 动态加载语言 {language}");
-                    return;
-                }
-            }
+        Debug.Log($"设置当前语言 = {language}");
+        LocalizationManager.CurrentLanguage = language;
+        CurrentLanguage = language;
+        return true;
+    }
 
-            if (CheckLanguage(language))
+    //根据需求可提前加载语言
+    public async UniTask LoadLanguage(string language, bool setCurrent = false)
+    {
+        if (Define.IsEditor)
+        {
+            if (!UseRuntimeModule)
             {
-                Log.Error($"当前语言已存在 请勿重复加载 {language}");
+                Log.Error($"禁止在此模式下 动态加载语言 {language}");
                 return;
             }
-
-            var assetName = GetLanguageAssetName(language);
-
-            var assetTextAsset = await ResourcesLoaderComponent.Instance.LoadAssetAsync<TextAsset>(assetName);
-            if (assetTextAsset == null)
-            {
-                Log.Error($"没有加载到目标语言资源 {language}");
-                return;
-            }
-
-            Debug.Log($"加载语言成功 {language}");
-
-            UseLocalizationCSV(assetTextAsset.text, !setCurrent);
-            if (setCurrent)
-            {
-                SetLanguage(language);
-            }
-
-            //语言加载完毕后就可以释放资源了
-            // YIUILoadHelper.Release(assetTextAsset);
         }
 
-        private string GetLanguageAssetName(string language)
+        if (CheckLanguage(language))
         {
-            return $"Assets/Bundles/Text/{I2LocalizeHelper.I2ResAssetNamePrefix}{language}.csv";
+            Log.Error($"当前语言已存在 请勿重复加载 {language}");
+            return;
         }
 
-        private void UseLocalizationCSV(string text, bool isLocalizeAll = false)
+        var assetName = GetLanguageAssetName(language);
+
+        var assetTextAsset = await ResourcesLoaderComponent.Instance.LoadAssetAsync<TextAsset>(assetName);
+        if (assetTextAsset == null)
         {
-            LanguageSourceData.Import_CSV(string.Empty, text, eSpreadsheetUpdateMode.Replace, ',');
-            if (isLocalizeAll)
-            {
-                LocalizationManager.LocalizeAll(); // 强制使用新数据本地化所有启用的标签/精灵
-            }
-
-            UpdateAllLanguages();
+            Log.Error($"没有加载到目标语言资源 {language}");
+            return;
         }
+
+        Debug.Log($"加载语言成功 {language}");
+
+        UseLocalizationCSV(assetTextAsset.text, !setCurrent);
+        if (setCurrent)
+        {
+            SetLanguage(language);
+        }
+
+        //语言加载完毕后就可以释放资源了
+        // YIUILoadHelper.Release(assetTextAsset);
+    }
+
+    private string GetLanguageAssetName(string language)
+    {
+        return $"Assets/Bundles/Text/{I2LocalizeHelper.I2ResAssetNamePrefix}{language}.csv";
+    }
+
+    private void UseLocalizationCSV(string text, bool isLocalizeAll = false)
+    {
+        LanguageSourceData.Import_CSV(string.Empty, text, eSpreadsheetUpdateMode.Replace, ',');
+        if (isLocalizeAll)
+        {
+            LocalizationManager.LocalizeAll(); // 强制使用新数据本地化所有启用的标签/精灵
+        }
+
+        UpdateAllLanguages();
+    }
+
+    public string LoadLocalization(string getString)
+    {
+        var translation = LocalizationManager.GetTranslation(getString);
+        return string.IsNullOrEmpty(translation) ? getString : translation;
+    }
+
+    public string LoadLocalizationHint(string getString)
+    {
+        return LoadLocalization(getString);
+    }
+
+    private void StartLoadRandomNameData()
+    {
+        if (_randomNameLoadingStarted)
+        {
+            return;
+        }
+
+        _randomNameLoadingStarted = true;
+        LoadRandomNameData().Forget();
+    }
+
+    private async UniTask LoadRandomNameData()
+    {
+        var xingList = await LoadRandomNameList("RandName_Xing");
+        if (xingList != null)
+        {
+            randomName_xing = xingList;
+            ranNameNum += 1;
+        }
+
+        var nameList = await LoadRandomNameList("RandName_Name");
+        if (nameList != null)
+        {
+            randomName_name = nameList;
+            ranNameNum += 1;
+        }
+    }
+
+    private async UniTask<string[]> LoadRandomNameList(string fileName)
+    {
+        var text =
+            await ResourcesLoaderComponent.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetTextPath(fileName));
+        if (string.IsNullOrEmpty(text.text))
+        {
+            return null;
+        }
+
+        return NormalizeStreamingAssetText(text.text).Split('@');
+    }
+
+    private string NormalizeStreamingAssetText(string text)
+    {
+        return text.Replace("\r", string.Empty).Replace("\n", string.Empty);
     }
 }

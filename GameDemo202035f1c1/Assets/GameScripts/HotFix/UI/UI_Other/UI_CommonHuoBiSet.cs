@@ -1,4 +1,4 @@
- using UnityEngine;
+﻿ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -72,7 +72,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
 
         string path = "GameUI/Img_ComTitle/";
 
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language == "English") {
+        if (LanguageManager.Instance.CurrentLanguage == LanguageType.English) {
             path = "GameUI_EN/Img_ComTitle/";
         }
 
@@ -209,7 +209,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
     public void Btn_GoToRmbStore() {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_11");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_11");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, GoToRmbStore, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往充值界面？", GoToRmbStore, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -232,7 +232,7 @@ public class UI_CommonHuoBiSet : MonoBehaviour {
     {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_12");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_12");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, GoToGoToDuiHuanGold, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往兑换金币界面？", GoToGoToDuiHuanGold, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

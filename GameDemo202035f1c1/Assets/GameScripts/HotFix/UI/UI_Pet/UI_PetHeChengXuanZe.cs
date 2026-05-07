@@ -107,7 +107,7 @@ public class UI_PetHeChengXuanZe : MonoBehaviour {
                 }
 
                 if (ifCunZai) {
-                    Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("此宠物已经在你的战队中"));
+                    Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(LanguageManager.Instance.LoadLocalization("此宠物已经在你的战队中"));
                     return;
                 }
 
@@ -115,7 +115,7 @@ public class UI_PetHeChengXuanZe : MonoBehaviour {
                 FuJiObj.GetComponent<UI_MyTeamSet>().AddPetTianTi();
             }
             else {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_442");
+                string langStr = LanguageManager.Instance.LoadLocalization("hint_442");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             }
 

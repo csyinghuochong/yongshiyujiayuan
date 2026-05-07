@@ -15,7 +15,7 @@ public class UI_HongBaoNameList : MonoBehaviour {
     void Start () {
         HongBaoName = "玩家*****";
         Obj_HongBaoName.GetComponent<Text>().text = HongBaoName;
-        //string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_422");
+        //string langStr = LanguageManager.Instance.LoadLocalization("hint_422");
         Obj_HongBaoValue.GetComponent<Text>().text = HongBaoValue;
     }
 	

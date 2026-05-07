@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -125,7 +125,7 @@ public class UI_Pet : MonoBehaviour {
 
 
         //初始化标签按钮
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language != "Chinese")
+        if (LanguageManager.Instance.CurrentLanguage != LanguageType.Chinese)
         {
             Obj_EquipBtnText_1.GetComponent<Text>().fontSize = 20;
             Obj_EquipBtnText_2.GetComponent<Text>().fontSize = 20;
@@ -196,7 +196,7 @@ public class UI_Pet : MonoBehaviour {
         }
 
         //显示宠物拥有数量
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("携带宠物数量");
+        string langStr = LanguageManager.Instance.LoadLocalization("携带宠物数量");
         Obj_PetNumShow.GetComponent<Text>().text = langStr + "：" + nowPetNum + "/" + Game_PublicClassVar.Get_game_PositionVar.RosePetLvMaxNum;
 
         //更新宠物标题
@@ -208,7 +208,7 @@ public class UI_Pet : MonoBehaviour {
 
         if (nowPetNum == 0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_263");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_263");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前没有任何宠物！");
             Obj_PetNumIfNull.SetActive(true);
@@ -273,7 +273,7 @@ public class UI_Pet : MonoBehaviour {
 
         //显示宠物剩余点数
         string NowShengYuNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("AddPropretyNum", "ID", NowSclectPetID, "RosePet");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("剩余点数");
+        string langStr = LanguageManager.Instance.LoadLocalization("剩余点数");
         Obj_PropertyValueDianShu.GetComponent<Text>().text = langStr + ":" + NowShengYuNum;
 
         //显示宠物资质
@@ -412,11 +412,11 @@ public class UI_Pet : MonoBehaviour {
         string petStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetStatus", "ID", NowSclectPetID, "RosePet");
         switch (petStatus) {
             case "0":
-                string nowlangStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("出 战");
+                string nowlangStr = LanguageManager.Instance.LoadLocalization("出 战");
                 Obj_PetStatusText.GetComponent<Text>().text = nowlangStr;
                 break;
             case "1":
-                nowlangStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("休 息");
+                nowlangStr = LanguageManager.Instance.LoadLocalization("休 息");
                 Obj_PetStatusText.GetComponent<Text>().text = nowlangStr;
                 break;
         }
@@ -451,8 +451,8 @@ public class UI_Pet : MonoBehaviour {
         int fightLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("FightLv", "ID", petID, "Pet_Template"));
         if (roseStatus.GetComponent<Rose_Proprety>().Rose_Lv < fightLv) {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_265");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_266");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_265");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_266");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + fightLv + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("出战等级不足！此宠物出战需要角色达到" + fightLv + "级");
             return;
@@ -460,7 +460,7 @@ public class UI_Pet : MonoBehaviour {
 
         //判定是否进入冷却时间
         if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ZhaoHuanCDStatus) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_267");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_267");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请等待冷却时间结束再次召唤宠物！");
@@ -471,7 +471,7 @@ public class UI_Pet : MonoBehaviour {
         float petZhaoHuanCD = Game_PublicClassVar.Get_function_AI.Pet_GetZhaoHuanCD(NowSclectPetID);
         if (petZhaoHuanCD > 0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_268");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_268");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("宠物召唤冷却");
@@ -483,7 +483,7 @@ public class UI_Pet : MonoBehaviour {
         {
             //判定当前出战
             if (Game_PublicClassVar.Get_function_Rose.GetRosePetFightNum() >= 1) {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_269");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_269");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前出战位已满！");
@@ -494,7 +494,7 @@ public class UI_Pet : MonoBehaviour {
             Game_PublicClassVar.Get_function_Rose.RosePetCreate(int.Parse(NowSclectPetID));
 
             //显示是否出战
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("休 息");
+            string langStr = LanguageManager.Instance.LoadLocalization("休 息");
             Obj_PetStatusText.GetComponent<Text>().text = langStr;
         }
         else {
@@ -504,12 +504,12 @@ public class UI_Pet : MonoBehaviour {
                 //撤回
                 Game_PublicClassVar.Get_function_Rose.RosePetDelete(int.Parse(NowSclectPetID));
                 //显示是否出战
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("出 战");
+                string langStr = LanguageManager.Instance.LoadLocalization("出 战");
                 Obj_PetStatusText.GetComponent<Text>().text = langStr;
             }
             else
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_270");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_270");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("战斗时不能撤回宠物");
@@ -537,7 +537,7 @@ public class UI_Pet : MonoBehaviour {
             //野生
             case "1":
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_271");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_271");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("野生宠物:野外随处可见的宠物,宠物属性点数天生就比宝宝少40点,只能临时用用！");
                 break;
@@ -545,7 +545,7 @@ public class UI_Pet : MonoBehaviour {
             //宝宝
             case "2":
 
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_272");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_272");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("宠物宝宝:野外比较少的宠物,你可以自由分配他的宠物点数,达到收益最大化！");
                 break;
@@ -553,7 +553,7 @@ public class UI_Pet : MonoBehaviour {
             //变异
             case "3":
 
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_273");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_273");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("变异宝宝:非常稀有的一种宠物,它的资质有可能超过上限！");
                 break;
@@ -561,7 +561,7 @@ public class UI_Pet : MonoBehaviour {
             //神兽
             case "4":
 
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_274");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_274");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("神兽宠物:全世界中最珍贵的宠物,没有之一！");
                 break;
@@ -579,7 +579,7 @@ public class UI_Pet : MonoBehaviour {
         //判定名字是否为空
         if (petName == "")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_275");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_275");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("名称不能为空");
             return;
@@ -588,7 +588,7 @@ public class UI_Pet : MonoBehaviour {
         //判定名字是否长度大于7
         if (petName.Length>7)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_276");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_276");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("名称长度不能大于7个字符");
             return;
@@ -598,7 +598,7 @@ public class UI_Pet : MonoBehaviour {
         bool ifteshu = Game_PublicClassVar.Get_function_UI.IfTeShuStr(petName);
         if (ifteshu)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_277");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_277");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("修改失败!存在特殊字符");
             return;
@@ -622,7 +622,7 @@ public class UI_Pet : MonoBehaviour {
         string petStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetStatus", "ID", NowSclectPetID, "RosePet");
         if (petStatus == "1") {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_278");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_278");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("出战中不能放生宠物！");
             return;
@@ -638,7 +638,7 @@ public class UI_Pet : MonoBehaviour {
 
         GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
 
-        string langStrHint1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_10");
+        string langStrHint1 = LanguageManager.Instance.LoadLocalizationHint("comhint_10");
         string petName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetName", "ID", NowSclectPetID, "RosePet");
         langStrHint1 = "提示: 你正在分解宠物<color=#00700FFF>" + petName + "</color>;\n" + langStrHint1;
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint1, Btn_FangSheng, null);
@@ -838,7 +838,7 @@ public class UI_Pet : MonoBehaviour {
     public void ShowPetNumHint() {
 
         //string showStr = "宠物栏位每15、25、35、45、55级均会新增一个宠物栏位！";
-        string showStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_13"); 
+        string showStr = LanguageManager.Instance.LoadLocalizationHint("comhint_13"); 
         GameObject commonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint_2);
         commonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(showStr, null, null);
         commonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

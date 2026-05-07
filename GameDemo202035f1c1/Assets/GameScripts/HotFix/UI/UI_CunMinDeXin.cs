@@ -111,7 +111,7 @@ public class UI_CunMinDeXin : MonoBehaviour {
         Obj_TimeShow.GetComponent<Text>().text = "剩余时间：" + timeInt + "秒";
         if (timeInt <= 0) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_335");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_335");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("倒计时结束！");
             Btn_CloseUI();

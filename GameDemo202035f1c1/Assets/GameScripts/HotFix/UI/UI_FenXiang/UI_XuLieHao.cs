@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -73,14 +73,14 @@ public class UI_XuLieHao : MonoBehaviour {
         //Debug.Log("输入值:" + xulieHaoID);
         if (xulieHaoID == "")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_413");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_413");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("请输入序列号!");
             return;
         }
         if (Game_PublicClassVar.Get_function_Rose.ifGetXuLieHao(xulieHaoID))
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_414");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_414");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("序列号已被领取!");
             return;
@@ -90,7 +90,7 @@ public class UI_XuLieHao : MonoBehaviour {
         {
             //微信的
             case "weijing666":
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_415");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_415");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("领取组织福利成功,奖励已发往背包,请点击查看！");
                 //检测背包格子
@@ -119,7 +119,7 @@ public class UI_XuLieHao : MonoBehaviour {
             //qq的
             case "woaizuozhe":
 
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_415");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_415");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("领取组织福利成功,奖励已发往背包,请点击查看！");
                 //检测背包格子
@@ -215,7 +215,7 @@ public class UI_XuLieHao : MonoBehaviour {
 
             //微信的
             case "woaibibi":
-                //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_415");
+                //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_415");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你领取哔哔专属福利成功,奖励已发往背包,请点击查看！");
                 //Game_PublicClassVar.Get_function_UI.GameHint("领取组织福利成功,奖励已发往背包,请点击查看！");
                 //检测背包格子

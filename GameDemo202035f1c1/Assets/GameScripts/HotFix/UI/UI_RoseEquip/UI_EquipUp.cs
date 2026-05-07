@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -296,7 +296,7 @@ public class UI_EquipUp: MonoBehaviour {
         int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
         if (roseLv < makeItemLv) {
             makeStatus = false;
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_429");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_429");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制作书要求角色等级不足！");
             ClickMakeBtn = false;
@@ -335,7 +335,7 @@ public class UI_EquipUp: MonoBehaviour {
         if (Game_PublicClassVar.Get_function_Rose.GetRoseMoney() < makeNeedGold)
         {
             //金币不足
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_350");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_350");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制造需要的金币不足!");
             makeStatus = false;
@@ -352,7 +352,7 @@ public class UI_EquipUp: MonoBehaviour {
             if (!costGoldStatus)
             {
                 //金币不足
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_350");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_350");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("制造需要的金币不足!");
                 return;
@@ -362,7 +362,7 @@ public class UI_EquipUp: MonoBehaviour {
             //获取成功概率
             if (Random.value <= makeSuccessPro)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_357");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_357");
                 string hintStr = langStrHint + makeItemName;
                 //string hintStr = "传承成功！获得装备：" + makeItemName;
                 //发送对应奖励
@@ -422,13 +422,13 @@ public class UI_EquipUp: MonoBehaviour {
             }
             else {
                 //制造失败
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_358");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_358");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("制造失败,下次制造概率提升！");
             }
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_354");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_354");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("制造材料不足");
         }

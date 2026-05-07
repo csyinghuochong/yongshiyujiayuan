@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -40,7 +40,7 @@ public class UI_HuoDongRewardLvList : MonoBehaviour
     public void updataDengLuReward() {
 
         //显示标题
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("需要等级达到");
+        string langStr = LanguageManager.Instance.LoadLocalization("需要等级达到");
         Obj_TitleLab.GetComponent<Text>().text = langStr + ":" + NeedValue;
 
         //清除显示
@@ -75,7 +75,7 @@ public class UI_HuoDongRewardLvList : MonoBehaviour
         int roseLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
         if (roseLv < 20)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_355");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_355");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("请将等级提升至指定等级后领取!");
             return;
@@ -83,7 +83,7 @@ public class UI_HuoDongRewardLvList : MonoBehaviour
 
         //判定人数
         if (RewardNum_Now >= RewardNum_Sum) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_356");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_356");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("当前领取人数已满!");
             return;
@@ -93,7 +93,7 @@ public class UI_HuoDongRewardLvList : MonoBehaviour
         //判断是否连接网络
         if (!Game_PublicClassVar.Get_gameLinkServerObj.ServerLinkStatus)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_346");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_346");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("服务器未连接!");
             return;
@@ -106,8 +106,8 @@ public class UI_HuoDongRewardLvList : MonoBehaviour
         int spaceNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
         if (dengLuRewardValue.Length - 1 > spaceNullNum)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_152");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_153");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_152");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_153");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + (dengLuRewardValue.Length - 1).ToString() + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameHint("请预留" + (dengLuRewardValue.Length - 1).ToString() + "个背包空位置！");
             return;

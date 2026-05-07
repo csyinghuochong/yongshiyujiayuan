@@ -37,27 +37,27 @@ public class UI_JingLingZhangJie : MonoBehaviour {
 
             //第一章
             case "1":
-                zhangJieName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第一章");
+                zhangJieName = LanguageManager.Instance.LoadLocalization("第一章");
                 break;
 
             //第二章
             case "2":
-                zhangJieName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第二章");
+                zhangJieName = LanguageManager.Instance.LoadLocalization("第二章");
                 break;
 
             //第三章
             case "3":
-                zhangJieName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第三章");
+                zhangJieName = LanguageManager.Instance.LoadLocalization("第三章");
                 break;
 
             //第四章
             case "4":
-                zhangJieName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第四章");
+                zhangJieName = LanguageManager.Instance.LoadLocalization("第四章");
                 break;
 
             //第五章
             case "5":
-                zhangJieName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第五章");
+                zhangJieName = LanguageManager.Instance.LoadLocalization("第五章");
                 break;
         }
 

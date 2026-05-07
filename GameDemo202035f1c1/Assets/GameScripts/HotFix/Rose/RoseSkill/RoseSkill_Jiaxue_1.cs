@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 //加血技能
 public class RoseSkill_Jiaxue_1 : MonoBehaviour
@@ -89,7 +89,7 @@ public class RoseSkill_Jiaxue_1 : MonoBehaviour
                     effect.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
                     effect.SetActive(true);
                     Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().HuDunEffect = effect;
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("护盾开启");
+                    string langStr = LanguageManager.Instance.LoadLocalization("护盾开启");
                     Game_PublicClassVar.Get_function_UI.Fight_FlyText("1", langStr, "2", game_PositionVar.Obj_Rose, "", "");
                     break;
             }

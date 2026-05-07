@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -55,7 +55,7 @@ public class UI_DayTaskList : MonoBehaviour
         }
         dayTaskNumMax = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TargetValue1", "ID", dayTaskID, "TaskCountry_Template"));
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("进度值");
+        string langStr = LanguageManager.Instance.LoadLocalization("进度值");
         if (dayTaskNumMax != 0)
         {
             Obj_dayTaskValuePro.GetComponent<Text>().text = langStr + "：" + "" + dayTaskNum + "/" + dayTaskNumMax + "";
@@ -74,7 +74,7 @@ public class UI_DayTaskList : MonoBehaviour
 
         //显示活跃度
         ObscuredString everyTaskRewardNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EveryTaskRewardNum", "ID", dayTaskID, "TaskCountry_Template");
-        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("活跃度");
+        langStr = LanguageManager.Instance.LoadLocalization("活跃度");
         Obj_DayTaskHuoYueDu.GetComponent<Text>().text = langStr + " X " + everyTaskRewardNum;
 
         //其他奖励显示
@@ -136,8 +136,8 @@ public class UI_DayTaskList : MonoBehaviour
             //检测背包空余位置
             if (Game_PublicClassVar.Get_function_Rose.BagNullNum() < dayTaskRewardTypeList.Length) {
 
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_152");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_153");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_152");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_153");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + dayTaskRewardTypeList.Length + langStrHint_2);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包剩余格子数量不足!请预留至少" + dayTaskRewardTypeList.Length +"个位置");
                 return;
@@ -247,7 +247,7 @@ public class UI_DayTaskList : MonoBehaviour
 
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_384");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_384");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("领取奖励条件不足");
         }

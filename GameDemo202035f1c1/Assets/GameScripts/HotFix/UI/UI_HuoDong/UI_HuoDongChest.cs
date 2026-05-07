@@ -149,9 +149,9 @@ public class UI_HuoDongChest : MonoBehaviour {
 					}else{
 						string costItemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", CostItemID,"Item_Template");
 
-                        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_365");
-                        string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_366");
-                        string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_367");
+                        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_365");
+                        string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_366");
+                        string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("hint_367");
                         Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 + CostItemNum+ langStrHint_2 + costItemName+ langStrHint_3);
                         //Game_PublicClassVar.Get_function_UI.GameHint("需要" + CostItemNum + "个" + costItemName + ",才能开启");
                     }
@@ -211,7 +211,7 @@ public class UI_HuoDongChest : MonoBehaviour {
     private void OnDestroy()
     {
         if (IfRoseTake) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_123");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_123");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的宝箱已经先手被别人抢走了！ T.T");
             Destroy(mainUIGetherItem);

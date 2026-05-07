@@ -1,5 +1,4 @@
 ﻿using Cysharp.Threading.Tasks;
-using GameScripts;
 using UnityEngine;
 
 public class GameApp

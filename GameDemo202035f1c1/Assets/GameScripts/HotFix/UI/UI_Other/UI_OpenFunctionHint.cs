@@ -41,7 +41,7 @@ public class UI_OpenFunctionHint : MonoBehaviour {
 
 
     public void Btn_Hint() {
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_150");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_150");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你有新的邮件！请赶快前往圣光成的邮件处领取哦~");
     }

@@ -24,7 +24,7 @@ public class UI_ChouKaNumRewardSet : MonoBehaviour {
         {
             dayChouKaNum = "0";
         }
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("今日抽卡次数");
+        string langStr = LanguageManager.Instance.LoadLocalization("今日抽卡次数");
         Obj_ChouKaNumStr.GetComponent<Text>().text = langStr + ":" + dayChouKaNum;
 
         //清理显示

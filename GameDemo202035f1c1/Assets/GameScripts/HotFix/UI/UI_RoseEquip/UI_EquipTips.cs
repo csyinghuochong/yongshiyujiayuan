@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -208,7 +208,7 @@ public class UI_EquipTips : MonoBehaviour {
         //血量
         if (equip_Hp != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("血量");
+            langStr = LanguageManager.Instance.LoadLocalization("血量");
 			textShow = langStr + " ： " + equip_Hp ;
 			//textNum = textNum + 1;
             //ShowPropertyText(textShow);
@@ -240,7 +240,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//攻击
 		if (equip_MinAct != "0"||equip_MaxAct != "0")
 		{
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击");
+                langStr = LanguageManager.Instance.LoadLocalization("攻击");
                 textShow = langStr + " ： " + equip_MinAct + " - " + equip_MaxAct ;
 				//textNum = textNum + 1;
                 //ShowPropertyText(textShow);
@@ -275,7 +275,7 @@ public class UI_EquipTips : MonoBehaviour {
         //防御
         if (equip_MinDef != "0"||equip_MaxDef != "0")
 		{
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("防御");
+                langStr = LanguageManager.Instance.LoadLocalization("防御");
                 textShow = langStr + " ： " + equip_MinDef + " - " + equip_MaxDef ;
 				//textNum = textNum + 1;
                 //ShowPropertyText(textShow);
@@ -309,7 +309,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//魔防
 		if (equip_MinAdf != "0"||equip_MaxAdf != "0")
 		{
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔防");
+                langStr = LanguageManager.Instance.LoadLocalization("魔防");
                 textShow = langStr + " ： " + equip_MinAdf + " - " + equip_MaxAdf ;
 				//textNum = textNum + 1;
                 //ShowPropertyText(textShow);
@@ -345,7 +345,7 @@ public class UI_EquipTips : MonoBehaviour {
         //攻击
         if (equip_MinMagAct != "0" || equip_MaxMagAct != "0")
         {
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("技能伤害");
+            langStr = LanguageManager.Instance.LoadLocalization("技能伤害");
             textShow = langStr + " ： " + equip_MinMagAct + " - " + equip_MaxMagAct;
             //textNum = textNum + 1;
             //ShowPropertyText(textShow);
@@ -380,7 +380,7 @@ public class UI_EquipTips : MonoBehaviour {
         //暴击
         if (equip_Cri != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击");
+            langStr = LanguageManager.Instance.LoadLocalization("暴击");
             textShow = langStr + " ： " + float.Parse(equip_Cri) * 100 + "%\n";
 			//textNum = textNum + 1;
             ShowPropertyText(textShow);
@@ -388,7 +388,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//命中
 		if (equip_Hit != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("命中");
+            langStr = LanguageManager.Instance.LoadLocalization("命中");
             textShow = langStr + " ： " + float.Parse(equip_Hit)*100 + "%\n";
 			//textNum = textNum + 1;
             ShowPropertyText(textShow);
@@ -396,7 +396,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//闪避
 		if (equip_Dodge != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避");
+            langStr = LanguageManager.Instance.LoadLocalization("闪避");
             textShow = langStr + " ： " + float.Parse(equip_Dodge)*100 + "%\n";
 			//textNum = textNum + 1;
             ShowPropertyText(textShow);
@@ -404,7 +404,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//伤害加成
 		if (equip_DamgeAdd != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("伤害加成");
+            langStr = LanguageManager.Instance.LoadLocalization("伤害加成");
             textShow = langStr + " ： " + float.Parse(equip_DamgeAdd)*100 + "%\n";
 			//textNum = textNum + 1;
             ShowPropertyText(textShow);
@@ -412,7 +412,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//伤害减免
 		if (equip_DamgeSub != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("伤害减免");
+            langStr = LanguageManager.Instance.LoadLocalization("伤害减免");
             textShow = langStr + " ： " + float.Parse(equip_DamgeSub)*100 + "%\n";
 			//textNum = textNum + 1;
             ShowPropertyText(textShow);
@@ -420,7 +420,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//速度
 		if (equip_Speed != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("移动速度");
+            langStr = LanguageManager.Instance.LoadLocalization("移动速度");
             textShow = langStr + " ： " + equip_Dodge ;
 			//textNum = textNum + 1;
             ShowPropertyText(textShow);
@@ -429,7 +429,7 @@ public class UI_EquipTips : MonoBehaviour {
 		//幸运值
 		if (equip_Lucky != "0")
 		{
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("幸运值");
+            langStr = LanguageManager.Instance.LoadLocalization("幸运值");
             textShow = langStr + " ： " + equip_Lucky ;
 			//textNum = textNum + 1;
             ShowPropertyText(textShow);
@@ -439,7 +439,7 @@ public class UI_EquipTips : MonoBehaviour {
         /*
         if (equip_MinMagAct != "0" || equip_MaxMagAct != "0")
         {
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("技能伤害");
+            langStr = LanguageManager.Instance.LoadLocalization("技能伤害");
             textShow = langStr + " ： " + equip_MinMagAct + " - " + equip_MaxMagAct;
             ShowPropertyText(textShow);
             //textNum = textNum + 1;
@@ -508,7 +508,7 @@ public class UI_EquipTips : MonoBehaviour {
 				//Debug.Log ("EquipQiangHuaID = " + EquipQiangHuaID);
                 float equipPropreAdd = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EquipPropreAdd", "ID", EquipQiangHuaID, "EquipQiangHua_Template"));
                 string qiangHuaLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("QiangHuaLv", "ID", EquipQiangHuaID, "EquipQiangHua_Template");
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("强化 装备属性提升");
+                langStr = LanguageManager.Instance.LoadLocalization("强化 装备属性提升");
                 ShowPropertyText("+" + qiangHuaLv + langStr + equipPropreAdd * 100 + "%", "4");
             }
         }
@@ -633,7 +633,7 @@ public class UI_EquipTips : MonoBehaviour {
                 break;
         }
 
-        textEquipType = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(textEquipType);
+        textEquipType = LanguageManager.Instance.LoadLocalization(textEquipType);
 
         //显示宝石插槽属性
         float showGemTextNum = 0;
@@ -806,7 +806,7 @@ public class UI_EquipTips : MonoBehaviour {
                 string ifShowSuitNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ifShowSuitNum", "ID", triggerSuitPropertyID, "EquipSuitProperty_Template");
                 if (ifShowSuitNum == "0")
                 {
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("件套");
+                    langStr = LanguageManager.Instance.LoadLocalization("件套");
                     propertyObj.GetComponent<Text>().text = triggerSuitNum + langStr + "：" + equipSuitDes;
                 }
                 else {
@@ -837,18 +837,18 @@ public class UI_EquipTips : MonoBehaviour {
 		//显示对应装备属性
 		Obj_EquipName.GetComponent<Text>().text = equipName;
 		Obj_EquipName.GetComponent<Text>().color = Game_PublicClassVar.Get_function_UI.QualityReturnColor(ItemQuality);
-        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("部位");
+        langStr = LanguageManager.Instance.LoadLocalization("部位");
         Obj_EquipType.GetComponent<Text>().text = langStr + "：" +textEquipType;
 
         Vector2 equipNeedvec2 = new Vector2(150.0f, -175 - 22 * properShowNum - HintTextNum - showGemTextNum - equipSuitTextNum);
         Obj_EquipNeed.transform.GetComponent<RectTransform>().anchoredPosition = equipNeedvec2;
-        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级");
+        langStr = LanguageManager.Instance.LoadLocalization("等级");
         Obj_EquipWearNeed.GetComponent<Text>().text = langStr + " ： " + equipLv;
 
         //获取角色等级
         int roseLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
         if (roseLv < int.Parse(equipLv)) {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级不足");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("等级不足");
             Obj_EquipWearNeed.GetComponent<Text>().text = langStr + " ： " + equipLv + "<color=#ff0000ff>  ("+ langStr_1 + ")</color>";
         }
         int EquipNeedTextNum = 30;
@@ -862,9 +862,9 @@ public class UI_EquipTips : MonoBehaviour {
         {
             //根据属性值返回属性名称
             string propertyName = Game_PublicClassVar.Get_function_UI.ReturnEquipNeedPropertyName(needProperty[0]);
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("需要");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("达到");
-            string langStr_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(propertyName);
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("需要");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("达到");
+            string langStr_4 = LanguageManager.Instance.LoadLocalization(propertyName);
             Obj_EquipWearNeedProperty.GetComponent<Text>().text = langStr_1 + langStr_4 + langStr_2 + " ： " + needProperty[1];
 
             switch (needProperty[0])
@@ -874,7 +874,7 @@ public class UI_EquipTips : MonoBehaviour {
                     int value = Game_PublicClassVar.Get_function_Rose.ReturnRosePropertyValue("1");
                     if (value < int.Parse(needProperty[1])) {
                         //Obj_EquipWearNeedProperty.GetComponent<Text>().color = Color.red;
-                        string langStr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击力不足");
+                        string langStr_3 = LanguageManager.Instance.LoadLocalization("攻击力不足");
                         Obj_EquipWearNeedProperty.GetComponent<Text>().text = langStr_1 + langStr_4 + langStr_2 + " ： " + needProperty[1] + "<color=#ff0000ff>  ("+ langStr_3 + ")</color>";
                     }
                 break;
@@ -1173,7 +1173,7 @@ public class UI_EquipTips : MonoBehaviour {
         string equipName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", ItemID, "Item_Template");
         string equipQuality = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemQuality", "ID", ItemID, "Item_Template");
         string jieshaoStr = "";
-        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_27");
+        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhint_27");
         //有宝石镶嵌时提示
         bool hintStatus = false;
         if (ItemGemID != "" && ItemGemID != "0") {
@@ -1181,7 +1181,7 @@ public class UI_EquipTips : MonoBehaviour {
             for (int i = 0; i < gemList.Length; i++) {
                 if (gemList[i] != "0" && gemList[i] != "") {
                     hintStatus = true;
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_28");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_28");
                     jieshaoStr = langStrHint_1 + equipName + langStrHint_2;
                     //jieshaoStr = "是否出售装备:" + equipName + "\n(提示:当前装备上附带宝石!)";
                 }
@@ -1194,7 +1194,7 @@ public class UI_EquipTips : MonoBehaviour {
             if (roseLv <= 20)
             {
                 hintStatus = true;
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_29");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_29");
                 jieshaoStr = langStrHint_1 + equipName + langStrHint_2;
                 //jieshaoStr = "是否出售装备:" + equipName + "\n(提示:在主城回收商人处回收可以获得经验和装备碎片!)";
             }
@@ -1205,7 +1205,7 @@ public class UI_EquipTips : MonoBehaviour {
         {
             hintStatus = true;
             string sellValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SellMoney", "ID", ItemID, "Item_Template");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_30");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_30");
             jieshaoStr = langStrHint_1 + equipName + langStrHint_2 + sellValue;
             //jieshaoStr = "是否出售装备:" + equipName + "\n(提示:在主城回收商人处回收可以获得经验和装备碎片!)\n本次出售可以获得金币:" + sellValue;
         }
@@ -1219,9 +1219,9 @@ public class UI_EquipTips : MonoBehaviour {
             Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UI_CloseTips.SetActive(false);
             //弹出提示
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string langStrHint_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_13");
-            string langStrHint_5 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_14");
-            string langStrHint_6 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_15");
+            string langStrHint_4 = LanguageManager.Instance.LoadLocalizationHint("comhintText_13");
+            string langStrHint_5 = LanguageManager.Instance.LoadLocalizationHint("comhintText_14");
+            string langStrHint_6 = LanguageManager.Instance.LoadLocalizationHint("comhintText_15");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, throwItem, null, langStrHint_4, langStrHint_5, langStrHint_6);
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
             uiCommonHint.transform.localPosition = Vector3.zero;
@@ -1412,7 +1412,7 @@ public class UI_EquipTips : MonoBehaviour {
         int nullNum = Game_PublicClassVar.Get_function_Rose.StoreHouseNullNum();
         if (nullNum <= 0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_82");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_82");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("仓库已满！");
             return;
@@ -1429,7 +1429,7 @@ public class UI_EquipTips : MonoBehaviour {
         //Game_PublicClassVar.Get_function_Rose.SendRewardToStoreHouse(save_ItemID, 1, "1", hideID);
 
         if (Game_PublicClassVar.Get_game_PositionVar.HouseBagYeShu == 0) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_83");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_83");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("仓库未打开！");
             clickBtnStatus = false;
@@ -1442,7 +1442,7 @@ public class UI_EquipTips : MonoBehaviour {
         Game_PublicClassVar.Get_game_PositionVar.ItemMoveType_End = "3";
         string nullspace = Game_PublicClassVar.Get_function_Rose.StoreHouse_ReturnNullSpaceNum(Game_PublicClassVar.Get_game_PositionVar.HouseBagYeShu.ToString());
         if (nullspace == "-1") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_82");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_82");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("仓库已满!");
             clickBtnStatus = false;
@@ -1484,7 +1484,7 @@ public class UI_EquipTips : MonoBehaviour {
         string nullspace = Game_PublicClassVar.Get_function_Rose.BagFirstNullNum();
         if (nullspace == "-1")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_82");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_82");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("仓库已满!");
             clickBtnStatus = false;
@@ -1528,7 +1528,7 @@ public class UI_EquipTips : MonoBehaviour {
                 //紫色宝石
                 case "101":
                     //显示名称
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("红色插槽");
+                    string langStr = LanguageManager.Instance.LoadLocalization("红色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
                     object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
@@ -1537,7 +1537,7 @@ public class UI_EquipTips : MonoBehaviour {
                     break;
                 //红色宝石
                 case "102":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("紫色插槽");
+                    langStr = LanguageManager.Instance.LoadLocalization("紫色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
                     obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
@@ -1546,7 +1546,7 @@ public class UI_EquipTips : MonoBehaviour {
                     break;
                 //蓝色宝石
                 case "103":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("蓝色插槽");
+                    langStr = LanguageManager.Instance.LoadLocalization("蓝色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
                     obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
@@ -1555,7 +1555,7 @@ public class UI_EquipTips : MonoBehaviour {
                     break;
                 //绿色孔位
                 case "104":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("绿色插槽");
+                    langStr = LanguageManager.Instance.LoadLocalization("绿色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
                     obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
@@ -1564,7 +1564,7 @@ public class UI_EquipTips : MonoBehaviour {
                     break;
                 //白色孔位
                 case "105":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("白色插槽");
+                    langStr = LanguageManager.Instance.LoadLocalization("白色插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
                     obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
@@ -1573,7 +1573,7 @@ public class UI_EquipTips : MonoBehaviour {
                     break;
                 //多彩插槽
                 case "110":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("多彩插槽");
+                    langStr = LanguageManager.Instance.LoadLocalization("多彩插槽");
                     gemTextObj.GetComponent<Text>().text = langStr;
                     //显示空图标
                     obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("GemHoleDi/" + gemHoleID);
@@ -1595,7 +1595,7 @@ public class UI_EquipTips : MonoBehaviour {
             case "10001":
                 //获取技能名称
                 string skillName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillName", "ID", propretyValue, "Skill_Template");
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("隐藏属性");
+                string langStr = LanguageManager.Instance.LoadLocalization("隐藏属性");
                 textShow = langStr + "：" + skillName;
                 break;
         }
@@ -1625,364 +1625,364 @@ public class UI_EquipTips : MonoBehaviour {
 
                 //血量
                 case "10":
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("血量");
+                    string langStr = LanguageManager.Instance.LoadLocalization("血量");
                     textShow = textShow + langStr + propretyValue;
                     break;
 
                 //物理最小攻击
                 case "11":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("攻击提高");
                     textShow = textShow + langStr + propretyValue;
                     break;
 
                 //魔法攻击
                 case "14":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("法术提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("法术提高");
                     textShow = textShow + langStr + propretyValue;
                     break;
 
                 //物理防御
                 case "17":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("物防提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("物防提高");
                     textShow = textShow + langStr + propretyValue;
                     break;
 
                 //魔法防御
                 case "20":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔防提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("魔防提高");
                     textShow = textShow + langStr + propretyValue;
                     break;
 
                 //暴击
                 case "30":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击概率提升");
+                    langStr = LanguageManager.Instance.LoadLocalization("暴击概率提升");
                     textShow = langStr + " ：" + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //命中
                 case "31":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("命中概率提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("命中概率提高");
                     textShow = langStr + " ：" + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //闪避
                 case "32":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避概率提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("闪避概率提高");
                     textShow = langStr + " ：" + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //物理免伤
                 case "33":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("受到攻击伤害降低");
+                    langStr = LanguageManager.Instance.LoadLocalization("受到攻击伤害降低");
                     textShow = langStr + "：" + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //魔法免伤
                 case "34":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("受到法术伤害降低");
+                    langStr = LanguageManager.Instance.LoadLocalization("受到法术伤害降低");
                     textShow = langStr + "：" + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //速度
                 case "35":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("速度提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("速度提高");
                     textShow = langStr + " ： " + propretyValue;
                     break;
 
                 //伤害免伤
                 case "36":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("受到伤害降低");
+                    langStr = LanguageManager.Instance.LoadLocalization("受到伤害降低");
                     textShow = langStr + " ： " + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //血量百分比
                 case "50":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("血量上限提升");
+                    langStr = LanguageManager.Instance.LoadLocalization("血量上限提升");
                     textShow = langStr + " ： " + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //物理攻击(百分比)
                 case "51":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击伤害提升");
+                    langStr = LanguageManager.Instance.LoadLocalization("攻击伤害提升");
                     textShow = langStr + " ： " + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //魔法攻击(百分比)
                 case "52":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("法术伤害提升");
+                    langStr = LanguageManager.Instance.LoadLocalization("法术伤害提升");
                     textShow = langStr + " ： " + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //物理防御(百分比)
                 case "53":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("物防提升");
+                    langStr = LanguageManager.Instance.LoadLocalization("物防提升");
                     textShow = langStr + " ： " + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //魔法防御(百分比)
                 case "54":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔防提升");
+                    langStr = LanguageManager.Instance.LoadLocalization("魔防提升");
                     textShow = langStr + " ： " + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //幸运
                 case "100":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("幸运值");
+                    langStr = LanguageManager.Instance.LoadLocalization("幸运值");
                     textShow = langStr + " ： " + propretyValue;
                     break;
 
                 //格挡值
                 case "101":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("格挡值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("格挡值额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //重击概率
                 case "111":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("重击概率额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("重击概率额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //重击附加伤害值
                 case "112":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("重击伤害额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("重击伤害额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //每次普通攻击附加的伤害值
                 case "121":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("固定伤害额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("固定伤害额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //忽视目标防御值
                 case "131":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("忽视目标防御额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("忽视目标防御额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //忽视目标魔防值
                 case "132":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("忽视目标魔防额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("忽视目标魔防额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //忽视目标防御值
                 case "133":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击穿透");
+                    langStr = LanguageManager.Instance.LoadLocalization("攻击穿透");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //忽视目标魔防值
                 case "134":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("法术穿透");
+                    langStr = LanguageManager.Instance.LoadLocalization("法术穿透");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //吸血概率
                 case "141":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("吸血率额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("吸血率额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //法术反击
                 case "151":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("法术反弹额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("法术反弹额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //攻击反击
                 case "152":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击反弹额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("攻击反弹额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //韧性概率
                 case "161":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("韧性概率额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("韧性概率额外提高");
                     textShow = langStr + " ：" + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //暴击等级
                 case "201":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击等级额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("暴击等级额外提高");
                     textShow = langStr + int.Parse(propretyValue);
                     break;
 
                 //韧性等级
                 case "202":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("韧性等级额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("韧性等级额外提高");
                     textShow = langStr + int.Parse(propretyValue);
                     break;
 
                 //命中等级
                 case "203":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("命中等级额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("命中等级额外提高");
                     textShow = langStr + int.Parse(propretyValue);
                     break;
 
                 //闪避等级
                 case "204":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避等级额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("闪避等级额外提高");
                     textShow = langStr + int.Parse(propretyValue);
                     break;
 
                 //光抗性
                 case "301":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("神圣抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("神圣抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //暗抗性
                 case "302":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暗影抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("暗影抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //火抗性
                 case "303":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("火焰抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("火焰抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //水抗性
                 case "304":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("冰霜抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("冰霜抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //电抗性
                 case "305":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪电抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("闪电抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //野兽攻击抗性
                 case "321":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("野兽攻击抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("野兽攻击抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //人物攻击抗性
                 case "322":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("人形攻击抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("人形攻击抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //恶魔攻击抗性
                 case "323":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("恶魔攻击抗性额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("恶魔攻击抗性额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //经验加成
                 case "401":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("经验收益额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("经验收益额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //金币加成
                 case "402":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("金币收益额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("金币收益额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //洗炼极品掉落（祝福值）
                 case "403":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("极品值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("极品值额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //装备隐藏属性出现概率
                 case "404":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("祝福值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("祝福值额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //装备上的宝石槽位出现概率
                 case "405":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("运气值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("运气值额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //经验加成固定
                 case "406":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("经验收益额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("经验收益额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //金币加成固定
                 case "407":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("金币收益额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("金币收益额外提高");
                     textShow = langStr + propretyValue;
                     break;
                 //药剂类熟练度
                 case "408":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("药剂类熟练度额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("药剂类熟练度额外提高");
                     textShow = langStr + propretyValue;
                     break;
                 //锻造类熟练度
                 case "409":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("锻造类熟练度额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("锻造类熟练度额外提高");
                     textShow = langStr + propretyValue;
                     break;
                 //复活
                 case "411":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("复活几率额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("复活几率额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
                 //攻击无视防御
                 case "412":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("无视防御额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("无视防御额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
                 //神农
                 case "413":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("神农值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("神农值额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
                 //额外掉落
                 case "414":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("财富值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("财富值额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
                 //伪装  +增大发现范围   -缩小范围
                 case "415":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("伪装值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("伪装值额外提高");
                     textShow = langStr + propretyValue;
                     break;
                 //灾难
                 case "416":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("灾难值额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("灾难值额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
                 //嗜血概率
                 case "417":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("嗜血几率额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("嗜血几率额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //怪物脱战距离
                 case "418":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("怪物脱战距离额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("怪物脱战距离额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //专注概率
                 case "419":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("专注额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("专注额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 //怪物脱战距离
                 case "420":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("必中额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("必中额外提高");
                     textShow = langStr + propretyValue;
                     break;
 
                 //生产药剂暴击概率
                 case "421":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("生产药剂暴击概率额外提高");
+                    langStr = LanguageManager.Instance.LoadLocalization("生产药剂暴击概率额外提高");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
             }
@@ -1995,77 +1995,77 @@ public class UI_EquipTips : MonoBehaviour {
 
                 //血量
                 case "11":
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("攻击附加伤害+");
+                    string langStr = LanguageManager.Instance.LoadLocalization("攻击附加伤害+");
                     textShow = textShow + langStr + propretyValue;
                     break;
                 //血量
                 case "15":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔法附加伤害+");
+                    langStr = LanguageManager.Instance.LoadLocalization("魔法附加伤害+");
                     textShow = textShow + langStr + propretyValue;
                     break;
                 //血量
                 case "21":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("物伤伤害抵抗+");
+                    langStr = LanguageManager.Instance.LoadLocalization("物伤伤害抵抗+");
                     textShow = textShow + langStr + propretyValue;
                     break;
                 //血量
                 case "31":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔防伤害抵抗+");
+                    langStr = LanguageManager.Instance.LoadLocalization("魔防伤害抵抗+");
                     textShow = textShow + langStr + propretyValue;
                     break;
                 //血量
                 case "41":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("血量附加+");
+                    langStr = LanguageManager.Instance.LoadLocalization("血量附加+");
                     textShow = textShow + langStr + propretyValue;
                     break;
 
                 case "101":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击率+");
+                    langStr = LanguageManager.Instance.LoadLocalization("暴击率+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "104":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避率+");
+                    langStr = LanguageManager.Instance.LoadLocalization("闪避率+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "103":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("命中率+");
+                    langStr = LanguageManager.Instance.LoadLocalization("命中率+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "102":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击抵抗+");
+                    langStr = LanguageManager.Instance.LoadLocalization("暴击抵抗+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "16":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔攻增加+");
+                    langStr = LanguageManager.Instance.LoadLocalization("魔攻增加+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "42":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("血量增加+");
+                    langStr = LanguageManager.Instance.LoadLocalization("血量增加+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "12":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("物攻增加+");
+                    langStr = LanguageManager.Instance.LoadLocalization("物攻增加+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "22":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("物防增加+");
+                    langStr = LanguageManager.Instance.LoadLocalization("物防增加+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "32":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔防增加+");
+                    langStr = LanguageManager.Instance.LoadLocalization("魔防增加+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
 
                 case "141":
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("技能抵抗增加+");
+                    langStr = LanguageManager.Instance.LoadLocalization("技能抵抗增加+");
                     textShow = langStr + float.Parse(propretyValue) * 100 + "%";
                     break;
             }

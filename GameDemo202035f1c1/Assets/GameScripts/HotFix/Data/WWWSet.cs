@@ -285,8 +285,6 @@ public class WWWSet:MonoBehaviour{
     public bool MapEnterStatus;
     public float MapEnterTimeSum;
 
-    //本地化
-    public SetLanguage GameSetLanguage;         //本地化组件
     public ObscuredBool IfGooglePay;
     public GameObject Obj_RenZhengSet;
     public GameObject RenZhengSetObj;
@@ -450,13 +448,13 @@ public class WWWSet:MonoBehaviour{
         switch (typeStr) {
             case "0":
                 //设置中文
-                Game_PublicClassVar.Get_gameSettingLanguge.SetLanguage("Chinese");
+                LanguageManager.Instance.SetLanguage("Chinese");
                 Debug.Log("默认中文版本");
                 break;
 
             case "1":
                 //设置英文
-                Game_PublicClassVar.Get_gameSettingLanguge.SetLanguage("English");
+                LanguageManager.Instance.SetLanguage("English");
                 Debug.Log("默认英文版本");
                 break;
         }
@@ -1758,7 +1756,7 @@ public class WWWSet:MonoBehaviour{
 
             //弹出提示
             GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("系统检测数据异常,已断开与服务器连接!!!", Game_PublicClassVar.Get_wwwSet.ExitGame, Game_PublicClassVar.Get_wwwSet.ExitGame, "系统提示", "确定", "取消", Game_PublicClassVar.Get_wwwSet.ExitGame);
 
             if (GameObject.Find("Canvas/GameGongGaoSet") != null)
@@ -5974,7 +5972,7 @@ public class WWWSet:MonoBehaviour{
     public void Show_GameGongGao(string hintText)
     {
         GameObject uiCommonHint = (GameObject)Instantiate(Obj_CommonHintHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(hintText, null, null, "游戏公告");
         uiCommonHint.transform.SetParent(GameObject.Find("Canvas/GameGongGaoSet").transform);
         uiCommonHint.transform.localPosition = Vector3.zero;

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -151,7 +151,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
         }
 
         //初始化标签按钮
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language != "Chinese")
+        if (LanguageManager.Instance.CurrentLanguage != LanguageType.Chinese)
         {
             Obj_Btn_ChengJiu_Text.GetComponent<Text>().fontSize = 20;
             Obj_Btn_JingLing_Text.GetComponent<Text>().fontSize = 20;
@@ -268,7 +268,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 
             case "0":
                 chengJiuTypeID = "1001";
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("成就首页");
+                string langStr = LanguageManager.Instance.LoadLocalization("成就首页");
                 ChengJiuTypeName = langStr;
                 UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_Main.transform;
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
@@ -280,7 +280,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 
             case "1":
                 chengJiuTypeID = "1002";
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("成就列表");
+                langStr = LanguageManager.Instance.LoadLocalization("成就列表");
                 ChengJiuTypeName = langStr;
                 UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_Fight.transform;
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
@@ -299,7 +299,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 
             case "2":
                 chengJiuTypeID = "1003";
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("探索成就");
+                langStr = LanguageManager.Instance.LoadLocalization("探索成就");
                 ChengJiuTypeName = langStr;
                 UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_ShouJi.transform;
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
@@ -318,7 +318,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 
             case "3":
                 chengJiuTypeID = "1004";
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("收集成就");
+                langStr = LanguageManager.Instance.LoadLocalization("收集成就");
                 ChengJiuTypeName = langStr;
                 UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_TanSuo.transform;
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
@@ -397,37 +397,37 @@ public class Rose_ChengJiuSet : MonoBehaviour {
             switch (i) {
 
                 case 0:
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("通 用");
+                    string langStr = LanguageManager.Instance.LoadLocalization("通 用");
                     zhangJieName = langStr;
                     ziDuanName = "ChengJiuSet_Com";
                     break;
 
                 case 1:
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第一章");
+                    langStr = LanguageManager.Instance.LoadLocalization("第一章");
                     zhangJieName = langStr;
                     ziDuanName = "ChengJiuSet_ZhangJie_1";
                     break;
 
                 case 2:
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第二章");
+                    langStr = LanguageManager.Instance.LoadLocalization("第二章");
                     zhangJieName = langStr;
                     ziDuanName = "ChengJiuSet_ZhangJie_2";
                     break;
 
                 case 3:
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第三章");
+                    langStr = LanguageManager.Instance.LoadLocalization("第三章");
                     zhangJieName = langStr;
                     ziDuanName = "ChengJiuSet_ZhangJie_3";
                     break;
 
                 case 4:
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第四章");
+                    langStr = LanguageManager.Instance.LoadLocalization("第四章");
                     zhangJieName = langStr;
                     ziDuanName = "ChengJiuSet_ZhangJie_4";
                     break;
 
                 case 5:
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第五章");
+                    langStr = LanguageManager.Instance.LoadLocalization("第五章");
                     zhangJieName = langStr;
                     ziDuanName = "ChengJiuSet_ZhangJie_5";
                     break;
@@ -455,7 +455,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
             Text textName = uiPoint.UI_TaskName.GetComponent<Text>();
             textName.text = zhangJieName;
             //特殊处理
-            if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language == "English") {
+            if (LanguageManager.Instance.CurrentLanguage == LanguageType.English) {
                 textName.fontSize = 18;
             }
 
@@ -841,7 +841,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 		case "0":
 				shouShaIDSet = "70001901,70001902,70001903,70001904,70001905,70001906";
 				zhangJieNum = shouShaIDSet.Split (',').Length;
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第一章");
+                string langStr = LanguageManager.Instance.LoadLocalization("第一章");
                 ChengJiuTypeName = langStr;
 				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
 				UI_RoseShouShaType.transform.localPosition = new Vector3 (0, hight, 0);
@@ -859,7 +859,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			case "1":
 			    shouShaIDSet = "70002901,70002902,70002904,70002903";
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第二章");
+                langStr = LanguageManager.Instance.LoadLocalization("第二章");
                 ChengJiuTypeName = langStr;
 				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
@@ -879,7 +879,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			case "2":
 			    shouShaIDSet = "70003901,70003902,70003903,70003904";
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第三章");
+                langStr = LanguageManager.Instance.LoadLocalization("第三章");
                 ChengJiuTypeName = langStr;
 				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
@@ -899,7 +899,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			case "3":
 			    shouShaIDSet = "70004901,70004902,70004903,70004904";
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第四章");
+                langStr = LanguageManager.Instance.LoadLocalization("第四章");
                 ChengJiuTypeName = langStr;
 				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
@@ -919,7 +919,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			case "4":
 			    shouShaIDSet = "70005901,70005902,70005903,70005904,70005905";
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
-                langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("第五章");
+                langStr = LanguageManager.Instance.LoadLocalization("第五章");
                 ChengJiuTypeName = langStr;
 				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
@@ -1042,15 +1042,15 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 		switch (monsterMonsterRace) {
 			
 		case "1":
-			raceStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("野兽");
+			raceStr = LanguageManager.Instance.LoadLocalization("野兽");
 			break;
 
 		case "2":
-			raceStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("人类");
+			raceStr = LanguageManager.Instance.LoadLocalization("人类");
 			break;
 
 		case "3":
-			raceStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("恶魔");
+			raceStr = LanguageManager.Instance.LoadLocalization("恶魔");
 			break;
 		}
 
@@ -1099,7 +1099,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			}
 		}
 
-        string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("正在向服务器请求首杀数据");
+        string langstr = LanguageManager.Instance.LoadLocalization("正在向服务器请求首杀数据");
 
         Obj_ShouShaName_NanDu_1.GetComponent<Text> ().text = langstr + "...";
 		Obj_ShouShaName_NanDu_2.GetComponent<Text> ().text = langstr + "...";
@@ -1120,12 +1120,12 @@ public class Rose_ChengJiuSet : MonoBehaviour {
         string deathMonsterIDListStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("DeathMonsterID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         if (deathMonsterIDListStr.Contains(ShouShaMonsterID))
         {
-            langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("已击杀");
+            langstr = LanguageManager.Instance.LoadLocalization("已击杀");
             Obj_BossShuaXinShow.GetComponent<Text>().text = "("+ langstr + ")";
             Obj_BossShuaXinShow.GetComponent<Text>().color = Color.red;
         }
         else {
-            langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("已刷新");
+            langstr = LanguageManager.Instance.LoadLocalization("已刷新");
             Obj_BossShuaXinShow.GetComponent<Text>().text = "("+ langstr + ")";
             Obj_BossShuaXinShow.GetComponent<Text>().color = new Color(0.25f,0.53f,0.15f);
         }
@@ -1133,12 +1133,12 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 
     public void ShowShouShaName(){
 
-        string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("击杀时间");
-        string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("未击杀");
+        string langstr_1 = LanguageManager.Instance.LoadLocalization("击杀时间");
+        string langstr_2 = LanguageManager.Instance.LoadLocalization("未击杀");
 
-        string langstr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("普通模式");
-        string langstr_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("困难模式");
-        string langstr_5 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地狱模式");
+        string langstr_3 = LanguageManager.Instance.LoadLocalization("普通模式");
+        string langstr_4 = LanguageManager.Instance.LoadLocalization("困难模式");
+        string langstr_5 = LanguageManager.Instance.LoadLocalization("地狱模式");
 
         Pro_ShouShaNameList shoushaList = pro_ShouShaNameList;
 
@@ -1235,7 +1235,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
         }
         string shouShaRewardList = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ShouShaRewardList", "ID", ShouShaMonsterID, "Monster_Template");
         if (shouShaRewardList == "" || shouShaRewardList == "0" || shouShaRewardList == null) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_210");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_210");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("此Boss无首杀奖励！");
             return;

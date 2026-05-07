@@ -33,13 +33,13 @@ public class Rose_ShowShouShaNanDuRewardList : MonoBehaviour {
         string nanduStr = "";
         switch (NanDu) {
             case "1":
-                nanduStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("普通难度首胜奖励");
+                nanduStr = LanguageManager.Instance.LoadLocalization("普通难度首胜奖励");
                 break;
             case "2":
-                nanduStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("挑战难度首胜奖励");
+                nanduStr = LanguageManager.Instance.LoadLocalization("挑战难度首胜奖励");
                 break;
             case "3":
-                nanduStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地狱难度首胜奖励");
+                nanduStr = LanguageManager.Instance.LoadLocalization("地狱难度首胜奖励");
                 break;
         }
         Obj_ShowNanDuName.GetComponent<Text>().text = nanduStr;

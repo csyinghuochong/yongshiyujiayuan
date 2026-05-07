@@ -54,7 +54,7 @@ public class UI_LvLiBaoReward : MonoBehaviour
         //显示礼包等级
         string libaoLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Par_1", "ID", ActiveID, "Activity_Template");
         string langStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Par_1", "ID", ActiveID, "UI_LiBao");
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级开启购买");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("级开启购买");
         Obj_LiBaoLv.GetComponent<Text>().text = libaoLv + langStr_1;
         buyLv = int.Parse(libaoLv);
 
@@ -101,7 +101,7 @@ public class UI_LvLiBaoReward : MonoBehaviour
             }
         }
         else {
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("到达等级免费领取");
+            langStr = LanguageManager.Instance.LoadLocalization("到达等级免费领取");
             Obj_BuyValue.GetComponent<Text>().text = langStr;
         }
 
@@ -158,7 +158,7 @@ public class UI_LvLiBaoReward : MonoBehaviour
         int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
         if (roseLv < buyLv)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_232");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_232");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("等级不足,无法购买");
             return;
@@ -172,7 +172,7 @@ public class UI_LvLiBaoReward : MonoBehaviour
         int bagNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
         if (bagNullNum < itemIDStrList.Length)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_233");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_233");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包格子不足！");
             return;
@@ -215,7 +215,7 @@ public class UI_LvLiBaoReward : MonoBehaviour
         }
         else {
             //货币不足
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_234");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_234");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("货币不足,无法购买！");
             return;

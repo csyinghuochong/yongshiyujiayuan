@@ -82,7 +82,7 @@ public class UI_XiLianDaShiSet : MonoBehaviour {
                 break;
         }
 
-        hintTitleStr = Game_PublicClassVar.gameSettingLanguge.LoadLocalization(hintTitleStr);
+        hintTitleStr = LanguageManager.Instance.LoadLocalization(hintTitleStr);
 
         //显示熟练度
         string xiLianDaShiShuLianStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("XiLianDaShiShuLian", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
@@ -95,8 +95,8 @@ public class UI_XiLianDaShiSet : MonoBehaviour {
         num = num - 1;
         if (num >= 0)
         {
-            string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前");
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("熟练度");
+            string langStr_1 = LanguageManager.Instance.LoadLocalization("当前");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("熟练度");
 
             int nowValue = int.Parse(xilianDaShiShuLianList[num]);
             Obj_XiLianDaShiListShuLian.GetComponent<Text>().text = langStr_1 + hintTitleStr + langStr_2 + ":<color=#2D882EFF>" + nowValue + "</color>";
@@ -214,3 +214,4 @@ public class UI_XiLianDaShiSet : MonoBehaviour {
     }
     
 }
+

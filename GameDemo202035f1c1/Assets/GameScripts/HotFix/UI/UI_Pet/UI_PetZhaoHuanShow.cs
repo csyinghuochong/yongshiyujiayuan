@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -105,7 +105,7 @@ public class UI_PetZhaoHuanShow : MonoBehaviour {
         if (petStatus == "1")
         {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_147");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_147");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("收回召唤宠物成功！");
             //收回宠物

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
@@ -195,7 +195,7 @@ public class YinSi : MonoBehaviour
 
         //弹出提示
         GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_wwwSet.Obj_CommonHintHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_19");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhintText_19");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否注销自身帐号的所有数据，注销后自身所有数据将自动删除，如果你确定要注销帐号数据请点击下方确认按钮！", ZhuXiao_True, ZhuXiao_Flase, "系统提示", "确定", "取消", ZhuXiao_Flase);
         //DontDestroyOnLoad(uiCommonHint);
         if (GameObject.Find("Canvas/GameGongGaoSet") != null)

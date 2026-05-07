@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class Function_Skill{
@@ -745,7 +745,7 @@ public class Function_Skill{
                 costGoldStatus = true;
             }
             else {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_138");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_138");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint("金币不足,请获取足够多的金币!");
                 return false;
@@ -809,7 +809,7 @@ public class Function_Skill{
                 return true;
             }
             else {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_310");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_310");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint("SP值不足,每升一级获得1点SP值!");
@@ -1373,7 +1373,7 @@ public class Function_Skill{
     //技能重置
     public void RoseReSkillSP()
     {
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_316");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_316");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         //Game_PublicClassVar.Get_function_UI.GameGirdHint("技能重置成功!");
 
@@ -1429,7 +1429,7 @@ public class Function_Skill{
 
         if (Game_PublicClassVar.Get_function_Rose.GetRoseRMB() < 600)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_86");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_86");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("钻石不足！");
             return;
@@ -1468,7 +1468,7 @@ public class Function_Skill{
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnTianSkillID", nowSPNum.ToString(), "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
 
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_298");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_298");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("天赋重置成功！");
 

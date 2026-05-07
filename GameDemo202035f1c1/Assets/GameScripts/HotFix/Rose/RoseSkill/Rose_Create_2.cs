@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -140,7 +140,7 @@ public class Rose_Create_2 : MonoBehaviour
                         {
                             if (go.GetComponent<AI_Property>() != null) {
                                 if (go.GetComponent<AI_Property>().AI_Hp > 0) {
-                                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_220");
+                                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_220");
                                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你已经召唤此怪物！");
                                     return;

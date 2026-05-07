@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -157,7 +157,7 @@ public class UI_GiveNPC : MonoBehaviour
             }
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_326");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_326");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("请放入将要给予的装备");
         }

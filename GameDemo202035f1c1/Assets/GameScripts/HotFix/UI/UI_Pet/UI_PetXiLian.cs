@@ -111,7 +111,7 @@ public class UI_PetXiLian : MonoBehaviour {
         //检测服务器网络
         if (Game_PublicClassVar.gameLinkServer.ServerLinkStatus == false)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_58");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_58");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
             return;
         }
@@ -124,7 +124,7 @@ public class UI_PetXiLian : MonoBehaviour {
             if (Game_PublicClassVar.Get_function_Rose.ReturnBagItemNum(XiLianNeedItemID) <= 0)
             {
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_222");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_222");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("道具不足!");
                 return;
@@ -139,7 +139,7 @@ public class UI_PetXiLian : MonoBehaviour {
         string nowPetID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetID", "ID", petSpaceID, "RosePet");
         if (nowPetID == "0"|| nowPetID == "")
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_449");
+            string langStr = LanguageManager.Instance.LoadLocalizationHint("hint_449");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }
@@ -157,7 +157,7 @@ public class UI_PetXiLian : MonoBehaviour {
             //宠物打技能书
             case "1":
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_223");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_223");
                 string addSkillID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemUsePar", "ID", XiLianNeedItemID, "Item_Template");
                 if (Game_PublicClassVar.Get_function_AI.Pet_AddSkill(petSpaceID, addSkillID))
                 {
@@ -177,7 +177,7 @@ public class UI_PetXiLian : MonoBehaviour {
                     nowXiLianNum = nowXiLianNum + 1;
                 }
                 else {
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_224");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_224");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的宠物已经有了相同的技能！");
                 }
@@ -191,7 +191,7 @@ public class UI_PetXiLian : MonoBehaviour {
 
                 if (petType != "0")
                 {
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_225");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_225");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("洗炼变异宠物请使用更强大的道具！");
                     return;
@@ -223,7 +223,7 @@ public class UI_PetXiLian : MonoBehaviour {
 
                 Game_PublicClassVar.Get_function_AI.Pet_Create(petSpaceID, petID,"1");
 
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_226");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_226");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的宠物被一股强大的能力赋予了！");
                 Obj_PetShow.GetComponent<UI_PetXiLianShow>().showPetProperty();
@@ -240,7 +240,7 @@ public class UI_PetXiLian : MonoBehaviour {
                 petID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetID", "ID", petSpaceID, "RosePet");
                 Game_PublicClassVar.Get_function_AI.Pet_Create(petSpaceID, petID,"1");
 
-                langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_226");
+                langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_226");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的宠物被一股强大的能力赋予了！");
                 Obj_PetShow.GetComponent<UI_PetXiLianShow>().showPetProperty();
@@ -257,7 +257,7 @@ public class UI_PetXiLian : MonoBehaviour {
                 petID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetID", "ID", petSpaceID, "RosePet");
                 if (Game_PublicClassVar.Get_function_AI.Pet_AddRandomZiZhi(petSpaceID)) {
 
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_227");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_227");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("一股神秘的力量让你的宠物资质提高了！");
                     Obj_PetShow.GetComponent<UI_PetXiLianShow>().showPetProperty();
@@ -276,7 +276,7 @@ public class UI_PetXiLian : MonoBehaviour {
                 if (Game_PublicClassVar.Get_function_AI.Pet_AddRandomChengZhang(petSpaceID))
                 {
 
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_228");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_228");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("一股神秘的力量让你的宠物成长提高了！");
                     Obj_PetShow.GetComponent<UI_PetXiLianShow>().showPetProperty();
@@ -296,7 +296,7 @@ public class UI_PetXiLian : MonoBehaviour {
                 string ifBaby = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("IfBaby", "ID", petSpaceID, "RosePet");
                 if (ifBaby == "0") {
 
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_229");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_229");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("不能给野生宠物使用此道具！");
                     break;
@@ -320,7 +320,7 @@ public class UI_PetXiLian : MonoBehaviour {
                 }
                 else {
                     //宠物属性使用失败,当前加点总数必须大于一定值。
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_230");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_230");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("重置失败,点数不符！");
                     break;
@@ -335,7 +335,7 @@ public class UI_PetXiLian : MonoBehaviour {
                     Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("AddPropretyNum", nowNum.ToString(),"ID", petSpaceID, "RosePet");
                     Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RosePet");
 
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_231");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_231");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("一股神秘的力量让你的宠物属性点数重置了！");
                     nowXiLianNum = nowXiLianNum + 1;
@@ -354,7 +354,7 @@ public class UI_PetXiLian : MonoBehaviour {
 
         if (Game_PublicClassVar.Get_function_AI.Pet_ReturnRoseListFirst() == petSpaceID) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_38");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_38");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
         }

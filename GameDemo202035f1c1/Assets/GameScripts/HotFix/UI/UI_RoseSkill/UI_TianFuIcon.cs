@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -102,7 +102,7 @@ public class UI_TianFuIcon : MonoBehaviour {
                 }
                 else {
                     //Debug.Log("nextTianFuLv = " + nextTianFuLv);
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("下一等级");
+                    string langStr = LanguageManager.Instance.LoadLocalization("下一等级");
                     //显示下一等级
                     nextTianFuDes = "\n\n" + langStr + "\n" + tianFuDesList[nextTianFuLv + 1];
                 }
@@ -114,7 +114,7 @@ public class UI_TianFuIcon : MonoBehaviour {
                 string needLastTianFuName = TianFuQianZhiStr(TianFuID);
                 if (needLastTianFuName != "")
                 {
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("前置激活条件");
+                    string langStr = LanguageManager.Instance.LoadLocalization("前置激活条件");
                     nextTianFuDes = nextTianFuDes + "\n\n" + langStr + "：" + "\n";
                     nextTianFuDes = nextTianFuDes + needLastTianFuName + "\n";
                 }
@@ -122,11 +122,11 @@ public class UI_TianFuIcon : MonoBehaviour {
                 string needAllSpValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NeedAllSpValue", "ID", TianFuID, "Talent_Template");
                 if (needAllSpValue != "0")
                 {
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("前置激活条件");
+                    string langStr = LanguageManager.Instance.LoadLocalization("前置激活条件");
                     if (nextTianFuDes.Contains(langStr) == false) {
                         nextTianFuDes = nextTianFuDes + "\n\n" + langStr + "：" + "\n";
                     }
-                    langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("使用天赋点数");
+                    langStr = LanguageManager.Instance.LoadLocalization("使用天赋点数");
                     nextTianFuDes = nextTianFuDes + langStr + ">=" + needAllSpValue;
                 }
             }
@@ -167,8 +167,8 @@ public class UI_TianFuIcon : MonoBehaviour {
                 if (nextID != "0" && nextID != "") {
                     if (nextID.Contains(qua_TianFuID)) {
                         string lastTianName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", nowTianFuID, "Talent_Template");
-                        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("天赋达到");
-                        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级");
+                        string langStr_1 = LanguageManager.Instance.LoadLocalization("天赋达到");
+                        string langStr_2 = LanguageManager.Instance.LoadLocalization("级");
                         return lastTianName + langStr_1 + nextOpenLv + langStr_2;
                     }
                 }

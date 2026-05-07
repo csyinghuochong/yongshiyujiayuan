@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -40,18 +40,18 @@ public class UI_TianFu : MonoBehaviour {
 
         //显示天赋名称
         if (Game_PublicClassVar.Get_function_Rose.GetRoseOcc() == "2") {
-            string name = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("魔法天赋");
+            string name = LanguageManager.Instance.LoadLocalization("魔法天赋");
             Obj_TianFuTextType_1.GetComponent<Text>().text = name;
-            name = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("召唤天赋");
+            name = LanguageManager.Instance.LoadLocalization("召唤天赋");
             Obj_TianFuTextType_2.GetComponent<Text>().text = name;
         }
 
         //显示天赋名称
         if (Game_PublicClassVar.Get_function_Rose.GetRoseOcc() == "3")
         {
-            string name = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("射击天赋");
+            string name = LanguageManager.Instance.LoadLocalization("射击天赋");
             Obj_TianFuTextType_1.GetComponent<Text>().text = name;
-            name = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("生存天赋");
+            name = LanguageManager.Instance.LoadLocalization("生存天赋");
             Obj_TianFuTextType_2.GetComponent<Text>().text = name;
         }
     }
@@ -638,10 +638,10 @@ public class UI_TianFu : MonoBehaviour {
         //弹出提示
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
         //string jieshaoStr = "是否消耗600钻石重置当前天赋！";
-        string jieshaoStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_14");
-        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_1");
-        string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_2");
-        string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_3");
+        string jieshaoStr = LanguageManager.Instance.LoadLocalizationHint("comhint_14");
+        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhintText_1");
+        string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhintText_2");
+        string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("comhintText_3");
 
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, Game_PublicClassVar.Get_function_Skill.TianFuChongZhi, null, langStrHint_1, langStrHint_2, langStrHint_3);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

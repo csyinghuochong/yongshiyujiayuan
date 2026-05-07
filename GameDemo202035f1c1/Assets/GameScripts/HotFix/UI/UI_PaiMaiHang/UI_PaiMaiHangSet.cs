@@ -1,4 +1,4 @@
-using CodeStage.AntiCheat.ObscuredTypes;
+﻿using CodeStage.AntiCheat.ObscuredTypes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -354,7 +354,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 		}
 
         //本地化
-        ChengJiuTypeName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(ChengJiuTypeName);
+        ChengJiuTypeName = LanguageManager.Instance.LoadLocalization(ChengJiuTypeName);
 
         if (ifShowList)
 		{
@@ -499,7 +499,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 			Text textName = uiPoint.UI_TaskName.GetComponent<Text>();
 
             //本地化
-            showName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(showName);
+            showName = LanguageManager.Instance.LoadLocalization(showName);
             textName.text = showName;
 
 			//收集id
@@ -519,7 +519,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 	public void ShowPaiMaiHangUI(){
 
         //Debug.Log("展示价格浮动！");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("价格浮动");
+        string langStr = LanguageManager.Instance.LoadLocalization("价格浮动");
 
 		//清空列表信息
 		Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_PaiMaiHangItemShow);
@@ -615,7 +615,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
     {
 
         Debug.Log("展示价格浮动！");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("价格浮动");
+        string langStr = LanguageManager.Instance.LoadLocalization("价格浮动");
 
         //清空列表信息
         Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_PaiMaiHangItemShow);
@@ -800,7 +800,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 		}
 		if (BuyItemNum > int.Parse(itemPileSum)) {
 			BuyItemNum = int.Parse(itemPileSum);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_155");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_155");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + int.Parse(itemPileSum));
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("购买单组数量最大为"+int.Parse(itemPileSum));
 		}
@@ -883,7 +883,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 				}
 				else
 				{
-					string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_84");
+					string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_84");
 					Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 					//Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包已满");
 					return;
@@ -891,7 +891,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 			}
 			else
 			{
-				string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_138");
+				string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_138");
 				Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 				//Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("金币不足！");
 				return;
@@ -1009,7 +1009,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 	public void Btn_SaleItem_Up(){
 
 		if (ChuShouItemNum <= 0) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_159");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_159");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("出售道具的数量不能为0");
 			return;
@@ -1017,7 +1017,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 
         //未连接服务器不能上架
         if (Game_PublicClassVar.gameLinkServer.ServerLinkStatus == false) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_160");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_160");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("未连接至服务器");
             return;
@@ -1026,7 +1026,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
         //未连接服务器不能上架
         if (Game_PublicClassVar.Get_wwwSet.ServerName == "")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_160");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_160");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("未连接至服务器");
             return;
@@ -1034,7 +1034,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 
         //获取当前出售道具的数量最多只能上架8个
         if (ChuShouItemShow.Count >= 8) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_161");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_161");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("最多只能上架8个道具");
             return;
@@ -1053,7 +1053,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
         string itemType = function_DataSet.DataSet_ReadData("ItemType", "ID", sapceItemID, "Item_Template");
         if (itemType == "5") {
             if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() < 20) {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_162");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_162");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("出售宠物技能书类的道具需要角色等级>=20级");
                 return;
@@ -1096,7 +1096,7 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 
 
         } else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_163");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_163");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("请先选择要出售的道具");
 			ChuShouItemNum = 0;
@@ -1203,8 +1203,8 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 		Obj_DuiHuanGetGoldNum.GetComponent<Text>().text = DuiHuanGetGold.ToString ();
 
         //显示今天金币是上涨还是下降
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("上涨价格");
-        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("下降价格");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("上涨价格");
+        string langStr_2 = LanguageManager.Instance.LoadLocalization("下降价格");
 
         float proValue = (float)(DuiHuanRmbValuePro)/(float)(DuiHuanRmbValuePro_Last);
 		string showStr = "";
@@ -1222,14 +1222,14 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 	public void Btn_DuiHuanGold(){
 
 		if (DuiHuanRMB <= 0) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_164");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_164");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("兑换钻石数量不能为0");
 			return;
 		}
 
         if (DuiHuanGetGold <= 0) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_165");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_165");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("您可能未连接至服务器！兑换金币数量不能为0");
             return;
@@ -1242,8 +1242,8 @@ public class UI_PaiMaiHangSet : MonoBehaviour {
 			//发送金币
 			Game_PublicClassVar.Get_function_Rose.SendReward("1",DuiHuanGetGold.ToString(),"44");
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_166");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_167");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_166");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_167");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + DuiHuanGetGold.ToString() + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("兑换成功！你兑换了" + DuiHuanGetGold.ToString()+"金币");
             //发送服务器消息

@@ -84,9 +84,9 @@ public class PaiMaiSaleItemShow : MonoBehaviour {
 			time_min = time_min - time_hourse * 60;
 		}
 
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("已上架");
-        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("小时");
-        string langStr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("分钟");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("已上架");
+        string langStr_2 = LanguageManager.Instance.LoadLocalization("小时");
+        string langStr_3 = LanguageManager.Instance.LoadLocalization("分钟");
 
         string showTimeStr = "";
 		if (time_hourse >= 1) {

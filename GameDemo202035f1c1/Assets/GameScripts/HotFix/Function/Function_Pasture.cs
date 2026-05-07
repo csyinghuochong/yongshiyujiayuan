@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -592,7 +592,7 @@ public class Function_Pasture {
                             //获取道具品质
                             string itemQuality = function_DataSet.DataSet_ReadData("ItemQuality", "ID", dropID, "Item_Template");
                             string qualityStr = Game_PublicClassVar.Get_function_UI.QualityReturnColorText(itemQuality);
-                            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
+                            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
                             Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 + " " + qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                             //Game_PublicClassVar.Get_function_UI.GameHint("你获得 " + qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                             break;
@@ -667,7 +667,7 @@ public class Function_Pasture {
                         //获取道具品质
                         string itemQuality = function_DataSet.DataSet_ReadData("ItemQuality", "ID", dropID, "Item_Template");
                         string qualityStr = Game_PublicClassVar.Get_function_UI.QualityReturnColorText(itemQuality);
-                        string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_421");
+                        string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_421");
                         Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1 + " " + qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                         //Game_PublicClassVar.Get_function_UI.GameHint("你获得 " + qualityStr + itemName + " * " + dropNum.ToString() + "</color>" + " !");
                         break;
@@ -690,7 +690,7 @@ public class Function_Pasture {
             //在结束循环的最后判定道具如果没有被拾取,判定为背包满了
             if (i == Game_PublicClassVar.Get_game_PositionVar.RosePastureBagMaxNum)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_301");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_301");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint("背包已满,请及时清理背包！");
                 return false;
@@ -710,7 +710,7 @@ public class Function_Pasture {
         if (Game_PublicClassVar.Get_game_PositionVar.EquipXiLianStatus)
         {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_340");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_340");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("洗练装备时禁止整理背包！");
             return;

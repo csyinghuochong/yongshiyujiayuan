@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -66,7 +66,7 @@ public class UI_DuiHuanItemObj : MonoBehaviour
     public void Btn_Buy() {
         if (!ifshow) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_238");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_238");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请升级繁荣等级开启此道具奖励！"); 
             return;
@@ -76,7 +76,7 @@ public class UI_DuiHuanItemObj : MonoBehaviour
         int bagNum = Game_PublicClassVar.Get_function_UI.BagSpaceNullNum();
         if (bagNum < 1)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_239");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_239");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包已满,请预留至少1个位置！");
             return;
@@ -92,7 +92,7 @@ public class UI_DuiHuanItemObj : MonoBehaviour
         else
         {
             //兑换失败
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_240");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_240");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("荣誉不足！");
         }

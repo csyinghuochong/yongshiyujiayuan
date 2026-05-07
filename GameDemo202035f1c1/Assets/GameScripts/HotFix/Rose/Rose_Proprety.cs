@@ -474,7 +474,7 @@ public class Rose_Proprety : MonoBehaviour {
                 {
                     //触发复活
                     Rose_HpNow = Rose_Hp;
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_396");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_396");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     Debug.Log("触发重生！！！" + Rose_FuHuoPro + "Rose_HpNow = " + Rose_HpNow + "Rose_Hp = " + Rose_Hp + "suijiValue = " + suijiValue);
                     Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");

@@ -180,7 +180,7 @@ public class UI_Mail : MonoBehaviour {
 		int bangNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
 		if (bangNullNum < mailRewardList.Length) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_301");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_301");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("背包已满,请保持背包内有足够的空位！");
             LingQuMailStatus = false;

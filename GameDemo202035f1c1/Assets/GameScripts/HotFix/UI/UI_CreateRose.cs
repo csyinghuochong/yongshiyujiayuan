@@ -456,7 +456,7 @@ public class UI_CreateRose : MonoBehaviour {
         //加载数据
         if (Game_PublicClassVar.Get_wwwSet.updataNumSum > 0) {
             UI_JiaZaiObj.SetActive(true);
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_451");
+            string langStr = LanguageManager.Instance.LoadLocalizationHint("hint_451");
             if (langStr == "hint_451") {
                 langStr = "加载游戏数据中";
             }
@@ -891,7 +891,7 @@ public class UI_CreateRose : MonoBehaviour {
     {
 
         GameObject uiCommonHint = (GameObject)Instantiate(Obj_DeleteRoseHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_25");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_25");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, DeletRose, null);
         uiCommonHint.transform.SetParent(this.gameObject.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;
@@ -1004,12 +1004,12 @@ public class UI_CreateRose : MonoBehaviour {
     public void Btn_RandomName() {
 
         string randomNameStr = "";
-        if (Game_PublicClassVar.gameSettingLanguge.ranNameNum >= 2) {
-            int xingXuHaoMax = Game_PublicClassVar.gameSettingLanguge.randomName_xing.Length - 1;
-            int nameXuHaoMax = Game_PublicClassVar.gameSettingLanguge.randomName_name.Length - 1;
+        if (LanguageManager.Instance.ranNameNum >= 2) {
+            int xingXuHaoMax = LanguageManager.Instance.randomName_xing.Length - 1;
+            int nameXuHaoMax = LanguageManager.Instance.randomName_name.Length - 1;
             int xingXuHao = Game_PublicClassVar.Get_function_Rose.ReturnRamdomValue_Int(0, xingXuHaoMax);
             int nameXuHao = Game_PublicClassVar.Get_function_Rose.ReturnRamdomValue_Int(0, xingXuHaoMax);
-            randomNameStr = Game_PublicClassVar.gameSettingLanguge.randomName_xing[xingXuHao] + Game_PublicClassVar.gameSettingLanguge.randomName_name[nameXuHao];
+            randomNameStr = LanguageManager.Instance.randomName_xing[xingXuHao] + LanguageManager.Instance.randomName_name[nameXuHao];
         }
 
         if (randomNameStr != "") {
@@ -1018,3 +1018,4 @@ public class UI_CreateRose : MonoBehaviour {
 
     }
 }
+

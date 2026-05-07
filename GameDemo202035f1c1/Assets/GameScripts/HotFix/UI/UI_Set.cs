@@ -177,8 +177,8 @@ public class UI_Set : MonoBehaviour {
         if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() == 1) {
 
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint_2);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_39");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_40");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_39");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_40");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, null, null,"系统提示", langStrHint_2);
             //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

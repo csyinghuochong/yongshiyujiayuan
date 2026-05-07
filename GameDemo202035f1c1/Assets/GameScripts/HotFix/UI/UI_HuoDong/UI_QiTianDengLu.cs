@@ -56,8 +56,8 @@ public class UI_QiTianDengLu : MonoBehaviour {
         //获取等级
         int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
         if (roseLv < 8) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_216");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_215"); 
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_216");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_215"); 
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + "8" + langStrHint_2);
             return;
         }
@@ -66,7 +66,7 @@ public class UI_QiTianDengLu : MonoBehaviour {
         string qiTianDengLuStatus =  Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("QiTianDengLuStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         if (qiTianDengLuStatus == "1") {
             //今日奖励已经领取
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_245");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_245");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日奖励已经领取,请明日再来!");
             return;
@@ -86,7 +86,7 @@ public class UI_QiTianDengLu : MonoBehaviour {
                         int bagNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
                         if (bagNullNum < 1)
                         {
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_235");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_235");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包格子不足！");
                             return;

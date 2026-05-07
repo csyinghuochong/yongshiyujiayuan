@@ -74,7 +74,7 @@ public class UI_PetTianTiSet : MonoBehaviour {
             petTiaoZhanNum = "0";
         }
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("今日挑战次数");
+        string langStr = LanguageManager.Instance.LoadLocalization("今日挑战次数");
         Obj_TiaoZhanNumStr.GetComponent<Text>().text = langStr + ":" + petTiaoZhanNum + "/" + MaxTiaoZhanNum;
 
         //初始化挑战列表
@@ -95,7 +95,7 @@ public class UI_PetTianTiSet : MonoBehaviour {
         //获取自身战队名称（暂时以玩家名字命名）
         TeamName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetTiaoZhanTeamName", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (TeamName == "") {
-            TeamName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData") + Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("的队伍"); ;
+            TeamName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData") + LanguageManager.Instance.LoadLocalization("的队伍"); ;
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("PetTiaoZhanTeamName", TeamName, "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseDayReward");
         }
@@ -112,7 +112,7 @@ public class UI_PetTianTiSet : MonoBehaviour {
 
         //判定消耗,扣除一定金币强制刷新
         GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_37");
+        string langStrHint1 = LanguageManager.Instance.LoadLocalizationHint("comhint_37");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint1, UpdateRank, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;
@@ -175,7 +175,7 @@ public class UI_PetTianTiSet : MonoBehaviour {
     public void Btn_AddTiaoZhanNum() {
 
         GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_34");
+        string langStrHint1 = LanguageManager.Instance.LoadLocalizationHint("comhint_34");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint1, AddTiaoZhanNum, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;
@@ -195,7 +195,7 @@ public class UI_PetTianTiSet : MonoBehaviour {
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("PetTiaoZhanNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         }
         else {
-            string langStrHint1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_86");
+            string langStrHint1 = LanguageManager.Instance.LoadLocalization("hint_86");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint1);
         }
 

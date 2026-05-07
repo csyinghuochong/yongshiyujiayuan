@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -101,7 +101,7 @@ public class UI_StoreList_2 : MonoBehaviour {
         //检测背包是否有1个位置的空位
         if (!Game_PublicClassVar.Get_function_Rose.IfBagNullNum(1)) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_301");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_301");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("背包已满,请及时清理背包！");
@@ -171,7 +171,7 @@ public class UI_StoreList_2 : MonoBehaviour {
         }
         else {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_334");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_334");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("购买失败!请检查一下自己的钱袋子,嘿嘿！");
         }

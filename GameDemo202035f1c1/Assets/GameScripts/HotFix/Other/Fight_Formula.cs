@@ -108,7 +108,7 @@ public class Fight_Formult {
         //判定是否未命中
         if (damge == -1)
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避");
+            string langStr = LanguageManager.Instance.LoadLocalization("闪避");
             Game_PublicClassVar.Get_function_UI.Fight_FlyText("3", langStr, "2",monsterObj, "", "");
             return true;
         }
@@ -117,7 +117,7 @@ public class Fight_Formult {
         if (Game_PublicClassVar.Get_game_PositionVar.Fight_CriStatus)
         {
             Game_PublicClassVar.Get_game_PositionVar.Fight_CriStatus = false;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击");
+            string langStr = LanguageManager.Instance.LoadLocalization("暴击");
             flyValueFrontStr = langStr;
             if (actTargetType == "1") {
                 monsterObj.GetComponent<AI_1>().HitCriStatus = true;
@@ -154,35 +154,35 @@ public class Fight_Formult {
 		case "1":
 			damgeResist = monsterObj.GetComponent<AI_Property>().AI_resistance_1;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("神圣抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("神圣抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr + ")</size></color>";
 			}
 			break;
 		case "2":
 			damgeResist = monsterObj.GetComponent<AI_Property>().AI_resistance_2;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("黑暗抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("黑暗抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr + ")</size></color>";
 			}
 			break;
 		case "3":
 			damgeResist = monsterObj.GetComponent<AI_Property>().AI_resistance_3;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("火焰抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("火焰抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr + ")</size></color>";
 			}
 			break;
 		case "4":
 			damgeResist = monsterObj.GetComponent<AI_Property>().AI_resistance_4;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("冰霜抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("冰霜抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr + ")</size></color>";
 			}
 			break;
 		case "5":
 			damgeResist = monsterObj.GetComponent<AI_Property>().AI_resistance_5;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪电抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("闪电抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr + ")</size></color>";
 			}
 			break;
@@ -225,7 +225,7 @@ public class Fight_Formult {
 		xixueValue = (int)(damge * petXiXueValue);
         if (xixueValue > 0)
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("吸血");
+            string langStr = LanguageManager.Instance.LoadLocalization("吸血");
             Game_PublicClassVar.Get_function_UI.Fight_FlyText("2", xixueValue.ToString(), "1", actObj, langStr, "");
         }
 
@@ -439,7 +439,7 @@ public class Fight_Formult {
             monsterAdf = 0;
             roseAct = roseAct + roseZhongJiValue;
             actTargetObj.GetComponent<AI_1>().ZhongJiStatus = true;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("重击");
+            string langStr = LanguageManager.Instance.LoadLocalization("重击");
             flyValueFrontStr = langStr;
         }
 
@@ -461,7 +461,7 @@ public class Fight_Formult {
         //判定是否未命中
         if (damge == -1)
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避");
+            string langStr = LanguageManager.Instance.LoadLocalization("闪避");
             Game_PublicClassVar.Get_function_UI.Fight_FlyText("3", langStr, "2",actTargetObj, "", "");
             return true;
         }
@@ -470,7 +470,7 @@ public class Fight_Formult {
         if (Game_PublicClassVar.Get_game_PositionVar.Fight_CriStatus)
         {
             Game_PublicClassVar.Get_game_PositionVar.Fight_CriStatus = false;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击");
+            string langStr = LanguageManager.Instance.LoadLocalization("暴击");
             flyValueFrontStr = langStr;
             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().actTriggerSkill("2", "4");  //暴击时触发被动技能
         }
@@ -487,35 +487,35 @@ public class Fight_Formult {
 		case "1":
 			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_1;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("神圣抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("神圣抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
 			}
 			break;
 		case "2":
 			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_2;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("黑暗抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("黑暗抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
 			}
 			break;
 		case "3":
 			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_3;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("火焰抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("火焰抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
 			}
 			break;
 		case "4":
 			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_4;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("冰霜抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("冰霜抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
 			}
 			break;
 		case "5":
 			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_5;
 			if(damgeResist!=0){
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪电抗性");
+                string langStr = LanguageManager.Instance.LoadLocalization("闪电抗性");
                 flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr + ")</size></color>";
 			}
 			break;
@@ -582,7 +582,7 @@ public class Fight_Formult {
             {
                 Game_PublicClassVar.Get_function_Rose.addRoseHp(xiXueValue, "1", false);
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseIfXiXue = true;
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("吸血");
+                string langStr = LanguageManager.Instance.LoadLocalization("吸血");
                 Game_PublicClassVar.Get_function_UI.Fight_FlyText("1", xiXueValue.ToString(), "1", actTargetObj, langStr, "");
             }
         }
@@ -718,7 +718,7 @@ public class Fight_Formult {
                 //高于90%的技能闪避 不显示  要不太频繁了
                 if (roseSkillActDodgePro <= 0.9f)
                 {
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("技能闪避");
+                    string langStr = LanguageManager.Instance.LoadLocalization("技能闪避");
                     //玩家闪避
                     if (actObjType == "1")
                     {
@@ -741,13 +741,13 @@ public class Fight_Formult {
             //玩家闪避
             if (actObjType == "1")
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("抵消伤害");
+                string langStr = LanguageManager.Instance.LoadLocalization("抵消伤害");
                 Game_PublicClassVar.Get_function_UI.Fight_FlyText("1", langStr, "2", Game_PublicClassVar.Get_game_PositionVar.Obj_Rose, "", "");
             }
             //宠物闪避
             if (actObjType == "2")
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("抵消伤害");
+                string langStr = LanguageManager.Instance.LoadLocalization("抵消伤害");
                 Game_PublicClassVar.Get_function_UI.Fight_FlyText("2", langStr, "2", ActPetObj, "", "");
             }
 			return true;
@@ -764,7 +764,7 @@ public class Fight_Formult {
         //Debug.Log("damge = " + damge + ";actObjType = " + actObjType);
         //判定是否未命中
         if (damge == -1 ||damge == 0) {
-            string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避");
+            string langStr1 = LanguageManager.Instance.LoadLocalization("闪避");
             flyValueFrontStr = langStr1;
             //玩家闪避
             if (actObjType == "1")
@@ -776,18 +776,18 @@ public class Fight_Formult {
                 {
                     int addHp = (int)(roseProprety.Rose_Hp * roseProprety.Rose_DodgeAddHpPro);
                     Game_PublicClassVar.Get_function_Rose.addRoseHp(addHp,"1",false);
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避 血量");
+                    string langStr = LanguageManager.Instance.LoadLocalization("闪避 血量");
                     Game_PublicClassVar.Get_function_UI.Fight_FlyText("1", langStr + "+" + addHp, "2", Game_PublicClassVar.Get_game_PositionVar.Obj_Rose, "", "");
                 }
                 else {
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避");
+                    string langStr = LanguageManager.Instance.LoadLocalization("闪避");
                     Game_PublicClassVar.Get_function_UI.Fight_FlyText("1", langStr, "2", Game_PublicClassVar.Get_game_PositionVar.Obj_Rose, "", "");
                 }
             }
             //宠物闪避
             if (actObjType == "2")
             {
-                string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪避");
+                string langStr = LanguageManager.Instance.LoadLocalization("闪避");
                 Game_PublicClassVar.Get_function_UI.Fight_FlyText("2", langStr, "2",ActPetObj, "", "");
             }
             return true;
@@ -797,7 +797,7 @@ public class Fight_Formult {
         if (Game_PublicClassVar.Get_game_PositionVar.Fight_CriStatus)
         {
             Game_PublicClassVar.Get_game_PositionVar.Fight_CriStatus = false;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("暴击");
+            string langStr = LanguageManager.Instance.LoadLocalization("暴击");
             flyValueFrontStr = langStr;
         }
 
@@ -846,35 +846,35 @@ public class Fight_Formult {
 				damgeResist = ActPetObj.GetComponent<AI_Property> ().AI_resistance_1;
 				if(damgeResist!=0){
                         //ActPetObj.GetComponent<AIPet>().AIHitTextlater = "<color=#D2D2D2><size=18> (神圣抗性)</size></color>";
-                    string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("神圣抗性");
+                    string langStr1 = LanguageManager.Instance.LoadLocalization("神圣抗性");
                     flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "2":
 				damgeResist = ActPetObj.GetComponent<AI_Property>().AI_resistance_2;
 				if(damgeResist!=0){
-                    string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("黑暗抗性");
+                    string langStr1 = LanguageManager.Instance.LoadLocalization("黑暗抗性");
                     flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "3":
 				damgeResist = ActPetObj.GetComponent<AI_Property>().AI_resistance_3;
 				if(damgeResist!=0){
-                    string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("火焰抗性");
+                    string langStr1 = LanguageManager.Instance.LoadLocalization("火焰抗性");
                     flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "4":
 				damgeResist = ActPetObj.GetComponent<AI_Property>().AI_resistance_4;
 				if(damgeResist!=0){
-                    string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("冰霜抗性");
+                    string langStr1 = LanguageManager.Instance.LoadLocalization("冰霜抗性");
                     flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "5":
 				damgeResist = ActPetObj.GetComponent<AI_Property>().AI_resistance_5;
 				if(damgeResist!=0){
-                    string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪电抗性");
+                    string langStr1 = LanguageManager.Instance.LoadLocalization("闪电抗性");
                     flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr1 + ")</size></color>";
 				}
 				break;
@@ -921,35 +921,35 @@ public class Fight_Formult {
 			case "1":
 				damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Resistance_1;
 				if(damgeResist!=0){
-                        string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("神圣抗性");
+                        string langStr1 = LanguageManager.Instance.LoadLocalization("神圣抗性");
                         flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "2":
 				damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Resistance_2;
 				if(damgeResist!=0){
-                        string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("黑暗抗性");
+                        string langStr1 = LanguageManager.Instance.LoadLocalization("黑暗抗性");
                         flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "3":
 				damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Resistance_3;
 				if(damgeResist!=0){
-                        string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("火焰抗性");
+                        string langStr1 = LanguageManager.Instance.LoadLocalization("火焰抗性");
                         flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "4":
 				damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Resistance_4;
 				if(damgeResist!=0){
-                        string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("冰霜抗性");
+                        string langStr1 = LanguageManager.Instance.LoadLocalization("冰霜抗性");
                         flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
 			case "5":
 				damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Resistance_5;
 				if(damgeResist!=0){
-                        string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("闪电抗性");
+                        string langStr1 = LanguageManager.Instance.LoadLocalization("闪电抗性");
                         flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr1 + ")</size></color>";
 				}
 				break;
@@ -1058,7 +1058,7 @@ public class Fight_Formult {
             monsterObj.GetComponent<AI_Property>().AI_Hp = monsterObj.GetComponent<AI_Property>().AI_Hp - reboundDamge;
 
             //反击伤害飘字
-            string langStr1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("反击伤害");
+            string langStr1 = LanguageManager.Instance.LoadLocalization("反击伤害");
             string hitTextLast = "<color=#D2D2D2><size=18> ("+ langStr1 + ")</size></color>";
             Game_PublicClassVar.Get_function_UI.Fight_FlyText("3", reboundDamge.ToString(), "",monsterObj, "", hitTextLast);
 
@@ -1089,7 +1089,7 @@ public class Fight_Formult {
                     {
                         //Debug.Log("护盾抵消伤害:" + damge);
                         //战斗飘字
-                        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("护盾抵消");
+                        string langStr = LanguageManager.Instance.LoadLocalization("护盾抵消");
                         Game_PublicClassVar.Get_function_UI.Fight_FlyText("1", langStr, "2",ActPetObj, flyValueFrontStr, flyValueLastStr);
                         damge = 0;
                         Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().HuDunValue = hudunDamge;
@@ -1119,7 +1119,7 @@ public class Fight_Formult {
                     //触发复活
                     ActPetObj.GetComponent<AI_Property>().AI_Hp = ActPetObj.GetComponent<AI_Property>().AI_HpMax;
 
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_241");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_241");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("复活成功！");
 

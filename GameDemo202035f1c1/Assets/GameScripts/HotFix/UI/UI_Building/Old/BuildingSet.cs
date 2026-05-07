@@ -94,7 +94,7 @@ public class BuildingSet : MonoBehaviour {
                                     }
                                     else
                                     {
-                                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_339");
+                                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_339");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(openLv + langStrHint);
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint(openLv + "级开启此功能");
                                     }
@@ -119,7 +119,7 @@ public class BuildingSet : MonoBehaviour {
                                     }
                                     else
                                     {
-                                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_339");
+                                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_339");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(openLv + langStrHint);
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint(openLv + "级开启此功能");
                                     }
@@ -143,7 +143,7 @@ public class BuildingSet : MonoBehaviour {
                                     }
                                     else
                                     {
-                                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_339");
+                                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_339");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(openLv + langStrHint);
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint(openLv + "级开启此功能");
                                     }
@@ -169,7 +169,7 @@ public class BuildingSet : MonoBehaviour {
                                     }
                                     else
                                     {
-                                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_339");
+                                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_339");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(openLv + langStrHint);
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint(openLv + "级开启此功能");
                                     }
@@ -193,7 +193,7 @@ public class BuildingSet : MonoBehaviour {
                                     }
                                     else
                                     {
-                                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_339");
+                                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_339");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(openLv + langStrHint);
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint(openLv + "级开启此功能");
                                     }
@@ -217,7 +217,7 @@ public class BuildingSet : MonoBehaviour {
                                     }
                                     else
                                     {
-                                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_339");
+                                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_339");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(openLv + langStrHint);
                                         //Game_PublicClassVar.Get_function_UI.GameGirdHint(openLv + "级开启此功能");
                                     }

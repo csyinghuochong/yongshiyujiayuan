@@ -219,7 +219,7 @@ public class UI_FuBen_ShangHaiShow : MonoBehaviour {
         ObscuredString sendRewardLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", nowShangHaiRewardID, "FuBenShangHai_Template");
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
         string langStrHint = "是否领取进入伤害奖励! 当前伤害奖励等级：" + sendRewardLv + "级,是否领取?\n提示:每天只有一次领取机会,伤害奖励越高,奖励越高.";
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, SendReward, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);

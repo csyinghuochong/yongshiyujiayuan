@@ -31,7 +31,7 @@ public class Function_Country
         string guoWangExpMax = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("CountryUp", "ID", guoWangLv, "Country_Template");
         int expValue = int.Parse(guoWangExpNow) + addValue;
         if (ifHint) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_191");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_191");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("繁荣度提升增加:" + addValue);
         }
@@ -104,7 +104,7 @@ public class Function_Country
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseDayReward");
             if (ifHint) {
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_199");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_199");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addValue);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("荣誉值增加:" + addValue);
             }

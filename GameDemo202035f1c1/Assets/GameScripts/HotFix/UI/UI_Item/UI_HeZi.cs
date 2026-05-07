@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -105,7 +105,7 @@ public class UI_HeZi : MonoBehaviour {
         //int itemNum = 100;
         if (itemNum <= 0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_386");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_386");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("道具不足");
             ClickStatus = false;
@@ -123,7 +123,7 @@ public class UI_HeZi : MonoBehaviour {
                 updataRoseExp();    //更新获得经验
                 addRoseExp = (int)(addRoseExp * 0.7f);      //特殊处理,因为改配置麻烦T.T
                 Game_PublicClassVar.Get_function_Rose.AddExp(addRoseExp,"1");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_387");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_387");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addRoseExp);
                 //Game_PublicClassVar.Get_function_UI.GameHint("免费开启,获得经验：" + addRoseExp);
             break;
@@ -135,12 +135,12 @@ public class UI_HeZi : MonoBehaviour {
                 if (Random.value <= 0.15f)
                 {
                     addRoseGold = (int)(addRoseGold * 2);
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_392");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_392");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addRoseGold);
                     //Game_PublicClassVar.Get_function_UI.GameHint("触发金币暴击！获得双倍金币：" + addRoseGold);
                 }
                 else {
-                    langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_388");
+                    langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_388");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addRoseGold);
                 }
 
@@ -161,7 +161,7 @@ public class UI_HeZi : MonoBehaviour {
             if (Game_PublicClassVar.Get_wwwSet.WorldPlayerLv >= 1)
             {
                 if (roseLv >= Game_PublicClassVar.Get_wwwSet.WorldPlayerLv) {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_389");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_389");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameHint("已达到当前最高等级,无法使用此道具!");
                     return;
@@ -170,12 +170,12 @@ public class UI_HeZi : MonoBehaviour {
             else {
                 if (Game_PublicClassVar.Get_gameLinkServerObj.ServerLinkStatus == true)
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_389");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_389");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameHint("已达到当前最高等级,无法使用此道具!");
                 }
                 else {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_346");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_346");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameHint("未连接网络,无法使用此道具!");
                 }
@@ -194,7 +194,7 @@ public class UI_HeZi : MonoBehaviour {
         int itemNum = Game_PublicClassVar.Get_function_Rose.ReturnBagItemNum(ItemID);
         if (itemNum <= 0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_386");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_386");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("道具不足");
             ClickStatus = false;
@@ -227,13 +227,13 @@ public class UI_HeZi : MonoBehaviour {
                 if (Random.value <= expPro_Cir)
                 {
                     addRoseExp = (int)(addRoseExp * expPro_Zuanshi * 2);
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_390");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_390");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addRoseExp);
                     //Game_PublicClassVar.Get_function_UI.GameHint("触发经验暴击！获得大量经验：" + addRoseExp);
                 }
                 else {
                     addRoseExp = (int)(addRoseExp * expPro_Zuanshi);
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_391");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_391");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addRoseExp);
                     //Game_PublicClassVar.Get_function_UI.GameHint("钻石开启！获得大量经验：" + addRoseExp);
                 }
@@ -259,13 +259,13 @@ public class UI_HeZi : MonoBehaviour {
                 if (Random.value <= goldPro_Cir)
                 {
                     addRoseGold = (int)(addRoseGold * goldPro_Zuanshi * 2);
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_392");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_392");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addRoseGold);
                     //Game_PublicClassVar.Get_function_UI.GameHint("触发金币暴击！获得大量金币：" + addRoseGold);
                 }
                 else {
                     addRoseGold = (int)(addRoseGold * goldPro_Zuanshi);
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_393");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_393");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + addRoseGold);
                     //Game_PublicClassVar.Get_function_UI.GameHint("钻石开启！获得大量金币：" + addRoseGold);
                 }
@@ -286,7 +286,7 @@ public class UI_HeZi : MonoBehaviour {
             Btn_Close();
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_394");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_394");
             Obj_ItemNum.GetComponent<Text>().text = langStrHint + ":" + itemNum;                //更新数量
         }
     }

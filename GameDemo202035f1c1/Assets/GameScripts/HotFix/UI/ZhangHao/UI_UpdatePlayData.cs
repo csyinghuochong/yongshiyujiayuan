@@ -39,7 +39,7 @@ public class UI_UpdatePlayData : MonoBehaviour {
         
         if (chineseStatus) {
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请不要输入中文字符！");
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_127");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_127");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
         }
@@ -51,7 +51,7 @@ public class UI_UpdatePlayData : MonoBehaviour {
             Game_PublicClassVar.Get_gameLinkServerObj.SendToServerBuf(10001006, saveList);
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_128");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_128");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("账号不能为空！");
         }
@@ -72,7 +72,7 @@ public class UI_UpdatePlayData : MonoBehaviour {
             bool chineseStatus = ContainChinese(mima_XiuGai_1);
             if (chineseStatus)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_129");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_129");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请不要输入中文字符！");
                 return;
@@ -82,7 +82,7 @@ public class UI_UpdatePlayData : MonoBehaviour {
             Game_PublicClassVar.Get_gameLinkServerObj.SendToServerBuf(10001009, mimaList);
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_130");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_130");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请检查！两次确认密码不一致！");
         }

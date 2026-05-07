@@ -78,8 +78,8 @@ public class UI_ItemTips : MonoBehaviour {
                 break;
         }
 
-        typeName = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(typeName);
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("类型");
+        typeName = LanguageManager.Instance.LoadLocalization(typeName);
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("类型");
         ItemType.GetComponent<Text>().text = langStr_1 + "：" + typeName;
 
         //描述特殊处理
@@ -131,32 +131,32 @@ public class UI_ItemTips : MonoBehaviour {
             for (int i = 0; i < holeStrList.Length; i++) {
                 switch (holeStrList[i]) { 
                     case "101":
-                        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("红色");
+                        langStr = LanguageManager.Instance.LoadLocalization("红色");
                         holeStr = holeStr + langStr + "、";
                         break;
 
                     case "102":
-                        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("紫色");
+                        langStr = LanguageManager.Instance.LoadLocalization("紫色");
                         holeStr = holeStr + langStr + "、";
                         break;
 
                     case "103":
-                        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("蓝色");
+                        langStr = LanguageManager.Instance.LoadLocalization("蓝色");
                         holeStr = holeStr + langStr + "、";
                         break;
 
                     case "104":
-                        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("绿色");
+                        langStr = LanguageManager.Instance.LoadLocalization("绿色");
                         holeStr = holeStr + langStr + "、";
                         break;
 
                     case "105":
-                        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("白色");
+                        langStr = LanguageManager.Instance.LoadLocalization("白色");
                         holeStr = holeStr + langStr + "、";
                         break;
 
                     case "110":
-                        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("多彩");
+                        langStr = LanguageManager.Instance.LoadLocalization("多彩");
                         holeStr = holeStr+ langStr + "、";
                         break;
                 }
@@ -169,14 +169,14 @@ public class UI_ItemTips : MonoBehaviour {
             //特殊处理
             if (itemSubType == "101,102,103,104,105,110")
             {
-                string langStr_B = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("任意颜色的");
+                string langStr_B = LanguageManager.Instance.LoadLocalization("任意颜色的");
                 holeStr = langStr_B;
             }
 
             i1 = i1 + 2;
 
-            string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("可镶嵌在");
-            string langStr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("孔位");
+            string langStr_2 = LanguageManager.Instance.LoadLocalization("可镶嵌在");
+            string langStr_3 = LanguageManager.Instance.LoadLocalization("孔位");
             //Text_ItemDes = Text_ItemDes + "\n" + "\n" + @"""可镶嵌在"+ holeStr + @"孔位""";
             Text_ItemDes = Text_ItemDes + "\n" + "\n" + @""+ langStr_2 + holeStr + @langStr_3 + "";
         }
@@ -186,7 +186,7 @@ public class UI_ItemTips : MonoBehaviour {
         {
             if (itemSubType == "32")
             {
-                string langStr_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("挖宝位置");
+                string langStr_4 = LanguageManager.Instance.LoadLocalization("挖宝位置");
                 //背包显示
                 if (EquipTipsType == "1")
                 {
@@ -208,7 +208,7 @@ public class UI_ItemTips : MonoBehaviour {
 
         //牧场道具额外描述
         if (itemType == "6") {
-            string langStr_5 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("品质");
+            string langStr_5 = LanguageManager.Instance.LoadLocalization("品质");
 
             string itemPar = "0";
             if (EquipTipsType == "9"|| EquipTipsType == "10")
@@ -352,7 +352,7 @@ public class UI_ItemTips : MonoBehaviour {
         //判定道具为宝石时显示使用变为镶嵌字样
         if (itemType == "4")
         {
-            string langStr_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("镶 嵌");
+            string langStr_A = LanguageManager.Instance.LoadLocalization("镶 嵌");
             Obj_Btn_GemHoleText.GetComponent<Text>().text = langStr_A;
         }
 
@@ -365,7 +365,7 @@ public class UI_ItemTips : MonoBehaviour {
         ItemDes.GetComponent<Text>().text = Text_ItemDes;
 		ItemStory.GetComponent<Text>().text = Text_ItemStory;
 
-        langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("使用等级");
+        langStr = LanguageManager.Instance.LoadLocalization("使用等级");
         if (int.Parse (Text_ItemLv) > 0) {
             ItemItemLv.GetComponent<Text>().text = langStr + ":" + Text_ItemLv;
 		} else {
@@ -407,7 +407,7 @@ public class UI_ItemTips : MonoBehaviour {
     public void UseItem()
     {
         if (useItemStatus) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_379");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_379");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("使用道具间隔时间太短!请稍后再使用次道具");
             return;
@@ -437,7 +437,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //指定一些地图不能使用技能
                     if (Application.loadedLevelName == "100001")
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_42");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_42");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("此地图不能使用恢复类道具！");
                         break;
@@ -457,7 +457,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //判定当前是否在建筑地图
                     if (Application.loadedLevelName == "EnterGame")
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_385");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_385");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameHint("请进入关卡地图在使用此道具");
                         break;
@@ -580,7 +580,7 @@ public class UI_ItemTips : MonoBehaviour {
                     */
 
                     if (Game_PublicClassVar.Get_function_Rose.BagNullNum() <= 0) {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_43");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_43");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("开始失败!请背包内至少预留5个位置!");
                         break;
@@ -614,7 +614,7 @@ public class UI_ItemTips : MonoBehaviour {
 
                     if (Game_PublicClassVar.Get_function_Rose.BagNullNum() <= 0)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_43");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_43");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("开始失败!请背包内至少预留5个位置!");
                         break;
@@ -634,7 +634,7 @@ public class UI_ItemTips : MonoBehaviour {
                         }
                     }
                     else {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_395");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_395");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameHint("这是作者的感谢宝箱,赞助任意额度支持作者后可即可开启！");
                     }
@@ -680,14 +680,14 @@ public class UI_ItemTips : MonoBehaviour {
 
                             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
 
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_319");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_319");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint("道具发挥了效果,所有BOSS已刷新!");
                         }
                     }
                     else {
 
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_320");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_320");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint("使用此道具请移动到主城场景中使用！");
                     }
@@ -698,7 +698,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //获取当前体力
                     if (Game_PublicClassVar.Get_function_Rose.GetRoseTili() >= 100) {
 
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_321");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_321");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint("当前体力已满！");
                         break;
@@ -715,7 +715,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //判定当前是否在建筑地图
                     if (Application.loadedLevelName == "EnterGame")
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_322");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_322");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameHint("请进入关卡地图在使用此道具");
                         break;
@@ -750,7 +750,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //判定技能是否已经学习
 
                     if (Game_PublicClassVar.Get_function_Rose.GetMakeProficiencyIDStatus(ItemUsePar)) {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_45");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_45");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前制造物品已经学习!请勿重复学习");
                         break;
@@ -769,7 +769,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //获取当前体力
                     if (Game_PublicClassVar.Get_function_Rose.GetRoseHuoLi() >= 100)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_323");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_323");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint("当前活力已满！");
                         break;
@@ -787,7 +787,7 @@ public class UI_ItemTips : MonoBehaviour {
                     int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
                     if (roseLv >= int.Parse(ItemUsePar))
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_324");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_324");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint("已超过使用等级!");
                         break;
@@ -812,7 +812,7 @@ public class UI_ItemTips : MonoBehaviour {
 
                     if (Game_PublicClassVar.Get_function_Rose.BagNullNum() <= 0)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_43");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_43");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("开始失败!请背包内至少预留5个位置!");
                         break;
@@ -903,7 +903,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //判断当前是否有宠物空位
                     int nullPetNum = Game_PublicClassVar.Get_function_AI.Pet_ReturnPetFirstNull();
                     if (nullPetNum == -1) {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_46");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_46");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前宠物栏位已满！宠物栏位每15、25、35、45、55级均会新增一个宠物栏位！");
                         break;
@@ -933,7 +933,7 @@ public class UI_ItemTips : MonoBehaviour {
                         if (Game_PublicClassVar.Get_function_Rose.CostBagSpaceItem(ItemID, costNum, UIBagSpaceNum))
                         {
                             Game_PublicClassVar.Get_function_AI.Pet_Create(nullPetNum.ToString(), petID, "1");
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_47");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_47");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("运气爆表！恭喜你获得变异宠物!!!");
                         }
@@ -950,7 +950,7 @@ public class UI_ItemTips : MonoBehaviour {
                         //销魂自身道具
                         if (Game_PublicClassVar.Get_function_Rose.CostBagItem(ItemID, 1)) {
                             Game_PublicClassVar.Get_function_AI.Pet_Create(nullPetNum.ToString(), petID, "1");
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_48");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_48");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你获得宠物!");
                         }
@@ -964,7 +964,7 @@ public class UI_ItemTips : MonoBehaviour {
        
                     string petFightSpaceID = Game_PublicClassVar.Get_function_Rose.GetRosePetFightFirstID().ToString();
                     if (petFightSpaceID == "-1") {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_50");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_50");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前无出战宠物,无法使用！");
                         break;
@@ -977,7 +977,7 @@ public class UI_ItemTips : MonoBehaviour {
                     int nowPetLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetLv", "ID", petFightSpaceID, "RosePet"));
                     if (nowPetLv < usePetLv)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_55");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_55");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("宠物等级太底,无法使用！");
                         break;
@@ -986,7 +986,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //获取玩家等级
                     int nowRoseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
                     if (nowPetLv >= nowRoseLv + 5) {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_56");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_56");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的宠物等级高于自身角色5级,不可使用!");
                         break;
@@ -1006,13 +1006,13 @@ public class UI_ItemTips : MonoBehaviour {
                                 CloseUIStatus = false;
                             }
 
-                            string langStrHint_11 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_59");
-                            string langStrHint_22 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_60");
+                            string langStrHint_11 = LanguageManager.Instance.LoadLocalizationHint("hint_59");
+                            string langStrHint_22 = LanguageManager.Instance.LoadLocalizationHint("hint_60");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_11 + useExp.ToString() + langStrHint_22);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你当前出战的宠物获得了" + useExp.ToString() + "点经验值");
                         }
                         else {
-                            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_61");
+                            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_61");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包道具数量不足,请整理背包！");
                             break;
@@ -1027,7 +1027,7 @@ public class UI_ItemTips : MonoBehaviour {
                     petFightSpaceID = Game_PublicClassVar.Get_function_Rose.GetRosePetFightFirstID().ToString();
                     if (petFightSpaceID == "-1")
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_62");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_62");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前无出战宠物,无法使用！");
                         break;
@@ -1040,7 +1040,7 @@ public class UI_ItemTips : MonoBehaviour {
                     nowPetLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetLv", "ID", petFightSpaceID, "RosePet"));
                     if (nowPetLv > usePetLv)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_63");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_63");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("宠物等级太高,不能使用！");
                         break;
@@ -1050,7 +1050,7 @@ public class UI_ItemTips : MonoBehaviour {
                     nowRoseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
                     if (nowPetLv >= nowRoseLv + 5)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_64");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_64");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的宠物等级高于自身角色5级,不可使用!");
                         break;
@@ -1068,8 +1068,8 @@ public class UI_ItemTips : MonoBehaviour {
                                 CloseUIStatus = false;
                             }
 
-                            string langStrHint_11 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_59");
-                            string langStrHint_22 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_60");
+                            string langStrHint_11 = LanguageManager.Instance.LoadLocalizationHint("hint_59");
+                            string langStrHint_22 = LanguageManager.Instance.LoadLocalizationHint("hint_60");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_11 + useExp.ToString() + langStrHint_22);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你当前出战的宠物获得了" + useExp.ToString() + "点经验值");
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你当前出战的宠物获得了" + useExp.ToString() + "点经验值");
@@ -1090,7 +1090,7 @@ public class UI_ItemTips : MonoBehaviour {
                     //比对当前地图ID
                     if (SceneManager.GetActiveScene().name != mapID) {
                         string scenceName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SceneName", "ID", mapID, "Scene_Template");
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_65");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_65");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + scenceName + " X=" + map_X + "map_Y = " + map_Y);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请移动到地图:" + scenceName + " X=" + map_X + "map_Y = " + map_Y);
                         break;
@@ -1155,8 +1155,8 @@ public class UI_ItemTips : MonoBehaviour {
                         {
                             string scenceName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SceneName", "ID", mapID, "Scene_Template");
 
-                            string langStrHint_11 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_66");
-                            string langStrHint_22 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_67");
+                            string langStrHint_11 = LanguageManager.Instance.LoadLocalizationHint("hint_66");
+                            string langStrHint_22 = LanguageManager.Instance.LoadLocalizationHint("hint_67");
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_11 + scenceName + langStrHint_22);
                             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请移动到" + scenceName + "地图开启");
                             break;
@@ -1179,7 +1179,7 @@ public class UI_ItemTips : MonoBehaviour {
                     }
                     else {
 
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_68");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_68");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("您已经开始挖宝了!");
                     }
@@ -1214,9 +1214,9 @@ public class UI_ItemTips : MonoBehaviour {
                     Debug.Log("ItemPar = " + ItemPar);
                     GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
                     //获取地图名称
-                    string langStrHint_4 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_31");
-                    string langStrHint_5 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_32");
-                    string langStrHint_6 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_33");
+                    string langStrHint_4 = LanguageManager.Instance.LoadLocalizationHint("comhintText_31");
+                    string langStrHint_5 = LanguageManager.Instance.LoadLocalizationHint("comhintText_32");
+                    string langStrHint_6 = LanguageManager.Instance.LoadLocalizationHint("comhintText_33");
 
                     string writeHintText = langStrHint_4;
                     //string writeHintText = "请点击保存需要传送的坐标！";
@@ -1230,9 +1230,9 @@ public class UI_ItemTips : MonoBehaviour {
                     }
  
                     Debug.Log("uiCommonHint = " + uiCommonHint.name);
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_1");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_2");
-                    string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_3");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhintText_1");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhintText_2");
+                    string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("comhintText_3");
                     uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(writeHintText, Map_MoveTargetPosi, Map_SavePosi, langStrHint_1, langStrHint_2, langStrHint_3);
                     uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
                     uiCommonHint.transform.localPosition = Vector3.zero;
@@ -1349,7 +1349,7 @@ public class UI_ItemTips : MonoBehaviour {
 
                             float writeBaoLv = float.Parse(RankBaoLvStr) + float.Parse(ItemUsePar);
                             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("RankBaoLv", writeBaoLv.ToString(), "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
-                            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_448");
+                            string langStr = LanguageManager.Instance.LoadLocalization("hint_448");
                             float baolv = float.Parse(ItemUsePar) + 1;
                             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr + ":" + ((int)(float.Parse(ItemUsePar)*100)).ToString()+"%");
                             Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_BuffListShowSet.GetComponent<UI_BuffShowListSet>().ShowBaoLvBuff();
@@ -1537,7 +1537,7 @@ public class UI_ItemTips : MonoBehaviour {
                 //打开镶嵌界面
                 Game_PublicClassVar.Get_game_PositionVar.Obj_UI_FunctionOpen.GetComponent<UI_FunctionOpen>().Obj_roseEquip.GetComponent<UI_RoseEquip>().Click_Type("3");
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_81");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_81");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("界面已打开,请选择对应颜色的槽位进行宝石镶嵌");
             }
@@ -1605,10 +1605,10 @@ public class UI_ItemTips : MonoBehaviour {
             int sellGoldValue = Game_PublicClassVar.Get_function_Pasture.GetPastureSellGold(UIBagSpaceNum);
 
             selPastureItemUICommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string jieshaoStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_41") + sellGoldValue;
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_13");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_14");
-            string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_15");
+            string jieshaoStr = LanguageManager.Instance.LoadLocalizationHint("comhint_41") + sellGoldValue;
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhintText_13");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhintText_14");
+            string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("comhintText_15");
             selPastureItemUICommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, SellPastureItem, null, langStrHint_1, langStrHint_2, langStrHint_3);
             selPastureItemUICommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
             selPastureItemUICommonHint.transform.localPosition = Vector3.zero;
@@ -1629,12 +1629,12 @@ public class UI_ItemTips : MonoBehaviour {
             Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UI_CloseTips.SetActive(false);
             //弹出提示
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string jieshaoStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_26") + Text_ItemName;
+            string jieshaoStr = LanguageManager.Instance.LoadLocalizationHint("comhint_26") + Text_ItemName;
             //string jieshaoStr = "是否出售道具:"+ Text_ItemName;
             //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, throwItem, null, "出售确认", "出售", "取消");
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_13");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_14");
-            string langStrHint_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_15");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhintText_13");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhintText_14");
+            string langStrHint_3 = LanguageManager.Instance.LoadLocalizationHint("comhintText_15");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, throwItem, null, langStrHint_1, langStrHint_2, langStrHint_3);
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
             uiCommonHint.transform.localPosition = Vector3.zero;
@@ -1712,7 +1712,7 @@ public class UI_ItemTips : MonoBehaviour {
         //获取仓库是否已经满了
         int nullNum = Game_PublicClassVar.Get_function_Rose.StoreHouseNullNum();
         if (nullNum <= 0) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_82");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_82");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("仓库已满！");
             return;
@@ -1729,7 +1729,7 @@ public class UI_ItemTips : MonoBehaviour {
 
         if (Game_PublicClassVar.Get_game_PositionVar.HouseBagYeShu == 0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_83");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_83");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("仓库未打开！");
             clickBtnStatus = false;
@@ -1743,7 +1743,7 @@ public class UI_ItemTips : MonoBehaviour {
         string nullspace = Game_PublicClassVar.Get_function_Rose.StoreHouse_ReturnNullSpaceNum(Game_PublicClassVar.Get_game_PositionVar.HouseBagYeShu.ToString());
         if (nullspace == "-1")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_82");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_82");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("仓库已满!");
             clickBtnStatus = false;
@@ -1777,7 +1777,7 @@ public class UI_ItemTips : MonoBehaviour {
         int nullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
         if (nullNum <= 0)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_84");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_84");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("背包已满！");
             return;
@@ -1798,7 +1798,7 @@ public class UI_ItemTips : MonoBehaviour {
         string nullspace = Game_PublicClassVar.Get_function_Rose.BagFirstNullNum();
         if (nullspace == "-1")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_82");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_82");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("仓库已满!");
             clickBtnStatus = false;
@@ -1871,7 +1871,7 @@ public class UI_ItemTips : MonoBehaviour {
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseBag");
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_88");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_88");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("不能在城镇地图保存坐标！");
         }
@@ -1893,8 +1893,8 @@ public class UI_ItemTips : MonoBehaviour {
             int chaValue = int.Parse(timeStr) - int.Parse(itemIDTime);
             if (chaValue < 1800)
             {
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_91");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_92");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_91");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_92");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + (int)(1800 - chaValue) / 60 + langStrHint_2);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("半小时内只能使用一次! 冷却时间剩余:" + (int)(1800 - chaValue) / 60 + "分钟");
                 return;
@@ -1924,7 +1924,7 @@ public class UI_ItemTips : MonoBehaviour {
         }
         else {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_93");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_93");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请先保存需要传送的坐标点！");
         }

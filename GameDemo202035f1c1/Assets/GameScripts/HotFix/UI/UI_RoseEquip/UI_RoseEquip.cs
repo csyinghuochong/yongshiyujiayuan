@@ -192,7 +192,7 @@ public class UI_RoseEquip : MonoBehaviour {
         Click_Type("1");
 
         //初始化标签按钮
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language != "Chinese") {
+        if (LanguageManager.Instance.CurrentLanguage != LanguageType.Chinese) {
             Obj_EquipBtnText_1.GetComponent<Text>().fontSize = 20;
             Obj_EquipBtnText_2.GetComponent<Text>().fontSize = 20;
             Obj_EquipBtnText_3.GetComponent<Text>().fontSize = 20;

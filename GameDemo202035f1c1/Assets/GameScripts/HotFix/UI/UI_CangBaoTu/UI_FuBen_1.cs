@@ -33,7 +33,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         {
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_1");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_1");
 
             string nanduNameStr = "普通模式";
             string nanduStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BeiYong_4", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
@@ -57,7 +57,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_36");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_36");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今天已经进入副本一次了,请明天再来！");
         }
@@ -67,7 +67,7 @@ public class UI_FuBen_1 : MonoBehaviour {
     {
         /*
         Debug.Log("副本暂未开启!敬请期待~");
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_37");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_37");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         return;
         */
@@ -79,7 +79,7 @@ public class UI_FuBen_1 : MonoBehaviour {
 
         //判断等级
         if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() < 55) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_457");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_457");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
         }
@@ -95,7 +95,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         {
             /*
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, Enter_DaMiJing, null);
             //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -129,7 +129,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         if (cangbaoNum <= 0)
         {
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_1");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_1");
 
             string nanduNameStr = "普通模式";
             string nanduStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BeiYong_4", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
@@ -154,7 +154,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_36");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_36");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今天已经进入副本一次了,请明天再来！");
         }
@@ -165,7 +165,7 @@ public class UI_FuBen_1 : MonoBehaviour {
     {
         /*
         Debug.Log("副本暂未开启!敬请期待~");
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_37");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_37");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         return;
         */
@@ -178,7 +178,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         //判断等级
         if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() < 60)
         {
-            //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_457");
+            //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_457");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请提升等级至60级后进入此副本");
             return;
         }
@@ -218,7 +218,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         if (cangbaoNum <= 0)
         {
             GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
             uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, Enter_DaMiJing, null);
             //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);
             uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -227,7 +227,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         }
         else
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_38");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_38");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今天已经进入副本一次了,请明天再来！");
         }
@@ -264,7 +264,7 @@ public class UI_FuBen_1 : MonoBehaviour {
     {
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint_2);
         //string jieshaoStr = "1.玩家需要在限定的时间内击杀小怪收集秘境值,当秘境值达到500点后即可召唤秘境领主BOSS.\n2.击杀秘境BOSS后则挑战当前秘境层级成功,并激活下一层级大秘境,怪物实力随着秘境层级越高！\n3.大秘境内均会掉落秘境碎片可以在隔壁的同学处兑换奖励！\n4.大秘境成功退出地图后可以连续挑战,如果挑战失败只能等明日再来！";
-        string jieshaoStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_5");
+        string jieshaoStr = LanguageManager.Instance.LoadLocalizationHint("comhint_5");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, null, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;
@@ -287,8 +287,8 @@ public class UI_FuBen_1 : MonoBehaviour {
             if (daMiJingLv_int > daMiJingRewardLv_int)
             {
                 //可以领取礼包
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_6");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_7");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhint_6");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_7");
                 string jieshaoStr = langStrHint_1 + daMiJingRewardLv_int + langStrHint_2;
                 //string jieshaoStr = "是否领取通关大秘境第"+ daMiJingRewardLv_int+ "层奖励？";
                 uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, DaMiJingReward, null);
@@ -299,20 +299,20 @@ public class UI_FuBen_1 : MonoBehaviour {
             else {
                 if (daMiJingLv_int > 1)
                 {
-                    string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_39");
-                    string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_40");
+                    string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_39");
+                    string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_40");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + (daMiJingLv_int - 1).ToString() + langStrHint_2);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你已领取通关大秘境第" + (daMiJingLv_int - 1).ToString() + "层奖励！");
                 }
                 else {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_41");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_41");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你还未通关大秘境第1层,无法领取奖励！");
                 }
             }
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_41");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_41");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你还未通关大秘境第1层,无法领取奖励！");
         }
@@ -352,7 +352,7 @@ public class UI_FuBen_1 : MonoBehaviour {
     //进入喜从天降活动
     public void Btn_HuoDongChest_Enter()
     {
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_44");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_44");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("功能暂未开启!");
         Debug.Log("点击喜从天降按钮");
@@ -364,7 +364,7 @@ public class UI_FuBen_1 : MonoBehaviour {
     {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, Enter_DaMiJing, null);
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入伤害试炼副本\n此副本进入次数不限,但每日只能领取一次奖励", Enter_ShangHai, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -389,7 +389,7 @@ public class UI_FuBen_1 : MonoBehaviour {
     public void Btn_Enter_FengYinZhiTa()
     {
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, Enter_DaMiJing, null);
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入封印之塔？\n提示:进入前身上最好携带够足够的封印之塔的凭证哦,被封印的怪物为特殊爆率不受加成影响", Enter_FengYinZhiTa, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
@@ -470,7 +470,7 @@ public class UI_FuBen_1 : MonoBehaviour {
         ObscuredString sendRewardLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", nowShangHaiRewardID, "FuBenShangHai_Template");
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
         string langStrHint = "是否领取进入伤害奖励! 当前伤害奖励等级：" + sendRewardLv + "级,是否领取?\n提示:造成的伤害奖励越高,奖励越高。每天可无限进入,取最高伤害领取当天奖励";
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, SendReward, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否进入副本？\n提示:每天只有一次进入机会！", Enter_DaMiJing, null);

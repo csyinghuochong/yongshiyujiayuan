@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -270,7 +270,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
 
         //检测自身是否已经学习
         if (Game_PublicClassVar.Get_function_Rose.GetMakeProficiencyIDStatus(nowSeclect)) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_13");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_13");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前制造技能你已经学习！");
             return;
@@ -284,7 +284,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
         if (roseLv < learnLv)
         {
             makeStatus = false;
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_14");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_14");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("角色等级不足！");
             ClickMakeBtn = false;
@@ -295,7 +295,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
         if (Game_PublicClassVar.Get_function_Rose.GetRoseMoney() < learnGoldValue)
         {
             //金币不足
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_15");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_15");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameHint("学习需要的金币不足!");
             makeStatus = false;
@@ -336,7 +336,7 @@ public class UI_ItmeMakeLearn : MonoBehaviour
             //制造成功刷新下界面显示
             string itemName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ItemName", "ID", itemID, "Item_Template");
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_18");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_18");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + itemName);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("恭喜你!学会制作道具:" + itemName);
             updateMake();

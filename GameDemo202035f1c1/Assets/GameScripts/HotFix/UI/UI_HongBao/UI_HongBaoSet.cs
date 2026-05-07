@@ -45,7 +45,7 @@ public class UI_HongBaoSet : MonoBehaviour {
         if (CostTime > 0)
         {
             Obj_HongBaoCostTime.SetActive(true);
-            Obj_HongBaoCostTime.GetComponent<Text>().text = (int)(CostTime) + Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒后开启");
+            Obj_HongBaoCostTime.GetComponent<Text>().text = (int)(CostTime) + LanguageManager.Instance.LoadLocalization("秒后开启");
         }
         else {
             Obj_HongBaoCostTime.SetActive(false);
@@ -74,8 +74,8 @@ public class UI_HongBaoSet : MonoBehaviour {
         int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
         if (roseLv < 12)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_216");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_215");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_216");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_215");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint + "12" + langStrHint_2);
             return;
         }
@@ -96,7 +96,7 @@ public class UI_HongBaoSet : MonoBehaviour {
         //服务器领取返回
         if (SelfHongBaoValue != 0)
         {
-            //string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_422");
+            //string langStr = LanguageManager.Instance.LoadLocalization("hint_422");
             Obj_SelfHongBaoGold.GetComponent<Text>().text = SelfHongBaoValue.ToString();
 
             Debug.Log("恭喜你抢到红包!");

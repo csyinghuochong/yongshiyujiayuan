@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -38,7 +38,7 @@ public class MakeEquipNeedItem : MonoBehaviour {
         if (selfNum >= NeedItemNum)
         {
             Obj_NeedItemNum.GetComponent<Text>().color = Color.green;
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("已达成");
+            string langStr = LanguageManager.Instance.LoadLocalization("已达成");
             Obj_NeedItemNum.GetComponent<Text>().text = selfNum + "/" + NeedItemNum + "("+langStr+")";
         }
         else {

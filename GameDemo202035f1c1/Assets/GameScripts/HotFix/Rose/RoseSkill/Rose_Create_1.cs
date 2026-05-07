@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 //召唤怪物技能
 public class Rose_Create_1 : MonoBehaviour
@@ -109,7 +109,7 @@ public class Rose_Create_1 : MonoBehaviour
                     string name = go.name.Replace("(Clone)", "");
                     if (name == createName)
                     {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_220");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_220");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你已经召唤此怪物！");
                         return;

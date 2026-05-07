@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -47,8 +47,8 @@ public class MapPetTianTi : MonoBehaviour {
 
         if (mapTimeObj != null) {
             mapTimeShowObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapTime;
-            string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-            string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+            string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+            string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
             mapTimeShowObj.GetComponent<Text>().text = langstr_1 + ":" + MapTime + langstr_2;
             mapTimeObj.GetComponent<UI_MapTime>().Obj_MapChestNum.SetActive(false);
         }
@@ -139,13 +139,13 @@ public class MapPetTianTi : MonoBehaviour {
             {
                 if (nowMapTime >= 0)
                 {
-                    string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-                    string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+                    string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+                    string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
                     mapTimeShowObj.GetComponent<Text>().text = langstr_1 + nowMapTime + langstr_2;
                 }
                 else
                 {
-                    string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("正在退出地图");
+                    string langstr_2 = LanguageManager.Instance.LoadLocalization("正在退出地图");
                     mapTimeShowObj.GetComponent<Text>().text = langstr_2;
                 }
             }
@@ -378,7 +378,7 @@ public class MapPetTianTi : MonoBehaviour {
 
         //弹出战斗结果提示 点击提示按钮返回主城
         GameObject uiCommonHint = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint_2);
-        string langStrHint1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint(hintStr);
+        string langStrHint1 = LanguageManager.Instance.LoadLocalizationHint(hintStr);
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint1, returnEnterGame, returnEnterGame,"系统提示","确定","取消", returnEnterGame);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;
@@ -503,7 +503,7 @@ public class MapPetTianTi : MonoBehaviour {
         int fightLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("FightLv", "ID", petID, "Pet_Template"));
         if (roseStatus.GetComponent<Rose_Proprety>().Rose_Lv < fightLv)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_192");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_192");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             return;
         }
@@ -598,7 +598,7 @@ public class MapPetTianTi : MonoBehaviour {
 
             if (ifSpeak)
             {
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_428");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_428");
                 Game_PublicClassVar.Get_function_UI.GameHint(langStrHint_1);
                 //Game_PublicClassVar.Get_function_UI.GameHint("召唤宠物成功！");
 
@@ -635,7 +635,7 @@ public class MapPetTianTi : MonoBehaviour {
             /*
             if (ifSpeak)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_305");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_305");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             }
             */

@@ -324,7 +324,7 @@ public class AI_Property : MonoBehaviour {
                     case "2":
                         nanduValue_HP = nanduValue_HP * nandu_hp_2;
                         nanduValue_Other = nanduValue_Other * nandu_other_2;
-                        string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("挑战");
+                        string langstr = LanguageManager.Instance.LoadLocalization("挑战");
                         AI_Name = AI_Name + "("+ langstr + ")";
                         break;
 
@@ -332,7 +332,7 @@ public class AI_Property : MonoBehaviour {
                     case "3":
                         nanduValue_HP = nanduValue_HP * nandu_hp_3;
                         nanduValue_Other = nanduValue_Other * nandu_other_3;
-                        langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地狱");
+                        langstr = LanguageManager.Instance.LoadLocalization("地狱");
                         AI_Name = AI_Name + "("+ langstr + ")";
                         break;
                 }
@@ -787,7 +787,7 @@ public class AI_Property : MonoBehaviour {
             //虚弱的
             if (randValue <= nanduRand_1)
             {
-                string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("虚弱的");
+                string langstr = LanguageManager.Instance.LoadLocalization("虚弱的");
                 AI_Name = langstr + AI_Name;
                 nanduValue_HP = nanduValue_HP * nanduHp_1;
                 AI_TypeSon = "1";
@@ -796,7 +796,7 @@ public class AI_Property : MonoBehaviour {
             //强壮的
             if (randValue > nanduRand_1 && randValue <= nanduRand_2)
             {
-                string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("强壮的");
+                string langstr = LanguageManager.Instance.LoadLocalization("强壮的");
                 AI_Name = langstr + AI_Name;
                 nanduValue_HP = nanduValue_HP * nanduHp_2;
                 AI_TypeSon = "2";
@@ -805,7 +805,7 @@ public class AI_Property : MonoBehaviour {
             //头领的
             if (randValue > nanduRand_2 && randValue <= nanduRand_3)
             {
-                string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("头领");
+                string langstr = LanguageManager.Instance.LoadLocalization("头领");
                 AI_Name = AI_Name + langstr;
                 nanduValue_HP = nanduValue_HP * nanduHp_3;
                 nanduValue_Other = nanduValue_Other * nanduHp_3;

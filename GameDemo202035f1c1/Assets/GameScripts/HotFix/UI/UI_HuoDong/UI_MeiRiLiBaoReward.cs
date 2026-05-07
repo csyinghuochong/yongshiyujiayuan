@@ -122,7 +122,7 @@ public class UI_MeiRiLiBaoReward : MonoBehaviour
         int bagNullNum = Game_PublicClassVar.Get_function_Rose.BagNullNum();
         if (bagNullNum < itemIDStrList.Length)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_235");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_235");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包格子不足！");
             return;
@@ -130,7 +130,7 @@ public class UI_MeiRiLiBaoReward : MonoBehaviour
 
 		//判定是否已经购买
 		if(ActivityStatus == "1"){
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_236");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_236");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你已经购买此礼包,请明日再来！");
 			return;
@@ -186,7 +186,7 @@ public class UI_MeiRiLiBaoReward : MonoBehaviour
         }
         else {
             //货币不足
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_237");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_237");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("货币不足,无法购买！");
         }

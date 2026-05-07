@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -2566,7 +2566,7 @@ public class Function_AI : MonoBehaviour {
         string PetStatus_2 = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetStatus", "ID", rosePetID_2, "RosePet");
         if(PetStatus_1=="1"|| PetStatus_2 == "1")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_172");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_172");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("无法合成！合成宠物中存在出战宠物");
             return false;
@@ -2580,7 +2580,7 @@ public class Function_AI : MonoBehaviour {
         string petType_1 = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetType", "ID", petID_1, "Pet_Template");
         string petType_2 = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetType", "ID", petID_2, "Pet_Template");
         if (petType_1 == "2" || petType_2 == "2") {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_173");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_173");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("神兽无法合成！");
             return false;
@@ -3177,8 +3177,8 @@ public class Function_AI : MonoBehaviour {
         if (expShowType == "0")
         {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_327");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_328");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_327");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_328");
             Game_PublicClassVar.Get_function_UI.GameGirdHint(langStrHint_1 + addExp + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint("宠物获得" + addExp + "点经验");
         }
@@ -3574,7 +3574,7 @@ public class Function_AI : MonoBehaviour {
         int nullSpace = Pet_ReturnPetFirstNull();
         if (nullSpace == -1)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_177");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_177");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前宠物栏位已满！宠物栏位每15、25、35、45、55级均会新增一个宠物栏位！");
             return false;
@@ -3585,7 +3585,7 @@ public class Function_AI : MonoBehaviour {
         string petID = monsterObj.GetComponent<AI_1>().AI_PetID;
         if (petID == "" || petID == "0")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_180");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_180");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("该目标无法捕捉,捕捉无效！");
             return false;
@@ -3599,7 +3599,7 @@ public class Function_AI : MonoBehaviour {
             Destroy(monsterObj.GetComponent<AI_1>().UI_Hp);
             Destroy(monsterObj, 0.7f);
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_181");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_181");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的捕捉动作太大,导致目标发现你藏起来了");
             return false;
@@ -3619,8 +3619,8 @@ public class Function_AI : MonoBehaviour {
         if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() < petLv)
         {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_182");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_183");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_182");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_183");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + petLv + langStrHint_2);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你需要达到" + petLv + "级才可以捕捉！");
@@ -3637,7 +3637,7 @@ public class Function_AI : MonoBehaviour {
 
         int nullSpace = Pet_ReturnPetFirstNull();
         if (nullSpace == -1) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_184");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_184");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前宠物栏位已满！");
             return false;
@@ -3649,7 +3649,7 @@ public class Function_AI : MonoBehaviour {
             Destroy(monsterObj.GetComponent<AI_1>().UI_Hp);
             Destroy(monsterObj, 0.7f);
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_185");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_185");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你的捕捉动作太大,导致目标发现你藏起来了");
             return false;
@@ -3683,7 +3683,7 @@ public class Function_AI : MonoBehaviour {
         //判定捕捉概率是否成功
         if (Random.value > puzhuoPro + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_BuZhuoPro)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_186");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_186");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("捕捉失败！");
             return false;
@@ -3692,7 +3692,7 @@ public class Function_AI : MonoBehaviour {
         //获取当前怪物ID
         string petID = monsterObj.GetComponent<AI_1>().AI_PetID;
         if(petID==""||petID=="0"){
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_187");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_187");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("该目标无法捕捉,捕捉无效！");
             return false;
@@ -3702,8 +3702,8 @@ public class Function_AI : MonoBehaviour {
         int petLv = monsterObj.GetComponent<AI_Property>().AI_Lv;
         if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() < petLv) {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_188");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_189");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_188");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_189");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + petLv + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你需要达到" + petLv + "级才可以捕捉！");
             return false;
@@ -4003,7 +4003,7 @@ public class Function_AI : MonoBehaviour {
         int fightLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("FightLv", "ID", petID, "Pet_Template"));
         if (roseStatus.GetComponent<Rose_Proprety>().Rose_Lv < fightLv)
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_192");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_192");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("出战等级不足");
@@ -4013,7 +4013,7 @@ public class Function_AI : MonoBehaviour {
         //判定当前是否进入出战CD
         float petZhaoHuanCD = Game_PublicClassVar.Get_function_AI.Pet_GetZhaoHuanCD(NowSclectPetID);
         if (petZhaoHuanCD > 0) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_193");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_193");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("宠物召唤冷却");
@@ -4026,7 +4026,7 @@ public class Function_AI : MonoBehaviour {
             //判定当前出战
             if (Game_PublicClassVar.Get_function_Rose.GetRosePetFightNum() >= 1)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_194");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_194");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前出战位已满！");

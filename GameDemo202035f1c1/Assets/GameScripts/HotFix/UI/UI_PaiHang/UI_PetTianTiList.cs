@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,7 +36,7 @@ public class UI_PetTianTiList : MonoBehaviour {
     public void Init() {
 
         Obj_TeamName.GetComponent<Text>().text = ProPetListData.PetTeamName;
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("拥有者");
+        string langStr = LanguageManager.Instance.LoadLocalization("拥有者");
         Obj_PlayerName.GetComponent<Text>().text = langStr + "：" + ProPetListData.PetPlayerName;
         Obj_RankStr.GetComponent<Text>().text = ProPetListData.RankVlaue;
 
@@ -76,7 +76,7 @@ public class UI_PetTianTiList : MonoBehaviour {
         //判断当前是否拥有队伍,没有队伍需要配置队伍
         string petTiaoZhanTeam = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetTiaoZhanTeam", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (petTiaoZhanTeam == "" || petTiaoZhanTeam == "0" || petTiaoZhanTeam == ";;") {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_441");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_441");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }
@@ -91,7 +91,7 @@ public class UI_PetTianTiList : MonoBehaviour {
         //测试功能
         //petTiaoZhanNum = "0";
         if (int.Parse(petTiaoZhanNum) >= 5) {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_440");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_440");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }
@@ -120,7 +120,7 @@ public class UI_PetTianTiList : MonoBehaviour {
     {
         string[] listData = PetListData[0].Split('@');
         if (listData[6] == "入侵者") {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_443");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_443");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }

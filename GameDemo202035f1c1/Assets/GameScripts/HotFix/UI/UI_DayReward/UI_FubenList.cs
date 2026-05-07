@@ -123,7 +123,7 @@ public class UI_FubenList : MonoBehaviour
         
         if (int.Parse(now_FuBenNum) >= int.Parse(FuBenNumMax)) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_213");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_213");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日副本次数已满!");
             return;
@@ -160,8 +160,8 @@ public class UI_FubenList : MonoBehaviour
             else
             {
 
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_214");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_215");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_214");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_215");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + enterCountryLv + langStrHint_2);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("王国繁荣等级不足！请提升至：" + enterCountryLv + "级");
             }
@@ -169,14 +169,14 @@ public class UI_FubenList : MonoBehaviour
         else {
             if (enterCountryLv == 0)
             {
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_216");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_215");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_216");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_215");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + enterSceneLv + langStrHint_2);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("角色等级不足！请提升至：" + enterSceneLv + "级");
             }
             else {
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_217");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_217");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请先将前面关卡通关才可挑战此关卡！");
             }

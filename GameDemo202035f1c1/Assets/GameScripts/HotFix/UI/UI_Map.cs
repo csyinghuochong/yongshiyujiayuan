@@ -54,7 +54,7 @@ public class UI_Map : MonoBehaviour {
                     objMapName.transform.SetParent(Obj_MapNameSet.transform);
                     objMapName.transform.localScale = new Vector3(1, 1, 1);
                     objMapName.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(vec3_MapName.x, vec3_MapName.y, 0);
-                    string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("前往");
+                    string langStr = LanguageManager.Instance.LoadLocalization("前往");
                     objMapName.GetComponent<UI_MapName>().Obj_MapNameLab.GetComponent<Text>().text = langStr + "：" + mapName;
 
                 }
@@ -275,7 +275,7 @@ public class UI_Map : MonoBehaviour {
         Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseMapMoveNowStatus = true;
         //Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Move_Target_Status = true;
         //Debug.Log("移动111Move_Target_Position = " + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseMapMoveVec3);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_221");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_221");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("小地图移动开启！");
         

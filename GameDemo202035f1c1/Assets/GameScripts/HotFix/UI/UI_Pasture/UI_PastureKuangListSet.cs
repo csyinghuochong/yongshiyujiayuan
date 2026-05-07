@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -167,7 +167,7 @@ public class UI_PastureKuangListSet : MonoBehaviour
         string petTiaoZhanTeam = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetTiaoZhanTeam", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         if (petTiaoZhanTeam == "" || petTiaoZhanTeam == "0" || petTiaoZhanTeam == ";;")
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("请打开排行榜中的宠物天梯处设置自己当前的出战队伍!");
+            string langStr = LanguageManager.Instance.LoadLocalization("请打开排行榜中的宠物天梯处设置自己当前的出战队伍!");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
         }
@@ -183,7 +183,7 @@ public class UI_PastureKuangListSet : MonoBehaviour
         //petTiaoZhanNum = "0";
         if (int.Parse(petTiaoZhanNum) >= 5)
         {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_440");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_440");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今日掠夺次数已用完!");
             return;
         }

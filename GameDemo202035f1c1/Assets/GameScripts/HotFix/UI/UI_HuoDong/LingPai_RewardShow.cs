@@ -38,7 +38,7 @@ public class LingPai_RewardShow : MonoBehaviour {
 
         //显示等级
         string lv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", LingPaiID, "LingPai_Template");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("级");
+        string langStr = LanguageManager.Instance.LoadLocalization("级");
         Obj_LingPaiLv.GetComponent<Text>().text = lv + langStr;
 
         if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() >= int.Parse(lv))
@@ -126,7 +126,7 @@ public class LingPai_RewardShow : MonoBehaviour {
         {
             if (rmb < 98)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_27");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_27");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("无法领取!未达到黄金令牌");
                 return;
@@ -137,7 +137,7 @@ public class LingPai_RewardShow : MonoBehaviour {
         {
             if (rmb < 198)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_28");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_28");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("无法领取!未达到钻石令牌");
                 return;
@@ -146,7 +146,7 @@ public class LingPai_RewardShow : MonoBehaviour {
 
         //检测背包是否有1个孔位
         if (Game_PublicClassVar.Get_function_Rose.BagNullNum() <= 1) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_29");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_29");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("领取奖励需要预留1个道具位置");
             return;
@@ -210,7 +210,7 @@ public class LingPai_RewardShow : MonoBehaviour {
         string lingPaiRewardID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("LingPaiRewardID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         if (lingPaiRewardID.Contains(writeStr) == true) {
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_33");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_33");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("当前奖励已领取!");
             return false;

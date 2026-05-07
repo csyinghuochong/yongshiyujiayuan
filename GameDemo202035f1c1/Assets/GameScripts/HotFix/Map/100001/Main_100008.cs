@@ -49,8 +49,8 @@ public class Main_100008 : MonoBehaviour {
 
         if (mapTimeObj != null) {
             mapTimeShowObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapTime;
-            string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-            string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+            string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+            string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
             mapTimeShowObj.GetComponent<Text>().text = langstr_1 + ":" + MapTime + langstr_2;
         }
 
@@ -79,8 +79,8 @@ public class Main_100008 : MonoBehaviour {
                 {
                     if (nowMapTime >= 0)
                     {
-                        //string langstr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("地图剩余时间");
-                        //string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒");
+                        //string langstr_1 = LanguageManager.Instance.LoadLocalization("地图剩余时间");
+                        //string langstr_2 = LanguageManager.Instance.LoadLocalization("秒");
                         mapTimeShowObj.GetComponent<Text>().text = "下一波怪物来临剩余" + nowMapTime + "秒";
 
                         //BOSS击杀回合提前结束,
@@ -100,7 +100,7 @@ public class Main_100008 : MonoBehaviour {
                     }
                     else
                     {
-                        //string langstr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("正在退出地图");
+                        //string langstr_2 = LanguageManager.Instance.LoadLocalization("正在退出地图");
                         //mapTimeShowObj.GetComponent<Text>().text = langstr_2;
                         NowCreateNum = NowCreateNum + 1;
                         CreateNumUpdate(NowCreateNum);
@@ -109,7 +109,7 @@ public class Main_100008 : MonoBehaviour {
                 }
 
                 mapChestNumObj = mapTimeObj.GetComponent<UI_MapTime>().Obj_MapChestNum;
-                string langstr_3 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("寻找到真实宝箱");
+                string langstr_3 = LanguageManager.Instance.LoadLocalization("寻找到真实宝箱");
                 mapChestNumObj.GetComponent<Text>().text = "当前波数" + NowCreateNum + "/" + "18";
 
             }

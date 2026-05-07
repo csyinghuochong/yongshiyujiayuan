@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -58,7 +58,7 @@ public class UI_MyTeamSet : MonoBehaviour {
 
                     //显示宠物信息
                     Obj_TeamNameList[i].GetComponent<Text>().text = petName;
-                    Obj_TeamLvList[i].GetComponent<Text>().text = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级") +" " + petLv;
+                    Obj_TeamLvList[i].GetComponent<Text>().text = LanguageManager.Instance.LoadLocalization("等级") +" " + petLv;
 
                     //显示底图
                     Object obj = ResourcesLoaderComponent.Instance.LoadIconSync<Sprite>("PetHeadIcon/" + nowHeadIcon);
@@ -67,7 +67,7 @@ public class UI_MyTeamSet : MonoBehaviour {
                 }
             }
             else {
-                Obj_TeamNameList[i].GetComponent<Text>().text = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点击放入上阵宠物");
+                Obj_TeamNameList[i].GetComponent<Text>().text = LanguageManager.Instance.LoadLocalization("点击放入上阵宠物");
                 Obj_TeamLvList[i].GetComponent<Text>().text = "";
                 //Obj_TeamIconList[i].GetComponent<Image>().sprite = null;
             }
@@ -115,7 +115,7 @@ public class UI_MyTeamSet : MonoBehaviour {
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("PetTiaoZhanTeam", writeStr, "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseDayReward");
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_439");
+        string langStr = LanguageManager.Instance.LoadLocalization("hint_439");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
 
 

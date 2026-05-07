@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -467,7 +467,7 @@ public class MainUI_SkillGrid : MonoBehaviour
         //指定一些地图不能使用技能
         if (Application.loadedLevelName == "100001")
         {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_9");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_9");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("此地图不能使用技能！");
             return;
@@ -480,7 +480,7 @@ public class MainUI_SkillGrid : MonoBehaviour
             {
 
                 //提示魔法值不足
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_458");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_458");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             }
@@ -489,7 +489,7 @@ public class MainUI_SkillGrid : MonoBehaviour
             {
 
                 //提示能量值不足
-                //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_458");
+                //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_458");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("能量值不足");
 
             }
@@ -521,7 +521,7 @@ public class MainUI_SkillGrid : MonoBehaviour
         {
             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseSingStopStatus = true;
 
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_10");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_10");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("技能施法状态中断！");
         }
@@ -562,7 +562,7 @@ public class MainUI_SkillGrid : MonoBehaviour
                 }
                 */
 
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_11");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_11");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你需要选择攻击目标");
                 return;
@@ -580,7 +580,7 @@ public class MainUI_SkillGrid : MonoBehaviour
                 if (dis > float.Parse(damgeRange))
                 {
 
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_12");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_12");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你需要离的更近一点");
                     return;
@@ -588,7 +588,7 @@ public class MainUI_SkillGrid : MonoBehaviour
             }
             else
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_296");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_296");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("你需要选择攻击目标");
                 return;
@@ -657,7 +657,7 @@ public class MainUI_SkillGrid : MonoBehaviour
             //根据主角的专注属性,重新获取技能冷却CD
             if (Random.value < Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ZhuanZhuPro)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_17");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_17");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("技能触发专注!");
                 skillCDSelfTime = 0;
@@ -774,7 +774,7 @@ public class MainUI_SkillGrid : MonoBehaviour
 
             if (skillCDStatus) {
                 Game_PublicClassVar.Get_game_PositionVar.SkillMoveValue_End = "";
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_343");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_343");
                 Game_PublicClassVar.Get_function_UI.GameHint(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameHint("请等待冷却时间结束");
                 return;

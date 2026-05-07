@@ -198,7 +198,7 @@ public class UI_StoreHouse : MonoBehaviour {
                 //判定
                 int stroeHouseMaxNum = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("StroeHouseMaxNum", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
                 if (stroeHouseMaxNum <= 1) {
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_143");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_143");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("需要冒险家等级提升至3级开启此仓库栏位！");
                     return;
@@ -218,7 +218,7 @@ public class UI_StoreHouse : MonoBehaviour {
                 stroeHouseMaxNum = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("StroeHouseMaxNum", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
                 if (stroeHouseMaxNum <= 2)
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_144");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_144");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("需要冒险家等级提升至6级开启此仓库栏位！");
                     return;
@@ -238,7 +238,7 @@ public class UI_StoreHouse : MonoBehaviour {
 			    stroeHouseMaxNum = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("StroeHouseMaxNum", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
 			    if (stroeHouseMaxNum <= 3)
 			    {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_145");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_145");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("需要冒险家等级提升至8级开启此仓库栏位！");
 				    return;
@@ -261,7 +261,7 @@ public class UI_StoreHouse : MonoBehaviour {
     public void StoreZhengLi() {
 
         if (zhengLiStatus) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_146");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_146");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("正在整理,请稍后再试！");
             return;

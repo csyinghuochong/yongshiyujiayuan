@@ -117,7 +117,7 @@ public class UI_HuoDongEnterList : MonoBehaviour
 
         //判定服务器是否连接
         if (Game_PublicClassVar.Get_gameLinkServerObj.ServerLinkStatus == false) {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_104");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_104");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("未连接至服务器！");
             return;
@@ -136,8 +136,8 @@ public class UI_HuoDongEnterList : MonoBehaviour
         }
         else {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_216");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_215");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_216");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("hint_215");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1 + enterSceneLv + langStrHint_2);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("角色等级不足！请提升至：" + enterSceneLv + "级");
         }

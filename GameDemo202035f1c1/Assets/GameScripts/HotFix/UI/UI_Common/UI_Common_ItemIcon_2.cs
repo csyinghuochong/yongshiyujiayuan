@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -60,7 +60,7 @@ public class UI_Common_ItemIcon_2 : MonoBehaviour
                 if (selfNum >= NeedItemNum)
                 {
                     Obj_NeedItemNum.GetComponent<Text>().color = Color.green;
-                    //string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("已达成");
+                    //string langStr = LanguageManager.Instance.LoadLocalization("已达成");
                     //Obj_NeedItemNum.GetComponent<Text>().text = selfNum + "/" + NeedItemNum + "("+ langStr + ")";
                     Obj_NeedItemNum.GetComponent<Text>().text = selfNum + "/" + NeedItemNum;
                 }

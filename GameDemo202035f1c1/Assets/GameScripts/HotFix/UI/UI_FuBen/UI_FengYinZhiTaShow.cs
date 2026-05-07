@@ -81,7 +81,7 @@ public class UI_FengYinZhiTaShow : MonoBehaviour {
     {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_4");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_4");
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, Enter_DaMiJing, null);
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否继续开始下面的挑战？\n 本次挑战需要消耗封印之塔的凭证或花费"+ CostZuanShi +"钻石直接开启!", ChongZhi, ChongZhi_ZuanShi, "封印之塔", "凭证挑战", "钻石挑战",null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

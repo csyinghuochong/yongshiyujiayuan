@@ -193,7 +193,7 @@ public class RoseSkill_Sing_1 : MonoBehaviour
             {
 
                 //提示魔法值不足
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_458");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_458");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
 
             }
@@ -202,7 +202,7 @@ public class RoseSkill_Sing_1 : MonoBehaviour
             {
 
                 //提示能量值不足
-                //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_458");
+                //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_458");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("能量值不足");
 
             }
@@ -444,7 +444,7 @@ public class RoseSkill_Sing_1 : MonoBehaviour
             //获取自身是否战斗
             if (game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseFightStatus)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_190");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_190");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("战斗中不能释放此技能！");
                 return false;

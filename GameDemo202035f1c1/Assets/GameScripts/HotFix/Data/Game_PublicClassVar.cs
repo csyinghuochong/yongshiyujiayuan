@@ -170,23 +170,6 @@ class Game_PublicClassVar
 
     //获取GameLinkServer脚本对象
 
-    public static GameObject tag_gameSettingLanguge = GameObject.FindWithTag("Languge");
-    public static GameSettingLanguge gameSettingLanguge = tag_gameSettingLanguge.GetComponent<GameSettingLanguge>();
-    public static GameSettingLanguge Get_gameSettingLanguge
-    {
-        get
-        {
-            return gameSettingLanguge;
-        }
-        set
-        {
-            //gameVar1 = GameObject.FindWithTag("Tag_WWWSet");
-            //wwwSet = gameVar1.GetComponent<WWWSet>();
-            Get_gameSettingLanguge = value;
-        }
-    }
-
-
     //获取Fight_Formult脚本对象
     public static Fight_Formult fight_Formult = null;
     public static Fight_Formult Get_fight_Formult

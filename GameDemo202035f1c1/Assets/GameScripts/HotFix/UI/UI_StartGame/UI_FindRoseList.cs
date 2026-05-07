@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -62,7 +62,7 @@ public class UI_FindRoseList : MonoBehaviour {
         GameObject nowObj = obj as GameObject;
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(nowObj);      //Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint
         //string jieshaoStr = "1.玩家需要在限定的时间内击杀小怪收集秘境值,当秘境值达到500点后即可召唤秘境领主BOSS.\n2.击杀秘境BOSS后则挑战当前秘境层级成功,并激活下一层级大秘境,怪物实力随着秘境层级越高！\n3.大秘境内均会掉落秘境碎片可以在隔壁的同学处兑换奖励！\n4.大秘境成功退出地图后可以连续挑战,如果挑战失败只能等明日再来！";
-        string jieshaoStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhintText_20");
+        string jieshaoStr = LanguageManager.Instance.LoadLocalizationHint("comhintText_20");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(jieshaoStr, FindRose, null, "找回须知", "我已阅读", "取 消");
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_gameServerObj.Obj_FindRose.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;

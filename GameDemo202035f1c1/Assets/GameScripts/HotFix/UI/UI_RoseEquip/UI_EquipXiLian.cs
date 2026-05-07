@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using CodeStage.AntiCheat.ObscuredTypes;
@@ -92,7 +92,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
 
         //初始化标签按钮
-        if (Game_PublicClassVar.Get_wwwSet.GameSetLanguage._Language != "Chinese")
+        if (LanguageManager.Instance.CurrentLanguage != LanguageType.Chinese)
         {
             Obj_EquipBtnText_1.GetComponent<Text>().fontSize = 20;
             Obj_EquipBtnText_2.GetComponent<Text>().fontSize = 20;
@@ -265,7 +265,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         //检测服务器网络
         if (Game_PublicClassVar.gameLinkServer.ServerLinkStatus == false) {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_58");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_58");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
             return;
 
@@ -274,7 +274,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
         if (XiLianStatus) {
 
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_398");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_398");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
             //Game_PublicClassVar.Get_function_UI.GameHint("短时间内洗炼次数太多！请稍后再试");
             return;
@@ -294,7 +294,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         //判定洗练金币是否足够
         if (Game_PublicClassVar.Get_function_Rose.GetRoseRMB() < needrmb) {
             //Game_PublicClassVar.Get_function_UI.GameHint("钻石不足");
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_399");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_399");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
             //XiLianStatus = false;
             return;
@@ -332,8 +332,8 @@ public class UI_EquipXiLian : MonoBehaviour {
         if (hintSkillName != "") {
             XiLianStatus = false;
             Obj_XiLianHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_17");
-            string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_18");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhint_17");
+            string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_18");
             if (ten)
             {
                 Obj_XiLianHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint_1 + hintSkillName + langStrHint_2, null, EquipXiLian_ZuanShi_Ten, "洗炼提示", "取消", "确定", null);
@@ -364,7 +364,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         //执行洗炼
         EquipXiLian(ten);
         /*
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_338");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_338");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         */
         //Game_PublicClassVar.Get_function_UI.GameGirdHint("请放入将要洗练的装备");
@@ -446,7 +446,7 @@ public class UI_EquipXiLian : MonoBehaviour {
                                     }
                                     if (hideID == "0")
                                     {
-                                        string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_408");
+                                        string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_408");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_A);
                                         //Game_PublicClassVar.Get_function_UI.GameHint("好像并没有发生什么变化！");
                                         XiLianStatus = false;
@@ -480,14 +480,14 @@ public class UI_EquipXiLian : MonoBehaviour {
         //检测服务器网络
         if (Game_PublicClassVar.gameLinkServer.ServerLinkStatus == false)
         {
-            string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_58");
+            string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_58");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
             return;
         }
 
         if (XiLianStatus)
         {
-            string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_403");
+            string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_403");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_A);
             //Game_PublicClassVar.Get_function_UI.GameHint("短时间内洗炼次数太多！请稍后再试");
             return;
@@ -498,7 +498,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
         if (moveItemID == "")
         {
-            string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_404");
+            string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_404");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_A);
             //Game_PublicClassVar.Get_function_UI.GameHint("请点击左侧装备放入要洗炼的装备!");
             XiLianStatus = false;
@@ -512,7 +512,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         }
 
         if (xiLianNeedItem[0] == "" || xiLianNeedItem[0] == "0") {
-            string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_405");
+            string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_405");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_A);
             //Game_PublicClassVar.Get_function_UI.GameHint("未放入需要洗炼的装备!");
             XiLianStatus = false;
@@ -553,7 +553,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         int itemBagNum = Game_PublicClassVar.Get_function_Rose.ReturnBagItemNum(xiLianNeedItem[0]);
         if (itemBagNum < int.Parse(xiLianNeedItem[1]) * tenAddPro)
         {
-            string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_406");
+            string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_406");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_A);
             //Game_PublicClassVar.Get_function_UI.GameHint("洗炼石不足");
             XiLianStatus = false;
@@ -578,8 +578,8 @@ public class UI_EquipXiLian : MonoBehaviour {
             {
                 XiLianStatus = false;
                 Obj_XiLianHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_17");
-                string langStrHint_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_18");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("comhint_17");
+                string langStrHint_2 = LanguageManager.Instance.LoadLocalizationHint("comhint_18");
                 //Obj_XiLianHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint_1 + hintSkillName + langStrHint_2, Btn_EquipXiLian_Item, null);
                 if (ten)
                 {
@@ -599,7 +599,7 @@ public class UI_EquipXiLian : MonoBehaviour {
         EquipXiLian_Item(ten);
 
         /*
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_338");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_338");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         */
         //Game_PublicClassVar.Get_function_UI.GameGirdHint("请放入将要洗练的装备");
@@ -670,7 +670,7 @@ public class UI_EquipXiLian : MonoBehaviour {
                                     }
                                     if (hideID == "0")
                                     {
-                                        string langStrHint_A = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_408");
+                                        string langStrHint_A = LanguageManager.Instance.LoadLocalizationHint("hint_408");
                                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_A);
                                         //Game_PublicClassVar.Get_function_UI.GameHint("好像并没有发生什么变化！");
                                         XiLianStatus = false;
@@ -697,7 +697,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
         //写入极品属性ID
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("HideID", hideID, "ID", bagSpaceNum, "RoseBag");
-        string langStrHint_B = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_401");
+        string langStrHint_B = LanguageManager.Instance.LoadLocalizationHint("hint_401");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_B);
         //Game_PublicClassVar.Get_function_UI.GameHint("装备洗练成功！");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseBag");
@@ -1076,7 +1076,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 		Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("GemID", Write_GemIDSet,"ID", bagSpaceNum, "RoseBag");
 		Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseBag");
 
-        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_302");
+        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_302");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front ("运气爆炸!洗炼装备时竟然额外钻探出一个宝石孔位");
         */
@@ -1089,7 +1089,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
         if (Move_Space_1 == "" || Move_Space_2 == "") {
 
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_343_1");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_343_1");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             //Debug.Log("请放入需要转移的装备");
             return;
@@ -1121,7 +1121,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
         if (int.Parse(quality_1) < 4 || int.Parse(quality_2) < 4) {
 
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_344_1");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_344_1");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             //Debug.Log("需要转移的装备品质必须为紫色品质以上");
             return;
@@ -1133,7 +1133,7 @@ public class UI_EquipXiLian : MonoBehaviour {
 
         if (itemSubType_1 != itemSubType_2) {
 
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_345_1");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_345_1");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
             return;
             //Debug.Log("部位不同,不能进行属性转移");
@@ -1178,12 +1178,12 @@ public class UI_EquipXiLian : MonoBehaviour {
             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseBag");
 
             //弹出提示
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_346_1");
+            string langStr = LanguageManager.Instance.LoadLocalization("hint_346_1");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
         }
         else {
             //弹出金币不足提示
-            string langHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_138");
+            string langHint = LanguageManager.Instance.LoadLocalization("hint_138");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langHint);
         }
     }

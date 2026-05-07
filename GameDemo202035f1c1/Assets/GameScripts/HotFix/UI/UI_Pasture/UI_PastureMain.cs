@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -64,7 +64,7 @@ public class UI_PastureMain : MonoBehaviour {
     public void Btn_AddZuanShi() {
 
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
-        //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("comhint_12");
+        //string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_12");
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往购买钻石界面", GoToGoToDuiHuanGold, null);
         //uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("是否前往兑换金币界面？", GoToGoToDuiHuanGold, null);
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);

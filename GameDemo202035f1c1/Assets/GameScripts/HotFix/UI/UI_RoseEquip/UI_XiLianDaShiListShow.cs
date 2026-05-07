@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -60,8 +60,8 @@ public class UI_XiLianDaShiListShow : MonoBehaviour {
         }
 
         string needXiLianValue = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NeedXiLianValue", "ID", XiLianDaShiID, "EquipXiLianDaShi_Template");
-        string langString = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("熟练度达到");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("点");
+        string langString = LanguageManager.Instance.LoadLocalization("熟练度达到");
+        string langStr = LanguageManager.Instance.LoadLocalization("点");
         Obj_XiLianDaShiStr.GetComponent<Text>().text = langString + "<color=#2D882EFF>" + needXiLianValue + langStr + "</color>";
 
         string desStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Des", "ID", XiLianDaShiID, "EquipXiLianDaShi_Template");

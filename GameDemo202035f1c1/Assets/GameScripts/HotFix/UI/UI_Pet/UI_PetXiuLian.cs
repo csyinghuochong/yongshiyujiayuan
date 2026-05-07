@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -43,7 +43,7 @@ public class UI_PetXiuLian : MonoBehaviour {
         for (int i = 0; i< XiuLianLvList.Length;i++) {
             PetXiuLianNameList[i].GetComponent<Text>().text = getXiuLianName(i);
             string nowLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", XiuLianLvList[i], "PetXiuLian_Template");
-            PetXiuLianLvList[i].GetComponent<Text>().text = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级") + nowLv;
+            PetXiuLianLvList[i].GetComponent<Text>().text = LanguageManager.Instance.LoadLocalization("等级") + nowLv;
         }
     }
 
@@ -68,7 +68,7 @@ public class UI_PetXiuLian : MonoBehaviour {
         //显示信息
         Obj_XiuLianName.GetComponent<Text>().text = getXiuLianName(type);
         string nowLv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", XiuLianLvList[type], "PetXiuLian_Template");
-        Obj_XiuLianLv.GetComponent<Text>().text = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("等级") + nowLv;
+        Obj_XiuLianLv.GetComponent<Text>().text = LanguageManager.Instance.LoadLocalization("等级") + nowLv;
 
         //显示图标
         string icon = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Icon", "ID", XiuLianLvList[type], "PetXiuLian_Template");
@@ -94,7 +94,7 @@ public class UI_PetXiuLian : MonoBehaviour {
         long playGold = Game_PublicClassVar.Get_function_Rose.GetRoseMoney();
         string showGoldStr = playGold.ToString();
         if (playGold >= 1000000) {
-            string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("万");
+            string langStr = LanguageManager.Instance.LoadLocalization("万");
             showGoldStr = ((int)(playGold / 10000)).ToString()+ langStr;
         }
         
@@ -103,7 +103,7 @@ public class UI_PetXiuLian : MonoBehaviour {
 
         Obj_Cost_Gold.GetComponent<Text>().text = showGoldStr + "/"+  costGoldNum;
         Obj_Cost_Item.GetComponent<Text>().text = playitemNum + "/" +  costItemList[1];
-        Obj_GaiLvStr.GetComponent<Text>().text = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("修炼成功概率") + ":" + float.Parse(xiulianGaiLv) * 100 + "%";
+        Obj_GaiLvStr.GetComponent<Text>().text = LanguageManager.Instance.LoadLocalization("修炼成功概率") + ":" + float.Parse(xiulianGaiLv) * 100 + "%";
 
         if (playGold < int.Parse( costGoldNum)) {
             Obj_Cost_Gold.GetComponent<Text>().color = Color.red;
@@ -136,7 +136,7 @@ public class UI_PetXiuLian : MonoBehaviour {
                 break;
         }
 
-        return Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(returnStr);
+        return LanguageManager.Instance.LoadLocalization(returnStr);
     }
 
     //宠物修炼
@@ -152,7 +152,7 @@ public class UI_PetXiuLian : MonoBehaviour {
         string nextID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NextID", "ID", XiuLianLvList[NowSeletID], "PetXiuLian_Template");
         if (nextID=="0")
         {
-            string nowlangStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_444");
+            string nowlangStr = LanguageManager.Instance.LoadLocalization("hint_444");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(nowlangStr);
             return;
         }
@@ -166,14 +166,14 @@ public class UI_PetXiuLian : MonoBehaviour {
             Game_PublicClassVar.Get_function_Rose.CostBagItem(costItemList[0], int.Parse(costItemList[1]));
         }
         else {
-            string nowlangStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_446");
+            string nowlangStr = LanguageManager.Instance.LoadLocalization("hint_446");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(nowlangStr);
             return;
         }
 
         //判定宠物洗炼成功概率
         if (Random.value>float.Parse(xiulianGaiLv)) {
-            string nowlangStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_445");
+            string nowlangStr = LanguageManager.Instance.LoadLocalization("hint_445");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(nowlangStr);
             //刷新界面
             ShowPetXiuLian(NowSeletID);
@@ -201,7 +201,7 @@ public class UI_PetXiuLian : MonoBehaviour {
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("PetXiuLian", writeStr,"ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
 
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("hint_447");
+        string langStr = LanguageManager.Instance.LoadLocalization("hint_447");
         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStr);
 
         //刷新界面

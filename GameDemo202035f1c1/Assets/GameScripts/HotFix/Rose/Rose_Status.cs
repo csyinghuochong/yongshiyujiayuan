@@ -542,7 +542,7 @@ public class Rose_Status : MonoBehaviour
                             {
                                 AutomaticGuaJiStatus = false;
 
-                                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_255");
+                                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_255");
                                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("已关闭挂机状态");
                             }
@@ -1167,7 +1167,7 @@ public class Rose_Status : MonoBehaviour
                     if (AutomaticGuaJiStatus)
                     {
                         AutomaticGuaJiStatus = false;
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_255");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_255");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("已关闭挂机状态");
                     }
@@ -1728,7 +1728,7 @@ public class Rose_Status : MonoBehaviour
             {
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("移动操作取消吟唱状态");
                 RoseSingStopStatus = true;
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_256");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_256");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Debug.Log("技能施法状态中断1111！");
             }
@@ -1875,7 +1875,7 @@ public class Rose_Status : MonoBehaviour
                     {
                         roseSingTimeSum = 0;
                         RoseSingStopStatus = true;
-                        string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_258");
+                        string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_258");
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                         Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("技能施法状态中断2222！");
                     }
@@ -2023,7 +2023,7 @@ public class Rose_Status : MonoBehaviour
             {
                 RoseFightFirstStatus = true;
                 //Debug.Log("进入战斗");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_259");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_259");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("进入战斗");
             }
@@ -2059,7 +2059,7 @@ public class Rose_Status : MonoBehaviour
             {
                 RoseFightFirstStatus = false;
                 //Debug.Log("退出战斗");
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_260");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_260");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("退出战斗");
 
@@ -2143,7 +2143,7 @@ public class Rose_Status : MonoBehaviour
             {
                 RoseStatus = "1";
                 roseActStatus = false;
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_261");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_261");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("怪物已脱离,无法攻击");
                 return;

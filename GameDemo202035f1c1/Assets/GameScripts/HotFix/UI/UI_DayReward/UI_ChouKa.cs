@@ -261,8 +261,8 @@ public class UI_ChouKa : MonoBehaviour
         chouKaTime_One = 86400 - chouKaTime_One;
         chouKaTime_Ten = 259200 - chouKaTime_Ten;
 
-        string langStr_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("秒后免费领取");
-        string langStr_2 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("当前可免费领取");
+        string langStr_1 = LanguageManager.Instance.LoadLocalization("秒后免费领取");
+        string langStr_2 = LanguageManager.Instance.LoadLocalization("当前可免费领取");
 
         if (chouKaTime_One >= 1)
         {
@@ -309,7 +309,7 @@ public class UI_ChouKa : MonoBehaviour
             int bagNum = Game_PublicClassVar.Get_function_UI.BagSpaceNullNum();
             if (bagNum < 1)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_1");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_1");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 nowChouKaStatus = false;
                 return;
@@ -319,7 +319,7 @@ public class UI_ChouKa : MonoBehaviour
             int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
             if (roseLv < 8)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_85");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_85");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("8级以下无法抽取奖励！");
                 nowChouKaStatus = false;
@@ -342,7 +342,7 @@ public class UI_ChouKa : MonoBehaviour
                 }
                 else
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_86");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_86");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("钻石不足！");
                 }
@@ -397,7 +397,7 @@ public class UI_ChouKa : MonoBehaviour
             //检测服务器网络
             if (Game_PublicClassVar.gameLinkServer.ServerLinkStatus == false)
             {
-                string langStrHint_1 = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_58");
+                string langStrHint_1 = LanguageManager.Instance.LoadLocalizationHint("hint_58");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint_1);
                 nowChouKaStatus = false;
                 return;
@@ -407,7 +407,7 @@ public class UI_ChouKa : MonoBehaviour
             int bagNum = Game_PublicClassVar.Get_function_UI.BagSpaceNullNum();
             if (bagNum < 10)
             {
-                string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_87");
+                string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_87");
                 Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                 nowChouKaStatus = false;
                 //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("背包已满,请预留至少10个位置！");
@@ -438,7 +438,7 @@ public class UI_ChouKa : MonoBehaviour
                 int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
                 if (roseLv < 8)
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_113");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_113");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("8级以下无法免费抽取！");
                     nowChouKaStatus = false;
@@ -457,7 +457,7 @@ public class UI_ChouKa : MonoBehaviour
                 }
                 else
                 {
-                    string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_86");
+                    string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_86");
                     Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
                     //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("钻石不足！");
                 }
@@ -594,7 +594,7 @@ public class UI_ChouKa : MonoBehaviour
 
         }
         else {
-            string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_124");
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_124");
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
             //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("等级未达到章节要求,无法切换到此章节！");
         }
@@ -634,7 +634,7 @@ public class UI_ChouKa : MonoBehaviour
                 break;
         }
 
-        Obj_ZhangJieXuanZeTextShow.GetComponent<Text>().text = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization(Obj_ZhangJieXuanZeTextShow.GetComponent<Text>().text);
+        Obj_ZhangJieXuanZeTextShow.GetComponent<Text>().text = LanguageManager.Instance.LoadLocalization(Obj_ZhangJieXuanZeTextShow.GetComponent<Text>().text);
 
     }
 
@@ -649,7 +649,7 @@ public class UI_ChouKa : MonoBehaviour
     public void ShowChouKaNum() {
 
         string dayChouKaNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Day_ChouKaNum", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("今日累计次数");
+        string langStr = LanguageManager.Instance.LoadLocalization("今日累计次数");
         Obj_ChouKaNumRewardShowStr.GetComponent<Text>().text = langStr + "：" + dayChouKaNum;
 
         //更新抽卡消耗显示
@@ -670,7 +670,7 @@ public class UI_ChouKa : MonoBehaviour
             float zhekou = 0.8f;  //抽卡次数大于250次打8折
             zuanShiNum = ((int)(int.Parse(zuanShiNum_Base) * zhekou)).ToString();
             zuanShiNum_Ten = ((int)(int.Parse(zuanShiNum_Ten_Base) * zhekou)).ToString();
-            langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("折");
+            langStr = LanguageManager.Instance.LoadLocalization("折");
             langStr = " (" + zhekou * 10 + langStr + ")";
         }
 

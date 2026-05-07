@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -127,7 +127,7 @@ public class UI_RoseDataSet : MonoBehaviour {
 
 		string roseHuoLi = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("HuoLi", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 		string roseHuoLiMax = "100";
-        string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("活力");
+        string langstr = LanguageManager.Instance.LoadLocalization("活力");
 		Obj_HuoLi.GetComponent<Text> ().text = langstr + ":" + roseHuoLi + "/" + roseHuoLiMax;
 		Obj_HuoLiPro.GetComponent<Image> ().fillAmount = float.Parse (roseHuoLi) / float.Parse (roseHuoLiMax);
 
@@ -138,7 +138,7 @@ public class UI_RoseDataSet : MonoBehaviour {
 
 		string roseTiLi = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TiLi", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 		string roseTiLiMax = "100";
-        string langstr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("体力");
+        string langstr = LanguageManager.Instance.LoadLocalization("体力");
         Obj_TiLi.GetComponent<Text> ().text = langstr + ":" + roseTiLi + "/" + roseTiLiMax;
 		Obj_TiLiPro.GetComponent<Image> ().fillAmount = float.Parse (roseTiLi) / float.Parse (roseTiLiMax);
 

@@ -20,7 +20,7 @@ public class UI_ZhanQu_RewardLv : MonoBehaviour {
         Game_PublicClassVar.Get_gameServerObj.Obj_ZhanQu_RewardLv = this.gameObject;
         UpdateRewardPlayerNum();
         //显示自身等级
-        string langStr = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalization("我的等级");
+        string langStr = LanguageManager.Instance.LoadLocalization("我的等级");
         Obj_MyLv.GetComponent<Text>().text = langStr + ":" + Game_PublicClassVar.Get_function_Rose.GetRoseLv().ToString();
         this.gameObject.SetActive(false);
     }
