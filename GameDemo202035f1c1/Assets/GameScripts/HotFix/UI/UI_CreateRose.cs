@@ -1004,12 +1004,12 @@ public class UI_CreateRose : MonoBehaviour {
     public void Btn_RandomName() {
 
         string randomNameStr = "";
-        if (LanguageManager.Instance.ranNameNum >= 2) {
-            int xingXuHaoMax = LanguageManager.Instance.randomName_xing.Length - 1;
-            int nameXuHaoMax = LanguageManager.Instance.randomName_name.Length - 1;
+        if (NameManager.Instance.ranNameNum >= 2) {
+            int xingXuHaoMax = NameManager.Instance.randomName_xing.Length - 1;
+            int nameXuHaoMax = NameManager.Instance.randomName_name.Length - 1;
             int xingXuHao = Game_PublicClassVar.Get_function_Rose.ReturnRamdomValue_Int(0, xingXuHaoMax);
             int nameXuHao = Game_PublicClassVar.Get_function_Rose.ReturnRamdomValue_Int(0, xingXuHaoMax);
-            randomNameStr = LanguageManager.Instance.randomName_xing[xingXuHao] + LanguageManager.Instance.randomName_name[nameXuHao];
+            randomNameStr = NameManager.Instance.randomName_xing[xingXuHao] + NameManager.Instance.randomName_name[nameXuHao];
         }
 
         if (randomNameStr != "") {
