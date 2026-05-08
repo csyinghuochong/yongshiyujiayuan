@@ -64,7 +64,7 @@ public class PatchWindow : MonoBehaviour
     {
         _slider = transform.Find("UIWindow/Slider").GetComponent<Slider>();
         _tips = transform.Find("UIWindow/Slider/txt_tips").GetComponent<Text>();
-        _tips.text = "Initializing the game world !";
+        _tips.text = "资源更新 !";
         _messageBoxObj = transform.Find("UIWindow/MessgeBox").gameObject;
         _messageBoxObj.SetActive(false);
 
@@ -92,7 +92,7 @@ public class PatchWindow : MonoBehaviour
             {
                 UserEventDefine.UserTryInitialize.SendEventMessage();
             };
-            ShowMessageBox($"Failed to initialize package !", callback);
+            ShowMessageBox($"初始化资源包失败 !", callback);
         }
         else if (message is PatchEventDefine.PatchStepsChange)
         {
@@ -110,7 +110,7 @@ public class PatchWindow : MonoBehaviour
             float sizeMB = msg.TotalSizeBytes / 1048576f;
             sizeMB = Mathf.Clamp(sizeMB, 0.1f, float.MaxValue);
             string totalSizeMB = sizeMB.ToString("f1");
-            ShowMessageBox($"Found update patch files, Total count {msg.TotalCount} Total szie {totalSizeMB}MB", callback);
+            ShowMessageBox($"发现需要更新的资源, 资源数量 {msg.TotalCount} 资源大小 {totalSizeMB}MB", callback);
         }
         else if (message is PatchEventDefine.DownloadUpdate)
         {
@@ -126,7 +126,7 @@ public class PatchWindow : MonoBehaviour
             {
                 UserEventDefine.UserTryRequestPackageVersion.SendEventMessage();
             };
-            ShowMessageBox($"Failed to request package version, please check the network status.", callback);
+            ShowMessageBox($"更新版本失败, 请检查网络状态。", callback);
         }
         else if (message is PatchEventDefine.PackageManifestUpdateFailed)
         {
@@ -134,7 +134,7 @@ public class PatchWindow : MonoBehaviour
             {
                 UserEventDefine.UserTryUpdatePackageManifest.SendEventMessage();
             };
-            ShowMessageBox($"Failed to update patch manifest, please check the network status.", callback);
+            ShowMessageBox($"更新资源清单失败, 请检查网络状态。", callback);
         }
         else if (message is PatchEventDefine.WebFileDownloadFailed)
         {
@@ -143,7 +143,7 @@ public class PatchWindow : MonoBehaviour
             {
                 UserEventDefine.UserTryDownloadWebFiles.SendEventMessage();
             };
-            ShowMessageBox($"Failed to download file : {msg.FileName}", callback);
+            ShowMessageBox($"下载资源失败 : {msg.FileName}", callback);
         }
         else
         {
