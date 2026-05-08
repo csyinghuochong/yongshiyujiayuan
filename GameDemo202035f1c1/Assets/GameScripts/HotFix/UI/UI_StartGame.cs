@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using Cysharp.Threading.Tasks;
 
 public class UI_StartGame : MonoBehaviour {
     public bool DestroyKeepObj;                     //当次开关打开是注销Keep保存的Obj,此处用在战斗界面切换建筑界面中
@@ -214,7 +215,7 @@ public class UI_StartGame : MonoBehaviour {
             }
 
             //存储文件
-            this.StartCoroutine(Game_PublicClassVar.Get_wwwSet.Set_GameConfig());
+            Game_PublicClassVar.Get_wwwSet.Set_GameConfig().Forget();
             
             //第一次创建角色开启创建角色状态
             Game_PublicClassVar.Get_wwwSet.CreateRoseStatus = true;

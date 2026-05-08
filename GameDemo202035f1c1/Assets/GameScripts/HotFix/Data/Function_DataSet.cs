@@ -1371,7 +1371,7 @@ public class Function_DataSet{
 
 
     //文本变成DataTable
-    private DataTable XmlTextToDataTable(WWW www, string tableName,bool NoKeyXml = false) {
+    private DataTable XmlTextToDataTable(TextAsset www, string tableName,bool NoKeyXml = false) {
 
         string xmlText = www.text;
         //如果为加密则先解密

@@ -44,6 +44,21 @@ public static class ABPathHelper
         return string.Format("Assets/Bundles/UI/{0}.prefab", name);
     }
 
+    public static string GetConfigGet_XmlPath(string name)
+    {
+        return string.Format("Assets/Bundles/Config/Get_Xml/{0}.xml", name);
+    }
+    
+    public static string GetConfigSet_XmlPath(string roseID,string name)
+    {
+        return string.Format("Assets/Bundles/Config/Set_Xml/{0}/{1}.xml", roseID, name);
+    }
+    
+    public static string GetConfigSet_XmlPath(string name)
+    {
+        return string.Format("Assets/Bundles/Config/Set_Xml/{0}.xml", name);
+    }
+    
     public static string GetConfigPath(string fileName)
     {
         return string.Format("Assets/Bundles/Config/{0}.bytes", fileName);

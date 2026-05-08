@@ -179,7 +179,7 @@ public class XMLScript
     }
 
 
-    public bool Xml_Create(string FilePath, WWW www)
+    public bool Xml_Create(string FilePath, TextAsset www)
     {
 
         //Debug.Log("正在创建" + FilePath);
@@ -267,7 +267,7 @@ public class XMLScript
 
 
     //此处为创建XML但是不进行任何加密,用于读取创角数据
-    public bool Xml_CreateNoKey(string FilePath, WWW www,bool ifSave=false)
+    public bool Xml_CreateNoKey(string FilePath, TextAsset www,bool ifSave=false)
     {
 
         //Debug.Log("正在创建" + FilePath);
@@ -830,7 +830,7 @@ public class XMLScript
 
 
     //读取加密文件中的字符串
-    public string ReadCostKey(WWW www)
+    public string ReadCostKey(TextAsset www)
     {
 
         //string Key = @"P@+#wG+Z";               //私匙
@@ -906,7 +906,7 @@ public class XMLScript
 
 
     //初始化解密指定XML文件
-    public string CostKey_2(string filePath, WWW www)
+    public string CostKey_2(string filePath, TextAsset www)
     {
         //Debug.Log("CostKey_2 = " + filePath);
         //string Key = @"P@+#wG+Z";       //私匙
