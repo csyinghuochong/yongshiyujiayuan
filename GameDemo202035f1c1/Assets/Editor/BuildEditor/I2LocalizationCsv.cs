@@ -44,7 +44,14 @@ public class I2LocalizationCsv
             var sError =
                 m_LanguageSourceData.Import_CSV(string.Empty, content, eSpreadsheetUpdateMode.Replace, ',');
             if (!string.IsNullOrEmpty(sError))
+            {
                 Debug.LogError($"导入全数据时发生错误 请检查 {sError} {path}");
+                return;
+            }
+
+            EditorUtility.SetDirty(editorAsset);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         }
         catch (Exception e)
         {
