@@ -23,6 +23,82 @@ public class EditeScript : MonoBehaviour {
 		
 	}
 
+    [MenuItem("Tools/复制配置到Bundle")]
+    public static void CopyAllConfig()
+    {
+        Debug.Log("复制配置到Bundle！");
+
+        // 复制 Get_Xml 目录下所有文件
+        string getXmlSrc = XmlPath_YuanShi + "\\Get_Xml\\";
+        DirectoryInfo getRoot = new DirectoryInfo(getXmlSrc);
+        if (getRoot.Exists)
+        {
+            FileInfo[] getFiles = getRoot.GetFiles();
+            for (int i = 0; i < getFiles.Length; i++)
+            {
+                string nowFilePath = getFiles[i].ToString();
+                if (nowFilePath.Substring(nowFilePath.Length - 4, 4) == "meta")
+                {
+                    Debug.Log("跳过meta文件：" + nowFilePath);
+                    continue;
+                }
+
+                string fileName = getFiles[i].Name;
+                string destPath = XmlPath_JM + "\\Get_Xml\\" + fileName;
+                Debug.Log("复制文件：" + destPath);
+                CopyOneFile(nowFilePath, destPath);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Get_Xml 目录不存在：" + getXmlSrc);
+        }
+
+        // 复制 Set_Xml 顶层的 GameCreate.xml
+        CopyOneFile(
+            XmlPath_YuanShi + "\\Set_Xml\\GameCreate.xml",
+            XmlPath_JM + "\\Set_Xml\\GameCreate.xml"
+        );
+
+        // 复制 Set_Xml 子目录下所有文件
+        string setStr = "10001";
+        string[] setStrList = setStr.Split(';');
+        for (int z = 0; z < setStrList.Length; z++)
+        {
+            string path = XmlPath_YuanShi + "\\Set_Xml\\" + setStrList[z] + "\\";
+            DirectoryInfo root = new DirectoryInfo(path);
+            if (!root.Exists)
+            {
+                Debug.LogWarning("目录不存在：" + path);
+                continue;
+            }
+
+            // 确保目标目录存在
+            string destDir = XmlPath_JM + "\\Set_Xml\\" + setStrList[z] + "\\";
+            if (!Directory.Exists(destDir))
+                Directory.CreateDirectory(destDir);
+
+            FileInfo[] files = root.GetFiles();
+            for (int i = 0; i < files.Length; i++)
+            {
+                string nowFilePath = files[i].ToString();
+                if (nowFilePath.Substring(nowFilePath.Length - 4, 4) == "meta")
+                {
+                    Debug.Log("跳过meta文件：" + nowFilePath);
+                    continue;
+                }
+
+                string fileName = files[i].Name;
+                string destPath = destDir + fileName;
+                Debug.Log("复制文件：" + destPath);
+                CopyOneFile(nowFilePath, destPath);
+            }
+        }
+
+        Debug.Log("复制完成！");
+        AssetDatabase.Refresh();
+    }
+
     [MenuItem("Tools/加密工具GetXml")]
     public static void XmlJiaMi() {
         Debug.Log("加密！");
@@ -99,14 +175,13 @@ public class EditeScript : MonoBehaviour {
     //复制一个指定的文件
     public static void CopyOneFile(string CopyPath, string CopyFilePath)
     {
+        string destDir = Path.GetDirectoryName(CopyFilePath);
+        if (!Directory.Exists(destDir))
+            Directory.CreateDirectory(destDir);
 
         FileInfo fileinfo = new FileInfo(CopyPath);
-        FileInfo fileinfo_2 = new FileInfo(CopyFilePath);
-        if (!fileinfo_2.Exists)
-        {
-            Debug.Log("CopyPath = " + CopyPath + ";CopyFilePath = " + CopyFilePath);
-            fileinfo.CopyTo(CopyFilePath, true);        //不覆盖原有文件
-        }
+        fileinfo.CopyTo(CopyFilePath, true);  // true = 强制覆盖
+        Debug.Log("已复制：" + CopyFilePath);
     }
 
 
