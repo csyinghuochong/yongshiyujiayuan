@@ -11,7 +11,7 @@ public class EditeScript : MonoBehaviour {
     public static string XmlPath_JM = Application.dataPath + "\\Bundles\\Config";
     //public static string XmlPath_YuanShi = Application.dataPath + "\\StreamingAssets\\GameData\\" + "Xml";
     
-    public static string XmlPath_YuanShi = Application.dataPath + "\\GameXml\\" + "Xml";
+    public static string XmlPath_YuanShi = Application.dataPath + "\\Config\\GameXml\\" + "Xml";
 
     // Use this for initialization
     void Start () {
