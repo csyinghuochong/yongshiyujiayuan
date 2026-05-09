@@ -74,8 +74,15 @@ public class PastureKuangSet : MonoBehaviour
     //玩家点击事件
     public void Click() {
 
-        if (WeiKaiFaStatus == false)
+        if (UI_PastureKuangShowName.IsKuangShowNameOpen)
         {
+            return;
+        }
+
+        if (WeiKaiFaStatus == false && UI_PastureKuangShowName.IsKuangShowNameOpen == false)
+        {
+            UI_PastureKuangShowName.IsKuangShowNameOpen = true;
+            
             GameObject showobj = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_PastureKuangShowName);
             showobj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
             showobj.transform.localScale = new Vector3(1, 1, 1);

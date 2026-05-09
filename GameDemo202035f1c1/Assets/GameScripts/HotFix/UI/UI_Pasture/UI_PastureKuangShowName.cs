@@ -29,6 +29,8 @@ public class UI_PastureKuangShowName : MonoBehaviour
     private bool FangZhiStatus;
     public ObscuredBool IfLingQuStatus;
 
+    public static bool IsKuangShowNameOpen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,6 +106,7 @@ public class UI_PastureKuangShowName : MonoBehaviour
         }
         else {
             Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("未初始化挖矿数据...");
+            IsKuangShowNameOpen = false;
             Destroy(this.gameObject);
         }
 
@@ -217,6 +220,7 @@ public class UI_PastureKuangShowName : MonoBehaviour
                         Game_PublicClassVar.Get_game_PositionVar.NowPastureSetObj.GetComponent<PastureSet>().InitKuangPosi();
                     }
 
+                    IsKuangShowNameOpen = false;
                     Destroy(this.gameObject);
 
                 }
@@ -244,7 +248,9 @@ public class UI_PastureKuangShowName : MonoBehaviour
 
     }
 
-    public void Btn_Close() {
+    public void Btn_Close()
+    {
+        IsKuangShowNameOpen = false;
         Destroy(this.gameObject);
     }
 
