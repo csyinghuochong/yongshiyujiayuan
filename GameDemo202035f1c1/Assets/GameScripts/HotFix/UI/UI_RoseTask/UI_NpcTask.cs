@@ -1051,6 +1051,13 @@ public class UI_NpcTask : MonoBehaviour {
 
             //牧场兑换大厅
             case "32":
+                if (UI_PastureDuiHuanDaTing.IsDuiHuanDaTingOpen)
+                {
+                    return;
+                }
+
+                UI_PastureDuiHuanDaTing.IsDuiHuanDaTingOpen = true;
+                
                 GameObject npcPastureDuiHuanDaTing = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_PastureDuiHuanDaTing);
                 npcPastureDuiHuanDaTing.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
                 npcPastureDuiHuanDaTing.transform.localScale = new Vector3(1, 1, 1);

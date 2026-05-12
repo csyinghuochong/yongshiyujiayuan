@@ -17,6 +17,8 @@ public class UI_PastureDuiHuanDaTing : MonoBehaviour
 
     private float lang;
 
+    public static bool IsDuiHuanDaTingOpen;
+
     // Use this for initialization
     void Start()
     {
@@ -130,6 +132,7 @@ public class UI_PastureDuiHuanDaTing : MonoBehaviour
     //关闭UI
     public void Btn_CloseUI() {
         //Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_BuildingMainUISet.GetComponent<BuildingMainUI>().Close_UI();
+        IsDuiHuanDaTingOpen = false;
         Destroy(this.gameObject);
     }
 
