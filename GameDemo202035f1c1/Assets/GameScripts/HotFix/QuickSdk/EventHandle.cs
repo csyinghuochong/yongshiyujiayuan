@@ -137,11 +137,11 @@ public class EventHandle : QuickSDKListener
 		OrderInfo orderInfo = new OrderInfo();
 		GameRoleInfo gameRoleInfo = EventHandle.CreateGameRoleInfo();
 		//orderInfo.callbackUrl
-		orderInfo.goodsID = "1";
-		orderInfo.goodsName = "钻石";
+		orderInfo.goodsID = $"Pay_{parameter[1]}";
+		orderInfo.goodsName = $"{int.Parse(parameter[1]) * 100}钻石";
 		orderInfo.goodsDesc = "钻石";
 		orderInfo.quantifier = "个";
-		orderInfo.extrasParams = "extparma";
+		orderInfo.extrasParams = "";
 		orderInfo.count = 1;
 		orderInfo.amount = double.Parse(parameter[1]);
 		orderInfo.price = double.Parse(parameter[1]);
