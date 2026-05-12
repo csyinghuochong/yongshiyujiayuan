@@ -18,6 +18,9 @@ public class UpdateSetting : ScriptableObject
         }
     }
 
+    [Header("热更新服务器地址")]
+    public string HostServerURL = "http://127.0.0.1";
+    
     [Header("Auto sync with [HybridCLRGlobalSettings]")]
     public List<string> HotUpdateAssemblies = new List<string>() { "Game.Hotfix.dll" };
 
