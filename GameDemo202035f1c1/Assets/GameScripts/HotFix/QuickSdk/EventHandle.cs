@@ -26,6 +26,26 @@ public class EventHandle : QuickSDKListener
 
 	public GameObject Btn_RenZheng;
 
+	private void Start()
+	{
+		QuickSDK.getInstance().setListener(this);
+
+		mExitDialogCanvas = GameObject.Find("ExitDialog");
+		if (mExitDialogCanvas != null)
+		{
+			mExitDialogCanvas.SetActive(false);
+		}
+	}
+
+	private void Update()
+	{
+		// 监听 Android 系统返回键/返回手势
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			onExit();
+		}
+	}
+
 	void showLog(string title, string message)
 	{
 		Debug.Log("title: " + title + ", message: " + message);
@@ -66,19 +86,8 @@ public class EventHandle : QuickSDKListener
 			PlayerPrefs.SetInt(roleKey, 1);
 			QuickSDK.getInstance().createRole(EventHandle.CreateGameRoleInfo());
 		}
-		//EventHandle.SendEnterGame( );
-	}
-
-	// Use this for initialization
-	void Start()
-	{
-		QuickSDK.getInstance().setListener(this);
-
-		mExitDialogCanvas = GameObject.Find("ExitDialog");
-		if (mExitDialogCanvas != null)
-		{
-			mExitDialogCanvas.SetActive(false);
-		}
+		
+		QuickSDK.getInstance().enterGame(EventHandle.CreateGameRoleInfo());
 	}
 
 	//init 已经在安卓层调用了
@@ -179,11 +188,12 @@ public class EventHandle : QuickSDKListener
 		//注：GameRoleInfo的字段，如果游戏有的参数必须传，没有则不用传
 		string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 		string name = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+		string lv = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Lv", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 
 		GameRoleInfo gameRoleInfo = new GameRoleInfo();
-		// gameRoleInfo.gameRoleBalance = "0";
+		gameRoleInfo.gameRoleBalance = "0";
 		gameRoleInfo.gameRoleID = zhanghaoID;
-		gameRoleInfo.gameRoleLevel = "1";
+		gameRoleInfo.gameRoleLevel = lv;
 		gameRoleInfo.gameRoleName = name;
 		gameRoleInfo.partyName = "同济会";
 		gameRoleInfo.serverID = "1";
@@ -242,33 +252,7 @@ public class EventHandle : QuickSDKListener
 	/// </summary>
 	public void onUpdateRoleInfo()
 	{
-		string zhanghaoID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-		string name = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Name", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-
-		//注：GameRoleInfo的字段，如果游戏有的参数必须传，没有则不用传
-		GameRoleInfo gameRoleInfo = new GameRoleInfo();
-
-		gameRoleInfo.gameRoleBalance = "0";
-		gameRoleInfo.gameRoleID = zhanghaoID;
-		gameRoleInfo.gameRoleLevel = "1";
-		gameRoleInfo.gameRoleName = name;
-		gameRoleInfo.partyName = "同济会";
-		gameRoleInfo.serverID = "1";
-		gameRoleInfo.serverName = "火星服务器";
-		gameRoleInfo.vipLevel = "1";
-		gameRoleInfo.roleCreateTime = GetTimeStamp(true);//UC与1881渠道必传，值为10位数时间戳
-
-		gameRoleInfo.gameRoleGender = "男";//360渠道参数
-		gameRoleInfo.gameRolePower = "38";//360渠道参数，设置角色战力，必须为整型字符串
-		gameRoleInfo.partyId = "1100";//360渠道参数，设置帮派id，必须为整型字符串
-
-		gameRoleInfo.professionId = "11";//360渠道参数，设置角色职业id，必须为整型字符串
-		gameRoleInfo.profession = "法师";//360渠道参数，设置角色职业名称
-		gameRoleInfo.partyRoleId = "1";//360渠道参数，设置角色在帮派中的id
-		gameRoleInfo.partyRoleName = "帮主"; //360渠道参数，设置角色在帮派中的名称
-		gameRoleInfo.friendlist = "无";//360渠道参数，设置好友关系列表，格式请参考：http://open.quicksdk.net/help/detail/aid/190
-
-		QuickSDK.getInstance().updateRole(gameRoleInfo);
+		QuickSDK.getInstance().updateRole(EventHandle.CreateGameRoleInfo());
 	}
 
 	/// <summary>
@@ -277,6 +261,11 @@ public class EventHandle : QuickSDKListener
 	/// </summary>
 	public void onExit()
 	{
+		if (!EventHandle.IsQudaoPackage())
+		{
+			return;
+		}
+
 		if (QuickSDK.getInstance().isChannelHasExitDialog())
 		{
 			QuickSDK.getInstance().exit();
@@ -527,7 +516,5 @@ public class EventHandle : QuickSDKListener
 	{
 		//Application.LoadLevel("scene3");
 	}
-
-
 }
 
