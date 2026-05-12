@@ -79,7 +79,7 @@ public class PastureKuangSet : MonoBehaviour
             return;
         }
 
-        if (WeiKaiFaStatus == false && UI_PastureKuangShowName.IsKuangShowNameOpen == false)
+        if (WeiKaiFaStatus == false)
         {
             UI_PastureKuangShowName.IsKuangShowNameOpen = true;
             
