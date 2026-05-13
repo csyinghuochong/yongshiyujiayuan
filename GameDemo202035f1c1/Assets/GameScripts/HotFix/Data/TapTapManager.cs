@@ -22,7 +22,6 @@ public class TapTapManager
 
     private const string clientId = "yrvsirol93o27hydc7";
     private const string clientToken = "4lTeqdbgS3FtR5i4UliTIUaAvN1Ga4AtirdUeGTB";
-    private TapTapRegionType region = TapTapRegionType.CN;
 
     private bool hasInit = false;
 
@@ -36,7 +35,7 @@ public class TapTapManager
             // 客户端令牌，开发者后台获取
             clientToken = clientToken,
             // 地区，CN 为国内，Overseas 为海外
-            region = region,
+            region = TapTapRegionType.CN,
             // 客户端 PC 平台公钥，开发者后台获取，仅接入 TapTap PC 客户端需要
             clientPublicKey = "pubKey",
             // 屏幕方向：0-竖屏 1-横屏，仅移动端生效
