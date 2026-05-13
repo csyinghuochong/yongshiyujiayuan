@@ -210,7 +210,7 @@ public class UI_OpenCreateRose : MonoBehaviour {
         Obj_GanXieBtn.SetActive(false);
         Obj_CreateRose.SetActive(true);
 
-        if (EventHandle.IsHuiWeiChannel())
+        if (EventHandle.IsQudaoPackage())
         {
             //渠道的检测放在用户点击获取权限之后
             Game_PublicClassVar.Get_getSignature.excuteCheckAction();

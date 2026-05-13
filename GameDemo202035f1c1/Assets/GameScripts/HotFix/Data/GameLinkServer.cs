@@ -1867,7 +1867,7 @@ public class GameLinkServer : MonoBehaviour {
                 {
                     pro_ComStr_4.str_1 = Game_PublicClassVar.Get_xmlScript.Decrypt(pro_ComStr_4.str_1);
                     Game_PublicClassVar.Get_wwwSet.CheckApkNameStrAdd = pro_ComStr_4.str_1;
-                    if (!EventHandle.IsHuiWeiChannel())
+                    if (!EventHandle.IsHuiWeiChannel() && PlayerPrefs.GetInt("GameYinSi") == 1)
                     {
                         Game_PublicClassVar.Get_getSignature.excuteCheckAction();
                     }

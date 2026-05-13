@@ -487,8 +487,6 @@ public class WWWSet:MonoBehaviour{
         //配置表总数
         updataNum = 69;
 
-        if(!EventHandle.IsHuiWeiChannel())
-            Game_PublicClassVar.Get_getSignature.excuteCheckAction();
 
         //Game_PublicClassVar.Get_getSignature.ReqGetChannel();
         
