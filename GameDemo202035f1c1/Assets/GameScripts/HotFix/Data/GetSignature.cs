@@ -732,7 +732,7 @@ public class GetSignature : MonoBehaviour
             {
 #if UNITY_ANDROID
 #if TapTap
-                GameObject.Find("WWW_Set/TapTapSdk").GetComponent<TapTapSdkHelper>().TapInit_1();
+                TapTapManager.Instance.Init();
 #endif
 #endif
             }
