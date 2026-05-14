@@ -350,7 +350,15 @@ public class UI_EnterGame : MonoBehaviour {
         Debug.Log("开始销毁：EnterGame");
         if (bReturnMainCity != true)
         {
+#if UNITY_ANDROID
+#if QuDao
             EventHandle.CheckCreateRole();
+#endif
+#if TapTap
+            TapTapManager.Instance.SetUserID(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ZhangHaoID", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
+#endif
+#endif
+            
         }
         bReturnMainCity = false;
     }

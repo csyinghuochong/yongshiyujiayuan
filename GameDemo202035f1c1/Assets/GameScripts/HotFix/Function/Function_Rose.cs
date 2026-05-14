@@ -15580,8 +15580,29 @@ public class Function_Rose {
 			//发送友盟支付信息
 			try
 			{
-				//GA.Pay(youmengRmbValue, GA.PaySource.Source10, rmbToZuanShiValue);
-			}
+#if UNITY_ANDROID
+#if TapTap
+                string payType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PayType", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
+                if (payType == "" || payType == "0") {
+                    payType = "1";
+                }
+
+                string paymentMethod = "其他";
+                if (payType == "1")
+                {
+                    paymentMethod = "支付宝";
+                }
+                
+                if (payType == "2")
+                {
+                    paymentMethod = "微信";
+                }
+                
+                TapTapManager.Instance.LogPurchasedEvent(rmbDingDan, $"{rmbValue}", int.Parse(rmbValue) * 100, "CNY", paymentMethod, "{\"on_sell\":true}");
+#endif
+#endif
+                //GA.Pay(youmengRmbValue, GA.PaySource.Source10, rmbToZuanShiValue);
+            }
 			catch
 			{
 				Debug.Log("充值报错！");
