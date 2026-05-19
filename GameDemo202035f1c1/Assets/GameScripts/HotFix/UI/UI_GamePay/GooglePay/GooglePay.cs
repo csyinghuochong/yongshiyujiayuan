@@ -203,6 +203,10 @@ public class GooglePay : MonoBehaviour, IStoreListener
         Debug.Log("初始化失败了：" + error);
     }
 
+    public void OnInitializeFailed(InitializationFailureReason error, string message)
+    {
+    }
+
     //购买失败
     public void OnPurchaseFailed(Product i, PurchaseFailureReason p)
     {

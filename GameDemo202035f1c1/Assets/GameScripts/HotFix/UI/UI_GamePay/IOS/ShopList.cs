@@ -261,6 +261,10 @@ public class ShopList : MonoBehaviour,IStoreListener
         }
     }
 
+    public void OnInitializeFailed(InitializationFailureReason error, string message)
+    {
+    }
+
     //购买成功后的回调，包括restore的商品
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {

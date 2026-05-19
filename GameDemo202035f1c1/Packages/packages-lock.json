@@ -12,7 +12,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "a9e27c03d411d2fca01cc7410c24c97cd77cb539"
+      "hash": "2e993ff18f28c931602a07292df0b0804eebef99"
     },
     "com.leancloud.realtime": {
       "version": "https://github.com/leancloud/csharp-sdk-upm.git#realtime-2.3.0",
@@ -48,13 +48,20 @@
       "source": "builtin",
       "dependencies": {}
     },
-    "com.unity.collab-proxy": {
-      "version": "1.15.15",
+    "com.unity.ai.navigation": {
+      "version": "1.1.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.services.core": "1.0.1"
+        "com.unity.modules.ai": "1.0.0"
       },
+      "url": "https://packages.unity.cn"
+    },
+    "com.unity.collab-proxy": {
+      "version": "2.7.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.cn"
     },
     "com.unity.ext.nunit": {
@@ -65,20 +72,20 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.rider": {
-      "version": "2.0.7",
+      "version": "3.0.40",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.1"
+        "com.unity.ext.nunit": "1.0.6"
       },
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.14",
+      "version": "2.0.27",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.9"
+        "com.unity.test-framework": "1.1.33"
       },
       "url": "https://packages.unity.cn"
     },
@@ -89,17 +96,23 @@
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.cn"
+    },
     "com.unity.purchasing": {
-      "version": "4.1.5",
+      "version": "4.12.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
-        "com.unity.modules.unityanalytics": "1.0.0",
         "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
         "com.unity.modules.androidjni": "1.0.0",
-        "com.unity.services.core": "1.0.1"
+        "com.unity.services.core": "1.12.5"
       },
       "url": "https://packages.unity.cn"
     },
@@ -111,16 +124,18 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.services.core": {
-      "version": "1.0.1",
+      "version": "1.14.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.androidjni": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
         "com.unity.modules.unitywebrequest": "1.0.0"
       },
       "url": "https://packages.unity.cn"
     },
     "com.unity.test-framework": {
-      "version": "1.1.31",
+      "version": "1.1.33",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -131,7 +146,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.textmeshpro": {
-      "version": "3.0.6",
+      "version": "3.0.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -140,13 +155,13 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.timeline": {
-      "version": "1.4.8",
+      "version": "1.7.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.cn"
@@ -295,17 +310,6 @@
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.uielementsnative": "1.0.0"
-      }
-    },
-    "com.unity.modules.uielementsnative": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.modules.ui": "1.0.0",
-        "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       }
     },
@@ -314,15 +318,6 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {}
-    },
-    "com.unity.modules.unityanalytics": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
-      }
     },
     "com.unity.modules.unitywebrequest": {
       "version": "1.0.0",
