@@ -1,4 +1,5 @@
 int drawable ic_launcher 0x0
+int drawable ic_launcher_2 0x0
 int drawable qk_game_load01 0x0
 int drawable qk_game_load02 0x0
 int drawable qk_game_load03 0x0
