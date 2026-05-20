@@ -1,5 +1,6 @@
 com.qk.test.test
 drawable ic_launcher
+drawable ic_launcher_2
 drawable qk_game_load01
 drawable qk_game_load02
 drawable qk_game_load03
