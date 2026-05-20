@@ -14,6 +14,13 @@
       "dependencies": {},
       "hash": "2e993ff18f28c931602a07292df0b0804eebef99"
     },
+    "com.google.external-dependency-manager": {
+      "version": "1.2.179",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.leancloud.realtime": {
       "version": "https://github.com/leancloud/csharp-sdk-upm.git#realtime-2.3.0",
       "depth": 0,
@@ -98,7 +105,7 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
-      "depth": 2,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
