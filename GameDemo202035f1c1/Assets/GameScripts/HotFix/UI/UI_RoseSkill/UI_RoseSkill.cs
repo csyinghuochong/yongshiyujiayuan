@@ -321,7 +321,7 @@ public class UI_RoseSkill : MonoBehaviour {
 
         Debug.Log("我点击了技能重置按钮");
         
-        //消耗800钻石
+        //消耗600钻石
         if (Game_PublicClassVar.Get_function_Rose.CostReward("2", "600"))
         {
             //重置SP
