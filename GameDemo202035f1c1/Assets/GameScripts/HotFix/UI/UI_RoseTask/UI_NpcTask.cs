@@ -55,6 +55,7 @@ public class UI_NpcTask : MonoBehaviour {
     public GameObject Obj_EnterFuBen_ShangHaiEveryReward;
 
     public GameObject Obj_EnterFuBen_2;
+    public GameObject Obj_EnterFuBen_3;
 
     //封印之塔
     public GameObject Obj_EnterFuBen_FengYinZhiTa;
@@ -816,6 +817,14 @@ public class UI_NpcTask : MonoBehaviour {
         getTaskUI_2.transform.localPosition = new Vector3(5, creatNpcTask * -75, 0);
         getTaskUI_2.transform.localScale = new Vector3(1, 1, 1);
 
+        creatNpcTask = creatNpcTask + 1;
+
+        //显示副本列表
+        GameObject getTaskUI_3 = (GameObject)Instantiate(Obj_EnterFuBen_3);
+        getTaskUI_3.transform.SetParent(Obj_NpcTaskSet.transform);
+        getTaskUI_3.transform.localPosition = new Vector3(5, creatNpcTask * -75, 0);
+        getTaskUI_3.transform.localScale = new Vector3(1, 1, 1);
+
     }
 
     //展示副本列表
@@ -1051,13 +1060,6 @@ public class UI_NpcTask : MonoBehaviour {
 
             //牧场兑换大厅
             case "32":
-                if (UI_PastureDuiHuanDaTing.IsDuiHuanDaTingOpen)
-                {
-                    return;
-                }
-
-                UI_PastureDuiHuanDaTing.IsDuiHuanDaTingOpen = true;
-                
                 GameObject npcPastureDuiHuanDaTing = (GameObject)Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_PastureDuiHuanDaTing);
                 npcPastureDuiHuanDaTing.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
                 npcPastureDuiHuanDaTing.transform.localScale = new Vector3(1, 1, 1);

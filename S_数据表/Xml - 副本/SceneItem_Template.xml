@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="41001001" Name="铁矿石" Name_EN="Iron Ore" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021101" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41001002" Name="精致的木料" Name_EN="Exquisite Wood" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021102" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41001003" Name="药剂瓶" Name_EN="Potion Bottle" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021103" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41001004" Name="魔法之尘" Name_EN="Magic Dust" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021104" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41001011" Name="村民的货箱" Name_EN="Villagers Cargo Box" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020001" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="240" />
+	<date ID="41001012" Name="黄金宝箱" Name_EN="Gold chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020002" OpenItemID="10010033" OpenValue="1" OpenTime="3" ReviveTime="0" />
+	<date ID="41001021" Name="村民的货箱" Name_EN="Villagers Cargo Box" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020011" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="0" />
+	<date ID="41001022" Name="精致的宝箱" Name_EN="Exquisite Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020012" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="0" />
+	<date ID="41001023" Name="黄金宝箱" Name_EN="Gold Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020013" OpenItemID="10010033" OpenValue="1" OpenTime="3" ReviveTime="0" />
+	<date ID="41002001" Name="梦叶花" Name_EN="Dream Flower" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021201" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41002002" Name="海蓝水晶" Name_EN="Sea Blue Crystal" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021202" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41002003" Name="海源石" Name_EN="Seabed Stone" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021203" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41002011" Name="海底的皮箱" Name_EN="Seabed Suitcase" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020021" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="180" />
+	<date ID="41002012" Name="精致的宝箱" Name_EN="Exquisite Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020022" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="300" />
+	<date ID="41002013" Name="黄金宝箱" Name_EN="Gold Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020023" OpenItemID="10010033" OpenValue="2" OpenTime="3" ReviveTime="0" />
+	<date ID="41003001" Name="流沙石" Name_EN="Quicksand Stone" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021301" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41003002" Name="坚硬的骨头" Name_EN="Hard Bones" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021302" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41003003" Name="血藤水" Name_EN="Bloodvine Water" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021303" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41003011" Name="荒漠补给" Name_EN="Desert Supply" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020031" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="180" />
+	<date ID="41003012" Name="精致的宝箱" Name_EN="Exquisite Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020032" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="300" />
+	<date ID="41003013" Name="黄金宝箱" Name_EN="Gold Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020033" OpenItemID="10010033" OpenValue="3" OpenTime="3" ReviveTime="0" />
+	<date ID="41004001" Name="露水" Name_EN="Dew" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021401" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41004002" Name="灵木" Name_EN="Fairy Tree" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021402" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41004003" Name="魔法瓶" Name_EN="Magic Bottle" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021403" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41004011" Name="野外的补给箱" Name_EN="Wild Supply Box" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020041" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="180" />
+	<date ID="41004012" Name="精致的宝箱" Name_EN="Exquisite Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020042" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="300" />
+	<date ID="41004013" Name="黄金宝箱" Name_EN="Gold Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020043" OpenItemID="10010033" OpenValue="4" OpenTime="3" ReviveTime="0" />
+	<date ID="41005001" Name="火焰花" Name_EN="Flame Flower" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021501" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41005002" Name="火焰石块" Name_EN="Flame Stone" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021502" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41005003" Name="魔法火焰" Name_EN="Magic Flame" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50021503" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="90" />
+	<date ID="41005011" Name="暗灵木箱" Name_EN="Dark Wooden Box" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020051" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="180" />
+	<date ID="41005012" Name="精致的宝箱" Name_EN="Exquisite Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020052" OpenItemID="0" OpenValue="0" OpenTime="3" ReviveTime="300" />
+	<date ID="41005013" Name="黄金宝箱" Name_EN="Gold Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020053" OpenItemID="10010033" OpenValue="5" OpenTime="3" ReviveTime="0" />
+	<date ID="42000001" Name="藏宝宝箱" Name_EN="Treasure Chest" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50100001" OpenItemID="0" OpenValue="0" OpenTime="5" ReviveTime="0" />
+	<date ID="42000002" Name="藏宝宝箱" Name_EN="Treasure Chest" Type="5" AppearPro="10000" Quality="1" ModelName="0" DropID="0" OpenItemID="0" OpenValue="0" OpenTime="5" ReviveTime="0" />
+	<date ID="42000003" Name="藏宝宝箱" Name_EN="Treasure Chest" Type="6" AppearPro="10000" Quality="1" ModelName="0" DropID="0" OpenItemID="0" OpenValue="0" OpenTime="5" ReviveTime="0" />
+	<date ID="41001101" Name="铜宝箱_测试" Name_EN="Copper Chest _ Test" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020004" OpenItemID="10010031" OpenValue="1" OpenTime="3" ReviveTime="0" />
+	<date ID="41001102" Name="银宝箱_测试" Name_EN="Silver Chest _ Test" Type="1" AppearPro="10000" Quality="4" ModelName="0" DropID="50020004" OpenItemID="10010032" OpenValue="1" OpenTime="3" ReviveTime="0" />
+	<date ID="41001103" Name="金宝箱_测试" Name_EN="Gold Chest_Test" Type="1" AppearPro="10000" Quality="5" ModelName="0" DropID="50020004" OpenItemID="10010033" OpenValue="1" OpenTime="3" ReviveTime="0" />
+	<date ID="41099001" Name="测试图片宝箱" Name_EN="Test Picture Chest" Type="2" AppearPro="10000" Quality="3" ModelName="0" DropID="0" OpenItemID="0" OpenValue="0" OpenTime="5" ReviveTime="0" />
+	<date ID="41099002" Name="测试触发场景物" Name_EN="Test Trigger Scene" Type="3" AppearPro="10000" Quality="3" ModelName="0" DropID="0" OpenItemID="0" OpenValue="0" OpenTime="0" ReviveTime="0" />
+</DateArea>

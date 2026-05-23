@@ -203,6 +203,84 @@ public class UI_FuBen_1 : MonoBehaviour {
     }
 
 
+
+    //进入副本地图
+    public void Btn_EnterFuBen_3()
+    {
+
+        string meiRiCangBaoNum = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("FuBen_3_DayNum", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
+        if (meiRiCangBaoNum == "")
+        {
+            meiRiCangBaoNum = "0";
+        }
+        int cangbaoNum = int.Parse(meiRiCangBaoNum);
+        //cangbaoNum = 0;     //测试
+        if (cangbaoNum <= 0)
+        {
+            GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("comhint_1");
+
+            string nanduNameStr = "普通模式";
+            string nanduStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BeiYong_4", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
+
+            if (nanduStr == "2")
+            {
+                nanduNameStr = "挑战模式";
+            }
+
+            if (nanduStr == "3")
+            {
+                nanduNameStr = "地狱模式";
+            }
+
+            string nowStr = "<color=#FF0000FF>" + "当前副本难度 : " + nanduNameStr + "</color>" + "\n";
+            langStrHint = nowStr + langStrHint;
+
+            uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint(langStrHint, EnterFuBen_3, null);
+            uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
+            uiCommonHint.transform.localPosition = Vector3.zero;
+            uiCommonHint.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_36");
+            Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(langStrHint);
+            //Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("今天已经进入副本一次了,请明天再来！");
+        }
+    }
+
+
+    public void EnterFuBen_3()
+    {
+
+        //判断等级
+        if (Game_PublicClassVar.Get_function_Rose.GetRoseLv() < 70)
+        {
+            //string langStrHint = Game_PublicClassVar.Get_gameSettingLanguge.LoadLocalizationHint("hint_457");
+            Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("请提升等级至70级后进入此副本");
+            return;
+        }
+
+
+        //记录次数(测试功能暂时屏蔽)
+        string nowNumStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("FuBen_3_DayNum", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
+        if (nowNumStr == "")
+        {
+            nowNumStr = "0";
+        }
+        int nowNum = int.Parse(nowNumStr);
+
+        nowNum = nowNum + 1;
+        Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("FuBen_3_DayNum", nowNum.ToString(), "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
+        Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseDayReward");
+
+        //进入副本
+        Game_PublicClassVar.Get_function_Rose.RoseMoveTargetMap("fb10003");
+
+
+    }
+
+
     //进入大秘境
     public void Btn_DaMiJing_Enter() {
 

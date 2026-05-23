@@ -1,0 +1,3315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457264}
+  m_Layer: 0
+  m_Name: Bip001 R Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.6295605, y: -0.69793624, z: 0.29110432, w: 0.17831711}
+  m_LocalPosition: {x: 0.12283941, y: 0.036244325, z: -0.11481075}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 403764}
+  m_Father: {fileID: 423426}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &114110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439118}
+  m_Layer: 0
+  m_Name: Bip001 L Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &439118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114110}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.060817935, y: -0.2099443, z: 0.6993512, w: 0.6805385}
+  m_LocalPosition: {x: -0.2452324, y: 0.000000268221, z: 0.00000043213373}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 409426}
+  m_Father: {fileID: 424050}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &122034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486490}
+  m_Layer: 0
+  m_Name: Bip001 R Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122034}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.008339465, y: 0.34552217, z: 0.573224, w: 0.74293953}
+  m_LocalPosition: {x: -0.21779338, y: -0.000000029336672, z: 0.000000020023434}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 425054}
+  m_Father: {fileID: 440178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &124688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 440178}
+  m_Layer: 0
+  m_Name: Bip001 R UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.54072595, y: 0.056223407, z: 0.06468557, w: 0.8368215}
+  m_LocalPosition: {x: -0.081739195, y: -0.000000076368494, z: -0.000000014901163}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 486490}
+  m_Father: {fileID: 444046}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &131640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423426}
+  m_Layer: 0
+  m_Name: Bip001 Spine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131640}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0000021904707, y: 0.0000005662441, z: -0.06279828, w: 0.9980263}
+  m_LocalPosition: {x: -0.12641312, y: -0.020560598, z: 0.00000030547383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 424050}
+  - {fileID: 457264}
+  - {fileID: 469558}
+  m_Father: {fileID: 417226}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &132844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 467832}
+  - component: {fileID: 9503308}
+  m_Layer: 0
+  m_Name: Action_monster_xsc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &467832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 473852}
+  - {fileID: 455710}
+  m_Father: {fileID: 485052}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &9503308
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132844}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 9660af93b5a090746ae5d1003d3be182, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &134686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 425054}
+  m_Layer: 0
+  m_Name: Bip001 R Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &425054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134686}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.2573537, y: 0.05414671, z: -0.39809904, w: -0.878837}
+  m_LocalPosition: {x: -0.30202824, y: 0.000000022351752, z: -0.000000044703494}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 486490}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &137584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 432798}
+  m_Layer: 0
+  m_Name: Bip001 L UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &432798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137584}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5341528, y: 0.027923668, z: 0.24204233, w: 0.8095163}
+  m_LocalPosition: {x: -0.08173902, y: -0.000000040978218, z: 0.000000013038518}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 481512}
+  m_Father: {fileID: 489818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &140568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481512}
+  m_Layer: 0
+  m_Name: Bip001 L Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &481512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140568}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.013842492, y: -0.39744914, z: 0.48128673, w: 0.7811566}
+  m_LocalPosition: {x: -0.21779302, y: 0.0000000109430465, z: 0.0000000745058}
+  m_LocalScale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 434452}
+  m_Father: {fileID: 432798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &141274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498808}
+  m_Layer: 12
+  m_Name: Bone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 428262}
+  - {fileID: 481236}
+  - {fileID: 456324}
+  m_Father: {fileID: 489838}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &142238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412682}
+  m_Layer: 0
+  m_Name: Bip001 Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &412682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.08120385, y: -0.027543832, z: 0.4540196, w: 0.88685596}
+  m_LocalPosition: {x: -0.16476616, y: 0.13836297, z: 0.0000009536744}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 427592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &150988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473852}
+  - component: {fileID: 13760550}
+  m_Layer: 0
+  m_Name: Avatar_Xiaoshachong_001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855694, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 467832}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &13760550
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150988}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: aff8945bbff2e23499b1e8f14a3b321c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 9660af93b5a090746ae5d1003d3be182, type: 3}
+  m_Bones:
+  - {fileID: 412682}
+  - {fileID: 417226}
+  - {fileID: 423426}
+  - {fileID: 469558}
+  - {fileID: 489818}
+  - {fileID: 432798}
+  - {fileID: 424050}
+  - {fileID: 444046}
+  - {fileID: 409426}
+  - {fileID: 457264}
+  - {fileID: 481512}
+  - {fileID: 434452}
+  - {fileID: 439118}
+  - {fileID: 440178}
+  - {fileID: 486490}
+  - {fileID: 425054}
+  - {fileID: 403764}
+  - {fileID: 430488}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 417226}
+  m_AABB:
+    m_Center: {x: -0.21253997, y: 0.023360103, z: -0.00000029802322}
+    m_Extent: {x: 0.7967586, y: 0.63922465, z: 0.58838093}
+  m_DirtyAABB: 0
+--- !u!1 &152300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444046}
+  m_Layer: 0
+  m_Name: Bip001 R Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &444046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7044123, y: -0.028258557, z: 0.70394933, w: -0.0863727}
+  m_LocalPosition: {x: 0.044801284, y: 0.115224555, z: -0.15774836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 440178}
+  m_Father: {fileID: 427592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &153012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456324}
+  m_Layer: 12
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153012}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.97, z: 0.053999603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 498808}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489818}
+  m_Layer: 0
+  m_Name: Bip001 L Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.70441246, y: -0.028256556, z: -0.7039494, w: 0.08637063}
+  m_LocalPosition: {x: 0.044801343, y: 0.11522356, z: 0.15774903}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 432798}
+  m_Father: {fileID: 427592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498268}
+  - component: {fileID: 3344078}
+  - component: {fileID: 2363778}
+  m_Layer: 8
+  m_Name: BackDi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155828}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.006996155, y: 0.08, z: 0.059001923}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 485052}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3344078
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155828}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2363778
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155828}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bdea14f5f67fd57498c7ac7e23c8b184, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &157024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424050}
+  m_Layer: 0
+  m_Name: Bip001 L Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.472674, y: -0.83698726, z: -0.27027887, w: 0.05459887}
+  m_LocalPosition: {x: 0.12283887, y: 0.036243618, z: 0.11481096}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 439118}
+  m_Father: {fileID: 423426}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &162698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481236}
+  m_Layer: 12
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &481236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162698}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.65, z: 0.054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 498808}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &163654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 430488}
+  m_Layer: 0
+  m_Name: Bip001 R Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &430488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163654}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.20149302, y: -0.30272874, z: -0.29285994, w: 0.88430136}
+  m_LocalPosition: {x: -0.18351631, y: 0.000000014901165, z: 0.000000014901165}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 403764}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &171100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489838}
+  - component: {fileID: 11445030}
+  - component: {fileID: 11412672}
+  - component: {fileID: 11415492}
+  - component: {fileID: 19567804}
+  - component: {fileID: 14352146}
+  - component: {fileID: 9503916}
+  m_Layer: 12
+  m_Name: Monster_ChongZi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171100}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.8621403, z: -0, w: 0.50666976}
+  m_LocalPosition: {x: -159.25487, y: 8.09007, z: 58.689396}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 485052}
+  - {fileID: 498808}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11445030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95076c3daf03f704180f40ecbaa255e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AI_ID_Only: 
+  AI_ID: 70005030
+  AI_ID_Obs:
+    currentCryptoKey: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValue: 0
+    hiddenValueAddStr: 
+    fakeValueActiveEx: 0
+    hiddenValue: 14660
+    inited: 1
+  AI_Selected_Status:
+    currentCryptoKey: 111
+    hiddenValue: 218
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  AI_Status:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_Type:
+    currentCryptoKey: 1316541655
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1316541655
+  AI_PetID:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_BuZhuoNum:
+    currentCryptoKey: 1762267204
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1762267204
+  AI_Target: {fileID: 0}
+  Obj_AIModel: {fileID: 191876}
+  ModelMesh: {fileID: 13760550}
+  IfRosePet:
+    currentCryptoKey: 241
+    hiddenValue: 68
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  MonsterCreateObj: {fileID: 0}
+  AIStopMoveStatus:
+    currentCryptoKey: 180
+    hiddenValue: 1
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  AIStopLookTargetStatus:
+    currentCryptoKey: 186
+    hiddenValue: 15
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  IfDeathDestoryModel:
+    currentCryptoKey: 137
+    hiddenValue: 60
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  CreateEWaoDropID:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  ai_NavMesh: {fileID: 19567804}
+  ai_chaseRange:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1894041483
+    hiddenValue: 1892148363
+  AI_MoveSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1630937181
+    hiddenValue: 1629501021
+  ai_monsterType:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  monsterRebirthTime:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1408915394
+    hiddenValue: 1398274754
+  monsterReirthTimeSum:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1091033792
+    hiddenValue: 1104807872
+  monsterOffLineTime:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1650303887
+    hiddenValue: 1654873487
+  ai_IfDeath:
+    currentCryptoKey: 238
+    hiddenValue: 91
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  monsterDestoryTime:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1771784912
+    hiddenValue: 1766497232
+  AI_UpdateProStatus:
+    currentCryptoKey: 143
+    hiddenValue: 58
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  AI_Distance:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1516325087
+    hiddenValue: 1514693087
+  AI_MonsterDeathStatus:
+    currentCryptoKey: 0
+    hiddenValue: 0
+    inited: 0
+    fakeValue: 0
+    fakeValueActive: 0
+  Selected_Effect: {fileID: 100000, guid: dbe89896a9d57014a9ebfd2e9e1ee931, type: 3}
+  Selected_Effect_Position: {fileID: 428262}
+  Ai_HpShowPosition: {fileID: 456324}
+  UI_GameObject: {fileID: 148262, guid: ffc5f9def8e913c4d93eb09dafcb16a4, type: 3}
+  UI_Hp: {fileID: 0}
+  HitStatus:
+    currentCryptoKey: 222
+    hiddenValue: 107
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  HitDamge:
+    currentCryptoKey: 1620742848
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1620742848
+  HitStatus_LuanShe:
+    currentCryptoKey: 215
+    hiddenValue: 98
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  HitObject: {fileID: 196328, guid: cb06081fb1bc41f48a0861687e90ad50, type: 3}
+  HitCriStatus:
+    currentCryptoKey: 242
+    hiddenValue: 71
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  ZhongJiStatus:
+    currentCryptoKey: 133
+    hiddenValue: 48
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  ActReboundStatus:
+    currentCryptoKey: 177
+    hiddenValue: 4
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  MageReboundStatus:
+    currentCryptoKey: 104
+    hiddenValue: 221
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  IfHitEffect:
+    currentCryptoKey: 124
+    hiddenValue: 201
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  IfDodge:
+    currentCryptoKey: 232
+    hiddenValue: 93
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  HitEffect: {fileID: 100000, guid: d5403793b83de7648b0c33ad35e4d64e, type: 3}
+  HitEffectt_Position: {fileID: 162698}
+  BoneSet: {fileID: 141274}
+  StopMoveTime:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1827930945
+    hiddenValue: 1812198465
+  StopMoveTimeSum:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1892113735
+    hiddenValue: 1885194055
+  AIStopLookTargetTime:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1425862341
+    hiddenValue: 1424948421
+  AIStopLookTargetTimeSum:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1058302975
+    hiddenValue: 1063982335
+  XuanYunStatus:
+    currentCryptoKey: 162
+    hiddenValue: 23
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  XuanYunTime:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1284914640
+    hiddenValue: 1279104720
+  xuanYunTimeSum:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1403732529
+    hiddenValue: 1396878129
+  ChenMoStatus:
+    currentCryptoKey: 0
+    hiddenValue: 0
+    inited: 0
+    fakeValue: 0
+    fakeValueActive: 0
+  ChenMoTime:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 0
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  ChenMoTimeSum:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 0
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  dropStatus:
+    currentCryptoKey: 203
+    hiddenValue: 126
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+--- !u!114 &11412672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031fe7c60bafec54b9b59447432d2c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AI_Type:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_TypeSon:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_MonsterType:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_MonsterCreateType:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_Name:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_Lv:
+    currentCryptoKey: 1321565709
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1321565709
+  AI_HpMax:
+    currentCryptoKey: 0
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 34643
+  AI_Hp:
+    currentCryptoKey: 2055859939
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 2055859939
+  AI_Act:
+    currentCryptoKey: 1965122108
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1965122108
+  AI_MageAct:
+    currentCryptoKey: 1937730607
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1937730607
+  AI_Def:
+    currentCryptoKey: 1875901142
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1875901142
+  AI_Adf:
+    currentCryptoKey: 2029547949
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 2029547949
+  AI_Cri:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1224022058
+    hiddenValue: 1209595178
+  AI_Res:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2061452626
+    hiddenValue: 2051399506
+  AI_Hit:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1732376231
+    hiddenValue: 1744191911
+  AI_Dodge:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2045428902
+    hiddenValue: 2042948262
+  AI_DefAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1976204928
+    hiddenValue: 1971243648
+  AI_AdfAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2106276505
+    hiddenValue: 2100988825
+  AI_DamgeAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1697301731
+    hiddenValue: 1707354851
+  AI_ActDamgeAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1652554711
+    hiddenValue: 1660649431
+  AI_MoveSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1066661141
+    hiddenValue: 1073058581
+  AI_ActSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1856315020
+    hiddenValue: 1847502220
+  AI_HuiXuePro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1629706381
+    hiddenValue: 1633166221
+  AI_XiXieValue:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1334397000
+    hiddenValue: 1330153800
+  AI_XingYunPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2122937216
+    hiddenValue: 2121501056
+  AI_DiXiaoPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1240119685
+    hiddenValue: 1236920965
+  AI_ChouHenValue:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1403502757
+    hiddenValue: 1405134757
+  AI_FuHuoPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1816074216
+    hiddenValue: 1813463016
+  AI_resistance_1:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 16187479
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1623933093
+    hiddenValue: 1614859173
+  AI_resistance_2:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 13893641
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1821529591
+    hiddenValue: 1817547511
+  AI_resistance_3:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 15401136
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1111587636
+    hiddenValue: 1115373876
+  AI_resistance_4:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 9109711
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1574488782
+    hiddenValue: 1573574862
+  AI_resistance_5:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 13631567
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1375567270
+    hiddenValue: 1367211430
+  AI_raceDamge_1:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 3539002
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 2068643018
+    hiddenValue: 2080132298
+  AI_raceDamge_2:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 3014950
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1403728348
+    hiddenValue: 1395764188
+  AI_raceDamge_3:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 5308759
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1815013285
+    hiddenValue: 1827090085
+  AI_raceResistance_1:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 3342575
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1911495387
+    hiddenValue: 1897590747
+  AI_raceResistance_2:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 3080202
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 2110699854
+    hiddenValue: 2109328974
+  AI_raceResistance_3:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 1245564
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 2060980783
+    hiddenValue: 2048055343
+  AI_SkillActDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_SkillActDodgePro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_MonsterActDameDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 0
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  AI_MonsterSkillDameDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 0
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  AI_Act_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1756396645
+    hiddenValue: 1753002085
+  AI_MagAct_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1287198466
+    hiddenValue: 1276623106
+  AI_Def_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1354497398
+    hiddenValue: 1358805878
+  AI_Adf_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1370312073
+    hiddenValue: 1364045193
+  AI_HpMax_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2104121117
+    hiddenValue: 2102880797
+  AI_Cri_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1575543154
+    hiddenValue: 1575086194
+  AI_Res_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1065508991
+    hiddenValue: 1063289471
+  AI_Hit_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1969412364
+    hiddenValue: 1977180684
+  AI_Dodge_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1188557836
+    hiddenValue: 1190450956
+  AI_DefAdd_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1793322341
+    hiddenValue: 1793975141
+  AI_AdfAdd_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1131032388
+    hiddenValue: 1127180868
+  AI_DamgeAdd_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1606338735
+    hiddenValue: 1606991535
+  AI_MoveSpeed_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1897356844
+    hiddenValue: 1901991724
+  ActMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1073015244
+    hiddenValue: 1072297164
+  MageActMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1041376814
+    hiddenValue: 1042682414
+  DefMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1174868637
+    hiddenValue: 1175586717
+  AdfMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1269743721
+    hiddenValue: 1270918761
+  HpMaxMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1129525866
+    hiddenValue: 1127371626
+  AI_ID:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  ActAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1690477402
+    hiddenValue: 1688453722
+  DefAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1743503887
+    hiddenValue: 1740827407
+  AdfAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1057966886
+    hiddenValue: 1061883686
+  MageActAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1566655112
+    hiddenValue: 1564631432
+  AI_Cri_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1559815893
+    hiddenValue: 1558640853
+  AI_Res_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1549479915
+    hiddenValue: 1546607595
+  AI_Hit_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1565112055
+    hiddenValue: 1572227575
+  AI_Dodge_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1049166156
+    hiddenValue: 1040288076
+  AI_ActDamgeAdd_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1675727014
+    hiddenValue: 1670439334
+  ActMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1924827550
+    hiddenValue: 1921628830
+  MageActMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1358783373
+    hiddenValue: 1348730253
+  DefMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1040373762
+    hiddenValue: 1054343682
+  AdfMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1802885897
+    hiddenValue: 1809544457
+  DamgeAddMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1988171134
+    hiddenValue: 1981120894
+  MoveSpeedMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1049153421
+    hiddenValue: 1053788301
+  AI_HuiXuePro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1791708905
+    hiddenValue: 1783548905
+  AI_XiXieValue_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1602850364
+    hiddenValue: 1603176764
+  AI_XingYunPro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1394607021
+    hiddenValue: 1392713901
+  AI_DiXiaoPro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1956655094
+    hiddenValue: 1949278454
+  AI_ChouHenValue_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1059715303
+    hiddenValue: 1073228263
+  AI_FuHuoPro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1806792203
+    hiddenValue: 1802940683
+  AI_resistance_1_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1816498445
+    hiddenValue: 1821459725
+  AI_resistance_2_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1523534157
+    hiddenValue: 1514786637
+  AI_resistance_3_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1115756417
+    hiddenValue: 1108836737
+  AI_resistance_4_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2086712626
+    hiddenValue: 2092261426
+  AI_resistance_5_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1738376759
+    hiddenValue: 1736875319
+  AI_raceDamge_1_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2064970330
+    hiddenValue: 2079462490
+  AI_raceDamge_2_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1820948219
+    hiddenValue: 1819707899
+  AI_raceDamge_3_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1991170511
+    hiddenValue: 1993977551
+  AI_raceResistance_1_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1266594301
+    hiddenValue: 1269923581
+  AI_raceResistance_2_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1191284589
+    hiddenValue: 1200554349
+  AI_raceResistance_3_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1238032310
+    hiddenValue: 1239403190
+  base_HpMax:
+    currentCryptoKey: 1826254030
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1826254030
+  base_Act:
+    currentCryptoKey: 1592968170
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1592968170
+  base_MageAct:
+    currentCryptoKey: 1745337744
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1745337744
+  base_Def:
+    currentCryptoKey: 1535169391
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1535169391
+  base_Adf:
+    currentCryptoKey: 1410106740
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1410106740
+  base_Cri:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2128724876
+    hiddenValue: 2126766476
+  base_Res:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1139404414
+    hiddenValue: 1139730814
+  base_Hit:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1001613436
+    hiddenValue: 996717436
+  base_Dodge:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1675665671
+    hiddenValue: 1671553031
+  base_DefAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1211731714
+    hiddenValue: 1217345794
+  base_AdfAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2088185397
+    hiddenValue: 2083419957
+  base_DamgeAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1013299940
+    hiddenValue: 1018848740
+  base_MoveSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1382068258
+    hiddenValue: 1387290658
+  SkillIDList: []
+  DropGameObject: {fileID: 0}
+  UpdataAIPropertyStatus:
+    currentCryptoKey: 168
+    hiddenValue: 29
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  StartAIPropertyStatus:
+    currentCryptoKey: 220
+    hiddenValue: 105
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  AI_SummonPropertyHpPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_SummonPropertyPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_SummonPropertyActPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_SummonPropertyDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  NoUpdateProperty: 0
+  nanduValue_HP:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 1056997476
+    fakeValueActive: 1
+    hiddenValueStr: 1065123955
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1745043673
+    hiddenValue: 1463845849
+  nanduValue_Other:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 1056997476
+    fakeValueActive: 1
+    hiddenValueStr: 1061061058
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1692494870
+    hiddenValue: 1533829398
+--- !u!114 &11415492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba450b59416c7b429321e7fbf34822c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AI_StatusValue: 0
+  IfUpdateStatus: 0
+  AI_Animator: {fileID: 9503916}
+--- !u!195 &19567804
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171100}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.01
+  m_Speed: 1
+  m_Acceleration: 1000
+  avoidancePriority: 50
+  m_AngularSpeed: 360
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!143 &14352146
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171100}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 0.71
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.68, z: 0}
+--- !u!95 &9503916
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171100}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 346eaa500e884a242819dc7223115d86, type: 3}
+  m_Controller: {fileID: 9100000, guid: c87dd119017b30f418844bac80572216, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &172824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455710}
+  m_Layer: 0
+  m_Name: Bip001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172824}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.04429468, y: 0.0442948, z: 0.7057176, w: 0.7057186}
+  m_LocalPosition: {x: -0.00000037997944, y: 0.39951324, z: -0.26768646}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 417226}
+  m_Father: {fileID: 467832}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &175730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434452}
+  m_Layer: 0
+  m_Name: Bip001 L Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175730}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.25841352, y: -0.22623566, z: -0.35388106, w: -0.8699472}
+  m_LocalPosition: {x: -0.3020277, y: -0.000000036321588, z: -0.0000000023283062}
+  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 481512}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &186888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403764}
+  m_Layer: 0
+  m_Name: Bip001 R Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186888}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.03048192, y: 0.15900174, z: 0.8400061, w: 0.51786005}
+  m_LocalPosition: {x: -0.24523233, y: 0.00000029802328, z: -0.000000029802319}
+  m_LocalScale: {x: 1.0000002, y: 1.0000002, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 430488}
+  m_Father: {fileID: 457264}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &187146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417226}
+  m_Layer: 0
+  m_Name: Bip001 Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187146}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.49811503, y: 0.5541567, z: 0.47990525, w: 0.46312279}
+  m_LocalPosition: {x: -0.104842916, y: 0.030577596, z: 0.082257606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 423426}
+  m_Father: {fileID: 455710}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &189674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428262}
+  m_Layer: 12
+  m_Name: Di
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189674}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.021, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 498808}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &190884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469558}
+  m_Layer: 0
+  m_Name: Bip001 Spine1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &469558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190884}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.012933232, y: -0.09984905, z: 0.0086337635, w: 0.9948811}
+  m_LocalPosition: {x: -0.14046955, y: -0.00020743906, z: -0.0000000018626449}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 427592}
+  m_Father: {fileID: 423426}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &191876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485052}
+  m_Layer: 12
+  m_Name: MonsterModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 498268}
+  - {fileID: 467832}
+  m_Father: {fileID: 489838}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &191928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409426}
+  m_Layer: 0
+  m_Name: Bip001 L Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.16923693, y: 0.13489905, z: -0.48662838, w: 0.84637696}
+  m_LocalPosition: {x: -0.18351632, y: -0.000000014901168, z: 0.00000006705527}
+  m_LocalScale: {x: 1, y: 1, z: 0.9999999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 439118}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &196804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427592}
+  m_Layer: 0
+  m_Name: Bip001 Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196804}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.000000037367972, y: -0.000000023839954, z: 0.00036123386,
+    w: 1}
+  m_LocalPosition: {x: -0.25181332, y: -0.07272933, z: -0.00000023096806}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 412682}
+  - {fileID: 489818}
+  - {fileID: 444046}
+  m_Father: {fileID: 469558}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

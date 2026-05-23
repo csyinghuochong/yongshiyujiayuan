@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="10001" NextID="10002" Name="初级英勇洗炼师" Name_EN="Apprentice Heroism Enchanting" NeedXiLianValue="100" XiLianPerproty="10,150" AddSkillID="" AddXiLianPro="" Des="血量+150" Des_EN="HP+150" SkillDes="" />
+	<date ID="10002" NextID="10003" Name="中级英勇洗炼师" Name_EN="Journeyman Heroism Enchanting" NeedXiLianValue="300" XiLianPerproty="403,0.01" AddSkillID="" AddXiLianPro="" Des="获得和洗炼装备时,获得极品属性的概率大幅度提升" Des_EN="promote chance of better Stats" SkillDes="" />
+	<date ID="10003" NextID="0" Name="大师级英勇洗炼师" Name_EN="Artisan Heroism Enchanting" NeedXiLianValue="600" XiLianPerproty="51,0.05" AddSkillID="" AddXiLianPro="" Des="攻击加成永久提升5%" Des_EN="Attack+10%" SkillDes="" />
+	<date ID="20001" NextID="20002" Name="初级海神洗炼师" Name_EN="Apprentice Poseidon Enchanting" NeedXiLianValue="100" XiLianPerproty="11,100" AddSkillID="" AddXiLianPro="" Des="攻击+100" Des_EN="Attack+100" SkillDes="" />
+	<date ID="20002" NextID="20003" Name="中级海神洗炼师" Name_EN="Journeyman Poseidon Enchanting" NeedXiLianValue="300" XiLianPerproty="404,0.01" AddSkillID="" AddXiLianPro="" Des="获得和洗炼装备时,出现隐藏属性的概率大幅度提升" Des_EN="promote chance of hidden Stats" SkillDes="" />
+	<date ID="20003" NextID="0" Name="大师级海神洗炼师" Name_EN="Artisan Poseidon Enchanting" NeedXiLianValue="600" XiLianPerproty="111,0.05" AddSkillID="" AddXiLianPro="" Des="重击概率永久提升5%" Des_EN="Increased 10% chance Heavy Hit" SkillDes="" />
+	<date ID="30001" NextID="30002" Name="初级漠灵洗炼师" Name_EN="Apprentice Desolation Enchanting" NeedXiLianValue="100" XiLianPerproty="401,0.02" AddSkillID="" AddXiLianPro="" Des="每次获得经验时,经验收益提升2%" Des_EN="Extra EXP+2%" SkillDes="" />
+	<date ID="30002" NextID="30003" Name="中级漠灵洗炼师" Name_EN="Journeyman Desolation Enchanting" NeedXiLianValue="300" XiLianPerproty="133,0.03" AddSkillID="" AddXiLianPro="" Des="攻击穿透永久提升3%" Des_EN="Armor Penetration+3%" SkillDes="" />
+	<date ID="30003" NextID="0" Name="大师级漠灵洗炼师" Name_EN="Artisan Desolation Enchanting" NeedXiLianValue="600" XiLianPerproty="30,0.05" AddSkillID="" AddXiLianPro="" Des="暴击率永久提升5%" Des_EN="Critical Chance+10%" SkillDes="" />
+	<date ID="40001" NextID="40002" Name="初级光辉洗炼师" Name_EN="Apprentice Judgement Enchanting" NeedXiLianValue="100" XiLianPerproty="32,0.01" AddSkillID="" AddXiLianPro="" Des="闪避概率永久提升1%" Des_EN="Evasion rate+1%" SkillDes="" />
+	<date ID="40002" NextID="40003" Name="中级光辉洗炼师" Name_EN="Journeyman Judgement Enchanting" NeedXiLianValue="300" XiLianPerproty="403,0.05" AddSkillID="" AddXiLianPro="" Des="获得和洗炼装备时,获得极品属性的概率大幅度提升" Des_EN="promote chance of better Stats" SkillDes="" />
+	<date ID="40003" NextID="0" Name="大师光辉级洗炼师" Name_EN="Artisan Judgement Enchanting" NeedXiLianValue="600" XiLianPerproty="50,0.1" AddSkillID="" AddXiLianPro="" Des="血量上限永久提升10%" Des_EN="HP+10%" SkillDes="" />
+	<date ID="50001" NextID="50002" Name="初级圣光洗炼师" Name_EN="Apprentice Lightbringer Enchanting" NeedXiLianValue="100" XiLianPerproty="121,50" AddSkillID="" AddXiLianPro="" Des="每次攻击目标额外伤害增加50点固定伤害" Des_EN="Extra 50 Fixed Damage" SkillDes="" />
+	<date ID="50002" NextID="50003" Name="中级圣光洗炼师" Name_EN="Journeyman Lightbringer Enchanting" NeedXiLianValue="300" XiLianPerproty="405,0.05" AddSkillID="" AddXiLianPro="" Des="获得装备时,装备出现宝石槽位的概率大幅度提升" Des_EN="promote chance of extra hole" SkillDes="" />
+	<date ID="50003" NextID="0" Name="大师级圣光洗炼师" Name_EN="Artisan Lightbringer Enchanting" NeedXiLianValue="600" XiLianPerproty="51,0.05" AddSkillID="" AddXiLianPro="" Des="攻击加成永久提升5%" Des_EN="Attack+5%" SkillDes="" />
+	<date ID="90001" NextID="90002" Name="1级洗炼家" Name_EN="" NeedXiLianValue="200" XiLianPerproty="50,0.01" AddSkillID="61100001" AddXiLianPro="0" Des="血量上限+1%" Des_EN="" SkillDes="攻击有概率提升自身100点攻击,持续5秒" />
+	<date ID="90002" NextID="90003" Name="2级洗炼家" Name_EN="" NeedXiLianValue="500" XiLianPerproty="11,50" AddSkillID="61100002" AddXiLianPro="0" Des="攻击+50" Des_EN="" SkillDes="攻击有概率提升自身200点攻击,持续5秒" />
+	<date ID="90003" NextID="90004" Name="3级洗炼家" Name_EN="" NeedXiLianValue="1000" XiLianPerproty="31,0.03" AddSkillID="61100003" AddXiLianPro="0" Des="命中率+3%" Des_EN="" SkillDes="攻击有概率提升自身300点攻击,持续5秒" />
+	<date ID="90004" NextID="90005" Name="4级洗炼家" Name_EN="" NeedXiLianValue="1500" XiLianPerproty="111,0.03" AddSkillID="61100004" AddXiLianPro="0" Des="血量上限+3%" Des_EN="" SkillDes="攻击有概率提升自身450点攻击,持续5秒" />
+	<date ID="90005" NextID="90006" Name="5级洗炼家" Name_EN="" NeedXiLianValue="2000" XiLianPerproty="51,0.02" AddSkillID="61100005" AddXiLianPro="0" Des="攻击+2%" Des_EN="" SkillDes="攻击有概率提升自身600点攻击,持续5秒" />
+	<date ID="90006" NextID="90007" Name="6级洗炼家" Name_EN="" NeedXiLianValue="3000" XiLianPerproty="11,100" AddSkillID="61100006" AddXiLianPro="0.001" Des="攻击+100" Des_EN="" SkillDes="攻击有概率提升自身800点攻击,持续5秒" />
+	<date ID="90007" NextID="90008" Name="7级洗炼家" Name_EN="" NeedXiLianValue="5000" XiLianPerproty="111,0.03" AddSkillID="61100007" AddXiLianPro="0.002" Des="重击概率+3%" Des_EN="" SkillDes="攻击有概率提升自身1000点攻击,持续5秒" />
+	<date ID="90008" NextID="90009" Name="8级洗炼家" Name_EN="" NeedXiLianValue="7500" XiLianPerproty="30,0.02" AddSkillID="61100008" AddXiLianPro="0.003" Des="暴击率+2%" Des_EN="" SkillDes="攻击有概率提升自身1200点攻击,持续5秒" />
+	<date ID="90009" NextID="90010" Name="9级洗炼家" Name_EN="" NeedXiLianValue="10000" XiLianPerproty="11,200" AddSkillID="61100009" AddXiLianPro="0.004" Des="攻击+200" Des_EN="" SkillDes="攻击有概率提升自身1500点攻击,持续5秒" />
+	<date ID="90010" NextID="90011" Name="10级洗炼家" Name_EN="" NeedXiLianValue="15000" XiLianPerproty="134,0.03" AddSkillID="61100010" AddXiLianPro="0.005" Des="魔法穿透+3%" Des_EN="" SkillDes="攻击有概率提升自身1800点攻击,持续5秒" />
+	<date ID="90011" NextID="90012" Name="11级洗炼家" Name_EN="" NeedXiLianValue="20000" XiLianPerproty="133,0.03" AddSkillID="61100011" AddXiLianPro="0.006" Des="攻击穿透+3%" Des_EN="" SkillDes="攻击有概率提升自身2100点攻击,持续5秒" />
+	<date ID="90012" NextID="90013" Name="12级洗炼家" Name_EN="" NeedXiLianValue="25000" XiLianPerproty="11,300" AddSkillID="61100012" AddXiLianPro="0.007" Des="攻击+300" Des_EN="" SkillDes="攻击有概率提升自身2400点攻击,持续5秒" />
+	<date ID="90013" NextID="90014" Name="13级洗炼家" Name_EN="" NeedXiLianValue="30000" XiLianPerproty="37,0.02" AddSkillID="61100013" AddXiLianPro="0.008" Des="造成伤害+2%" Des_EN="" SkillDes="攻击有概率提升自身2800点攻击,持续5秒" />
+	<date ID="90014" NextID="90015" Name="14级洗炼家" Name_EN="" NeedXiLianValue="40000" XiLianPerproty="30,0.03" AddSkillID="61100014" AddXiLianPro="0.009" Des="暴击率+3%" Des_EN="" SkillDes="攻击有概率提升自身3200点攻击,持续5秒" />
+	<date ID="90015" NextID="90016" Name="15级洗炼家" Name_EN="" NeedXiLianValue="50000" XiLianPerproty="11,500" AddSkillID="61100015" AddXiLianPro="0.01" Des="攻击+500" Des_EN="" SkillDes="攻击有概率提升自身3600点攻击,持续5秒" />
+	<date ID="90016" NextID="90017" Name="16级洗炼家" Name_EN="" NeedXiLianValue="60000" XiLianPerproty="111,0.05" AddSkillID="61100015" AddXiLianPro="0.01" Des="血量上限+5%" Des_EN="" SkillDes="攻击有概率提升自身3600点攻击,持续5秒" />
+	<date ID="90017" NextID="90018" Name="17级洗炼家" Name_EN="" NeedXiLianValue="70000" XiLianPerproty="30,0.02" AddSkillID="61100015" AddXiLianPro="0.01" Des="暴击率+2%" Des_EN="" SkillDes="攻击有概率提升自身3600点攻击,持续5秒" />
+	<date ID="90018" NextID="90019" Name="18级洗炼家" Name_EN="" NeedXiLianValue="80000" XiLianPerproty="134,0.05" AddSkillID="61100015" AddXiLianPro="0.01" Des="魔法穿透+5%" Des_EN="" SkillDes="攻击有概率提升自身3600点攻击,持续5秒" />
+	<date ID="90019" NextID="90020" Name="19级洗炼家" Name_EN="" NeedXiLianValue="90000" XiLianPerproty="133,0.05" AddSkillID="61100015" AddXiLianPro="0.01" Des="攻击穿透+5%" Des_EN="" SkillDes="攻击有概率提升自身3600点攻击,持续5秒" />
+	<date ID="90020" NextID="0" Name="20级洗炼家" Name_EN="" NeedXiLianValue="100000" XiLianPerproty="11,500" AddSkillID="61100015" AddXiLianPro="0.01" Des="攻击+500" Des_EN="" SkillDes="攻击有概率提升自身3600点攻击,持续5秒" />
+</DateArea>

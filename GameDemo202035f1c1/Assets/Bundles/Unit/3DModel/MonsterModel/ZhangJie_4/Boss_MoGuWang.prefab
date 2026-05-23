@@ -1040,8 +1040,8 @@ MonoBehaviour:
     fakeValue: 0
     hiddenValueAddStr: 
     fakeValueActiveEx: 0
-    hiddenValue: 0
-    inited: 0
+    hiddenValue: 14660
+    inited: 1
   AI_Selected_Status:
     currentCryptoKey: 235
     hiddenValue: 94

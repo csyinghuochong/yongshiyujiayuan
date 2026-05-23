@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="1001" ChapterSonName="南镇郊外" ChapterSonName_EN="South Town Suburb" ChapterSonNameOut="第一章" ChapterSonNameOut_EN="Round.1" SceneIDSet="1001" />
+	<date ID="1002" ChapterSonName="郊外深处" ChapterSonName_EN="Deep in The Suburb" ChapterSonNameOut="第二章" ChapterSonNameOut_EN="Round.2" SceneIDSet="1002" />
+	<date ID="1003" ChapterSonName="风之谷下层" ChapterSonName_EN="Lower Wind Valley" ChapterSonNameOut="第三章" ChapterSonNameOut_EN="Round.3" SceneIDSet="1004" />
+	<date ID="1004" ChapterSonName="风之谷上层" ChapterSonName_EN="Upper Wind Valley" ChapterSonNameOut="第四章" ChapterSonNameOut_EN="Round.4" SceneIDSet="1005" />
+	<date ID="1005" ChapterSonName="风之谷" ChapterSonName_EN="Wind Valley" ChapterSonNameOut="第五章" ChapterSonNameOut_EN="Round.5" SceneIDSet="1006" />
+	<date ID="2001" ChapterSonName="沉船海滩" ChapterSonName_EN="Sunken Ship" ChapterSonNameOut="第一章" ChapterSonNameOut_EN="Round.1" SceneIDSet="2001" />
+	<date ID="2002" ChapterSonName="水下地宫一层" ChapterSonName_EN="Lower Underwater Palace" ChapterSonNameOut="第二章" ChapterSonNameOut_EN="Round.2" SceneIDSet="2002" />
+	<date ID="2003" ChapterSonName="水下大厅" ChapterSonName_EN="Underwater Hall" ChapterSonNameOut="第三章" ChapterSonNameOut_EN="Round.3" SceneIDSet="2004" />
+	<date ID="2004" ChapterSonName="海巫密道" ChapterSonName_EN="Nage Gallery" ChapterSonNameOut="第四章" ChapterSonNameOut_EN="Round.4" SceneIDSet="2005" />
+	<date ID="2005" ChapterSonName="海巫宫殿" ChapterSonName_EN="Nage Palace" ChapterSonNameOut="第五章" ChapterSonNameOut_EN="Round.5" SceneIDSet="2006" />
+	<date ID="3001" ChapterSonName="荒漠沙洲" ChapterSonName_EN="Desert Sandbar" ChapterSonNameOut="第一章" ChapterSonNameOut_EN="Round.1" SceneIDSet="3001" />
+	<date ID="3002" ChapterSonName="无痕谷" ChapterSonName_EN="Enternal Valley" ChapterSonNameOut="第二章" ChapterSonNameOut_EN="Round.2" SceneIDSet="3003" />
+	<date ID="3003" ChapterSonName="地渊之路" ChapterSonName_EN="Chasm Road" ChapterSonNameOut="第三章" ChapterSonNameOut_EN="Round.3" SceneIDSet="3004" />
+	<date ID="3004" ChapterSonName="地渊大厅一层" ChapterSonName_EN="Lower Underground Ruin" ChapterSonNameOut="第四章" ChapterSonNameOut_EN="Round.4" SceneIDSet="3005" />
+	<date ID="3005" ChapterSonName="地渊大厅二层" ChapterSonName_EN="Upper Underground Ruin" ChapterSonNameOut="第五章" ChapterSonNameOut_EN="Round.5" SceneIDSet="3006" />
+	<date ID="4001" ChapterSonName="圣歌营地" ChapterSonName_EN="Chant Camp" ChapterSonNameOut="第一章" ChapterSonNameOut_EN="Round.1" SceneIDSet="4001" />
+	<date ID="4002" ChapterSonName="圣歌平原" ChapterSonName_EN="Chant Plain" ChapterSonNameOut="第二章" ChapterSonNameOut_EN="Round.2" SceneIDSet="4002" />
+	<date ID="4003" ChapterSonName="蘑菇森林" ChapterSonName_EN="Mushroom Forest" ChapterSonNameOut="第三章" ChapterSonNameOut_EN="Round.3" SceneIDSet="4004" />
+	<date ID="4004" ChapterSonName="蘑菇沼泽" ChapterSonName_EN="Mushroom Swamp" ChapterSonNameOut="第四章" ChapterSonNameOut_EN="Round.4" SceneIDSet="4005" />
+	<date ID="4005" ChapterSonName="圣歌废墟" ChapterSonName_EN="Chant Ruin" ChapterSonNameOut="第五章" ChapterSonNameOut_EN="Round.5" SceneIDSet="4006" />
+	<date ID="5001" ChapterSonName="熔岩之地" ChapterSonName_EN="Lava Land" ChapterSonNameOut="第一章" ChapterSonNameOut_EN="Round.1" SceneIDSet="5001" />
+	<date ID="5002" ChapterSonName="熔岩裂谷" ChapterSonName_EN="Lava Rift" ChapterSonNameOut="第二章" ChapterSonNameOut_EN="Round.2" SceneIDSet="5002" />
+	<date ID="5003" ChapterSonName="暗灵宫殿一层" ChapterSonName_EN="Lower Darkcore Palace" ChapterSonNameOut="第三章" ChapterSonNameOut_EN="Round.3" SceneIDSet="5003" />
+	<date ID="5004" ChapterSonName="暗灵宫殿三层" ChapterSonName_EN="Upper Darkcore Palace" ChapterSonNameOut="第四章" ChapterSonNameOut_EN="Round.4" SceneIDSet="5005" />
+	<date ID="5005" ChapterSonName="暗灵封地" ChapterSonName_EN="Darkcore Fief" ChapterSonNameOut="第五章" ChapterSonNameOut_EN="Round.5" SceneIDSet="5006" />
+	<date ID="6001" ChapterSonName="禁地郊外" ChapterSonName_EN="Chant Camp" ChapterSonNameOut="第一章" ChapterSonNameOut_EN="Round.1" SceneIDSet="6001" />
+	<date ID="6002" ChapterSonName="禁地深处" ChapterSonName_EN="Chant Plain" ChapterSonNameOut="第二章" ChapterSonNameOut_EN="Round.2" SceneIDSet="6002" />
+	<date ID="6003" ChapterSonName="禁地大厅" ChapterSonName_EN="Mushroom Forest" ChapterSonNameOut="第三章" ChapterSonNameOut_EN="Round.3" SceneIDSet="6003" />
+	<date ID="6004" ChapterSonName="禁地魔穴" ChapterSonName_EN="Mushroom Forest" ChapterSonNameOut="第四章" ChapterSonNameOut_EN="Round.4" SceneIDSet="6004" />
+</DateArea>

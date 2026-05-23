@@ -71,6 +71,7 @@
 	<date ID="100007" TransferName="封印之塔" TransferName_EN="Treasure Cave" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="196.43" MapTransfer_Y="33.29" MapTransfer_Z="-53.74" EnterLv="1" />
 	<date ID="100008" TransferName="传承之地" TransferName_EN="" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="181.98" MapTransfer_Y="25" MapTransfer_Z="-49.56" EnterLv="1" />
 	<date ID="100011" TransferName="深海神殿" TransferName_EN="Big Secret Area" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="192.88" MapTransfer_Y="12.8" MapTransfer_Z="159.34" EnterLv="1" />
+	<date ID="100012" TransferName="禁地神殿" TransferName_EN="Forbidden Area" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="243.95" MapTransfer_Y="45.86" MapTransfer_Z="41.07" EnterLv="1" />
 	<date ID="100021" TransferName="我的家园" TransferName_EN="My Home" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="-8" MapTransfer_Y="2" MapTransfer_Z="-12" EnterLv="1" />
 	<date ID="100098" TransferName="宠物天梯" TransferName_EN="Big Secret Area" MapID="100001" MapTransferName="RosePosition_1" MapTransfer_X="145.85" MapTransfer_Y="30.46" MapTransfer_Z="-46.5" EnterLv="1" />
 	<date ID="100099" TransferName="主城" TransferName_EN="City" MapID="EnterGame" MapTransferName="RosePosition_1" MapTransfer_X="3" MapTransfer_Y="2" MapTransfer_Z="0" EnterLv="1" />

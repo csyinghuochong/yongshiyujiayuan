@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="10001" Name="村头小霸王" Name_EN="Village leader" Iamge="10001" ColorStr="" AddProperty="" Des="激活2级冒险家获得" Des_EN="Activate Lv. 2 adventurer to get" />
+	<date ID="10011" Name="成就达人" Name_EN="Achiever" Iamge="10011" ColorStr="" AddProperty="" Des="成就系统获得" Des_EN="Achievement system gain" />
+	<date ID="10012" Name="轻度失眠患者" Name_EN="Mild insomnia" Iamge="10012" ColorStr="" AddProperty="" Des="成就系统获得" Des_EN="Achievement system gain" />
+	<date ID="10013" Name="重度失眠患者" Name_EN="Severe insomnia" Iamge="10013" ColorStr="" AddProperty="" Des="成就系统获得" Des_EN="Achievement system gain" />
+	<date ID="10014" Name="天下第一" Name_EN="World first" Iamge="10014" ColorStr="" AddProperty="" Des="每日排行榜第一奖励" Des_EN="Leaderboard reward" />
+	<date ID="10015" Name="金牌玩家" Name_EN="Gold Player" Iamge="10015" ColorStr="" AddProperty="" Des="激活金牌令牌获得" Des_EN="Activate gold token to obtain" />
+	<date ID="10016" Name="钻石玩家" Name_EN="Diamond player" Iamge="10016" ColorStr="" AddProperty="" Des="激活钻石令牌获得" Des_EN="Activate diamond token to obtain" />
+	<date ID="10017" Name="圣光传说" Name_EN="Overlord" Iamge="10017" ColorStr="" AddProperty="" Des="最强冒险家!激活后游戏内爆率提升" Des_EN="Leaderboard reward" />
+	<date ID="10018" Name="年轻人,耗子尾汁" Name_EN="Overlord" Iamge="0" ColorStr="" AddProperty="" Des="通过冒险家系统获得!激活后游戏内爆率提升" Des_EN="Leaderboard reward" />
+	<date ID="10019" Name="人神降临·唯吾独尊" Name_EN="Overlord" Iamge="0" ColorStr="06FFF5FF" AddProperty="30,0.05" Des="通过冒险家系统获得!激活后游戏内暴击概率永久提升5%" Des_EN="Leaderboard reward" />
+	<date ID="10020" Name="游戏贡献家" Name_EN="Overlord" Iamge="0" ColorStr="" AddProperty="" Des="对游戏做出过贡献获得的称号!" Des_EN="Leaderboard reward" />
+	<date ID="10021" Name="游戏贡献大师" Name_EN="Overlord" Iamge="0" ColorStr="" AddProperty="" Des="对游戏做出过巨大贡献获得的称号!" Des_EN="Leaderboard reward" />
+	<date ID="10022" Name="抽卡狂魔" Name_EN="Draw card spree" Iamge="10021" ColorStr="" AddProperty="" Des="十连抽累计次数达到100次" Des_EN="Ten even pumping cumulative number of 100 times" />
+	<date ID="10023" Name="小小冒险家" Name_EN="Little adventurer" Iamge="10031" ColorStr="" AddProperty="" Des="激活3级冒险家" Des_EN="Activate Lv. 3 Adventurer" />
+	<date ID="10024" Name="全能冒险家" Name_EN="Omnipotent adventurer" Iamge="10032" ColorStr="" AddProperty="" Des="激活6级冒险家获得" Des_EN="Activate Lv. 6 adventurer to get" />
+	<date ID="10025" Name="大冒险家" Name_EN="Great adventurer" Iamge="10033" ColorStr="" AddProperty="" Des="激活8级冒险家获得" Des_EN="Activate Lv. 8 adventurer to get" />
+	<date ID="10026" Name="超级冒险家" Name_EN="Super adventurer" Iamge="10034" ColorStr="" AddProperty="" Des="激活10级冒险家获得" Des_EN="Activate Lv. 10 adventurer to get" />
+</DateArea>

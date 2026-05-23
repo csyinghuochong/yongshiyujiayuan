@@ -873,6 +873,8 @@ MonoBehaviour:
     type: 3}
   Obj_EnterFuBen_2: {fileID: 1649441485691628, guid: e8b0fd50246563042935c93f84632104,
     type: 3}
+  Obj_EnterFuBen_3: {fileID: 1649441485691628, guid: 433046743eab485469bfe2d963ca9f74,
+    type: 3}
   Obj_EnterFuBen_FengYinZhiTa: {fileID: 1438971434481792, guid: 3051a2c804c320f419fa8683f656b0d4,
     type: 3}
   Obj_EnterHuoDongChest: {fileID: 1291278355653602, guid: 9d1512794c50b5a4eb4b095c04825427,

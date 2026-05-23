@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="2001" ActivityType="2" Par_1="1,30" Par_2="2,0" Par_3="1,101" Par_4="免费大礼包" Par_4_EN="" />
+	<date ID="2002" ActivityType="2" Par_1="1,30" Par_2="2,100" Par_3="1,102" Par_4="每日大礼包_1" Par_4_EN="" />
+	<date ID="2003" ActivityType="2" Par_1="1,30" Par_2="2,100" Par_3="1,100" Par_4="每日大礼包_2" Par_4_EN="" />
+	<date ID="2004" ActivityType="2" Par_1="1,30" Par_2="2,100" Par_3="1,100" Par_4="每日大礼包_3" Par_4_EN="" />
+	<date ID="2005" ActivityType="2" Par_1="1,30" Par_2="2,100" Par_3="1,100" Par_4="每日大礼包_4" Par_4_EN="" />
+	<date ID="2006" ActivityType="2" Par_1="1,99" Par_2="2,0" Par_3="1,101" Par_4="免费大礼包" Par_4_EN="" />
+	<date ID="2007" ActivityType="2" Par_1="1,99" Par_2="2,100" Par_3="1,102" Par_4="每日大礼包_1" Par_4_EN="" />
+	<date ID="2008" ActivityType="2" Par_1="1,99" Par_2="2,100" Par_3="1,100" Par_4="每日大礼包_2" Par_4_EN="" />
+	<date ID="2009" ActivityType="2" Par_1="1,99" Par_2="2,100" Par_3="1,100" Par_4="每日大礼包_3" Par_4_EN="" />
+	<date ID="2010" ActivityType="2" Par_1="1,99" Par_2="2,100" Par_3="1,100" Par_4="每日大礼包_4" Par_4_EN="" />
+	<date ID="3001" ActivityType="3" Par_1="1" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_1" Par_4_EN="" />
+	<date ID="3002" ActivityType="3" Par_1="1" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_2" Par_4_EN="" />
+	<date ID="3003" ActivityType="3" Par_1="18" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_3" Par_4_EN="" />
+	<date ID="3004" ActivityType="3" Par_1="18" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_4" Par_4_EN="" />
+	<date ID="3005" ActivityType="3" Par_1="20" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_5" Par_4_EN="" />
+	<date ID="3006" ActivityType="3" Par_1="20" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_6" Par_4_EN="" />
+	<date ID="3007" ActivityType="3" Par_1="30" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_7" Par_4_EN="" />
+	<date ID="3008" ActivityType="3" Par_1="40" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_8" Par_4_EN="" />
+	<date ID="3009" ActivityType="3" Par_1="50" Par_2="2,100" Par_3="1,100" Par_4="等级大礼包_9" Par_4_EN="" />
+	<date ID="10001" ActivityType="1" Par_1="200000" Par_2="10010083,1" Par_3="" Par_4="礼包1" Par_4_EN="" />
+	<date ID="10002" ActivityType="1" Par_1="90000" Par_2="10010044,1" Par_3="" Par_4="礼包2" Par_4_EN="" />
+	<date ID="10003" ActivityType="1" Par_1="100000" Par_2="10010026,1" Par_3="" Par_4="礼包3" Par_4_EN="" />
+	<date ID="10004" ActivityType="1" Par_1="200000" Par_2="10010041,5" Par_3="" Par_4="礼包4" Par_4_EN="" />
+	<date ID="10005" ActivityType="1" Par_1="10000" Par_2="10000017,1" Par_3="" Par_4="礼包5" Par_4_EN="" />
+	<date ID="10006" ActivityType="1" Par_1="200000" Par_2="10010085,5" Par_3="" Par_4="礼包6" Par_4_EN="" />
+	<date ID="10007" ActivityType="1" Par_1="200000" Par_2="1,50000" Par_3="" Par_4="礼包7" Par_4_EN="" />
+	<date ID="20101" ActivityType="2" Par_1="1" Par_2="2,1710" Par_3="10010041,10;10021015,100;10021016,5;10010102,20" Par_4="洗练石大礼包" Par_4_EN="Polish Gifts" />
+	<date ID="20102" ActivityType="2" Par_1="18" Par_2="2,2085" Par_3="10010041,10;10022016,100;10022017,5;10010202,20" Par_4="洗练石大礼包" Par_4_EN="Polish Gifts" />
+	<date ID="20103" ActivityType="2" Par_1="30" Par_2="2,2460" Par_3="10010041,10;10023016,100;10023017,5;10010302,20" Par_4="洗练石大礼包" Par_4_EN="Polish Gifts" />
+	<date ID="20104" ActivityType="2" Par_1="40" Par_2="2,2835" Par_3="10010041,10;10024016,100;10024017,5;10010402,20" Par_4="洗练石大礼包" Par_4_EN="Polish Gifts" />
+	<date ID="20105" ActivityType="2" Par_1="50" Par_2="2,3135" Par_3="10010041,10;10025016,100;10025017,5;10010502,20" Par_4="洗练石大礼包" Par_4_EN="Polish Gifts" />
+	<date ID="20201" ActivityType="2" Par_1="1" Par_2="2,620" Par_3="10010042,10;10010042,20;1,300000;10010101,50" Par_4="金币大礼包" Par_4_EN="Good Gifts" />
+	<date ID="20202" ActivityType="2" Par_1="18" Par_2="2,770" Par_3="10010042,10;10010042,20;1,400000;10010201,50" Par_4="金币大礼包" Par_4_EN="Good Gifts" />
+	<date ID="20203" ActivityType="2" Par_1="30" Par_2="2,920" Par_3="10010042,10;10010042,20;1,600000;10010301,50" Par_4="金币大礼包" Par_4_EN="Good Gifts" />
+	<date ID="20204" ActivityType="2" Par_1="40" Par_2="2,1070" Par_3="10010042,10;10010042,20;1,800000;10010401,50" Par_4="金币大礼包" Par_4_EN="Good Gifts" />
+	<date ID="20205" ActivityType="2" Par_1="50" Par_2="2,1220" Par_3="10010042,10;10010042,20;1,1000000;10010501,50" Par_4="金币大礼包" Par_4_EN="Good Gifts" />
+	<date ID="20301" ActivityType="2" Par_1="1" Par_2="2,1520" Par_3="10010041,10;10000001,50;10000010,5;10000017,1" Par_4="宠物升级大礼包" Par_4_EN="Pet level Gifts" />
+	<date ID="20302" ActivityType="2" Par_1="18" Par_2="2,1820" Par_3="10010041,10;10000002,50;10000010,5;10000017,1" Par_4="宠物升级大礼包" Par_4_EN="Pet level Gifts" />
+	<date ID="20303" ActivityType="2" Par_1="30" Par_2="2,2120" Par_3="10010041,10;10000003,50;10000010,5;10000017,1" Par_4="宠物升级大礼包" Par_4_EN="Pet level Gifts" />
+	<date ID="20304" ActivityType="2" Par_1="40" Par_2="2,2420" Par_3="10010041,10;10000004,50;10000010,5;10000017,1" Par_4="宠物升级大礼包" Par_4_EN="Pet level Gifts" />
+	<date ID="20305" ActivityType="2" Par_1="50" Par_2="2,2720" Par_3="10010041,10;10000005,50;10000010,5;10000017,1" Par_4="宠物升级大礼包" Par_4_EN="Pet level Gifts" />
+	<date ID="20401" ActivityType="2" Par_1="1" Par_2="2,720" Par_3="10010041,10;10010091,5;10010085,50;10010083,1" Par_4="宠物蛋大礼包" Par_4_EN="Pet Gifts" />
+	<date ID="20402" ActivityType="2" Par_1="18" Par_2="2,920" Par_3="10010041,10;10010092,5;10010085,50;10010083,2" Par_4="宠物蛋大礼包" Par_4_EN="Pet Gifts" />
+	<date ID="20403" ActivityType="2" Par_1="30" Par_2="2,1120" Par_3="10010041,10;10010093,5;10010085,50;10010084,1" Par_4="宠物蛋大礼包" Par_4_EN="Pet Gifts" />
+	<date ID="20404" ActivityType="2" Par_1="40" Par_2="2,1320" Par_3="10010041,10;10010094,5;10010085,50;10010084,2" Par_4="宠物蛋大礼包" Par_4_EN="Pet Gifts" />
+	<date ID="20405" ActivityType="2" Par_1="50" Par_2="2,1520" Par_3="10010041,10;10010095,5;10010085,50;10010084,3" Par_4="宠物蛋大礼包" Par_4_EN="Pet Gifts" />
+	<date ID="20501" ActivityType="2" Par_1="1" Par_2="2,1140" Par_3="10010041,10;10000011,10;10000016,5;10010033,2" Par_4="宝石大礼包" Par_4_EN="Gem Gifts" />
+	<date ID="20502" ActivityType="2" Par_1="18" Par_2="2,1800" Par_3="10010041,10;10000012,10;10000016,5;10000017,1" Par_4="宝石大礼包" Par_4_EN="Gem Gifts" />
+	<date ID="20503" ActivityType="2" Par_1="30" Par_2="2,2540" Par_3="10010041,15;10000013,10;10000016,5;10000017,2" Par_4="宝石大礼包" Par_4_EN="Gem Gifts" />
+	<date ID="20504" ActivityType="2" Par_1="40" Par_2="2,3360" Par_3="10010041,20;10000014,10;10000016,5;10000017,3" Par_4="宝石大礼包" Par_4_EN="Gem Gifts" />
+	<date ID="20505" ActivityType="2" Par_1="50" Par_2="2,4260" Par_3="10010041,20;10000015,10;10000016,5;10000017,4" Par_4="宝石大礼包" Par_4_EN="Gem Gifts" />
+	<date ID="20601" ActivityType="2" Par_1="1" Par_2="2,1560" Par_3="10010041,10;10021011,5;10021001,200;10000016,5" Par_4="稀有材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20602" ActivityType="2" Par_1="18" Par_2="2,1720" Par_3="10010041,10;10022011,5;10022012,3;10000016,5" Par_4="稀有材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20603" ActivityType="2" Par_1="30" Par_2="2,1880" Par_3="10010041,10;10023011,5;10023012,3;10000016,5" Par_4="稀有材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20604" ActivityType="2" Par_1="40" Par_2="2,2040" Par_3="10010041,10;10024011,5;10024012,3;10000016,5" Par_4="稀有材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20605" ActivityType="2" Par_1="50" Par_2="2,2200" Par_3="10010041,10;10025011,5;10025012,3;10000016,5" Par_4="稀有材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20606" ActivityType="2" Par_1="55" Par_2="2,2570" Par_3="10000032,5;10000027,5;10000031,3;10000030,2" Par_4="稀有材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20701" ActivityType="2" Par_1="1" Par_2="2,2200" Par_3="10010041,15;10021012,5;10021001,1000;10000017,3" Par_4="珍贵材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20702" ActivityType="2" Par_1="18" Par_2="2,2440" Par_3="10010041,15;10022013,5;10022001,1000;10000017,3" Par_4="珍贵材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20703" ActivityType="2" Par_1="30" Par_2="2,2680" Par_3="10010041,15;10023013,5;10023001,1000;10000017,3" Par_4="珍贵材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20704" ActivityType="2" Par_1="40" Par_2="2,3000" Par_3="10010041,15;10024013,5;10024001,1000;10000017,3" Par_4="珍贵材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20705" ActivityType="2" Par_1="50" Par_2="2,3320" Par_3="10010041,15;10025013,5;10025001,1000;10000017,3" Par_4="珍贵材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20706" ActivityType="2" Par_1="55" Par_2="2,3570" Par_3="10000032,5;10000032,5;10000027,5;10000031,5" Par_4="珍贵材料大礼包" Par_4_EN="Material Gifts" />
+	<date ID="20801" ActivityType="2" Par_1="1" Par_2="2,2040" Par_3="10010041,10;10015001,4;10000017,2;10000016,5" Par_4="装备大礼包" Par_4_EN="Equip Gifts" />
+	<date ID="20802" ActivityType="2" Par_1="18" Par_2="2,2240" Par_3="10010041,10;10015002,4;10000017,2;10000016,5" Par_4="装备大礼包" Par_4_EN="Equip Gifts" />
+	<date ID="20803" ActivityType="2" Par_1="30" Par_2="2,2440" Par_3="10010041,10;10015003,4;10000017,2;10000016,5" Par_4="装备大礼包" Par_4_EN="Equip Gifts" />
+	<date ID="20804" ActivityType="2" Par_1="40" Par_2="2,2640" Par_3="10010041,10;10015004,4;10000017,2;10000016,5" Par_4="装备大礼包" Par_4_EN="Equip Gifts" />
+	<date ID="20805" ActivityType="2" Par_1="50" Par_2="2,3240" Par_3="10010041,10;10015005,4;10000017,2;10000016,5" Par_4="装备大礼包" Par_4_EN="Equip Gifts" />
+	<date ID="20806" ActivityType="2" Par_1="60" Par_2="2,9800" Par_3="10000032,5;10000032,5;10000032,5;10000032,5" Par_4="觉醒大礼包" Par_4_EN="Equip Gifts" />
+	<date ID="21001" ActivityType="2" Par_1="1" Par_2="2,2040" Par_3="10010041,15;10010028,5;10010033,2;10000010,3" Par_4="技能书大礼包" Par_4_EN="Skill Book Gifts" />
+	<date ID="21002" ActivityType="2" Par_1="1" Par_2="2,3240" Par_3="10010041,15;10010029,2;10010033,2;10000010,3" Par_4="技能书大礼包" Par_4_EN="Skill Book Gifts" />
+	<date ID="21003" ActivityType="2" Par_1="1" Par_2="2,4120" Par_3="10010041,20;10010083,10;10010085,30;10000010,10" Par_4="宠物洗炼大礼包" Par_4_EN="Pet Gifts" />
+	<date ID="21004" ActivityType="2" Par_1="1" Par_2="2,4840" Par_3="10010041,20;10010042,20;10010026,1;10010026,1" Par_4="CD清空大礼包" Par_4_EN="Time Gifts" />
+	<date ID="21101" ActivityType="2" Par_1="1" Par_2="2,3240" Par_3="10000052,10;10000051,5;10000052,20;10000052,20" Par_4="坐骑升级大礼包" Par_4_EN="Time Gifts" />
+	<date ID="21201" ActivityType="2" Par_1="55" Par_2="2,6800" Par_3="10000071,300;10000071,300;10000080,1;10000080,1" Par_4="生肖大礼包" Par_4_EN="" />
+	<date ID="21301" ActivityType="2" Par_1="55" Par_2="2,9800" Par_3="10000027,30;10000031,1;10000078,1;10000078,1" Par_4="传说大礼包" Par_4_EN="" />
+	<date ID="21401" ActivityType="2" Par_1="55" Par_2="2,14800" Par_3="10000061,5;10000065,30;10000079,1;10000079,1" Par_4="传承大礼包" Par_4_EN="" />
+	<date ID="30001" ActivityType="3" Par_1="1" Par_2="1,48000" Par_3="10000024,1;10021001,100;10031038,1" Par_4="1级等级礼包" Par_4_EN="1 level Gifts" />
+	<date ID="30002" ActivityType="3" Par_1="5" Par_2="1,57700" Par_3="10000024,1;10010091,1;10031051,1;10010102,50" Par_4="5级等级礼包" Par_4_EN="5 level Gifts" />
+	<date ID="30003" ActivityType="3" Par_1="10" Par_2="1,125000" Par_3="10000024,1;10021012,1;10031052,1;10010083,1" Par_4="10级等级礼包" Par_4_EN="10 level Gifts" />
+	<date ID="30004" ActivityType="3" Par_1="12" Par_2="1,180000" Par_3="10000024,1;10021015,50;10021011,3;10021013,3" Par_4="12级等级礼包" Par_4_EN="12 level Gifts" />
+	<date ID="30005" ActivityType="3" Par_1="18" Par_2="1,52000" Par_3="10000024,1;10022001,100;10010083,1;10022007,20" Par_4="18级免费礼包" Par_4_EN="18 level Gifts" />
+	<date ID="30006" ActivityType="3" Par_1="20" Par_2="2,3600" Par_3="10000002,10;10022013,3;10032035,1;10010045,1" Par_4="20级等级礼包" Par_4_EN="20 level Gifts" />
+	<date ID="30007" ActivityType="3" Par_1="22" Par_2="2,2700" Par_3="10022016,50;10022011,5;10022012,1;10000012,1" Par_4="22级等级礼包" Par_4_EN="22 level Gifts" />
+	<date ID="30008" ActivityType="3" Par_1="24" Par_2="1,156700" Par_3="10000024,1;10000002,10;10032039,1;10000016,1" Par_4="24级等级礼包" Par_4_EN="24 level Gifts" />
+	<date ID="30009" ActivityType="3" Par_1="30" Par_2="2,3750" Par_3="10000008,1;10023013,3;10033034,1;10010045,1" Par_4="30级等级礼包" Par_4_EN="30 level Gifts" />
+	<date ID="30010" ActivityType="3" Par_1="31" Par_2="1,253000" Par_3="10000024,1;10023001,100;10033038,1;10000016,1" Par_4="31级等级礼包" Par_4_EN="31 level Gifts" />
+	<date ID="30011" ActivityType="3" Par_1="32" Par_2="2,2700" Par_3="10000003,10;10023012,5;10023016,50;10010044,1" Par_4="32级等级礼包" Par_4_EN="32 level Gifts" />
+	<date ID="30012" ActivityType="3" Par_1="33" Par_2="2,3600" Par_3="10000024,1;10000008,1;10023011,5;10033023,1" Par_4="33级等级礼包" Par_4_EN="33 level Gifts" />
+	<date ID="30013" ActivityType="3" Par_1="35" Par_2="2,4050" Par_3="10000024,1;10000003,10;10023007,20;10023016,50" Par_4="35级等级礼包" Par_4_EN="35 level Gifts" />
+	<date ID="30014" ActivityType="3" Par_1="40" Par_2="2,1450" Par_3="10000024,1;10024001,100;10034027,1" Par_4="40级等级礼包" Par_4_EN="40 level Gifts" />
+	<date ID="30015" ActivityType="3" Par_1="41" Par_2="2,2025" Par_3="10000009,1;10024013,3;10034035,1;10010045,1" Par_4="41级等级礼包" Par_4_EN="41 level Gifts" />
+	<date ID="30016" ActivityType="3" Par_1="42" Par_2="2,2700" Par_3="10000024,1;10000009,1;10024011,5;10034023,1" Par_4="42级等级礼包" Par_4_EN="42 level Gifts" />
+	<date ID="30017" ActivityType="3" Par_1="43" Par_2="2,3600" Par_3="10000004,10;10024012,5;10024016,50;10010044,1" Par_4="43级等级礼包" Par_4_EN="43 level Gifts" />
+	<date ID="30018" ActivityType="3" Par_1="45" Par_2="2,4050" Par_3="10000024,1;10000004,10;10024007,20;10024016,50" Par_4="45级等级礼包" Par_4_EN="45 level Gifts" />
+	<date ID="30019" ActivityType="3" Par_1="50" Par_2="2,1450" Par_3="10000024,1;10025001,100;10035023,1" Par_4="50级等级礼包" Par_4_EN="50 level Gifts" />
+	<date ID="30020" ActivityType="3" Par_1="51" Par_2="2,2025" Par_3="10000010,1;10025013,3;10035033,1;10010045,1" Par_4="51级等级礼包" Par_4_EN="51 level Gifts" />
+	<date ID="30021" ActivityType="3" Par_1="52" Par_2="2,2700" Par_3="10000024,1;10000010,1;10025011,5;10035026,1" Par_4="52级等级礼包" Par_4_EN="52 level Gifts" />
+	<date ID="30022" ActivityType="3" Par_1="53" Par_2="2,3600" Par_3="10000005,10;10025012,5;10025016,50;10010044,1" Par_4="53级等级礼包" Par_4_EN="53 level Gifts" />
+	<date ID="30023" ActivityType="3" Par_1="55" Par_2="2,4050" Par_3="10000024,1;10000005,10;10025007,20;10025016,50" Par_4="55级等级礼包" Par_4_EN="55 level Gifts" />
+	<date ID="40001" ActivityType="4" Par_1="8" Par_2="1,0" Par_3="10000024,1;10010001,20" Par_4="8级免费礼包" Par_4_EN="8 level Free Gifts" />
+	<date ID="40002" ActivityType="4" Par_1="12" Par_2="1,0" Par_3="10000024,1;1,50000;10000011,1" Par_4="12级免费礼包" Par_4_EN="12 level Free Gifts" />
+	<date ID="40003" ActivityType="4" Par_1="16" Par_2="1,0" Par_3="10000024,1;10010083,1;10000006,1" Par_4="16级免费礼包" Par_4_EN="16 level Free Gifts" />
+	<date ID="40004" ActivityType="4" Par_1="18" Par_2="1,0" Par_3="10000024,1;3,1000;10010044,1;10010111,1" Par_4="18级免费礼包" Par_4_EN="18 level Free Gifts" />
+	<date ID="40005" ActivityType="4" Par_1="21" Par_2="1,0" Par_3="10000024,1;10000018,1" Par_4="21级免费礼包" Par_4_EN="21 level Free Gifts" />
+	<date ID="40006" ActivityType="4" Par_1="23" Par_2="1,0" Par_3="10000024,1;1,50000;10000016,1" Par_4="23级免费礼包" Par_4_EN="23 level Free Gifts" />
+	<date ID="40007" ActivityType="4" Par_1="25" Par_2="1,0" Par_3="10000024,1;10000019,1;10000007,1" Par_4="25级免费礼包" Par_4_EN="25 level Free Gifts" />
+	<date ID="40008" ActivityType="4" Par_1="27" Par_2="1,0" Par_3="10000024,1;10000012,1;10010203,3" Par_4="27级免费礼包" Par_4_EN="27 level Free Gifts" />
+	<date ID="40009" ActivityType="4" Par_1="29" Par_2="1,0" Par_3="10000024,1;10000016,1;10000012,1;10010210,1" Par_4="29级免费礼包" Par_4_EN="29 level Free Gifts" />
+	<date ID="40010" ActivityType="4" Par_1="31" Par_2="1,0" Par_3="10000024,1;10000020,1" Par_4="31级免费礼包" Par_4_EN="31 level Free Gifts" />
+	<date ID="40011" ActivityType="4" Par_1="33" Par_2="1,0" Par_3="10000024,1;1,100000;10000016,1" Par_4="33级免费礼包" Par_4_EN="33 level Free Gifts" />
+	<date ID="40012" ActivityType="4" Par_1="35" Par_2="1,0" Par_3="10000024,1;3,1000;10010310,2" Par_4="35级免费礼包" Par_4_EN="35 level Free Gifts" />
+	<date ID="40013" ActivityType="4" Par_1="37" Par_2="1,0" Par_3="10000024,1;1,100000;10010313,2" Par_4="37级免费礼包" Par_4_EN="37 level Free Gifts" />
+	<date ID="40014" ActivityType="4" Par_1="39" Par_2="1,0" Par_3="10000024,1;10010083,1;10000013,1;10023011,10" Par_4="39级免费礼包" Par_4_EN="39 level Free Gifts" />
+	<date ID="40015" ActivityType="4" Par_1="41" Par_2="1,0" Par_3="10000024,1;10010028,1" Par_4="41级免费礼包" Par_4_EN="41 level Free Gifts" />
+	<date ID="40016" ActivityType="4" Par_1="43" Par_2="1,0" Par_3="10000024,1;1,100000;10000016,1" Par_4="43级免费礼包" Par_4_EN="43 level Free Gifts" />
+	<date ID="40017" ActivityType="4" Par_1="45" Par_2="1,0" Par_3="10000024,1;3,1000;10024017,1" Par_4="45级免费礼包" Par_4_EN="45 level Free Gifts" />
+	<date ID="40018" ActivityType="4" Par_1="47" Par_2="1,0" Par_3="10000024,1;1,100000;10024011,10" Par_4="47级免费礼包" Par_4_EN="47 level Free Gifts" />
+	<date ID="40019" ActivityType="4" Par_1="49" Par_2="1,0" Par_3="10000024,1;10010083,1;10000014,1;10010403,2" Par_4="49级免费礼包" Par_4_EN="49 level Free Gifts" />
+	<date ID="40020" ActivityType="4" Par_1="50" Par_2="1,0" Par_3="10000024,1;1,100000;10000015,1;10010214,1" Par_4="50级免费礼包" Par_4_EN="50 level Free Gifts" />
+</DateArea>

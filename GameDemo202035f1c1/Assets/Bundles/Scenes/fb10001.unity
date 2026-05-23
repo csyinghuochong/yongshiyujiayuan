@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.6835428, g: 0.77705353, b: 0.852544, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -197498,6 +197498,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -80.57201
       objectReference: {fileID: 0}
+    - target: {fileID: 114343879023295534, guid: 9274002f0d182fd40b7118bbc6d6a9f6,
+        type: 3}
+      propertyPath: AI_ID_Obs.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343879023295534, guid: 9274002f0d182fd40b7118bbc6d6a9f6,
+        type: 3}
+      propertyPath: AI_ID_Obs.hiddenValue
+      value: 14660
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343879023295534, guid: 9274002f0d182fd40b7118bbc6d6a9f6,
+        type: 3}
+      propertyPath: CreateEWaoDropID.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343879023295534, guid: 9274002f0d182fd40b7118bbc6d6a9f6,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343879023295534, guid: 9274002f0d182fd40b7118bbc6d6a9f6,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343879023295534, guid: 9274002f0d182fd40b7118bbc6d6a9f6,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.currentCryptoKey
+      value: 215
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9274002f0d182fd40b7118bbc6d6a9f6, type: 3}
 --- !u!4 &851945408 stripped
@@ -221316,6 +221346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114240230703336624, guid: c5965bc0be111e1408553c5adff080db,
         type: 3}
+      propertyPath: AI_MonsterDeathStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114240230703336624, guid: c5965bc0be111e1408553c5adff080db,
+        type: 3}
       propertyPath: ChenMoStatus.currentCryptoKey
       value: 215
       objectReference: {fileID: 0}
@@ -221326,7 +221361,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114240230703336624, guid: c5965bc0be111e1408553c5adff080db,
         type: 3}
+      propertyPath: AI_MonsterDeathStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114240230703336624, guid: c5965bc0be111e1408553c5adff080db,
+        type: 3}
       propertyPath: HitStatus_LuanShe.currentCryptoKey
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 114240230703336624, guid: c5965bc0be111e1408553c5adff080db,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.currentCryptoKey
       value: 215
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -260747,6 +260792,36 @@ PrefabInstance:
     - target: {fileID: 4067268268190964, guid: 4f905f3d99eefb84d94f36658e9a041f, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_ID_Obs.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_ID_Obs.hiddenValue
+      value: 14660
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: CreateEWaoDropID.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.currentCryptoKey
+      value: 215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f905f3d99eefb84d94f36658e9a041f, type: 3}
@@ -335041,6 +335116,111 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: ChenMoTime.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: ChenMoStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: ChenMoTimeSum.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: ChenMoStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: HitStatus_LuanShe.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: ChenMoStatus.currentCryptoKey
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: HitStatus_LuanShe.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: HitStatus_LuanShe.currentCryptoKey
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668132262126900, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.currentCryptoKey
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_HpMax.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_HpMax.hiddenValue
+      value: 82037
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_SkillActDefPro.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_SkillActDodgePro.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_SummonPropertyPro.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_SummonPropertyHpPro.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_MonsterActDameDefPro.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_SummonPropertyActPro.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_SummonPropertyDefPro.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114810649491934588, guid: de4ea97b118107c4a86b9892169cf69d,
+        type: 3}
+      propertyPath: AI_MonsterSkillDameDefPro.inited
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de4ea97b118107c4a86b9892169cf69d, type: 3}
 --- !u!4 &1562612798 stripped
@@ -361012,6 +361192,18 @@ PrefabInstance:
     - target: {fileID: 499142, guid: 98f883d4eea8e724d835166c438d1bff, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493280, guid: 98f883d4eea8e724d835166c438d1bff, type: 3}
+      propertyPath: AI_MonsterDeathStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493280, guid: 98f883d4eea8e724d835166c438d1bff, type: 3}
+      propertyPath: AI_MonsterDeathStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493280, guid: 98f883d4eea8e724d835166c438d1bff, type: 3}
+      propertyPath: AI_MonsterDeathStatus.currentCryptoKey
+      value: 215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f883d4eea8e724d835166c438d1bff, type: 3}
@@ -477113,6 +477305,36 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_ID_Obs.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_ID_Obs.hiddenValue
+      value: 14660
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: CreateEWaoDropID.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.currentCryptoKey
+      value: 215
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f905f3d99eefb84d94f36658e9a041f, type: 3}
 --- !u!4 &2070024570 stripped
@@ -480355,6 +480577,36 @@ PrefabInstance:
     - target: {fileID: 4067268268190964, guid: 4f905f3d99eefb84d94f36658e9a041f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 58.389004
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_ID_Obs.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_ID_Obs.hiddenValue
+      value: 14660
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: CreateEWaoDropID.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.inited
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.hiddenValue
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702956047237134, guid: 4f905f3d99eefb84d94f36658e9a041f,
+        type: 3}
+      propertyPath: AI_MonsterDeathStatus.currentCryptoKey
+      value: 215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f905f3d99eefb84d94f36658e9a041f, type: 3}
