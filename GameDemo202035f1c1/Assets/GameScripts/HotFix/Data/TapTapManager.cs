@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+# if TapTap
 using TapSDK.Core;
 using TapSDK.Compliance;
 using TapSDK.Login;
+# endif
 using UnityEngine;
 
 public class TapTapManager
@@ -27,6 +29,7 @@ public class TapTapManager
 
     public void Init()
     {
+# if TapTap
         // 核心配置
         TapTapSdkOptions coreOptions = new TapTapSdkOptions
         {
@@ -89,6 +92,7 @@ public class TapTapManager
         hasInit = true;
 
         Debug.Log("TapTap Start");
+#endif
     }
 
     // code	回调类型	触发逻辑
@@ -102,6 +106,8 @@ public class TapTapManager
     // 9002	REAL_NAME_STOP	实名过程中点击了关闭实名窗，游戏可重新开始防沉迷认证
     private void OnCompliance(int code, string s)
     {
+# if TapTap
+
         if (code == 1050)
         {
             Debug.Log("用户无可玩时长，此时用户只能退出游戏或切换账号");
@@ -118,6 +124,7 @@ public class TapTapManager
         TapTapManager.Instance.GetAgeRange().Forget();
         //获取剩余游戏时长
         TapTapManager.Instance.GetRemainingTime().Forget();
+#endif
     }
 
     // 类型数值	含义
@@ -128,9 +135,12 @@ public class TapTapManager
     // 18	成年玩家
     public async UniTask<int> GetAgeRange()
     {
+# if TapTap
         int ageRange = await TapTapCompliance.GetAgeRange();
-
         return ageRange;
+# else
+        return 0;
+# endif
     }
 
     /// <summary>
@@ -138,9 +148,13 @@ public class TapTapManager
     /// </summary>
     public async UniTask<int> GetRemainingTime()
     {
+# if TapTap
         int time = await TapTapCompliance.GetRemainingTime(); // 单位:秒
 
         return time;
+# else
+        return 0;
+# endif
     }
 
     /// <summary>
@@ -148,12 +162,14 @@ public class TapTapManager
     /// </summary>
     public void Compliance(string userid)
     {
+# if TapTap
         if (!hasInit)
         {
             Init();
         }
 
         TapTapCompliance.Startup(userid);
+# endif
     }
 
     # region 数据分析
@@ -161,6 +177,7 @@ public class TapTapManager
     // 设置账号 ID
     public void SetUserID(string userId)
     {
+# if TapTap
         // 自定义属性
         var dict = new Dictionary<string, string>();
         // dict.Add(key, value);
@@ -169,12 +186,15 @@ public class TapTapManager
 
         // 设置用户 ID 及账号登录事件属性
         TapTapEvent.SetUserID(userId, properties);
+#endif
     }
 
     // 清除账号 ID
     public void ClearUser()
     {
+# if TapTap
         TapTapEvent.ClearUser();
+#endif
     }
 
     /// <summary>
@@ -188,6 +208,7 @@ public class TapTapManager
     /// <param name="properties">充值（ charge ）的事件属性</param>
     public void LogPurchasedEvent(string orderID, string productName, long amount, string currencyType, string paymentMethod, string properties)
     {
+# if TapTap
         TapTapEvent.LogPurchasedEvent(
             orderID: orderID,
             productName: productName,
@@ -196,6 +217,7 @@ public class TapTapManager
             paymentMethod: paymentMethod,
             properties: properties
         );
+#endif
     }
 
     # endregion
