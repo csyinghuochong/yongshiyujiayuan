@@ -473,17 +473,18 @@ public class GetSignature : MonoBehaviour
             Debug.LogError("获取Mac报错！" + ex);
         }
 
-        try
-        {
-            if ( !EventHandle.IsHuiWeiChannel())
-            {
-                GetDeviceIMEI();
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("获取唯一编码报错！" + ex);
-        }
+        // Android 10+ 普通应用已完全禁止获取 IMEI
+        // try
+        // {
+        //     if ( !EventHandle.IsHuiWeiChannel())
+        //     {
+        //         GetDeviceIMEI();
+        //     }
+        // }
+        // catch (Exception ex)
+        // {
+        //     Debug.LogError("获取唯一编码报错！" + ex);
+        // }
     }
 
     /// <summary>
