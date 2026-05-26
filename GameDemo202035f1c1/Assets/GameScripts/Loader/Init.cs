@@ -60,9 +60,11 @@ public class Init : MonoBehaviour
         Application.targetFrameRate = 60;
         Application.runInBackground = true;
         DontDestroyOnLoad(this.gameObject);
+        
+        SetUIPatch(false);
     }
 
-    IEnumerator Start()
+    void Start()
     {
         // 游戏管理器
         GameManager.Instance.Behaviour = this;
@@ -74,9 +76,23 @@ public class Init : MonoBehaviour
         YooAssets.Initialize();
 
         // 加载更新页面
-        var go = Resources.Load<GameObject>("PatchWindow");
-        GameObject.Instantiate(go);
+        SetUIPatch(true);
 
+        StartCoroutine(StartPatch());
+    }
+    
+    private void Update()
+    {
+        CheckLoadAssembly();
+    }
+
+    public void SetUIPatch(bool enable)
+    {
+        transform.Find("UI/UIPatch")?.gameObject.SetActive(enable);
+    }
+
+    public IEnumerator StartPatch()
+    {
         // 开始补丁更新流程
         var operation = new PatchOperation("DefaultPackage", PlayMode);
         YooAssets.StartOperation(operation);
@@ -89,11 +105,6 @@ public class Init : MonoBehaviour
         // 切换到主页面场景
         // PatchEventDefine.LoadAssembly.SendEventMessage();
         LoadAssembly().Forget();
-    }
-    
-    private void Update()
-    {
-        CheckLoadAssembly();
     }
 
     # region 热更程序集
