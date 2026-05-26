@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UniFramework.Event;
 
-public class PatchWindow : MonoBehaviour
+public class UIPatch : MonoBehaviour
 {
     /// <summary>
     /// 对话框封装类

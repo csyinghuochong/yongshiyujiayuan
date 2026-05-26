@@ -62,6 +62,7 @@ public class Init : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         
         SetUIPatch(false);
+        SetUIYinSi(false);
     }
 
     void Start()
@@ -75,10 +76,15 @@ public class Init : MonoBehaviour
         // 初始化资源系统
         YooAssets.Initialize();
 
-        // 加载更新页面
-        SetUIPatch(true);
-
-        StartCoroutine(StartPatch());
+        // 隐私协议
+        if (PlayerPrefs.GetInt("GameYinSi") == 0)
+        {
+            SetUIYinSi(true);
+        }
+        else
+        {
+            StartPatch();
+        }
     }
     
     private void Update()
@@ -86,13 +92,26 @@ public class Init : MonoBehaviour
         CheckLoadAssembly();
     }
 
-    public void SetUIPatch(bool enable)
+    private void SetUIPatch(bool enable)
     {
-        transform.Find("UI/UIPatch")?.gameObject.SetActive(enable);
+        GameObject.Find("UI").transform.Find("UIPatch").gameObject.SetActive(enable);
     }
 
-    public IEnumerator StartPatch()
+    private void SetUIYinSi(bool enable)
     {
+        GameObject.Find("UI").transform.Find("UIYinSi").gameObject.SetActive(enable);
+    }
+
+    public void StartPatch()
+    {
+        StartCoroutine(Patch());
+    }
+
+    private IEnumerator Patch()
+    {
+        // 加载更新页面
+        SetUIPatch(true);
+
         // 开始补丁更新流程
         var operation = new PatchOperation("DefaultPackage", PlayMode);
         YooAssets.StartOperation(operation);
@@ -102,7 +121,6 @@ public class Init : MonoBehaviour
         var gamePackage = YooAssets.GetPackage("DefaultPackage");
         YooAssets.SetDefaultPackage(gamePackage);
 
-        // 切换到主页面场景
         // PatchEventDefine.LoadAssembly.SendEventMessage();
         LoadAssembly().Forget();
     }
