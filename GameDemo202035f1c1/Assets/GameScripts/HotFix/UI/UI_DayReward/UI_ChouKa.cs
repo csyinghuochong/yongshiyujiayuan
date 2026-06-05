@@ -28,6 +28,8 @@ public class UI_ChouKa : MonoBehaviour
     public GameObject Obj_CloseShowBtn;
     public GameObject Obj_ChouKaNumRewardSet;
     public GameObject Obj_ChouKaNumRewardShowStr;
+    public GameObject Obj_GongShiBtn;
+    public GameObject Obj_GongShiShow;
 
     private ObscuredFloat updataTimeSum;
     private ObscuredFloat chouKaTime_One;
@@ -678,4 +680,20 @@ public class UI_ChouKa : MonoBehaviour
         Obj_ChouKaCost_Ten.GetComponent<Text>().text = zuanShiNum_Ten + langStr;
 
     }
+
+
+    //打开抽卡奖励
+    public void OpenGaiLvShow()
+    {
+
+        Obj_GongShiShow.SetActive(true);
+    }
+
+    //打开抽卡奖励
+    public void CloseGaiLvShow()
+    {
+
+        Obj_GongShiShow.SetActive(false);
+    }
+
 }
