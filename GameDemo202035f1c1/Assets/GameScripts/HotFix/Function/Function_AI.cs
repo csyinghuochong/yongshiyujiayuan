@@ -251,6 +251,10 @@ public class Function_AI : MonoBehaviour {
                                     Game_PublicClassVar.Get_game_PositionVar.ChouKaStr = Str;
                                     Game_PublicClassVar.Get_game_PositionVar.ChouKaStatus = true;
                                     //Debug.Log("Str = " + Str);
+                                    if (itemID == "10010087")
+                                    {
+                                        Game_PublicClassVar.Get_game_PositionVar.BaoDiStatus = true;
+                                    }
                                 }
                             }
 

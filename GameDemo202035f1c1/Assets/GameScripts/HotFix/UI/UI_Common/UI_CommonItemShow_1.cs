@@ -43,10 +43,10 @@ public class UI_CommonItemShow_1 : MonoBehaviour
                 float yushu = itemNumInt / 10000;
                 if (yushu == 0)
                 {
-                    showNum = wanValue + "W";
+                    showNum = wanValue + "万";
                 }
                 else {
-                    showNum = wanValue + "W+";
+                    showNum = wanValue + "万+";
                 }
             }
         }

@@ -71,18 +71,18 @@ public class UI_ChouKaNumRewardList : MonoBehaviour {
                 NeedChouKaNum = 60;
                 Reward_Min = 200;
                 Reward_Max = 1000;
-                RewardItemID = "10000016";
-                RewardItemNum = 3;
+                RewardItemID = "10000017";
+                RewardItemNum = 1;
                 break;
 
             case "3":
                 NeedChouKaNum = 100;
                 Reward_Min = 300;
                 Reward_Max = 1500;
-                RewardItemID = "10000017";
-                RewardItemNum = 1;
-                //RewardItemID = "1";
-                //RewardItemNum = 300000;
+                //RewardItemID = "10000017";
+                //RewardItemNum = 1;
+                RewardItemID = "1";
+                RewardItemNum = 1000000;
                 break;
 
             case "4":
@@ -94,8 +94,8 @@ public class UI_ChouKaNumRewardList : MonoBehaviour {
 
                 //如果坐骑已经激活,则改变奖励
                 if (Game_PublicClassVar.Get_function_Pasture.IfHaveZuoQi("10003")) {
-                    RewardItemID = "1";
-                    RewardItemNum = 500000;
+                    RewardItemID = "10010087";
+                    RewardItemNum = 1;
                 }
 
                 break;

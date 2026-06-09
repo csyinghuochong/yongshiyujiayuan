@@ -158,6 +158,7 @@ public class Game_PositionVar : MonoBehaviour {
     public bool ChengJiuJianCeStatus;               //成就检测状态
     public float ChengJiuJianCeTimeSum;             //成就检测时间
     public string ChengJiuJianCeChengJiuIDStr;      //成就id值
+    public bool BaoDiStatus;                        //抽奖保底状态
 
     //主城相关任务
     public GameObject Obj_DayPracticeReward;

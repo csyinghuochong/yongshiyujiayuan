@@ -36,6 +36,7 @@ public class UI_ChouKa : MonoBehaviour
     private ObscuredFloat chouKaTime_Ten;
     public ObscuredBool chouKaTime_OneStatus;
     public ObscuredBool chouKaTime_TenStatus;
+    private ObscuredInt choukaBaodiNum;
 
     public GameObject chouKaShowItemSet;
     public ObscuredString nowChouKaID;
@@ -67,6 +68,16 @@ public class UI_ChouKa : MonoBehaviour
         takeCard_IDStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "TakeCard_ID", "GameMainValue");
         takeCard_ID = takeCard_IDStr.ToString().Split(';');
 
+        //ChouKaBaoDi
+        string ChoukaStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ChouKaBaoDi", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
+        if (ChoukaStr != "")
+        {
+            choukaBaodiNum = int.Parse(ChoukaStr);
+        }
+        else {
+            choukaBaodiNum = 0;
+        }
+        
 
         dropID = "0";
         int roseLv = Game_PublicClassVar.Get_function_Rose.GetRoseLv();
@@ -517,11 +528,26 @@ public class UI_ChouKa : MonoBehaviour
         //掉落ID
         for (int i = 1; i <= chouKaNum; i++)
         {
-            Game_PublicClassVar.Get_function_AI.DropIDToDropItem(dropID, Vector3.zero,"79999999");
+            //判断当前是否有
+            choukaBaodiNum = choukaBaodiNum + 1;
+
+            if (choukaBaodiNum >= 150)
+            {
+                choukaBaodiNum = 0;
+                Game_PublicClassVar.Get_function_AI.DropIDToDropItem("52000001", Vector3.zero, "79999999");
+            }
+            else {
+                Game_PublicClassVar.Get_function_AI.DropIDToDropItem(dropID, Vector3.zero, "79999999");
+            }
+
+            if(Game_PublicClassVar.Get_game_PositionVar.BaoDiStatus) {
+                Game_PublicClassVar.Get_game_PositionVar.BaoDiStatus = false;
+                choukaBaodiNum = 0;
+                Debug.Log("触发保底....");
+            }
         }
 
         //写入每日任务
-        //Game_PublicClassVar.Get_function_Country.UpdataTaskValue("1", "1", chouKaNum.ToString());
         Game_PublicClassVar.Get_function_Country.UpdataTaskValue("1", "3", chouKaNum.ToString());
 
         //记录抽卡次数
@@ -529,6 +555,11 @@ public class UI_ChouKa : MonoBehaviour
 
         //更新显示抽卡次数
         ShowChouKaNum();
+
+        //Game_PublicClassVar.Get_game_PositionVar.BaoDiStatus
+        
+        Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("ChouKaBaoDi", choukaBaodiNum.ToString(), "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
+
     }
 
     public void Btn_CloseUI(){
