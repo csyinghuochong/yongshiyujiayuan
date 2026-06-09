@@ -334,26 +334,6 @@ public class Function_Skill{
             case "6":
                 obj.AddComponent<Buff_6>().BuffID = buffID;
                 break;
-            
-            //拉近
-            case "7":
-                
-
-                if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<RoseSkill_LaJin>() == null)
-                {
-                    if (skillObj != null)
-                    {
-                        Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.LookAt(skillObj.transform);
-                        //Debug.Log("旋转方向 " + skillObj.gameObject.name);
-                    }
-
-                    Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.AddComponent<RoseSkill_LaJin>();
-                }
-                else {
-                    MonoBehaviour.Destroy(Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<RoseSkill_LaJin>());
-                }
-                break;
-                
         }
         
     }

@@ -119,6 +119,8 @@ public class Skill_FireWall_2 : MonoBehaviour
                         if (buffID != "0" && buffID != "")
                         {
                             Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, collider.gameObject);
+                            
+                            Game_PublicClassVar.Get_fight_Formult.RoseActMonster(this.gameObject.GetComponent<SkillObjBase>().SkillID, collider.gameObject,false);
                         }
 
                         //技能附加值（附加额外Buff）

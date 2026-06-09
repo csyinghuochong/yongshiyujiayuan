@@ -2515,6 +2515,23 @@ public class Rose_Status : MonoBehaviour
                             }
                         }
                         break;
+                    
+                    //释放主动技能时触发
+                    case "6":
+                        //如果当前技能不是6直接跳出
+                        if (triggerType != "6")
+                        {
+                            break;
+                        }
+
+                        if (Random.value <= float.Parse(passiveSkillPro[i]))
+                        {
+                            if (ifSkillTrigger[i] == "0")
+                            {
+                                triggerSkill(i);        //触发技能
+                            }
+                        }
+                        break;
                 }
             }
         }
