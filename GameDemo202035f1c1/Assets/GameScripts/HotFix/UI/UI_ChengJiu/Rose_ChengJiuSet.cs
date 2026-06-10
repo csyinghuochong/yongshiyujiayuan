@@ -254,10 +254,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
     public float ShowZhangJieList(string chengJiuType, float hight,int zhangJieNum) {
 
         //实例化界面
-        UI_RoseChengJiuType = (GameObject)Instantiate(Obj_UIChengJiuList_Type);
-
-        //给实例化的脚本指定任务类型
-        UI_RoseChengJiuType.GetComponent<Rose_ChengJiuList_Show>().ChengJiuType = chengJiuType;
+        UI_RoseChengJiuType = null;
 
         string chengJiuTypeID = "";
 
@@ -270,7 +267,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
                 chengJiuTypeID = "1001";
                 string langStr = LanguageManager.Instance.LoadLocalization("成就首页");
                 ChengJiuTypeName = langStr;
-                UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_Main.transform;
+                UI_RoseChengJiuType = Instantiate(Obj_UIChengJiuList_Type, UIPoint_ChengJiuType_Main.transform);
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
                 UI_RoseChengJiuType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 hight = -55.0f;
@@ -282,7 +279,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
                 chengJiuTypeID = "1002";
                 langStr = LanguageManager.Instance.LoadLocalization("成就列表");
                 ChengJiuTypeName = langStr;
-                UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_Fight.transform;
+                UI_RoseChengJiuType = Instantiate(Obj_UIChengJiuList_Type, UIPoint_ChengJiuType_Fight.transform);
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
                 UI_RoseChengJiuType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
@@ -301,7 +298,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
                 chengJiuTypeID = "1003";
                 langStr = LanguageManager.Instance.LoadLocalization("探索成就");
                 ChengJiuTypeName = langStr;
-                UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_ShouJi.transform;
+                UI_RoseChengJiuType = Instantiate(Obj_UIChengJiuList_Type, UIPoint_ChengJiuType_ShouJi.transform);
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
                 UI_RoseChengJiuType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
@@ -320,13 +317,15 @@ public class Rose_ChengJiuSet : MonoBehaviour {
                 chengJiuTypeID = "1004";
                 langStr = LanguageManager.Instance.LoadLocalization("收集成就");
                 ChengJiuTypeName = langStr;
-                UI_RoseChengJiuType.transform.parent = UIPoint_ChengJiuType_TanSuo.transform;
+                UI_RoseChengJiuType = Instantiate(Obj_UIChengJiuList_Type, UIPoint_ChengJiuType_TanSuo.transform);
                 UI_RoseChengJiuType.transform.localPosition = new Vector3(0, hight, 0);
                 UI_RoseChengJiuType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
                 break;
         }
 
+		//给实例化的脚本指定任务类型
+        UI_RoseChengJiuType.GetComponent<Rose_ChengJiuList_Show>().ChengJiuType = chengJiuType;
 
         //检测当前角色任务是否展开
         string ifShowTaskList = "";
@@ -434,9 +433,8 @@ public class Rose_ChengJiuSet : MonoBehaviour {
             }
 
             zhangJieNum = zhangJieNum + 1;
-            GameObject UI_RoseChengJiuListName = (GameObject)Instantiate(Obj_UIChengJiuList_TaskRow);
             Rose_ChengJiuList_Show rose_TaskList_Show = UI_RoseChengJiuType.GetComponent<Rose_ChengJiuList_Show>();
-            UI_RoseChengJiuListName.transform.parent = rose_TaskList_Show.UIPoint_TaskName;
+            GameObject UI_RoseChengJiuListName = (GameObject)Instantiate(Obj_UIChengJiuList_TaskRow, rose_TaskList_Show.UIPoint_TaskName);
             UI_RoseChengJiuListName.transform.localPosition = new Vector3(0, zhangJieNum * -50.0f, 0);
             UI_RoseChengJiuListName.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
@@ -596,8 +594,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
             string[] chengJiuIDList = chengJiuIDSet_WeiWanCheng.Split(';');
             for (int i = 0; i < chengJiuIDList.Length; i++)
             {
-                GameObject showObj = (GameObject)Instantiate(Obj_ChengJiuDataShow);
-                showObj.transform.parent = Obj_ChengJiuDataSet.transform;
+                GameObject showObj = (GameObject)Instantiate(Obj_ChengJiuDataShow, Obj_ChengJiuDataSet.transform);
                 showObj.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 showObj.GetComponent<Rose_ChengJiuDataShowList>().ChengJiuID = chengJiuIDList[i];
                 showObj.GetComponent<Rose_ChengJiuDataShowList>().IfComChengJiu = false;
@@ -609,8 +606,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
             string[] chengJiuIDList_YiWanCheng = chengJiuIDSet_YiWanCheng.Split(';');
             for (int i = 0; i < chengJiuIDList_YiWanCheng.Length; i++)
             {
-                GameObject showObj = (GameObject)Instantiate(Obj_ChengJiuDataShow);
-                showObj.transform.parent = Obj_ChengJiuDataSet.transform;
+                GameObject showObj = (GameObject)Instantiate(Obj_ChengJiuDataShow, Obj_ChengJiuDataSet.transform);
                 showObj.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 showObj.GetComponent<Rose_ChengJiuDataShowList>().ChengJiuID = chengJiuIDList_YiWanCheng[i];
                 showObj.GetComponent<Rose_ChengJiuDataShowList>().IfComChengJiu = true;
@@ -632,8 +628,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
         string[] chengJiuRewardList = chengJiuRewardSet.Split(';');
 
         for (int i = 0; i < chengJiuRewardList.Length; i++) {
-            GameObject obj = (GameObject)Instantiate(Obj_ChengJiuRewardNum);
-            obj.transform.SetParent(Obj_ChengJiuRewardNumSet.transform);
+            GameObject obj = (GameObject)Instantiate(Obj_ChengJiuRewardNum, Obj_ChengJiuRewardNumSet.transform);
             obj.transform.localScale = new Vector3(1, 1, 1);
             obj.GetComponent<UI_ChengJiuRewardNumSet>().ChengJiuRewardID = chengJiuRewardList[i];
             obj.GetComponent<UI_ChengJiuRewardNumSet>().ShowChengJiuRewardNum();
@@ -727,8 +722,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
         Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_JingLingZhangJieShowSet);
 
         for (int i = 1; i <= 5; i++) {
-            GameObject obj = (GameObject)Instantiate(Obj_JingLingZhangJieShow);
-            obj.transform.SetParent(Obj_JingLingZhangJieShowSet.transform);
+            GameObject obj = (GameObject)Instantiate(Obj_JingLingZhangJieShow, Obj_JingLingZhangJieShowSet.transform);
             obj.transform.localScale = new Vector3(1, 1, 1);
             obj.GetComponent<UI_JingLingZhangJie>().ZhangJieID = i.ToString();
             obj.GetComponent<UI_JingLingZhangJie>().ShowZhangJieName();
@@ -781,8 +775,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
             }
             else {
                 //展示精灵ID
-                GameObject jingLingObj = (GameObject)Instantiate(Obj_JingLingShow);
-                jingLingObj.transform.SetParent(Obj_JingLingShowSet.transform);
+                GameObject jingLingObj = (GameObject)Instantiate(Obj_JingLingShow, Obj_JingLingShowSet.transform);
                 jingLingObj.transform.localScale = new Vector3(1, 1, 1);
                 jingLingObj.GetComponent<UI_JingLingShow>().JingLingID = jingLingID;
                 jingLingObj.GetComponent<UI_JingLingShow>().JingLingShow();
@@ -843,7 +836,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 				zhangJieNum = shouShaIDSet.Split (',').Length;
                 string langStr = LanguageManager.Instance.LoadLocalization("第一章");
                 ChengJiuTypeName = langStr;
-				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
+				UI_RoseShouShaType.transform.SetParent(OpenShouShaZhangJieList[int.Parse(shoushaType)].transform);
 				UI_RoseShouShaType.transform.localPosition = new Vector3 (0, hight, 0);
 				UI_RoseShouShaType.transform.localScale = new Vector3 (1.0f, 1.0f, 1.0f);
 				//hight = -55.0f;
@@ -861,7 +854,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
                 langStr = LanguageManager.Instance.LoadLocalization("第二章");
                 ChengJiuTypeName = langStr;
-				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
+				UI_RoseShouShaType.transform.SetParent(OpenShouShaZhangJieList[int.Parse(shoushaType)].transform);
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
 				UI_RoseShouShaType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
@@ -881,7 +874,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
                 langStr = LanguageManager.Instance.LoadLocalization("第三章");
                 ChengJiuTypeName = langStr;
-				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
+				UI_RoseShouShaType.transform.SetParent(OpenShouShaZhangJieList[int.Parse(shoushaType)].transform);
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
 				UI_RoseShouShaType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
@@ -901,7 +894,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
                 langStr = LanguageManager.Instance.LoadLocalization("第四章");
                 ChengJiuTypeName = langStr;
-				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
+				UI_RoseShouShaType.transform.SetParent(OpenShouShaZhangJieList[int.Parse(shoushaType)].transform);
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
 				UI_RoseShouShaType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 				
@@ -921,7 +914,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			    zhangJieNum = shouShaIDSet.Split (',').Length;
                 langStr = LanguageManager.Instance.LoadLocalization("第五章");
                 ChengJiuTypeName = langStr;
-				UI_RoseShouShaType.transform.parent = OpenShouShaZhangJieList[int.Parse(shoushaType)].transform;
+				UI_RoseShouShaType.transform.SetParent(OpenShouShaZhangJieList[int.Parse(shoushaType)].transform);
 				UI_RoseShouShaType.transform.localPosition = new Vector3(0, hight, 0);
 				UI_RoseShouShaType.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
@@ -1004,9 +997,8 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 			string monsterName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MonsterName", "ID", monsterIDList[i], "Monster_Template");
 
 			zhangJieNum = zhangJieNum + 1;
-			GameObject UI_RoseChengJiuListName = (GameObject)Instantiate(Obj_UIShouShaZhangJie_Row);
 			Rose_ShouShaList_Show rose_TaskList_Show = obj_ShouShaType.GetComponent<Rose_ShouShaList_Show>();
-			UI_RoseChengJiuListName.transform.parent = rose_TaskList_Show.UIPoint_TaskName;
+			GameObject UI_RoseChengJiuListName = (GameObject)Instantiate(Obj_UIShouShaZhangJie_Row, rose_TaskList_Show.UIPoint_TaskName);
 			UI_RoseChengJiuListName.transform.localPosition = new Vector3(0, zhangJieNum * -50.0f, 0);
 			UI_RoseChengJiuListName.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
@@ -1082,8 +1074,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
 
 				//显示奖励
 				string[] itemList = rewardItemList[i].Split(',');
-				GameObject itemObj = (GameObject)Instantiate(Obj_ShouShaShow_DropItem);
-				itemObj.transform.SetParent(Obj_ShouShaShow_DropSet.transform);
+				GameObject itemObj = (GameObject)Instantiate(Obj_ShouShaShow_DropItem, Obj_ShouShaShow_DropSet.transform);
 				itemObj.transform.localScale = new Vector3(1, 1, 1);
 				itemObj.GetComponent<UI_Common_ItemIcon>().ItemID = itemList[0];
 				itemObj.GetComponent<UI_Common_ItemIcon>().NeedItemNum = 0;
@@ -1241,8 +1232,7 @@ public class Rose_ChengJiuSet : MonoBehaviour {
             return;
         }
 
-        shouShaShowRewardObj = (GameObject)Instantiate(Obj_ShouShaShowReward);
-        shouShaShowRewardObj.transform.SetParent(Obj_ShouShaShowRewardSet.transform);
+        shouShaShowRewardObj = (GameObject)Instantiate(Obj_ShouShaShowReward, Obj_ShouShaShowRewardSet.transform);
         shouShaShowRewardObj.transform.localScale = new Vector3(1, 1, 1);
         shouShaShowRewardObj.transform.localPosition = new Vector3(0, 0, 0);
 
