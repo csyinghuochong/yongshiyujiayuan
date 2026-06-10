@@ -53,13 +53,13 @@ public class UI_StartGameFunc : MonoBehaviour {
             Obj_BtnFindBtn.SetActive(false);
         }
 
-        //打开隐私协议
-        if (PlayerPrefs.GetString(YinSi.PlayerPrefsYinSi) != YinSi.YinSiValue)
-        {
-            Obj_HuaWeiYinSi.SetActive(true);
-        }
-        else
-        {
+        // //打开隐私协议
+        // if (PlayerPrefs.GetString(YinSi.PlayerPrefsYinSi) != YinSi.YinSiValue)
+        // {
+        //     Obj_HuaWeiYinSi.SetActive(true);
+        // }
+        // else
+        // {
             if (!Define.IsEditor)
             {
 #if UNITY_ANDROID
@@ -68,7 +68,7 @@ public class UI_StartGameFunc : MonoBehaviour {
 #endif
 #endif
             }
-        }
+        // }
 
         if (Application.platform == RuntimePlatform.Android)
         {
