@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 护体之球 周身环绕3个旋转的球
-public class Skill_OrbitBall : MonoBehaviour
+public class RoseSkill_OrbitBall : MonoBehaviour
 {
     private GameObject AI_Collider; //碰撞的怪物
     private string AI_HitPosition; //AI受到伤害特效显示的位置
@@ -170,7 +170,7 @@ public class OrbitBall : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        transform.parent.GetComponent<Skill_OrbitBall>()?.OnBallTriggerEnter(gameObject, other);
+        transform.parent.GetComponent<RoseSkill_OrbitBall>()?.OnBallTriggerEnter(gameObject, other);
     }
 
     private void OnTriggerStay(Collider other)
