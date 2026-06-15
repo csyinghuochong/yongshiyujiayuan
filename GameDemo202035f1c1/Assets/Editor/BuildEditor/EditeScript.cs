@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEditor;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class EditeScript : MonoBehaviour {
 
@@ -23,6 +25,26 @@ public class EditeScript : MonoBehaviour {
 		
 	}
 
+    [MenuItem("Tools/打开本地存档文件夹")]
+    public static void OpenXmlFolder()
+    {
+        // persistentDataPath 格式：C:\Users\用户名\AppData\LocalLow\公司名\游戏名
+        string persistentPath = Application.persistentDataPath;
+        
+        // 拆分出 LocalLow 根目录部分
+        string localLowRoot = Path.GetDirectoryName(Path.GetDirectoryName(persistentPath));
+        // 拼接固定后缀 Going/勇士与家园/GameData/Xml
+        string targetFolder = Path.Combine(localLowRoot, "Going", "勇士与家园", "GameData", "Xml");
+
+        if (!Directory.Exists(targetFolder))
+        {
+            return;
+        }
+
+        // 打开资源管理器
+        Process.Start(new ProcessStartInfo(targetFolder) { UseShellExecute = true });
+    }
+    
     [MenuItem("Tools/复制配置到Bundle")]
     public static void CopyAllConfig()
     {
