@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 护体之球 周身环绕3个旋转的球
+// GameObjectParameter：球的数量;球到中心的距离;球触发器的半径;每个球对每个单位的伤害间隔;旋转速度
 public class RoseSkill_OrbitBall : MonoBehaviour
 {
     private GameObject AI_Collider; //碰撞的怪物
