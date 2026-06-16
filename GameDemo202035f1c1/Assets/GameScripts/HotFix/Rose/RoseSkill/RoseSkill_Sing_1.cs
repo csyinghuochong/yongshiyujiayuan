@@ -19,6 +19,8 @@ public class RoseSkill_Sing_1 : MonoBehaviour
     public bool IfSkillSelect;                  //技能是否需要技能释放区域  true：表示需要  false：不需要
     //public bool SkillCD_Status;               //技能CD开关,技能开关开启后,主界面技能图标刷新CD显示
 
+    private ObscuredBool IsSkillRunning;        //技能运行中（可手动取消的技能）
+    private ObscuredBool SetSkillRunningTime;
 
     private ObscuredString skillID;                     //技能ID
     private ObscuredInt SkillDamge;                     //技能伤害
@@ -92,6 +94,11 @@ public class RoseSkill_Sing_1 : MonoBehaviour
     /// <param name="value"></param>
     public void OnIfSkillSelect( bool value )
     {
+        if (CancelSkillRunning())
+        {
+            return;
+        }
+        
         Start();
         IfSkillSelect = value;
         skillID = mainUISkillGrid.UseSkillID;
@@ -216,6 +223,25 @@ public class RoseSkill_Sing_1 : MonoBehaviour
             //Debug.Log("Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_LanValue = " + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_LanValue);
         }
 
+        // 爆发技能消耗生命值
+        if (Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template") == nameof(RoseSkill_BaoFa))
+        {
+            string skillPar = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectParameter", "ID", skillID, "Skill_Template");
+            float cost = float.Parse(skillPar.Split(';')[0]);
+            int hpNow = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_HpNow;
+            int hp = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Hp;
+
+            int value = (int)(hp * cost);
+            if (hpNow <= value)
+            {
+                Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("生命值不足");
+                return;
+            }
+            else
+            {
+                Game_PublicClassVar.Get_function_Rose.costRoseHp(value);
+            }
+        }
 
         //设置实例化技能
         string skillObjName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template");
@@ -749,8 +775,19 @@ public class RoseSkill_Sing_1 : MonoBehaviour
                     {
                         Game_PublicClassVar.Get_function_Rose.ExitRoseInvisible();
                     }
-                    //技能CD
-                    this.GetComponent<MainUI_SkillGrid>().skillCDSelfStatus = true;
+
+                    // 是否 可手动取消的技能
+                    if (Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", skillID, "Skill_Template") == nameof(RoseSkill_BaoFa))
+                    {
+                        // 等待技能结束或手动取消技能后再进入CD
+                        IsSkillRunning = true;
+                    }
+                    else
+                    {
+                        //技能CD
+                        this.GetComponent<MainUI_SkillGrid>().skillCDSelfStatus = true;
+                    }
+
                     //开启消耗道具
                     this.GetComponent<MainUI_SkillGrid>().ItemCostStatus = true;
 
@@ -890,5 +927,53 @@ public class RoseSkill_Sing_1 : MonoBehaviour
 
         beginUpdate = true;
 
+    }
+
+    // 手动结束
+    private bool CancelSkillRunning()
+    {
+        if (IsSkillRunning)
+        {
+            Debug.LogWarning("手动结束技能");
+            IsSkillRunning = false;
+            SetSkillRunningTime = false;
+            
+            this.GetComponent<MainUI_SkillGrid>().SetSkillRunningTime(0);
+            this.GetComponent<MainUI_SkillGrid>().skillCDSelfStatus = true;
+            
+            cleanSkillData();
+            if (SkillObject_p != null)
+            {
+                Destroy(SkillObject_p);
+            }
+
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // 自动结束
+    public void CheckSkillRunning()
+    {
+        if (IsSkillRunning && !SetSkillRunningTime)
+        {
+            SkillObjBase skillStatus = SkillObject_p.transform.GetComponent<SkillObjBase>();
+            if (skillStatus.SkillLiveTime > 0)
+            {
+                SetSkillRunningTime = true;
+                this.GetComponent<MainUI_SkillGrid>().SetSkillRunningTime(skillStatus.SkillLiveTime);
+            }
+        }
+
+        if (IsSkillRunning && SkillObject_p == null)
+        {
+            Debug.LogWarning("自动结束技能");
+            IsSkillRunning = false;
+            SetSkillRunningTime = false;
+
+            this.GetComponent<MainUI_SkillGrid>().SetSkillRunningTime(0);
+            this.GetComponent<MainUI_SkillGrid>().skillCDSelfStatus = true;
+        }
     }
 }

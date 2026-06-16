@@ -22,6 +22,7 @@ public class MainUI_SkillGrid : MonoBehaviour
     public GameObject SkillItemNum;                 //道具数量显示
     public GameObject SkillSingImg;                 //技能吟唱选中显示
     public GameObject SkillPublicCD;                //技能公共CD
+    public GameObject Img_Running;                //技能运行
     public GameObject SkillCDEffect;                //技能冷却CD完毕后显示的UI特效
     public bool IfSkillMove;                        //技能图标是否产生移动
     public bool ItemCostStatus;                     //道具消耗状态,开启表示要消耗一个当前道具并更新             
@@ -37,7 +38,9 @@ public class MainUI_SkillGrid : MonoBehaviour
     private ObscuredBool ifShowCDTime;                      //是否显示冷却的数字时间
     private ObscuredString skillCDType;                     //技能CD类型 0：表示自身CD  1：表示公共CD
     private ObscuredFloat skillCDSelfTimeSum;               //技能自身冷却时间累加值
-    
+
+    private ObscuredFloat skillRunningTime_Now;             //技能运行中时间
+    private ObscuredFloat skillRunningTime;
 
     private bool clickBtnKeyStatus;                 //点击技能Icon处罚的按键状态
     private float Keytime;                          //按键时间
@@ -138,6 +141,22 @@ public class MainUI_SkillGrid : MonoBehaviour
             //skillCDStatus = false;      //设置自身技能冷却为false,如果下面技能自身的冷却存在的话,此值还是会为true
         }
 
+        // 判定技能处于运行中
+        if (Img_Running != null)
+        {
+            this.GetComponent<RoseSkill_Sing_1>().CheckSkillRunning();
+            if (skillRunningTime_Now > 0)
+            {
+                skillRunningTime_Now -= Time.deltaTime;
+                Img_Running.SetActive(true);
+                Img_Running.GetComponent<Image>().fillAmount = skillRunningTime_Now / skillRunningTime;
+            }
+            else
+            {
+                Img_Running.SetActive(false);
+            }
+        }
+        
         //判定技能是否处于自身的冷却CD中
         if (skillCDSelfStatus)
         {
@@ -495,6 +514,23 @@ public class MainUI_SkillGrid : MonoBehaviour
             }
             return;
         }
+        
+        // 爆发技能消耗生命值
+        if (Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", UseSkillID, "Skill_Template") == nameof(RoseSkill_BaoFa))
+        {
+            string skillPar = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectParameter", "ID", UseSkillID, "Skill_Template");
+            float cost = float.Parse(skillPar.Split(';')[0]);
+            int hpNow = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_HpNow;
+            int hp = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Hp;
+
+            int value = (int)(hp * cost);
+            if (hpNow <= value)
+            {
+                Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("生命值不足");
+                return;
+            }
+        }
+        
         //Debug.Log("触发技能33333：" + SkillID);
 
         MouseEnterStatus = true;            //设置鼠标进入状态
@@ -686,6 +722,12 @@ public class MainUI_SkillGrid : MonoBehaviour
         }
     }
 
+    public void SetSkillRunningTime(float value)
+    {
+        skillRunningTime_Now = value;
+        skillRunningTime = value;
+    }
+    
     private void InitZhiShiTarget() {
 
         //技能指示器在未移动的时候一直表示玩家的正前方
