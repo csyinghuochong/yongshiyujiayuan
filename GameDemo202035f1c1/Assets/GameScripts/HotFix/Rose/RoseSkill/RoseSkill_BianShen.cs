@@ -1,12 +1,12 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-//冲击波技能 可以配置移动速度和受到的伤害
-public class Skill_FireWall_2 : MonoBehaviour
-{
 
-	//定义技能状态
+public class RoseSkill_BianShen : MonoBehaviour
+{   
+    
+    
+    //定义技能状态
 	//public bool SkillStatus;
 	public float SkillEffectDistance;   //技能每秒移动距离
     public float SkillTime;             //技能时间（特效和效果共用）
@@ -24,7 +24,11 @@ public class Skill_FireWall_2 : MonoBehaviour
     private GameObject effect;
     private string skillHitEffectName;
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
+
+        Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_RoseModel.transform.position =
+            new Vector3(2, 2, 2);
 
         //获取是否播放受击特效
         AI_IfHitEffect = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("IfHitEffect", "ID", this.gameObject.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
@@ -95,6 +99,9 @@ public class Skill_FireWall_2 : MonoBehaviour
         if (SkillTimeSum >= SkillTime-0.2f) {
             colliderList.Clear();
             SkillTimeSum = 0.0f;
+            
+            Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_RoseModel.transform.position =
+                new Vector3(1, 1, 1);
         }
 
 
@@ -111,20 +118,6 @@ public class Skill_FireWall_2 : MonoBehaviour
     void OnTriggerEnter (Collider collider){
         //Debug.Log("第一次调用！"+ collider.name);
         updataSkillData();                      //如果进入比Start方法早,需要读取一下技能配置
-        
-        if (collider.name == "Rose")
-        {
-            colliderList.Add(collider.gameObject);
-            string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffID", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
-            if (buffID != "0" && buffID != "")
-            {
-                
-                //Debug.Log("触发BUFF:" + buffID);
-                Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, Game_PublicClassVar.Get_game_PositionVar.Obj_Rose);
-
-            }
-        }
-        
         //DamgeFrequencySum = 0.0f;
         //将进入技能范围的怪物加入进一个集合中
         if (collider.name != "Rose")
@@ -151,7 +144,6 @@ public class Skill_FireWall_2 : MonoBehaviour
                             //Debug.Log("触碰点：" + collider.gameObject.name);
                             //Debug.Log("触发一次伤害:" + triggerSkillID.ToString()+"aaaaaa");
                             Game_PublicClassVar.Get_fight_Formult.RoseActMonster(triggerSkillID, collider.gameObject, false);
-                            
                         }
 
                         //技能附加值（附加额外Buff）
@@ -172,17 +164,6 @@ public class Skill_FireWall_2 : MonoBehaviour
         {
             DamgeFrequencySum = 0.0f;
             foreach (GameObject nowObj in colliderList) {
-                
-                if (nowObj.name == "Rose")
-                {
-                    string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffID", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
-                    if (buffID != "0" && buffID != "")
-                    {
-                
-                        //Debug.Log("触发BUFF:" + buffID);
-                        Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, Game_PublicClassVar.Get_game_PositionVar.Obj_Rose);
-                    }
-                }
 
                 AI_Collider = nowObj;
 
@@ -218,11 +199,7 @@ public class Skill_FireWall_2 : MonoBehaviour
                         //发送攻击消息
                         //Debug.Log("this.gameObject.GetComponent<SkillObjBase>().SkillID = " + this.gameObject.GetComponent<SkillObjBase>().SkillID);
                         Game_PublicClassVar.Get_fight_Formult.RoseActMonster(this.gameObject.GetComponent<SkillObjBase>().SkillID, nowObj.gameObject,false);
-                        string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffID", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
-                        if (buffID != "0" && buffID != "")
-                        {
-                            Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, collider.gameObject);
-                        }
+
                     }
                 }
             }
@@ -253,7 +230,8 @@ public class Skill_FireWall_2 : MonoBehaviour
                 triggerSkillID = parameter[1];
             }
         }
-    }
-}
-
     
+    }
+
+
+}

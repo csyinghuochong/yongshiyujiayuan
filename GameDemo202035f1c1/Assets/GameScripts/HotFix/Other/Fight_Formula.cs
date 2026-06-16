@@ -1299,5 +1299,307 @@ public class Fight_Formult {
         return 0;
 
     }
+    
+    
+     //传入技能ID和怪物ID计算角色攻击怪物的伤害值
+    public int RoseActMonsterValue(string skillID, GameObject actTargetObj,bool ifCri,bool ifComAct = false) {
+
+        if (actTargetObj.layer == 18) {
+            return 0;
+        }
+
+        //伤害浮动(0.9-1.1的浮动)
+        ObscuredFloat pro_1 = 1.0f;         //固定值1
+
+        //伤害飘字的两个变量
+        string flyValueFrontStr = "";
+        string flyValueLastStr = "";
+
+        //读取技能属性
+        ObscuredFloat actDamge = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ActDamge", "ID", skillID, "Skill_Template"));
+        ObscuredInt damgeValue = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("DamgeValue", "ID", skillID, "Skill_Template"));
+        int damgeType = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("DamgeType", "ID", skillID, "Skill_Template"));
+        //Debug.Log("1damgeValue = " + damgeValue + "skillID = " + skillID);
+        //读取技能附加属性
+        ObscuredFloat skillAddValue_actDamge = 0;
+        //技能附加值
+        string skillAddValueStr = Game_PublicClassVar.Get_function_Skill.GetSkillAddValue(skillID, "2");
+        if (skillAddValueStr != "" && skillAddValueStr != "0")
+        {
+            string[] skillAddValueList = skillAddValueStr.Split(',');
+            for (int i = 0; i < skillAddValueList.Length; i++)
+            {
+                skillAddValue_actDamge = skillAddValue_actDamge + float.Parse(skillAddValueList[i]);
+            }
+        }
+
+        ObscuredInt skillAddValue_damgeValue = 0;
+
+        //技能附加值
+        skillAddValueStr = Game_PublicClassVar.Get_function_Skill.GetSkillAddValue(skillID, "3");
+        if (skillAddValueStr != "" && skillAddValueStr != "0")
+        {
+            string[] skillAddValueList = skillAddValueStr.Split(',');
+            for (int i = 0; i < skillAddValueList.Length; i++)
+            {
+                skillAddValue_damgeValue = skillAddValue_damgeValue + int.Parse(skillAddValueList[i]);
+            }
+        }
+
+
+        //读取技能附加属性
+        ObscuredFloat skillAddValue_actDamgePro = 0;
+        //技能附加值
+        string skillAddValueStrPro = Game_PublicClassVar.Get_function_Skill.GetSkillAddValue(skillID, "10");
+        if (skillAddValueStrPro != "" && skillAddValueStrPro != "0")
+        {
+            string[] skillAddValueListPro = skillAddValueStrPro.Split(',');
+            for (int i = 0; i < skillAddValueListPro.Length; i++)
+            {
+                skillAddValue_actDamgePro = skillAddValue_actDamgePro + float.Parse(skillAddValueListPro[i]);
+            }
+        }
+
+
+        //技能附加值赋值
+        actDamge = actDamge * (1 + skillAddValue_actDamgePro) + skillAddValue_actDamge;
+        damgeValue = damgeValue + skillAddValue_damgeValue;
+        
+
+        //读取角色攻击值
+        int roseLv = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Lv;
+        int roseAct = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Act;
+        int roseMagAct = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_MagAct;
+        float roseCri = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Cri;
+        float roseRes = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Res;
+        float roseHit = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Hit;
+        float roseDodge = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Dodge;
+        float roseDefAdd = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_DefAdd;
+        float roseAdfAdd = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_AdfAdd;
+        float roseDamgeAdd = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_DamgeSub;
+        float roseZhongJiPro = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ZhongJiPro;
+        int roseZhongJiValue = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ZhongJiValue;
+        int roseGuDingValue = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_GuDingValue;
+        int roseHuShiDefValue = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_HuShiDefValue;
+        int roseHuShiAdfValue = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_HuShiAdfValue;
+        float roseHuShiDefValuePro = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_HuShiDefValuePro;
+        float roseHuShiAdfValuePro = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_HuShiAdfValuePro;
+        float roseXiXueProValue = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_XiXuePro;
+        float roseActAddPro = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ActAddPro;
+
+        float skillAddValue_CriValue = 0;
+
+        //技能暴击附加值
+        skillAddValueStr = Game_PublicClassVar.Get_function_Skill.GetSkillAddValue(skillID, "8");
+        if (skillAddValueStr != "" && skillAddValueStr != "0")
+        {
+            string[] skillAddValueList = skillAddValueStr.Split(',');
+            for (int i = 0; i < skillAddValueList.Length; i++)
+            {
+                skillAddValue_CriValue = skillAddValue_CriValue + float.Parse(skillAddValueList[i]);
+            }
+        }
+        roseCri = roseCri + skillAddValue_CriValue;
+
+
+        //设置必中
+        string ifMustAct = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("IfMustAct", "ID", skillID, "Skill_Template");
+        //string ifMustAct = "1";
+        float rose_BiZhongPro = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_BiZhongPro;
+        //必中
+        if (Random.value < rose_BiZhongPro) {
+            ifMustAct = "1";
+        }
+        if (ifMustAct == "1") {
+            roseHit = 99;
+        }
+
+        //读取怪物属性
+        int monsterLv = actTargetObj.GetComponent<AI_Property>().AI_Lv;
+        int monsterDef = actTargetObj.GetComponent<AI_Property>().AI_Def;
+        int monsterAdf = actTargetObj.GetComponent<AI_Property>().AI_Adf;
+        float monsteCri = actTargetObj.GetComponent<AI_Property>().AI_Cri;
+        float monsteRes = actTargetObj.GetComponent<AI_Property>().AI_Res;
+        float monsteHit = actTargetObj.GetComponent<AI_Property>().AI_Hit;
+        float monsteDodge = actTargetObj.GetComponent<AI_Property>().AI_Dodge;
+        float monsteDefAdd = actTargetObj.GetComponent<AI_Property>().AI_DefAdd;
+        float monsteAdfAdd = actTargetObj.GetComponent<AI_Property>().AI_AdfAdd;
+        float monsteDamgeAdd = actTargetObj.GetComponent<AI_Property>().AI_DamgeAdd;
+
+		//触发特殊的无视防御属性
+		if(Random.value <= Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ActWuShi){
+			monsterDef = 0;
+			monsterAdf = 0;
+		}
+        
+        int damge = 0;
+
+        //判定是否重击
+        if (Random.value <= roseZhongJiPro) {
+            monsterDef = 0;
+            monsterAdf = 0;
+            roseAct = roseAct + roseZhongJiValue;
+            actTargetObj.GetComponent<AI_1>().ZhongJiStatus = true;
+            string langStr = LanguageManager.Instance.LoadLocalization("重击");
+            flyValueFrontStr = langStr;
+        }
+
+        //忽视目标防御值
+        monsterDef = (int)(monsterDef - roseHuShiDefValue * (1 - roseHuShiDefValuePro));
+        //忽视目标魔防值
+        monsterAdf = (int)(monsterAdf - roseHuShiAdfValue * (1 - roseHuShiAdfValuePro));
+        damge = fightdamge(roseLv, monsterLv, roseHit, roseCri, monsteRes, monsteDodge, roseAct, roseMagAct, damgeValue, monsterDef, monsterAdf, actDamge, damgeType, monsteDefAdd, monsteAdfAdd, monsteDamgeAdd);
+
+        int baseDamge = damge;
+
+        //判定是否未普通攻击  skillID == "62000001"|| skillID == "60011001"|| skillID == "60012001"
+        //Debug.Log("roseActAddPro = " + roseActAddPro + " damge = " + damge + "skillID = " + skillID);
+        if (skillID == "62000001"|| skillID == "60011001"|| skillID == "60012001") {
+            damge = (int)(damge * (1.0f + roseActAddPro));
+            //Debug.Log("damge = " + damge);
+        }
+
+        //判定是否未命中
+        if (damge == -1)
+        {
+            string langStr = LanguageManager.Instance.LoadLocalization("闪避");
+            Game_PublicClassVar.Get_function_UI.Fight_FlyText("3", langStr, "2",actTargetObj, "", "");
+            return 0;
+        }
+
+		float damgeResist = 0;
+
+		//获取技能元素抵抗
+		string damgeElementType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData ("DamgeElementType", "ID", skillID, "Skill_Template");
+		//获取玩家身上抗性
+		switch (damgeElementType) {
+		case "0":
+			damgeResist = 0;
+			break;
+		case "1":
+			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_1;
+			if(damgeResist!=0){
+                string langStr = LanguageManager.Instance.LoadLocalization("神圣抗性");
+                flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
+			}
+			break;
+		case "2":
+			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_2;
+			if(damgeResist!=0){
+                string langStr = LanguageManager.Instance.LoadLocalization("黑暗抗性");
+                flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
+			}
+			break;
+		case "3":
+			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_3;
+			if(damgeResist!=0){
+                string langStr = LanguageManager.Instance.LoadLocalization("火焰抗性");
+                flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
+			}
+			break;
+		case "4":
+			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_4;
+			if(damgeResist!=0){
+                string langStr = LanguageManager.Instance.LoadLocalization("冰霜抗性");
+                flyValueLastStr = "<color=#D2D2D2><size=18> (" + langStr + ")</size></color>";
+			}
+			break;
+		case "5":
+			damgeResist = actTargetObj.GetComponent<AI_Property>().AI_resistance_5;
+			if(damgeResist!=0){
+                string langStr = LanguageManager.Instance.LoadLocalization("闪电抗性");
+                flyValueLastStr = "<color=#D2D2D2><size=18> ("+ langStr + ")</size></color>";
+			}
+			break;
+		}
+
+		//伤害元素抵抗
+		damge = (int)(damge * (pro_1 - damgeResist));
+		damgeResist = 0;
+
+		string monsterRace = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData ("MonsterRace", "ID", actTargetObj.GetComponent<AI_Property> ().AI_ID, "Monster_Template");
+		switch (monsterRace) {
+		case "0":
+			damgeResist = 0;
+			break;
+
+		case "1":
+			damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_RaceDamge_1;
+			break;
+
+		case "2":
+			damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_RaceDamge_2;
+			break;
+
+		case "3":
+			damgeResist = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_RaceDamge_3;
+			break;
+		}
+
+		//种族伤害
+		damge = (int)(damge * (pro_1 + damgeResist));
+
+        //普通攻击Boss加成
+        if (ifComAct)
+        {
+            float actBossAddValue = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Boss_ActAdd;
+            damge = (int)(damge * (pro_1 + actBossAddValue));
+        }
+        else {
+            //技能攻击加成
+            float actBossAddValue = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Boss_SkillAdd;
+            damge = (int)(damge * (pro_1 + actBossAddValue));
+        }
+
+
+        //每次伤害增加的
+        damge = damge + roseGuDingValue;
+
+        /*
+        //判定是否暴击
+        if (ifCri)
+        {
+            damge = damge * 2;
+            actTargetObj.GetComponent<AI_1>().HitCriStatus = true;
+        }
+        */
+        //扣血
+        actTargetObj.GetComponent<AI_Property>().AI_Hp = actTargetObj.GetComponent<AI_Property>().AI_Hp - damge;
+
+        //吸血,技能不触发吸血,只有普攻触发
+        if (skillID == "62000001"|| skillID == "60011001"|| skillID == "60012001") {
+            int xiXueValue = (int)(baseDamge * roseXiXueProValue);
+            //Debug.Log("xiXueValue = " + xiXueValue);
+            if (xiXueValue > 0)
+            {
+                Game_PublicClassVar.Get_function_Rose.addRoseHp(xiXueValue, "1", false);
+                Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseIfXiXue = true;
+                string langStr = LanguageManager.Instance.LoadLocalization("吸血");
+                Game_PublicClassVar.Get_function_UI.Fight_FlyText("1", xiXueValue.ToString(), "1", actTargetObj, langStr, "");
+            }
+        }
+
+        //开启怪物飘字
+        actTargetObj.GetComponent<AI_1>().HitStatus = true;
+        Game_PublicClassVar.Get_function_UI.Fight_FlyText("3", damge.ToString(), "0",actTargetObj, flyValueFrontStr, flyValueLastStr);
+        //每次攻击有概率改变怪物当前的攻击目标
+        if (Random.value <= (0.1f + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_ChouHenValue))
+        {
+            actTargetObj.GetComponent<AI_1>().AI_Target = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose;
+        }
+
+        //副本开启伤害统计
+        if (Game_PublicClassVar.Get_game_PositionVar.FuBen_ShangHai_Status) {
+            Game_PublicClassVar.Get_game_PositionVar.FuBen_ShangHaiValue_Rose = Game_PublicClassVar.Get_game_PositionVar.FuBen_ShangHaiValue_Rose + damge;
+        }
+
+        //记录玩家造成的最高伤害
+        if (damge >= Game_PublicClassVar.Get_wwwSet.YanZheng_RoseActMaxValue) {
+            Game_PublicClassVar.Get_wwwSet.YanZheng_RoseActMaxValue = damge;
+            Game_PublicClassVar.Get_wwwSet.YanZheng_ActMaxSaveStatus = true;
+        }
+
+        return damge;
+    }
 
 }
