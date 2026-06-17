@@ -7,7 +7,6 @@ using CodeStage.AntiCheat.ObscuredTypes;
 
 public class Rose_Status : MonoBehaviour
 {
-
     //角色当前状态的脚本
     //里面存放角色当前的各种的状态，例如施法状态等等
     public GameObject Obj_RoseModel;                    //角色Model
@@ -1421,7 +1420,6 @@ public class Rose_Status : MonoBehaviour
         //播放技能动作
         if (SkillAnimationStatus)
         {
-
             //Debug.Log("播放技能动作RoseSingStatus = " + RoseSingStatus + ";Move_Target_Status = " + Move_Target_Status + ";Move_Target_SaveStatus = " + Move_Target_SaveStatus);
 
 
@@ -1476,6 +1474,7 @@ public class Rose_Status : MonoBehaviour
                 //播放技能僵直动作
                 RoseStatus = "5";
                 ai_nav.speed = 0;
+                
                 //Debug.Log("准备播放技能动作2");
             }
         }
@@ -1936,11 +1935,17 @@ public class Rose_Status : MonoBehaviour
                 }
                 fanjiStatusNum = fanjiStatusNum + 1;
             }
-
+            
             //Debug.Log("触发受击技能效果！");
             actTriggerSkill("2", "3");  //受到伤害触发被动技能
 
         }
+
+        if (SkillStatus)
+        {
+            actTriggerSkill("2", "6");  //释放技能被动技能
+        }
+        
 
         //当角色升级
         if (RoseUpLv)
@@ -2185,29 +2190,61 @@ public class Rose_Status : MonoBehaviour
                     }
                 }
                 */
-
-                //设置受击特效
+                
                 if (Obj_ActTarget != null)
                 {
-                    Obj_ActTarget.GetComponent<AI_1>().HitStatus = true;      //播放受击特效
-                    Obj_ActTarget.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act_2");
-                    Obj_ActTarget.GetComponent<AI_1>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-                    Obj_ActTarget.GetComponent<AI_1>().IfHitEffect = true;
-                    Game_PublicClassVar.Get_fight_Formult.RoseActMonster("62000001", Obj_ActTarget, false, true);
-                    if (Random.value < this.GetComponent<Rose_Proprety>().Rose_Cri)
+                    if (RoseSkill_BianShen.IsBianShen)
                     {
-                        roseCriActStatus = true;
-                        //Debug.Log("我开启了暴击");
+                        //设置实例化技能
+                        string zhanshi_SkillID = "60040061";
+                        string objName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", zhanshi_SkillID, "Skill_Template");
+                        GameObject skillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + objName);
+                        GameObject SkillObject_pa = (GameObject)Instantiate(skillObj);
+                        SkillObject_pa.SetActive(false);
+                        //设置技能位置
+                        SkillObject_pa.transform.localRotation = this.Obj_ActTarget.transform.rotation;
+                        SkillObject_pa.transform.localScale = new Vector3(1, 1, 1);
+                        SkillObject_pa.transform.position = new Vector3(Obj_ActTarget.transform.position.x, Obj_ActTarget.transform.position.y, Obj_ActTarget.transform.position.z);
+                        SkillObject_pa.SetActive(true);
+                        //传递技能对应的值
+                        SkillObjBase SkillStatus = SkillObject_pa.transform.GetComponent<SkillObjBase>();
+                        SkillStatus.SkillID = zhanshi_SkillID;
+                        SkillStatus.SkillOpen = true;   //开启技能，需要在设置完值后开启技能
+                        SkillStatus.SkillTargetObj = Obj_ActTarget;
+
+                        rosePassiveSkill(); //被动技能
+
+                        actTriggerSkill("2", "1");  //被动技能
+
+                        //播放音效
+                        Game_PublicClassVar.Get_function_UI.PlaySource("20001", "2");
                     }
+                    else
+                    {
+                        //设置受击特效
+                        if (Obj_ActTarget != null)
+                        {
+                            Obj_ActTarget.GetComponent<AI_1>().HitStatus = true;      //播放受击特效
+                            Obj_ActTarget.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act_2");
+                            Obj_ActTarget.GetComponent<AI_1>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                            Obj_ActTarget.GetComponent<AI_1>().IfHitEffect = true;
+                            Game_PublicClassVar.Get_fight_Formult.RoseActMonster("62000001", Obj_ActTarget, false, true);
+                            if (Random.value < this.GetComponent<Rose_Proprety>().Rose_Cri)
+                            {
+                                roseCriActStatus = true;
+                                //Debug.Log("我开启了暴击");
+                            }
 
-                    rosePassiveSkill(); //被动技能
+                            rosePassiveSkill(); //被动技能
 
-                    actTriggerSkill("2", "1");  //被动技能
+                            actTriggerSkill("2", "1");  //被动技能
 
-                    //播放音效
-                    Game_PublicClassVar.Get_function_UI.PlaySource("20001", "2");
+                            //播放音效
+                            Game_PublicClassVar.Get_function_UI.PlaySource("20001", "2");
+                        }
+                    }
                 }
-
+                
                 break;
 
             //法师普通攻击
