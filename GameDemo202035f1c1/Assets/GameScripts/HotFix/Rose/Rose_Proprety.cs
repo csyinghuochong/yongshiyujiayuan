@@ -310,6 +310,7 @@ public class Rose_Proprety : MonoBehaviour {
     public ObscuredFloat Rose_HuShiDefValuePro_Add;             //忽视目标防御值_百分比                       
     public ObscuredFloat Rose_HuShiAdfValuePro_Add;             //忽视目标魔防值_百分比
     public ObscuredFloat Rose_XiXuePro_Add;                     //吸血百分比
+    public ObscuredFloat Rose_ActAddPro_Add;                    //普攻增伤
 
     public ObscuredInt Rose_CriRating_Add;                      //暴击等级
     public ObscuredInt Rose_ResilienceRating_Add;               //韧性等级

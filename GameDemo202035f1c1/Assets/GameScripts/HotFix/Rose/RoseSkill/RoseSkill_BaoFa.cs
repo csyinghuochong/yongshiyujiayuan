@@ -41,7 +41,7 @@ public class RoseSkill_BaoFa : MonoBehaviour
         // }
 
         roseProprety.Rose_XiXuePro_Add += value_2;
-        roseProprety.Rose_ActAddPro += value_3;
+        roseProprety.Rose_ActAddPro_Add += value_3;
 
         Game_PublicClassVar.Get_game_PositionVar.UpdataRoseBuffProperty = true;
         
@@ -95,7 +95,7 @@ public class RoseSkill_BaoFa : MonoBehaviour
     {
         Debug.LogWarning("爆发技能结束！！！！！");
         roseProprety.Rose_XiXuePro_Add -= value_2;
-        roseProprety.Rose_ActAddPro -= value_3;
+        roseProprety.Rose_ActAddPro_Add -= value_3;
         
         Game_PublicClassVar.Get_game_PositionVar.UpdataRoseBuffProperty = true;
     }
