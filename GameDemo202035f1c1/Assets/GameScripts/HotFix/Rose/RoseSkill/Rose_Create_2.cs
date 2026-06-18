@@ -6,6 +6,8 @@ using System.Collections.Generic;
 public class Rose_Create_2 : MonoBehaviour
 {
 
+    public int num;                     //召唤物数量
+    
 	private GameObject SkillEffect;     //技能特效
 	//private GameObject skillEffect;   //脚本中实例化的特效ID
     public float SkillTime;             //技能特效播放时间
@@ -21,8 +23,10 @@ public class Rose_Create_2 : MonoBehaviour
     private Object monsterObj;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 
+        num = 0;
         //获取绑点
         /*
         game_PositionVar = Game_PublicClassVar.Get_game_PositionVar;
@@ -177,6 +181,33 @@ public class Rose_Create_2 : MonoBehaviour
                             }
                         }
                     }
+                }
+
+                
+                if (ifXiangTong == "2")
+                {
+                    for (int y = 0; y < monsterSetObj.transform.childCount; y++)
+                    {
+                        GameObject go = monsterSetObj.transform.GetChild(y).gameObject;
+                        string name = go.name.Replace("(Clone)", "");
+                        if (name == createName)
+                        {
+                            if (go.GetComponent<AI_Property>() != null)
+                            {
+                                if (go.GetComponent<AI_Property>().AI_Hp > 0)
+                                {
+                                    num++;
+                                }
+                            }
+                        }
+                    }
+
+                    if (num >= 10)
+                    {
+                        Game_PublicClassVar.Get_function_UI.GameGirdHint_Front("最多召唤10只！");
+                        return;
+                    }
+                    
                 }
 
                 //Debug.Log("createName = " + createName);

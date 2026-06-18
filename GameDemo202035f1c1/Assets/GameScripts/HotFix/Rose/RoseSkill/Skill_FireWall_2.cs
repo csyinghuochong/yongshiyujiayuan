@@ -178,9 +178,9 @@ public class Skill_FireWall_2 : MonoBehaviour
                     string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffID", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
                     if (buffID != "0" && buffID != "")
                     {
-                
                         //Debug.Log("触发BUFF:" + buffID);
                         Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, Game_PublicClassVar.Get_game_PositionVar.Obj_Rose);
+                        return;
                     }
                 }
 
