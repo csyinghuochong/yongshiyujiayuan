@@ -1143,6 +1143,7 @@ public class Game_PositionVar : MonoBehaviour {
             //副本_1 次数
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("FuBen_1_DayNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("FuBen_2_DayNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
+            Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("FuBen_3_DayNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
 
             //大秘境次数
             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("DaMiJing_DayNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");

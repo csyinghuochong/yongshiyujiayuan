@@ -677,7 +677,7 @@ public class UI_ItemTips : MonoBehaviour {
                             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("DeathMonsterID", "", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
                             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("FuBen_1_DayNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
                             Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("FuBen_2_DayNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
-
+                            Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("FuBen_3_DayNum", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseDayReward");
                             Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
 
                             string langStrHint = LanguageManager.Instance.LoadLocalizationHint("hint_319");
