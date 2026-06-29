@@ -57,10 +57,10 @@
 	<date ID="1572" Name="圣光套装2" Name_EN="Lawbringer" NeedEquipID="10030210;10030206;10030211;10030205" NeedEquipNum="1;1;1;1;1" SuitPropertyID="2,15721;3,15722;4,15723" />
 	<date ID="1573" Name="圣光套装3" Name_EN="Lawbringer" NeedEquipID="10030203;10030204" NeedEquipNum="1;1" SuitPropertyID="2,15731" />
 	<date ID="1574" Name="圣光套装4" Name_EN="Lawbringer" NeedEquipID="10030207;10030208;10030209" NeedEquipNum="1;1;1" SuitPropertyID="3,15741" />
-	<date ID="1581" Name="圣光套装1" Name_EN="Lawbringer" NeedEquipID="10030301;10030302" NeedEquipNum="1;1" SuitPropertyID="2,15711" />
-	<date ID="1582" Name="圣光套装2" Name_EN="Lawbringer" NeedEquipID="10030310;10030306;10030311;10030305" NeedEquipNum="1;1;1;1;1" SuitPropertyID="2,15721;3,15722;4,15723" />
-	<date ID="1583" Name="圣光套装3" Name_EN="Lawbringer" NeedEquipID="10030303;10030304" NeedEquipNum="1;1" SuitPropertyID="2,15731" />
-	<date ID="1584" Name="圣光套装4" Name_EN="Lawbringer" NeedEquipID="10030307;10030308;10030309" NeedEquipNum="1;1;1" SuitPropertyID="3,15741" />
+	<date ID="1581" Name="不朽套装1" Name_EN="Lawbringer" NeedEquipID="10030301;10030302" NeedEquipNum="1;1" SuitPropertyID="2,15811" />
+	<date ID="1582" Name="不朽套装2" Name_EN="Lawbringer" NeedEquipID="10030310;10030306;10030311;10030305" NeedEquipNum="1;1;1;1;1" SuitPropertyID="2,15821;3,15822;4,15823" />
+	<date ID="1583" Name="不朽套装3" Name_EN="Lawbringer" NeedEquipID="10030303;10030304" NeedEquipNum="1;1" SuitPropertyID="2,15831" />
+	<date ID="1584" Name="不朽套装4" Name_EN="Lawbringer" NeedEquipID="10030307;10030308;10030309" NeedEquipNum="1;1;1" SuitPropertyID="3,15841" />
 	<date ID="3001" Name="生肖套装" Name_EN="" NeedEquipID="10070101;10070102;10070103;10070104" NeedEquipNum="1;1;1;1;1" SuitPropertyID="4,16011" />
 	<date ID="3002" Name="生肖套装" Name_EN="" NeedEquipID="10070105;10070106;10070107;10070108" NeedEquipNum="1;1;1;1;1" SuitPropertyID="4,16012" />
 	<date ID="3003" Name="生肖套装" Name_EN="" NeedEquipID="10070109;10070110;10070111;10070112" NeedEquipNum="1;1;1;1;1" SuitPropertyID="4,16013" />
