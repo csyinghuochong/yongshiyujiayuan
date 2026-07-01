@@ -3100,7 +3100,7 @@ public class Function_AI : MonoBehaviour {
         int nowPetLv = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetLv", "ID", rosePet_ID, "RosePet"));
         int nowPetExp = int.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("PetExp", "ID", rosePet_ID, "RosePet"));
         //最高级70级
-        if (nowPetLv >= 70) {
+        if (nowPetLv >= 75) {
             return;
         }
 
