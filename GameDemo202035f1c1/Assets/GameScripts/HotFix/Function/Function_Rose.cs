@@ -324,8 +324,8 @@ public class Function_Rose {
 
         //判定是否升级
         int Rose_Lv = int.Parse(dataSet.DataSet_ReadData("Lv", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData"));
-        //等级超过70级不获得任何经验
-        if (Rose_Lv >= 70)
+        //等级超过75级不获得任何经验
+        if (Rose_Lv >= 75)
         {
             return true;
         }
