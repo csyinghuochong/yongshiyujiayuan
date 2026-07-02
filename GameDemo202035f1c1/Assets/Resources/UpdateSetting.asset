@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e6e34fc76a4d90a1f83b5dcc1d5f65, type: 3}
   m_Name: UpdateSetting
   m_EditorClassIdentifier: 
-  HostServerURL: http://weijinghot.weijinggame.com/weijing1/DLCBeta20220362/YongShi/Android/TapTap/v1.0
+  HostServerURL: http://weijinghot.weijinggame.com/weijing1/DLCYongShi/Android/TapTap/v1.0
   HotUpdateAssemblies:
   - Game.Hotfix.dll
   - Assembly-CSharp.dll
