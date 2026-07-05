@@ -344,11 +344,11 @@ public class WWWSet:MonoBehaviour{
         Game_PublicClassVar.function_Country = null;
 
         //设置屏幕自动旋转， 并置支持的方向
-        Screen.orientation = ScreenOrientation.AutoRotation;
-        //Screen.autorotateToLandscapeLeft = true;
-        //Screen.autorotateToLandscapeRight = true;
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
         Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
+        Screen.orientation = ScreenOrientation.AutoRotation;
         logStatus = false;              //log状态开启
         logNoKeyStatus = false;
 
