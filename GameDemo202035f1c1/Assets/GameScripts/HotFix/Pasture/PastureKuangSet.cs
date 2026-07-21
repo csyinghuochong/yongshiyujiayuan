@@ -20,10 +20,10 @@ public class PastureKuangSet : MonoBehaviour
         Init();
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void Init() {
 
-        //Debug.Log("³õÊ¼»¯kuang...");
+        //Debug.Log("åˆå§‹åŒ–kuang...");
 
         if(ShowTitleObj!=null) {
             Destroy(ShowTitleObj);
@@ -32,10 +32,10 @@ public class PastureKuangSet : MonoBehaviour
         Vector3 Hp_show_position = Camera.main.WorldToViewportPoint(Obj_Position.transform.position);
         Hp_show_position = Game_PublicClassVar.Get_function_UI.RetrunScreenV2(Hp_show_position);
 
-        //ÊµÀı»¯UI
+        //å®ä¾‹åŒ–UI
         ShowTitleObj = (GameObject)Instantiate(Obj_ShowTitle);
 
-        //ÏÔÊ¾UI,²¢¶ÔÆäÏàÓ¦µÄÊôĞÔĞŞÕı
+        //æ˜¾ç¤ºUI,å¹¶å¯¹å…¶ç›¸åº”çš„å±æ€§ä¿®æ­£
         ShowTitleObj.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UI_PastureKuangSet.transform);
         ShowTitleObj.transform.localPosition = new Vector3(Hp_show_position.x, Hp_show_position.y, 0);
         ShowTitleObj.transform.localScale = new Vector3(1f, 1f, 1f);
@@ -52,14 +52,14 @@ public class PastureKuangSet : MonoBehaviour
     void Update()
     {
 
-        //³ÖĞøĞŞÕıÑªÌõÎ»ÖÃ
+        //æŒç»­ä¿®æ­£è¡€æ¡ä½ç½®
         if (ShowTitleObj != null && Obj_Position !=null)
         {
 
             Vector3 Hp_show_position = Camera.main.WorldToViewportPoint(Obj_Position.transform.position);
             Hp_show_position = Game_PublicClassVar.Get_function_UI.RetrunScreenV2(Hp_show_position);
 
-            //ÑªÌõÎ»ÖÃĞŞÕı£¨¸ù¾İ·Ö±æÂÊµÄ±ä»¯¶ø±ä»¯£©
+            //è¡€æ¡ä½ç½®ä¿®æ­£ï¼ˆæ ¹æ®åˆ†è¾¨ç‡çš„å˜åŒ–è€Œå˜åŒ–ï¼‰
             ShowTitleObj.transform.localPosition = new Vector3(Hp_show_position.x, Hp_show_position.y, 0);
         }
 
@@ -71,7 +71,7 @@ public class PastureKuangSet : MonoBehaviour
     }
 
 
-    //Íæ¼Òµã»÷ÊÂ¼ş
+    //ç©å®¶ç‚¹å‡»äº‹ä»¶
     public void Click() {
 
         if (UI_PastureKuangShowName.IsKuangShowNameOpen)
@@ -89,7 +89,7 @@ public class PastureKuangSet : MonoBehaviour
             showobj.GetComponent<RectTransform>().offsetMin = new Vector2(0, 0);
             showobj.GetComponent<RectTransform>().offsetMax = new Vector2(0, 0);
             showobj.GetComponent<UI_PastureKuangShowName>().KuangSpaceID = KuangSpaceID;
-            showobj.GetComponent<UI_PastureKuangShowName>().Init();     //³õÊ¼»¯
+            showobj.GetComponent<UI_PastureKuangShowName>().Init();     //åˆå§‹åŒ–
         }
     }
 }

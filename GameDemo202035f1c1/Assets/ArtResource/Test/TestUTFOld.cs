@@ -18,7 +18,7 @@ public class TestUTFOld : MonoBehaviour
 
     public static string GetUtfTest()
     {
-        return "²âÊÔUTF8_¾É";
+        return "æµ‹è¯•UTF8_æ—§";
     }
 
 

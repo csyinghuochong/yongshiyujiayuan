@@ -182,7 +182,7 @@ public class YinSi : MonoBehaviour
         Application.Quit();
     }
 
-    //����˽
+    //打开隐私
     public void Btn_OpenYinSi()
     {
         //Application.OpenURL("http://verification.weijinggame.com/yinsi/");

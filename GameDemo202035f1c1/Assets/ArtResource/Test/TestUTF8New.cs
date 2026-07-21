@@ -18,7 +18,7 @@ public class TestUTF8New : MonoBehaviour
 
     public static string GetUtfTest()
     {
-        return "²âÊÔUTF8_ÐÂ";
+        return "æµ‹è¯•UTF8_æ–°";
     }
 
 }

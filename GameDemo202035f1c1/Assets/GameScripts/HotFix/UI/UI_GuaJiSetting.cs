@@ -48,15 +48,15 @@ public class UI_GuaJiSetting : MonoBehaviour
         if (timeSum >= 1)
         {
             timeSum = 0;
-            Obj_GuaJiNumShow.GetComponent<Text>().text = "今日挂机数量:" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().AutomaticGuaJiNum + "/2000";
+            Obj_GuaJiNumShow.GetComponent<Text>().text = "浠婃棩鎸傛満鏁伴噺:" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().AutomaticGuaJiNum + "/2000";
 
             if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().AutomaticGuaJiStatus) {
-                Obj_GuaJiNumShowText.GetComponent<Text>().text = "取消挂机";
+                Obj_GuaJiNumShowText.GetComponent<Text>().text = "鍙栨秷鎸傛満";
             }
         }
     }
 
-    //点击拾取按钮
+    //鐐瑰嚮鎷惧彇鎸夐挳
     public void Btn_ShiQuType(string type) {
 
         if (type == "1") {
@@ -90,12 +90,12 @@ public class UI_GuaJiSetting : MonoBehaviour
 
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseConfig");
 
-        //更新显示
+        //鏇存柊鏄剧ず
         updateSettingShow();
 
     }
 
-    //更新显示
+    //鏇存柊鏄剧ず
     private void updateSettingShow()
     {
         Game_PublicClassVar.Get_game_PositionVar.GuaJiShiQuType_1 = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ShiQuType_1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");

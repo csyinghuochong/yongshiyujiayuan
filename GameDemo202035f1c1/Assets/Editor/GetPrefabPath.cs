@@ -12,7 +12,7 @@ public class GetPrefabPath : MonoBehaviour
         UnityEngine.GameObject go = selectgo as UnityEngine.GameObject;
         UI_FunctionOpen ttt = go.GetComponent<UI_FunctionOpen>();
 
-        //»ñÈ¡ÊµÀı×é¼şµÄËùÓĞ×Ö¶Î£¨BindingFlagsÏŞÖÆÃ¶¾Ù£©
+        //è·å–å®ä¾‹ç»„ä»¶çš„æ‰€æœ‰å­—æ®µï¼ˆBindingFlagsé™åˆ¶æšä¸¾ï¼‰
         FieldInfo[] allFieldInfo = (ttt.GetType()).GetFields(BindingFlags.NonPublic | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly | BindingFlags.Static);
 
         string prefabPath = "";

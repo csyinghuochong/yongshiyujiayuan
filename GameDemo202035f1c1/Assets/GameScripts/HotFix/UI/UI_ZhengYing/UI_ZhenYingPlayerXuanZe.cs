@@ -39,7 +39,7 @@ public class UI_ZhenYingPlayerXuanZe : MonoBehaviour
         
     }
 
-    //╧ь╠усно╥
+    //Е┘ЁИ≈╜Ф╦╦Ф┬▐
     public void Btn_Close() {
 
         Destroy(this.gameObject);

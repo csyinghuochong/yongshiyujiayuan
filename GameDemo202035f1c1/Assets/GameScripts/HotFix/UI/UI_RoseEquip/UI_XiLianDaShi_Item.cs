@@ -37,10 +37,10 @@ public class UI_XiLianDaShi_Item : MonoBehaviour
         Obj_Title.GetComponent<Text>().text = Name;
         Text_attribute.text = Des;
         Text_gailvup.text = SkillDes;
-        Text_gailvup.text = "获得" + Name + "洗炼之力,获得极品概率提升!";
-        //string desc = "需要洗练熟练度 {0}/{1}";
+        Text_gailvup.text = "鑾峰緱" + Name + "娲楃偧涔嬪姏,鑾峰緱鏋佸搧姒傜巼鎻愬崌!";
+        //string desc = "闇�瑕佹礂缁冪啛缁冨害 {0}/{1}";
         //string.(desc, NeedXiLianValue, total_value);
-        Text_needvalue.text = "需要洗练熟练度 " + NeedXiLianValue + "/" + total_value;
+        Text_needvalue.text = "闇�瑕佹礂缁冪啛缁冨害 " + NeedXiLianValue + "/" + total_value;
 
         int nowNum = Game_PublicClassVar.Get_function_Rose.ReturnXiLianNum();
         if (NeedXiLianValue == "" || NeedXiLianValue == null) {
