@@ -856,7 +856,7 @@ public class UI_EquipMake : MonoBehaviour {
 		case "3":
 
 			//显示底图
-			obj = Resources.Load ("GameUI/" + "Btn/Btn_12_1", typeof(Sprite));
+			obj = ResourcesManager.Instance.LoadIconSync<Sprite>("GameUI/" + "Btn/Btn_12_1");
 			img = obj as Sprite;
 			Btn_DaZao.GetComponent<Image> ().sprite = img;
 			Obj_EquipBtnText_3.GetComponent<Text> ().color = new Color (0.415f, 0.25f, 0.1f);
