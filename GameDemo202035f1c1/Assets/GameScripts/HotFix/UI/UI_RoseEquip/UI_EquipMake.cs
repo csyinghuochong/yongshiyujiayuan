@@ -724,9 +724,8 @@ public class UI_EquipMake : MonoBehaviour {
             if (makeItemList[listNum] != "0" && makeItemList[listNum] != "")
             {
 				//实例化一个宠物列表控件
-				GameObject petListObj = (GameObject)Instantiate(Obj_ItemList);
-				petListObj.transform.SetParent(Obj_ItemListSet.transform);
-				petListObj.transform.localScale = new Vector3(1, 1, 1);
+				GameObject petListObj = (GameObject)Instantiate(Obj_ItemList, Obj_ItemListSet.transform);
+                petListObj.transform.localScale = new Vector3(1, 1, 1);
 
                 petListObj.GetComponent<UI_EquipMakeListObj>().PetOnlyID = makeItemList[listNum];
 				petListObj.GetComponent<UI_EquipMakeListObj>().UpdateStatus = true;

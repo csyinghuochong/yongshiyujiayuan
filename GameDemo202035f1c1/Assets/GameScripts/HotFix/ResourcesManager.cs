@@ -84,9 +84,19 @@ public class ResourcesManager
         return LoadAssetSync<T>("Assets/Bundles/Icon/" + relativePath);
     }
 
+    public async UniTask<T> LoadIconAssetAsync<T>(string relativePath) where T : UnityEngine.Object
+    {
+        return await LoadAssetAsync<T>("Assets/Bundles/Icon/" + relativePath);
+    }
+
     public T LoadEffectSync<T>(string relativePath) where T : UnityEngine.Object
     {
         return LoadAssetSync<T>("Assets/Bundles/Effect/" + relativePath);
+    }
+    
+    public async UniTask<T> LoadEffectAsync<T>(string relativePath) where T : UnityEngine.Object
+    {
+        return await LoadAssetAsync<T>("Assets/Bundles/Effect/" + relativePath);
     }
 
     public T LoadUnitSync<T>(string relativePath) where T : UnityEngine.Object

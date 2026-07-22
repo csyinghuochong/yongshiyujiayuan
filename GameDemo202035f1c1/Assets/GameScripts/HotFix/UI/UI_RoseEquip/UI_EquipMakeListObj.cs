@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using Cysharp.Threading.Tasks;
 
 public class UI_EquipMakeListObj : MonoBehaviour {
 
@@ -24,12 +25,12 @@ public class UI_EquipMakeListObj : MonoBehaviour {
 	void Update () {
         if (UpdateStatus) {
             UpdateStatus = false;
-            showPetListProperty();
+            showPetListProperty().Forget();
         }
 	}
 
     //展示宠物列表信息
-    void showPetListProperty() { 
+    async UniTask showPetListProperty() { 
     
         //获取宠物名称
 		string makeItemID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MakeItemID", "ID", PetOnlyID, "EquipMake_Template");
@@ -48,13 +49,11 @@ public class UI_EquipMakeListObj : MonoBehaviour {
 		Obj_ItemLv.GetComponent<Text>().text = makeLv + "级";
 
         //显示底图
-		Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + itemIcon);
-        Sprite img = obj as Sprite;
+        Sprite img = await ResourcesManager.Instance.LoadIconAssetAsync<Sprite>("ItemIcon/" + itemIcon);
 		Obj_ItemIcon.GetComponent<Image>().sprite = img;
 
 		//显示品质
-		object obj2 = ResourcesManager.Instance.LoadIconSync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(itemquality));
-		Sprite itemQuality = obj2 as Sprite;
+		Sprite itemQuality = await ResourcesManager.Instance.LoadIconAssetAsync<Sprite>(Game_PublicClassVar.Get_function_UI.ItemQualiytoPath(itemquality));
 		Obj_ItemQuality.GetComponent<Image>().sprite = itemQuality;
 		/*
 		if(Obj_FuJiObj.GetComponent<UI_EquipMake>().makeItemlasterObj!=null){
@@ -82,8 +81,7 @@ public class UI_EquipMakeListObj : MonoBehaviour {
 		if (!ifMakeStatus) {
 
 			//置灰
-			object huiObj = (Material)ResourcesManager.Instance.LoadEffectSync<Material>("UI_Effect/Sharde/UI_Hui");
-			Material huiMaterial = huiObj as Material;
+			Material huiMaterial = await ResourcesManager.Instance.LoadEffectAsync<Material>("UI_Effect/Sharde/UI_Hui");
 			Obj_ItemIcon.GetComponent<Image>().material = huiMaterial;
 			Obj_ItemQuality.GetComponent<Image>().material = huiMaterial;
 			Obj_ItemName.GetComponent<Text>().color = new Color(0.55f,0.55f,0.55f,1);
