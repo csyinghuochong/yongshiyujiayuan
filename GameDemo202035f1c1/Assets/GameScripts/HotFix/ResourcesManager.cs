@@ -19,7 +19,7 @@ public class ResourcesManager
 
     private ResourcePackage Package;
 
-    public Dictionary<string, HandleBase> Handlers = new Dictionary<string, HandleBase>();
+    public Dictionary<string, AssetHandle> Handlers = new();
 
     public void Awake()
     {
@@ -28,92 +28,48 @@ public class ResourcesManager
 
     public T LoadAssetSync<T>(string location) where T : UnityEngine.Object
     {
-        AssetHandle handle = YooAssets.LoadAssetSync<T>(location);
-
-        return (T)(handle.AssetObject);
-    }
-
-    public Object LoadAssetSync(string location, System.Type type)
-    {
-        AssetHandle handle = YooAssets.LoadAssetSync(location, type);
-
-        return handle.AssetObject;
-    }
-
-    public T LoadAssetSync<T>(params string[] locations) where T : UnityEngine.Object
-    {
-        foreach (string location in locations)
+        if (!YooAssets.CheckLocationValid(location))
         {
-            if (string.IsNullOrEmpty(location))
-                continue;
-
-            if (!YooAssets.CheckLocationValid(location))
-                continue;
-
-            AssetHandle handle = YooAssets.LoadAssetSync<T>(location);
-            if (handle.AssetObject != null)
-                return (T)handle.AssetObject;
-        }
-        
-        Debug.LogError($"资源路径错误：{locations[0]}");
-
-        return null;
-    }
-
-    public Object LoadAssetSync(string[] locations, System.Type type)
-    {
-        foreach (string location in locations)
-        {
-            if (string.IsNullOrEmpty(location))
-                continue;
-
-            if (!YooAssets.CheckLocationValid(location))
-                continue;
-
-            AssetHandle handle = YooAssets.LoadAssetSync(location, type);
-            if (handle.AssetObject != null)
-                return handle.AssetObject;
+            Debug.LogError($"资源路径错误：{location}");
+            return null;
         }
 
-        return null;
-    }
+        AssetHandle handle;
+        if (!Handlers.TryGetValue(location, out AssetHandle selfHandler))
+        {
+            handle = YooAssets.LoadAssetSync<T>(location);
+            Handlers.Add(location, handle);
+        }
+        else
+        {
+            handle = selfHandler;
+        }
 
-    public T LoadIconSync<T>(string relativePath) where T : UnityEngine.Object
-    {
-        return LoadAssetSync<T>(BuildPaths("Assets/Bundles/Icon/" + relativePath, ".png", ".PNG", ".jpg", ".JPG"));
-    }
-
-    public T LoadEffectSync<T>(string relativePath) where T : UnityEngine.Object
-    {
-        return LoadAssetSync<T>(BuildPaths("Assets/Bundles/Effect/" + relativePath, GetExtensions(typeof(T))));
-    }
-
-    public T LoadUnitSync<T>(string relativePath) where T : UnityEngine.Object
-    {
-        return LoadAssetSync<T>(BuildPaths("Assets/Bundles/Unit/" + relativePath, GetExtensions(typeof(T))));
-    }
-
-    public T LoadTextureSync<T>(string relativePath) where T : UnityEngine.Object
-    {
-        return LoadAssetSync<T>(BuildPaths("Assets/Bundles/Texture/" + relativePath, GetExtensions(typeof(T))));
-    }
-
-    public T LoadAudioSync<T>(string relativePath) where T : UnityEngine.Object
-    {
-        return LoadAssetSync<T>(BuildPaths("Assets/Bundles/Audio/" + relativePath, ".mp3", ".ogg", ".wav"));
-    }
-
-    public T LoadUGUISync<T>(string relativePath) where T : UnityEngine.Object
-    {
-        return LoadAssetSync<T>("Assets/Bundles/UI/" + relativePath + ".prefab");
+        return (T)handle.AssetObject;
     }
 
     public async UniTask<T> LoadAssetAsync<T>(string location) where T : UnityEngine.Object
     {
-        AssetHandle handle = YooAssets.LoadAssetAsync<T>(location);
+        if (!YooAssets.CheckLocationValid(location))
+        {
+            Debug.LogError($"资源路径错误：{location}");
+            return null;
+        }
+
+        AssetHandle handle;
+        if (!Handlers.TryGetValue(location, out AssetHandle selfHandler))
+        {
+            handle = YooAssets.LoadAssetAsync<T>(location);
+            Handlers.Add(location, handle);
+        }
+        else
+        {
+            handle = selfHandler;
+        }
+
         await handle.Task;
 
-        return (T)(handle.AssetObject);
+        return (T)handle.AssetObject;
     }
 
     public async UniTask LoadSceneAsync(string location)
@@ -122,35 +78,34 @@ public class ResourcesManager
         await sceneHandle.Task;
     }
 
-    private static string[] BuildPaths(string rootPath, params string[] extensions)
+
+    public T LoadIconSync<T>(string relativePath) where T : UnityEngine.Object
     {
-        if (extensions == null || extensions.Length == 0)
-            return new[] { rootPath };
-
-        string[] locations = new string[extensions.Length];
-        for (int i = 0; i < extensions.Length; i++)
-            locations[i] = rootPath + extensions[i];
-
-        return locations;
+        return LoadAssetSync<T>("Assets/Bundles/Icon/" + relativePath);
     }
 
-    private static string[] GetExtensions(System.Type type)
+    public T LoadEffectSync<T>(string relativePath) where T : UnityEngine.Object
     {
-        if (type == typeof(GameObject))
-            return new[] { ".prefab" };
+        return LoadAssetSync<T>("Assets/Bundles/Effect/" + relativePath);
+    }
 
-        if (type == typeof(Material))
-            return new[] { ".mat" };
+    public T LoadUnitSync<T>(string relativePath) where T : UnityEngine.Object
+    {
+        return LoadAssetSync<T>("Assets/Bundles/Unit/" + relativePath);
+    }
 
-        if (type == typeof(RenderTexture))
-            return new[] { ".renderTexture" };
+    public T LoadTextureSync<T>(string relativePath) where T : UnityEngine.Object
+    {
+        return LoadAssetSync<T>("Assets/Bundles/Texture/" + relativePath);
+    }
 
-        if (type == typeof(Texture) || type == typeof(Texture2D))
-            return new[] { ".png", ".PNG", ".jpg", ".JPG", ".tga", ".TGA", ".psd", ".PSD", ".renderTexture" };
+    public T LoadAudioSync<T>(string relativePath) where T : UnityEngine.Object
+    {
+        return LoadAssetSync<T>("Assets/Bundles/Audio/" + relativePath);
+    }
 
-        if (type == typeof(AudioClip))
-            return new[] { ".mp3", ".ogg", ".wav" };
-
-        return new[] { ".prefab", ".png", ".PNG", ".jpg", ".JPG", ".mat", ".renderTexture", ".tga", ".TGA", ".psd", ".PSD" };
+    public T LoadUGUISync<T>(string relativePath) where T : UnityEngine.Object
+    {
+        return LoadAssetSync<T>("Assets/Bundles/UI/" + relativePath);
     }
 }
