@@ -19,8 +19,6 @@ public class ResourcesManager
 
     private ResourcePackage Package;
 
-    public Dictionary<string, AssetHandle> Handlers = new();
-
     public void Awake()
     {
         Package = YooAssets.GetPackage("DefaultPackage");
@@ -34,16 +32,7 @@ public class ResourcesManager
             return null;
         }
 
-        AssetHandle handle;
-        if (!Handlers.TryGetValue(location, out AssetHandle selfHandler))
-        {
-            handle = YooAssets.LoadAssetSync<T>(location);
-            Handlers.Add(location, handle);
-        }
-        else
-        {
-            handle = selfHandler;
-        }
+        AssetHandle handle = YooAssets.LoadAssetSync<T>(location);
 
         return (T)handle.AssetObject;
     }
@@ -56,16 +45,7 @@ public class ResourcesManager
             return null;
         }
 
-        AssetHandle handle;
-        if (!Handlers.TryGetValue(location, out AssetHandle selfHandler))
-        {
-            handle = YooAssets.LoadAssetAsync<T>(location);
-            Handlers.Add(location, handle);
-        }
-        else
-        {
-            handle = selfHandler;
-        }
+        AssetHandle handle = YooAssets.LoadAssetAsync<T>(location);
 
         await handle.Task;
 
