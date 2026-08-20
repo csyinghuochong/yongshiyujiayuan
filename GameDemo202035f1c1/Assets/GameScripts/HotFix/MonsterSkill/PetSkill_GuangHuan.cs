@@ -42,22 +42,24 @@ public class PetSkill_GuangHuan : MonoBehaviour
         string effectName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EffectName", "ID", this.gameObject.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
 
         //实例化技能特效
-        GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
-        if (SkillEffect != null)
+        if (effectName != "" && effectName != "0")
         {
-            GameObject effect = (GameObject)Instantiate(SkillEffect);
-            effect.SetActive(false);
-            effect.transform.parent = this.transform;
-            effect.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
-            effect.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            effect.transform.localScale = new Vector3(1, 1, 1);
-            effect.SetActive(true);
+            GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+            if (SkillEffect != null)
+            {
+                GameObject effect = (GameObject)Instantiate(SkillEffect);
+                effect.SetActive(false);
+                effect.transform.parent = this.transform;
+                effect.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
+                effect.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                effect.transform.localScale = new Vector3(1, 1, 1);
+                effect.SetActive(true);
+            }
+            else
+            {
+                //Debug.Log("技能" + effectName + "缺少技能特效");
+            }
         }
-        else
-        {
-            //Debug.Log("技能" + effectName + "缺少技能特效");
-        }
-
         //设置技能位置
         SkillTargetPoint = this.gameObject.GetComponent<SkillObjBase>().SkillTargetPoint;
         this.gameObject.transform.localPosition = new Vector3(SkillTargetPoint.x, SkillTargetPoint.y, SkillTargetPoint.z);

@@ -50,19 +50,22 @@ public class PetSkill_ZhongJi_1 : MonoBehaviour
             //获取技能特效名称
             string acteffectName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EffectName", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
             //实例化技能特效
-            GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
-            if (SkillEffect != null) {
-                GameObject effect = (GameObject)Instantiate(SkillEffect);
-                effect.SetActive(false);
-                //effect.transform.parent = this.transform;
-                //effect.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
-                string positionName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillParentPosition", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
-                effect.transform.parent = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().BoneSet.transform.Find(positionName).transform;
-                effect.transform.localPosition = Vector3.zero;
-                effect.transform.localRotation = Quaternion.Euler(Vector3.zero);
-                effect.SetActive(true);
+            if (acteffectName != "" && acteffectName != "0")
+            {
+                GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + acteffectName);
+                if (SkillEffect != null)
+                {
+                    GameObject effect = (GameObject)Instantiate(SkillEffect);
+                    effect.SetActive(false);
+                    //effect.transform.parent = this.transform;
+                    //effect.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
+                    string positionName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillParentPosition", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
+                    effect.transform.parent = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().BoneSet.transform.Find(positionName).transform;
+                    effect.transform.localPosition = Vector3.zero;
+                    effect.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                    effect.SetActive(true);
+                }
             }
-
             string actDamge = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("ActDamge", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
             //Debug.Log("actDamge = " + actDamge);
             //if (actDamge != "0") {
