@@ -309,7 +309,7 @@ public class UI_EnterGame : MonoBehaviour {
                     DestroyKeepObj = true;
                     //Application.LoadLevel("EnterGame"); //加载场景
                     Debug.Log("进入主城开始...");
-                    YooAssets.LoadSceneSync("Assets/Bundles/Scenes/EnterGame.unity");
+                    ResourcesManager.Instance.LoadSceneSync("Assets/Bundles/Scenes/EnterGame.unity");
                     Debug.Log("进入主城结束...");
                 }
             }
@@ -487,7 +487,16 @@ public class UI_EnterGame : MonoBehaviour {
         //mapName = "EnterGame";
         //Debug.Log("mapName = " + mapName);
         //Debug.Log("mapPositionName = " + mapPositionName);
-        mAsyn = YooAssets.LoadSceneAsync($"Assets/Bundles/Scenes/{mapName}.unity");
+
+        // 释放上一个场景的资源
+        // ResourcesManager.Instance.ReleaseAllAssets();
+        Resources.UnloadUnusedAssets();
+        GC.Collect();
+        
+        // 提前加载一些资源
+        
+
+        mAsyn = ResourcesManager.Instance.LoadSceneAsyncHandle($"Assets/Bundles/Scenes/{mapName}.unity");
         //Debug.Log("开始加载地图 = " + mapName);
         // mAsyn.allowSceneActivation = false;
         //进入游戏界面恢复主界面正常显示
