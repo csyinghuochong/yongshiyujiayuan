@@ -88,10 +88,27 @@ public class UI_DropName : MonoBehaviour
             dropItemIcon = "DropGold";
         }
 
-        object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + dropItemIcon);
-        Sprite itemIcon = obj as Sprite;
-        //UI_ItemIcon.GetComponent<Image>().sprite = itemIcon;
-        ModelMesh.material.mainTexture = itemIcon.texture;
+        Sprite itemIcon = ResourcesManager.Instance.LoadIconSync<Sprite>("ItemIcon/" + dropItemIcon);
+        if (itemIcon != null && ModelMesh != null)
+        {
+            // itemIcon.texture 是整张图集。MeshRenderer 不会像 UI Image 一样自动使用
+            // Sprite 的 UV，因此需要通过材质的缩放和偏移选中图集里的对应区域。
+            Texture2D atlasTexture = itemIcon.texture;
+            Rect iconRect = itemIcon.textureRect;
+            Material modelMaterial = ModelMesh.material;
+
+            modelMaterial.mainTexture = atlasTexture;
+            modelMaterial.mainTextureScale = new Vector2(
+                iconRect.width / atlasTexture.width,
+                iconRect.height / atlasTexture.height);
+            modelMaterial.mainTextureOffset = new Vector2(
+                iconRect.x / atlasTexture.width,
+                iconRect.y / atlasTexture.height);
+        }
+        else
+        {
+            Debug.LogError("掉落物图标加载失败，ItemID=" + DropItemID + ", Icon=" + dropItemIcon);
+        }
         //ModelMesh.material = 
 
         dropItemModel.transform.SetParent(this.gameObject.transform);
