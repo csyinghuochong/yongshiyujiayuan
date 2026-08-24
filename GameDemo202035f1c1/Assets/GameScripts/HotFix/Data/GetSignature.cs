@@ -10,7 +10,6 @@ using ICSharpCode.SharpZipLib.Zip;
 using System.Net.NetworkInformation;
 using CodeStage.AntiCheat.ObscuredTypes;
 using System.Text.RegularExpressions;
-using System.Runtime.InteropServices;
 
 
 public class GetSignature : MonoBehaviour
@@ -23,12 +22,6 @@ public class GetSignature : MonoBehaviour
     public ObscuredInt JianCeNum = 0;
     public int batteryLevel = 100;
     public string ChannelId = "1";
-
-#if UNITY_IPHONE
-     [DllImport("__Internal")]
-     private static extern void CheckIphoneYueyu( string str );
-     //private static extern void CheckIosSignature( string str );
-#endif
 
     //public string[] texts = new string[100];
 
@@ -680,7 +673,7 @@ public class GetSignature : MonoBehaviour
                 }
             }
 #elif UNITY_IPHONE
-            CheckIphoneYueyu( strparam ); 
+            IOSNativeBridge.CheckIphoneYueyu(strparam);
             //CheckIosSignature( strparam );
 #endif
         }
