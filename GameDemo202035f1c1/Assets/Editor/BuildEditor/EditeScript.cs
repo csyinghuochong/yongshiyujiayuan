@@ -10,10 +10,10 @@ using Debug = UnityEngine.Debug;
 
 public class EditeScript : MonoBehaviour {
 
-    public static string XmlPath_JM = Application.dataPath + "\\Bundles\\Config";
+    public static string XmlPath_JM = Path.Combine(Application.dataPath, "Bundles", "Config");
     //public static string XmlPath_YuanShi = Application.dataPath + "\\StreamingAssets\\GameData\\" + "Xml";
     
-    public static string XmlPath_YuanShi = Application.dataPath + "\\Config\\GameXml\\" + "Xml";
+    public static string XmlPath_YuanShi = Path.Combine(Application.dataPath, "Config", "GameXml", "Xml");
 
     // Use this for initialization
     void Start () {
@@ -51,7 +51,7 @@ public class EditeScript : MonoBehaviour {
         Debug.Log("复制配置到Bundle！");
 
         // 复制 Get_Xml 目录下所有文件
-        string getXmlSrc = XmlPath_YuanShi + "\\Get_Xml\\";
+        string getXmlSrc = Path.Combine(XmlPath_YuanShi, "Get_Xml");
         DirectoryInfo getRoot = new DirectoryInfo(getXmlSrc);
         if (getRoot.Exists)
         {
@@ -66,7 +66,7 @@ public class EditeScript : MonoBehaviour {
                 }
 
                 string fileName = getFiles[i].Name;
-                string destPath = XmlPath_JM + "\\Get_Xml\\" + fileName;
+                string destPath = Path.Combine(XmlPath_JM, "Get_Xml", fileName);
                 Debug.Log("复制文件：" + destPath);
                 CopyOneFile(nowFilePath, destPath);
             }
@@ -78,8 +78,8 @@ public class EditeScript : MonoBehaviour {
 
         // 复制 Set_Xml 顶层的 GameCreate.xml
         CopyOneFile(
-            XmlPath_YuanShi + "\\Set_Xml\\GameCreate.xml",
-            XmlPath_JM + "\\Set_Xml\\GameCreate.xml"
+            Path.Combine(XmlPath_YuanShi, "Set_Xml", "GameCreate.xml"),
+            Path.Combine(XmlPath_JM, "Set_Xml", "GameCreate.xml")
         );
 
         // 复制 Set_Xml 子目录下所有文件
@@ -87,7 +87,7 @@ public class EditeScript : MonoBehaviour {
         string[] setStrList = setStr.Split(';');
         for (int z = 0; z < setStrList.Length; z++)
         {
-            string path = XmlPath_YuanShi + "\\Set_Xml\\" + setStrList[z] + "\\";
+            string path = Path.Combine(XmlPath_YuanShi, "Set_Xml", setStrList[z]);
             DirectoryInfo root = new DirectoryInfo(path);
             if (!root.Exists)
             {
@@ -96,7 +96,7 @@ public class EditeScript : MonoBehaviour {
             }
 
             // 确保目标目录存在
-            string destDir = XmlPath_JM + "\\Set_Xml\\" + setStrList[z] + "\\";
+            string destDir = Path.Combine(XmlPath_JM, "Set_Xml", setStrList[z]);
             if (!Directory.Exists(destDir))
                 Directory.CreateDirectory(destDir);
 
@@ -111,7 +111,7 @@ public class EditeScript : MonoBehaviour {
                 }
 
                 string fileName = files[i].Name;
-                string destPath = destDir + fileName;
+                string destPath = Path.Combine(destDir, fileName);
                 Debug.Log("复制文件：" + destPath);
                 CopyOneFile(nowFilePath, destPath);
             }
@@ -125,7 +125,7 @@ public class EditeScript : MonoBehaviour {
     public static void XmlJiaMi() {
         Debug.Log("加密！");
         
-        string path = XmlPath_YuanShi + "\\Get_Xml\\";
+        string path = Path.Combine(XmlPath_YuanShi, "Get_Xml");
         Debug.Log("path = " + path);
         //string path_ChuShi = XmlPath_JM + "\\Get_Xml\\";
         DirectoryInfo root = new DirectoryInfo(path);
@@ -142,7 +142,7 @@ public class EditeScript : MonoBehaviour {
                 //获取文件名称
                 string fileName = files[i].Name;
                 //进行文件加密
-                string jiamiFileName = XmlPath_JM + "\\Get_Xml\\"+ fileName;
+                string jiamiFileName = Path.Combine(XmlPath_JM, "Get_Xml", fileName);
                 Debug.Log("生成加密文件：" + jiamiFileName);
                 setKey(nowFilePath, jiamiFileName);
             }
@@ -154,13 +154,16 @@ public class EditeScript : MonoBehaviour {
     {
         Debug.Log("加密！");
         //复制不加密的整体配置文件
-        CopyOneFile(XmlPath_YuanShi + "\\Set_Xml\\"+ "GameCreate.xml", XmlPath_JM + "\\Set_Xml\\GameCreate.xml");
+        CopyOneFile(
+            Path.Combine(XmlPath_YuanShi, "Set_Xml", "GameCreate.xml"),
+            Path.Combine(XmlPath_JM, "Set_Xml", "GameCreate.xml")
+        );
 
         //文件名路径
         string setStr = "10001";
         string[] setStrList = setStr.Split(';');
         for (int z = 0; z < setStrList.Length; z++) {
-            string path = XmlPath_YuanShi + "\\Set_Xml\\"+ setStrList[z]+"\\";
+            string path = Path.Combine(XmlPath_YuanShi, "Set_Xml", setStrList[z]);
             //string path_ChuShi = XmlPath_JM + "\\Set_Xml\\" + setStrList[z] + "\\";
             DirectoryInfo root = new DirectoryInfo(path);
             FileInfo[] files = root.GetFiles();
@@ -176,7 +179,7 @@ public class EditeScript : MonoBehaviour {
                         //获取文件名称
                         string fileName = files[i].Name;
                         //进行文件加密
-                        string jiamiFileName = XmlPath_JM + "\\Set_Xml\\" + setStrList[z] + "\\" + fileName;
+                        string jiamiFileName = Path.Combine(XmlPath_JM, "Set_Xml", setStrList[z], fileName);
                         Debug.Log("生成加密文件：" + jiamiFileName);
                         CopyOneFile(nowFilePath,jiamiFileName);
                     }
@@ -186,7 +189,7 @@ public class EditeScript : MonoBehaviour {
                     //获取文件名称
                     string fileName = files[i].Name;
                     //进行文件加密
-                    string jiamiFileName = XmlPath_JM + "\\Set_Xml\\" + setStrList[z] + "\\" + fileName;
+                    string jiamiFileName = Path.Combine(XmlPath_JM, "Set_Xml", setStrList[z], fileName);
                     Debug.Log("生成加密文件：" + jiamiFileName);
                     setKey(nowFilePath, jiamiFileName);
                 }
@@ -341,6 +344,9 @@ public class EditeScript : MonoBehaviour {
         string IV = @"L%n67}G\Mk@k%:~H";        //加密偏移量
 
         string destFile = FilePath;
+        string destDir = Path.GetDirectoryName(destFile);
+        if (!string.IsNullOrEmpty(destDir) && !Directory.Exists(destDir))
+            Directory.CreateDirectory(destDir);
         //转换对应密匙到字节
         byte[] btKey = Encoding.Default.GetBytes(Key);
         byte[] btIV = Encoding.Default.GetBytes(IV);
