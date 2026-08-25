@@ -170,31 +170,20 @@ namespace UnityEditor.XCodeEditor
 		
 		public bool overwriteBuildSetting(string settingName, string settingValue) {
 			Debug.Log ("overwriteBuildSetting " + settingName + " " + settingValue);
-			bool modified = false;
-			
+
 			if( !ContainsKey( BUILDSETTINGS_KEY ) ) {
 				Debug.Log ("creating key " + BUILDSETTINGS_KEY);
 				this.Add( BUILDSETTINGS_KEY, new PBXSortedDictionary() );
 			}
-				
-			if( !((PBXDictionary)_data[BUILDSETTINGS_KEY]).ContainsKey( settingName ) ) {
-				Debug.Log("adding key " + settingName);
-				 ((PBXDictionary)_data[BUILDSETTINGS_KEY]).Add( settingName, new PBXList() );
+
+			IDictionary buildSettings = (IDictionary)_data[BUILDSETTINGS_KEY];
+			if( buildSettings.Contains( settingName ) && Equals( buildSettings[settingName], settingValue ) ) {
+				return false;
 			}
-			else if ( ((PBXDictionary)_data[BUILDSETTINGS_KEY])[ settingName ] is string ) {
-				//Debug.Log("key is string:" + settingName);
-				//string tempString = (string)((PBXDictionary)_data[BUILDSETTINGS_KEY])[settingName];
-				((PBXDictionary)_data[BUILDSETTINGS_KEY])[ settingName ] = new PBXList();
-				//((PBXList)((PBXDictionary)_data[BUILDSETTINGS_KEY])[settingName]).Add( tempString );
-			}
-			
-			if( !((PBXList)((PBXDictionary)_data[BUILDSETTINGS_KEY])[settingName]).Contains( settingValue ) ) {
-				Debug.Log("setting " + settingName + " to " + settingValue);
-				((PBXList)((PBXDictionary)_data[BUILDSETTINGS_KEY])[settingName]).Add( settingValue );
-				modified = true;
-				}
-			
-			return modified;
+
+			Debug.Log("setting " + settingName + " to " + settingValue);
+			buildSettings[settingName] = settingValue;
+			return true;
 		}			
 	}
 }
