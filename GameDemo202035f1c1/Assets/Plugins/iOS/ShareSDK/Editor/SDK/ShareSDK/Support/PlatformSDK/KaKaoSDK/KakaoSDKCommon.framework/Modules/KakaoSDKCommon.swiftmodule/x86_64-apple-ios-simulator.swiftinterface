@@ -1,0 +1,578 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KakaoSDKCommon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Alamofire
+import CommonCrypto
+import Foundation
+@_exported import KakaoSDKCommon
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct AppsErrorInfo : Swift.Codable {
+  public let errorCode: KakaoSDKCommon.AppsFailureReason
+  public let errorMsg: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class SdkJSONEncoder : Foundation.JSONEncoder {
+  public static var `default`: KakaoSDKCommon.SdkJSONEncoder {
+    get
+  }
+  public static var custom: KakaoSDKCommon.SdkJSONEncoder {
+    get
+  }
+  public static var customDate: KakaoSDKCommon.SdkJSONEncoder {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class SdkJSONDecoder : Foundation.JSONDecoder {
+  public static var `default`: KakaoSDKCommon.SdkJSONDecoder {
+    get
+  }
+  public static var custom: KakaoSDKCommon.SdkJSONDecoder {
+    get
+  }
+  public static var customIso8601Date: KakaoSDKCommon.SdkJSONDecoder {
+    get
+  }
+  public static var customSecondsSince1970: KakaoSDKCommon.SdkJSONDecoder {
+    get
+  }
+  @objc deinit
+}
+@_documentation(visibility: private) extension Swift.KeyedEncodingContainer {
+  public mutating func encode(_ value: [Swift.String : Any], forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+  public mutating func encode(_ value: [Any], forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+  public mutating func encodeIfPresent(_ value: [Swift.String : Any]?, forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+  public mutating func encodeIfPresent(_ value: [Any]?, forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+}
+@_documentation(visibility: private) extension Foundation.Data {
+  public func hexEncodedString() -> Swift.String
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class Constants {
+  public static let responseType: Swift.String
+  public static let kaHeader: Swift.String
+  public static func appVersion() -> Swift.String?
+  @objc deinit
+}
+@_documentation(visibility: private) public enum SdkType : Swift.String {
+  case Swift
+  case RxSwift
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_documentation(visibility: private) public class ApprovalType {
+  public static let shared: KakaoSDKCommon.ApprovalType
+  public var type: Swift.String?
+  public init()
+  @objc deinit
+}
+@_documentation(visibility: private) public enum ApiType {
+  case KApi
+  case KAuth
+  case Apps
+  public static func == (a: KakaoSDKCommon.ApiType, b: KakaoSDKCommon.ApiType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_documentation(visibility: private) public class SdkIdentifier {
+  final public let customIdentifier: Swift.String?
+  public init(_ customIdentifier: Swift.String? = nil)
+  @objc deinit
+}
+public enum LaunchMethod : Swift.String {
+  case CustomScheme
+  case UniversalLink
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ErrorInfo : Swift.Codable {
+  public let code: KakaoSDKCommon.ApiFailureReason
+  public let msg: Swift.String
+  public let requiredScopes: [Swift.String]?
+  @_documentation(visibility: private) public let apiType: Swift.String?
+  public let allowedScopes: [Swift.String]?
+  public init(code: KakaoSDKCommon.ApiFailureReason, msg: Swift.String, requiredScopes: [Swift.String]?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_documentation(visibility: private) extension UIKit.UIApplication {
+  @available(iOSApplicationExtension, unavailable)
+  @_Concurrency.MainActor @preconcurrency public class func getMostTopViewController(base: UIKit.UIViewController? = nil) -> UIKit.UIViewController?
+  @available(iOSApplicationExtension, unavailable)
+  @_Concurrency.MainActor @preconcurrency public class func sdkKeyWindow() -> UIKit.UIWindow?
+}
+@_documentation(visibility: private) public class ApiRequestAdapter : Alamofire.RequestInterceptor {
+  public init(kaHeader: Swift.String = Constants.kaHeader)
+  public func adapt(_ urlRequest: Foundation.URLRequest, for session: Alamofire.Session, completion: @escaping (Swift.Result<Foundation.URLRequest, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+@_documentation(visibility: private) public enum LogEvent : Swift.String {
+  case v
+  case d
+  case i
+  case w
+  case e
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_documentation(visibility: private) public enum LogLevel : Swift.Int {
+  case v
+  case d
+  case i
+  case w
+  case e
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_documentation(visibility: private) open class SdkLog {
+  public static let shared: KakaoSDKCommon.SdkLog
+  final public let maxLogs: Swift.Int
+  public var debugLogs: [(Foundation.Date, Swift.String)] {
+    get
+  }
+  final public let developLoglevel: KakaoSDKCommon.LogLevel
+  final public let releaseLogLevel: KakaoSDKCommon.LogLevel
+  public init(developLogLevel: KakaoSDKCommon.LogLevel = LogLevel.v, releaseLogLevel: KakaoSDKCommon.LogLevel = LogLevel.i)
+  public func clearLog()
+  public class func sourceFileName(filePath: Swift.String) -> Swift.String
+  public class func v(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public class func d(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public class func i(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public class func w(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public class func e(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  @objc deinit
+}
+@_documentation(visibility: private) extension Foundation.Date {
+  public func toString() -> Swift.String
+  public func toSimpleString() -> Swift.String
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class SdkUtils {
+  public static func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T
+  public static func toJsonString<T>(_ value: T) -> Swift.String? where T : Swift.Encodable
+  public static func toJsonObject(_ data: Foundation.Data) -> [Swift.String : Any]?
+  public static func makeUrlStringWithParameters(_ url: Swift.String, parameters: [Swift.String : Any]?) -> Swift.String?
+  public static func makeUrlWithParameters(_ url: Swift.String, parameters: [Swift.String : Any]?) -> Foundation.URL?
+  @objc deinit
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.SdkUtils {
+  public static func makeUrlWithParameters(url: Swift.String, parameters: [Swift.String : Any]?, launchMethod: KakaoSDKCommon.LaunchMethod? = nil) -> Foundation.URL?
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.SdkUtils {
+  public static func makeParametersForApps(returnUrl: Swift.String = KakaoSDK.shared.redirectUri()) -> [Swift.String : Any]
+}
+@_documentation(visibility: private) extension Swift.Dictionary {
+  public var queryParameters: Swift.String {
+    get
+  }
+  public var urlQueryItems: [Foundation.URLQueryItem]? {
+    get
+  }
+}
+@_documentation(visibility: private) extension Foundation.CharacterSet {
+  public static func fixedUrlQueryAllowed() -> Foundation.CharacterSet
+}
+@_documentation(visibility: private) extension Swift.Dictionary where Key == Swift.String, Value == Any? {
+  public func filterNil() -> [Swift.String : Any]?
+}
+@_documentation(visibility: private) extension Swift.Dictionary where Key == Swift.String {
+  public func toJsonString() -> Swift.String?
+}
+@_documentation(visibility: private) extension Swift.Dictionary {
+  public mutating func merge(_ dictionary: [Key : Value])
+}
+public struct AuthErrorInfo : Swift.Codable {
+  public let error: KakaoSDKCommon.AuthFailureReason
+  public let errorDescription: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class SdkCrypto {
+  public static let shared: KakaoSDKCommon.SdkCrypto
+  public func encrypt(data: Foundation.Data?) -> Foundation.Data?
+  public func decrypt(data: Foundation.Data?) -> Foundation.Data?
+  public func encryptForMigration(data: Foundation.Data?) -> Foundation.Data?
+  public func encryptForMigration(data: Foundation.Data?, key: Foundation.Data?) -> Foundation.Data?
+  public func decryptForMigration(data: Foundation.Data?) -> Foundation.Data?
+  public func decryptForMigration(data: Foundation.Data?, key: Foundation.Data?) -> Foundation.Data?
+  @objc deinit
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.SdkCrypto {
+  public func generateCodeVerifier() -> Swift.String?
+  public func base64(data: Foundation.Data) -> Swift.String
+  public func base64url(data: Foundation.Data) -> Swift.String
+  public func sha256(data: Foundation.Data) -> Foundation.Data?
+  public func sha256(string: Swift.String) -> Foundation.Data?
+}
+@_documentation(visibility: private) public let API: KakaoSDKCommon.Api
+@_documentation(visibility: private) public enum SessionType {
+  case Auth
+  case Api
+  case AuthApi
+  case RxAuthApi
+  case PartnerAuthApi
+  public static func == (a: KakaoSDKCommon.SessionType, b: KakaoSDKCommon.SessionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_documentation(visibility: private) public class Api {
+  public static let shared: KakaoSDKCommon.Api
+  final public let encoding: Alamofire.URLEncoding
+  public var sessions: [KakaoSDKCommon.SessionType : Alamofire.Session]
+  public init()
+  @objc deinit
+}
+extension KakaoSDKCommon.Api {
+  public func addSession(type: KakaoSDKCommon.SessionType, session: Alamofire.Session)
+  public func session(_ sessionType: KakaoSDKCommon.SessionType) -> Alamofire.Session
+}
+extension KakaoSDKCommon.Api {
+  public func getSdkError(error: any Swift.Error) -> KakaoSDKCommon.SdkError?
+  public func getRequestRetryFailedError(error: any Swift.Error) -> KakaoSDKCommon.SdkError?
+  public func responseData(_ HTTPMethod: Alamofire.HTTPMethod, _ url: Swift.String, parameters: [Swift.String : Any]? = nil, headers: [Swift.String : Swift.String]? = nil, sessionType: KakaoSDKCommon.SessionType = .AuthApi, apiType: KakaoSDKCommon.ApiType, logging: Swift.Bool = true, completion: @escaping (Foundation.HTTPURLResponse?, Foundation.Data?, (any Swift.Error)?) -> Swift.Void)
+  public func upload(_ HTTPMethod: Alamofire.HTTPMethod, _ url: Swift.String, images: [UIKit.UIImage?] = [], parameters: [Swift.String : Any]? = nil, headers: [Swift.String : Swift.String]? = nil, needsAccessToken: Swift.Bool = true, needsKAHeader: Swift.Bool = false, sessionType: KakaoSDKCommon.SessionType = .AuthApi, apiType: KakaoSDKCommon.ApiType, completion: @escaping (Foundation.HTTPURLResponse?, Foundation.Data?, (any Swift.Error)?) -> Swift.Void)
+}
+final public class KakaoSDK {
+  public static let shared: KakaoSDKCommon.KakaoSDK
+  public init()
+  public static func initSDK(appKey: Swift.String, customScheme: Swift.String? = nil, loggingEnable: Swift.Bool = false, hosts: KakaoSDKCommon.Hosts? = nil, approvalType: KakaoSDKCommon.ApprovalType? = nil, sdkIdentifier: KakaoSDKCommon.SdkIdentifier? = nil)
+  @_documentation(visibility: private) final public func initialize(appKey: Swift.String, customScheme: Swift.String? = nil, loggingEnable: Swift.Bool = false, hosts: KakaoSDKCommon.Hosts? = nil, approvalType: KakaoSDKCommon.ApprovalType? = nil, sdkIdentifier: KakaoSDKCommon.SdkIdentifier? = nil, sdkType: KakaoSDKCommon.SdkType)
+  final public func sdkVersion() -> Swift.String
+  final public func isLoggingEnable() -> Swift.Bool
+  @_documentation(visibility: private) final public func hosts() -> KakaoSDKCommon.Hosts
+  @_documentation(visibility: private) final public func approvalType() -> KakaoSDKCommon.ApprovalType
+  @_documentation(visibility: private) final public func sdkType() -> KakaoSDKCommon.SdkType
+  @_documentation(visibility: private) final public func scheme() throws -> Swift.String
+  @_documentation(visibility: private) final public func sdkIdentifier() -> KakaoSDKCommon.SdkIdentifier?
+  @objc deinit
+}
+extension KakaoSDKCommon.KakaoSDK {
+  final public func appKey() throws -> Swift.String
+  final public func kaHeader() -> Swift.String
+  final public func redirectUri() -> Swift.String
+}
+@_documentation(visibility: private) extension Swift.KeyedDecodingContainer {
+  public func decode(_ type: [Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Any]
+  public func decode(_ type: [Swift.String : Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Swift.String : Any]
+  public func decodeIfPresent(_ type: [Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Any]?
+  public func decodeIfPresent(_ type: [Swift.String : Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Swift.String : Any]?
+}
+@_documentation(visibility: private) extension Foundation.URL {
+  public func params() -> [Swift.String : Any]?
+}
+@_documentation(visibility: private) extension Foundation.URL {
+  public func oauthResult() -> (code: Swift.String?, error: (any Swift.Error)?, state: Swift.String?)
+  public func appsResult() -> (result: [Swift.String : Swift.String]?, error: (any Swift.Error)?)
+}
+@_documentation(visibility: private) public class Hosts {
+  public static let shared: KakaoSDKCommon.Hosts
+  final public let kapi: Swift.String
+  final public let dapi: Swift.String
+  final public let auth: Swift.String
+  final public let kauth: Swift.String
+  final public let talkAuth: Swift.String
+  final public let talkCert: Swift.String
+  final public let channel: Swift.String
+  final public let talkLink: Swift.String
+  final public let talkLinkVersion: Swift.String
+  final public let sharerLink: Swift.String
+  final public let universalLink: Swift.String
+  final public let cert: Swift.String
+  final public let plusFriend: Swift.String
+  final public let apps: Swift.String
+  public init(kapi: Swift.String = "kapi.kakao.com", dapi: Swift.String = "dapi.kakao.com", auth: Swift.String = "auth.kakao.com", kauth: Swift.String = "kauth.kakao.com", talkAuth: Swift.String = "kakaokompassauth", talkCert: Swift.String = "kakaotalk", channel: Swift.String = "pf.kakao.com", talkLink: Swift.String = "kakaolink", talkLinkVersion: Swift.String = "kakaotalk-5.9.7", sharerLink: Swift.String = "sharer.kakao.com", universalLink: Swift.String = "talk-apps.kakao.com", cert: Swift.String = "cert-sign-papi.kakao.com", plusFriend: Swift.String = "kakaoplus", apps: Swift.String = "apps.kakao.com")
+  @objc deinit
+}
+@_documentation(visibility: private) public enum HostType {
+  case Kapi
+  case Dapi
+  case Auth
+  case Kauth
+  case TalkAuth
+  case TalkCert
+  case Channel
+  case Navi
+  case NaviInstall
+  case TalkLink
+  case TalkLinkVersion
+  case SharerLink
+  case UniversalLink
+  case Cert
+  case PlusFriend
+  case Apps
+  public var host: Swift.String {
+    get
+  }
+  public static func == (a: KakaoSDKCommon.HostType, b: KakaoSDKCommon.HostType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class Paths {
+  public static let authAuthorize: Swift.String
+  public static let authPrepare: Swift.String
+  public static let authToken: Swift.String
+  public static let authAgt: Swift.String
+  public static let authTalk: Swift.String
+  public static let certSignWithoutLogin: Swift.String
+  public static let kakaoAccountsLogin: Swift.String
+  public static let signup: Swift.String
+  public static var userMe: Swift.String
+  public static let userUpdateProfile: Swift.String
+  public static let userAccessTokenInfo: Swift.String
+  public static let userLogout: Swift.String
+  public static let userUnlink: Swift.String
+  public static let userShippingAddress: Swift.String
+  public static let userServiceTerms: Swift.String
+  public static let userScopes: Swift.String
+  public static let userRevokeScopes: Swift.String
+  public static let userRevokeServiceTerms: Swift.String
+  public static let shippingAddressList: Swift.String
+  public static let talkProfile: Swift.String
+  public static let customMemo: Swift.String
+  public static let defaultMemo: Swift.String
+  public static let scrapMemo: Swift.String
+  public static let channels: Swift.String
+  public static let channel: Swift.String
+  public static let followChannel: Swift.String
+  public static let channelValidate: Swift.String
+  public static let friends: Swift.String
+  public static let customMessage: Swift.String
+  public static let defaultMessage: Swift.String
+  public static let scrapMessage: Swift.String
+  public static let selectFriends: Swift.String
+  public static let sdkUserScopes: Swift.String
+  public static let selectChats: Swift.String
+  public static let selectChatMembers: Swift.String
+  public static let navigateDestination: Swift.String
+  public static let webNaviInstall: Swift.String
+  public static let talkLink: Swift.String
+  public static let talkLinkVersion: Swift.String
+  public static let shareCustomValidate: Swift.String
+  public static let shareScrapValidate: Swift.String
+  public static let shareDefalutValidate: Swift.String
+  public static let sharerLink: Swift.String
+  public static let shareImageUpload: Swift.String
+  public static let shareImageScrap: Swift.String
+  public static let universalLink: Swift.String
+  public static let searchCafe: Swift.String
+  public static let sessionInfo: Swift.String
+  public static let checkStatus: Swift.String
+  public static let checkAccessToken: Swift.String
+  public static let kpidt: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class Urls {
+  public static func compose(_ hostType: KakaoSDKCommon.HostType = .Kapi, path: Swift.String) -> Swift.String
+  @objc deinit
+}
+@_documentation(visibility: private) extension Foundation.Date {
+  public func toSeconds() -> Swift.Int64
+}
+@_hasMissingDesignatedInitializers @_documentation(visibility: private) public class Properties {
+  public static func saveCodable<T>(key: Swift.String, data: T?) where T : Swift.Decodable, T : Swift.Encodable
+  public static func loadCodable<T>(key: Swift.String) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  public static func delete(_ key: Swift.String)
+  public static func markedSdkVersion() -> Swift.String?
+  public static func markSdkVersion()
+  @objc deinit
+}
+@_documentation(visibility: private) extension Swift.Array where Element == Swift.String {
+  public func toJsonString() -> Swift.String?
+}
+@_documentation(visibility: private) extension Swift.Array where Element == Swift.Int64 {
+  public func toJsonString() -> Swift.String?
+}
+public enum SdkError : Swift.Error {
+  case ClientFailed(reason: KakaoSDKCommon.ClientFailureReason, errorMessage: Swift.String?)
+  case ApiFailed(reason: KakaoSDKCommon.ApiFailureReason, errorInfo: KakaoSDKCommon.ErrorInfo?)
+  case AuthFailed(reason: KakaoSDKCommon.AuthFailureReason, errorInfo: KakaoSDKCommon.AuthErrorInfo?)
+  case AppsFailed(reason: KakaoSDKCommon.AppsFailureReason, errorInfo: KakaoSDKCommon.AppsErrorInfo?)
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.SdkError {
+  public init(reason: KakaoSDKCommon.ClientFailureReason = .Unknown, message: Swift.String? = nil)
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.SdkError {
+  public init?(response: Foundation.HTTPURLResponse, data: Foundation.Data, type: KakaoSDKCommon.ApiType)
+  public init?(parameters: [Swift.String : Swift.String])
+  public init(scopes: [Swift.String]?)
+  public init(apiFailedMessage: Swift.String? = nil)
+  public init?(appsParameters: [Swift.String : Swift.String])
+}
+extension KakaoSDKCommon.SdkError {
+  public var isClientFailed: Swift.Bool {
+    get
+  }
+  public var isApiFailed: Swift.Bool {
+    get
+  }
+  public var isAuthFailed: Swift.Bool {
+    get
+  }
+  public var isAppsFailed: Swift.Bool {
+    get
+  }
+  public func getClientError() -> (reason: KakaoSDKCommon.ClientFailureReason, message: Swift.String?)
+  public func getApiError() -> (reason: KakaoSDKCommon.ApiFailureReason, info: KakaoSDKCommon.ErrorInfo?)
+  public func getAuthError() -> (reason: KakaoSDKCommon.AuthFailureReason, info: KakaoSDKCommon.AuthErrorInfo?)
+  public func getAppsError() -> (reason: KakaoSDKCommon.AppsFailureReason, info: KakaoSDKCommon.AppsErrorInfo?)
+  public func isInvalidTokenError() -> Swift.Bool
+}
+public enum ClientFailureReason {
+  case Unknown
+  case Cancelled
+  case TokenNotFound
+  case NotSupported
+  case BadParameter
+  case MustInitAppKey
+  case ExceedKakaoLinkSizeLimit
+  case CastingFailed
+  case IllegalState
+  public static func == (a: KakaoSDKCommon.ClientFailureReason, b: KakaoSDKCommon.ClientFailureReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ApiFailureReason : Swift.Int, Swift.Codable {
+  case Unknown
+  case Internal
+  case BadParameter
+  case UnsupportedApi
+  case Blocked
+  case Permission
+  case DeprecatedApi
+  case ApiLimitExceed
+  case NotSignedUpUser
+  case AlreadySignedUpUsercase
+  case NotKakaoAccountUser
+  case InvalidUserPropertyKey
+  case NoSuchApp
+  case InvalidAccessToken
+  case InsufficientScope
+  case RequiredAgeVerification
+  case UnderAgeLimit
+  case SigningIsNotCompleted
+  case InvalidTransaction
+  case TransactionHasExpired
+  case LowerAgeLimit
+  case AlreadyAgeAuthorized
+  case AgeCheckLimitExceed
+  case AgeResultMismatched
+  case CIResultMismatched
+  case NotTalkUser
+  case UserDevicedUnsupported
+  case TalkMessageDisabled
+  case TalkSendMessageMonthlyLimitExceed
+  case TalkSendMessageDailyLimitExceed
+  case ImageUploadSizeExceed
+  case ServerTimeout
+  case ImageMaxUploadNumberExceed
+  case UnderMaintenance
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.ApiFailureReason {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AuthFailureReason : Swift.String, Swift.Codable {
+  case Unknown
+  case InvalidRequest
+  case InvalidClient
+  case InvalidScope
+  case InvalidGrant
+  case Misconfigured
+  case Unauthorized
+  case AccessDenied
+  case ServerError
+  @_documentation(visibility: private) case AutoLogin
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.AuthFailureReason {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AppsFailureReason : Swift.String, Swift.Codable {
+  case InternalServerError
+  case InvalidRequest
+  case InvalidParameter
+  case TimeExpired
+  case InvalidChannel
+  case IllegalStateChannel
+  case AppTypeError
+  case AppScopeError
+  case PermissionError
+  case AppKeyTypeError
+  case AppChannelNotConnected
+  case AuthError
+  case NotRegistredUser
+  case InvalidScope
+  case AccountTermsError
+  case LoginRequired
+  case InvalidShippingAddressId
+  case Unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_documentation(visibility: private) extension KakaoSDKCommon.AppsFailureReason {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KakaoSDKCommon.SdkType : Swift.Equatable {}
+extension KakaoSDKCommon.SdkType : Swift.Hashable {}
+extension KakaoSDKCommon.SdkType : Swift.RawRepresentable {}
+extension KakaoSDKCommon.ApiType : Swift.Equatable {}
+extension KakaoSDKCommon.ApiType : Swift.Hashable {}
+extension KakaoSDKCommon.LaunchMethod : Swift.Equatable {}
+extension KakaoSDKCommon.LaunchMethod : Swift.Hashable {}
+extension KakaoSDKCommon.LaunchMethod : Swift.RawRepresentable {}
+extension KakaoSDKCommon.LogEvent : Swift.Equatable {}
+extension KakaoSDKCommon.LogEvent : Swift.Hashable {}
+extension KakaoSDKCommon.LogEvent : Swift.RawRepresentable {}
+extension KakaoSDKCommon.LogLevel : Swift.Equatable {}
+extension KakaoSDKCommon.LogLevel : Swift.Hashable {}
+extension KakaoSDKCommon.LogLevel : Swift.RawRepresentable {}
+extension KakaoSDKCommon.SessionType : Swift.Equatable {}
+extension KakaoSDKCommon.SessionType : Swift.Hashable {}
+extension KakaoSDKCommon.HostType : Swift.Equatable {}
+extension KakaoSDKCommon.HostType : Swift.Hashable {}
+extension KakaoSDKCommon.ClientFailureReason : Swift.Equatable {}
+extension KakaoSDKCommon.ClientFailureReason : Swift.Hashable {}
+extension KakaoSDKCommon.ApiFailureReason : Swift.Equatable {}
+extension KakaoSDKCommon.ApiFailureReason : Swift.Hashable {}
+extension KakaoSDKCommon.ApiFailureReason : Swift.RawRepresentable {}
+extension KakaoSDKCommon.AuthFailureReason : Swift.Equatable {}
+extension KakaoSDKCommon.AuthFailureReason : Swift.Hashable {}
+extension KakaoSDKCommon.AuthFailureReason : Swift.RawRepresentable {}
+extension KakaoSDKCommon.AppsFailureReason : Swift.Equatable {}
+extension KakaoSDKCommon.AppsFailureReason : Swift.Hashable {}
+extension KakaoSDKCommon.AppsFailureReason : Swift.RawRepresentable {}

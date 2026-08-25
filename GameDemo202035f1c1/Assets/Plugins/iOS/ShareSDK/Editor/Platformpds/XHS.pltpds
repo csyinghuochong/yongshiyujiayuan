@@ -1,0 +1,17 @@
+{
+    "folders": [
+        "/SDK/ShareSDK/Support/PlatformSDK/XiaoHongShu"
+    ],
+    "framework": [
+        "/SDK/ShareSDK/Support/PlatformConnector/XHSConnector.xcframework"
+    ],
+    "LSApplicationQueriesSchemes": [
+        "xhsdiscover"
+    ],
+    "URLSchemes": {
+        "CFBundleURLSchemes": [
+            "xhs{appkey}"
+        ],
+        "CFBundleURLName": "xiaohongshu"
+    }
+}

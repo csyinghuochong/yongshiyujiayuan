@@ -1,0 +1,29 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MKakaoConnector
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Alamofire
+import Foundation
+import KakaoSDKAuth
+import KakaoSDKCommon
+import KakaoSDKShare
+import KakaoSDKUser
+@_exported import MKakaoConnector
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class MOBKakaoSDKAuth : ObjectiveC.NSObject {
+  @objc public static func hasSDK() -> Swift.Bool
+  @objc public static func hasInitSDK() -> Swift.Bool
+  @objc public static func initSDK(appKey: Swift.String, loggingEnable: Swift.Bool = false)
+  @objc public static func isKakaoTalkLoginAvailable() -> Swift.Bool
+  @objc public static func isKakaoTalkSharingAvailable() -> Swift.Bool
+  @objc public static func loginWithKakaoTalk(completion: @escaping (Swift.Dictionary<Swift.String, Any>?, (any Swift.Error)?) -> Swift.Void)
+  @objc public static func handleOpenUrl(_ url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:])
+  @objc public static func shareScrap(requestUrl: Swift.String, templateId: Swift.String? = nil, completion: @escaping (Swift.Dictionary<Swift.String, Any>?, (any Swift.Error)?) -> Swift.Void)
+  @objc public static func shareCustom(templateId: Swift.Int64, templateArgs: [Swift.String : Swift.String]? = nil, completion: @escaping (Swift.Dictionary<Swift.String, Any>?, (any Swift.Error)?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}

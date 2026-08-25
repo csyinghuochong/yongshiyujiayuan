@@ -9,7 +9,6 @@
 "ShareType_0" = "Unknown";
 "ShareType_1" = "Sina Weibo";
 "ShareType_6" = "QZone";
-"ShareType_8" = "Kaixin";
 "ShareType_9" = "Pengyou";
 "ShareType_10" = "Facebook";
 "ShareType_11" = "Twitter";
@@ -55,9 +54,11 @@
 "ShareType_60" = "Wework";
 "ShareType_61" = "Apple";
 "ShareType_70" = "TikTok";
+"ShareType_71" = "Threads";
 
 "ShareType_64" = "Oasis";
 "ShareType_66" = "SnapChat";
+"ShareType_67" = "XiaoHongShu";
 "ShareType_68" = "KuaiShou";
 "ShareType_69" = "WatermelonVideo";
 "ShareType_994" = "Yixin";

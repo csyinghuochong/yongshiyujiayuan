@@ -13,6 +13,14 @@ namespace cn.sharesdk.unity3d
 	/// <summary>
 	/// Platform type.
 	/// </summary>
+#if UNITY_IPHONE
+	public enum HostType {
+		sandbox = 1,
+		china = 2,
+		product = 3
+	}
+#endif
+	
 	public enum PlatformType
 	{
 		Unknown = 0,
@@ -71,7 +79,7 @@ namespace cn.sharesdk.unity3d
         Oasis = 64,             //绿洲
 		KuaiShou = 68,         //快手
 		TikTok = 70,           //TikTok
-		
+		Littleredbook = 67,
 #if UNITY_ANDROID
 		KakaoPlatform = 44,    
 		EvernoteInternational = 12,
@@ -84,11 +92,13 @@ namespace cn.sharesdk.unity3d
         Apple = 61,            //苹果登录
         SnapChat = 66,         //Snapchat
 		WatermelonVideo = 69,   //西瓜视频
+		Threads = 72,			//Threads
 		YixinPlatform = 994,    //Yixin series
 		KakaoPlatform = 995,    //Kakao series
 		EvernoteInternational = 996,//Evernote InternationaL Edition
 		WechatPlatform = 997,   //Wechat Series
 		QQPlatform = 998,		//QQ Series
+		DingdingShare = 999,    //钉钉share
 #endif
          
 

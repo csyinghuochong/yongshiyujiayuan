@@ -1,0 +1,3224 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "KakaoSDKShare",
+    "printedName": "KakaoSDKShare",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare"
+      },
+      {
+        "kind": "Import",
+        "name": "KakaoSDKCommon",
+        "printedName": "KakaoSDKCommon",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare"
+      },
+      {
+        "kind": "Import",
+        "name": "KakaoSDKTemplate",
+        "printedName": "KakaoSDKTemplate",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ShareApi",
+        "printedName": "ShareApi",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ShareApi",
+                "printedName": "KakaoSDKShare.ShareApi",
+                "usr": "s:13KakaoSDKShare8ShareApiC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare8ShareApiC6sharedACvpZ",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC6sharedACvpZ",
+            "moduleName": "KakaoSDKShare",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ShareApi",
+                    "printedName": "KakaoSDKShare.ShareApi",
+                    "usr": "s:13KakaoSDKShare8ShareApiC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare8ShareApiC6sharedACvgZ",
+                "mangledName": "$s13KakaoSDKShare8ShareApiC6sharedACvgZ",
+                "moduleName": "KakaoSDKShare",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "isKakaoTalkSharingUrl",
+            "printedName": "isKakaoTalkSharingUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC02isA14TalkSharingUrlySb10Foundation3URLVFZ",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC02isA14TalkSharingUrlySb10Foundation3URLVFZ",
+            "moduleName": "KakaoSDKShare",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isKakaoTalkSharingAvailable",
+            "printedName": "isKakaoTalkSharingAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC02isA20TalkSharingAvailableSbyFZ",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC02isA20TalkSharingAvailableSbyFZ",
+            "moduleName": "KakaoSDKShare",
+            "static": true,
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isExceededLimit",
+            "printedName": "isExceededLimit(linkParameters:validationResult:extras:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ValidationResult",
+                "printedName": "KakaoSDKShare.ValidationResult",
+                "usr": "s:13KakaoSDKShare16ValidationResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC15isExceededLimit14linkParameters16validationResult6extrasSbSDySSypGSg_AA010ValidationK0VAItFZ",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC15isExceededLimit14linkParameters16validationResult6extrasSbSDySSypGSg_AA010ValidationK0VAItFZ",
+            "moduleName": "KakaoSDKShare",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeDefaultUrl",
+            "printedName": "makeDefaultUrl(templatable:serverCallbackArgs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Templatable",
+                "printedName": "any KakaoSDKTemplate.Templatable",
+                "usr": "s:16KakaoSDKTemplate11TemplatableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC14makeDefaultUrl11templatable18serverCallbackArgs10Foundation3URLVSg0A11SDKTemplate11Templatable_p_SDyS2SGSgtF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC14makeDefaultUrl11templatable18serverCallbackArgs10Foundation3URLVSg0A11SDKTemplate11Templatable_p_SDyS2SGSgtF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeDefaultUrl",
+            "printedName": "makeDefaultUrl(templateObject:serverCallbackArgs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC14makeDefaultUrl14templateObject18serverCallbackArgs10Foundation3URLVSgSDySSypG_SDyS2SGSgtF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC14makeDefaultUrl14templateObject18serverCallbackArgs10Foundation3URLVSgSDySSypG_SDyS2SGSgtF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeScrapUrl",
+            "printedName": "makeScrapUrl(requestUrl:templateId:templateArgs:serverCallbackArgs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC12makeScrapUrl07requestG010templateId0I4Args014serverCallbackK010Foundation3URLVSgSS_s5Int64VSgSDyS2SGSgAQtF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC12makeScrapUrl07requestG010templateId0I4Args014serverCallbackK010Foundation3URLVSgSS_s5Int64VSgSDyS2SGSgAQtF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeCustomUrl",
+            "printedName": "makeCustomUrl(templateId:templateArgs:serverCallbackArgs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC13makeCustomUrl10templateId0H4Args014serverCallbackJ010Foundation3URLVSgs5Int64V_SDyS2SGSgAOtF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC13makeCustomUrl10templateId0H4Args014serverCallbackJ010Foundation3URLVSgs5Int64V_SDyS2SGSgAOtF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_makeSharerUrl",
+            "printedName": "_makeSharerUrl(url:action:parameters:serverCallbackArgs:targetAppKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC14_makeSharerUrl3url6action10parameters18serverCallbackArgs12targetAppKey10Foundation3URLVSgSS_SSSDySSypGSgSDyS2SGSgSSSgtF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC14_makeSharerUrl3url6action10parameters18serverCallbackArgs12targetAppKey10Foundation3URLVSgSS_SSSDySSypGSgSDyS2SGSgSSSgtF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "transformResponseToSharingResult",
+            "printedName": "transformResponseToSharingResult(response:data:targetAppKey:serverCallbackArgs:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.HTTPURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.SharingResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SharingResult",
+                            "printedName": "KakaoSDKShare.SharingResult",
+                            "usr": "s:13KakaoSDKShare13SharingResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC32transformResponseToSharingResult8response4data12targetAppKey18serverCallbackArgs10completionySo17NSHTTPURLResponseCSg_10Foundation4DataVSgSSSgSDyS2SGSgyAA0hI0VSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC32transformResponseToSharingResult8response4data12targetAppKey18serverCallbackArgs10completionySo17NSHTTPURLResponseCSg_10Foundation4DataVSgSSSgSDyS2SGSgyAA0hI0VSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareDefault",
+            "printedName": "shareDefault(templateObjectJsonString:serverCallbackArgs:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.SharingResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SharingResult",
+                            "printedName": "KakaoSDKShare.SharingResult",
+                            "usr": "s:13KakaoSDKShare13SharingResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC12shareDefault24templateObjectJsonString18serverCallbackArgs10completionySSSg_SDyS2SGSgyAA13SharingResultVSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC12shareDefault24templateObjectJsonString18serverCallbackArgs10completionySSSg_SDyS2SGSgyAA13SharingResultVSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareDefault",
+            "printedName": "shareDefault(templatable:serverCallbackArgs:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Templatable",
+                "printedName": "any KakaoSDKTemplate.Templatable",
+                "usr": "s:16KakaoSDKTemplate11TemplatableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.SharingResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SharingResult",
+                            "printedName": "KakaoSDKShare.SharingResult",
+                            "usr": "s:13KakaoSDKShare13SharingResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC12shareDefault11templatable18serverCallbackArgs10completiony0A11SDKTemplate11Templatable_p_SDyS2SGSgyAA13SharingResultVSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC12shareDefault11templatable18serverCallbackArgs10completiony0A11SDKTemplate11Templatable_p_SDyS2SGSgyAA13SharingResultVSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareDefault",
+            "printedName": "shareDefault(templateObject:serverCallbackArgs:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.SharingResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SharingResult",
+                            "printedName": "KakaoSDKShare.SharingResult",
+                            "usr": "s:13KakaoSDKShare13SharingResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC12shareDefault14templateObject18serverCallbackArgs10completionySDySSypG_SDyS2SGSgyAA13SharingResultVSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC12shareDefault14templateObject18serverCallbackArgs10completionySDySSypG_SDyS2SGSgyAA13SharingResultVSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareScrap",
+            "printedName": "shareScrap(requestUrl:templateId:templateArgs:serverCallbackArgs:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.SharingResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SharingResult",
+                            "printedName": "KakaoSDKShare.SharingResult",
+                            "usr": "s:13KakaoSDKShare13SharingResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC10shareScrap10requestUrl10templateId0I4Args014serverCallbackK010completionySS_s5Int64VSgSDyS2SGSgANyAA13SharingResultVSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC10shareScrap10requestUrl10templateId0I4Args014serverCallbackK010completionySS_s5Int64VSgSDyS2SGSgANyAA13SharingResultVSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareCustom",
+            "printedName": "shareCustom(templateId:templateArgs:serverCallbackArgs:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.SharingResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.SharingResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SharingResult",
+                            "printedName": "KakaoSDKShare.SharingResult",
+                            "usr": "s:13KakaoSDKShare13SharingResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC11shareCustom10templateId0G4Args014serverCallbackI010completionys5Int64V_SDyS2SGSgALyAA13SharingResultVSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC11shareCustom10templateId0G4Args014serverCallbackI010completionys5Int64V_SDyS2SGSgALyAA13SharingResultVSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "imageUpload",
+            "printedName": "imageUpload(image:secureResource:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.ImageUploadResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.ImageUploadResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.ImageUploadResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageUploadResult",
+                            "printedName": "KakaoSDKShare.ImageUploadResult",
+                            "usr": "s:13KakaoSDKShare17ImageUploadResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC11imageUpload0E014secureResource10completionySo7UIImageC_SbyAA05ImageF6ResultVSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC11imageUpload0E014secureResource10completionySo7UIImageC_SbyAA05ImageF6ResultVSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "imageScrap",
+            "printedName": "imageScrap(imageUrl:secureResource:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KakaoSDKShare.ImageUploadResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(KakaoSDKShare.ImageUploadResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "KakaoSDKShare.ImageUploadResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageUploadResult",
+                            "printedName": "KakaoSDKShare.ImageUploadResult",
+                            "usr": "s:13KakaoSDKShare17ImageUploadResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare8ShareApiC10imageScrap0E3Url14secureResource10completiony10Foundation3URLV_SbyAA17ImageUploadResultVSg_s5Error_pSgtctF",
+            "mangledName": "$s13KakaoSDKShare8ShareApiC10imageScrap0E3Url14secureResource10completiony10Foundation3URLV_SbyAA17ImageUploadResultVSg_s5Error_pSgtctF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13KakaoSDKShare8ShareApiC",
+        "mangledName": "$s13KakaoSDKShare8ShareApiC",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageUploadResult",
+        "printedName": "ImageUploadResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "infos",
+            "printedName": "infos",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageInfos",
+                "printedName": "KakaoSDKShare.ImageInfos",
+                "usr": "s:13KakaoSDKShare10ImageInfosV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare17ImageUploadResultV5infosAA0C5InfosVvp",
+            "mangledName": "$s13KakaoSDKShare17ImageUploadResultV5infosAA0C5InfosVvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageInfos",
+                    "printedName": "KakaoSDKShare.ImageInfos",
+                    "usr": "s:13KakaoSDKShare10ImageInfosV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare17ImageUploadResultV5infosAA0C5InfosVvg",
+                "mangledName": "$s13KakaoSDKShare17ImageUploadResultV5infosAA0C5InfosVvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageUploadResult",
+                "printedName": "KakaoSDKShare.ImageUploadResult",
+                "usr": "s:13KakaoSDKShare17ImageUploadResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13KakaoSDKShare17ImageUploadResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13KakaoSDKShare17ImageUploadResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare17ImageUploadResultV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13KakaoSDKShare17ImageUploadResultV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13KakaoSDKShare17ImageUploadResultV",
+        "mangledName": "$s13KakaoSDKShare17ImageUploadResultV",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageInfos",
+        "printedName": "ImageInfos",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "original",
+            "printedName": "original",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageInfo",
+                "printedName": "KakaoSDKShare.ImageInfo",
+                "usr": "s:13KakaoSDKShare9ImageInfoV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare10ImageInfosV8originalAA0C4InfoVvp",
+            "mangledName": "$s13KakaoSDKShare10ImageInfosV8originalAA0C4InfoVvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageInfo",
+                    "printedName": "KakaoSDKShare.ImageInfo",
+                    "usr": "s:13KakaoSDKShare9ImageInfoV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare10ImageInfosV8originalAA0C4InfoVvg",
+                "mangledName": "$s13KakaoSDKShare10ImageInfosV8originalAA0C4InfoVvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageInfos",
+                "printedName": "KakaoSDKShare.ImageInfos",
+                "usr": "s:13KakaoSDKShare10ImageInfosV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13KakaoSDKShare10ImageInfosV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13KakaoSDKShare10ImageInfosV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare10ImageInfosV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13KakaoSDKShare10ImageInfosV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13KakaoSDKShare10ImageInfosV",
+        "mangledName": "$s13KakaoSDKShare10ImageInfosV",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageInfo",
+        "printedName": "ImageInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare9ImageInfoV3url10Foundation3URLVvp",
+            "mangledName": "$s13KakaoSDKShare9ImageInfoV3url10Foundation3URLVvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare9ImageInfoV3url10Foundation3URLVvg",
+                "mangledName": "$s13KakaoSDKShare9ImageInfoV3url10Foundation3URLVvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentType",
+            "printedName": "contentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare9ImageInfoV11contentTypeSSvp",
+            "mangledName": "$s13KakaoSDKShare9ImageInfoV11contentTypeSSvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare9ImageInfoV11contentTypeSSvg",
+                "mangledName": "$s13KakaoSDKShare9ImageInfoV11contentTypeSSvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "length",
+            "printedName": "length",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare9ImageInfoV6lengthSivp",
+            "mangledName": "$s13KakaoSDKShare9ImageInfoV6lengthSivp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare9ImageInfoV6lengthSivg",
+                "mangledName": "$s13KakaoSDKShare9ImageInfoV6lengthSivg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare9ImageInfoV5widthSivp",
+            "mangledName": "$s13KakaoSDKShare9ImageInfoV5widthSivp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare9ImageInfoV5widthSivg",
+                "mangledName": "$s13KakaoSDKShare9ImageInfoV5widthSivg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare9ImageInfoV6heightSivp",
+            "mangledName": "$s13KakaoSDKShare9ImageInfoV6heightSivp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare9ImageInfoV6heightSivg",
+                "mangledName": "$s13KakaoSDKShare9ImageInfoV6heightSivg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageInfo",
+                "printedName": "KakaoSDKShare.ImageInfo",
+                "usr": "s:13KakaoSDKShare9ImageInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13KakaoSDKShare9ImageInfoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13KakaoSDKShare9ImageInfoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare9ImageInfoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13KakaoSDKShare9ImageInfoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13KakaoSDKShare9ImageInfoV",
+        "mangledName": "$s13KakaoSDKShare9ImageInfoV",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SharingResult",
+        "printedName": "SharingResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare13SharingResultV3url10Foundation3URLVvp",
+            "mangledName": "$s13KakaoSDKShare13SharingResultV3url10Foundation3URLVvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare13SharingResultV3url10Foundation3URLVvg",
+                "mangledName": "$s13KakaoSDKShare13SharingResultV3url10Foundation3URLVvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "warningMsg",
+            "printedName": "warningMsg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare13SharingResultV10warningMsgSDyS2SGSgvp",
+            "mangledName": "$s13KakaoSDKShare13SharingResultV10warningMsgSDyS2SGSgvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare13SharingResultV10warningMsgSDyS2SGSgvg",
+                "mangledName": "$s13KakaoSDKShare13SharingResultV10warningMsgSDyS2SGSgvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "argumentMsg",
+            "printedName": "argumentMsg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare13SharingResultV11argumentMsgSDyS2SGSgvp",
+            "mangledName": "$s13KakaoSDKShare13SharingResultV11argumentMsgSDyS2SGSgvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare13SharingResultV11argumentMsgSDyS2SGSgvg",
+                "mangledName": "$s13KakaoSDKShare13SharingResultV11argumentMsgSDyS2SGSgvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:warningMsg:argumentMsg:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SharingResult",
+                "printedName": "KakaoSDKShare.SharingResult",
+                "usr": "s:13KakaoSDKShare13SharingResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13KakaoSDKShare13SharingResultV3url10warningMsg08argumentG0AC10Foundation3URLV_SDyS2SGSgAKtcfc",
+            "mangledName": "$s13KakaoSDKShare13SharingResultV3url10warningMsg08argumentG0AC10Foundation3URLV_SDyS2SGSgAKtcfc",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SharingResult",
+                "printedName": "KakaoSDKShare.SharingResult",
+                "usr": "s:13KakaoSDKShare13SharingResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13KakaoSDKShare13SharingResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13KakaoSDKShare13SharingResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare13SharingResultV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13KakaoSDKShare13SharingResultV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KakaoSDKShare",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13KakaoSDKShare13SharingResultV",
+        "mangledName": "$s13KakaoSDKShare13SharingResultV",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KakaoSDKCommon",
+        "printedName": "KakaoSDKCommon",
+        "declKind": "Import",
+        "moduleName": "KakaoSDKShare"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ValidationResult",
+        "printedName": "ValidationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "templateId",
+            "printedName": "templateId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare16ValidationResultV10templateIds5Int64Vvp",
+            "mangledName": "$s13KakaoSDKShare16ValidationResultV10templateIds5Int64Vvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare16ValidationResultV10templateIds5Int64Vvg",
+                "mangledName": "$s13KakaoSDKShare16ValidationResultV10templateIds5Int64Vvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "templateArgs",
+            "printedName": "templateArgs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare16ValidationResultV12templateArgsSDyS2SGSgvp",
+            "mangledName": "$s13KakaoSDKShare16ValidationResultV12templateArgsSDyS2SGSgvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare16ValidationResultV12templateArgsSDyS2SGSgvg",
+                "mangledName": "$s13KakaoSDKShare16ValidationResultV12templateArgsSDyS2SGSgvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "templateMsg",
+            "printedName": "templateMsg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare16ValidationResultV11templateMsgSDySSypGvp",
+            "mangledName": "$s13KakaoSDKShare16ValidationResultV11templateMsgSDySSypGvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare16ValidationResultV11templateMsgSDySSypGvg",
+                "mangledName": "$s13KakaoSDKShare16ValidationResultV11templateMsgSDySSypGvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "warningMsg",
+            "printedName": "warningMsg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare16ValidationResultV10warningMsgSDyS2SGSgvp",
+            "mangledName": "$s13KakaoSDKShare16ValidationResultV10warningMsgSDyS2SGSgvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare16ValidationResultV10warningMsgSDyS2SGSgvg",
+                "mangledName": "$s13KakaoSDKShare16ValidationResultV10warningMsgSDyS2SGSgvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "argumentMsg",
+            "printedName": "argumentMsg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13KakaoSDKShare16ValidationResultV11argumentMsgSDyS2SGSgvp",
+            "mangledName": "$s13KakaoSDKShare16ValidationResultV11argumentMsgSDyS2SGSgvp",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13KakaoSDKShare16ValidationResultV11argumentMsgSDyS2SGSgvg",
+                "mangledName": "$s13KakaoSDKShare16ValidationResultV11argumentMsgSDyS2SGSgvg",
+                "moduleName": "KakaoSDKShare",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ValidationResult",
+                "printedName": "KakaoSDKShare.ValidationResult",
+                "usr": "s:13KakaoSDKShare16ValidationResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13KakaoSDKShare16ValidationResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13KakaoSDKShare16ValidationResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13KakaoSDKShare16ValidationResultV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13KakaoSDKShare16ValidationResultV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KakaoSDKShare",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13KakaoSDKShare16ValidationResultV",
+        "mangledName": "$s13KakaoSDKShare16ValidationResultV",
+        "moduleName": "KakaoSDKShare",
+        "declAttributes": [
+          "AccessControl",
+          "Documentation"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mobtech-ios\/Documents\/Projects\/Share-Others-Compiler\/Kakao\/MobConnector\/KakaoSDKShare\/KakaoSDKShare\/ShareApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20936,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mobtech-ios\/Documents\/Projects\/Share-Others-Compiler\/Kakao\/MobConnector\/KakaoSDKShare\/KakaoSDKShare\/ShareApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22352,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mobtech-ios\/Documents\/Projects\/Share-Others-Compiler\/Kakao\/MobConnector\/KakaoSDKShare\/KakaoSDKShare\/model\/ValidationResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1230,
+      "length": 13,
+      "value": "\"template_id\""
+    },
+    {
+      "filePath": "\/Users\/mobtech-ios\/Documents\/Projects\/Share-Others-Compiler\/Kakao\/MobConnector\/KakaoSDKShare\/KakaoSDKShare\/model\/ValidationResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1272,
+      "length": 15,
+      "value": "\"template_args\""
+    },
+    {
+      "filePath": "\/Users\/mobtech-ios\/Documents\/Projects\/Share-Others-Compiler\/Kakao\/MobConnector\/KakaoSDKShare\/KakaoSDKShare\/model\/ValidationResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1315,
+      "length": 14,
+      "value": "\"template_msg\""
+    },
+    {
+      "filePath": "\/Users\/mobtech-ios\/Documents\/Projects\/Share-Others-Compiler\/Kakao\/MobConnector\/KakaoSDKShare\/KakaoSDKShare\/model\/ValidationResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1356,
+      "length": 13,
+      "value": "\"warning_msg\""
+    },
+    {
+      "filePath": "\/Users\/mobtech-ios\/Documents\/Projects\/Share-Others-Compiler\/Kakao\/MobConnector\/KakaoSDKShare\/KakaoSDKShare\/model\/ValidationResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 14,
+      "value": "\"argument_msg\""
+    }
+  ]
+}

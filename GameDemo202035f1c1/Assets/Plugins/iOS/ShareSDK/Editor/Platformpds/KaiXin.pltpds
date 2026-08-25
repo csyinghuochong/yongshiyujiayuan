@@ -1,3 +1,5 @@
 {
-	"framework" : ["/SDK/ShareSDK/Support/PlatformConnector/KaiXinConnector.framework"]
+	"framework": [
+		"/SDK/ShareSDK/Support/PlatformConnector/KaiXinConnector.xcframework"
+	]
 }

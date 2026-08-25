@@ -1,0 +1,75 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KakaoSDKShare
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import KakaoSDKCommon
+@_exported import KakaoSDKShare
+import KakaoSDKTemplate
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class ShareApi {
+  public static let shared: KakaoSDKShare.ShareApi
+  public static func isKakaoTalkSharingUrl(_ url: Foundation.URL) -> Swift.Bool
+  @available(iOS 13.0, *)
+  @available(iOSApplicationExtension, unavailable)
+  public static func isKakaoTalkSharingAvailable() -> Swift.Bool
+  @objc deinit
+}
+extension KakaoSDKShare.ShareApi {
+  @_documentation(visibility: private) public static func isExceededLimit(linkParameters: [Swift.String : Any]?, validationResult: KakaoSDKShare.ValidationResult, extras: [Swift.String : Any]?) -> Swift.Bool
+  public func makeDefaultUrl(templatable: any KakaoSDKTemplate.Templatable, serverCallbackArgs: [Swift.String : Swift.String]? = nil) -> Foundation.URL?
+  public func makeDefaultUrl(templateObject: [Swift.String : Any], serverCallbackArgs: [Swift.String : Swift.String]? = nil) -> Foundation.URL?
+  public func makeScrapUrl(requestUrl: Swift.String, templateId: Swift.Int64? = nil, templateArgs: [Swift.String : Swift.String]? = nil, serverCallbackArgs: [Swift.String : Swift.String]? = nil) -> Foundation.URL?
+  public func makeCustomUrl(templateId: Swift.Int64, templateArgs: [Swift.String : Swift.String]? = nil, serverCallbackArgs: [Swift.String : Swift.String]? = nil) -> Foundation.URL?
+  public func _makeSharerUrl(url: Swift.String, action: Swift.String, parameters: [Swift.String : Any]? = nil, serverCallbackArgs: [Swift.String : Swift.String]? = nil, targetAppKey: Swift.String? = nil) -> Foundation.URL?
+}
+extension KakaoSDKShare.ShareApi {
+  @_documentation(visibility: private) public func transformResponseToSharingResult(response: Foundation.HTTPURLResponse?, data: Foundation.Data?, targetAppKey: Swift.String? = nil, serverCallbackArgs: [Swift.String : Swift.String]? = nil, completion: @escaping (KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> Swift.Void)
+  public func shareDefault(templateObjectJsonString: Swift.String?, serverCallbackArgs: [Swift.String : Swift.String]? = nil, completion: @escaping (KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> Swift.Void)
+  public func shareDefault(templatable: any KakaoSDKTemplate.Templatable, serverCallbackArgs: [Swift.String : Swift.String]? = nil, completion: @escaping (KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> Swift.Void)
+  public func shareDefault(templateObject: [Swift.String : Any], serverCallbackArgs: [Swift.String : Swift.String]? = nil, completion: @escaping (KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> Swift.Void)
+  public func shareScrap(requestUrl: Swift.String, templateId: Swift.Int64? = nil, templateArgs: [Swift.String : Swift.String]? = nil, serverCallbackArgs: [Swift.String : Swift.String]? = nil, completion: @escaping (KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> Swift.Void)
+  public func shareCustom(templateId: Swift.Int64, templateArgs: [Swift.String : Swift.String]? = nil, serverCallbackArgs: [Swift.String : Swift.String]? = nil, completion: @escaping (KakaoSDKShare.SharingResult?, (any Swift.Error)?) -> Swift.Void)
+  public func imageUpload(image: UIKit.UIImage, secureResource: Swift.Bool = true, completion: @escaping (KakaoSDKShare.ImageUploadResult?, (any Swift.Error)?) -> Swift.Void)
+  public func imageScrap(imageUrl: Foundation.URL, secureResource: Swift.Bool = true, completion: @escaping (KakaoSDKShare.ImageUploadResult?, (any Swift.Error)?) -> Swift.Void)
+}
+public struct ImageUploadResult : Swift.Codable {
+  public let infos: KakaoSDKShare.ImageInfos
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ImageInfos : Swift.Codable {
+  public let original: KakaoSDKShare.ImageInfo
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ImageInfo : Swift.Codable {
+  public let url: Foundation.URL
+  public let contentType: Swift.String
+  public let length: Swift.Int
+  public let width: Swift.Int
+  public let height: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SharingResult : Swift.Codable {
+  public let url: Foundation.URL
+  public let warningMsg: [Swift.String : Swift.String]?
+  public let argumentMsg: [Swift.String : Swift.String]?
+  public init(url: Foundation.URL, warningMsg: [Swift.String : Swift.String]?, argumentMsg: [Swift.String : Swift.String]?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_documentation(visibility: private) public struct ValidationResult : Swift.Codable {
+  public let templateId: Swift.Int64
+  public let templateArgs: [Swift.String : Swift.String]?
+  public let templateMsg: [Swift.String : Any]
+  public let warningMsg: [Swift.String : Swift.String]?
+  public let argumentMsg: [Swift.String : Swift.String]?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}

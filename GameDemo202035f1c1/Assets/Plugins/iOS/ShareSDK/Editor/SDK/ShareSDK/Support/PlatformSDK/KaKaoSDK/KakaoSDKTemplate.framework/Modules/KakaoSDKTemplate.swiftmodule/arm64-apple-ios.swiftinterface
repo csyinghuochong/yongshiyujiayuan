@@ -1,0 +1,165 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KakaoSDKTemplate
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import KakaoSDKCommon
+@_exported import KakaoSDKTemplate
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol Templatable {
+  @_documentation(visibility: private) func toJsonObject() -> [Swift.String : Any]?
+}
+public struct Social : Swift.Codable {
+  public let likeCount: Swift.Int?
+  public let commentCount: Swift.Int?
+  public let sharedCount: Swift.Int?
+  public let viewCount: Swift.Int?
+  public let subscriberCount: Swift.Int?
+  @_documentation(visibility: private) public init?(likeCount: Swift.Int? = nil, commentCount: Swift.Int? = nil, sharedCount: Swift.Int? = nil, viewCount: Swift.Int? = nil, subscriberCount: Swift.Int? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Button : Swift.Codable {
+  public var title: Swift.String
+  public var link: KakaoSDKTemplate.Link
+  @_documentation(visibility: private) public init(title: Swift.String, link: KakaoSDKTemplate.Link)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Link : Swift.Codable {
+  public let webUrl: Foundation.URL?
+  public let mobileWebUrl: Foundation.URL?
+  public let androidExecutionParams: Swift.String?
+  public let iosExecutionParams: Swift.String?
+  @_documentation(visibility: private) public init(webUrl: Foundation.URL? = nil, mobileWebUrl: Foundation.URL? = nil, androidExecutionParams: [Swift.String : Swift.String]? = nil, iosExecutionParams: [Swift.String : Swift.String]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Content : Swift.Codable {
+  public let title: Swift.String?
+  public let imageUrl: Foundation.URL?
+  public let imageWidth: Swift.Int?
+  public let imageHeight: Swift.Int?
+  public let description: Swift.String?
+  public let link: KakaoSDKTemplate.Link
+  @_documentation(visibility: private) public init(title: Swift.String? = nil, imageUrl: Foundation.URL? = nil, imageWidth: Swift.Int? = nil, imageHeight: Swift.Int? = nil, description: Swift.String? = nil, link: KakaoSDKTemplate.Link)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ItemContent : Swift.Codable {
+  public let profileText: Swift.String?
+  public let profileImageUrl: Foundation.URL?
+  public let titleImageText: Swift.String?
+  public let titleImageUrl: Foundation.URL?
+  public let titleImageCategory: Swift.String?
+  public let items: [KakaoSDKTemplate.ItemInfo]?
+  public let sum: Swift.String?
+  public let sumOp: Swift.String?
+  @_documentation(visibility: private) public init(profileText: Swift.String? = nil, profileImageUrl: Foundation.URL? = nil, titleImageText: Swift.String? = nil, titleImageUrl: Foundation.URL? = nil, titleImageCategory: Swift.String? = nil, items: [KakaoSDKTemplate.ItemInfo]? = nil, sum: Swift.String? = nil, sumOp: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ItemInfo : Swift.Codable {
+  public let item: Swift.String
+  public let itemOp: Swift.String
+  @_documentation(visibility: private) public init(item: Swift.String, itemOp: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CommerceDetail : Swift.Codable {
+  public let regularPrice: Swift.Int
+  public let discountPrice: Swift.Int?
+  public let discountRate: Swift.Int?
+  public let fixedDiscountPrice: Swift.Int?
+  public let productName: Swift.String?
+  public let currencyUnit: Swift.String?
+  public let currencyUnitPosition: Swift.Int?
+  @_documentation(visibility: private) public init(regularPrice: Swift.Int, discountPrice: Swift.Int? = nil, discountRate: Swift.Int? = nil, fixedDiscountPrice: Swift.Int? = nil, productName: Swift.String? = nil, currencyUnit: Swift.String? = nil, currencyUnitPosition: Swift.Int? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FeedTemplate : Swift.Codable, KakaoSDKTemplate.Templatable {
+  public let objectType: Swift.String
+  public let content: KakaoSDKTemplate.Content
+  public let itemContent: KakaoSDKTemplate.ItemContent?
+  public let social: KakaoSDKTemplate.Social?
+  public let buttonTitle: Swift.String?
+  public let buttons: [KakaoSDKTemplate.Button]?
+  @_documentation(visibility: private) public init(content: KakaoSDKTemplate.Content, itemContent: KakaoSDKTemplate.ItemContent? = nil, social: KakaoSDKTemplate.Social? = nil, buttonTitle: Swift.String? = nil, buttons: [KakaoSDKTemplate.Button]? = nil)
+  @_documentation(visibility: private) public func toJsonObject() -> [Swift.String : Any]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ListTemplate : Swift.Codable, KakaoSDKTemplate.Templatable {
+  public let objectType: Swift.String
+  public let headerTitle: Swift.String
+  public let headerLink: KakaoSDKTemplate.Link
+  public let contents: [KakaoSDKTemplate.Content]
+  public let buttonTitle: Swift.String?
+  public let buttons: [KakaoSDKTemplate.Button]?
+  @_documentation(visibility: private) public init(headerTitle: Swift.String, headerLink: KakaoSDKTemplate.Link, contents: [KakaoSDKTemplate.Content], buttonTitle: Swift.String? = nil, buttons: [KakaoSDKTemplate.Button]? = nil)
+  @_documentation(visibility: private) public func toJsonObject() -> [Swift.String : Any]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LocationTemplate : Swift.Codable, KakaoSDKTemplate.Templatable {
+  public let objectType: Swift.String
+  public let address: Swift.String
+  public let addressTitle: Swift.String?
+  public let content: KakaoSDKTemplate.Content
+  public let social: KakaoSDKTemplate.Social?
+  public let buttonTitle: Swift.String?
+  public let buttons: [KakaoSDKTemplate.Button]?
+  @_documentation(visibility: private) public init(address: Swift.String, addressTitle: Swift.String? = nil, content: KakaoSDKTemplate.Content, social: KakaoSDKTemplate.Social? = nil, buttonTitle: Swift.String? = nil, buttons: [KakaoSDKTemplate.Button]? = nil)
+  @_documentation(visibility: private) public func toJsonObject() -> [Swift.String : Any]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CommerceTemplate : Swift.Codable, KakaoSDKTemplate.Templatable {
+  public let objectType: Swift.String
+  public let content: KakaoSDKTemplate.Content
+  public let commerce: KakaoSDKTemplate.CommerceDetail
+  public let buttonTitle: Swift.String?
+  public let buttons: [KakaoSDKTemplate.Button]?
+  @_documentation(visibility: private) public init(content: KakaoSDKTemplate.Content, commerce: KakaoSDKTemplate.CommerceDetail, buttonTitle: Swift.String? = nil, buttons: [KakaoSDKTemplate.Button]? = nil)
+  @_documentation(visibility: private) public func toJsonObject() -> [Swift.String : Any]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TextTemplate : Swift.Codable, KakaoSDKTemplate.Templatable {
+  public let objectType: Swift.String
+  public let text: Swift.String
+  public let link: KakaoSDKTemplate.Link
+  public let buttonTitle: Swift.String?
+  public let buttons: [KakaoSDKTemplate.Button]?
+  @_documentation(visibility: private) public init(text: Swift.String, link: KakaoSDKTemplate.Link, buttonTitle: Swift.String? = nil, buttons: [KakaoSDKTemplate.Button]? = nil)
+  @_documentation(visibility: private) public func toJsonObject() -> [Swift.String : Any]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CalendarTemplate : Swift.Codable, KakaoSDKTemplate.Templatable {
+  public enum IdType : Swift.String, Swift.Codable {
+    case Event
+    case Calendar
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let objectType: Swift.String
+  public let id: Swift.String
+  public let idType: KakaoSDKTemplate.CalendarTemplate.IdType
+  public let content: KakaoSDKTemplate.Content
+  public let buttons: [KakaoSDKTemplate.Button]?
+  @_documentation(visibility: private) public init(id: Swift.String, idType: KakaoSDKTemplate.CalendarTemplate.IdType, content: KakaoSDKTemplate.Content, buttons: [KakaoSDKTemplate.Button]? = nil)
+  @_documentation(visibility: private) public func toJsonObject() -> [Swift.String : Any]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KakaoSDKTemplate.CalendarTemplate.IdType : Swift.Equatable {}
+extension KakaoSDKTemplate.CalendarTemplate.IdType : Swift.Hashable {}
+extension KakaoSDKTemplate.CalendarTemplate.IdType : Swift.RawRepresentable {}

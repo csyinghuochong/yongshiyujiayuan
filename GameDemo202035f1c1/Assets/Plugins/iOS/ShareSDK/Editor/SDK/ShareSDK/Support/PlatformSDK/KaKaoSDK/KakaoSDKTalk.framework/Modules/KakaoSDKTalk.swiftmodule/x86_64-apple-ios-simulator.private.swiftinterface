@@ -1,0 +1,154 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KakaoSDKTalk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AuthenticationServices
+import Foundation
+import KakaoSDKAuth
+import KakaoSDKCommon
+import KakaoSDKTemplate
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct Channels : Swift.Codable {
+  public let userId: Swift.Int64?
+  public let channels: [KakaoSDKTalk.Channel]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Channel : Swift.Codable {
+  public enum Relation : Swift.String, Swift.Codable {
+    case Added
+    case None
+    case Blocked
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let uuid: Swift.String
+  public let encodedId: Swift.String
+  public let relation: KakaoSDKTalk.Channel.Relation
+  public let updatedAt: Foundation.Date?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FollowChannelResult : Swift.Codable {
+  public let success: Swift.Bool
+  public let channelPublicId: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_documentation(visibility: private) extension KakaoSDKTalk.TalkApi {
+  public func _followChannelWithAuthenticationSession(channelPublicId: Swift.String, agtToken: Swift.String? = nil, completion: @escaping (KakaoSDKTalk.FollowChannelResult?, (any Swift.Error)?) -> Swift.Void)
+  public func _makeParametersForFollowChannel(agtToken: Swift.String? = nil, channelPublicId: Swift.String) -> [Swift.String : Any]
+}
+public struct TalkProfile : Swift.Codable {
+  public let nickname: Swift.String?
+  public let profileImageUrl: Foundation.URL?
+  public let thumbnailUrl: Foundation.URL?
+  public let countryISO: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct MessageSendResult : Swift.Codable {
+  public let successfulReceiverUuids: [Swift.String]?
+  public let failureInfos: [KakaoSDKTalk.MessageFailureInfo]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageFailureInfo : Swift.Codable {
+  public let code: Swift.Int
+  public let msg: Swift.String
+  public let receiverUuids: [Swift.String]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum Order : Swift.String, Swift.Codable {
+  case Asc
+  case Desc
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FriendOrder : Swift.String, Swift.Codable {
+  case Nickname
+  case Age
+  case Favorite
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Friends<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public let elements: [T]?
+  public let totalCount: Swift.Int
+  public let favoriteCount: Swift.Int?
+  public let beforeUrl: Foundation.URL?
+  public let afterUrl: Foundation.URL?
+  public init(elements: [T]?, totalCount: Swift.Int, favoriteCount: Swift.Int? = nil, beforeUrl: Foundation.URL? = nil, afterUrl: Foundation.URL? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FriendsContext {
+  public let offset: Swift.Int?
+  public let limit: Swift.Int?
+  public let order: KakaoSDKTalk.Order?
+  public let friendOrder: KakaoSDKTalk.FriendOrder?
+  public init(offset: Swift.Int? = nil, limit: Swift.Int? = nil, order: KakaoSDKTalk.Order? = nil, friendOrder: KakaoSDKTalk.FriendOrder? = nil)
+  public init?(_ url: Foundation.URL?)
+}
+public struct Friend : Swift.Codable {
+  public let id: Swift.Int64?
+  public let uuid: Swift.String
+  public let profileNickname: Swift.String?
+  public let profileThumbnailImage: Foundation.URL?
+  public let favorite: Swift.Bool?
+  public let allowedMsg: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class TalkApi {
+  public static let shared: KakaoSDKTalk.TalkApi
+  @_documentation(visibility: private) public var presentationContextProvider: Any?
+  @_documentation(visibility: private) public var authenticationSession: AuthenticationServices.ASWebAuthenticationSession?
+  public init()
+  public func makeUrlForAddChannel(channelPublicId: Swift.String) -> Foundation.URL?
+  @available(*, deprecated, message: "use makeUrlForChatChannel(channelPublicId:) instead")
+  public func makeUrlForChannelChat(channelPublicId: Swift.String) -> Foundation.URL?
+  public func makeUrlForChatChannel(channelPublicId: Swift.String) -> Foundation.URL?
+  @objc deinit
+}
+extension KakaoSDKTalk.TalkApi {
+  public func profile(completion: @escaping (KakaoSDKTalk.TalkProfile?, (any Swift.Error)?) -> Swift.Void)
+  public func sendCustomMemo(templateId: Swift.Int64, templateArgs: [Swift.String : Swift.String]? = nil, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  public func sendDefaultMemo(templatable: any KakaoSDKTemplate.Templatable, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  public func sendScrapMemo(requestUrl: Swift.String, templateId: Swift.Int64? = nil, templateArgs: [Swift.String : Swift.String]? = nil, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  public func friends(offset: Swift.Int? = nil, limit: Swift.Int? = nil, order: KakaoSDKTalk.Order? = nil, friendOrder: KakaoSDKTalk.FriendOrder? = nil, completion: @escaping (KakaoSDKTalk.Friends<KakaoSDKTalk.Friend>?, (any Swift.Error)?) -> Swift.Void)
+  public func friends(context: KakaoSDKTalk.FriendsContext?, completion: @escaping (KakaoSDKTalk.Friends<KakaoSDKTalk.Friend>?, (any Swift.Error)?) -> Swift.Void)
+  public func sendDefaultMessage(templatable: any KakaoSDKTemplate.Templatable, receiverUuids: [Swift.String], completion: @escaping (KakaoSDKTalk.MessageSendResult?, (any Swift.Error)?) -> Swift.Void)
+  public func sendCustomMessage(templateId: Swift.Int64, templateArgs: [Swift.String : Swift.String]? = nil, receiverUuids: [Swift.String], completion: @escaping (KakaoSDKTalk.MessageSendResult?, (any Swift.Error)?) -> Swift.Void)
+  public func sendScrapMessage(requestUrl: Swift.String, templateId: Swift.Int64? = nil, templateArgs: [Swift.String : Swift.String]? = nil, receiverUuids: [Swift.String], completion: @escaping (KakaoSDKTalk.MessageSendResult?, (any Swift.Error)?) -> Swift.Void)
+}
+extension KakaoSDKTalk.TalkApi {
+  public func channels(publicIds: [Swift.String]? = nil, completion: @escaping (KakaoSDKTalk.Channels?, (any Swift.Error)?) -> Swift.Void)
+  @_documentation(visibility: private) public static func isKakaoTalkChannelAvailable(path: Swift.String) -> Swift.Bool
+  public func addChannel(channelPublicId: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  public func chatChannel(channelPublicId: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  public func followChannel(channelPublicId: Swift.String, completion: @escaping (KakaoSDKTalk.FollowChannelResult?, (any Swift.Error)?) -> Swift.Void)
+}
+extension KakaoSDKTalk.Channel.Relation : Swift.Equatable {}
+extension KakaoSDKTalk.Channel.Relation : Swift.Hashable {}
+extension KakaoSDKTalk.Channel.Relation : Swift.RawRepresentable {}
+extension KakaoSDKTalk.Order : Swift.Equatable {}
+extension KakaoSDKTalk.Order : Swift.Hashable {}
+extension KakaoSDKTalk.Order : Swift.RawRepresentable {}
+extension KakaoSDKTalk.FriendOrder : Swift.Equatable {}
+extension KakaoSDKTalk.FriendOrder : Swift.Hashable {}
+extension KakaoSDKTalk.FriendOrder : Swift.RawRepresentable {}

@@ -6,6 +6,7 @@ using cn.mob.unity3d.sdkporter;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System;
+using System.Linq;
 
 
 #if UNITY_IOS
@@ -150,10 +151,9 @@ public class MOBPostProcessBuild
     {
         foreach (MOBPathModel pathModel in xcodeModel.frameworks)
         {
-            if (pathModel.filePath.Contains(".framework") && !pathModel.filePath.Contains("MOBFoundation.framework"))
+            if ((pathModel.filePath.Contains(".framework") || pathModel.filePath.Contains(".xcframework")) && !pathModel.filePath.Contains("MOBFoundation.framework") && !pathModel.filePath.Contains("MOBFoundation.xcframework"))
             {
                 string frameworkPath = pathModel.filePath.Replace(pathModel.rootPath, "");
-
 
                 string savePath = xcodeTargetPath + frameworkPath;
                 int tempIndex = frameworkPath.LastIndexOf("\\");
@@ -405,7 +405,18 @@ public class MOBPostProcessBuild
         {
             searchOption = SearchOption.AllDirectories;
         }
-        string[] secondDirectories = Directory.GetDirectories(secondFilePath, "*.framework", searchOption);
+
+        string[] extensions = { ".framework", ".xcframework"};
+        string[] allDirectories = Directory.GetDirectories(secondFilePath, "*", searchOption);
+        var filteredDirectories = allDirectories.Where(dir => {
+            string dirName = Path.GetFileName(dir);
+            return extensions.Any(ext => dirName.EndsWith(ext));
+        });
+        string[] secondDirectories = {};
+        foreach (var dir in filteredDirectories)
+        {
+            secondDirectories = secondDirectories.Concat(new[] { dir }).ToArray();
+        }
         foreach (string lastFilePath in secondDirectories)
         {
             //			Debug.Log("lastFilePath" + lastFilePath);
@@ -420,7 +431,7 @@ public class MOBPostProcessBuild
             //framework 名称
             string frameworkName = lastFilePath.Substring(index + fileNameIndex);
             //			Debug.Log("frameworkName" + frameworkName);
-            bool isMOBFoundation = (frameworkName == "MOBFoundation.framework");
+            bool isMOBFoundation = (frameworkName == "MOBFoundation.xcframework" || frameworkName == "MOBFoundation.framework");
             if (!isMOBFoundation || (isMOBFoundation && !hasMobFramework))
             {
                 if (isMOBFoundation && !hasMobFramework)
@@ -455,7 +466,19 @@ public class MOBPostProcessBuild
                 string fileGuid = (string)xcodeProj.AddFile(frameworkPath.Substring(1), "MOB" + frameworkPath, PBXSourceTree.Absolute);
 
 
-                string[] dynamicframework = { "OasisSDK.framework", "SCSDKCreativeKit.framework", "SCSDKLoginKit.framework", "SCSDKCoreKit.framework" };
+                string[] dynamicframework = {
+                    "OasisSDK.framework", 
+                    "SCSDKCreativeKit.xcframework", 
+                    "SCSDKLoginKit.xcframework", 
+                    "SCSDKCoreKit.xcframework", 
+                    "Alamofire.framework", 
+                    "KakaoSDKAuth.framework", 
+                    "KakaoSDKCommon.framework", 
+                    "KakaoSDKShare.framework", 
+                    "KakaoSDKTalk.framework", 
+                    "KakaoSDKTemplate.framework", 
+                    "KakaoSDKUser.framework"
+                };
                 int dynamicIndex = Array.IndexOf(dynamicframework, frameworkName);
                 
                 if (dynamicIndex >= 0)
@@ -551,8 +574,22 @@ public class MOBPostProcessBuild
             Hashtable datastore = (Hashtable)MiniJSON.jsonDecode(contents);
             string appKey = (string)datastore["MobAppKey"];
             string appSecret = (string)datastore["MobAppSecret"];
+            string mobNetLater = (string)datastore["MOBNetLater"];
+            string mobTwitterVer = (string)datastore["MOBTwitterVer"];
+
             plistElements.SetString("MOBAppkey", appKey);
             plistElements.SetString("MOBAppSecret", appSecret);
+            if(mobNetLater == null || mobNetLater == ""){
+                //如果为空不作任何操作
+            }else{
+                plistElements.SetString("MOBNetLater", mobNetLater);
+            }
+
+            if(mobTwitterVer == null || mobTwitterVer == ""){
+                //如果为空不作任何操作
+            }else{
+                plistElements.SetString("MOBTwitterVer", mobTwitterVer);
+            }
         }
         else
         {
@@ -620,6 +657,15 @@ public class MOBPostProcessBuild
                     //暂时只支持1层dict
                     dict.SetString(tempKey, (string)temp[tempKey]);
                 }
+            }else if (value.GetType().Equals(typeof(ArrayList)))
+            {
+                ArrayList temp = (ArrayList)value;
+                PlistElementArray urlArray = plistElements.CreateArray(key);
+
+                foreach (string str in temp)
+                {
+                    urlArray.AddString(str);
+                }				
             }
         }
     }
@@ -730,4 +776,4 @@ public class MOBPostProcessBuild
 
 
 #endif
-                }
+}
