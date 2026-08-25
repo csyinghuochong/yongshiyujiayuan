@@ -193,7 +193,7 @@ namespace cn.sharesdk.unity3d {
 		public int type = (int)PlatformType.WeChat;
 		public string app_id = "wx1b7f30caa340e5f8";
 		public string app_secret = "5b8b0e553320145e8270eb810e5145ed";
-		public string app_universalLink = "https://c4ovz.share2dlink.com/";
+		public string app_universalLink = "https://3170db0ec9e20328724e66cdf520c394.share2dlink.com/";
 #endif
 
 #if UNITY_ANDROID
@@ -218,7 +218,7 @@ namespace cn.sharesdk.unity3d {
 		public int type = (int)PlatformType.WeChatMoments;
 		public string app_id = "wx1b7f30caa340e5f8";
 		public string app_secret = "5b8b0e553320145e8270eb810e5145ed";
-		public string app_universalLink = "https://c4ovz.share2dlink.com/";
+		public string app_universalLink = "https://3170db0ec9e20328724e66cdf520c394.share2dlink.com/";
 #endif
 
 #if UNITY_ANDROID
