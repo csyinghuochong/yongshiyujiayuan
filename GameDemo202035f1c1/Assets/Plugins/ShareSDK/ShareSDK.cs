@@ -16,8 +16,8 @@ namespace cn.sharesdk.unity3d {
 		public static string version = "3.0.7";
 
 #if UNITY_IPHONE || UNITY_IOS
-		public string appKey = "366d974afb92f";
-		public string appSecret = "1ef3994ddeab7d2ceafe45c47553e620";
+		public string appKey = "38cd0e119222c";
+		public string appSecret = "1c2260d351fc8572ece7f7fdb3a83d8a";
 		public string mobNetLater = "2";
 		public string mobTwitterVer = "2";
 
