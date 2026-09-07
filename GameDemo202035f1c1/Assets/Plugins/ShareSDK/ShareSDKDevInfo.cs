@@ -106,11 +106,10 @@ namespace cn.sharesdk.unity3d {
 
 #if UNITY_IPHONE || UNITY_IOS
 		public int type = (int)PlatformType.SinaWeibo;
-		public string app_key = "568898243";
-		public string app_secret = "38a4f8204cc784f81f9f0daaf31e02e3";
-		// public string redirect_uri = "https://www.mob.com/";
-		public string redirect_uri = "http://www.sharesdk.cn";
-		public string app_universalLink = "https://bj2ks.share2dlink.com/";
+		public string app_key = "3816261290";
+		public string app_secret = "ce64a790105a605e3af7ade95d8b8c54";
+		public string redirect_uri = "https://www.mob.com/";
+		public string app_universalLink = "https://3170db0ec9e20328724e66cdf520c394.share2dlink.com/";
 #endif
 
 #if UNITY_ANDROID
