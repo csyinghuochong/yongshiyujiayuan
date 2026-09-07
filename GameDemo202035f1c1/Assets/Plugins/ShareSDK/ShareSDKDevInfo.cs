@@ -116,8 +116,8 @@ namespace cn.sharesdk.unity3d {
 #if UNITY_ANDROID
 		public const int type = (int)PlatformType.SinaWeibo;
 		public string SortId = "4";
-		public string AppKey = "4243223096";
-		public string AppSecret = "a94b60256e1652fdcb379984db56a158";
+		public string AppKey = "3816261290";
+		public string AppSecret = "ce64a790105a605e3af7ade95d8b8c54";
 		public string RedirectUrl = "http://www.sharesdk.cn";
 		public bool ShareByAppClient = true;
 #endif

@@ -1322,8 +1322,8 @@ MonoBehaviour:
     sinaweibo:
       Enable: 1
       SortId: 4
-      AppKey: 4243223096
-      AppSecret: a94b60256e1652fdcb379984db56a158
+      AppKey: 3816261290
+      AppSecret: ce64a790105a605e3af7ade95d8b8c54
       RedirectUrl: http://www.sharesdk.cn
       ShareByAppClient: 1
     qq:
