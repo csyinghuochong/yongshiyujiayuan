@@ -22,9 +22,11 @@ public class UI_CreateRose : MonoBehaviour {
     public GameObject UI_SetObj_MoFaShi;                //选中魔法师
     public GameObject UI_SetObj_ZhanShi;                //选中战士
     public GameObject UI_SetObj_LieRen;                //选中战士
+    public GameObject UI_SetObj_QiShi;                //选中战士
     public GameObject UI_NameObj_MoFaShi;               //选中魔法师名字
     public GameObject UI_NameObj_ZhanShi;               //选中战士名字
-    public GameObject UI_NameObj_LieRen;               //选中战士名字
+    public GameObject UI_NameObj_LieRen;               //选中猎人名字
+    public GameObject UI_NameObj_QiShi;               //选中猎人名字
     public GameObject UI_SetObj_Sclect;                 //选中名称
     public GameObject UI_SetObj_SclectShowName;         //展示角色名称
     public GameObject UI_SetObj_SclectCreateName;       //创建角色名称
@@ -34,13 +36,17 @@ public class UI_CreateRose : MonoBehaviour {
     public GameObject Obj_MoFaShi;
     public GameObject Obj_ZhanShi;
     public GameObject Obj_LieRen;
+    public GameObject Obj_QiShi;
+
     public GameObject Obj_MoFaShiStartPosi;             //战士出生点位
     public GameObject Obj_ZhanShiStartPosi;             //法师出生点位
-    public GameObject Obj_LieRenStartPosi;             //法师出生点位
+    public GameObject Obj_LieRenStartPosi;              //猎人出生点位
+    public GameObject Obj_QiShiStartPosi;               //骑士出生点位
+
     public GameObject Obj_MovePosi;                     //选择英雄后移动的位置
     public GameObject Obj_ReturnMovePosi;               //取消影响选择返回的位置
-    public string sclectOcctype;                        //当前选择职业移动  类型  0：什么都没选 1:战士  2：法师
-    public string returnOcctype;                        //取消选择职业返回  类型  0：什么都没选 1:战士  2：法师
+    public string sclectOcctype;                        //当前选择职业移动  类型  0：什么都没选 1：战士  2：法师  3：骑士
+    public string returnOcctype;                        //取消选择职业返回  类型  0：什么都没选 1：战士  2：法师  3：骑士
     private GameObject sclectRoseObj;                   //当前选中的职业模型
     private GameObject returnRoseObj;                   //取消选择的职业模型
     public GameObject Obj_EffectSclect;                 //选中特效源文件
@@ -52,6 +58,8 @@ public class UI_CreateRose : MonoBehaviour {
     public GameObject Obj_ShowText_ZhanShi;
     public GameObject Obj_ShowText_MoFaShi;
     public GameObject Obj_ShowText_LieRen;
+    public GameObject Obj_ShowText_QiShi;
+    
     public GameObject Obj_ShowText_LieRen_1;
     public GameObject Obj_ShowText_LieRen_2;
 
@@ -206,12 +214,13 @@ public class UI_CreateRose : MonoBehaviour {
                         //显示UI
                         //UI_NameObj.GetComponent<Text>().text = getRoseData(sclectOcctype);
                         UI_OccObj.GetComponent<Text>().text = "战士";
-                        
                         UI_SetObj_ZhanShi.SetActive(false);
 
                         Obj_ShowText_ZhanShi.SetActive(true);
                         Obj_ShowText_MoFaShi.SetActive(false);
                         Obj_ShowText_LieRen.SetActive(false);
+                        Obj_ShowText_QiShi.SetActive(false);
+                         
                         break;
 
                     case "2":
@@ -225,6 +234,7 @@ public class UI_CreateRose : MonoBehaviour {
                         Obj_ShowText_ZhanShi.SetActive(false);
                         Obj_ShowText_MoFaShi.SetActive(true);
                         Obj_ShowText_LieRen.SetActive(false);
+                        Obj_ShowText_QiShi.SetActive(false);
 
                         break;
 
@@ -234,11 +244,27 @@ public class UI_CreateRose : MonoBehaviour {
                         //显示UI
                         //UI_NameObj.GetComponent<Text>().text = getRoseData(sclectOcctype);
                         UI_OccObj.GetComponent<Text>().text = "狩猎者";
-                        UI_SetObj_MoFaShi.SetActive(false);
+                        UI_SetObj_LieRen.SetActive(false);
 
                         Obj_ShowText_ZhanShi.SetActive(false);
                         Obj_ShowText_MoFaShi.SetActive(false);
+                        Obj_ShowText_QiShi.SetActive(false);
                         Obj_ShowText_LieRen.SetActive(true);
+
+                        break;
+
+                    case "4":
+                        sclectRoseObj = Obj_QiShi;
+                        Obj_EffectSclectObj = Obj_EffectSclectFaShi;
+                        //显示UI
+                        //UI_NameObj.GetComponent<Text>().text = getRoseData(sclectOcctype);
+                        UI_OccObj.GetComponent<Text>().text = "黑暗骑士";
+                        UI_SetObj_QiShi.SetActive(false);
+
+                        Obj_ShowText_ZhanShi.SetActive(false);
+                        Obj_ShowText_MoFaShi.SetActive(false);
+                        Obj_ShowText_LieRen.SetActive(false);
+                        Obj_ShowText_QiShi.SetActive(true);
 
                         break;
                 }
@@ -344,6 +370,7 @@ public class UI_CreateRose : MonoBehaviour {
                 //Debug.Log("返回:" + returnOcctype);
                 switch (returnOcctype)
                 {
+
                     case "1":
                         returnRoseObj = Obj_ZhanShi;
                         Obj_ReturnMovePosi = Obj_ZhanShiStartPosi;
@@ -354,6 +381,9 @@ public class UI_CreateRose : MonoBehaviour {
                         break;
                     case "3":
                         returnRoseObj = Obj_LieRen;
+                        Obj_ReturnMovePosi = Obj_LieRenStartPosi;
+                        /*
+                        returnRoseObj = Obj_LieRen;
                         if(sclectOcctype == "1")
                         {
                             Obj_ReturnMovePosi = Obj_ZhanShiStartPosi;
@@ -362,7 +392,23 @@ public class UI_CreateRose : MonoBehaviour {
                         {
                             Obj_ReturnMovePosi = Obj_MoFaShiStartPosi;
                         }
-                        
+                        */
+                        break;
+
+                    case "4":
+                        returnRoseObj = Obj_QiShi;
+                        Obj_ReturnMovePosi = Obj_QiShiStartPosi;
+                        /*
+                        returnRoseObj = Obj_LieRen;
+                        if (sclectOcctype == "1")
+                        {
+                            Obj_ReturnMovePosi = Obj_ZhanShiStartPosi;
+                        }
+                        if (sclectOcctype == "2")
+                        {
+                            Obj_ReturnMovePosi = Obj_MoFaShiStartPosi;
+                        }
+                        */
                         break;
                 }
 
@@ -398,7 +444,7 @@ public class UI_CreateRose : MonoBehaviour {
             }
         }
 
-
+        /*
         if (TeShuStatus) {
 
             if (TeShuStatusOne == false) {
@@ -451,7 +497,7 @@ public class UI_CreateRose : MonoBehaviour {
 
 
         }
-
+        */
 
         //加载数据
         if (Game_PublicClassVar.Get_wwwSet.updataNumSum > 0) {
@@ -485,8 +531,11 @@ public class UI_CreateRose : MonoBehaviour {
 
         Obj_ShowText_ZhanShi.SetActive(false);
         Obj_ShowText_MoFaShi.SetActive(false);
-        Obj_ShowText_LieRen_1.SetActive(false);
-        Obj_ShowText_LieRen_2.SetActive(false);
+        Obj_ShowText_LieRen.SetActive(false);
+        Obj_ShowText_QiShi.SetActive(false);
+
+        //Obj_ShowText_LieRen_1.SetActive(false);
+        //Obj_ShowText_LieRen_2.SetActive(false);
 
         if (sclectOcctype == "2")
         {
@@ -506,9 +555,6 @@ public class UI_CreateRose : MonoBehaviour {
             btn_createLieRen();
         }
 
-
-
-        
     }
 
     public void btn_createFaShi()
@@ -520,8 +566,10 @@ public class UI_CreateRose : MonoBehaviour {
 
         Obj_ShowText_ZhanShi.SetActive(false);
         Obj_ShowText_MoFaShi.SetActive(false);
-        Obj_ShowText_LieRen_1.SetActive(false);
-        Obj_ShowText_LieRen_2.SetActive(false);
+        Obj_ShowText_LieRen.SetActive(false);
+        Obj_ShowText_QiShi.SetActive(false);
+        //Obj_ShowText_LieRen_1.SetActive(false);
+        //Obj_ShowText_LieRen_2.SetActive(false);
 
         if (sclectOcctype == "1")
         {
@@ -539,8 +587,6 @@ public class UI_CreateRose : MonoBehaviour {
             Debug.Log("账户下已经拥有角色无法选择角色！");
         }
 
-
-
     }
 
 
@@ -551,8 +597,10 @@ public class UI_CreateRose : MonoBehaviour {
 
         Obj_ShowText_ZhanShi.SetActive(false);
         Obj_ShowText_MoFaShi.SetActive(false);
-        Obj_ShowText_LieRen_1.SetActive(false);
-        Obj_ShowText_LieRen_2.SetActive(false);
+        Obj_ShowText_LieRen.SetActive(false);
+        Obj_ShowText_QiShi.SetActive(false);
+        //Obj_ShowText_LieRen_1.SetActive(false);
+        //Obj_ShowText_LieRen_2.SetActive(false);
 
         if (Game_PublicClassVar.Get_wwwSet.NowSelectFileName == "")
         {
@@ -564,11 +612,33 @@ public class UI_CreateRose : MonoBehaviour {
         }
     }
 
+    public void btn_createQiShi()
+    {
+
+        UI_SetObj_Sclect.SetActive(false);
+
+        Obj_ShowText_ZhanShi.SetActive(false);
+        Obj_ShowText_MoFaShi.SetActive(false);
+        Obj_ShowText_LieRen.SetActive(false);
+        Obj_ShowText_QiShi.SetActive(false);
+        //Obj_ShowText_LieRen_1.SetActive(false);
+        //Obj_ShowText_LieRen_2.SetActive(false);
+
+        if (Game_PublicClassVar.Get_wwwSet.NowSelectFileName == "")
+        {
+            CreateRose("4");
+        }
+        else
+        {
+            Debug.Log("账户下已经拥有角色无法选择角色！");
+        }
+    }
+
 
 
 
     //创建角色
-    //创建类型（1,战士  2,法师 3 猎人）
+    //创建类型（1,战士  2,法师 3 猎人 4 骑士）
     public void CreateRose(string createType,bool firstGame = false) {
 
         //Debug.Log("createType = " + createType);
@@ -625,6 +695,10 @@ public class UI_CreateRose : MonoBehaviour {
             case "3":
                 Game_PublicClassVar.Get_wwwSet.RoseID = "10001";
                 break;
+
+            case "4":
+                Game_PublicClassVar.Get_wwwSet.RoseID = "10001";
+                break;
         }
 
         //删除中心特效
@@ -666,7 +740,7 @@ public class UI_CreateRose : MonoBehaviour {
             break;
             case "2":
                 roseID = "10002";
-                break;
+            break;
         }
 
         string roseName = "";
@@ -680,7 +754,6 @@ public class UI_CreateRose : MonoBehaviour {
             roseName = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("Name", "ID", roseID, set_XmlPath + "GameConfig.xml");
             roseLv = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("Lv", "ID", roseID, set_XmlPath + "GameConfig.xml");
             firstGame = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("FirstGame", "ID", roseID, set_XmlPath + "GameConfig.xml");
-            
         }
         catch {
             Debug.Log("报错了");
@@ -713,6 +786,9 @@ public class UI_CreateRose : MonoBehaviour {
                 case "0":
                     UI_SetObj_MoFaShi.SetActive(true);
                     UI_SetObj_ZhanShi.SetActive(true);
+                    UI_SetObj_LieRen.SetActive(true);
+                    UI_SetObj_QiShi.SetActive(true);
+
                     UI_SetObj_Sclect.SetActive(false);
 
                     break;
@@ -720,37 +796,65 @@ public class UI_CreateRose : MonoBehaviour {
                 case "1":
                     UI_SetObj_MoFaShi.SetActive(true);
                     UI_SetObj_ZhanShi.SetActive(false);
+                    UI_SetObj_LieRen.SetActive(true);
+                    UI_SetObj_QiShi.SetActive(true);
+
                     if (!Game_PublicClassVar.Get_wwwSet.DataUpdataStatus) {
                         UI_SetObj_Sclect.SetActive(true);
                     }
 
-                    Obj_ShowText_LieRen_1.SetActive(true);
-                    Obj_ShowText_LieRen_2.SetActive(false);
+                    Obj_ShowText_LieRen.SetActive(true);
+                    //Obj_ShowText_LieRen_1.SetActive(true);
+                    //Obj_ShowText_LieRen_2.SetActive(false);
 
                     break;
 
                 case "2":
                     UI_SetObj_MoFaShi.SetActive(false);
                     UI_SetObj_ZhanShi.SetActive(true);
+                    UI_SetObj_LieRen.SetActive(true);
+                    UI_SetObj_QiShi.SetActive(true);
+
                     if (!Game_PublicClassVar.Get_wwwSet.DataUpdataStatus)
                     {
                         UI_SetObj_Sclect.SetActive(true);
                     }
 
-                    Obj_ShowText_LieRen_1.SetActive(false);
-                    Obj_ShowText_LieRen_2.SetActive(true);
+                    Obj_ShowText_LieRen.SetActive(true);
+                    //Obj_ShowText_LieRen_1.SetActive(false);
+                    //Obj_ShowText_LieRen_2.SetActive(true);
                     break;
 
                 case "3":
                     UI_SetObj_MoFaShi.SetActive(true);
                     UI_SetObj_ZhanShi.SetActive(true);
+                    UI_SetObj_LieRen.SetActive(false);
+                    UI_SetObj_QiShi.SetActive(true);
+
                     if (!Game_PublicClassVar.Get_wwwSet.DataUpdataStatus)
                     {
                         UI_SetObj_Sclect.SetActive(true);
                     }
 
-                    Obj_ShowText_LieRen_1.SetActive(false);
-                    Obj_ShowText_LieRen_2.SetActive(false);
+                    Obj_ShowText_LieRen.SetActive(true);
+                    //Obj_ShowText_LieRen_1.SetActive(false);
+                    //Obj_ShowText_LieRen_2.SetActive(false);
+                    break;
+
+                case "4":
+                    UI_SetObj_MoFaShi.SetActive(true);
+                    UI_SetObj_ZhanShi.SetActive(true);
+                    UI_SetObj_LieRen.SetActive(true);
+                    UI_SetObj_QiShi.SetActive(false);
+
+                    if (!Game_PublicClassVar.Get_wwwSet.DataUpdataStatus)
+                    {
+                        UI_SetObj_Sclect.SetActive(true);
+                    }
+
+                    Obj_ShowText_LieRen.SetActive(true);
+                    //Obj_ShowText_LieRen_1.SetActive(false);
+                    //Obj_ShowText_LieRen_2.SetActive(false);
                     break;
             }
 

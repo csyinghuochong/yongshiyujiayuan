@@ -1264,6 +1264,27 @@ public class WWWSet:MonoBehaviour{
 
 
                                 }
+
+                                //创建猎手,写入黑暗骑士基础值
+                                if (CreateRoseOcc == "4")
+                                {
+
+                                    //写入技能
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnSkillID", "60012010,60012020,60012030,60012040,60012050,60012060", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+
+                                    //写入天赋
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnTianFuID", "301101,0;311101,0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+
+                                    //写入职业
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("RoseOccupation", "3", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+
+                                    Game_PublicClassVar.Get_function_Rose.SaveGameConfig_Rose(Game_PublicClassVar.Get_wwwSet.RoseID, "Occ", CreateRoseOcc);
+
+                                    //写入快捷施法
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("MainSkillUI_5", "60012011", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
+
+
+                                }
                             }
 
                             //存储文件

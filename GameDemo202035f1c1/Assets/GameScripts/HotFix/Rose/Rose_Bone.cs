@@ -53,6 +53,20 @@ public class Rose_Bone : MonoBehaviour {
     public GameObject RoseModelWeaponBaseModel_LieRen;
 
 
+    //黑暗骑士
+    public RuntimeAnimatorController QiShi_Animator;
+    public Avatar QiShi_Avatar;
+    public GameObject QiShi_Obj;
+    public SkinnedMeshRenderer[] QiShi_Skin;
+    public Material[] QiShi_InvisibleShader;            //角色隐身shader
+    public Material[] QiShi_SelfShader;                 //角色本身shader
+    public GameObject[] QiShi_ModelShowShader;            //角色本身shader(用于显示遮挡科技感)
+    public Transform RoseWeaponPosi_QiShi;                //角色武器位置
+    public Transform RoseModelWeaponPosi_QiShi;           //角色武器位置UI
+    public GameObject RoseWeaponBaseModel_QiShi;          //角色法师
+    public GameObject RoseModelWeaponBaseModel_QiShi;
+
+
     // Use this for initialization
     void Awake()
     {

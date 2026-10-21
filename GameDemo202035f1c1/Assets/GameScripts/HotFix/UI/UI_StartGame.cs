@@ -185,6 +185,10 @@ public class UI_StartGame : MonoBehaviour {
             case "3":
                 roseID = "10003";
                 break;
+
+            case "4":
+                roseID = "10004";
+                break;
         }
 
         //设置存储文件
@@ -255,6 +259,10 @@ public class UI_StartGame : MonoBehaviour {
 
                     case "3":
                         createName = "小小猎手";
+                        break;
+
+                    case "4":
+                        createName = "小小骑士";
                         break;
                 }
 

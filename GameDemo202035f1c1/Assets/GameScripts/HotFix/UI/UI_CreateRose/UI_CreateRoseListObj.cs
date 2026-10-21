@@ -123,6 +123,7 @@ public class UI_CreateRoseListObj : MonoBehaviour {
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ZhanShi.SetActive(true);
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_MoFaShi.SetActive(true);
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_LieRen.SetActive(true);
+            Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_QiShi.SetActive(true);
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_DeleteRoseBtn.SetActive(true);
             //切换界面角色显示
             //用于播放位置来回跑动
@@ -149,6 +150,7 @@ public class UI_CreateRoseListObj : MonoBehaviour {
                     //隐藏模型
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_MoFaShi.SetActive(false);
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_LieRen.SetActive(false);
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_QiShi.SetActive(false);
                     break;
 
                 case "2":
@@ -156,6 +158,7 @@ public class UI_CreateRoseListObj : MonoBehaviour {
                     //隐藏模型
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ZhanShi.SetActive(false);
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_LieRen.SetActive(false);
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_QiShi.SetActive(false);
                     break;
 
                 case "3":
@@ -163,6 +166,15 @@ public class UI_CreateRoseListObj : MonoBehaviour {
                     //隐藏模型
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ZhanShi.SetActive(false);
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_MoFaShi.SetActive(false);
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_QiShi.SetActive(false);
+                    break;
+
+                case "4":
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().CreateRose("4");
+                    //隐藏模型
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ZhanShi.SetActive(false);
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_MoFaShi.SetActive(false);
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_LieRen.SetActive(false);
                     break;
 
                 default:
@@ -170,6 +182,7 @@ public class UI_CreateRoseListObj : MonoBehaviour {
                     //隐藏模型
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_MoFaShi.SetActive(false);
                     Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_LieRen.SetActive(false);
+                    Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_QiShi.SetActive(false);
                     break;
             }
 
@@ -185,8 +198,10 @@ public class UI_CreateRoseListObj : MonoBehaviour {
             //选中角色隐藏后面两个的UI显示
             Obj_CreatePar.GetComponent<UI_CreateRose>().UI_SetObj_MoFaShi.SetActive(false);
             Obj_CreatePar.GetComponent<UI_CreateRose>().UI_SetObj_ZhanShi.SetActive(false);
-            Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ShowText_LieRen_1.SetActive(false);
-            Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ShowText_LieRen_2.SetActive(false);
+            Obj_CreatePar.GetComponent<UI_CreateRose>().UI_SetObj_LieRen.SetActive(false);
+            Obj_CreatePar.GetComponent<UI_CreateRose>().UI_SetObj_QiShi.SetActive(false);
+            //Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ShowText_LieRen_1.SetActive(false);
+            //Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ShowText_LieRen_2.SetActive(false);
             Obj_CreatePar.GetComponent<UI_CreateRose>().UI_SetObj_SclectShowName.SetActive(false);
 
             Obj_CreatePar.GetComponent<UI_CreateRose>().UI_SetObj_SclectCreateName.SetActive(false);
@@ -209,6 +224,7 @@ public class UI_CreateRoseListObj : MonoBehaviour {
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_MoFaShi.SetActive(true);
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_ZhanShi.SetActive(true);
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_LieRen.SetActive(true);
+            Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_QiShi.SetActive(true);
             Obj_CreatePar.GetComponent<UI_CreateRose>().updateNameShow();
 
             Obj_CreatePar.GetComponent<UI_CreateRose>().Obj_DeleteRoseBtn.SetActive(false);
