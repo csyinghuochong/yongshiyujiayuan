@@ -68,6 +68,11 @@ public class UI_CreateRoseListObj : MonoBehaviour {
                     roseOcc = langStr;
                     break;
 
+                case "4":
+                    langStr = LanguageManager.Instance.LoadLocalization("黑暗骑士");
+                    roseOcc = langStr;
+                    break;
+
                 default:
 
                     langStr = LanguageManager.Instance.LoadLocalization("战士");

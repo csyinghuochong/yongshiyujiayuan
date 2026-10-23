@@ -238,6 +238,10 @@ public class UI_StartGame : MonoBehaviour {
                 case "3":
                     Game_PublicClassVar.Get_wwwSet.CreateRoseOcc = "3";
                     break;
+
+                case "4":
+                    Game_PublicClassVar.Get_wwwSet.CreateRoseOcc = "4";
+                    break;
             }
 
             //更新创建角色的名称

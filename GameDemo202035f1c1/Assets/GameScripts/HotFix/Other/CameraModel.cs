@@ -6,6 +6,7 @@ public class CameraModel : MonoBehaviour {
     public GameObject Obj_ModelZhanShi;
     public GameObject Obj_ModelFaShi;
     public GameObject Obj_ModelLieRen;
+    public GameObject Obj_ModelQiShi;
 
     public GameObject Obj_EquipModel_Posi_ModelEffect;      //这个特效只能显示1个
     public GameObject Obj_EquipModel_Posi_Low;
@@ -13,16 +14,19 @@ public class CameraModel : MonoBehaviour {
     public SkinnedMeshRenderer[] Obj_ModelZhanShi_Skin;
     public SkinnedMeshRenderer[] Obj_ModelFaShi_Skin;
     public SkinnedMeshRenderer[] Obj_ModelLieRen_Skin;
+    public SkinnedMeshRenderer[] Obj_ModelQiShi_Skin;
 
     public GameObject Obj_ZuoQiModelShow;
 
     public GameObject Obj_PlayerModelZhanShi;
     public GameObject Obj_PlayerModelFaShi;
     public GameObject Obj_PlayerModelLieRen;
+    public GameObject Obj_PlayerModelQiShi;
 
     public SkinnedMeshRenderer[] Obj_PlayerModelZhanShi_Skin;
     public SkinnedMeshRenderer[] Obj_PlayerModelFaShi_Skin;
     public SkinnedMeshRenderer[] Obj_PlayerModelLieRen_Skin;
+    public SkinnedMeshRenderer[] Obj_PlayerModelQiShi_Skin;
 
 
     public GameObject Obj_EquipRoseSet;
@@ -58,6 +62,7 @@ public class CameraModel : MonoBehaviour {
 			    Obj_ModelZhanShi.SetActive(true);
 			    Obj_ModelFaShi.SetActive(false);
                 Obj_ModelLieRen.SetActive(false);
+                Obj_ModelQiShi.SetActive(false);
 
                 break;
 
@@ -65,39 +70,57 @@ public class CameraModel : MonoBehaviour {
 			    Obj_ModelZhanShi.SetActive(false);
 			    Obj_ModelFaShi.SetActive(true);
                 Obj_ModelLieRen.SetActive(false);
+                Obj_ModelQiShi.SetActive(false);
                 break;
 
             case "3":
                 Obj_ModelZhanShi.SetActive(false);
                 Obj_ModelFaShi.SetActive(false);
                 Obj_ModelLieRen.SetActive(true);
+                Obj_ModelQiShi.SetActive(false);
                 break;
-		}
+
+            case "4":
+                Obj_ModelZhanShi.SetActive(false);
+                Obj_ModelFaShi.SetActive(false);
+                Obj_ModelLieRen.SetActive(false);
+                Obj_ModelQiShi.SetActive(true);
+                break;
+        }
 
 	}
 
 	public void showOccModel(string occ)
 	{
-		Debug.Log("showOccModelshowOccModelshowOccModel");
+		//Debug.Log("showOccModelshowOccModelshowOccModel");
 		switch (occ)
 		{
 		    case "1":
 			    Obj_PlayerModelZhanShi.SetActive(true);
                 Obj_PlayerModelFaShi.SetActive(false);
                 Obj_PlayerModelLieRen.SetActive(false);
-
+                Obj_PlayerModelQiShi.SetActive(false);
                 break;
 
 		    case "2":
                 Obj_PlayerModelZhanShi.SetActive(false);
                 Obj_PlayerModelFaShi.SetActive(true);
                 Obj_PlayerModelLieRen.SetActive(false);
+                Obj_PlayerModelQiShi.SetActive(false);
                 break;
 
             case "3":
                 Obj_PlayerModelZhanShi.SetActive(false);
                 Obj_PlayerModelFaShi.SetActive(false);
                 Obj_PlayerModelLieRen.SetActive(true);
+                Obj_PlayerModelQiShi.SetActive(false);
+                break;
+
+            case "4":
+                Obj_PlayerModelZhanShi.SetActive(false);
+                Obj_PlayerModelFaShi.SetActive(false);
+                Obj_PlayerModelLieRen.SetActive(false);
+                Obj_PlayerModelQiShi.SetActive(true);
                 break;
         }
 	}

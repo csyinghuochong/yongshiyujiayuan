@@ -378,7 +378,7 @@ public class WWWSet:MonoBehaviour{
         DontDestroyOnLoad(this.gameObject);
 
         UpdateGameID = 1;
-        xmlVersion = 546;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
+        xmlVersion = 547;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
         WorldLv = 20;                                           //默认世界等级
 
         //默认设置语言
@@ -1270,18 +1270,18 @@ public class WWWSet:MonoBehaviour{
                                 {
 
                                     //写入技能
-                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnSkillID", "60012010,60012020,60012030,60012040,60012050,60012060", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnSkillID", "60013011,60013020,60013030,60013040,60013050,60013060", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 
                                     //写入天赋
                                     Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnTianFuID", "301101,0;311101,0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 
                                     //写入职业
-                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("RoseOccupation", "3", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("RoseOccupation", "4", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 
                                     Game_PublicClassVar.Get_function_Rose.SaveGameConfig_Rose(Game_PublicClassVar.Get_wwwSet.RoseID, "Occ", CreateRoseOcc);
 
                                     //写入快捷施法
-                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("MainSkillUI_5", "60012011", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("MainSkillUI_5", "60013011", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
 
 
                                 }

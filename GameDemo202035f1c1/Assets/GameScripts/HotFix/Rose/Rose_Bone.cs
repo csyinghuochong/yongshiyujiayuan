@@ -83,6 +83,7 @@ public class Rose_Bone : MonoBehaviour {
                 ZhanShi_Obj.SetActive(true);
                 FaShi_Obj.SetActive(false);
                 LieRen_Obj.SetActive(false);
+                QiShi_Obj.SetActive(false);
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponPosi = RoseWeaponPosi_ZhanShi;
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseModelWeaponPosi = RoseModelWeaponPosi_ZhanShi;
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponBaseModel = RoseWeaponBaseModel_ZhanShi;
@@ -98,6 +99,7 @@ public class Rose_Bone : MonoBehaviour {
                 FaShi_Obj.SetActive(true);
                 ZhanShi_Obj.SetActive(false);
                 LieRen_Obj.SetActive(false);
+                QiShi_Obj.SetActive(false);
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponPosi = RoseWeaponPosi_FaShi;
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseModelWeaponPosi = RoseModelWeaponPosi_FaShi;
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponBaseModel = RoseWeaponBaseModel_FaShi;
@@ -113,10 +115,27 @@ public class Rose_Bone : MonoBehaviour {
                 FaShi_Obj.SetActive(false);
                 ZhanShi_Obj.SetActive(false);
                 LieRen_Obj.SetActive(true);
+                QiShi_Obj.SetActive(false);
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponPosi = RoseWeaponPosi_LieRen;
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseModelWeaponPosi = RoseModelWeaponPosi_LieRen;
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponBaseModel = RoseWeaponBaseModel_LieRen;
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseModelWeaponBaseModel = RoseModelWeaponBaseModel_LieRen;
+
+                break;
+
+            //黑暗骑士
+            case "4":
+
+                this.gameObject.GetComponent<Animator>().runtimeAnimatorController = QiShi_Animator;
+                this.gameObject.GetComponent<Animator>().avatar = QiShi_Avatar;
+                FaShi_Obj.SetActive(false);
+                ZhanShi_Obj.SetActive(false);
+                LieRen_Obj.SetActive(false);
+                QiShi_Obj.SetActive(true);
+                Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponPosi = RoseWeaponPosi_QiShi;
+                Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseModelWeaponPosi = RoseModelWeaponPosi_QiShi;
+                Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponBaseModel = RoseWeaponBaseModel_QiShi;
+                Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseModelWeaponBaseModel = RoseModelWeaponBaseModel_QiShi;
 
                 break;
         }

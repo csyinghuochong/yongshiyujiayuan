@@ -1460,6 +1460,10 @@ public class Function_Skill{
             case "3":
                 learnTianFuID = "301101,0;311101,0";
                 break;
+            //猎人初始技能
+            case "4":
+                learnTianFuID = "401101,0;411101,0";
+                break;
         }
 
         //读取天赋点数

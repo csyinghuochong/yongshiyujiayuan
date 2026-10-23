@@ -2141,6 +2141,8 @@ public class Rose_Status : MonoBehaviour
     //普通攻击
     public void RoseAct()
     {
+        Debug.Log("我攻击了");
+
         if (RoseSingStatus)
         {
             return;
@@ -2304,6 +2306,81 @@ public class Rose_Status : MonoBehaviour
                 //播放音效
                 Game_PublicClassVar.Get_function_UI.PlaySource("20015", "2");
                 break;
+
+            //黑暗骑士普通攻击
+            case "4":
+
+                //Debug.Log("我攻击了");
+                //判断与目标的距离,小于3就不进行攻击,设置为待机
+                /*
+                if (Obj_ActTarget != null) {
+                    float actDis = Vector3.Distance(this.gameObject.transform.position, Obj_ActTarget.transform.position);
+                    Debug.Log("actDis = " + actDis);
+                    if (actDis >= 3)
+                    {
+                        RoseStatus = "1"; //设置为待机状态
+                        roseActStatus = false;
+                        break;
+                    }
+                }
+                */
+
+                if (Obj_ActTarget != null)
+                {
+                    if (RoseSkill_BianShen.IsBianShen)
+                    {
+                        //设置实例化技能
+                        string zhanshi_SkillID = "60040061";
+                        string objName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", zhanshi_SkillID, "Skill_Template");
+                        GameObject skillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + objName);
+                        GameObject SkillObject_pa = (GameObject)Instantiate(skillObj);
+                        SkillObject_pa.SetActive(false);
+                        //设置技能位置
+                        SkillObject_pa.transform.localRotation = this.Obj_ActTarget.transform.rotation;
+                        SkillObject_pa.transform.localScale = new Vector3(1, 1, 1);
+                        SkillObject_pa.transform.position = new Vector3(Obj_ActTarget.transform.position.x, Obj_ActTarget.transform.position.y, Obj_ActTarget.transform.position.z);
+                        SkillObject_pa.SetActive(true);
+                        //传递技能对应的值
+                        SkillObjBase SkillStatus = SkillObject_pa.transform.GetComponent<SkillObjBase>();
+                        SkillStatus.SkillID = zhanshi_SkillID;
+                        SkillStatus.SkillOpen = true;   //开启技能，需要在设置完值后开启技能
+                        SkillStatus.SkillTargetObj = Obj_ActTarget;
+
+                        rosePassiveSkill(); //被动技能
+
+                        actTriggerSkill("2", "1");  //被动技能
+
+                        //播放音效
+                        Game_PublicClassVar.Get_function_UI.PlaySource("20001", "2");
+                    }
+                    else
+                    {
+                        //设置受击特效
+                        if (Obj_ActTarget != null)
+                        {
+                            Obj_ActTarget.GetComponent<AI_1>().HitStatus = true;      //播放受击特效
+                            Obj_ActTarget.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act_2");
+                            Obj_ActTarget.GetComponent<AI_1>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                            Obj_ActTarget.GetComponent<AI_1>().IfHitEffect = true;
+                            Game_PublicClassVar.Get_fight_Formult.RoseActMonster("62000001", Obj_ActTarget, false, true);
+                            if (Random.value < this.GetComponent<Rose_Proprety>().Rose_Cri)
+                            {
+                                roseCriActStatus = true;
+                                //Debug.Log("我开启了暴击");
+                            }
+
+                            rosePassiveSkill(); //被动技能
+
+                            actTriggerSkill("2", "1");  //被动技能
+
+                            //播放音效
+                            Game_PublicClassVar.Get_function_UI.PlaySource("20001", "2");
+                        }
+                    }
+                }
+
+                break;
+
         }
 
         //退出隐身状态
