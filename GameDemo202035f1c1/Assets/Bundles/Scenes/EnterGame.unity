@@ -103836,6 +103836,8 @@ MonoBehaviour:
   RoseWeaponBaseModel: {fileID: 1670659553}
   Obj_RoseWeaponEffectTrail: {fileID: 1062315463592046, guid: 93ef5ffe6e26eb94faf43979a103d388,
     type: 3}
+  Obj_RoseWeaponEffectTrail_QiShi: {fileID: 1062315463592046, guid: 9e7f6597e8e017c4092e631af22ca06a,
+    type: 3}
   RoseModelWeaponPosi: {fileID: 1406073320}
   RoseModelWeaponBaseModel: {fileID: 1406073318}
   SkillStatus:
@@ -208940,9 +208942,8 @@ Transform:
 --- !u!1 &1343220768
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1746358938301302, guid: 266c2be53ff95a14a8acc3876889e5a8,
-    type: 2}
-  m_PrefabInstance: {fileID: 1561592404}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -208958,9 +208959,8 @@ GameObject:
 --- !u!114 &1343220769
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114223941104701300, guid: 266c2be53ff95a14a8acc3876889e5a8,
-    type: 2}
-  m_PrefabInstance: {fileID: 1561592404}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343220768}
   m_Enabled: 1
@@ -208980,9 +208980,8 @@ MonoBehaviour:
 --- !u!4 &1343220770
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8,
-    type: 2}
-  m_PrefabInstance: {fileID: 1561592404}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343220768}
   serializedVersion: 2
@@ -241200,61 +241199,6 @@ Transform:
   - {fileID: 1733956103}
   m_Father: {fileID: 1399498409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1561592404
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1746358938301302, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_Name
-      value: GamePlayerSet
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606595873095590, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114223941104701300, guid: 266c2be53ff95a14a8acc3876889e5a8,
-        type: 2}
-      propertyPath: Obj_PlayerPetHp
-      value: 
-      objectReference: {fileID: 1580445905344950, guid: 0b46c797095759542b64f3a738e5686d,
-        type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 266c2be53ff95a14a8acc3876889e5a8, type: 2}
 --- !u!1 &1562306949
 GameObject:
   m_ObjectHideFlags: 0
@@ -346710,7 +346654,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 827380127}
   - {fileID: 1524925178}
-  - {fileID: 1561592404}
+  - {fileID: 1343220770}
   - {fileID: 1717210226}
   - {fileID: 611622133}
   - {fileID: 2056169855}

@@ -61,6 +61,11 @@ public class UI_RoseHp : MonoBehaviour {
         {
             Obj_NengLiangSet.SetActive(true);
         }
+        //黑暗武士不显示魔法
+        if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseOcc == "4")
+        {
+            Obj_Lan_Value.SetActive(false);
+        }
 
         //更新阵营
         UpdateZhenYing();

@@ -49,6 +49,7 @@ public class Rose_Status : MonoBehaviour
     public Transform RoseWeaponPosi;                //角色武器位置
     public GameObject RoseWeaponBaseModel;          //角色武器模型
     public GameObject Obj_RoseWeaponEffectTrail;    //角色武器路径特效
+    public GameObject Obj_RoseWeaponEffectTrail_QiShi;    //角色武器路径特效
     private GameObject roseWeaponEffectTrail;
     public Transform RoseModelWeaponPosi;           //角色UI界面模型武器位置
     public GameObject RoseModelWeaponBaseModel;     //角色UI界面模型武器模型
@@ -941,6 +942,24 @@ public class Rose_Status : MonoBehaviour
                             }
 
                             break;
+
+                        //黑暗攻击最近目标
+                        case "4":
+
+                            if (Obj_ActTarget == null)
+                            {
+                                Obj_ActTarget = NextAutomaticMonsterObj;
+                            }
+                            else
+                            {
+                                //if (Vector3.Distance(Obj_ActTarget.transform.position, NextAutomaticMonsterObj.transform.position) >= autoActDis)
+                                if (Vector3.Distance(Obj_ActTarget.transform.position, this.gameObject.transform.position) >= actDistance)
+                                {
+                                    Obj_ActTarget = NextAutomaticMonsterObj;
+                                }
+                            }
+
+                            break;
                     }
                     //Obj_ActTarget = NextAutomaticMonsterObj;
                     Move_Target_Position = Obj_ActTarget.transform.position;
@@ -983,6 +1002,9 @@ public class Rose_Status : MonoBehaviour
                                 break;
                             case "3":
                                 YaoGanStopMoveTime = 0.3f;
+                                break;
+                            case "4":
+                                YaoGanStopMoveTime = 1f;
                                 break;
                         }
                     }
@@ -2964,6 +2986,9 @@ public class Rose_Status : MonoBehaviour
                     if (RoseOcc != "3")
                     {
                         roseWeaponEffectTrail = (GameObject)Instantiate(Obj_RoseWeaponEffectTrail);
+                        if (RoseOcc == "4") {
+                            roseWeaponEffectTrail = (GameObject)Instantiate(Obj_RoseWeaponEffectTrail_QiShi);
+                        }
                         roseWeaponEffectTrail.SetActive(false);
                         roseWeaponEffectTrail.transform.parent = RoseWeaponPosi.transform;
                         roseWeaponEffectTrail.transform.localPosition = new Vector3(-0.0036f, -0.00429f, 0.549f);
