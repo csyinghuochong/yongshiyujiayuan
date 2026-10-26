@@ -76,7 +76,7 @@ public class RoseSkill_BaoFa : MonoBehaviour
             
             int hpNow = roseProprety.Rose_HpNow;
             int hp = roseProprety.Rose_Hp;
-            int value = (int)(hp * value_1);
+            int value = (int)(hpNow * value_1);
             
             if (hpNow <= value)
             {

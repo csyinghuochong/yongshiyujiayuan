@@ -88,7 +88,7 @@ public class UI_TianFu : MonoBehaviour {
 
                 string occStr = Game_PublicClassVar.Get_function_Rose.GetRoseOcc();
 
-                if (occStr == "1" || occStr == "0" || occStr == "" || occStr == null||occStr == "2" || occStr == "3") {
+                if (occStr == "1" || occStr == "0" || occStr == "" || occStr == null||occStr == "2" || occStr == "3" || occStr == "4") {
 
                     //战士天赋
                     switch (i + 1)
@@ -519,6 +519,151 @@ public class UI_TianFu : MonoBehaviour {
                             break;
                         case 63:
                             tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "318101";
+                            break;
+                    }
+                }
+                
+                //暗黑武士天赋
+                if (occStr == "4")
+                {
+
+                    switch (i + 1)
+                    {
+                        //第一天赋
+                        case 1:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "401101";
+                            break;
+                        case 2:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "402101";
+                            break;
+                        case 3:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "402201";
+                            break;
+                        case 4:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "402301";
+                            break;
+                        case 5:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "403101";
+                            break;
+                        case 6:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "403201";
+                            break;
+                        case 7:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "404301";
+                            break;
+                        case 8:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "404201";
+                            break;
+                        case 9:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "404101";
+                            break;
+                        case 10:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "404401";
+                            break;
+                        case 11:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "404501";
+                            break;
+                        case 12:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "405101";
+                            break;
+                        case 13:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "405201";
+                            break;
+                        case 14:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "406301";
+                            break;
+                        case 15:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "406201";
+                            break;
+                        case 16:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "406101";
+                            break;
+                        case 17:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "406401";
+                            break;
+                        case 18:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "406501";
+                            break;
+                        case 19:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "407201";
+                            break;
+                        case 20:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "407101";
+                            break;
+                        case 21:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "407301";
+                            break;
+                        case 22:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "408101";
+                            break;
+
+
+                        //第二天赋
+                        case 42:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "411101";
+                            break;
+                        case 43:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "412101";
+                            break;
+                        case 44:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "412201";
+                            break;
+                        case 45:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "412301";
+                            break;
+                        case 46:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "413101";
+                            break;
+                        case 47:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "413201";
+                            break;
+                        case 48:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "414301";
+                            break;
+                        case 49:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "414201";
+                            break;
+                        case 50:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "414101";
+                            break;
+                        case 51:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "414401";
+                            break;
+                        case 52:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "414501";
+                            break;
+                        case 53:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "415101";
+                            break;
+                        case 54:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "415201";
+                            break;
+                        case 55:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "416301";
+                            break;
+                        case 56:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "416201";
+                            break;
+                        case 57:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "416101";
+                            break;
+                        case 58:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "416401";
+                            break;
+                        case 59:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "416501";
+                            break;
+                        case 60:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "417201";
+                            break;
+                        case 61:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "417101";
+                            break;
+                        case 62:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "417301";
+                            break;
+                        case 63:
+                            tianFuObj.GetComponent<UI_TianFuIcon>().TianFuID = "418101";
                             break;
                     }
                 }
