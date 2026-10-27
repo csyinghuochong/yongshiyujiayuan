@@ -33,13 +33,6 @@ public class RoseSkill_BaoFa : MonoBehaviour
             value_3 = float.Parse(skillParValue[3]);
         }
         
-        //触发技能Buff
-        // string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffID", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
-        // if (buffID != "0" && buffID != "")
-        // {
-        //     Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, game_PositionVar.Obj_Rose);
-        // }
-
         roseProprety.Rose_XiXuePro_Add += value_2;
         roseProprety.Rose_ActAddPro_Add += value_3;
 
@@ -57,7 +50,14 @@ public class RoseSkill_BaoFa : MonoBehaviour
             effect.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
             effect.SetActive(true);
         }
-
+        
+        //增加buff
+        string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffID", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
+        if (buffID != "0" && buffID != "")
+        {
+            Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, game_PositionVar.Obj_Rose);
+        }
+        
         Destroy(this.gameObject, SkillTime);
     }
 
@@ -93,6 +93,20 @@ public class RoseSkill_BaoFa : MonoBehaviour
 
     private void OnDestroy()
     {
+        // 技能结束时，同步移除炽魂爆发的 Buff。
+        if (roseProprety != null)
+        {
+            Buff_4[] buffs = roseProprety.GetComponents<Buff_4>();
+
+            foreach (Buff_4 buff in buffs)
+            {
+                if (buff != null && buff.BuffID == "90003044")
+                {
+                    Destroy(buff);
+                }
+            }
+        }
+        
         Debug.LogWarning("爆发技能结束！！！！！");
         roseProprety.Rose_XiXuePro_Add -= value_2;
         roseProprety.Rose_ActAddPro_Add -= value_3;
