@@ -1273,7 +1273,7 @@ public class WWWSet:MonoBehaviour{
                                     Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnSkillID", "60013011,60013020,60013030,60013040,60013050,60013060", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 
                                     //写入天赋
-                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnTianFuID", "301101,0;311101,0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnTianFuID", "401101,0;411101,0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
 
                                     //写入职业
                                     Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("RoseOccupation", "4", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
