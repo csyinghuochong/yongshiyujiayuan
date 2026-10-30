@@ -54,6 +54,15 @@ public class UI_TianFu : MonoBehaviour {
             name = LanguageManager.Instance.LoadLocalization("生存天赋");
             Obj_TianFuTextType_2.GetComponent<Text>().text = name;
         }
+        
+        //显示天赋名称
+        if (Game_PublicClassVar.Get_function_Rose.GetRoseOcc() == "4")
+        {
+            string name = LanguageManager.Instance.LoadLocalization("战斗天赋");
+            Obj_TianFuTextType_1.GetComponent<Text>().text = name;
+            name = LanguageManager.Instance.LoadLocalization("降临天赋");
+            Obj_TianFuTextType_2.GetComponent<Text>().text = name;
+        }
     }
 	
 	// Update is called once per frame

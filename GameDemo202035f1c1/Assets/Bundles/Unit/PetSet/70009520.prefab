@@ -741,14 +741,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478844}
-  - component: {fileID: 11402420}
+  - component: {fileID: 6434058229064827436}
   - component: {fileID: 11448636}
   - component: {fileID: 11400230}
   - component: {fileID: 19587568}
   - component: {fileID: 14316046}
   - component: {fileID: 9563326}
   m_Layer: 12
-  m_Name: 9_1
+  m_Name: 70009520
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,7 +771,7 @@ Transform:
   - {fileID: 443330}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11402420
+--- !u!114 &6434058229064827436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -780,110 +780,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 182210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95076c3daf03f704180f40ecbaa255e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 8da56b4b8169b3547ac41d8badac1669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AI_ID_Only: 
-  AI_ID: 70002020
-  AI_ID_Obs:
-    currentCryptoKey: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    fakeValue: 0
-    hiddenValueAddStr: 
-    fakeValueActiveEx: 0
-    hiddenValue: 73946
-    inited: 1
-  AI_Selected_Status:
-    currentCryptoKey: 197
-    hiddenValue: 112
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  AI_Status:
-    currentCryptoKey: 
-    fakeValue: 
-    fakeValueActive: 0
-    hiddenValue: 
-    inited: 1
-  AI_Type:
-    currentCryptoKey: 1215587200
-    fakeValue: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    fakeValueActive: 0
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    hiddenValue: 1215587200
-  AI_PetID:
-    currentCryptoKey: 
-    fakeValue: 
-    fakeValueActive: 0
-    hiddenValue: 
-    inited: 1
-  AI_BuZhuoNum:
-    currentCryptoKey: 2135208189
-    fakeValue: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    fakeValueActive: 0
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    hiddenValue: 2135208189
+  RosePet_ID: 
+  AI_ID: 70009520
+  AI_Selected_Status: 0
+  AI_Status: 
+  PetType: 
+  PetTianTiType: 
   AI_Target: {fileID: 0}
-  Obj_AIModel: {fileID: 133538}
+  Obj_AIModel: {fileID: 182210}
   ModelMesh: {fileID: 13720386}
-  IfRosePet:
-    currentCryptoKey: 138
-    hiddenValue: 63
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
+  IfRosePet: 0
   MonsterCreateObj: {fileID: 0}
-  AIStopMoveStatus:
-    currentCryptoKey: 207
-    hiddenValue: 122
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  AIStopLookTargetStatus:
-    currentCryptoKey: 183
-    hiddenValue: 2
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  IfDeathDestoryModel:
-    currentCryptoKey: 245
-    hiddenValue: 64
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  CreateEWaoDropID:
-    currentCryptoKey: 
-    fakeValue: 
-    fakeValueActive: 0
-    hiddenValue: 
-    inited: 1
+  AIStopMoveStatus: 0
+  AIStopLookTargetStatus: 0
+  IfDeathDestoryModel: 0
+  AILiveTime: 0
+  IfDestoryBuff: 1
+  IfSkillCreatePet_ProTeShu: 0
+  StartPositionObj: {fileID: 0}
   ai_NavMesh: {fileID: 0}
-  ai_chaseRange:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1612281682
-    hiddenValue: 1618418002
+  ai_chaseRange: 0
   AI_MoveSpeed:
     migratedVersion: 
     hiddenValueOldByte4:
@@ -898,125 +817,26 @@ MonoBehaviour:
     hiddenValueAddStr: 
     inited: 1
     fakeValueActiveEx: 0
-    currentCryptoKey: 1510528126
-    hiddenValue: 1523845246
-  ai_monsterType:
-    currentCryptoKey: 
-    fakeValue: 
-    fakeValueActive: 0
-    hiddenValue: 
-    inited: 1
-  monsterRebirthTime:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1002682584
-    hiddenValue: 1001964504
-  monsterReirthTimeSum:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1374909825
-    hiddenValue: 1366684545
-  monsterOffLineTime:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1392414992
-    hiddenValue: 1385299472
-  ai_IfDeath:
-    currentCryptoKey: 128
-    hiddenValue: 53
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  monsterDestoryTime:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 2028182936
-    hiddenValue: 2023613336
-  AI_UpdateProStatus:
-    currentCryptoKey: 164
-    hiddenValue: 17
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  AI_Distance:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1291745561
-    hiddenValue: 1283063321
-  AI_MonsterDeathStatus:
-    currentCryptoKey: 215
-    hiddenValue: 98
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  ai_IfReturn: 0
+  ai_ActDistance: 0
+  actSpped_Sum: 0
+  skillID: []
+  AI_Distance: 0
+  AI_Hp_Status: 0
   Selected_Effect: {fileID: 100000, guid: dbe89896a9d57014a9ebfd2e9e1ee931, type: 3}
   Selected_Effect_Position: {fileID: 435764}
   Ai_HpShowPosition: {fileID: 476382}
-  UI_GameObject: {fileID: 148262, guid: ffc5f9def8e913c4d93eb09dafcb16a4, type: 3}
+  UI_GameObject: {fileID: 189654, guid: 7acb975cabdbd4747a099eab16c50ad4, type: 3}
   UI_Hp: {fileID: 0}
-  HitStatus:
-    currentCryptoKey: 254
-    hiddenValue: 75
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  HitDamge:
-    currentCryptoKey: 1398141476
+  petMovePosition: {x: 0, y: 0, z: 0}
+  HitStatus: 0
+  HitDamge: 0
+  HitObject: {fileID: 196328, guid: cb06081fb1bc41f48a0861687e90ad50, type: 3}
+  HitCriStatus: 0
+  LastHp:
+    currentCryptoKey: 0
     fakeValue: 0
     hiddenValueStr: 
     fakeValueStr: 
@@ -1024,199 +844,23 @@ MonoBehaviour:
     hiddenValueAddStr: 
     inited: 1
     fakeValueActiveEx: 0
-    hiddenValue: 1398141476
-  HitStatus_LuanShe:
-    currentCryptoKey: 215
-    hiddenValue: 98
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  HitObject: {fileID: 196328, guid: cb06081fb1bc41f48a0861687e90ad50, type: 3}
-  HitCriStatus:
-    currentCryptoKey: 172
-    hiddenValue: 25
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  ZhongJiStatus:
-    currentCryptoKey: 234
-    hiddenValue: 95
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  ActReboundStatus:
-    currentCryptoKey: 117
-    hiddenValue: 192
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  MageReboundStatus:
-    currentCryptoKey: 159
-    hiddenValue: 42
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  IfHitEffect:
-    currentCryptoKey: 218
-    hiddenValue: 111
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  IfDodge:
-    currentCryptoKey: 115
-    hiddenValue: 198
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
+    hiddenValue: 13236
+  IfHitEffect: 0
   HitEffect: {fileID: 100000, guid: d5403793b83de7648b0c33ad35e4d64e, type: 3}
   HitEffectt_Position: {fileID: 130450}
   BoneSet: {fileID: 170398}
-  StopMoveTime:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1053409209
-    hiddenValue: 1052756409
-  StopMoveTimeSum:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1762945013
-    hiddenValue: 1768363253
-  AIStopLookTargetTime:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1698371583
-    hiddenValue: 1696021503
-  AIStopLookTargetTimeSum:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1320472861
-    hiddenValue: 1322365981
-  XuanYunStatus:
-    currentCryptoKey: 235
-    hiddenValue: 94
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  XuanYunTime:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1511190519
-    hiddenValue: 1525617399
-  xuanYunTimeSum:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 1643353808
-    hiddenValue: 1637282768
-  ChenMoStatus:
-    currentCryptoKey: 215
-    hiddenValue: 98
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
-  ChenMoTime:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 0
-    hiddenValue: 0
-  ChenMoTimeSum:
-    migratedVersion: 
-    hiddenValueOldByte4:
-      b1: 0
-      b2: 0
-      b3: 0
-      b4: 0
-    fakeValue: 0
-    fakeValueActive: 0
-    hiddenValueStr: 
-    fakeValueStr: 
-    hiddenValueAddStr: 
-    inited: 1
-    fakeValueActiveEx: 0
-    currentCryptoKey: 0
-    hiddenValue: 0
-  dropStatus:
-    currentCryptoKey: 201
-    hiddenValue: 124
-    inited: 1
-    fakeValue: 0
-    fakeValueActive: 0
+  StopMoveTime: 0
+  StopMoveTimeSum: 0
+  AIStopLookTargetTime: 0
+  AIStopLookTargetTimeSum: 0
+  XuanYunStatus: 0
+  XuanYunTime: 0
+  xuanYunTimeSum: 0
+  PositionObj: {fileID: 0}
+  updateStarMoveStatus: 0
+  PetTianTiDataStr: 
+  PetTianTiXiuLianStr: 
+  roseEquipHideStr: 
 --- !u!114 &11448636
 MonoBehaviour:
   m_ObjectHideFlags: 0

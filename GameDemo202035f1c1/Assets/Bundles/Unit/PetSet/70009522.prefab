@@ -164,8 +164,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400074}
+  - component: {fileID: 7232212096566899894}
+  - component: {fileID: 7101314359260254926}
+  - component: {fileID: 3832467301580655415}
+  - component: {fileID: 1156149987764426918}
+  - component: {fileID: 8356728741294094167}
+  - component: {fileID: 5254411058981252158}
   m_Layer: 0
-  m_Name: 9_3
+  m_Name: 70009522
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,8 +194,1886 @@ Transform:
   - {fileID: 448634}
   - {fileID: 448632}
   - {fileID: 481266}
+  - {fileID: 6306171272641843513}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7232212096566899894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da56b4b8169b3547ac41d8badac1669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RosePet_ID: 
+  AI_ID: 70009522
+  AI_Selected_Status: 0
+  AI_Status: 
+  PetType: 
+  PetTianTiType: 
+  AI_Target: {fileID: 0}
+  Obj_AIModel: {fileID: 100074}
+  ModelMesh: {fileID: 13781190}
+  IfRosePet: 0
+  MonsterCreateObj: {fileID: 0}
+  AIStopMoveStatus: 0
+  AIStopLookTargetStatus: 0
+  IfDeathDestoryModel: 0
+  AILiveTime: 0
+  IfDestoryBuff: 1
+  IfSkillCreatePet_ProTeShu: 0
+  StartPositionObj: {fileID: 0}
+  ai_NavMesh: {fileID: 0}
+  ai_chaseRange: 0
+  AI_MoveSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  ai_IfReturn: 0
+  ai_ActDistance: 0
+  actSpped_Sum: 0
+  skillID: []
+  AI_Distance: 0
+  AI_Hp_Status: 0
+  Selected_Effect: {fileID: 100000, guid: dbe89896a9d57014a9ebfd2e9e1ee931, type: 3}
+  Selected_Effect_Position: {fileID: 2994529727807387194}
+  Ai_HpShowPosition: {fileID: 3317217036795160336}
+  UI_GameObject: {fileID: 148262, guid: ffc5f9def8e913c4d93eb09dafcb16a4, type: 3}
+  UI_Hp: {fileID: 0}
+  petMovePosition: {x: 0, y: 0, z: 0}
+  HitStatus: 0
+  HitDamge: 0
+  HitObject: {fileID: 196328, guid: cb06081fb1bc41f48a0861687e90ad50, type: 3}
+  HitCriStatus: 0
+  LastHp:
+    currentCryptoKey: 0
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 58061
+  IfHitEffect: 0
+  HitEffect: {fileID: 100000, guid: d5403793b83de7648b0c33ad35e4d64e, type: 3}
+  HitEffectt_Position: {fileID: 5016086247551989826}
+  BoneSet: {fileID: 8034075559572171697}
+  StopMoveTime: 0
+  StopMoveTimeSum: 0
+  AIStopLookTargetTime: 0
+  AIStopLookTargetTimeSum: 0
+  XuanYunStatus: 0
+  XuanYunTime: 0
+  xuanYunTimeSum: 0
+  PositionObj: {fileID: 0}
+  updateStarMoveStatus: 0
+  PetTianTiDataStr: 
+  PetTianTiXiuLianStr: 
+  roseEquipHideStr: 
+--- !u!114 &7101314359260254926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031fe7c60bafec54b9b59447432d2c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AI_Type:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_TypeSon:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_MonsterType:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_MonsterCreateType:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_Name:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  AI_Lv:
+    currentCryptoKey: 444444
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 444444
+  AI_HpMax:
+    currentCryptoKey: 0
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 98979
+  AI_Hp:
+    currentCryptoKey: 444444
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 444444
+  AI_Act:
+    currentCryptoKey: 444444
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 444444
+  AI_MageAct:
+    currentCryptoKey: 444444
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 444444
+  AI_Def:
+    currentCryptoKey: 444444
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 444444
+  AI_Adf:
+    currentCryptoKey: 444444
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 444444
+  AI_Cri:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_Res:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_Hit:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_Dodge:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_DefAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_AdfAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_DamgeAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_ActDamgeAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_MoveSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_ActSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_HuiXuePro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1267627986
+    hiddenValue: 1266126546
+  AI_XiXieValue:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1061592290
+    hiddenValue: 1067206370
+  AI_XingYunPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1035164932
+    hiddenValue: 1029550852
+  AI_DiXiaoPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1577367067
+    hiddenValue: 1588986907
+  AI_ChouHenValue:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1052885587
+    hiddenValue: 1052950867
+  AI_FuHuoPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1880224547
+    hiddenValue: 1894977827
+  AI_resistance_1:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 7078121
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1208285721
+    hiddenValue: 1224344601
+  AI_resistance_2:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 5898596
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1466027418
+    hiddenValue: 1473077658
+  AI_resistance_3:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 7209462
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1906595092
+    hiddenValue: 1901437972
+  AI_resistance_4:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 2294041
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1492078145
+    hiddenValue: 1481568065
+  AI_resistance_5:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 1442073
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1049041636
+    hiddenValue: 1041926116
+  AI_raceDamge_1:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 8585370
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1792484147
+    hiddenValue: 1780733747
+  AI_raceDamge_2:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 10485795
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1280107122
+    hiddenValue: 1289899122
+  AI_raceDamge_3:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 6750592
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1070447357
+    hiddenValue: 1069207037
+  AI_raceResistance_1:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 5046492
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1120281025
+    hiddenValue: 1109509825
+  AI_raceResistance_2:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 10289312
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1424545985
+    hiddenValue: 1423501505
+  AI_raceResistance_3:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 100
+    fakeValueActive: 1
+    hiddenValueStr: 7733628
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1604901725
+    hiddenValue: 1608231005
+  AI_SkillActDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_SkillActDodgePro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_MonsterActDameDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  AI_MonsterSkillDameDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  AI_Act_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2142696592
+    hiddenValue: 2146743952
+  AI_MagAct_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1485596765
+    hiddenValue: 1483246685
+  AI_Def_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1795330425
+    hiddenValue: 1804665465
+  AI_Adf_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1711826324
+    hiddenValue: 1717897364
+  AI_HpMax_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1092490542
+    hiddenValue: 1091903022
+  AI_Cri_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1290648403
+    hiddenValue: 1287384403
+  AI_Res_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1969044030
+    hiddenValue: 1966759230
+  AI_Hit_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1722720371
+    hiddenValue: 1721806451
+  AI_Dodge_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1370539504
+    hiddenValue: 1371910384
+  AI_DefAdd_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1210067595
+    hiddenValue: 1210720395
+  AI_AdfAdd_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1281153771
+    hiddenValue: 1289379051
+  AI_DamgeAdd_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1945092785
+    hiddenValue: 1942155185
+  AI_MoveSpeed_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1334978458
+    hiddenValue: 1327993498
+  ActMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1180544621
+    hiddenValue: 1185832301
+  MageActMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1178345137
+    hiddenValue: 1176386737
+  DefMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1591288317
+    hiddenValue: 1579276797
+  AdfMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1725496681
+    hiddenValue: 1727912041
+  HpMaxMul_Skill:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1877571871
+    hiddenValue: 1870260511
+  AI_ID:
+    currentCryptoKey: 
+    fakeValue: 
+    fakeValueActive: 0
+    hiddenValue: 
+    inited: 1
+  ActAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1694440900
+    hiddenValue: 1679687620
+  DefAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1143207354
+    hiddenValue: 1156916154
+  AdfAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1172795238
+    hiddenValue: 1164961638
+  MageActAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1694521026
+    hiddenValue: 1700135106
+  AI_Cri_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1036050381
+    hiddenValue: 1038074061
+  AI_Res_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1418425365
+    hiddenValue: 1416923925
+  AI_Hit_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1787720994
+    hiddenValue: 1786088994
+  AI_Dodge_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2012308912
+    hiddenValue: 2003169712
+  AI_ActDamgeAdd_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1384550903
+    hiddenValue: 1385268983
+  ActMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1720038030
+    hiddenValue: 1722975630
+  MageActMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1984473739
+    hiddenValue: 1990871179
+  DefMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1526501466
+    hiddenValue: 1519451226
+  AdfMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1300759771
+    hiddenValue: 1292142811
+  DamgeAddMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1405391191
+    hiddenValue: 1402061911
+  MoveSpeedMul:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1869826126
+    hiddenValue: 1867019086
+  AI_HuiXuePro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1025708454
+    hiddenValue: 1024533414
+  AI_XiXieValue_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2013004611
+    hiddenValue: 1996749891
+  AI_XingYunPro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1590259139
+    hiddenValue: 1584253379
+  AI_DiXiaoPro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1578287617
+    hiddenValue: 1589776897
+  AI_ChouHenValue_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1170945279
+    hiddenValue: 1161087999
+  AI_FuHuoPro_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1417833518
+    hiddenValue: 1416397358
+  AI_resistance_1_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1467112244
+    hiddenValue: 1465610804
+  AI_resistance_2_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1900548528
+    hiddenValue: 1896958128
+  AI_resistance_3_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1371474503
+    hiddenValue: 1359658823
+  AI_resistance_4_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1720670732
+    hiddenValue: 1717210892
+  AI_resistance_5_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2065868582
+    hiddenValue: 2074550822
+  AI_raceDamge_1_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2009853340
+    hiddenValue: 2012072860
+  AI_raceDamge_2_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2030329688
+    hiddenValue: 2036270168
+  AI_raceDamge_3_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1016835205
+    hiddenValue: 1017944965
+  AI_raceResistance_1_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1461799181
+    hiddenValue: 1464410381
+  AI_raceResistance_2_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1354975597
+    hiddenValue: 1347011437
+  AI_raceResistance_3_Add:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1620771500
+    hiddenValue: 1610783660
+  base_HpMax:
+    currentCryptoKey: 1723587005
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1723587005
+  base_Act:
+    currentCryptoKey: 1855058400
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1855058400
+  base_MageAct:
+    currentCryptoKey: 1211300024
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1211300024
+  base_Def:
+    currentCryptoKey: 1487986843
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 1487986843
+  base_Adf:
+    currentCryptoKey: 2130281180
+    fakeValue: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    fakeValueActive: 0
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    hiddenValue: 2130281180
+  base_Cri:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1410779522
+    hiddenValue: 1422464642
+  base_Res:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 2139271941
+    hiddenValue: 2142470661
+  base_Hit:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1255500449
+    hiddenValue: 1248515489
+  base_Dodge:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1911630584
+    hiddenValue: 1898639864
+  base_DefAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1668284258
+    hiddenValue: 1677684578
+  base_AdfAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1317329179
+    hiddenValue: 1322877979
+  base_DamgeAdd:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1648197024
+    hiddenValue: 1652374944
+  base_MoveSpeed:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 1184359141
+    hiddenValue: 1189255141
+  SkillIDList: []
+  DropGameObject: {fileID: 0}
+  UpdataAIPropertyStatus:
+    currentCryptoKey: 156
+    hiddenValue: 41
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  StartAIPropertyStatus:
+    currentCryptoKey: 147
+    hiddenValue: 38
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  AI_SummonPropertyHpPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_SummonPropertyPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 230887
+    hiddenValue: 8717287
+  AI_SummonPropertyActPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  AI_SummonPropertyDefPro:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 0
+    fakeValueActive: 0
+    hiddenValueStr: 
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 0
+    currentCryptoKey: 0
+    hiddenValue: 0
+  NoUpdateProperty: 0
+  nanduValue_HP:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 1056997476
+    fakeValueActive: 1
+    hiddenValueStr: 1063485790
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1746086805
+    hiddenValue: 1462473621
+  nanduValue_Other:
+    migratedVersion: 
+    hiddenValueOldByte4:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+    fakeValue: 1056997476
+    fakeValueActive: 1
+    hiddenValueStr: 1068662837
+    fakeValueStr: 
+    hiddenValueAddStr: 
+    inited: 1
+    fakeValueActiveEx: 1
+    currentCryptoKey: 1416719573
+    hiddenValue: 1802301909
+--- !u!114 &3832467301580655415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba450b59416c7b429321e7fbf34822c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AI_StatusValue: 0
+  IfUpdateStatus: 0
+  AI_Animator: {fileID: 0}
+--- !u!195 &1156149987764426918
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100074}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.01
+  m_Speed: 3.5
+  m_Acceleration: 1000
+  avoidancePriority: 50
+  m_AngularSpeed: 360
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!143 &8356728741294094167
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100074}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 0.71
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.45, z: 0}
+--- !u!95 &5254411058981252158
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100074}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 325ba42797b51f243be83209fa0b73e5, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3057fc945d046e54c8fd7bf39a64f1f9, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &106996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,3 +3567,130 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &5016086247551989826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8681578630557495127}
+  m_Layer: 12
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8681578630557495127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5016086247551989826}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.047, y: 0.919, z: 0.054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6306171272641843513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6629893854753272447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3317217036795160336}
+  m_Layer: 12
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3317217036795160336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629893854753272447}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.07, z: 0.053999603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6306171272641843513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8034075559572171697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6306171272641843513}
+  m_Layer: 12
+  m_Name: Bone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6306171272641843513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034075559572171697}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2994529727807387194}
+  - {fileID: 8681578630557495127}
+  - {fileID: 3317217036795160336}
+  m_Father: {fileID: 400074}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9176567140564067464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2994529727807387194}
+  m_Layer: 12
+  m_Name: Di
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2994529727807387194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9176567140564067464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6306171272641843513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

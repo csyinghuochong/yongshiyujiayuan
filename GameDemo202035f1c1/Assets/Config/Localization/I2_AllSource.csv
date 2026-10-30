@@ -998,3 +998,5 @@ hint_99,Text,,搜索完毕！这附近好像并没有什么东西！,Exploring i
 魔防下限,Text,,魔防下限,MIN RES,
 魔防大于,Text,,魔防大于,ADF greater than,
 黑暗抗性,Text,,黑暗抗性,SR,
+战斗天赋,Text,,战斗天赋,Combat,
+降临天赋,Text,,降临天赋,Advent,
