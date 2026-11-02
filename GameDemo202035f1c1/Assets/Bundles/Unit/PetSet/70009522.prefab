@@ -254,7 +254,7 @@ MonoBehaviour:
   Selected_Effect: {fileID: 100000, guid: dbe89896a9d57014a9ebfd2e9e1ee931, type: 3}
   Selected_Effect_Position: {fileID: 2994529727807387194}
   Ai_HpShowPosition: {fileID: 3317217036795160336}
-  UI_GameObject: {fileID: 148262, guid: ffc5f9def8e913c4d93eb09dafcb16a4, type: 3}
+  UI_GameObject: {fileID: 189654, guid: 7acb975cabdbd4747a099eab16c50ad4, type: 3}
   UI_Hp: {fileID: 0}
   petMovePosition: {x: 0, y: 0, z: 0}
   HitStatus: 0
