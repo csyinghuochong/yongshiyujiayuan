@@ -19,15 +19,78 @@ public class RoseSkill_BianShen : MonoBehaviour
     private GameObject effect;
 
     private string skillHitEffectName;
+    
+    // GameObjectParameter：伤害间隔;体型增幅;变化时间
+    // 增幅1表示原体型的2倍；旧配置只有伤害间隔时，默认增幅1、变化0.5秒。
+    private float sizeValue = 1f;
+    private float sizeTime = 0.5f;
+    private Transform changeObj;
+    private Vector3 originalScale;
+    private Vector3 enlargedScale;
+    private static RoseSkill_BianShen activeTransformation;
+    
+    private void BeginModelSize()
+    {
+        changeObj = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose
+            .GetComponent<Rose_Status>().Obj_RoseModel.transform;
+
+        // 重复变身替换前一个实例，避免倍率叠乘以及旧实例提前恢复新变身。
+        if (activeTransformation != null && activeTransformation != this)
+        {
+            RoseSkill_BianShen previous = activeTransformation;
+            previous.EndModelSize();
+            previous.enabled = false;
+            Destroy(previous.gameObject);
+        }
+
+        originalScale = changeObj.localScale;
+        enlargedScale = originalScale * (1f + sizeValue);
+        activeTransformation = this;
+        IsBianShen = true;
+        changeObj.localScale = sizeTime <= 0 ? enlargedScale : originalScale;
+    }
+
+    private void UpdateModelSize()
+    {
+        if (activeTransformation != this || changeObj == null) return;
+
+        // 短时技能限制过渡长度，避免放大和缩小时段重叠。
+        float transitionTime = Mathf.Min(sizeTime, SkillTime * 0.5f);
+        if (transitionTime <= 0)
+        {
+            changeObj.localScale = enlargedScale;
+            return;
+        }
+
+        float remainingTime = SkillTime - SkillTimeSum;
+        if (remainingTime < transitionTime)
+        {
+            float t = Mathf.Clamp01(remainingTime / transitionTime);
+            changeObj.localScale = Vector3.Lerp(originalScale, enlargedScale, t);
+        }
+        else
+        {
+            float t = Mathf.Clamp01(SkillTimeSum / transitionTime);
+            changeObj.localScale = Vector3.Lerp(originalScale, enlargedScale, t);
+        }
+    }
+
+    private void EndModelSize()
+    {
+        if (activeTransformation != this) return;
+        if (changeObj != null) changeObj.localScale = originalScale;
+        activeTransformation = null;
+        IsBianShen = false;
+    }
+
+    private void OnDisable()
+    {
+        EndModelSize();
+    }
 
     // Use this for initialization
     void Start()
     {
-        IsBianShen = true;
-        
-        Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_RoseModel.transform
-            .localScale = new Vector3(2, 2, 2);
-
         //获取是否播放受击特效
         AI_IfHitEffect = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("IfHitEffect", "ID",
             this.gameObject.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
@@ -45,9 +108,14 @@ public class RoseSkill_BianShen : MonoBehaviour
             this.gameObject.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
         //获取技能附加
         SkillTime = this.GetComponent<SkillObjBase>().SkillLiveTime;
-
-        //伤害间隔时间
-        DamgeFrequency = float.Parse(damgeFrequency);
+        
+        
+        string[] parameters = damgeFrequency.Split(';');
+        DamgeFrequency = Mathf.Max(0f, float.Parse(parameters[0]));
+        if (parameters.Length > 1) sizeValue = Mathf.Max(0f, float.Parse(parameters[1]));
+        if (parameters.Length > 2) sizeTime = Mathf.Max(0f, float.Parse(parameters[2]));
+        
+        BeginModelSize();
 
         //实例化技能特效
         if (effectName != "0")
@@ -69,25 +137,17 @@ public class RoseSkill_BianShen : MonoBehaviour
     {
         SkillTimeSum = SkillTimeSum + Time.deltaTime;
 
-        if (SkillTimeSum >= SkillTime - 0.2f)
-        {
-            IsBianShen = false;
-            
-            colliderList.Clear();
-            SkillTimeSum = 0.0f;
-            Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_RoseModel.transform
-                    .localScale =
-                new Vector3(1, 1, 1);
-        }
+        UpdateModelSize();
 
         DamgeFrequencySum = DamgeFrequencySum + Time.deltaTime;
-
-        
     }
 
     private void OnDestroy()
     {
-        //离开时销毁特效,主要针对燃烧特效
+
+        EndModelSize();
+        colliderList.Clear();
+        // 使用成员变量保存特效引用，避免局部同名变量遮蔽。
         Destroy(effect);
     }
 
