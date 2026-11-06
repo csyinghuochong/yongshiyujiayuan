@@ -378,7 +378,7 @@ public class WWWSet:MonoBehaviour{
         DontDestroyOnLoad(this.gameObject);
 
         UpdateGameID = 1;
-        xmlVersion = 551;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
+        xmlVersion = 553;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
         WorldLv = 20;                                           //默认世界等级
 
         //默认设置语言
@@ -2260,7 +2260,7 @@ public class WWWSet:MonoBehaviour{
     {
         TextAsset config = await ResourcesManager.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetConfigGet_XmlPath(name));
         setField?.Invoke(config);
-
+        Debug.Log("加载:" + name);
         Game_PublicClassVar.Get_xmlScript.Xml_Create($"{Get_XmlPath}{name}.xml", config);
         updataNumSum = updataNumSum + 1;
         upXmlDataStatus = false;
