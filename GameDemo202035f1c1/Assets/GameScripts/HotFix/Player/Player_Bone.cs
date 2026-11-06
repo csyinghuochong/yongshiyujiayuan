@@ -37,6 +37,14 @@ public class Player_Bone : MonoBehaviour {
     public GameObject LieRen_WuQiObj_Base;
     public SkinnedMeshRenderer[] LieRen_Skin;
 
+    //黑暗骑士
+    public RuntimeAnimatorController QiShi_Animator;
+    public Avatar QiShi_Avatar;
+    public GameObject QiShi_Obj;
+    public GameObject QiShi_WuQiObj;
+    public GameObject QiShi_WuQiObj_Base;
+    public SkinnedMeshRenderer[] QiShi_Skin;
+
     // Use this for initialization
     void Start () {
 
