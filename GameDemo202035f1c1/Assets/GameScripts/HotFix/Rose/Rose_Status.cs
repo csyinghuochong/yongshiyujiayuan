@@ -49,6 +49,7 @@ public class Rose_Status : MonoBehaviour
     public Transform RoseWeaponPosi;                //角色武器位置
     public GameObject RoseWeaponBaseModel;          //角色武器模型
     public GameObject Obj_RoseWeaponEffectTrail;    //角色武器路径特效
+    public GameObject Obj_RoseWeaponEffectTrail_QiShi;    //角色武器路径特效
     private GameObject roseWeaponEffectTrail;
     public Transform RoseModelWeaponPosi;           //角色UI界面模型武器位置
     public GameObject RoseModelWeaponBaseModel;     //角色UI界面模型武器模型
@@ -941,6 +942,24 @@ public class Rose_Status : MonoBehaviour
                             }
 
                             break;
+
+                        //黑暗攻击最近目标
+                        case "4":
+
+                            if (Obj_ActTarget == null)
+                            {
+                                Obj_ActTarget = NextAutomaticMonsterObj;
+                            }
+                            else
+                            {
+                                //if (Vector3.Distance(Obj_ActTarget.transform.position, NextAutomaticMonsterObj.transform.position) >= autoActDis)
+                                if (Vector3.Distance(Obj_ActTarget.transform.position, this.gameObject.transform.position) >= actDistance)
+                                {
+                                    Obj_ActTarget = NextAutomaticMonsterObj;
+                                }
+                            }
+
+                            break;
                     }
                     //Obj_ActTarget = NextAutomaticMonsterObj;
                     Move_Target_Position = Obj_ActTarget.transform.position;
@@ -983,6 +1002,9 @@ public class Rose_Status : MonoBehaviour
                                 break;
                             case "3":
                                 YaoGanStopMoveTime = 0.3f;
+                                break;
+                            case "4":
+                                YaoGanStopMoveTime = 1f;
                                 break;
                         }
                     }
@@ -2141,6 +2163,8 @@ public class Rose_Status : MonoBehaviour
     //普通攻击
     public void RoseAct()
     {
+        Debug.Log("我攻击了");
+
         if (RoseSingStatus)
         {
             return;
@@ -2304,6 +2328,81 @@ public class Rose_Status : MonoBehaviour
                 //播放音效
                 Game_PublicClassVar.Get_function_UI.PlaySource("20015", "2");
                 break;
+
+            //黑暗骑士普通攻击
+            case "4":
+
+                //Debug.Log("我攻击了");
+                //判断与目标的距离,小于3就不进行攻击,设置为待机
+                /*
+                if (Obj_ActTarget != null) {
+                    float actDis = Vector3.Distance(this.gameObject.transform.position, Obj_ActTarget.transform.position);
+                    Debug.Log("actDis = " + actDis);
+                    if (actDis >= 3)
+                    {
+                        RoseStatus = "1"; //设置为待机状态
+                        roseActStatus = false;
+                        break;
+                    }
+                }
+                */
+
+                if (Obj_ActTarget != null)
+                {
+                    if (RoseSkill_BianShen.IsBianShen)
+                    {
+                        //设置实例化技能
+                        string zhanshi_SkillID = "60040061";
+                        string objName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("GameObjectName", "ID", zhanshi_SkillID, "Skill_Template");
+                        GameObject skillObj = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill_Obj/" + objName);
+                        GameObject SkillObject_pa = (GameObject)Instantiate(skillObj);
+                        SkillObject_pa.SetActive(false);
+                        //设置技能位置
+                        SkillObject_pa.transform.localRotation = this.Obj_ActTarget.transform.rotation;
+                        SkillObject_pa.transform.localScale = new Vector3(1, 1, 1);
+                        SkillObject_pa.transform.position = new Vector3(Obj_ActTarget.transform.position.x, Obj_ActTarget.transform.position.y, Obj_ActTarget.transform.position.z);
+                        SkillObject_pa.SetActive(true);
+                        //传递技能对应的值
+                        SkillObjBase SkillStatus = SkillObject_pa.transform.GetComponent<SkillObjBase>();
+                        SkillStatus.SkillID = zhanshi_SkillID;
+                        SkillStatus.SkillOpen = true;   //开启技能，需要在设置完值后开启技能
+                        SkillStatus.SkillTargetObj = Obj_ActTarget;
+
+                        rosePassiveSkill(); //被动技能
+
+                        actTriggerSkill("2", "1");  //被动技能
+
+                        //播放音效
+                        Game_PublicClassVar.Get_function_UI.PlaySource("20001", "2");
+                    }
+                    else
+                    {
+                        //设置受击特效
+                        if (Obj_ActTarget != null)
+                        {
+                            Obj_ActTarget.GetComponent<AI_1>().HitStatus = true;      //播放受击特效
+                            Obj_ActTarget.GetComponent<AI_1>().HitEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/Rose_Act_2");
+                            Obj_ActTarget.GetComponent<AI_1>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                            Obj_ActTarget.GetComponent<AI_1>().IfHitEffect = true;
+                            Game_PublicClassVar.Get_fight_Formult.RoseActMonster("62000001", Obj_ActTarget, false, true);
+                            if (Random.value < this.GetComponent<Rose_Proprety>().Rose_Cri)
+                            {
+                                roseCriActStatus = true;
+                                //Debug.Log("我开启了暴击");
+                            }
+
+                            rosePassiveSkill(); //被动技能
+
+                            actTriggerSkill("2", "1");  //被动技能
+
+                            //播放音效
+                            Game_PublicClassVar.Get_function_UI.PlaySource("20001", "2");
+                        }
+                    }
+                }
+
+                break;
+
         }
 
         //退出隐身状态
@@ -2887,6 +2986,9 @@ public class Rose_Status : MonoBehaviour
                     if (RoseOcc != "3")
                     {
                         roseWeaponEffectTrail = (GameObject)Instantiate(Obj_RoseWeaponEffectTrail);
+                        if (RoseOcc == "4") {
+                            roseWeaponEffectTrail = (GameObject)Instantiate(Obj_RoseWeaponEffectTrail_QiShi);
+                        }
                         roseWeaponEffectTrail.SetActive(false);
                         roseWeaponEffectTrail.transform.parent = RoseWeaponPosi.transform;
                         roseWeaponEffectTrail.transform.localPosition = new Vector3(-0.0036f, -0.00429f, 0.549f);

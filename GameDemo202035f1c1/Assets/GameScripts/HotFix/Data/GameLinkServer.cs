@@ -1453,7 +1453,7 @@ public class GameLinkServer : MonoBehaviour {
                         PlayerPrefs.SetString("FangChenMi_Name", proPlayerYanZheng.Name);
                         PlayerPrefs.SetString("FangChenMi_ID", proPlayerYanZheng.ShenFenID);
                         PlayerPrefs.Save();
-
+                         
                         if (Game_PublicClassVar.Get_gameServerObj.Obj_ShenFenYanZheng != null)
                         {
                             //if(PlayerPrefs.GetInt("FangChenMi_Year")

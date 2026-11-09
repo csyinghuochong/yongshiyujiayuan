@@ -378,7 +378,7 @@ public class WWWSet:MonoBehaviour{
         DontDestroyOnLoad(this.gameObject);
 
         UpdateGameID = 1;
-        xmlVersion = 546;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
+        xmlVersion = 553;                                       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
         WorldLv = 20;                                           //默认世界等级
 
         //默认设置语言
@@ -1261,6 +1261,27 @@ public class WWWSet:MonoBehaviour{
 
                                     //写入快捷施法
                                     Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("MainSkillUI_5", "60012011", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
+
+
+                                }
+
+                                //创建猎手,写入黑暗骑士基础值
+                                if (CreateRoseOcc == "4")
+                                {
+
+                                    //写入技能
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnSkillID", "60013011,60013020,60013030,60013040,60013050,60013060", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+
+                                    //写入天赋
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("LearnTianFuID", "401101,0;411101,0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+
+                                    //写入职业
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("RoseOccupation", "4", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+
+                                    Game_PublicClassVar.Get_function_Rose.SaveGameConfig_Rose(Game_PublicClassVar.Get_wwwSet.RoseID, "Occ", CreateRoseOcc);
+
+                                    //写入快捷施法
+                                    Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("MainSkillUI_5", "60013011", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
 
 
                                 }
@@ -2239,7 +2260,7 @@ public class WWWSet:MonoBehaviour{
     {
         TextAsset config = await ResourcesManager.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetConfigGet_XmlPath(name));
         setField?.Invoke(config);
-
+        Debug.Log("加载:" + name);
         Game_PublicClassVar.Get_xmlScript.Xml_Create($"{Get_XmlPath}{name}.xml", config);
         updataNumSum = updataNumSum + 1;
         upXmlDataStatus = false;

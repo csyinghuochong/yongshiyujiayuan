@@ -16510,6 +16510,88 @@ public class Function_Rose {
                 }
                 break;
 
+            //黑暗战士相关
+            case "4":
+                waiguanName = "PiFu_" + showType;
+                img = (Texture2D)ResourcesManager.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_HeiAnWuShi/PiFu/" + waiguanName);
+                if (img == null)
+                {
+                    return;
+                }
+
+                //头发
+                waiguanHairName = "PiFuHair_" + showType;
+                HairImg = (Texture2D)ResourcesManager.Instance.LoadUnitSync<Texture2D>("3DModel/RoseModel/Occ_HeiAnWuShi/PiFu/" + waiguanHairName);
+                if (HairImg == null)
+                {
+                    return;
+                }
+
+                if (ifShowModelUI == false)
+                {
+                    if (Position == "0" || Position == "1")
+                    {
+
+                        if (playerObj == null)
+                        {
+                            Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().QiShi_Skin[0].material.mainTexture = img;
+                            Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().QiShi_Skin[1].material.mainTexture = img;
+                            Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().QiShi_Skin[5].material.mainTexture = img;
+                        }
+                        else
+                        {
+                            playerObj.GetComponent<Player_Bone>().QiShi_Skin[0].material.mainTexture = img;
+                            playerObj.GetComponent<Player_Bone>().QiShi_Skin[1].material.mainTexture = img;
+                            playerObj.GetComponent<Player_Bone>().QiShi_Skin[5].material.mainTexture = img;
+                        }
+                    }
+
+                    if (Position == "0" || Position == "2")
+                    {
+                        if (playerObj == null)
+                        {
+                            Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().QiShi_Skin[3].material.mainTexture = HairImg;
+                            Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Bone>().QiShi_Skin[6].material.mainTexture = img;
+                        }
+                        else
+                        {
+                            playerObj.GetComponent<Player_Bone>().QiShi_Skin[3].material.mainTexture = HairImg;
+                            playerObj.GetComponent<Player_Bone>().QiShi_Skin[6].material.mainTexture = img;
+                        }
+                    }
+                }
+
+                if (Position == "0" || Position == "1")
+                {
+                    if (playerObj == null)
+                    {
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_ModelQiShi_Skin[0].material.mainTexture = img;
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_ModelQiShi_Skin[1].material.mainTexture = img;
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_ModelQiShi_Skin[5].material.mainTexture = img;
+                    }
+                    else
+                    {
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_PlayerModelQiShi_Skin[0].material.mainTexture = img;
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_PlayerModelQiShi_Skin[1].material.mainTexture = img;
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_PlayerModelQiShi_Skin[5].material.mainTexture = img;
+                    }
+                }
+                if (Position == "0" || Position == "2")
+                {
+                    if (playerObj == null)
+                    {
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_ModelQiShi_Skin[3].material.mainTexture = HairImg;
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_ModelQiShi_Skin[6].material.mainTexture = img;
+                    }
+                    else
+                    {
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_PlayerModelQiShi_Skin[3].material.mainTexture = HairImg;
+                        Game_PublicClassVar.Get_game_PositionVar.Obj_RoseModelSheXiangJi.transform.parent.GetComponent<CameraModel>().Obj_PlayerModelQiShi_Skin[6].material.mainTexture = img;
+                    }
+                }
+                break;
+
+
         }
 
         //注意 如果是特效不显示可能是层级的问题，把特效的层级改变为RoseEquip

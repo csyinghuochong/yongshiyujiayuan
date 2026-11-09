@@ -511,6 +511,11 @@ public class AI_1 : MonoBehaviour {
                         rose_status.NextAutomaticMonsterObj = this.gameObject;
                         rose_status.NextAutomaticMonsterDis = AI_RoseDis;
                         break;
+                    //战士攻击最近目标
+                    case "4":
+                        rose_status.NextAutomaticMonsterObj = this.gameObject;
+                        rose_status.NextAutomaticMonsterDis = AI_RoseDis;
+                        break;
                 }
 
             }

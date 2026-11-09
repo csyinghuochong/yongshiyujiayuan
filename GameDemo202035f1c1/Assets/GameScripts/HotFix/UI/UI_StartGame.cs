@@ -185,6 +185,10 @@ public class UI_StartGame : MonoBehaviour {
             case "3":
                 roseID = "10003";
                 break;
+
+            case "4":
+                roseID = "10004";
+                break;
         }
 
         //设置存储文件
@@ -234,6 +238,10 @@ public class UI_StartGame : MonoBehaviour {
                 case "3":
                     Game_PublicClassVar.Get_wwwSet.CreateRoseOcc = "3";
                     break;
+
+                case "4":
+                    Game_PublicClassVar.Get_wwwSet.CreateRoseOcc = "4";
+                    break;
             }
 
             //更新创建角色的名称
@@ -255,6 +263,10 @@ public class UI_StartGame : MonoBehaviour {
 
                     case "3":
                         createName = "小小猎手";
+                        break;
+
+                    case "4":
+                        createName = "小小骑士";
                         break;
                 }
 

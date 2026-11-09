@@ -162,6 +162,8 @@ public class RoseSkill_OrbitBall : MonoBehaviour
                 {
                     Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, collider.gameObject);
                 }
+                Game_PublicClassVar.Get_function_Skill.SkillAddValue_Buff(
+                    GetComponent<SkillObjBase>().SkillID, collider.gameObject);
             }
         }
     }

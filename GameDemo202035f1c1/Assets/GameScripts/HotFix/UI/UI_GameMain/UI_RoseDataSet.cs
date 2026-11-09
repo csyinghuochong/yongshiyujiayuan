@@ -163,6 +163,10 @@ public class UI_RoseDataSet : MonoBehaviour {
             case "3":
                 roseHeadIconId = "10003";
                 break;
+
+            case "4":
+                roseHeadIconId = "10004";
+                break;
         }
 
         Object obj = ResourcesManager.Instance.LoadIconSync<Sprite>("HeadIcon/PlayerIcon/" + roseHeadIconId);

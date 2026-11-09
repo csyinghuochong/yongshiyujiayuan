@@ -1403,6 +1403,10 @@ public class Function_Skill{
             case "3":
                 learnSkillID = "60012011,60012020,60012030,60012040,60012050,60012060";
                 break;
+            //黑暗武士初始技能
+            case "4":
+                learnSkillID = "60013011,60013020,60013030,60013040,60013050,60013060";
+                break;
 
         }
         
@@ -1455,6 +1459,10 @@ public class Function_Skill{
             //猎人初始技能
             case "3":
                 learnTianFuID = "301101,0;311101,0";
+                break;
+            //猎人初始技能
+            case "4":
+                learnTianFuID = "401101,0;411101,0";
                 break;
         }
 
