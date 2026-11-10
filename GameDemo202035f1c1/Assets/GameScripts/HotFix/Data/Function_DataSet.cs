@@ -1500,6 +1500,13 @@ public class Function_DataSet{
                                 return valueList[2];
                             }
                             break;
+                        case "4":
+                            if (valueList.Length >= 4 &&
+                                !string.IsNullOrEmpty(valueList[3]))
+                            {
+                                return valueList[3];
+                            }
+                            break;
                     }
                 }
             }
