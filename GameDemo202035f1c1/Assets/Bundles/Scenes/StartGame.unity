@@ -13247,7 +13247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1049116729
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17372,7 +17372,6 @@ MonoBehaviour:
   WWWSet_RosePastureBag: {fileID: 0}
   WWWSet_GameConfig_1: {fileID: 0}
   WWWSet_GameConfig_2: {fileID: 0}
-  WWWSet_GameCreate: {fileID: 0}
   Get_XmlPath: 
   Set_XmlPath: 
   DeleteAll_XmlPath: 
@@ -19190,7 +19189,7 @@ PrefabInstance:
     - target: {fileID: 224618179579061696, guid: a9896f5f6a79b0b4ea49a171a7e32e34,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224618179579061696, guid: a9896f5f6a79b0b4ea49a171a7e32e34,
         type: 3}
@@ -19200,7 +19199,7 @@ PrefabInstance:
     - target: {fileID: 224618179579061696, guid: a9896f5f6a79b0b4ea49a171a7e32e34,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224618179579061696, guid: a9896f5f6a79b0b4ea49a171a7e32e34,
         type: 3}
@@ -19250,12 +19249,12 @@ PrefabInstance:
     - target: {fileID: 224618179579061696, guid: a9896f5f6a79b0b4ea49a171a7e32e34,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 224618179579061696, guid: a9896f5f6a79b0b4ea49a171a7e32e34,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
