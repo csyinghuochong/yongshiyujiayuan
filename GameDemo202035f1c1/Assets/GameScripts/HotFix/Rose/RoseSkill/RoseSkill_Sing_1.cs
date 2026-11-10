@@ -939,6 +939,8 @@ public class RoseSkill_Sing_1 : MonoBehaviour
             SetSkillRunningTime = false;
             
             this.GetComponent<MainUI_SkillGrid>().SetSkillRunningTime(0);
+            GetComponent<MainUI_SkillGrid>().Img_SkillIcon
+                .GetComponent<UnityEngine.UI.Image>().color = Color.white;
             this.GetComponent<MainUI_SkillGrid>().skillCDSelfStatus = true;
             
             cleanSkillData();
@@ -962,17 +964,31 @@ public class RoseSkill_Sing_1 : MonoBehaviour
             if (skillStatus.SkillLiveTime > 0)
             {
                 SetSkillRunningTime = true;
-                this.GetComponent<MainUI_SkillGrid>().SetSkillRunningTime(skillStatus.SkillLiveTime);
+                this.GetComponent<MainUI_SkillGrid>().SetSkillRunningTime(0);
+                GetComponent<MainUI_SkillGrid>().Img_SkillIcon
+                        .GetComponent<UnityEngine.UI.Image>().color =
+                    new Color(1f, 0.65f, 0.2f, 1f);
             }
         }
 
         if (IsSkillRunning && SkillObject_p == null)
         {
             Debug.LogWarning("自动结束技能");
+            Rose_Proprety rose = Game_PublicClassVar.Get_game_PositionVar
+                .Obj_Rose.GetComponent<Rose_Proprety>();
+
+            if (rose.Rose_HpNow < rose.Rose_Hp * 0.1f)
+            {
+                Game_PublicClassVar.Get_function_UI.GameGirdHint_Front(
+                    "生命值不足，炽魂爆发已自动关闭");
+            }
+            
             IsSkillRunning = false;
             SetSkillRunningTime = false;
 
             this.GetComponent<MainUI_SkillGrid>().SetSkillRunningTime(0);
+            GetComponent<MainUI_SkillGrid>().Img_SkillIcon
+                .GetComponent<UnityEngine.UI.Image>().color = Color.white;
             this.GetComponent<MainUI_SkillGrid>().skillCDSelfStatus = true;
         }
     }

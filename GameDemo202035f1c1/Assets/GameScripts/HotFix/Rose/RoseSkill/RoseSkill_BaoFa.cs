@@ -58,35 +58,59 @@ public class RoseSkill_BaoFa : MonoBehaviour
             Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, game_PositionVar.Obj_Rose);
         }
         
-        Destroy(this.gameObject, SkillTime);
+        //Destroy(this.gameObject, SkillTime);
     }
 
     private void Update()
     {
+        if (roseProprety == null)
+        {
+            return;
+        }
+
+        // 低于最大生命值的10%，自动关闭。
+        if (roseProprety.Rose_HpNow < roseProprety.Rose_Hp * 0.1f)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         if (roseBone != null)
         {
-            this.transform.position = roseBone.Bone_Center.transform.position;
+            transform.position = roseBone.Bone_Center.transform.position;
         }
-        
-        triggerTime += Time.deltaTime;
 
+        // 爆发开启期间，保持图标和天赋加成。
+        foreach (Buff_4 buff in roseProprety.GetComponents<Buff_4>())
+        {
+            if (buff != null &&
+                int.TryParse(buff.BuffID, out int buffId) &&
+                buffId >= 90003034 && buffId <= 90003044)
+            {
+                buff.buffTimeSum = 0;
+            }
+        }
+
+        triggerTime += Time.deltaTime;
         if (triggerTime >= 1f)
         {
             triggerTime = 0;
-            
+
             int hpNow = roseProprety.Rose_HpNow;
-            int hp = roseProprety.Rose_Hp;
             int value = (int)(hpNow * value_1);
-            
+
             if (hpNow <= value)
             {
-                // 生命值不足取消爆发状态
-                Destroy(this.gameObject);
+                Destroy(gameObject);
                 return;
             }
-            else
+
+            Game_PublicClassVar.Get_function_Rose.costRoseHp(value);
+
+            if (roseProprety.Rose_HpNow < roseProprety.Rose_Hp * 0.1f)
             {
-                Game_PublicClassVar.Get_function_Rose.costRoseHp(value);
+                Destroy(gameObject);
+                return;
             }
         }
     }
