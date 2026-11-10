@@ -934,7 +934,6 @@ public class RoseSkill_Sing_1 : MonoBehaviour
     {
         if (IsSkillRunning)
         {
-            Debug.LogWarning("手动结束技能");
             IsSkillRunning = false;
             SetSkillRunningTime = false;
             
@@ -973,7 +972,6 @@ public class RoseSkill_Sing_1 : MonoBehaviour
 
         if (IsSkillRunning && SkillObject_p == null)
         {
-            Debug.LogWarning("自动结束技能");
             Rose_Proprety rose = Game_PublicClassVar.Get_game_PositionVar
                 .Obj_Rose.GetComponent<Rose_Proprety>();
 
