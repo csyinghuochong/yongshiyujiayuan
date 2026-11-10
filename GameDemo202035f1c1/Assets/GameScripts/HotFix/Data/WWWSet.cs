@@ -103,7 +103,6 @@ public class WWWSet:MonoBehaviour{
     //角色创建的XML
     public TextAsset WWWSet_GameConfig_1;     //战士初始化
     public TextAsset WWWSet_GameConfig_2;     //法师初始化
-    public TextAsset WWWSet_GameCreate;
 
     //路径
     public string Get_XmlPath;
@@ -426,7 +425,7 @@ public class WWWSet:MonoBehaviour{
 
         //加载数据
 
-        Set_GameCreate().Forget();
+        //创角记录GameCreate.xml属于玩家数据,由创角界面同步创建,不走Bundle异步加载
 
         //展示公告
         //Show_GameGongGao("本次篝火测试须知！\n1.本次篝火测试需要联网才可以进入游戏！(正式测试后单机也可以进入游戏!)\n2.本次篝火测试时间为11.30-12.7日,期间可以正常登陆游戏,此时间超过后将无法登陆游戏,但是游戏存档会予以保留。");
@@ -2275,15 +2274,6 @@ public class WWWSet:MonoBehaviour{
         updataNumSum = updataNumSum + 1;
         upXmlDataStatus = false;
     }
-
-    //游戏配置WWWSet_GameCreate
-    public async UniTask Set_GameCreate()
-    {
-        WWWSet_GameCreate = await ResourcesManager.Instance.LoadAssetAsync<TextAsset>(ABPathHelper.GetConfigSet_XmlPath("GameCreate"));
-
-        Game_PublicClassVar.Get_xmlScript.Xml_CreateNoKey(Application.persistentDataPath + "/GameData/" + "Xml" + "/Set_Xml/" + "GameCreate.xml", WWWSet_GameCreate);
-    }
-
 
     //游戏配置WWWSet_GameConfig_1
     public async UniTask Set_GameConfig()

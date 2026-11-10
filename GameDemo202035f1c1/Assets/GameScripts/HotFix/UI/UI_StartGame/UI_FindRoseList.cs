@@ -81,9 +81,31 @@ public class UI_FindRoseList : MonoBehaviour {
         //Debug.Log("createIDListStr = " + createIDListStr);
         //显示当前选择
         //Game_PublicClassVar.Get_wwwSet.NowSelectFileName = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateNowID", "ID", "1", createXmlPath + "GameCreate.xml");
+        //文件不存在或读取失败时Xml_GetDate返回"-1",这里按没有角色处理
+        if (createIDListStr == null || createIDListStr == "-1")
+        {
+            createIDListStr = "";
+        }
 
         string[] createIDList = createIDListStr.Split(';');
-        if (createIDList.Length >= 5)
+
+        //统计已有角色数量(空数据和无效数据不计数)
+        int createRoseNum = 0;
+        for (int i = 0; i < createIDList.Length; i++)
+        {
+            string[] createRoseIDList = createIDList[i].Split(',');
+            if (createRoseIDList.Length < 2)
+            {
+                continue;
+            }
+            if (createRoseIDList[0].Trim() == "" || createRoseIDList[1].Trim() == "")
+            {
+                continue;
+            }
+            createRoseNum = createRoseNum + 1;
+        }
+
+        if (createRoseNum >= 5)
         {
             Debug.Log("当前拥有的角色超过5个,无法创建新角色");
             Game_PublicClassVar.gameLinkServer.HintMsgStatus_StartGame = true;
@@ -104,14 +126,24 @@ public class UI_FindRoseList : MonoBehaviour {
 
 
         //获取当前列表是否有相同的角色
-        if (createIDList[0] != "")
+        if (createIDListStr != "")
         {
             //循环显示
             for (int i = 0; i < createIDList.Length; i++)
             {
                 string[] createRoseIDList = createIDList[i].Split(',');
-                string saveFileName = createRoseIDList[0];
-                string saveFileRoseID = createRoseIDList[1];
+                //容错:跳过空数据和缺少角色ID的无效数据
+                if (createRoseIDList.Length < 2)
+                {
+                    continue;
+                }
+
+                string saveFileName = createRoseIDList[0].Trim();
+                string saveFileRoseID = createRoseIDList[1].Trim();
+                if (saveFileName == "" || saveFileRoseID == "")
+                {
+                    continue;
+                }
 
 
                 string set_XmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/" + saveFileName + "/";

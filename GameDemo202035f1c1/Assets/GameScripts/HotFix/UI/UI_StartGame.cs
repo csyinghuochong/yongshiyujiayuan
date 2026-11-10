@@ -198,8 +198,33 @@ public class UI_StartGame : MonoBehaviour {
         if (Game_PublicClassVar.Get_wwwSet.NowSelectFileName == "")
         {
             string createIDListStr = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateIDList", "ID", "1", createXmlPath + "GameCreate.xml");
+            //文件不存在或读取失败时Xml_GetDate返回"-1",这里按没有角色处理
+            if (createIDListStr == null || createIDListStr == "-1")
+            {
+                createIDListStr = "";
+            }
+            createIDListStr = createIDListStr.Trim(';', ' ');
+
+            //统计已有角色里最大的存档编号
+            int maxSaveFileName = 10000;
             string[] createIDList = createIDListStr.Split(';');
-            if (createIDList[0] == "")
+            for (int i = 0; i < createIDList.Length; i++)
+            {
+                string[] createRoseIDList = createIDList[i].Split(',');
+                //容错:跳过空数据和缺少角色ID的无效数据
+                if (createRoseIDList.Length < 2)
+                {
+                    continue;
+                }
+
+                int nowSaveFileName = 0;
+                if (int.TryParse(createRoseIDList[0].Trim(), out nowSaveFileName) && nowSaveFileName > maxSaveFileName)
+                {
+                    maxSaveFileName = nowSaveFileName;
+                }
+            }
+
+            if (createIDListStr == "")
             {
                 //创建第一个账号
                 Game_PublicClassVar.Get_wwwSet.NowSelectFileName = "10001";
@@ -209,9 +234,7 @@ public class UI_StartGame : MonoBehaviour {
             else
             {
                 //创建其他账号
-                string[] createRoseIDList = createIDList[createIDList.Length - 1].Split(',');
-                int saveFileName = int.Parse(createRoseIDList[0]);
-                saveFileName = saveFileName + 1;
+                int saveFileName = maxSaveFileName + 1;
                 Game_PublicClassVar.Get_wwwSet.NowSelectFileName = saveFileName.ToString();
 
                 Game_PublicClassVar.Get_xmlScript.Xml_SetDate("CreateIDList", createIDListStr + ";" + saveFileName.ToString() + "," + Game_PublicClassVar.Get_wwwSet.RoseID, "ID", "1", createXmlPath + "GameCreate.xml");

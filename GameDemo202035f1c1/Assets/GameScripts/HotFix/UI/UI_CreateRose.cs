@@ -136,20 +136,9 @@ public class UI_CreateRose : MonoBehaviour {
         updateNameShow();       //更新名称显示
 
 
-        //检测老账号
+        //检测老账号(文件不存在或数据损坏时会在这里自动创建/修复,不会返回"-1")
         string createXmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/";
-        string createIDListStr = "";
-        try
-        {
-            createIDListStr = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateIDList", "ID", "1", createXmlPath + "GameCreate.xml");
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("Xml_GetDate报错:" + ex);
-            File.Delete(createXmlPath + "GameCreate.xml");
-            createIDListStr = "";
-            Game_PublicClassVar.Get_xmlScript.Xml_CreateNoKey(Application.persistentDataPath + "/GameData/" + "Xml" + "/Set_Xml/" + "GameCreate.xml", Game_PublicClassVar.Get_wwwSet.WWWSet_GameCreate);
-        }
+        string createIDListStr = GetCreateIDListStr();
         //第一次进入（createIDListStr为空表示第一次进入）
         if (createIDListStr == "" || createIDListStr == "-1")
         {
@@ -895,6 +884,279 @@ public class UI_CreateRose : MonoBehaviour {
 
 
 
+    //创角记录文件路径
+    private string GetGameCreateXmlPath()
+    {
+        return Application.persistentDataPath + "/GameData/Xml/Set_Xml/GameCreate.xml";
+    }
+
+
+    //确保创角记录文件存在
+    //GameCreate.xml是玩家数据(只有3个字段),不需要从Bundle异步加载,这里直接同步创建
+    //否则创角界面可能先于异步加载打开,读到"-1"导致列表解析越界
+    private void EnsureGameCreateXml()
+    {
+        string filePath = GetGameCreateXmlPath();
+        if (File.Exists(filePath))
+        {
+            return;
+        }
+
+        string dirPath = filePath.Substring(0, filePath.LastIndexOf("/"));
+        if (!Directory.Exists(dirPath))
+        {
+            Directory.CreateDirectory(dirPath);
+        }
+
+        Debug.LogWarning("GameCreate.xml不存在,自动创建:" + filePath);
+
+        try
+        {
+            File.WriteAllText(filePath, "<NewDataSet>\n  <RoseData ID=\"1\" CreateIDList=\"\" CreateNowID=\"\" />\n</NewDataSet>");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("写入默认GameCreate.xml失败:" + ex);
+        }
+    }
+
+
+    //从角色存档目录里取出该存档使用的角色ID
+    private string GetSaveRoseIDByConfig(string gameConfigPath)
+    {
+        for (int i = 1; i <= 4; i++)
+        {
+            string roseID = (10000 + i).ToString();
+            string occ = "";
+            try
+            {
+                occ = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("Occ", "ID", roseID, gameConfigPath);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("读取角色存档失败:" + gameConfigPath + " " + ex);
+                return "";
+            }
+
+            if (occ != "" && occ != "-1")
+            {
+                return roseID;
+            }
+        }
+
+        return "";
+    }
+
+
+    //角色列表丢失时,根据已有的存档目录补齐
+    //覆盖安装时旧版本会重建GameCreate.xml把列表清空,但角色存档目录还在,这里把它们补回来
+    private string RepairCreateIDListByDir(string createIDListStr)
+    {
+        string setXmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/";
+        if (!Directory.Exists(setXmlPath))
+        {
+            return createIDListStr;
+        }
+
+        int roseNum = 0;
+        if (createIDListStr != "")
+        {
+            roseNum = createIDListStr.Split(';').Length;
+        }
+
+        string[] dirPathList = Directory.GetDirectories(setXmlPath);
+        Array.Sort(dirPathList, StringComparer.Ordinal);
+
+        for (int i = 0; i < dirPathList.Length; i++)
+        {
+            if (roseNum >= 5)
+            {
+                break;
+            }
+
+            string saveFileName = Path.GetFileName(dirPathList[i]);
+            int saveID = 0;
+            if (!int.TryParse(saveFileName, out saveID) || saveID < 10001)
+            {
+                continue;
+            }
+
+            //已经在列表里
+            bool exists = false;
+            string[] nowList = createIDListStr.Split(';');
+            for (int j = 0; j < nowList.Length; j++)
+            {
+                if (nowList[j].Split(',')[0] == saveFileName)
+                {
+                    exists = true;
+                    break;
+                }
+            }
+            if (exists)
+            {
+                continue;
+            }
+
+            string gameConfigPath = dirPathList[i] + "/GameConfig.xml";
+            if (!File.Exists(gameConfigPath))
+            {
+                continue;
+            }
+
+            string saveFileRoseID = GetSaveRoseIDByConfig(gameConfigPath);
+            if (saveFileRoseID == "")
+            {
+                continue;
+            }
+
+            if (createIDListStr != "")
+            {
+                createIDListStr = createIDListStr + ";";
+            }
+            createIDListStr = createIDListStr + saveFileName + "," + saveFileRoseID;
+            roseNum = roseNum + 1;
+            Debug.LogWarning("补回丢失的角色存档记录:" + saveFileName + "," + saveFileRoseID);
+        }
+
+        return createIDListStr;
+    }
+
+
+    //读取创角列表
+    //文件不存在/读取失败时返回空字符串;过滤无效项并用存档目录补回丢失的角色
+    private string GetCreateIDListStr()
+    {
+        EnsureGameCreateXml();
+
+        string filePath = GetGameCreateXmlPath();
+        string createIDListStr = "-1";
+        try
+        {
+            createIDListStr = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateIDList", "ID", "1", filePath);
+        }
+        catch (Exception ex)
+        {
+            //文件损坏,删除后重建,避免后续读写继续报错
+            Debug.LogError("创角记录文件损坏,重建GameCreate.xml:" + ex);
+            try
+            {
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
+            }
+            catch (Exception deleteEx)
+            {
+                Debug.LogError("删除损坏的GameCreate.xml失败:" + deleteEx);
+            }
+
+            EnsureGameCreateXml();
+            createIDListStr = "";
+        }
+
+        if (createIDListStr == null || createIDListStr == "-1")
+        {
+            createIDListStr = "";
+        }
+
+        string rightStr = "";
+        string[] createIDList = createIDListStr.Split(';');
+        for (int i = 0; i < createIDList.Length; i++)
+        {
+            string[] createRoseIDList = createIDList[i].Split(',');
+            if (createRoseIDList.Length < 2)
+            {
+                continue;
+            }
+
+            string saveFileName = createRoseIDList[0].Trim();
+            string saveFileRoseID = createRoseIDList[1].Trim();
+            if (saveFileName == "" || saveFileRoseID == "")
+            {
+                continue;
+            }
+
+            //存档文件夹名称必须是数字编号(过滤"-1"这类无效数据)
+            int saveID = 0;
+            if (!int.TryParse(saveFileName, out saveID) || saveID < 10001)
+            {
+                continue;
+            }
+
+            if (rightStr != "")
+            {
+                rightStr = rightStr + ";";
+            }
+            rightStr = rightStr + saveFileName + "," + saveFileRoseID;
+        }
+
+        //用存档目录补回丢失的角色记录
+        string repairStr = RepairCreateIDListByDir(rightStr);
+
+        //把修复后的数据写回,下次启动不再重复处理
+        if (repairStr != createIDListStr)
+        {
+            Debug.LogWarning("创角列表已修复:" + createIDListStr + " -> " + repairStr);
+            Game_PublicClassVar.Get_xmlScript.Xml_SetDate("CreateIDList", repairStr, "ID", "1", filePath);
+        }
+
+        rightStr = repairStr;
+
+        //清理旧版本因读取到"-1"而错误创建的存档目录
+        bool usedByRose = false;
+        string[] checkList = rightStr.Split(';');
+        for (int i = 0; i < checkList.Length; i++)
+        {
+            if (checkList[i].Split(',')[0] == "-1")
+            {
+                usedByRose = true;
+                break;
+            }
+        }
+
+        string invalidDir = Application.persistentDataPath + "/GameData/Xml/Set_Xml/-1";
+        if (!usedByRose && Directory.Exists(invalidDir))
+        {
+            try
+            {
+                Directory.Delete(invalidDir, true);
+                Debug.LogWarning("删除无效存档目录:" + invalidDir);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("删除无效存档目录失败:" + ex);
+            }
+        }
+
+        return rightStr;
+    }
+
+
+    //读取当前选择的角色ID,文件不存在或数据无效时返回空字符串
+    private string GetCreateNowIDStr()
+    {
+        EnsureGameCreateXml();
+
+        string nowSelectID = "";
+        try
+        {
+            nowSelectID = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateNowID", "ID", "1", GetGameCreateXmlPath());
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("读取当前选择角色失败:" + ex);
+            return "";
+        }
+
+        if (nowSelectID == null || nowSelectID == "-1")
+        {
+            return "";
+        }
+
+        return nowSelectID;
+    }
+
+
     //显示角色列表
     public void ShowCreateRoseList()
     {
@@ -903,44 +1165,78 @@ public class UI_CreateRose : MonoBehaviour {
         Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_CreateListObjSet);
 
         //显示角色列表
-        string createXmlPath = Application.persistentDataPath + "/GameData/"+ "Xml" +"/Set_Xml/";
-        string createIDListStr = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateIDList", "ID", "1", createXmlPath + "GameCreate.xml");
+        string createIDListStr = GetCreateIDListStr();
         //Debug.Log("createIDListStr = " + createIDListStr);
         //显示当前选择
-        Game_PublicClassVar.Get_wwwSet.NowSelectFileName = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateNowID", "ID", "1", createXmlPath + "GameCreate.xml");
+        Game_PublicClassVar.Get_wwwSet.NowSelectFileName = GetCreateNowIDStr();
 
         string[] createIDList = createIDListStr.Split(';');
         int createAddRose = 0;
-        if (createIDList[0] != "")
+        int maxCreateNum = 5;
+        if (Obj_CreateRoseListObj != null && Obj_CreateRoseListObj.Length < maxCreateNum)
         {
-            //循环显示
-            for (int i = 0; i < createIDList.Length; i++)
+            maxCreateNum = Obj_CreateRoseListObj.Length;
+        }
+
+        GameObject firstRoseObj = null;
+        bool selectAnyRose = false;
+
+        //循环显示
+        for (int i = 0; i < createIDList.Length; i++)
+        {
+            string[] createRoseIDList = createIDList[i].Split(',');
+            //容错:跳过空数据和缺少角色ID的无效数据,防止取[1]时数组越界
+            if (createRoseIDList.Length < 2)
             {
-                string[] createRoseIDList = createIDList[i].Split(',');
-                string saveFileName = createRoseIDList[0];
-                string saveFileRoseID = createRoseIDList[1];
+                continue;
+            }
 
-                GameObject obj = (GameObject)Instantiate(Obj_CreateListObj);
-                obj.transform.SetParent(Obj_CreateListObjSet.transform);
-                obj.GetComponent<UI_CreateRoseListObj>().RoseFileName = saveFileName;
-                obj.GetComponent<UI_CreateRoseListObj>().roseID = saveFileRoseID;
-                obj.GetComponent<UI_CreateRoseListObj>().Obj_CreatePar = this.gameObject;
-                obj.GetComponent<UI_CreateRoseListObj>().updateShow();
-                obj.transform.localScale = new Vector3(1, 1, 1);
-                createAddRose = createAddRose + 1;
-                Obj_CreateRoseListObj[i] = obj;
+            string saveFileName = createRoseIDList[0].Trim();
+            string saveFileRoseID = createRoseIDList[1].Trim();
+            if (saveFileName == "" || saveFileRoseID == "")
+            {
+                continue;
+            }
 
-                //显示选中状态
-                if (Game_PublicClassVar.Get_wwwSet.NowSelectFileName == saveFileName)
-                {
-                    obj.GetComponent<UI_CreateRoseListObj>().SelectStatus = true;
-                    obj.GetComponent<UI_CreateRoseListObj>().Btn_Select();     //进入界面显示选择项
-                    //Debug.Log("更新界面选择!!!");
-                }
+            //超出列表容量时不再显示
+            if (createAddRose >= maxCreateNum)
+            {
+                break;
+            }
+
+            GameObject obj = (GameObject)Instantiate(Obj_CreateListObj);
+            obj.transform.SetParent(Obj_CreateListObjSet.transform);
+            obj.GetComponent<UI_CreateRoseListObj>().RoseFileName = saveFileName;
+            obj.GetComponent<UI_CreateRoseListObj>().roseID = saveFileRoseID;
+            obj.GetComponent<UI_CreateRoseListObj>().Obj_CreatePar = this.gameObject;
+            obj.GetComponent<UI_CreateRoseListObj>().updateShow();
+            obj.transform.localScale = new Vector3(1, 1, 1);
+
+            Obj_CreateRoseListObj[createAddRose] = obj;
+            createAddRose = createAddRose + 1;
+
+            if (firstRoseObj == null)
+            {
+                firstRoseObj = obj;
+            }
+
+            //显示选中状态
+            if (Game_PublicClassVar.Get_wwwSet.NowSelectFileName == saveFileName)
+            {
+                selectAnyRose = true;
+                obj.GetComponent<UI_CreateRoseListObj>().SelectStatus = true;
+                obj.GetComponent<UI_CreateRoseListObj>().Btn_Select();     //进入界面显示选择项
+                //Debug.Log("更新界面选择!!!");
             }
         }
 
-        int maxCreateNum = 5;
+        //有角色但记录的当前选择不存在时,默认选中第一个,避免误进创建角色流程
+        if (!selectAnyRose && createAddRose > 0 && firstRoseObj != null)
+        {
+            firstRoseObj.GetComponent<UI_CreateRoseListObj>().SelectStatus = true;
+            firstRoseObj.GetComponent<UI_CreateRoseListObj>().Btn_Select();
+        }
+
         int createNullListNum = maxCreateNum - createAddRose;
         if (createNullListNum >= 1)
         {
@@ -959,7 +1255,7 @@ public class UI_CreateRose : MonoBehaviour {
         }
 
         //如果都为空,显示第一个为选中状态
-        if (createNullListNum >= maxCreateNum)
+        if (createAddRose == 0 && maxCreateNum > 0)
         {
             Obj_CreateRoseListObj[0].GetComponent<UI_CreateRoseListObj>().SelectStatus = true;
             Obj_CreateRoseListObj[0].GetComponent<UI_CreateRoseListObj>().Btn_Select();
@@ -1007,21 +1303,31 @@ public class UI_CreateRose : MonoBehaviour {
     //删除数据
     public void DeletRose()
     {
-        //显示列表
+        //显示列表(无效数据已被过滤,不会出现"-1")
         string createXmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/";
-        string createIDListStr = Game_PublicClassVar.Get_xmlScript.Xml_GetDate("CreateIDList", "ID", "1", createXmlPath + "GameCreate.xml");
+        string createIDListStr = GetCreateIDListStr();
         string deleteFileID = "";
         string[] createIDList = createIDListStr.Split(';');
         string firstID = "";
         string writeStr = "";
-        if (createIDList[0] != "")
+        if (createIDListStr != "")
         {
             //循环显示
             for (int i = 0; i < createIDList.Length; i++)
             {
                 string[] createRoseIDList = createIDList[i].Split(',');
+                //容错:跳过空数据和缺少角色ID的无效数据
+                if (createRoseIDList.Length < 2)
+                {
+                    continue;
+                }
+
                 string saveFileName = createRoseIDList[0];
                 string saveFileRoseID = createRoseIDList[1];
+                if (saveFileName == "" || saveFileRoseID == "")
+                {
+                    continue;
+                }
 
                 if (saveFileName == Game_PublicClassVar.Get_wwwSet.NowSelectFileName)
                 {
