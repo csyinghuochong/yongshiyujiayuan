@@ -14651,7 +14651,13 @@ public class Function_Rose {
         }
 
         //显示角色武器
-        GameObject weaponObj = (GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
+        //GameObject weaponObj = (GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("3DModel/WeaponModel/" + showWeaponID);
+        GameObject weaponObj = null;
+        if (!string.IsNullOrWhiteSpace(showWeaponID) && showWeaponID.Trim() != "0")
+        {
+            weaponObj = ResourcesManager.Instance.LoadUnitSync<GameObject>(
+                "3DModel/WeaponModel/" + showWeaponID.Trim());
+        }
         if (weaponObj == null)
         {
             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseWeaponBaseModel.SetActive(true);

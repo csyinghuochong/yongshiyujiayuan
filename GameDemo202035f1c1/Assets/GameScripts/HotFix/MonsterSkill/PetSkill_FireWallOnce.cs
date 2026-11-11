@@ -42,7 +42,12 @@ public class PetSkill_FireWallOnce : MonoBehaviour
         string effectName = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("EffectName", "ID", this.gameObject.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
 
         //实例化技能特效
-        GameObject SkillEffect = (GameObject)ResourcesManager.Instance.LoadEffectSync<GameObject>("Skill/" + effectName);
+        GameObject SkillEffect = null;
+        if (!string.IsNullOrWhiteSpace(effectName) && effectName.Trim() != "0")
+        {
+            SkillEffect = ResourcesManager.Instance.LoadEffectSync<GameObject>(
+                "Skill/" + effectName.Trim());
+        }
         if (SkillEffect != null)
         {
             GameObject effect = (GameObject)Instantiate(SkillEffect);

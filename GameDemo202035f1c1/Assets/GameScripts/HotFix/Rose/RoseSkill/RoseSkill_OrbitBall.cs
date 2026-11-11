@@ -125,7 +125,7 @@ public class RoseSkill_OrbitBall : MonoBehaviour
             AI_1 ai = collider.gameObject.GetComponent<AI_1>();
             AI_Property ai_property = collider.gameObject.GetComponent<AI_Property>();
 
-            if (ai_property != null)
+            if (ai != null && ai_property != null)
             {
                 //是否播放受击特效
                 switch (AI_IfHitEffect)

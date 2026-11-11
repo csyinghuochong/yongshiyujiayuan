@@ -212,25 +212,68 @@ public class Rose_Create_2 : MonoBehaviour
 
                 //Debug.Log("createName = " + createName);
                 //角色属性
-                GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + createName));
-                monsterObj.transform.SetParent(monsterSetObj.transform);
-                Vector3 Vec3 = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position;
-                Vec3 = new Vector3(Vec3.x + Random.value, Vec3.y + 0.5f, Vec3.z + Random.value);
-                //Debug.Log("召唤AAAAVec3 = " + Vec3);
+                // GameObject monsterObj = MonoBehaviour.Instantiate((GameObject)ResourcesManager.Instance.LoadUnitSync<GameObject>("PetSet/" + createName));
+                // monsterObj.transform.SetParent(monsterSetObj.transform);
+                // Vector3 Vec3 = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position;
+                // Vec3 = new Vector3(Vec3.x + Random.value, Vec3.y + 0.5f, Vec3.z + Random.value);
+                // //Debug.Log("召唤AAAAVec3 = " + Vec3);
+                //
+                // //如果是被动技能召唤,则创建于当前的目标点（表现形式好看）
+                // string skillType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillType", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
+                // if (skillType == "2") {
+                //     if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_ActTarget != null) {
+                //         Vec3 = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_ActTarget.transform.position;
+                //         //Debug.Log("召唤BBBBVec3 = " + Vec3);
+                //         //Vec3 = Vector3.zero;
+                //     }
+                // }
+                //
+                // monsterObj.transform.position = Vec3;
+                // monsterObj.SetActive(false);
+                // monsterObj.SetActive(true);
+                
+                GameObject prefab = ResourcesManager.Instance.LoadUnitSync<GameObject>(
+                    "PetSet/" + createName);
 
-                //如果是被动技能召唤,则创建于当前的目标点（表现形式好看）
-                string skillType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("SkillType", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
-                if (skillType == "2") {
-                    if (Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_ActTarget != null) {
-                        Vec3 = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Obj_ActTarget.transform.position;
-                        //Debug.Log("召唤BBBBVec3 = " + Vec3);
-                        //Vec3 = Vector3.zero;
-                    }
+                if (prefab == null ||
+                    !prefab.TryGetComponent(out UnityEngine.AI.NavMeshAgent agent))
+                {
+                    Debug.LogWarning("召唤物资源缺失或没有 NavMeshAgent：" + createName);
+                    continue;
                 }
 
-                monsterObj.transform.position = Vec3;
-                monsterObj.SetActive(false);
+                GameObject rose = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose;
+                Vector3 rosePos = rose.transform.position;
+                Vector3 spawnPos = rosePos + new Vector3(Random.value, 0f, Random.value);
+
+                // 被动召唤优先在攻击目标附近出现。
+                string skillType = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData(
+                    "SkillType", "ID", GetComponent<SkillObjBase>().SkillID, "Skill_Template");
+
+                GameObject target = rose.GetComponent<Rose_Status>().Obj_ActTarget;
+                if (skillType == "2" && target != null)
+                {
+                    spawnPos = target.transform.position;
+                }
+
+                var filter = new UnityEngine.AI.NavMeshQueryFilter
+                {
+                    agentTypeID = agent.agentTypeID,
+                    areaMask = agent.areaMask
+                };
+                
+                // 原落点附近不可走时，改找玩家脚边。
+                if (!UnityEngine.AI.NavMesh.SamplePosition(spawnPos, out var hit, 2f, filter) &&
+                    !UnityEngine.AI.NavMesh.SamplePosition(rosePos, out hit, 2f, filter))
+                {
+                    Debug.LogWarning("召唤失败：附近没有可寻路落点，召唤物 ID：" + createName);
+                    continue;
+                }
+
+                GameObject monsterObj = Instantiate(
+                    prefab, hit.position, prefab.transform.rotation, monsterSetObj.transform);
                 monsterObj.SetActive(true);
+                
                 Game_PublicClassVar.Get_function_Rose.addRosePetPositionObj(monsterObj);
                 monsterObj.GetComponent<AIPet>().PetType = "1";
                 monsterObj.GetComponent<AIPet>().AILiveTime = SkillTime;

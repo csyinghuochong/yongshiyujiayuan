@@ -882,7 +882,7 @@ public class AIPet : MonoBehaviour {
 
                 if (!ai_IfDeath) {
                     
-                    monsterDestoryTime = 5.0f;        //设置怪物初始销毁模型时间
+                    monsterDestoryTime = IfDeathDestoryModel ? 0.5f : 5.0f;       //设置怪物初始销毁模型时间
                     Destroy(this.gameObject, monsterDestoryTime);
                     Destroy(UI_Hp, monsterDestoryTime);
                     
