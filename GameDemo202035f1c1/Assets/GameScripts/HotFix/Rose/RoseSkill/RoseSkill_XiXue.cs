@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class RoseSkill_XiXue : MonoBehaviour
 {
     
-    private int startAddHpValue;        //初始加血的值
+    private bool hitResolved;
     
 	//定义技能状态
 	public float SkillEffectDistance;   //技能每秒移动距离
@@ -132,7 +132,7 @@ public class RoseSkill_XiXue : MonoBehaviour
 		AI_Collider = collider.gameObject;
         SkillActObj = this.GetComponent<SkillObjBase>().SkillTargetObj;
         //Debug.Log("AI_Collider = " + AI_Collider.name + "SkillActObj = " + SkillActObj);
-        if (AI_Collider == SkillActObj)
+        if (!hitResolved && AI_Collider != null && AI_Collider == SkillActObj)
         {
             //Debug.Log("进来了1");
             AI_1 ai = collider.gameObject.GetComponent<AI_1>();
@@ -161,19 +161,24 @@ public class RoseSkill_XiXue : MonoBehaviour
                 }
                 //Debug.Log("进来了3");
                 ai.HitStatus = true; //受击特效
-                Game_PublicClassVar.Get_fight_Formult.RoseActMonster(this.gameObject.GetComponent<SkillObjBase>().SkillID, collider.gameObject, false);
+                hitResolved = true;
+                string skillID = GetComponent<SkillObjBase>().SkillID;
+                int damage = Game_PublicClassVar.Get_fight_Formult
+                    .RoseActMonsterValue(skillID, collider.gameObject, false);
 
                 //触发技能Buff
-                string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BuffID", "ID", this.GetComponent<SkillObjBase>().SkillID, "Skill_Template");
-                if (buffID != "0" && buffID != "") {
+                string buffID = Game_PublicClassVar.Get_function_DataSet
+                    .DataSet_ReadData("BuffID", "ID", skillID, "Skill_Template");
+                if (buffID != "0" && buffID != "")
+                {
                     Game_PublicClassVar.Get_function_Skill.SkillBuff(buffID, collider.gameObject);
-                    
                 }
-                Game_PublicClassVar.Get_fight_Formult.RoseActMonsterValue(this.gameObject.GetComponent<SkillObjBase>().SkillID, collider.gameObject, false);
-                
-                //获取治疗值
-                startAddHpValue = Game_PublicClassVar.Get_fight_Formult.RoseActMonsterValue(this.gameObject.GetComponent<SkillObjBase>().SkillID, collider.gameObject, false);
-                Game_PublicClassVar.Get_function_Rose.addRoseHp(startAddHpValue);
+
+                int heal = damage / 2;
+                if (heal > 0)
+                {
+                    Game_PublicClassVar.Get_function_Rose.addRoseHp(heal);
+                }
             }
             //Debug.Log("进来了4");
             //碰撞到目标后注销自己
