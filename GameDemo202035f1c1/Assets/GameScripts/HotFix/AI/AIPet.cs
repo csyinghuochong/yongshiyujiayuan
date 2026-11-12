@@ -2075,4 +2075,11 @@ public class AIPet : MonoBehaviour {
             }
         }
     }
+    
+    //宠物模型复用了主角的动画控制器，这些动画事件对宠物没有意义，
+    //这里做空接收，避免 Unity 报 "AnimationEvent ... has no receiver"
+    public void RoseCriAct() { }
+    public void RoseAct() { }
+    public void RoseActStopMove_Start() { }
+    public void RoseActStopMove_End() { }
 }
