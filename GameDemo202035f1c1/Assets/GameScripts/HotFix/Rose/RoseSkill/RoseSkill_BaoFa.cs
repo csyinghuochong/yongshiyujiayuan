@@ -81,7 +81,7 @@ public class RoseSkill_BaoFa : MonoBehaviour
         }
 
         // 爆发开启期间，保持图标和天赋加成。
-        foreach (Buff_4 buff in roseProprety.GetComponents<Buff_4>())
+        foreach (Buff_1 buff in roseProprety.GetComponents<Buff_1>())
         {
             if (buff != null &&
                 int.TryParse(buff.BuffID, out int buffId) &&
@@ -120,9 +120,9 @@ public class RoseSkill_BaoFa : MonoBehaviour
         // 技能结束时，同步移除炽魂爆发的 Buff。
         if (roseProprety != null)
         {
-            Buff_4[] buffs = roseProprety.GetComponents<Buff_4>();
+            Buff_1[] buffs = roseProprety.GetComponents<Buff_1>();
 
-            foreach (Buff_4 buff in buffs)
+            foreach (Buff_1 buff in buffs)
             {
                 if (buff != null && buff.BuffID == "90003044")
                 {
