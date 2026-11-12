@@ -85,7 +85,7 @@ public class RoseSkill_BaoFa : MonoBehaviour
         {
             if (buff != null &&
                 int.TryParse(buff.BuffID, out int buffId) &&
-                buffId >= 90003034 && buffId <= 90003044)
+                buffId == 90003044)
             {
                 buff.buffTimeSum = 0;
             }
