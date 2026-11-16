@@ -1182,6 +1182,8 @@ public class Function_AI : MonoBehaviour {
 
         float pet_MonsterActDameDefPro_Skill = 0;           //怪物攻击伤害减免
         float pet_MonsterSkillDameDefPro_Skill = 0;         //怪怪物技能伤害减免
+        
+        float pet_BossDamgeDefPro_Skill = 0f;               //Boss伤害减免
 
 
         string petSkillListStr = "";
@@ -1426,6 +1428,11 @@ public class Function_AI : MonoBehaviour {
                                 //怪怪物技能伤害减免
                                 case "152":
                                     pet_MonsterSkillDameDefPro_Skill = pet_MonsterSkillDameDefPro_Skill + float.Parse(skillPetValue);
+                                    break;
+                                
+                                //Boss伤害减免
+                                case "153":
+                                    pet_BossDamgeDefPro_Skill += float.Parse(skillPetValue);
                                     break;
                             }
                         }
@@ -1834,6 +1841,7 @@ public class Function_AI : MonoBehaviour {
         petObj.GetComponent<AI_Property>().AI_raceDamge_1 = pet_raceDamge_1;
         petObj.GetComponent<AI_Property>().AI_raceDamge_1 = pet_raceDamge_2;
         petObj.GetComponent<AI_Property>().AI_raceDamge_1 = pet_raceDamge_3;
+        petObj.GetComponent<AI_Property>().AI_BossDamgeDefPro = pet_BossDamgeDefPro_Skill;
         petObj.GetComponent<AI_Property>().AI_raceResistance_1 = pet_raceResistance_1;
         petObj.GetComponent<AI_Property>().AI_raceResistance_2 = pet_raceResistance_2;
         petObj.GetComponent<AI_Property>().AI_raceResistance_3 = pet_raceResistance_3;

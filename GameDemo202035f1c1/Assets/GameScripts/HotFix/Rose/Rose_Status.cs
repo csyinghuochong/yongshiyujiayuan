@@ -2385,7 +2385,7 @@ public class Rose_Status : MonoBehaviour
                             Obj_ActTarget.GetComponent<AI_1>().HitEffect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                             Obj_ActTarget.GetComponent<AI_1>().IfHitEffect = true;
                             Game_PublicClassVar.Get_fight_Formult.RoseActMonster("62000001", Obj_ActTarget, false, true);
-                            if (Random.value < this.GetComponent<Rose_Proprety>().Rose_Cri)
+                            if (Random.value < this.GetComponent<Rose_Proprety>().Rose_Cri + this.GetComponent<Rose_Proprety>().Rose_ActCriPro)
                             {
                                 roseCriActStatus = true;
                                 //Debug.Log("我开启了暴击");
@@ -2963,7 +2963,9 @@ public class Rose_Status : MonoBehaviour
 
                 break;
             case "3":
-
+                //普攻速度加成（炽魂爆发等），只影响普攻动作播放速度
+                roseAnimator.speed = mAnimationSpeed * (1f + (float)roseProperty.Rose_ActSpeedPro);
+                
                 float value = Random.value;
                 if (value <= 0.5f)
                 {

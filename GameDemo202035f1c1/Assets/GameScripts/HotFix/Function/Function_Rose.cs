@@ -9700,6 +9700,8 @@ public class Function_Rose {
         roseProprety.Rose_SummonAIPropertyAddPro = roseProprety.Rose_SummonAIPropertyAddPro_PropertySum;
         roseProprety.Rose_HuDunValueAddPro = roseProprety.Rose_HuDunValueAddPro_PropertySum;
         roseProprety.Rose_ActAddPro = roseProprety.Rose_ActAddPro_PropertySum + roseProprety.Rose_ActAddPro_Add;
+        roseProprety.Rose_ActCriPro = roseProprety.Rose_ActCriPro_Add;
+        roseProprety.Rose_ActSpeedPro = roseProprety.Rose_ActSpeedPro_Add;
 
         roseProprety.Rose_SummonAIHpPropertyAddPro = roseProprety.Rose_SummonAIHpPropertyAddPro_PropertySum;
         roseProprety.Rose_SummonAIActPropertyAddPro = roseProprety.Rose_SummonAIActPropertyAddPro_PropertySum;

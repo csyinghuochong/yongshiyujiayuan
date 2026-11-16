@@ -116,6 +116,8 @@ public class Rose_Proprety : MonoBehaviour {
     public ObscuredFloat Rose_SummonAIPropertyAddPro;               //召唤生物属性加成
     public ObscuredFloat Rose_HuDunValueAddPro;                     //护盾属性附加
     public ObscuredFloat Rose_ActAddPro;                            //普通攻击技能加成
+    public ObscuredFloat Rose_ActCriPro;                            //普攻暴击率加成
+    public ObscuredFloat Rose_ActSpeedPro;                          //普攻速度加成
 
     public ObscuredFloat Rose_SummonAIHpPropertyAddPro;             //召唤生物血量属性加成
     public ObscuredFloat Rose_SummonAIActPropertyAddPro;            //召唤生物攻击属性加成
@@ -311,7 +313,9 @@ public class Rose_Proprety : MonoBehaviour {
     public ObscuredFloat Rose_HuShiAdfValuePro_Add;             //忽视目标魔防值_百分比
     public ObscuredFloat Rose_XiXuePro_Add;                     //吸血百分比
     public ObscuredFloat Rose_ActAddPro_Add;                    //普攻增伤
-
+    public ObscuredFloat Rose_ActCriPro_Add;                    //普攻暴击率加成
+    public ObscuredFloat Rose_ActSpeedPro_Add;                  //普攻速度加成
+    
     public ObscuredInt Rose_CriRating_Add;                      //暴击等级
     public ObscuredInt Rose_ResilienceRating_Add;               //韧性等级
     public ObscuredInt Rose_HitRating_Add;                      //命中等级

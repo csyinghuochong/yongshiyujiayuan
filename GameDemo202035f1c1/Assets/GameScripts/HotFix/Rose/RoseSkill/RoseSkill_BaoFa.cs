@@ -2,7 +2,7 @@
 using UnityEngine;
 
 // 炽魂爆发 进入爆发状态
-// GameObjectParameter：消耗x%生命值;每秒损失x%生命值;普攻恢复x%;普攻伤害增加x%
+// GameObjectParameter：消耗x%生命值;每秒损失x%生命值;普攻恢复x%;普攻伤害增加x%;普攻暴击率增加x%;普攻速度增加x%
 public class RoseSkill_BaoFa : MonoBehaviour
 {
     private float SkillTime; //技能时间
@@ -16,6 +16,9 @@ public class RoseSkill_BaoFa : MonoBehaviour
     private float value_1;
     private float value_2;
     private float value_3;
+    private float value_4;
+    private float value_5;
+
     
     void Start()
     {
@@ -31,10 +34,14 @@ public class RoseSkill_BaoFa : MonoBehaviour
             value_1 = float.Parse(skillParValue[1]);
             value_2 = float.Parse(skillParValue[2]);
             value_3 = float.Parse(skillParValue[3]);
+            value_4 = float.Parse(skillParValue[4]);
+            value_5 = float.Parse(skillParValue[5]);
         }
         
         roseProprety.Rose_XiXuePro_Add += value_2;
         roseProprety.Rose_ActAddPro_Add += value_3;
+        roseProprety.Rose_ActCriPro_Add += value_4;
+        roseProprety.Rose_ActSpeedPro_Add += value_5;
 
         Game_PublicClassVar.Get_game_PositionVar.UpdataRoseBuffProperty = true;
         
@@ -134,6 +141,8 @@ public class RoseSkill_BaoFa : MonoBehaviour
         Debug.LogWarning("爆发技能结束！！！！！");
         roseProprety.Rose_XiXuePro_Add -= value_2;
         roseProprety.Rose_ActAddPro_Add -= value_3;
+        roseProprety.Rose_ActCriPro_Add -= value_4;
+        roseProprety.Rose_ActSpeedPro_Add -= value_5;
         
         Game_PublicClassVar.Get_game_PositionVar.UpdataRoseBuffProperty = true;
     }

@@ -1021,6 +1021,12 @@ public class Fight_Formult {
             }
 
             //Debug.Log("原始造成伤害!" + damge);
+            if (monsterObj.TryGetComponent<AI_1>(out var attacker) &&
+                attacker.ai_monsterType == "3")
+            {
+	            float bossReduction = ActPetObj.GetComponent<AI_Property>().AI_BossDamgeDefPro;
+	            damge = (int)(damge * (1f - bossReduction));
+            }
         }
 
 

@@ -53,6 +53,7 @@ public class AI_Property : MonoBehaviour {
     public ObscuredFloat AI_SkillActDodgePro;         //技能闪避
     public ObscuredFloat AI_MonsterActDameDefPro;          //怪物普通攻击减免
     public ObscuredFloat AI_MonsterSkillDameDefPro;        //怪物技能攻击减免
+    public ObscuredFloat AI_BossDamgeDefPro;               //Boss伤害减免
 
     //被动技能加成相关
     public ObscuredFloat AI_Act_Skill;
