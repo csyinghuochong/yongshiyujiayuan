@@ -109,6 +109,11 @@ public class RoseSkill_BianShen : MonoBehaviour
         //获取技能附加
         SkillTime = this.GetComponent<SkillObjBase>().SkillLiveTime;
         
+        string buffID = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData(
+            "BuffID", "ID", GetComponent<SkillObjBase>().SkillID, "Skill_Template");
+
+        Game_PublicClassVar.Get_function_Skill.SkillBuff(
+            buffID, Game_PublicClassVar.Get_game_PositionVar.Obj_Rose);
         
         string[] parameters = damgeFrequency.Split(';');
         DamgeFrequency = Mathf.Max(0f, float.Parse(parameters[0]));
