@@ -1,0 +1,108 @@
+#import <UIKit/UIKit.h>
+#import "UnityAppController.h"
+
+@interface UnityAppController (YongshiWindowSelection)
+- (UIWindowScene *)pickStartupWindowScene:(NSSet<UIScene *> *)scenes;
+@end
+
+@interface YongshiAppController : UnityAppController
+@property(nonatomic, copy) NSDictionary *launchOptions;
+@property(nonatomic, weak) UIWindowScene *startupScene;
+- (void)startInScene:(UIWindowScene *)scene;
+@end
+
+IMPL_APP_CONTROLLER_SUBCLASS(YongshiAppController)
+
+@implementation YongshiAppController
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Unity 2022.3 creates its window here. Wait until UIKit connects and activates a scene.
+    self.launchOptions = launchOptions;
+    return YES;
+}
+
+- (UIWindowScene *)pickStartupWindowScene:(NSSet<UIScene *> *)scenes
+{
+    return self.startupScene ?: [super pickStartupWindowScene:scenes];
+}
+
+- (void)startInScene:(UIWindowScene *)scene
+{
+    if (self.window == nil)
+    {
+        self.startupScene = scene;
+        [super application:UIApplication.sharedApplication didFinishLaunchingWithOptions:self.launchOptions];
+        self.launchOptions = nil;
+        self.startupScene = nil;
+    }
+    else if (self.window.windowScene != scene)
+    {
+        self.window.windowScene = scene;
+        [self.window makeKeyAndVisible];
+    }
+}
+
+@end
+
+@interface YongshiSceneDelegate : UIResponder <UIWindowSceneDelegate>
+@property(nonatomic, strong) UIWindow *window;
+@property(nonatomic, strong) UISceneConnectionOptions *connectionOptions;
+@end
+
+@implementation YongshiSceneDelegate
+
+- (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session
+      options:(UISceneConnectionOptions *)connectionOptions
+{
+    self.connectionOptions = connectionOptions;
+}
+
+- (void)sceneDidBecomeActive:(UIScene *)scene
+{
+    YongshiAppController *controller = (YongshiAppController *)GetAppController();
+    [controller startInScene:(UIWindowScene *)scene];
+    self.window = controller.window;
+    [controller applicationDidBecomeActive:UIApplication.sharedApplication];
+
+    UISceneConnectionOptions *options = self.connectionOptions;
+    self.connectionOptions = nil;
+    [self scene:scene openURLContexts:options.URLContexts];
+    for (NSUserActivity *activity in options.userActivities)
+        [self scene:scene continueUserActivity:activity];
+}
+
+- (void)sceneWillResignActive:(UIScene *)scene
+{
+    [GetAppController() applicationWillResignActive:UIApplication.sharedApplication];
+}
+
+- (void)sceneDidEnterBackground:(UIScene *)scene
+{
+    [GetAppController() applicationDidEnterBackground:UIApplication.sharedApplication];
+}
+
+- (void)sceneWillEnterForeground:(UIScene *)scene
+{
+    [GetAppController() applicationWillEnterForeground:UIApplication.sharedApplication];
+}
+
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)contexts
+{
+    for (UIOpenURLContext *context in contexts)
+    {
+        NSMutableDictionary *options = [NSMutableDictionary dictionary];
+        options[UIApplicationOpenURLOptionsSourceApplicationKey] = context.options.sourceApplication;
+        options[UIApplicationOpenURLOptionsAnnotationKey] = context.options.annotation;
+        options[UIApplicationOpenURLOptionsOpenInPlaceKey] = @(context.options.openInPlace);
+        [GetAppController() application:UIApplication.sharedApplication openURL:context.URL options:options];
+    }
+}
+
+- (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)activity
+{
+    [GetAppController() application:UIApplication.sharedApplication continueUserActivity:activity
+                 restorationHandler:^(NSArray<id<UIUserActivityRestoring>> *objects) {}];
+}
+
+@end
